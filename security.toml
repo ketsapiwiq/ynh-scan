@@ -1,0 +1,15 @@
+system:
+   - package: "dovecot"
+     versions: "< 2.2.27-3+deb9u5"
+     infos: "https://www.debian.org/security/2019/dsa-4510"
+     level: "important"
+   - package: "foo"
+     versions: "< 1.2.3+deb9u5"
+     infos: "https://example.com/emaged-foo-is-broken"
+     level: "warning"
+apps:
+   - app: "jirafeau"
+     versions: "< 1.4~ynh1"
+     infos: "https://github.com/yunohost-apps/jireafeau_ynh/issues/666"
+     level: "warning"
+

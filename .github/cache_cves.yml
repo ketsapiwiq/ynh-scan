@@ -1,0 +1,25 @@
+
+jobs:
+  UseData:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Cache JSON data
+      id: cache-data
+      uses: actions/cache@v2
+      with:
+        path: path_to_your_jsonfile/data.json
+        key: ${{ runner.os }}-data-${{ hashFiles('**/data.json') }}
+    
+    - name: Download JSON data as an artifact if cache not found
+      if: steps.cache-data.outputs.cache-hit != 'true'
+      uses: actions/download-artifact@v2
+      with:
+        name: data
+    
+    - name: Use JSON data
+      run: |
+        # Use your JSON data
