@@ -1,7 +1,7 @@
 import nvdlib
 import toml
-
-
+import json
+import os
 
 # Load the apps.toml file
 with open('apps.toml', 'r') as file:
@@ -10,9 +10,6 @@ with open('apps.toml', 'r') as file:
 # Get the CPE from the "13ft" app section
 # cpe = data.get('13ft', {}).get('cpe', None)
 
-
-
-# import json
 
 # data = {
 #     "apps": [
@@ -26,11 +23,12 @@ with open('apps.toml', 'r') as file:
 # }
 
 
+# for app in apps:
 
 
 # Save the data as a JSON file
-with open("security.json", "w") as file:
-    json.dump(data, file, indent=4)
+# with open("security.json", "w") as file:
+#     json.dump(data, file, indent=4)
 
 # if cpe:
 #     print(f"The CPE for '13ft' app is: {cpe}")
@@ -48,34 +46,19 @@ import toml
 # Fetch CVEs for the CPE(s)
 # cpes = 
 
-
-for cpe in cpes:
-    cves = nvdlib.searchCVE(keywordSearch=cpe)
-
-
-
-# # Print the CVEs
-# for cve in cves:
-#     print(cve.id, cve.description)
-
-
-import nvdlib
-import json
-
-# Load the security data from the JSON file
-with open("security.json", "r") as file:
-    data = json.load(file)
-
-# Extract the necessary information from the security data
-app = data["apps"][0]["app"]
-version = data["apps"][0]["versions"]
+# with open("security.json", "r") as file:
+#     data = json.load(file)
 
 # Build the search parameters
-keywordSearch = f"cpe:/a:{app}:{version}"
+# keywordSearch = f"cpe:/a:{app}:{version}"
 
-# Search for CVEs using the parameters
-cves = nvdlib.searchCVE(keywordSearch=keywordSearch)
+nvd_api_key=os.getenv('YUNOHOST_NVD_API_KEY')
 
-# Print the CVEs
-for cve in cves:
-    print(cve.cve_id, cve.description)
+for cpe in cpes:
+    cves = nvdlib.searchCVE(cpeName=cpe, key=nvd_api_key)
+
+    # Print the CVEs
+    for cve in cves:
+        print(cve.cve_id, cve.description)
+
+
