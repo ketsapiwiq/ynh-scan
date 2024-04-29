@@ -12,4 +12,3 @@ apps:
      versions: "< 1.4~ynh1"
      infos: "https://github.com/yunohost-apps/jireafeau_ynh/issues/666"
      level: "warning"
-
