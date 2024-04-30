@@ -1,5 +1,7 @@
 # YunoScan
 
+See issue: https://github.com/YunoHost/issues/issues/1438#issuecomment-2085012926
+
 Contains:
 - `apps.toml`: the amended list of apps, with CPEs added
     - this was built with `add_cpes.py`, `cpe.csv`, and `add_cpes.diff`. The diff unfortunately formats the TOML a bit (the arrays), but I couldn't fix `python.diff.invalid` to avoid this.
