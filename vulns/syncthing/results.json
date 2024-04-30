@@ -1,1 +1,384 @@
-{"resultsPerPage":3,"startIndex":0,"totalResults":3,"format":"NVD_CVE","version":"2.0","timestamp":"2024-04-30T10:53:41.110","vulnerabilities":[{"cve":{"id":"CVE-2017-1000420","sourceIdentifier":"cve@mitre.org","published":"2018-01-02T19:29:00.257","lastModified":"2018-01-16T18:38:43.137","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Syncthing version 0.14.33 and older is vulnerable to symlink traversal resulting in arbitrary file overwrite"},{"lang":"es","value":"Syncthing, en su versión 0.14.33 y anteriores, es vulnerable a un salto de vínculo simbólico, lo que resulta en la sobrescritura de archivos arbitrarios."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:N\/I:H\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"NONE","integrityImpact":"HIGH","availabilityImpact":"NONE","baseScore":7.5,"baseSeverity":"HIGH"},"exploitabilityScore":3.9,"impactScore":3.6}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:N\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":6.4},"baseSeverity":"MEDIUM","exploitabilityScore":10.0,"impactScore":4.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-59"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:syncthing:syncthing:*:*:*:*:*:*:*:*","versionEndIncluding":"0.14.33","matchCriteriaId":"C25E3C37-5AFA-42A1-8168-2E9ABC4AD6C4"}]}]}],"references":[{"url":"https:\/\/github.com\/syncthing\/syncthing\/issues\/4286","source":"cve@mitre.org","tags":["Issue Tracking","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2021-21404","sourceIdentifier":"security-advisories@github.com","published":"2021-04-06T20:15:13.490","lastModified":"2021-04-14T18:00:32.527","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Syncthing is a continuous file synchronization program. In Syncthing before version 1.15.0, the relay server `strelaysrv` can be caused to crash and exit by sending a relay message with a negative length field. Similarly, Syncthing itself can crash for the same reason if given a malformed message from a malicious relay server when attempting to join the relay. Relay joins are essentially random (from a subset of low latency relays) and Syncthing will by default restart when crashing, at which point it's likely to pick another non-malicious relay. This flaw is fixed in version 1.15.0."},{"lang":"es","value":"Syncthing es un programa de sincronización de archivos continua.&#xa0;En Syncthing versiones anteriores a 1.15.0, el servidor de retransmisión \"strelaysrv\" puede causar un bloqueo y salida mediante el envío de un mensaje de retransmisión con un campo de longitud negativa.&#xa0;De manera similar, Syncthing en sí puede presentar un fallo por la misma razón si recibe un mensaje malformado de un servidor de retransmisión malicioso al intentar unirse a la retransmisión.&#xa0;Las uniones de retransmisiones son esencialmente aleatorias (de un subconjunto de retransmisiones de baja latencia) y Syncthing se reiniciará por defecto cuando se bloquee, momento en el que es probable que elija otra retransmisión no maliciosa.&#xa0;Este fallo es corregido en la versión 1.15.0"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:N\/I:N\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"NONE","integrityImpact":"NONE","availabilityImpact":"HIGH","baseScore":7.5,"baseSeverity":"HIGH"},"exploitabilityScore":3.9,"impactScore":3.6},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:N\/I:N\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"NONE","integrityImpact":"NONE","availabilityImpact":"HIGH","baseScore":7.5,"baseSeverity":"HIGH"},"exploitabilityScore":3.9,"impactScore":3.6}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:N\/I:N\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"NONE","availabilityImpact":"PARTIAL","baseScore":5.0},"baseSeverity":"MEDIUM","exploitabilityScore":10.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"security-advisories@github.com","type":"Primary","description":[{"lang":"en","value":"CWE-20"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:syncthing:syncthing:*:*:*:*:*:*:*:*","versionEndExcluding":"1.15.0","matchCriteriaId":"13E0DFD1-14D6-4A2D-B98C-1C581D11E2F0"}]}]}],"references":[{"url":"https:\/\/github.com\/syncthing\/syncthing\/commit\/fb4fdaf4c0a79c22cad000c42ac1394e3ccb6a97","source":"security-advisories@github.com","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/syncthing\/syncthing\/releases\/tag\/v1.15.0","source":"security-advisories@github.com","tags":["Release Notes","Third Party Advisory"]},{"url":"https:\/\/github.com\/syncthing\/syncthing\/security\/advisories\/GHSA-x462-89pf-6r5h","source":"security-advisories@github.com","tags":["Third Party Advisory"]},{"url":"https:\/\/pkg.go.dev\/github.com\/syncthing\/syncthing","source":"security-advisories@github.com","tags":["Product","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-46165","sourceIdentifier":"security-advisories@github.com","published":"2023-06-06T18:15:10.100","lastModified":"2023-06-16T04:15:11.407","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"Syncthing is an open source, continuous file synchronization program. In versions prior to 1.23.5 a compromised instance with shared folders could sync malicious files which contain arbitrary HTML and JavaScript in the name. If the owner of another device looks over the shared folder settings and moves the mouse over the latest sync, a script could be executed to change settings for shared folders or add devices automatically. Additionally adding a new device with a malicious name could embed HTML or JavaScript inside parts of the page. As a result the webUI may be subject to a stored cross site scripting attack. This issue has been addressed in version 1.23.5. Users are advised to upgrade. Users unable to upgrade should avoid sharing folders with untrusted users."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.3,"impactScore":2.7},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:R\/S:U\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":4.6,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.1,"impactScore":2.5}]},"weaknesses":[{"source":"security-advisories@github.com","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:syncthing:syncthing:*:*:*:*:*:*:*:*","versionEndExcluding":"1.23.5","matchCriteriaId":"DF5DEFA6-C51C-4649-AD75-0E00E44B1301"}]}]}],"references":[{"url":"https:\/\/github.com\/syncthing\/syncthing\/commit\/73c52eafb6566435dffd979c3c49562b6d5a4238","source":"security-advisories@github.com","tags":["Patch"]},{"url":"https:\/\/github.com\/syncthing\/syncthing\/security\/advisories\/GHSA-9rp6-23gf-4c3h","source":"security-advisories@github.com","tags":["Exploit","Vendor Advisory"]},{"url":"https:\/\/lists.fedoraproject.org\/archives\/list\/package-announce@lists.fedoraproject.org\/message\/IRYGBFJPVBW6PPTETNIBWQJE4HJSA5PJ\/","source":"security-advisories@github.com"},{"url":"https:\/\/lists.fedoraproject.org\/archives\/list\/package-announce@lists.fedoraproject.org\/message\/XEBWSQVGHSTR4ZO7LVVEMPEGMV2DS5XR\/","source":"security-advisories@github.com"}]}}]}
+{
+    "resultsPerPage": 3,
+    "startIndex": 0,
+    "totalResults": 3,
+    "format": "NVD_CVE",
+    "version": "2.0",
+    "timestamp": "2024-04-30T10:53:41.110",
+    "vulnerabilities": [
+        {
+            "cve": {
+                "id": "CVE-2017-1000420",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2018-01-02T19:29:00.257",
+                "lastModified": "2018-01-16T18:38:43.137",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Syncthing version 0.14.33 and older is vulnerable to symlink traversal resulting in arbitrary file overwrite"
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Syncthing, en su versi\u00f3n 0.14.33 y anteriores, es vulnerable a un salto de v\u00ednculo simb\u00f3lico, lo que resulta en la sobrescritura de archivos arbitrarios."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 7.5,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 3.6
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:N/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 6.4
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 4.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-59"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:syncthing:syncthing:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "0.14.33",
+                                        "matchCriteriaId": "C25E3C37-5AFA-42A1-8168-2E9ABC4AD6C4"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/syncthing/syncthing/issues/4286",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Issue Tracking",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-21404",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2021-04-06T20:15:13.490",
+                "lastModified": "2021-04-14T18:00:32.527",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Syncthing is a continuous file synchronization program. In Syncthing before version 1.15.0, the relay server `strelaysrv` can be caused to crash and exit by sending a relay message with a negative length field. Similarly, Syncthing itself can crash for the same reason if given a malformed message from a malicious relay server when attempting to join the relay. Relay joins are essentially random (from a subset of low latency relays) and Syncthing will by default restart when crashing, at which point it's likely to pick another non-malicious relay. This flaw is fixed in version 1.15.0."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Syncthing es un programa de sincronizaci\u00f3n de archivos continua.&#xa0;En Syncthing versiones anteriores a 1.15.0, el servidor de retransmisi\u00f3n \"strelaysrv\" puede causar un bloqueo y salida mediante el env\u00edo de un mensaje de retransmisi\u00f3n con un campo de longitud negativa.&#xa0;De manera similar, Syncthing en s\u00ed puede presentar un fallo por la misma raz\u00f3n si recibe un mensaje malformado de un servidor de retransmisi\u00f3n malicioso al intentar unirse a la retransmisi\u00f3n.&#xa0;Las uniones de retransmisiones son esencialmente aleatorias (de un subconjunto de retransmisiones de baja latencia) y Syncthing se reiniciar\u00e1 por defecto cuando se bloquee, momento en el que es probable que elija otra retransmisi\u00f3n no maliciosa.&#xa0;Este fallo es corregido en la versi\u00f3n 1.15.0"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 7.5,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 3.6
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 7.5,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 3.6
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 5.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-20"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:syncthing:syncthing:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "1.15.0",
+                                        "matchCriteriaId": "13E0DFD1-14D6-4A2D-B98C-1C581D11E2F0"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/syncthing/syncthing/commit/fb4fdaf4c0a79c22cad000c42ac1394e3ccb6a97",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/syncthing/syncthing/releases/tag/v1.15.0",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Release Notes",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/syncthing/syncthing/security/advisories/GHSA-x462-89pf-6r5h",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://pkg.go.dev/github.com/syncthing/syncthing",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Product",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-46165",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2023-06-06T18:15:10.100",
+                "lastModified": "2023-06-16T04:15:11.407",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Syncthing is an open source, continuous file synchronization program. In versions prior to 1.23.5 a compromised instance with shared folders could sync malicious files which contain arbitrary HTML and JavaScript in the name. If the owner of another device looks over the shared folder settings and moves the mouse over the latest sync, a script could be executed to change settings for shared folders or add devices automatically. Additionally adding a new device with a malicious name could embed HTML or JavaScript inside parts of the page. As a result the webUI may be subject to a stored cross site scripting attack. This issue has been addressed in version 1.23.5. Users are advised to upgrade. Users unable to upgrade should avoid sharing folders with untrusted users."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 2.7
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.6,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.1,
+                            "impactScore": 2.5
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:syncthing:syncthing:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "1.23.5",
+                                        "matchCriteriaId": "DF5DEFA6-C51C-4649-AD75-0E00E44B1301"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/syncthing/syncthing/commit/73c52eafb6566435dffd979c3c49562b6d5a4238",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/syncthing/syncthing/security/advisories/GHSA-9rp6-23gf-4c3h",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Exploit",
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/IRYGBFJPVBW6PPTETNIBWQJE4HJSA5PJ/",
+                        "source": "security-advisories@github.com"
+                    },
+                    {
+                        "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/XEBWSQVGHSTR4ZO7LVVEMPEGMV2DS5XR/",
+                        "source": "security-advisories@github.com"
+                    }
+                ]
+            }
+        }
+    ]
+}

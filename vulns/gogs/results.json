@@ -1,1 +1,2922 @@
-{"resultsPerPage":23,"startIndex":0,"totalResults":23,"format":"NVD_CVE","version":"2.0","timestamp":"2024-04-30T10:43:10.557","vulnerabilities":[{"cve":{"id":"CVE-2018-15178","sourceIdentifier":"cve@mitre.org","published":"2018-08-08T00:29:02.583","lastModified":"2018-10-05T13:18:50.857","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Open redirect vulnerability in Gogs before 0.12 allows remote attackers to redirect users to arbitrary websites and conduct phishing attacks via an initial \/\\ substring in the user\/login redirect_to parameter, related to the function isValidRedirect in routes\/user\/auth.go."},{"lang":"es","value":"Vulnerabilidad de redirección abierta en Gogs en versiones anteriores a la 0.12 permite que atacantes remotos redirijan a usuarios a sitios web arbitrarios y lleven a cabo ataques de phishing mediante una subcadena \/\\ inicial en el parámetro redirect_to en user\/login. Esto está relacionado con la función isValidRedirect en routes\/user\/auth.go."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.1,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:P\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":5.8},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":4.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-601"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:gogs:gogs:*:*:*:*:*:*:*:*","versionEndExcluding":"0.12","matchCriteriaId":"5A12227F-4CC1-4D7E-A306-A32AC4883567"}]}]}],"references":[{"url":"https:\/\/github.com\/gogs\/gogs\/issues\/5364","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]},{"url":"https:\/\/github.com\/gogs\/gogs\/pull\/5365","source":"cve@mitre.org","tags":["Third Party Advisory"]}]}},{"cve":{"id":"CVE-2018-15192","sourceIdentifier":"cve@mitre.org","published":"2018-08-08T02:29:00.273","lastModified":"2018-10-18T17:02:50.947","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"An SSRF vulnerability in webhooks in Gitea through 1.5.0-rc2 and Gogs through 0.11.53 allows remote attackers to access intranet services."},{"lang":"es","value":"Una vulnerabilidad de Server-Side Request Forgery (SSRF) en webhooks en Gitea hasta la versión 1.5.0-rc2 y Gogs hasta la versión 0.11.53 permite que los atacantes remotos accedan a los servicios de la intranet."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:N\/S:C\/C:H\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"CHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":8.6,"baseSeverity":"HIGH"},"exploitabilityScore":3.9,"impactScore":4.0}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:N\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":5.0},"baseSeverity":"MEDIUM","exploitabilityScore":10.0,"impactScore":2.9,"acInsufInfo":true,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-918"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:gitea:gitea:*:*:*:*:*:*:*:*","versionEndExcluding":"1.5.0","matchCriteriaId":"A245EAFE-88C9-470E-9B7A-F8D32F25E2A2"},{"vulnerable":true,"criteria":"cpe:2.3:a:gitea:gitea:1.5.0:rc1:*:*:*:*:*:*","matchCriteriaId":"874A1062-D5F9-4601-9DE0-4D205DF0E29A"},{"vulnerable":true,"criteria":"cpe:2.3:a:gitea:gitea:1.5.0:rc2:*:*:*:*:*:*","matchCriteriaId":"9A2A9763-A3D0-447F-8D7E-3E12AB28E6C0"},{"vulnerable":true,"criteria":"cpe:2.3:a:gogs:gogs:*:*:*:*:*:*:*:*","versionEndIncluding":"0.11.53","matchCriteriaId":"D983AEBA-5615-4545-871A-1C17FC38FA1C"}]}]}],"references":[{"url":"https:\/\/github.com\/go-gitea\/gitea\/issues\/4624","source":"cve@mitre.org","tags":["Issue Tracking","Third Party Advisory"]},{"url":"https:\/\/github.com\/gogs\/gogs\/issues\/5366","source":"cve@mitre.org","tags":["Third Party Advisory"]}]}},{"cve":{"id":"CVE-2018-15193","sourceIdentifier":"cve@mitre.org","published":"2018-08-08T02:29:00.757","lastModified":"2018-10-05T13:17:10.917","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"A CSRF vulnerability in the admin panel in Gogs through 0.11.53 allows remote attackers to execute admin operations via a crafted issue \/ link."},{"lang":"es","value":"Una vulnerabilidad de Cross-Site Request Forgery (CSRF) en el panel de administración en Gogs hasta la versión 0.11.53 permite que atacantes remotos ejecuten operaciones de administrador mediante un problema\/enlace manipulado."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:R\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":8.8,"baseSeverity":"HIGH"},"exploitabilityScore":2.8,"impactScore":5.9}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":6.8},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-352"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:gogs:gogs:0.11.53:*:*:*:*:*:*:*","matchCriteriaId":"612D4EF5-DECD-4D10-8154-21B563353229"}]}]}],"references":[{"url":"https:\/\/github.com\/gogs\/gogs\/issues\/5367","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2018-16409","sourceIdentifier":"cve@mitre.org","published":"2018-09-03T19:29:01.243","lastModified":"2018-11-06T15:06:56.427","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"In Gogs 0.11.53, an attacker can use migrate to send arbitrary HTTP GET requests, leading to SSRF."},{"lang":"es","value":"En Gogs 0.11.53, un atacante puede emplear migrate para enviar peticiones HTTP GET arbitrarias, lo que conduce a Server-Side Request Forgery (SSRF)."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:N\/S:C\/C:H\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"CHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":8.6,"baseSeverity":"HIGH"},"exploitabilityScore":3.9,"impactScore":4.0}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:N\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":5.0},"baseSeverity":"MEDIUM","exploitabilityScore":10.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-918"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:gogs:gogs:0.11.53:*:*:*:*:*:*:*","matchCriteriaId":"612D4EF5-DECD-4D10-8154-21B563353229"}]}]}],"references":[{"url":"https:\/\/github.com\/gogs\/gogs\/issues\/5372","source":"cve@mitre.org","tags":["Issue Tracking","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2018-17031","sourceIdentifier":"cve@mitre.org","published":"2018-09-14T02:29:00.390","lastModified":"2018-11-07T19:06:43.053","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"In Gogs 0.11.53, an attacker can use a crafted .eml file to trigger MIME type sniffing, which leads to XSS, as demonstrated by Internet Explorer, because an \"X-Content-Type-Options: nosniff\" header is not sent."},{"lang":"es","value":"En Gogs 0.11.53, un atacante puede emplear un archivo .eml manipulado para desencadenar el rastreo de tipos MIME, lo que conduce a Cross-Site Scripting (XSS). Esto queda demostrado por Internet Explorer, debido a que no se envía una cabecera \"X-Content-Type-Options: nosniff\"."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.1,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.3},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:gogs:gogs:0.11.53:*:*:*:*:*:*:*","matchCriteriaId":"612D4EF5-DECD-4D10-8154-21B563353229"}]}]}],"references":[{"url":"https:\/\/github.com\/gogs\/gogs\/issues\/5397","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2018-18925","sourceIdentifier":"cve@mitre.org","published":"2018-11-04T05:29:00.397","lastModified":"2019-01-29T18:07:56.213","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Gogs 0.11.66 allows remote code execution because it does not properly validate session IDs, as demonstrated by a \"..\" session-file forgery in the file session provider in file.go. This is related to session ID handling in the go-macaron\/session code for Macaron."},{"lang":"es","value":"Gogs 0.11.66 permite la ejecución remota de código debido a que no valida correctamente los ID de sesión, tal y como queda demostrado por una falsificación de archivos de sesión \"..\" en el proveedor de sesión de archivos en file.go. Esto está relacionado con el manejo de ID de sesión en el código go-macaron\/session para Macaron."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.8,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.9}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":7.5},"baseSeverity":"HIGH","exploitabilityScore":10.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-384"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:gogs:gogs:*:*:*:*:*:*:*:*","versionEndIncluding":"0.11.66","matchCriteriaId":"19C82C8E-F556-4B88-BBC5-C2BB69C80723"}]}]}],"references":[{"url":"https:\/\/github.com\/gogs\/gogs\/issues\/5469","source":"cve@mitre.org","tags":["Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2018-20303","sourceIdentifier":"cve@mitre.org","published":"2018-12-20T00:29:00.350","lastModified":"2019-01-31T19:02:30.910","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"In pkg\/tool\/path.go in Gogs before 0.11.82.1218, a directory traversal in the file-upload functionality can allow an attacker to create a file under data\/sessions on the server, a similar issue to CVE-2018-18925."},{"lang":"es","value":"En pkg\/tool\/path.go en Gogs en versiones anteriores a la 0.11.82.1218, un salto de directorio en la funcionalidad de subida de archivos puede permitir que un atacante cree un archivo en data\/sessions en el servidor. Este problema es similar a CVE-2018-18925."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:N\/I:H\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"NONE","integrityImpact":"HIGH","availabilityImpact":"NONE","baseScore":7.5,"baseSeverity":"HIGH"},"exploitabilityScore":3.9,"impactScore":3.6}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":5.0},"baseSeverity":"MEDIUM","exploitabilityScore":10.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-22"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:gogs:gogs:*:*:*:*:*:*:*:*","versionEndExcluding":"0.11.82.1218","matchCriteriaId":"76D9F97B-6525-4671-B70A-025DAE48F051"}]}]}],"references":[{"url":"https:\/\/github.com\/gogs\/gogs\/commit\/ff93d9dbda5cebe90d86e4b7dfb2c6b8642970ce","source":"cve@mitre.org","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/gogs\/gogs\/issues\/5558","source":"cve@mitre.org","tags":["Issue Tracking","Patch","Third Party Advisory"]},{"url":"https:\/\/pentesterlab.com\/exercises\/cve-2018-18925\/","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2019-14544","sourceIdentifier":"cve@mitre.org","published":"2019-08-02T22:15:14.457","lastModified":"2020-08-24T17:37:01.140","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"routes\/api\/v1\/api.go in Gogs 0.11.86 lacks permission checks for routes: deploy keys, collaborators, and hooks."},{"lang":"es","value":"En el archivo routes\/api\/v1\/api.go en Gogs versión 0.11.86, carece de comprobaciones de permisos para las rutas: deploy keys, collaborators y hooks."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.8,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.9}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":7.5},"baseSeverity":"HIGH","exploitabilityScore":10.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-862"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:gogs:gogs:0.11.86:*:*:*:*:*:*:*","matchCriteriaId":"82A53A05-6C38-4E68-8C83-BD7541B3815B"}]}]}],"references":[{"url":"https:\/\/github.com\/gogs\/gogs\/issues\/5764","source":"cve@mitre.org","tags":["Issue Tracking","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2020-9329","sourceIdentifier":"cve@mitre.org","published":"2020-02-21T22:15:10.880","lastModified":"2020-02-25T21:26:41.717","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Gogs through 0.11.91 allows attackers to violate the admin-specified repo-creation policy due to an internal\/db\/repo.go race condition."},{"lang":"es","value":"Gogs versiones hasta 0.11.91, permite a atacantes violar la política de repo-creation especificada por el administrador debido a una condición de carrera interna del archivo \/db\/repo.go."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:H\/PR:N\/UI:N\/S:U\/C:N\/I:H\/A:N","attackVector":"NETWORK","attackComplexity":"HIGH","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"NONE","integrityImpact":"HIGH","availabilityImpact":"NONE","baseScore":5.9,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.2,"impactScore":3.6}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.3},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-362"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:gogs:gogs:*:*:*:*:*:*:*:*","versionEndIncluding":"0.11.91","matchCriteriaId":"EA2B75BE-EE0C-4E9B-8ACD-DD233A9EBAA7"}]}]}],"references":[{"url":"https:\/\/github.com\/gogs\/gogs\/issues\/5926","source":"cve@mitre.org","tags":["Exploit","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2020-14958","sourceIdentifier":"cve@mitre.org","published":"2020-06-21T20:15:09.533","lastModified":"2020-06-26T20:28:38.410","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"In Gogs 0.11.91, MakeEmailPrimary in models\/user_mail.go lacks a \"not the owner of the email\" check."},{"lang":"es","value":"En Gogs versión 0.11.91, la función MakeEmailPrimary en el archivo models\/user_mail.go carece de una comprobación de \"not the owner of the email\""}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:N\/I:H\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"NONE","integrityImpact":"HIGH","availabilityImpact":"NONE","baseScore":6.5,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":3.6}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:S\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"SINGLE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.0},"baseSeverity":"MEDIUM","exploitabilityScore":8.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-281"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:gogs:gogs:0.11.91:*:*:*:*:*:*:*","matchCriteriaId":"410CBAD0-A40A-4F7D-845C-4C218F7FAA6C"}]}]}],"references":[{"url":"https:\/\/github.com\/gogs\/gogs\/commit\/82ff0c5852f29daa5f95d965fd50665581e7ea3c","source":"cve@mitre.org","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/gogs\/gogs\/pull\/5988","source":"cve@mitre.org","tags":["Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2020-15867","sourceIdentifier":"cve@mitre.org","published":"2020-10-16T14:15:11.627","lastModified":"2022-04-26T17:06:46.660","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"The git hook feature in Gogs 0.5.5 through 0.12.2 allows for authenticated remote code execution. There can be a privilege escalation if access to this hook feature is granted to a user who does not have administrative privileges. NOTE: because this is mentioned in the documentation but not in the UI, it could be considered a \"Product UI does not Warn User of Unsafe Actions\" issue."},{"lang":"es","value":"La característica de gancho git en Gogs versiones 0.5.5 hasta 0.12.2 permite la ejecución de código remoto autenticado. Puede haber una escalada de privilegios si el acceso a esta característica de gancho se concede a un usuario que no tiene privilegios administrativos. NOTA: debido a que esto se menciona en la documentación pero no en la interfaz de usuario, podría considerarse un problema de \"La interfaz de usuario del producto no advierte al usuario de acciones inseguras\""}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:H\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"HIGH","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":7.2,"baseSeverity":"HIGH"},"exploitabilityScore":1.2,"impactScore":5.9}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:S\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"SINGLE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":6.5},"baseSeverity":"MEDIUM","exploitabilityScore":8.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"NVD-CWE-noinfo"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:gogs:gogs:*:*:*:*:*:*:*:*","versionStartIncluding":"0.5.5","versionEndIncluding":"0.12.2","matchCriteriaId":"2534B2F0-4CE5-4DA4-A352-5AC07C21EA03"}]}]}],"references":[{"url":"http:\/\/packetstormsecurity.com\/files\/162123\/Gogs-Git-Hooks-Remote-Code-Execution.html","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory","VDB Entry"]},{"url":"https:\/\/www.fzi.de\/en\/news\/news\/detail-en\/artikel\/fsa-2020-3-schwachstelle-in-gitea-1125-und-gogs-0122-ermoeglicht-ausfuehrung-von-code-nach-authent\/","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-0870","sourceIdentifier":"security@huntr.dev","published":"2022-03-11T11:15:07.897","lastModified":"2022-03-22T13:35:06.773","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Server-Side Request Forgery (SSRF) in GitHub repository gogs\/gogs prior to 0.12.5."},{"lang":"es","value":"Una vulnerabilidad de tipo Server-Side Request Forgery (SSRF) en el repositorio de GitHub gogs\/gogs versiones anteriores a 0.12.5"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:L\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":5.3,"baseSeverity":"MEDIUM"},"exploitabilityScore":3.9,"impactScore":1.4}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:L\/UI:N\/S:C\/C:L\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":5.0,"baseSeverity":"MEDIUM"},"exploitabilityScore":3.1,"impactScore":1.4}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:N\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":5.0},"baseSeverity":"MEDIUM","exploitabilityScore":10.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-918"}]},{"source":"security@huntr.dev","type":"Secondary","description":[{"lang":"en","value":"CWE-918"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:gogs:gogs:*:*:*:*:*:*:*:*","versionEndExcluding":"0.12.5","matchCriteriaId":"BA3DD858-E721-489E-B886-56B23A6F6325"}]}]}],"references":[{"url":"https:\/\/github.com\/gogs\/gogs\/commit\/91f2cde5e95f146bfe4765e837e7282df6c7cabb","source":"security@huntr.dev","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/327797d7-ae41-498f-9bff-cc0bf98cf531","source":"security@huntr.dev","tags":["Exploit","Issue Tracking","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-0871","sourceIdentifier":"security@huntr.dev","published":"2022-03-11T12:15:07.667","lastModified":"2023-06-29T09:15:10.410","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"Missing Authorization in GitHub repository gogs\/gogs prior to 0.12.5."},{"lang":"es","value":"Una Autorización Inapropiada en el repositorio de GitHub gogs\/gogs versiones anteriores a 0.12.5"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"NONE","baseScore":9.1,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.2}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":8.2,"baseSeverity":"HIGH"},"exploitabilityScore":3.9,"impactScore":4.2}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:P\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":5.8},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":4.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"security@huntr.dev","type":"Primary","description":[{"lang":"en","value":"CWE-862"}]},{"source":"nvd@nist.gov","type":"Secondary","description":[{"lang":"en","value":"CWE-862"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:gogs:gogs:*:*:*:*:*:*:*:*","versionEndExcluding":"0.12.5","matchCriteriaId":"BA3DD858-E721-489E-B886-56B23A6F6325"}]}]}],"references":[{"url":"https:\/\/github.com\/gogs\/gogs\/commit\/64102be2c90e1b47dbdd379873ba76c80d4b0e78","source":"security@huntr.dev","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/ea82cfc9-b55c-41fe-ae58-0d0e0bd7ab62","source":"security@huntr.dev","tags":["Exploit","Issue Tracking","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-0415","sourceIdentifier":"security@huntr.dev","published":"2022-03-21T11:15:10.757","lastModified":"2022-03-25T18:14:47.773","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Remote Command Execution in uploading repository file in GitHub repository gogs\/gogs prior to 0.12.6."},{"lang":"es","value":"Una Ejecución de Comandos Remota en la carga de un archivo de repositorio en el repositorio de GitHub gogs\/gogs versiones anteriores a 0.12.6"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":8.8,"baseSeverity":"HIGH"},"exploitabilityScore":2.8,"impactScore":5.9}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:L\/UI:N\/S:C\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"CHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.9,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.1,"impactScore":6.0}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:S\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"SINGLE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":6.5},"baseSeverity":"MEDIUM","exploitabilityScore":8.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-434"}]},{"source":"security@huntr.dev","type":"Secondary","description":[{"lang":"en","value":"CWE-20"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:gogs:gogs:*:*:*:*:*:*:*:*","versionEndExcluding":"0.12.6","matchCriteriaId":"8D0C289A-C304-438C-8AAA-2D84DA7C48B3"}]}]}],"references":[{"url":"https:\/\/github.com\/gogs\/gogs\/commit\/0fef3c9082269e9a4e817274942a5d7c50617284","source":"security@huntr.dev","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/b4928cfe-4110-462f-a180-6d5673797902","source":"security@huntr.dev","tags":["Exploit","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-1464","sourceIdentifier":"security@huntr.dev","published":"2022-05-05T14:15:08.010","lastModified":"2022-05-13T18:27:15.997","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Stored xss bug in GitHub repository gogs\/gogs prior to 0.12.7. As the repo is public , any user can view the report and when open the attachment then xss is executed. This bug allow executed any javascript code in victim account ."},{"lang":"es","value":"Un bug de tipo xss almacenado en el repositorio de GitHub gogs\/gogs versiones anteriores a 0.12.7. Como el repositorio es público, cualquier usuario puede visualizar el informe y cuando abre el archivo adjunto es ejecutado el ataque de tipo xss. Este error permite ejecutar cualquier código javascript en la cuenta de la víctima"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.3,"impactScore":2.7}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:L\/I:L\/A:L","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"LOW","baseScore":7.3,"baseSeverity":"HIGH"},"exploitabilityScore":3.9,"impactScore":3.4}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:S\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"SINGLE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":3.5},"baseSeverity":"LOW","exploitabilityScore":6.8,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]},{"source":"security@huntr.dev","type":"Secondary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:gogs:gogs:*:*:*:*:*:*:*:*","versionEndExcluding":"0.12.7","matchCriteriaId":"29733251-D132-49EF-A387-88B54749F501"}]}]}],"references":[{"url":"https:\/\/github.com\/gogs\/gogs\/commit\/bc77440b301ac8780698be91dff1ac33b7cee850","source":"security@huntr.dev","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/34a12146-3a5d-4efc-a0f8-7a3ae04b198d","source":"security@huntr.dev","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-1285","sourceIdentifier":"security@huntr.dev","published":"2022-06-01T06:15:07.193","lastModified":"2022-06-08T19:53:03.027","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Server-Side Request Forgery (SSRF) in GitHub repository gogs\/gogs prior to 0.12.8."},{"lang":"es","value":"Una vulnerabilidad de tipo Server-Side Request Forgery (SSRF) en el repositorio de GitHub gogs\/gogs versiones anteriores a 0.12.8"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:U\/C:H\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":6.5,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":3.6}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:N\/S:C\/C:L\/I:L\/A:L","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"LOW","baseScore":8.3,"baseSeverity":"HIGH"},"exploitabilityScore":3.9,"impactScore":3.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:P\/I:N\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":4.3},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-918"}]},{"source":"security@huntr.dev","type":"Secondary","description":[{"lang":"en","value":"CWE-918"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:gogs:gogs:*:*:*:*:*:*:*:*","versionEndExcluding":"0.12.8","matchCriteriaId":"95A31B26-0A2D-4BC0-AC6C-4342A81CC093"}]}]}],"references":[{"url":"https:\/\/github.com\/gogs\/gogs\/commit\/7885f454a4946c4bbec1b4f8c603b5eea7429c7f","source":"security@huntr.dev","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/da1fbd6e-7a02-458e-9c2e-6d226c47046d","source":"security@huntr.dev","tags":["Exploit","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2021-32546","sourceIdentifier":"cve@mitre.org","published":"2022-06-02T14:15:28.587","lastModified":"2022-06-09T14:49:48.150","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Missing input validation in internal\/db\/repo_editor.go in Gogs before 0.12.8 allows an attacker to execute code remotely. An unprivileged attacker (registered user) can overwrite the Git configuration in his repository. This leads to Remote Command Execution, because that configuration can contain an option such as sshCommand, which is executed when a master branch is a remote branch (using an ssh:\/\/ URI). The remote branch can also be configured by editing the Git configuration file. One can create a new file in a new repository, using the GUI, with \"\\\" as its name, and then rename this file to .git\/config with the custom configuration content (and then save it)."},{"lang":"es","value":"Una falta de comprobación de entrada en el archivo internal\/db\/repo_editor.go en Gogs versiones anteriores a 0.12.8, permite a un atacante ejecutar código de forma remota. Un atacante no privilegiado (usuario registrado) puede sobrescribir la configuración de Git en su repositorio. Esto conlleva a una Ejecución de Comandos Remota, porque esa configuración puede contener una opción como sshCommand, que es ejecutado cuando una rama maestra es una rama remota (usando una URI ssh:\/\/). La rama remota también puede configurarse al editar el archivo de configuración de Git. Puede crearse un nuevo archivo en un nuevo repositorio, usando la interfaz gráfica de usuario, con \"\\ ~\" como su nombre, y luego cambiar el nombre de este archivo a .git \/ configuración con el contenido de la configuración personalizada (y luego guardarlo)"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":8.8,"baseSeverity":"HIGH"},"exploitabilityScore":2.8,"impactScore":5.9}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:S\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"SINGLE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":6.5},"baseSeverity":"MEDIUM","exploitabilityScore":8.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"NVD-CWE-noinfo"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:gogs:gogs:*:*:*:*:*:*:*:*","versionEndExcluding":"0.12.8","matchCriteriaId":"95A31B26-0A2D-4BC0-AC6C-4342A81CC093"}]}]}],"references":[{"url":"https:\/\/github.com\/gogs\/gogs\/releases","source":"cve@mitre.org","tags":["Release Notes","Third Party Advisory"]},{"url":"https:\/\/github.com\/gogs\/gogs\/security\/advisories\/GHSA-56j7-2pm8-rgmx","source":"cve@mitre.org","tags":["Issue Tracking","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-1986","sourceIdentifier":"security@huntr.dev","published":"2022-06-09T17:15:08.627","lastModified":"2022-06-15T17:01:21.060","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"OS Command Injection in GitHub repository gogs\/gogs prior to 0.12.9."},{"lang":"es","value":"Una Inyección de comandos del Sistema Operativo en el repositorio de GitHub gogs\/gogs versiones anteriores a 0.12.9"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.8,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.9}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:N\/S:C\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"CHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":10.0,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":6.0}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":7.5},"baseSeverity":"HIGH","exploitabilityScore":10.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-78"}]},{"source":"security@huntr.dev","type":"Secondary","description":[{"lang":"en","value":"CWE-78"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:gogs:gogs:*:*:*:*:*:*:*:*","versionEndExcluding":"0.12.9","matchCriteriaId":"4DAD0C2A-2575-4160-90B2-D024A0A41B0A"}]}]}],"references":[{"url":"https:\/\/github.com\/gogs\/gogs\/commit\/38aff73251cc46ced96dd608dab6190415032a82","source":"security@huntr.dev","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/776e8f29-ff5e-4501-bb9f-0bd335007930","source":"security@huntr.dev","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-1992","sourceIdentifier":"security@huntr.dev","published":"2022-06-09T17:15:08.683","lastModified":"2022-06-15T16:59:14.337","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Path Traversal in GitHub repository gogs\/gogs prior to 0.12.9."},{"lang":"es","value":"Un Salto de Ruta en el repositorio de GitHub gogs\/gogs versiones anteriores a 0.12.9"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:N\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"NONE","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.1,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.2}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:N\/S:C\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"CHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":10.0,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":6.0}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:N\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":6.4},"baseSeverity":"MEDIUM","exploitabilityScore":10.0,"impactScore":4.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-22"}]},{"source":"security@huntr.dev","type":"Secondary","description":[{"lang":"en","value":"CWE-22"}]}],"configurations":[{"operator":"AND","nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:gogs:gogs:*:*:*:*:*:*:*:*","versionEndExcluding":"0.12.9","matchCriteriaId":"4DAD0C2A-2575-4160-90B2-D024A0A41B0A"}]},{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":false,"criteria":"cpe:2.3:o:microsoft:windows:-:*:*:*:*:*:*:*","matchCriteriaId":"A2572D17-1DE6-457B-99CC-64AFD54487EA"}]}]}],"references":[{"url":"https:\/\/github.com\/gogs\/gogs\/commit\/2ca014250fbf0bba94c914d9e43b1f6d8eca3bb0","source":"security@huntr.dev","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/2e8cdc57-a9cf-46ae-9088-87f09e6c90ab","source":"security@huntr.dev","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-1993","sourceIdentifier":"security@huntr.dev","published":"2022-06-09T17:15:08.733","lastModified":"2022-06-15T16:41:44.443","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Path Traversal in GitHub repository gogs\/gogs prior to 0.12.9."},{"lang":"es","value":"Un Salto de Ruta en el repositorio de GitHub gogs\/gogs versiones anteriores a 0.12.9"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:H\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"NONE","baseScore":8.1,"baseSeverity":"HIGH"},"exploitabilityScore":2.8,"impactScore":5.2}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:H\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"NONE","baseScore":8.1,"baseSeverity":"HIGH"},"exploitabilityScore":2.8,"impactScore":5.2}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:S\/C:P\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"SINGLE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":5.5},"baseSeverity":"MEDIUM","exploitabilityScore":8.0,"impactScore":4.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-22"}]},{"source":"security@huntr.dev","type":"Secondary","description":[{"lang":"en","value":"CWE-22"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:gogs:gogs:*:*:*:*:*:*:*:*","versionEndExcluding":"0.12.9","matchCriteriaId":"4DAD0C2A-2575-4160-90B2-D024A0A41B0A"}]}]}],"references":[{"url":"https:\/\/github.com\/gogs\/gogs\/commit\/9bf748b6c4c9a17d3aa77f6b9abcfae65451febf","source":"security@huntr.dev","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/22f9c074-cf60-4c67-b5c4-72fdf312609d","source":"security@huntr.dev","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-31038","sourceIdentifier":"security-advisories@github.com","published":"2022-06-09T17:15:09.917","lastModified":"2022-06-17T19:24:12.110","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Gogs is an open source self-hosted Git service. In versions of gogs prior to 0.12.9 `DisplayName` does not filter characters input from users, which leads to an XSS vulnerability when directly displayed in the issue list. This issue has been resolved in commit 155cae1d which sanitizes `DisplayName` prior to display to the user. All users of gogs are advised to upgrade. Users unable to upgrade should check their users' display names for malicious characters."},{"lang":"es","value":"Gogs es un servicio Git de código abierto auto alojado. En versiones de gogs anteriores a 0.12.9 \"DisplayName\" no filtra la entrada de caracteres de los usuarios, lo que conlleva a una vulnerabilidad de tipo XSS cuando es mostrado directamente en la lista de problemas. Este problema ha sido resuelto en el commit 155cae1d que sanea \"DisplayName\" antes de mostrarlo al usuario. Es recomendado a todos los usuarios de gogs actualizar. Los usuarios que no puedan actualizarse deberían comprobar si los nombres de pantalla de sus usuarios contienen caracteres maliciosos"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.3,"impactScore":2.7},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.3,"impactScore":2.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:S\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"SINGLE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":3.5},"baseSeverity":"LOW","exploitabilityScore":6.8,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"security-advisories@github.com","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:gogs:gogs:*:*:*:*:*:*:*:*","versionEndExcluding":"0.12.9","matchCriteriaId":"4DAD0C2A-2575-4160-90B2-D024A0A41B0A"}]}]}],"references":[{"url":"https:\/\/github.com\/gogs\/gogs\/commit\/155cae1de8916fc3fde78f350763034b7422caee","source":"security-advisories@github.com","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/gogs\/gogs\/pull\/7009","source":"security-advisories@github.com","tags":["Issue Tracking","Third Party Advisory"]},{"url":"https:\/\/github.com\/gogs\/gogs\/security\/advisories\/GHSA-xq4v-vrp9-vcf2","source":"security-advisories@github.com","tags":["Issue Tracking","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-32174","sourceIdentifier":"vulnerabilitylab@mend.io","published":"2022-10-11T15:15:09.837","lastModified":"2023-11-07T03:47:45.220","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"In Gogs, versions v0.6.5 through v0.12.10 are vulnerable to Stored Cross-Site Scripting (XSS) that leads to an account takeover."},{"lang":"es","value":"En Gogs, las versiones v0.6.5 hasta v0.12.10, son vulnerables a un ataque de tipo Cross-Site Scripting (XSS) Almacenado que conlleva una toma de control de la cuenta"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.0,"baseSeverity":"CRITICAL"},"exploitabilityScore":2.3,"impactScore":6.0}]},"weaknesses":[{"source":"vulnerabilitylab@mend.io","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:gogs:gogs:*:*:*:*:*:*:*:*","versionStartIncluding":"0.6.5","versionEndIncluding":"0.12.10","matchCriteriaId":"6422D77B-BAA8-472C-A3D2-88776374CE8B"}]}]}],"references":[{"url":"https:\/\/github.com\/gogs\/gogs\/blob\/v0.12.10\/public\/js\/gogs.js#L263","source":"vulnerabilitylab@mend.io","tags":["Exploit","Third Party Advisory"]},{"url":"https:\/\/www.mend.io\/vulnerability-database\/CVE-2022-32174","source":"vulnerabilitylab@mend.io","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-2024","sourceIdentifier":"security@huntr.dev","published":"2023-02-25T08:15:09.817","lastModified":"2023-03-09T13:59:24.787","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"OS Command Injection in GitHub repository gogs\/gogs prior to 0.12.11."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.8,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.9}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.8,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.9}]},"weaknesses":[{"source":"security@huntr.dev","type":"Primary","description":[{"lang":"en","value":"CWE-78"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:gogs:gogs:*:*:*:*:*:*:*:*","versionEndExcluding":"0.12.11","matchCriteriaId":"57BD1B53-2A2C-47F5-892D-1C4880E5B1B9"}]}]}],"references":[{"url":"https:\/\/github.com\/gogs\/gogs\/commit\/15d0d6a94be0098a8227b6b95bdf2daed105ec41","source":"security@huntr.dev","tags":["Patch"]},{"url":"https:\/\/huntr.dev\/bounties\/18cf9256-23ab-4098-a769-85f8da130f97","source":"security@huntr.dev","tags":["Exploit","Patch"]}]}}]}
+{
+    "resultsPerPage": 23,
+    "startIndex": 0,
+    "totalResults": 23,
+    "format": "NVD_CVE",
+    "version": "2.0",
+    "timestamp": "2024-04-30T10:43:10.557",
+    "vulnerabilities": [
+        {
+            "cve": {
+                "id": "CVE-2018-15178",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2018-08-08T00:29:02.583",
+                "lastModified": "2018-10-05T13:18:50.857",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Open redirect vulnerability in Gogs before 0.12 allows remote attackers to redirect users to arbitrary websites and conduct phishing attacks via an initial /\\ substring in the user/login redirect_to parameter, related to the function isValidRedirect in routes/user/auth.go."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Vulnerabilidad de redirecci\u00f3n abierta en Gogs en versiones anteriores a la 0.12 permite que atacantes remotos redirijan a usuarios a sitios web arbitrarios y lleven a cabo ataques de phishing mediante una subcadena /\\ inicial en el par\u00e1metro redirect_to en user/login. Esto est\u00e1 relacionado con la funci\u00f3n isValidRedirect en routes/user/auth.go."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.1,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:P/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.8
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 4.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-601"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:gogs:gogs:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "0.12",
+                                        "matchCriteriaId": "5A12227F-4CC1-4D7E-A306-A32AC4883567"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/gogs/gogs/issues/5364",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/gogs/gogs/pull/5365",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2018-15192",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2018-08-08T02:29:00.273",
+                "lastModified": "2018-10-18T17:02:50.947",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "An SSRF vulnerability in webhooks in Gitea through 1.5.0-rc2 and Gogs through 0.11.53 allows remote attackers to access intranet services."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Una vulnerabilidad de Server-Side Request Forgery (SSRF) en webhooks en Gitea hasta la versi\u00f3n 1.5.0-rc2 y Gogs hasta la versi\u00f3n 0.11.53 permite que los atacantes remotos accedan a los servicios de la intranet."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 8.6,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 4.0
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": true,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-918"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:gitea:gitea:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "1.5.0",
+                                        "matchCriteriaId": "A245EAFE-88C9-470E-9B7A-F8D32F25E2A2"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:gitea:gitea:1.5.0:rc1:*:*:*:*:*:*",
+                                        "matchCriteriaId": "874A1062-D5F9-4601-9DE0-4D205DF0E29A"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:gitea:gitea:1.5.0:rc2:*:*:*:*:*:*",
+                                        "matchCriteriaId": "9A2A9763-A3D0-447F-8D7E-3E12AB28E6C0"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:gogs:gogs:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "0.11.53",
+                                        "matchCriteriaId": "D983AEBA-5615-4545-871A-1C17FC38FA1C"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/go-gitea/gitea/issues/4624",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Issue Tracking",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/gogs/gogs/issues/5366",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2018-15193",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2018-08-08T02:29:00.757",
+                "lastModified": "2018-10-05T13:17:10.917",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "A CSRF vulnerability in the admin panel in Gogs through 0.11.53 allows remote attackers to execute admin operations via a crafted issue / link."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Una vulnerabilidad de Cross-Site Request Forgery (CSRF) en el panel de administraci\u00f3n en Gogs hasta la versi\u00f3n 0.11.53 permite que atacantes remotos ejecuten operaciones de administrador mediante un problema/enlace manipulado."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 8.8,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 6.8
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-352"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:gogs:gogs:0.11.53:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "612D4EF5-DECD-4D10-8154-21B563353229"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/gogs/gogs/issues/5367",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2018-16409",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2018-09-03T19:29:01.243",
+                "lastModified": "2018-11-06T15:06:56.427",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "In Gogs 0.11.53, an attacker can use migrate to send arbitrary HTTP GET requests, leading to SSRF."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "En Gogs 0.11.53, un atacante puede emplear migrate para enviar peticiones HTTP GET arbitrarias, lo que conduce a Server-Side Request Forgery (SSRF)."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 8.6,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 4.0
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-918"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:gogs:gogs:0.11.53:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "612D4EF5-DECD-4D10-8154-21B563353229"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/gogs/gogs/issues/5372",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Issue Tracking",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2018-17031",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2018-09-14T02:29:00.390",
+                "lastModified": "2018-11-07T19:06:43.053",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "In Gogs 0.11.53, an attacker can use a crafted .eml file to trigger MIME type sniffing, which leads to XSS, as demonstrated by Internet Explorer, because an \"X-Content-Type-Options: nosniff\" header is not sent."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "En Gogs 0.11.53, un atacante puede emplear un archivo .eml manipulado para desencadenar el rastreo de tipos MIME, lo que conduce a Cross-Site Scripting (XSS). Esto queda demostrado por Internet Explorer, debido a que no se env\u00eda una cabecera \"X-Content-Type-Options: nosniff\"."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.1,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:gogs:gogs:0.11.53:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "612D4EF5-DECD-4D10-8154-21B563353229"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/gogs/gogs/issues/5397",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2018-18925",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2018-11-04T05:29:00.397",
+                "lastModified": "2019-01-29T18:07:56.213",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Gogs 0.11.66 allows remote code execution because it does not properly validate session IDs, as demonstrated by a \"..\" session-file forgery in the file session provider in file.go. This is related to session ID handling in the go-macaron/session code for Macaron."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Gogs 0.11.66 permite la ejecuci\u00f3n remota de c\u00f3digo debido a que no valida correctamente los ID de sesi\u00f3n, tal y como queda demostrado por una falsificaci\u00f3n de archivos de sesi\u00f3n \"..\" en el proveedor de sesi\u00f3n de archivos en file.go. Esto est\u00e1 relacionado con el manejo de ID de sesi\u00f3n en el c\u00f3digo go-macaron/session para Macaron."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.8,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 7.5
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-384"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:gogs:gogs:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "0.11.66",
+                                        "matchCriteriaId": "19C82C8E-F556-4B88-BBC5-C2BB69C80723"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/gogs/gogs/issues/5469",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2018-20303",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2018-12-20T00:29:00.350",
+                "lastModified": "2019-01-31T19:02:30.910",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "In pkg/tool/path.go in Gogs before 0.11.82.1218, a directory traversal in the file-upload functionality can allow an attacker to create a file under data/sessions on the server, a similar issue to CVE-2018-18925."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "En pkg/tool/path.go en Gogs en versiones anteriores a la 0.11.82.1218, un salto de directorio en la funcionalidad de subida de archivos puede permitir que un atacante cree un archivo en data/sessions en el servidor. Este problema es similar a CVE-2018-18925."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 7.5,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 3.6
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-22"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:gogs:gogs:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "0.11.82.1218",
+                                        "matchCriteriaId": "76D9F97B-6525-4671-B70A-025DAE48F051"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/gogs/gogs/commit/ff93d9dbda5cebe90d86e4b7dfb2c6b8642970ce",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/gogs/gogs/issues/5558",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Issue Tracking",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://pentesterlab.com/exercises/cve-2018-18925/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2019-14544",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2019-08-02T22:15:14.457",
+                "lastModified": "2020-08-24T17:37:01.140",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "routes/api/v1/api.go in Gogs 0.11.86 lacks permission checks for routes: deploy keys, collaborators, and hooks."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "En el archivo routes/api/v1/api.go en Gogs versi\u00f3n 0.11.86, carece de comprobaciones de permisos para las rutas: deploy keys, collaborators y hooks."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.8,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 7.5
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-862"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:gogs:gogs:0.11.86:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "82A53A05-6C38-4E68-8C83-BD7541B3815B"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/gogs/gogs/issues/5764",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Issue Tracking",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2020-9329",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2020-02-21T22:15:10.880",
+                "lastModified": "2020-02-25T21:26:41.717",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Gogs through 0.11.91 allows attackers to violate the admin-specified repo-creation policy due to an internal/db/repo.go race condition."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Gogs versiones hasta 0.11.91, permite a atacantes violar la pol\u00edtica de repo-creation especificada por el administrador debido a una condici\u00f3n de carrera interna del archivo /db/repo.go."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "HIGH",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.9,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.2,
+                            "impactScore": 3.6
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-362"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:gogs:gogs:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "0.11.91",
+                                        "matchCriteriaId": "EA2B75BE-EE0C-4E9B-8ACD-DD233A9EBAA7"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/gogs/gogs/issues/5926",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2020-14958",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2020-06-21T20:15:09.533",
+                "lastModified": "2020-06-26T20:28:38.410",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "In Gogs 0.11.91, MakeEmailPrimary in models/user_mail.go lacks a \"not the owner of the email\" check."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "En Gogs versi\u00f3n 0.11.91, la funci\u00f3n MakeEmailPrimary en el archivo models/user_mail.go carece de una comprobaci\u00f3n de \"not the owner of the email\""
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.5,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 3.6
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:S/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-281"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:gogs:gogs:0.11.91:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "410CBAD0-A40A-4F7D-845C-4C218F7FAA6C"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/gogs/gogs/commit/82ff0c5852f29daa5f95d965fd50665581e7ea3c",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/gogs/gogs/pull/5988",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2020-15867",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2020-10-16T14:15:11.627",
+                "lastModified": "2022-04-26T17:06:46.660",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "The git hook feature in Gogs 0.5.5 through 0.12.2 allows for authenticated remote code execution. There can be a privilege escalation if access to this hook feature is granted to a user who does not have administrative privileges. NOTE: because this is mentioned in the documentation but not in the UI, it could be considered a \"Product UI does not Warn User of Unsafe Actions\" issue."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "La caracter\u00edstica de gancho git en Gogs versiones 0.5.5 hasta 0.12.2 permite la ejecuci\u00f3n de c\u00f3digo remoto autenticado. Puede haber una escalada de privilegios si el acceso a esta caracter\u00edstica de gancho se concede a un usuario que no tiene privilegios administrativos. NOTA: debido a que esto se menciona en la documentaci\u00f3n pero no en la interfaz de usuario, podr\u00eda considerarse un problema de \"La interfaz de usuario del producto no advierte al usuario de acciones inseguras\""
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "HIGH",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 7.2,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 1.2,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 6.5
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "NVD-CWE-noinfo"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:gogs:gogs:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "0.5.5",
+                                        "versionEndIncluding": "0.12.2",
+                                        "matchCriteriaId": "2534B2F0-4CE5-4DA4-A352-5AC07C21EA03"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://packetstormsecurity.com/files/162123/Gogs-Git-Hooks-Remote-Code-Execution.html",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory",
+                            "VDB Entry"
+                        ]
+                    },
+                    {
+                        "url": "https://www.fzi.de/en/news/news/detail-en/artikel/fsa-2020-3-schwachstelle-in-gitea-1125-und-gogs-0122-ermoeglicht-ausfuehrung-von-code-nach-authent/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-0870",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2022-03-11T11:15:07.897",
+                "lastModified": "2022-03-22T13:35:06.773",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Server-Side Request Forgery (SSRF) in GitHub repository gogs/gogs prior to 0.12.5."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Una vulnerabilidad de tipo Server-Side Request Forgery (SSRF) en el repositorio de GitHub gogs/gogs versiones anteriores a 0.12.5"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.3,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 1.4
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.0,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 3.1,
+                            "impactScore": 1.4
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-918"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-918"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:gogs:gogs:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "0.12.5",
+                                        "matchCriteriaId": "BA3DD858-E721-489E-B886-56B23A6F6325"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/gogs/gogs/commit/91f2cde5e95f146bfe4765e837e7282df6c7cabb",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/327797d7-ae41-498f-9bff-cc0bf98cf531",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Issue Tracking",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-0871",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2022-03-11T12:15:07.667",
+                "lastModified": "2023-06-29T09:15:10.410",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Missing Authorization in GitHub repository gogs/gogs prior to 0.12.5."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Una Autorizaci\u00f3n Inapropiada en el repositorio de GitHub gogs/gogs versiones anteriores a 0.12.5"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 9.1,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.2
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 8.2,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 4.2
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:P/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.8
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 4.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-862"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-862"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:gogs:gogs:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "0.12.5",
+                                        "matchCriteriaId": "BA3DD858-E721-489E-B886-56B23A6F6325"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/gogs/gogs/commit/64102be2c90e1b47dbdd379873ba76c80d4b0e78",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/ea82cfc9-b55c-41fe-ae58-0d0e0bd7ab62",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Issue Tracking",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-0415",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2022-03-21T11:15:10.757",
+                "lastModified": "2022-03-25T18:14:47.773",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Remote Command Execution in uploading repository file in GitHub repository gogs/gogs prior to 0.12.6."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Una Ejecuci\u00f3n de Comandos Remota en la carga de un archivo de repositorio en el repositorio de GitHub gogs/gogs versiones anteriores a 0.12.6"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 8.8,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.9,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.1,
+                            "impactScore": 6.0
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 6.5
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-434"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-20"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:gogs:gogs:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "0.12.6",
+                                        "matchCriteriaId": "8D0C289A-C304-438C-8AAA-2D84DA7C48B3"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/gogs/gogs/commit/0fef3c9082269e9a4e817274942a5d7c50617284",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/b4928cfe-4110-462f-a180-6d5673797902",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-1464",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2022-05-05T14:15:08.010",
+                "lastModified": "2022-05-13T18:27:15.997",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Stored xss bug in GitHub repository gogs/gogs prior to 0.12.7. As the repo is public , any user can view the report and when open the attachment then xss is executed. This bug allow executed any javascript code in victim account ."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Un bug de tipo xss almacenado en el repositorio de GitHub gogs/gogs versiones anteriores a 0.12.7. Como el repositorio es p\u00fablico, cualquier usuario puede visualizar el informe y cuando abre el archivo adjunto es ejecutado el ataque de tipo xss. Este error permite ejecutar cualquier c\u00f3digo javascript en la cuenta de la v\u00edctima"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "LOW",
+                                "baseScore": 7.3,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 3.4
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 3.5
+                            },
+                            "baseSeverity": "LOW",
+                            "exploitabilityScore": 6.8,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:gogs:gogs:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "0.12.7",
+                                        "matchCriteriaId": "29733251-D132-49EF-A387-88B54749F501"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/gogs/gogs/commit/bc77440b301ac8780698be91dff1ac33b7cee850",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/34a12146-3a5d-4efc-a0f8-7a3ae04b198d",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-1285",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2022-06-01T06:15:07.193",
+                "lastModified": "2022-06-08T19:53:03.027",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Server-Side Request Forgery (SSRF) in GitHub repository gogs/gogs prior to 0.12.8."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Una vulnerabilidad de tipo Server-Side Request Forgery (SSRF) en el repositorio de GitHub gogs/gogs versiones anteriores a 0.12.8"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.5,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 3.6
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:L",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "LOW",
+                                "baseScore": 8.3,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 3.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:P/I:N/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-918"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-918"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:gogs:gogs:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "0.12.8",
+                                        "matchCriteriaId": "95A31B26-0A2D-4BC0-AC6C-4342A81CC093"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/gogs/gogs/commit/7885f454a4946c4bbec1b4f8c603b5eea7429c7f",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/da1fbd6e-7a02-458e-9c2e-6d226c47046d",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-32546",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2022-06-02T14:15:28.587",
+                "lastModified": "2022-06-09T14:49:48.150",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Missing input validation in internal/db/repo_editor.go in Gogs before 0.12.8 allows an attacker to execute code remotely. An unprivileged attacker (registered user) can overwrite the Git configuration in his repository. This leads to Remote Command Execution, because that configuration can contain an option such as sshCommand, which is executed when a master branch is a remote branch (using an ssh:// URI). The remote branch can also be configured by editing the Git configuration file. One can create a new file in a new repository, using the GUI, with \"\\\" as its name, and then rename this file to .git/config with the custom configuration content (and then save it)."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Una falta de comprobaci\u00f3n de entrada en el archivo internal/db/repo_editor.go en Gogs versiones anteriores a 0.12.8, permite a un atacante ejecutar c\u00f3digo de forma remota. Un atacante no privilegiado (usuario registrado) puede sobrescribir la configuraci\u00f3n de Git en su repositorio. Esto conlleva a una Ejecuci\u00f3n de Comandos Remota, porque esa configuraci\u00f3n puede contener una opci\u00f3n como sshCommand, que es ejecutado cuando una rama maestra es una rama remota (usando una URI ssh://). La rama remota tambi\u00e9n puede configurarse al editar el archivo de configuraci\u00f3n de Git. Puede crearse un nuevo archivo en un nuevo repositorio, usando la interfaz gr\u00e1fica de usuario, con \"\\ ~\" como su nombre, y luego cambiar el nombre de este archivo a .git / configuraci\u00f3n con el contenido de la configuraci\u00f3n personalizada (y luego guardarlo)"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 8.8,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 6.5
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "NVD-CWE-noinfo"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:gogs:gogs:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "0.12.8",
+                                        "matchCriteriaId": "95A31B26-0A2D-4BC0-AC6C-4342A81CC093"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/gogs/gogs/releases",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Release Notes",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/gogs/gogs/security/advisories/GHSA-56j7-2pm8-rgmx",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Issue Tracking",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-1986",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2022-06-09T17:15:08.627",
+                "lastModified": "2022-06-15T17:01:21.060",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "OS Command Injection in GitHub repository gogs/gogs prior to 0.12.9."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Una Inyecci\u00f3n de comandos del Sistema Operativo en el repositorio de GitHub gogs/gogs versiones anteriores a 0.12.9"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.8,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 10.0,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 6.0
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 7.5
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-78"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-78"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:gogs:gogs:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "0.12.9",
+                                        "matchCriteriaId": "4DAD0C2A-2575-4160-90B2-D024A0A41B0A"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/gogs/gogs/commit/38aff73251cc46ced96dd608dab6190415032a82",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/776e8f29-ff5e-4501-bb9f-0bd335007930",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-1992",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2022-06-09T17:15:08.683",
+                "lastModified": "2022-06-15T16:59:14.337",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Path Traversal in GitHub repository gogs/gogs prior to 0.12.9."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Un Salto de Ruta en el repositorio de GitHub gogs/gogs versiones anteriores a 0.12.9"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.1,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.2
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 10.0,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 6.0
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:N/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 6.4
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 4.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-22"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-22"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "operator": "AND",
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:gogs:gogs:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "0.12.9",
+                                        "matchCriteriaId": "4DAD0C2A-2575-4160-90B2-D024A0A41B0A"
+                                    }
+                                ]
+                            },
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": false,
+                                        "criteria": "cpe:2.3:o:microsoft:windows:-:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "A2572D17-1DE6-457B-99CC-64AFD54487EA"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/gogs/gogs/commit/2ca014250fbf0bba94c914d9e43b1f6d8eca3bb0",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/2e8cdc57-a9cf-46ae-9088-87f09e6c90ab",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-1993",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2022-06-09T17:15:08.733",
+                "lastModified": "2022-06-15T16:41:44.443",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Path Traversal in GitHub repository gogs/gogs prior to 0.12.9."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Un Salto de Ruta en el repositorio de GitHub gogs/gogs versiones anteriores a 0.12.9"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 8.1,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 5.2
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 8.1,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 5.2
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:S/C:P/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.5
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.0,
+                            "impactScore": 4.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-22"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-22"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:gogs:gogs:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "0.12.9",
+                                        "matchCriteriaId": "4DAD0C2A-2575-4160-90B2-D024A0A41B0A"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/gogs/gogs/commit/9bf748b6c4c9a17d3aa77f6b9abcfae65451febf",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/22f9c074-cf60-4c67-b5c4-72fdf312609d",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-31038",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2022-06-09T17:15:09.917",
+                "lastModified": "2022-06-17T19:24:12.110",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Gogs is an open source self-hosted Git service. In versions of gogs prior to 0.12.9 `DisplayName` does not filter characters input from users, which leads to an XSS vulnerability when directly displayed in the issue list. This issue has been resolved in commit 155cae1d which sanitizes `DisplayName` prior to display to the user. All users of gogs are advised to upgrade. Users unable to upgrade should check their users' display names for malicious characters."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Gogs es un servicio Git de c\u00f3digo abierto auto alojado. En versiones de gogs anteriores a 0.12.9 \"DisplayName\" no filtra la entrada de caracteres de los usuarios, lo que conlleva a una vulnerabilidad de tipo XSS cuando es mostrado directamente en la lista de problemas. Este problema ha sido resuelto en el commit 155cae1d que sanea \"DisplayName\" antes de mostrarlo al usuario. Es recomendado a todos los usuarios de gogs actualizar. Los usuarios que no puedan actualizarse deber\u00edan comprobar si los nombres de pantalla de sus usuarios contienen caracteres maliciosos"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 2.7
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 3.5
+                            },
+                            "baseSeverity": "LOW",
+                            "exploitabilityScore": 6.8,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:gogs:gogs:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "0.12.9",
+                                        "matchCriteriaId": "4DAD0C2A-2575-4160-90B2-D024A0A41B0A"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/gogs/gogs/commit/155cae1de8916fc3fde78f350763034b7422caee",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/gogs/gogs/pull/7009",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Issue Tracking",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/gogs/gogs/security/advisories/GHSA-xq4v-vrp9-vcf2",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Issue Tracking",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-32174",
+                "sourceIdentifier": "vulnerabilitylab@mend.io",
+                "published": "2022-10-11T15:15:09.837",
+                "lastModified": "2023-11-07T03:47:45.220",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "In Gogs, versions v0.6.5 through v0.12.10 are vulnerable to Stored Cross-Site Scripting (XSS) that leads to an account takeover."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "En Gogs, las versiones v0.6.5 hasta v0.12.10, son vulnerables a un ataque de tipo Cross-Site Scripting (XSS) Almacenado que conlleva una toma de control de la cuenta"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.0,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 6.0
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "vulnerabilitylab@mend.io",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:gogs:gogs:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "0.6.5",
+                                        "versionEndIncluding": "0.12.10",
+                                        "matchCriteriaId": "6422D77B-BAA8-472C-A3D2-88776374CE8B"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/gogs/gogs/blob/v0.12.10/public/js/gogs.js#L263",
+                        "source": "vulnerabilitylab@mend.io",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.mend.io/vulnerability-database/CVE-2022-32174",
+                        "source": "vulnerabilitylab@mend.io",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-2024",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2023-02-25T08:15:09.817",
+                "lastModified": "2023-03-09T13:59:24.787",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "OS Command Injection in GitHub repository gogs/gogs prior to 0.12.11."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.8,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.8,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.9
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-78"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:gogs:gogs:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "0.12.11",
+                                        "matchCriteriaId": "57BD1B53-2A2C-47F5-892D-1C4880E5B1B9"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/gogs/gogs/commit/15d0d6a94be0098a8227b6b95bdf2daed105ec41",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/18cf9256-23ab-4098-a769-85f8da130f97",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Patch"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

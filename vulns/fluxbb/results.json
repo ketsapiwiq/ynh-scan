@@ -1,1 +1,842 @@
-{"resultsPerPage":7,"startIndex":0,"totalResults":7,"format":"NVD_CVE","version":"2.0","timestamp":"2024-04-30T10:41:56.157","vulnerabilities":[{"cve":{"id":"CVE-2014-10029","sourceIdentifier":"cve@mitre.org","published":"2015-01-13T11:59:35.927","lastModified":"2017-09-08T01:29:03.607","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"SQL injection vulnerability in profile.php in FluxBB before 1.4.13 and 1.5.x before 1.5.7 allows remote attackers to execute arbitrary SQL commands via the req_new_email parameter."},{"lang":"es","value":"Vulnerabilidad de inyección SQL en profile.php en FluxBB anterior a 1.4.13 y 1.5.x anterior a 1.5.7 permite a atacantes remotos ejecutar comandos SQL arbitrarios a través del parámetro req_new_email."}],"metrics":{"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":7.5},"baseSeverity":"HIGH","exploitabilityScore":10.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-89"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:fluxbb:fluxbb:*:*:*:*:*:*:*:*","versionEndIncluding":"1.4.11","matchCriteriaId":"955B7084-02E6-442D-875F-6D464F77C48E"},{"vulnerable":true,"criteria":"cpe:2.3:a:fluxbb:fluxbb:1.5.0:*:*:*:*:*:*:*","matchCriteriaId":"A31E9E4E-807E-48CC-911C-764893B09521"},{"vulnerable":true,"criteria":"cpe:2.3:a:fluxbb:fluxbb:1.5.1:*:*:*:*:*:*:*","matchCriteriaId":"B01EE003-C242-4954-BEBD-C24B7BEAD1E9"},{"vulnerable":true,"criteria":"cpe:2.3:a:fluxbb:fluxbb:1.5.2:*:*:*:*:*:*:*","matchCriteriaId":"6F4A8ACD-7124-41A5-9BD9-435025708A74"},{"vulnerable":true,"criteria":"cpe:2.3:a:fluxbb:fluxbb:1.5.3:*:*:*:*:*:*:*","matchCriteriaId":"45A3613C-FE63-452D-A7D1-29129F0F3E8C"},{"vulnerable":true,"criteria":"cpe:2.3:a:fluxbb:fluxbb:1.5.4:*:*:*:*:*:*:*","matchCriteriaId":"51CA83BC-DA8C-434F-8121-AF7081F2C469"},{"vulnerable":true,"criteria":"cpe:2.3:a:fluxbb:fluxbb:1.5.5:*:*:*:*:*:*:*","matchCriteriaId":"61E5E79E-1F8E-4D0B-976D-059A798DB1A4"},{"vulnerable":true,"criteria":"cpe:2.3:a:fluxbb:fluxbb:1.5.6:*:*:*:*:*:*:*","matchCriteriaId":"20AEAB58-F837-413E-B8A9-A54BAB45AD9A"}]}]}],"references":[{"url":"http:\/\/fluxbb.org\/forums\/viewtopic.php?id=8001","source":"cve@mitre.org","tags":["Vendor Advisory"]},{"url":"http:\/\/packetstormsecurity.com\/files\/129225\/FluxBB-1.5.6-SQL-Injection.html","source":"cve@mitre.org","tags":["Exploit"]},{"url":"http:\/\/seclists.org\/fulldisclosure\/2014\/Nov\/73","source":"cve@mitre.org","tags":["Exploit"]},{"url":"http:\/\/secunia.com\/advisories\/59038","source":"cve@mitre.org"},{"url":"https:\/\/exchange.xforce.ibmcloud.com\/vulnerabilities\/98890","source":"cve@mitre.org"},{"url":"https:\/\/fluxbb.org\/development\/core\/tickets\/990\/","source":"cve@mitre.org","tags":["Vendor Advisory"]}]}},{"cve":{"id":"CVE-2014-10030","sourceIdentifier":"cve@mitre.org","published":"2015-01-13T11:59:36.867","lastModified":"2015-01-14T00:32:03.767","vulnStatus":"Analyzed","evaluatorComment":"<a href=\"http:\/\/cwe.mitre.org\/data\/definitions\/601.html\">CWE-601: URL Redirection to Untrusted Site ('Open Redirect')<\/a>","descriptions":[{"lang":"en","value":"Open redirect vulnerability in forums\/login.php in FluxBB before 1.4.13 and 1.5.x before 1.5.7 allows remote attackers to redirect users to arbitrary web sites and conduct phishing attacks via a URL in the redirect_url parameter."},{"lang":"es","value":"Vulnerabilidad de la redirección abierta en forums\/login.php en FluxBB anterior a 1.4.13 y 1.5.x anterior a 1.5.7 permite a atacantes remotos redirigir usuarios a sitios web arbitrarios y realizar ataques de phishing a través de una URL en el parámetro redirect_url."}],"metrics":{"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:P\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":5.8},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":4.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"NVD-CWE-Other"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:fluxbb:fluxbb:*:*:*:*:*:*:*:*","versionEndIncluding":"1.4.11","matchCriteriaId":"955B7084-02E6-442D-875F-6D464F77C48E"},{"vulnerable":true,"criteria":"cpe:2.3:a:fluxbb:fluxbb:1.5.0:*:*:*:*:*:*:*","matchCriteriaId":"A31E9E4E-807E-48CC-911C-764893B09521"},{"vulnerable":true,"criteria":"cpe:2.3:a:fluxbb:fluxbb:1.5.1:*:*:*:*:*:*:*","matchCriteriaId":"B01EE003-C242-4954-BEBD-C24B7BEAD1E9"},{"vulnerable":true,"criteria":"cpe:2.3:a:fluxbb:fluxbb:1.5.2:*:*:*:*:*:*:*","matchCriteriaId":"6F4A8ACD-7124-41A5-9BD9-435025708A74"},{"vulnerable":true,"criteria":"cpe:2.3:a:fluxbb:fluxbb:1.5.3:*:*:*:*:*:*:*","matchCriteriaId":"45A3613C-FE63-452D-A7D1-29129F0F3E8C"},{"vulnerable":true,"criteria":"cpe:2.3:a:fluxbb:fluxbb:1.5.4:*:*:*:*:*:*:*","matchCriteriaId":"51CA83BC-DA8C-434F-8121-AF7081F2C469"},{"vulnerable":true,"criteria":"cpe:2.3:a:fluxbb:fluxbb:1.5.5:*:*:*:*:*:*:*","matchCriteriaId":"61E5E79E-1F8E-4D0B-976D-059A798DB1A4"},{"vulnerable":true,"criteria":"cpe:2.3:a:fluxbb:fluxbb:1.5.6:*:*:*:*:*:*:*","matchCriteriaId":"20AEAB58-F837-413E-B8A9-A54BAB45AD9A"}]}]}],"references":[{"url":"http:\/\/fluxbb.org\/forums\/viewtopic.php?id=8001","source":"cve@mitre.org","tags":["Vendor Advisory"]},{"url":"https:\/\/fluxbb.org\/development\/core\/tickets\/961\/","source":"cve@mitre.org","tags":["Exploit"]}]}},{"cve":{"id":"CVE-2014-9574","sourceIdentifier":"cve@mitre.org","published":"2015-02-03T16:59:08.657","lastModified":"2017-09-08T01:29:36.433","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"Directory traversal vulnerability in install.php in FluxBB before 1.5.8 allows remote attackers to include and execute arbitrary local install.php files via a .. (dot dot) in the install_lang parameter."},{"lang":"es","value":"Vulnerabilidad de salto de directorio en install.php en FluxBB anterior a 1.5.8 permite a atacantes remotos incluir y ejecutar ficheros install.php locales arbitrarios a través de un .. (punto punto) en el parámetro install_lang."}],"metrics":{"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:C\/I:C\/A:C","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"COMPLETE","integrityImpact":"COMPLETE","availabilityImpact":"COMPLETE","baseScore":9.3},"baseSeverity":"HIGH","exploitabilityScore":8.6,"impactScore":10.0,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-22"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:fluxbb:fluxbb:*:*:*:*:*:*:*:*","versionEndIncluding":"1.5.7","matchCriteriaId":"200B08DD-EAD9-4583-AFCC-4B5149942F2B"}]}]}],"references":[{"url":"https:\/\/exchange.xforce.ibmcloud.com\/vulnerabilities\/100506","source":"cve@mitre.org"},{"url":"https:\/\/fluxbb.org\/forums\/viewtopic.php?id=8203","source":"cve@mitre.org","tags":["Vendor Advisory"]},{"url":"https:\/\/www.htbridge.com\/advisory\/HTB23246","source":"cve@mitre.org","tags":["Exploit"]}]}},{"cve":{"id":"CVE-2011-3621","sourceIdentifier":"secalert@redhat.com","published":"2020-01-22T18:15:11.937","lastModified":"2020-01-30T16:48:17.327","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"A reverse proxy issue exists in FluxBB before 1.4.7 when FORUM_BEHIND_REVERSE_PROXY is enabled."},{"lang":"es","value":"Se presenta un problema de proxy inverso en FluxBB versiones anteriores a 1.4.7, cuando FORUM_BEHIND_REVERSE_PROXY está habilitado."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.8,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.9}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":7.5},"baseSeverity":"HIGH","exploitabilityScore":10.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"NVD-CWE-noinfo"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:fluxbb:fluxbb:*:*:*:*:*:*:*:*","versionEndExcluding":"1.4.7","matchCriteriaId":"37C68584-36DE-4BE8-ADA8-649E808FA226"}]}]}],"references":[{"url":"https:\/\/fluxbb.org\/forums\/viewtopic.php?id=5751","source":"secalert@redhat.com","tags":["Vendor Advisory"]},{"url":"https:\/\/www.openwall.com\/lists\/oss-security\/2011\/10\/18\/8","source":"secalert@redhat.com","tags":["Mailing List","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2020-35240","sourceIdentifier":"cve@mitre.org","published":"2020-12-30T15:15:13.027","lastModified":"2022-04-22T18:54:03.520","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"FluxBB 1.5.11 is affected by cross-site scripting (XSS in the Blog Content component. This vulnerability can allow an attacker to inject the XSS payload in \"Blog Content\" and each time any user will visit the blog, the XSS triggers and the attacker can able to steal the cookie according to the crafted payload."},{"lang":"es","value":"FluxBB versión 1.5.11, está afectado por una vulnerabilidad de tipo cross-site scripting, (XSS) en el componente Blog Content. Esta vulnerabilidad puede permitir a un atacante inyectar una carga útil de tipo XSS en \"Blog Content\" y cada vez que un usuario visite el blog, el XSS se desencadena y el atacante puede ser capaz de robar la cookie de acuerdo a la carga útil diseñada."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:H\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"HIGH","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":4.8,"baseSeverity":"MEDIUM"},"exploitabilityScore":1.7,"impactScore":2.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:S\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"SINGLE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":3.5},"baseSeverity":"LOW","exploitabilityScore":6.8,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:fluxbb:fluxbb:1.5.11:*:*:*:*:*:*:*","matchCriteriaId":"4294CBC2-85BA-4C0F-90D3-E655F78495DF"}]}]}],"references":[{"url":"https:\/\/fluxbb.org\/downloads\/","source":"cve@mitre.org","tags":["Vendor Advisory"]},{"url":"https:\/\/github.com\/hemantsolo\/CVE-Reference\/blob\/main\/CVE-2020-35240.md","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]},{"url":"https:\/\/github.com\/hemantsolo\/CVE-Reference\/issues\/1","source":"cve@mitre.org","tags":["Third Party Advisory"]}]}},{"cve":{"id":"CVE-2020-28873","sourceIdentifier":"cve@mitre.org","published":"2021-03-17T13:15:14.937","lastModified":"2023-11-07T03:21:24.067","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"Fluxbb 1.5.11 is affected by a denial of service (DoS) vulnerability by sending an extremely long password via the user login form. When a long password is sent, the password hashing process will result in CPU and memory exhaustion on the server."},{"lang":"es","value":"Fluxbb versión 1.5.11, está afectado por una vulnerabilidad de denegación de servicio (DoS) al enviar una contraseña extremadamente larga por medio del formulario de inicio de sesión del usuario.&#xa0;Cuando es enviada una contraseña larga, el proceso de hash de contraseña dará como resultado el agotamiento de la CPU y la memoria en el servidor"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:N\/I:N\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"NONE","integrityImpact":"NONE","availabilityImpact":"HIGH","baseScore":7.5,"baseSeverity":"HIGH"},"exploitabilityScore":3.9,"impactScore":3.6}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:N\/I:N\/A:C","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"NONE","availabilityImpact":"COMPLETE","baseScore":7.8},"baseSeverity":"HIGH","exploitabilityScore":10.0,"impactScore":6.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-916"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:fluxbb:fluxbb:1.5.11:*:*:*:*:*:*:*","matchCriteriaId":"4294CBC2-85BA-4C0F-90D3-E655F78495DF"}]}]}],"references":[{"url":"http:\/\/fluxbb.com","source":"cve@mitre.org","tags":["Product"]},{"url":"https:\/\/www.acunetix.com\/vulnerabilities\/web\/long-password-denial-of-service\/#:~:text=By%20sending%20a%20very%20long%2Ca%20vulnerable%20password%20hashing%20implementation","source":"cve@mitre.org"}]}},{"cve":{"id":"CVE-2021-43677","sourceIdentifier":"cve@mitre.org","published":"2022-01-04T20:15:07.550","lastModified":"2022-01-08T02:46:00.583","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Fluxbb v1.4.12 is affected by a Cross Site Scripting (XSS) vulnerability."},{"lang":"es","value":"Fluxbb versión v1.4.12, está afectado por una vulnerabilidad de tipo Cross Site Scripting (XSS)"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.1,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.3},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:fluxbb:fluxbb:1.4.12:*:*:*:*:*:*:*","matchCriteriaId":"8B200BD3-D4AA-477F-8506-A1C5ABE247EB"}]}]}],"references":[{"url":"http:\/\/fluxbb.com","source":"cve@mitre.org","tags":["Vendor Advisory"]},{"url":"https:\/\/github.com\/fluxbb\/fluxbb","source":"cve@mitre.org","tags":["Third Party Advisory"]}]}}]}
+{
+    "resultsPerPage": 7,
+    "startIndex": 0,
+    "totalResults": 7,
+    "format": "NVD_CVE",
+    "version": "2.0",
+    "timestamp": "2024-04-30T10:41:56.157",
+    "vulnerabilities": [
+        {
+            "cve": {
+                "id": "CVE-2014-10029",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2015-01-13T11:59:35.927",
+                "lastModified": "2017-09-08T01:29:03.607",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "SQL injection vulnerability in profile.php in FluxBB before 1.4.13 and 1.5.x before 1.5.7 allows remote attackers to execute arbitrary SQL commands via the req_new_email parameter."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Vulnerabilidad de inyecci\u00f3n SQL en profile.php en FluxBB anterior a 1.4.13 y 1.5.x anterior a 1.5.7 permite a atacantes remotos ejecutar comandos SQL arbitrarios a trav\u00e9s del par\u00e1metro req_new_email."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 7.5
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-89"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:fluxbb:fluxbb:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "1.4.11",
+                                        "matchCriteriaId": "955B7084-02E6-442D-875F-6D464F77C48E"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:fluxbb:fluxbb:1.5.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "A31E9E4E-807E-48CC-911C-764893B09521"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:fluxbb:fluxbb:1.5.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "B01EE003-C242-4954-BEBD-C24B7BEAD1E9"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:fluxbb:fluxbb:1.5.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "6F4A8ACD-7124-41A5-9BD9-435025708A74"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:fluxbb:fluxbb:1.5.3:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "45A3613C-FE63-452D-A7D1-29129F0F3E8C"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:fluxbb:fluxbb:1.5.4:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "51CA83BC-DA8C-434F-8121-AF7081F2C469"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:fluxbb:fluxbb:1.5.5:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "61E5E79E-1F8E-4D0B-976D-059A798DB1A4"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:fluxbb:fluxbb:1.5.6:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "20AEAB58-F837-413E-B8A9-A54BAB45AD9A"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://fluxbb.org/forums/viewtopic.php?id=8001",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "http://packetstormsecurity.com/files/129225/FluxBB-1.5.6-SQL-Injection.html",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit"
+                        ]
+                    },
+                    {
+                        "url": "http://seclists.org/fulldisclosure/2014/Nov/73",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit"
+                        ]
+                    },
+                    {
+                        "url": "http://secunia.com/advisories/59038",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/98890",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "https://fluxbb.org/development/core/tickets/990/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Vendor Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2014-10030",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2015-01-13T11:59:36.867",
+                "lastModified": "2015-01-14T00:32:03.767",
+                "vulnStatus": "Analyzed",
+                "evaluatorComment": "<a href=\"http://cwe.mitre.org/data/definitions/601.html\">CWE-601: URL Redirection to Untrusted Site ('Open Redirect')</a>",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Open redirect vulnerability in forums/login.php in FluxBB before 1.4.13 and 1.5.x before 1.5.7 allows remote attackers to redirect users to arbitrary web sites and conduct phishing attacks via a URL in the redirect_url parameter."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Vulnerabilidad de la redirecci\u00f3n abierta en forums/login.php en FluxBB anterior a 1.4.13 y 1.5.x anterior a 1.5.7 permite a atacantes remotos redirigir usuarios a sitios web arbitrarios y realizar ataques de phishing a trav\u00e9s de una URL en el par\u00e1metro redirect_url."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:P/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.8
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 4.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "NVD-CWE-Other"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:fluxbb:fluxbb:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "1.4.11",
+                                        "matchCriteriaId": "955B7084-02E6-442D-875F-6D464F77C48E"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:fluxbb:fluxbb:1.5.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "A31E9E4E-807E-48CC-911C-764893B09521"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:fluxbb:fluxbb:1.5.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "B01EE003-C242-4954-BEBD-C24B7BEAD1E9"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:fluxbb:fluxbb:1.5.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "6F4A8ACD-7124-41A5-9BD9-435025708A74"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:fluxbb:fluxbb:1.5.3:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "45A3613C-FE63-452D-A7D1-29129F0F3E8C"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:fluxbb:fluxbb:1.5.4:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "51CA83BC-DA8C-434F-8121-AF7081F2C469"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:fluxbb:fluxbb:1.5.5:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "61E5E79E-1F8E-4D0B-976D-059A798DB1A4"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:fluxbb:fluxbb:1.5.6:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "20AEAB58-F837-413E-B8A9-A54BAB45AD9A"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://fluxbb.org/forums/viewtopic.php?id=8001",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://fluxbb.org/development/core/tickets/961/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2014-9574",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2015-02-03T16:59:08.657",
+                "lastModified": "2017-09-08T01:29:36.433",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Directory traversal vulnerability in install.php in FluxBB before 1.5.8 allows remote attackers to include and execute arbitrary local install.php files via a .. (dot dot) in the install_lang parameter."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Vulnerabilidad de salto de directorio en install.php en FluxBB anterior a 1.5.8 permite a atacantes remotos incluir y ejecutar ficheros install.php locales arbitrarios a trav\u00e9s de un .. (punto punto) en el par\u00e1metro install_lang."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:C/I:C/A:C",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "COMPLETE",
+                                "integrityImpact": "COMPLETE",
+                                "availabilityImpact": "COMPLETE",
+                                "baseScore": 9.3
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 10.0,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-22"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:fluxbb:fluxbb:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "1.5.7",
+                                        "matchCriteriaId": "200B08DD-EAD9-4583-AFCC-4B5149942F2B"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/100506",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "https://fluxbb.org/forums/viewtopic.php?id=8203",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.htbridge.com/advisory/HTB23246",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2011-3621",
+                "sourceIdentifier": "secalert@redhat.com",
+                "published": "2020-01-22T18:15:11.937",
+                "lastModified": "2020-01-30T16:48:17.327",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "A reverse proxy issue exists in FluxBB before 1.4.7 when FORUM_BEHIND_REVERSE_PROXY is enabled."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Se presenta un problema de proxy inverso en FluxBB versiones anteriores a 1.4.7, cuando FORUM_BEHIND_REVERSE_PROXY est\u00e1 habilitado."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.8,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 7.5
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "NVD-CWE-noinfo"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:fluxbb:fluxbb:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "1.4.7",
+                                        "matchCriteriaId": "37C68584-36DE-4BE8-ADA8-649E808FA226"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://fluxbb.org/forums/viewtopic.php?id=5751",
+                        "source": "secalert@redhat.com",
+                        "tags": [
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.openwall.com/lists/oss-security/2011/10/18/8",
+                        "source": "secalert@redhat.com",
+                        "tags": [
+                            "Mailing List",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2020-35240",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2020-12-30T15:15:13.027",
+                "lastModified": "2022-04-22T18:54:03.520",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "FluxBB 1.5.11 is affected by cross-site scripting (XSS in the Blog Content component. This vulnerability can allow an attacker to inject the XSS payload in \"Blog Content\" and each time any user will visit the blog, the XSS triggers and the attacker can able to steal the cookie according to the crafted payload."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "FluxBB versi\u00f3n 1.5.11, est\u00e1 afectado por una vulnerabilidad de tipo cross-site scripting, (XSS) en el componente Blog Content. Esta vulnerabilidad puede permitir a un atacante inyectar una carga \u00fatil de tipo XSS en \"Blog Content\" y cada vez que un usuario visite el blog, el XSS se desencadena y el atacante puede ser capaz de robar la cookie de acuerdo a la carga \u00fatil dise\u00f1ada."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "HIGH",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.8,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 1.7,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 3.5
+                            },
+                            "baseSeverity": "LOW",
+                            "exploitabilityScore": 6.8,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:fluxbb:fluxbb:1.5.11:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "4294CBC2-85BA-4C0F-90D3-E655F78495DF"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://fluxbb.org/downloads/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/hemantsolo/CVE-Reference/blob/main/CVE-2020-35240.md",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/hemantsolo/CVE-Reference/issues/1",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2020-28873",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2021-03-17T13:15:14.937",
+                "lastModified": "2023-11-07T03:21:24.067",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Fluxbb 1.5.11 is affected by a denial of service (DoS) vulnerability by sending an extremely long password via the user login form. When a long password is sent, the password hashing process will result in CPU and memory exhaustion on the server."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Fluxbb versi\u00f3n 1.5.11, est\u00e1 afectado por una vulnerabilidad de denegaci\u00f3n de servicio (DoS) al enviar una contrase\u00f1a extremadamente larga por medio del formulario de inicio de sesi\u00f3n del usuario.&#xa0;Cuando es enviada una contrase\u00f1a larga, el proceso de hash de contrase\u00f1a dar\u00e1 como resultado el agotamiento de la CPU y la memoria en el servidor"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 7.5,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 3.6
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "COMPLETE",
+                                "baseScore": 7.8
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 6.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-916"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:fluxbb:fluxbb:1.5.11:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "4294CBC2-85BA-4C0F-90D3-E655F78495DF"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://fluxbb.com",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Product"
+                        ]
+                    },
+                    {
+                        "url": "https://www.acunetix.com/vulnerabilities/web/long-password-denial-of-service/#:~:text=By%20sending%20a%20very%20long%2Ca%20vulnerable%20password%20hashing%20implementation",
+                        "source": "cve@mitre.org"
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-43677",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2022-01-04T20:15:07.550",
+                "lastModified": "2022-01-08T02:46:00.583",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Fluxbb v1.4.12 is affected by a Cross Site Scripting (XSS) vulnerability."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Fluxbb versi\u00f3n v1.4.12, est\u00e1 afectado por una vulnerabilidad de tipo Cross Site Scripting (XSS)"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.1,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:fluxbb:fluxbb:1.4.12:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "8B200BD3-D4AA-477F-8506-A1C5ABE247EB"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://fluxbb.com",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/fluxbb/fluxbb",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

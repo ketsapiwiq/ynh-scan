@@ -1,1 +1,1198 @@
-{"resultsPerPage":10,"startIndex":0,"totalResults":10,"format":"NVD_CVE","version":"2.0","timestamp":"2024-04-30T10:38:51.137","vulnerabilities":[{"cve":{"id":"CVE-2005-2421","sourceIdentifier":"cve@mitre.org","published":"2005-08-03T04:00:00.000","lastModified":"2017-07-11T01:32:50.033","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"Multiple SQL injection vulnerabilities in index.php and other pages in Beehive Forum allow remote attackers to execute arbitrary SQL commands via the webtag parameter."},{"lang":"es","value":"Múltiples vulnerabilidades de inyección de SQL en index.php y otras páginas en Beehive Forum permite que atacantes remotos ejecuten comandos SQL arbitrarios a través del parámetro \"webtag\""}],"metrics":{"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":7.5},"baseSeverity":"HIGH","exploitabilityScore":10.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":true,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"NVD-CWE-Other"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.1:*:*:*:*:*:*:*","matchCriteriaId":"B3C479F7-639D-4C3D-9449-E94426C3B1C3"},{"vulnerable":true,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.1.1:*:*:*:*:*:*:*","matchCriteriaId":"4EDD1988-4C10-4F78-A84A-AAFCB1DFFB6E"},{"vulnerable":true,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.2:*:*:*:*:*:*:*","matchCriteriaId":"BE8FB1E8-E4E3-4C72-9012-72D60E5C3B49"},{"vulnerable":true,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.3:*:*:*:*:*:*:*","matchCriteriaId":"BB948F88-6C9F-44B6-850F-9F6B02738A8F"},{"vulnerable":true,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.3.1:*:*:*:*:*:*:*","matchCriteriaId":"400EACD2-95CE-404E-B8F8-21A92A6D7817"},{"vulnerable":true,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.4:*:*:*:*:*:*:*","matchCriteriaId":"6071EAB1-B425-43D7-ACDE-009972279603"},{"vulnerable":true,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.5:*:*:*:*:*:*:*","matchCriteriaId":"9D73944F-A924-4801-A819-730AB165171C"},{"vulnerable":true,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.6rc1:*:*:*:*:*:*:*","matchCriteriaId":"F4543096-BA8B-41A0-B0F5-CE92A063898E"},{"vulnerable":true,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.6rc2:*:*:*:*:*:*:*","matchCriteriaId":"C8E19DFA-F5D4-4D64-8B5D-65E10B7E1698"}]}]}],"references":[{"url":"http:\/\/marc.info\/?l=bugtraq&m=112230744103930&w=2","source":"cve@mitre.org"},{"url":"http:\/\/secunia.com\/advisories\/16217","source":"cve@mitre.org"},{"url":"http:\/\/www.securityfocus.com\/bid\/14361","source":"cve@mitre.org"},{"url":"https:\/\/exchange.xforce.ibmcloud.com\/vulnerabilities\/21535","source":"cve@mitre.org"}]}},{"cve":{"id":"CVE-2005-2422","sourceIdentifier":"cve@mitre.org","published":"2005-08-03T04:00:00.000","lastModified":"2016-10-18T03:26:55.517","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"Cross-site scripting (XSS) vulnerability in index.php in Beehive Forum allows remote attackers to inject arbitrary web script or HTML via the webtag parameter."},{"lang":"es","value":"Vulnerabilidad de secuencias de comandos en sitios cruzados en index.php en Beehive Forum permite que atacantes remotos inyecten script web o HTML arbitrarios mediante el parámeto \"webtag\"."}],"metrics":{"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.3},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"NVD-CWE-Other"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.1:*:*:*:*:*:*:*","matchCriteriaId":"B3C479F7-639D-4C3D-9449-E94426C3B1C3"},{"vulnerable":true,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.1.1:*:*:*:*:*:*:*","matchCriteriaId":"4EDD1988-4C10-4F78-A84A-AAFCB1DFFB6E"},{"vulnerable":true,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.2:*:*:*:*:*:*:*","matchCriteriaId":"BE8FB1E8-E4E3-4C72-9012-72D60E5C3B49"},{"vulnerable":true,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.3:*:*:*:*:*:*:*","matchCriteriaId":"BB948F88-6C9F-44B6-850F-9F6B02738A8F"},{"vulnerable":true,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.3.1:*:*:*:*:*:*:*","matchCriteriaId":"400EACD2-95CE-404E-B8F8-21A92A6D7817"},{"vulnerable":true,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.4:*:*:*:*:*:*:*","matchCriteriaId":"6071EAB1-B425-43D7-ACDE-009972279603"},{"vulnerable":true,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.5:*:*:*:*:*:*:*","matchCriteriaId":"9D73944F-A924-4801-A819-730AB165171C"},{"vulnerable":true,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.6rc1:*:*:*:*:*:*:*","matchCriteriaId":"F4543096-BA8B-41A0-B0F5-CE92A063898E"},{"vulnerable":true,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.6rc2:*:*:*:*:*:*:*","matchCriteriaId":"C8E19DFA-F5D4-4D64-8B5D-65E10B7E1698"}]}]}],"references":[{"url":"http:\/\/marc.info\/?l=bugtraq&m=112230744103930&w=2","source":"cve@mitre.org"},{"url":"http:\/\/secunia.com\/advisories\/16217","source":"cve@mitre.org"},{"url":"http:\/\/www.securityfocus.com\/bid\/14363","source":"cve@mitre.org"}]}},{"cve":{"id":"CVE-2005-2423","sourceIdentifier":"cve@mitre.org","published":"2005-08-03T04:00:00.000","lastModified":"2017-07-11T01:32:50.080","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"Beehive Forum allows remote attackers to obtain sensitive information via (1) an invalid final_uri or sort_by parameter to index.php or a direct request to (2) admin.php, (3) attachments.inc.php, (4) banned.inc.php, (5) beehive.inc.php, (6) constants.inc.php, (7) db.inc.php, (8) dictionary.inc.php or (9) search_index.php, which reveal the path in an error message."},{"lang":"es","value":"Beehive Forum permite que atacantes remotos obtengan información confidencial mediante: (1)  inválidos parámetros final_uri o sort_by parameter en  index.php o una petición directa a: (2) admin.php, (3) attachments.inc.php, (4) banned.inc.php, (5) beehive.inc.php, (6) constants.inc.php, (7) db.inc.php, (8) dictionary.inc.php or (9) search_index.php."}],"metrics":{"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:N\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":5.0},"baseSeverity":"MEDIUM","exploitabilityScore":10.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"NVD-CWE-Other"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":false,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.1:*:*:*:*:*:*:*","matchCriteriaId":"B3C479F7-639D-4C3D-9449-E94426C3B1C3"},{"vulnerable":false,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.1.1:*:*:*:*:*:*:*","matchCriteriaId":"4EDD1988-4C10-4F78-A84A-AAFCB1DFFB6E"},{"vulnerable":false,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.2:*:*:*:*:*:*:*","matchCriteriaId":"BE8FB1E8-E4E3-4C72-9012-72D60E5C3B49"},{"vulnerable":false,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.3:*:*:*:*:*:*:*","matchCriteriaId":"BB948F88-6C9F-44B6-850F-9F6B02738A8F"},{"vulnerable":false,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.3.1:*:*:*:*:*:*:*","matchCriteriaId":"400EACD2-95CE-404E-B8F8-21A92A6D7817"},{"vulnerable":false,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.4:*:*:*:*:*:*:*","matchCriteriaId":"6071EAB1-B425-43D7-ACDE-009972279603"},{"vulnerable":false,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.5:*:*:*:*:*:*:*","matchCriteriaId":"9D73944F-A924-4801-A819-730AB165171C"},{"vulnerable":false,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.6rc1:*:*:*:*:*:*:*","matchCriteriaId":"F4543096-BA8B-41A0-B0F5-CE92A063898E"},{"vulnerable":false,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.6rc2:*:*:*:*:*:*:*","matchCriteriaId":"C8E19DFA-F5D4-4D64-8B5D-65E10B7E1698"}]}]}],"references":[{"url":"http:\/\/marc.info\/?l=bugtraq&m=112230744103930&w=2","source":"cve@mitre.org"},{"url":"http:\/\/secunia.com\/advisories\/16217","source":"cve@mitre.org"},{"url":"https:\/\/exchange.xforce.ibmcloud.com\/vulnerabilities\/21536","source":"cve@mitre.org"}]}},{"cve":{"id":"CVE-2005-4460","sourceIdentifier":"cve@mitre.org","published":"2005-12-21T20:03:00.000","lastModified":"2018-10-19T15:41:01.207","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"Cross-site scripting (XSS) vulnerability in Beehive Forum 0.6.2 and earlier allows remote attackers to inject arbitrary web script or HTML via the (1) Name, (2) Description, and (3) Comment fields to (a) links.php and (b) links_add.php."}],"metrics":{"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:H\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"HIGH","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":5.1},"baseSeverity":"MEDIUM","exploitabilityScore":4.9,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":true,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"NVD-CWE-Other"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.1:*:*:*:*:*:*:*","matchCriteriaId":"B3C479F7-639D-4C3D-9449-E94426C3B1C3"},{"vulnerable":true,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.1.1:*:*:*:*:*:*:*","matchCriteriaId":"4EDD1988-4C10-4F78-A84A-AAFCB1DFFB6E"},{"vulnerable":true,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.2:*:*:*:*:*:*:*","matchCriteriaId":"BE8FB1E8-E4E3-4C72-9012-72D60E5C3B49"},{"vulnerable":true,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.3:*:*:*:*:*:*:*","matchCriteriaId":"BB948F88-6C9F-44B6-850F-9F6B02738A8F"},{"vulnerable":true,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.3.1:*:*:*:*:*:*:*","matchCriteriaId":"400EACD2-95CE-404E-B8F8-21A92A6D7817"},{"vulnerable":true,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.4:*:*:*:*:*:*:*","matchCriteriaId":"6071EAB1-B425-43D7-ACDE-009972279603"},{"vulnerable":true,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.5:*:*:*:*:*:*:*","matchCriteriaId":"9D73944F-A924-4801-A819-730AB165171C"},{"vulnerable":true,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.6.2:*:*:*:*:*:*:*","matchCriteriaId":"E1B59256-123E-4EEF-AB9D-665C47989A25"},{"vulnerable":true,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.6rc1:*:*:*:*:*:*:*","matchCriteriaId":"F4543096-BA8B-41A0-B0F5-CE92A063898E"},{"vulnerable":true,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.6rc2:*:*:*:*:*:*:*","matchCriteriaId":"C8E19DFA-F5D4-4D64-8B5D-65E10B7E1698"}]}]}],"references":[{"url":"http:\/\/cvs.sourceforge.net\/viewcvs.py\/beehiveforum\/beehiveforum\/forum\/index.php?rev=1.121&view=log","source":"cve@mitre.org"},{"url":"http:\/\/secunia.com\/advisories\/18154","source":"cve@mitre.org"},{"url":"http:\/\/www.securityfocus.com\/archive\/1\/419988\/100\/0\/threaded","source":"cve@mitre.org"},{"url":"http:\/\/www.securityfocus.com\/bid\/16002","source":"cve@mitre.org"},{"url":"http:\/\/www.vupen.com\/english\/advisories\/2005\/3043","source":"cve@mitre.org"},{"url":"https:\/\/exchange.xforce.ibmcloud.com\/vulnerabilities\/23879","source":"cve@mitre.org"}]}},{"cve":{"id":"CVE-2005-4461","sourceIdentifier":"cve@mitre.org","published":"2005-12-21T20:03:00.000","lastModified":"2018-10-19T15:41:01.520","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"SQL injection vulnerability in index.php in Beehive Forum 0.6.2 and earlier allows remote attackers to execute arbitrary SQL commands via the user_sess parameter."}],"metrics":{"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":7.5},"baseSeverity":"HIGH","exploitabilityScore":10.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":true,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"NVD-CWE-Other"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":false,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.1:*:*:*:*:*:*:*","matchCriteriaId":"B3C479F7-639D-4C3D-9449-E94426C3B1C3"},{"vulnerable":false,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.1.1:*:*:*:*:*:*:*","matchCriteriaId":"4EDD1988-4C10-4F78-A84A-AAFCB1DFFB6E"},{"vulnerable":false,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.2:*:*:*:*:*:*:*","matchCriteriaId":"BE8FB1E8-E4E3-4C72-9012-72D60E5C3B49"},{"vulnerable":false,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.3:*:*:*:*:*:*:*","matchCriteriaId":"BB948F88-6C9F-44B6-850F-9F6B02738A8F"},{"vulnerable":false,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.3.1:*:*:*:*:*:*:*","matchCriteriaId":"400EACD2-95CE-404E-B8F8-21A92A6D7817"},{"vulnerable":false,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.4:*:*:*:*:*:*:*","matchCriteriaId":"6071EAB1-B425-43D7-ACDE-009972279603"},{"vulnerable":false,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.5:*:*:*:*:*:*:*","matchCriteriaId":"9D73944F-A924-4801-A819-730AB165171C"},{"vulnerable":false,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.6.2:*:*:*:*:*:*:*","matchCriteriaId":"E1B59256-123E-4EEF-AB9D-665C47989A25"},{"vulnerable":false,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.6rc1:*:*:*:*:*:*:*","matchCriteriaId":"F4543096-BA8B-41A0-B0F5-CE92A063898E"},{"vulnerable":false,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.6rc2:*:*:*:*:*:*:*","matchCriteriaId":"C8E19DFA-F5D4-4D64-8B5D-65E10B7E1698"}]}]}],"references":[{"url":"http:\/\/cvs.sourceforge.net\/viewcvs.py\/beehiveforum\/beehiveforum\/forum\/index.php?rev=1.121&view=log","source":"cve@mitre.org"},{"url":"http:\/\/kapda.ir\/advisory-158.html","source":"cve@mitre.org"},{"url":"http:\/\/securityreason.com\/securityalert\/284","source":"cve@mitre.org"},{"url":"http:\/\/www.osvdb.org\/21955","source":"cve@mitre.org"},{"url":"http:\/\/www.securityfocus.com\/archive\/1\/419988\/100\/0\/threaded","source":"cve@mitre.org"},{"url":"http:\/\/www.securityfocus.com\/bid\/16521","source":"cve@mitre.org"}]}},{"cve":{"id":"CVE-2007-3212","sourceIdentifier":"cve@mitre.org","published":"2007-06-14T22:30:00.000","lastModified":"2017-07-29T01:32:03.473","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"Multiple cross-site scripting (XSS) vulnerabilities in links.php in Beehive Forum 0.7.1 allow remote attackers to inject arbitrary web script or HTML via the (1) viewmode, (2) fid, and (3) sort_dir parameters, different vectors than CVE-2005-4460."},{"lang":"es","value":"Múltiples vulnerabilidades de secuencias de comandos en sitios cruzados (XSS) en links.php en eehive Forum 0.7.1 permite a atacantes remotos inyectar secuencias de comandos web o HTML a través de los parámetros (1) viewmode, (2) fid, y (3) sort_dir, vectores diferenetes que CVE-2005-4460."}],"metrics":{"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.3},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"NVD-CWE-Other"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:0.7.1:*:*:*:*:*:*:*","matchCriteriaId":"3599AF1F-3A00-49A3-8E37-5604484B55FC"}]}]}],"references":[{"url":"http:\/\/osvdb.org\/36380","source":"cve@mitre.org"},{"url":"http:\/\/secunia.com\/advisories\/25634","source":"cve@mitre.org","tags":["Vendor Advisory"]},{"url":"http:\/\/www.dragoslungu.com\/2007\/06\/10\/beehive-zero-vulnerabilities-myth-busted\/","source":"cve@mitre.org"},{"url":"http:\/\/www.securityfocus.com\/bid\/24413","source":"cve@mitre.org"},{"url":"http:\/\/www.vupen.com\/english\/advisories\/2007\/2146","source":"cve@mitre.org"},{"url":"https:\/\/exchange.xforce.ibmcloud.com\/vulnerabilities\/34827","source":"cve@mitre.org"}]}},{"cve":{"id":"CVE-2007-6014","sourceIdentifier":"cve@mitre.org","published":"2007-12-05T11:46:00.000","lastModified":"2018-10-15T21:48:58.540","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"SQL injection vulnerability in post.php in Beehive Forum 0.7.1 and earlier allows remote attackers to execute arbitrary SQL commands via the t_dedupe parameter."},{"lang":"es","value":"Vulnerabilidad de inyección SQL en Beehive Forum 0.7.1 y anteriores permite a atacantes remotos ejecutar comandos SQL de su elección mediante el parámetro t_dedupe."}],"metrics":{"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":7.5},"baseSeverity":"HIGH","exploitabilityScore":10.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-89"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:*:*:*:*:*:*:*:*","versionEndIncluding":"0.7.1","matchCriteriaId":"360ADF41-BCC6-4F05-B10E-4B28AEA02874"}]}]}],"references":[{"url":"http:\/\/secunia.com\/advisories\/27909","source":"cve@mitre.org","tags":["Patch","Vendor Advisory"]},{"url":"http:\/\/securityreason.com\/securityalert\/3417","source":"cve@mitre.org"},{"url":"http:\/\/sourceforge.net\/project\/shownotes.php?group_id=50772&release_id=551758","source":"cve@mitre.org","tags":["Patch"]},{"url":"http:\/\/www.securityfocus.com\/archive\/1\/484501\/100\/0\/threaded","source":"cve@mitre.org"},{"url":"http:\/\/www.securityfocus.com\/bid\/26492","source":"cve@mitre.org","tags":["Patch"]},{"url":"http:\/\/www.securitytracker.com\/id?1019035","source":"cve@mitre.org"},{"url":"http:\/\/www.symantec.com\/content\/en\/us\/enterprise\/research\/SYMSA-2007-014.txt","source":"cve@mitre.org","tags":["Patch"]}]}},{"cve":{"id":"CVE-2007-6241","sourceIdentifier":"cve@mitre.org","published":"2007-12-05T11:46:00.000","lastModified":"2008-09-05T21:32:45.317","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Multiple unspecified vulnerabilities in Beehive Forum 0.7.1 have unknown \"critical\" impact and attack vectors, different issues than CVE-2007-6014."},{"lang":"es","value":"Múltiples vulnerabilidades no especificadas en Beehive Forum 0.7.1 tienen impacto \"crítico\" y vectores de ataque desconocidos, asuntos diferentes de CVE-2007-6014."}],"metrics":{"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":7.5},"baseSeverity":"HIGH","exploitabilityScore":10.0,"impactScore":6.4,"acInsufInfo":true,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"NVD-CWE-noinfo"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:*:*:*:*:*:*:*:*","versionEndIncluding":"0.7.1","matchCriteriaId":"360ADF41-BCC6-4F05-B10E-4B28AEA02874"}]}]}],"references":[{"url":"http:\/\/secunia.com\/advisories\/27909","source":"cve@mitre.org","tags":["Patch","Vendor Advisory"]},{"url":"http:\/\/www.beehiveforum.net\/news.php","source":"cve@mitre.org","tags":["Patch"]}]}},{"cve":{"id":"CVE-2012-0900","sourceIdentifier":"cve@mitre.org","published":"2012-01-20T17:55:02.267","lastModified":"2017-08-29T01:31:05.523","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"Multiple cross-site scripting (XSS) vulnerabilities in Beehive Forum 1.0.1 allow remote attackers to inject arbitrary web script or HTML via the PATH_INFO to (1) forum\/register.php or (2) forum\/logon.php."},{"lang":"es","value":"Multiples vulnerabilidades de ejecución de secuencias de comandos en sitios cruzados (XSS) en Beehive Forum v1.0.1, permite a atacantes remotos inyectar secuencias de comandos web o HTML a través de PATH_INFO en forum\/register.php o (2) forum\/logon.php."}],"metrics":{"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.3},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:1.0.1:*:*:*:*:*:*:*","matchCriteriaId":"17B3ACE2-2684-4E56-8BD3-24181BC45FEE"}]}]}],"references":[{"url":"http:\/\/archives.neohapsis.com\/archives\/bugtraq\/2012-01\/0103.html","source":"cve@mitre.org","tags":["Exploit"]},{"url":"http:\/\/secunia.com\/advisories\/47595","source":"cve@mitre.org","tags":["Vendor Advisory"]},{"url":"http:\/\/www.darksecurity.de\/advisories\/SSCHADV2011-042.txt","source":"cve@mitre.org","tags":["Exploit"]},{"url":"http:\/\/www.securityfocus.com\/bid\/51424","source":"cve@mitre.org","tags":["Exploit"]},{"url":"https:\/\/exchange.xforce.ibmcloud.com\/vulnerabilities\/72411","source":"cve@mitre.org"}]}},{"cve":{"id":"CVE-2015-2198","sourceIdentifier":"cve@mitre.org","published":"2015-03-03T19:59:04.653","lastModified":"2015-03-04T19:13:39.313","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Multiple cross-site scripting (XSS) vulnerabilities in edit_prefs.php in Beehive Forum 1.4.4 allow remote attackers to inject arbitrary web script or HTML via the (1) homepage_url, (2) pic_url, or (3) avatar_url parameter, which are not properly handled in an error message."},{"lang":"es","value":"Múltiples vulnerabilidades de XSS en edit_prefs.php en Beehive Forum 1.4.4 permiten a atacantes remotos inyectar secuencias de comandos web arbitrarios o HTML a través del parámetro (1) homepage_url, (2) pic_url, o (3) avatar_url, los cuales no se manejan correctamente en un mensaje de error."}],"metrics":{"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.3},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:beehive_forum:beehive_forum:1.4.4:*:*:*:*:*:*:*","matchCriteriaId":"7F6C4ED5-79AF-4592-A9FB-1E40E5CEAFCA"}]}]}],"references":[{"url":"http:\/\/sourceforge.net\/p\/beehiveforum\/news\/2015\/02\/beehive-forum-145-released\/","source":"cve@mitre.org"},{"url":"http:\/\/www.exploit-db.com\/exploits\/36154","source":"cve@mitre.org","tags":["Exploit"]}]}}]}
+{
+    "resultsPerPage": 10,
+    "startIndex": 0,
+    "totalResults": 10,
+    "format": "NVD_CVE",
+    "version": "2.0",
+    "timestamp": "2024-04-30T10:38:51.137",
+    "vulnerabilities": [
+        {
+            "cve": {
+                "id": "CVE-2005-2421",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2005-08-03T04:00:00.000",
+                "lastModified": "2017-07-11T01:32:50.033",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Multiple SQL injection vulnerabilities in index.php and other pages in Beehive Forum allow remote attackers to execute arbitrary SQL commands via the webtag parameter."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "M\u00faltiples vulnerabilidades de inyecci\u00f3n de SQL en index.php y otras p\u00e1ginas en Beehive Forum permite que atacantes remotos ejecuten comandos SQL arbitrarios a trav\u00e9s del par\u00e1metro \"webtag\""
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 7.5
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": true,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "NVD-CWE-Other"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "B3C479F7-639D-4C3D-9449-E94426C3B1C3"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.1.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "4EDD1988-4C10-4F78-A84A-AAFCB1DFFB6E"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "BE8FB1E8-E4E3-4C72-9012-72D60E5C3B49"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.3:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "BB948F88-6C9F-44B6-850F-9F6B02738A8F"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.3.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "400EACD2-95CE-404E-B8F8-21A92A6D7817"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.4:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "6071EAB1-B425-43D7-ACDE-009972279603"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.5:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "9D73944F-A924-4801-A819-730AB165171C"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.6rc1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "F4543096-BA8B-41A0-B0F5-CE92A063898E"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.6rc2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "C8E19DFA-F5D4-4D64-8B5D-65E10B7E1698"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://marc.info/?l=bugtraq&m=112230744103930&w=2",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://secunia.com/advisories/16217",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://www.securityfocus.com/bid/14361",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/21535",
+                        "source": "cve@mitre.org"
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2005-2422",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2005-08-03T04:00:00.000",
+                "lastModified": "2016-10-18T03:26:55.517",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Cross-site scripting (XSS) vulnerability in index.php in Beehive Forum allows remote attackers to inject arbitrary web script or HTML via the webtag parameter."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Vulnerabilidad de secuencias de comandos en sitios cruzados en index.php en Beehive Forum permite que atacantes remotos inyecten script web o HTML arbitrarios mediante el par\u00e1meto \"webtag\"."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "NVD-CWE-Other"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "B3C479F7-639D-4C3D-9449-E94426C3B1C3"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.1.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "4EDD1988-4C10-4F78-A84A-AAFCB1DFFB6E"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "BE8FB1E8-E4E3-4C72-9012-72D60E5C3B49"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.3:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "BB948F88-6C9F-44B6-850F-9F6B02738A8F"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.3.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "400EACD2-95CE-404E-B8F8-21A92A6D7817"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.4:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "6071EAB1-B425-43D7-ACDE-009972279603"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.5:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "9D73944F-A924-4801-A819-730AB165171C"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.6rc1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "F4543096-BA8B-41A0-B0F5-CE92A063898E"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.6rc2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "C8E19DFA-F5D4-4D64-8B5D-65E10B7E1698"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://marc.info/?l=bugtraq&m=112230744103930&w=2",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://secunia.com/advisories/16217",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://www.securityfocus.com/bid/14363",
+                        "source": "cve@mitre.org"
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2005-2423",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2005-08-03T04:00:00.000",
+                "lastModified": "2017-07-11T01:32:50.080",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Beehive Forum allows remote attackers to obtain sensitive information via (1) an invalid final_uri or sort_by parameter to index.php or a direct request to (2) admin.php, (3) attachments.inc.php, (4) banned.inc.php, (5) beehive.inc.php, (6) constants.inc.php, (7) db.inc.php, (8) dictionary.inc.php or (9) search_index.php, which reveal the path in an error message."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Beehive Forum permite que atacantes remotos obtengan informaci\u00f3n confidencial mediante: (1)  inv\u00e1lidos par\u00e1metros final_uri o sort_by parameter en  index.php o una petici\u00f3n directa a: (2) admin.php, (3) attachments.inc.php, (4) banned.inc.php, (5) beehive.inc.php, (6) constants.inc.php, (7) db.inc.php, (8) dictionary.inc.php or (9) search_index.php."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "NVD-CWE-Other"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": false,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "B3C479F7-639D-4C3D-9449-E94426C3B1C3"
+                                    },
+                                    {
+                                        "vulnerable": false,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.1.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "4EDD1988-4C10-4F78-A84A-AAFCB1DFFB6E"
+                                    },
+                                    {
+                                        "vulnerable": false,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "BE8FB1E8-E4E3-4C72-9012-72D60E5C3B49"
+                                    },
+                                    {
+                                        "vulnerable": false,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.3:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "BB948F88-6C9F-44B6-850F-9F6B02738A8F"
+                                    },
+                                    {
+                                        "vulnerable": false,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.3.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "400EACD2-95CE-404E-B8F8-21A92A6D7817"
+                                    },
+                                    {
+                                        "vulnerable": false,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.4:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "6071EAB1-B425-43D7-ACDE-009972279603"
+                                    },
+                                    {
+                                        "vulnerable": false,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.5:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "9D73944F-A924-4801-A819-730AB165171C"
+                                    },
+                                    {
+                                        "vulnerable": false,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.6rc1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "F4543096-BA8B-41A0-B0F5-CE92A063898E"
+                                    },
+                                    {
+                                        "vulnerable": false,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.6rc2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "C8E19DFA-F5D4-4D64-8B5D-65E10B7E1698"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://marc.info/?l=bugtraq&m=112230744103930&w=2",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://secunia.com/advisories/16217",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/21536",
+                        "source": "cve@mitre.org"
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2005-4460",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2005-12-21T20:03:00.000",
+                "lastModified": "2018-10-19T15:41:01.207",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Cross-site scripting (XSS) vulnerability in Beehive Forum 0.6.2 and earlier allows remote attackers to inject arbitrary web script or HTML via the (1) Name, (2) Description, and (3) Comment fields to (a) links.php and (b) links_add.php."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:H/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "HIGH",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 5.1
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 4.9,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": true,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "NVD-CWE-Other"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "B3C479F7-639D-4C3D-9449-E94426C3B1C3"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.1.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "4EDD1988-4C10-4F78-A84A-AAFCB1DFFB6E"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "BE8FB1E8-E4E3-4C72-9012-72D60E5C3B49"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.3:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "BB948F88-6C9F-44B6-850F-9F6B02738A8F"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.3.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "400EACD2-95CE-404E-B8F8-21A92A6D7817"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.4:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "6071EAB1-B425-43D7-ACDE-009972279603"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.5:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "9D73944F-A924-4801-A819-730AB165171C"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.6.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "E1B59256-123E-4EEF-AB9D-665C47989A25"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.6rc1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "F4543096-BA8B-41A0-B0F5-CE92A063898E"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.6rc2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "C8E19DFA-F5D4-4D64-8B5D-65E10B7E1698"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://cvs.sourceforge.net/viewcvs.py/beehiveforum/beehiveforum/forum/index.php?rev=1.121&view=log",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://secunia.com/advisories/18154",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://www.securityfocus.com/archive/1/419988/100/0/threaded",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://www.securityfocus.com/bid/16002",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://www.vupen.com/english/advisories/2005/3043",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/23879",
+                        "source": "cve@mitre.org"
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2005-4461",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2005-12-21T20:03:00.000",
+                "lastModified": "2018-10-19T15:41:01.520",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "SQL injection vulnerability in index.php in Beehive Forum 0.6.2 and earlier allows remote attackers to execute arbitrary SQL commands via the user_sess parameter."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 7.5
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": true,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "NVD-CWE-Other"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": false,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "B3C479F7-639D-4C3D-9449-E94426C3B1C3"
+                                    },
+                                    {
+                                        "vulnerable": false,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.1.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "4EDD1988-4C10-4F78-A84A-AAFCB1DFFB6E"
+                                    },
+                                    {
+                                        "vulnerable": false,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "BE8FB1E8-E4E3-4C72-9012-72D60E5C3B49"
+                                    },
+                                    {
+                                        "vulnerable": false,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.3:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "BB948F88-6C9F-44B6-850F-9F6B02738A8F"
+                                    },
+                                    {
+                                        "vulnerable": false,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.3.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "400EACD2-95CE-404E-B8F8-21A92A6D7817"
+                                    },
+                                    {
+                                        "vulnerable": false,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.4:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "6071EAB1-B425-43D7-ACDE-009972279603"
+                                    },
+                                    {
+                                        "vulnerable": false,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.5:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "9D73944F-A924-4801-A819-730AB165171C"
+                                    },
+                                    {
+                                        "vulnerable": false,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.6.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "E1B59256-123E-4EEF-AB9D-665C47989A25"
+                                    },
+                                    {
+                                        "vulnerable": false,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.6rc1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "F4543096-BA8B-41A0-B0F5-CE92A063898E"
+                                    },
+                                    {
+                                        "vulnerable": false,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.6rc2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "C8E19DFA-F5D4-4D64-8B5D-65E10B7E1698"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://cvs.sourceforge.net/viewcvs.py/beehiveforum/beehiveforum/forum/index.php?rev=1.121&view=log",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://kapda.ir/advisory-158.html",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://securityreason.com/securityalert/284",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://www.osvdb.org/21955",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://www.securityfocus.com/archive/1/419988/100/0/threaded",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://www.securityfocus.com/bid/16521",
+                        "source": "cve@mitre.org"
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2007-3212",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2007-06-14T22:30:00.000",
+                "lastModified": "2017-07-29T01:32:03.473",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Multiple cross-site scripting (XSS) vulnerabilities in links.php in Beehive Forum 0.7.1 allow remote attackers to inject arbitrary web script or HTML via the (1) viewmode, (2) fid, and (3) sort_dir parameters, different vectors than CVE-2005-4460."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "M\u00faltiples vulnerabilidades de secuencias de comandos en sitios cruzados (XSS) en links.php en eehive Forum 0.7.1 permite a atacantes remotos inyectar secuencias de comandos web o HTML a trav\u00e9s de los par\u00e1metros (1) viewmode, (2) fid, y (3) sort_dir, vectores diferenetes que CVE-2005-4460."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "NVD-CWE-Other"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:0.7.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "3599AF1F-3A00-49A3-8E37-5604484B55FC"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://osvdb.org/36380",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://secunia.com/advisories/25634",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "http://www.dragoslungu.com/2007/06/10/beehive-zero-vulnerabilities-myth-busted/",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://www.securityfocus.com/bid/24413",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://www.vupen.com/english/advisories/2007/2146",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/34827",
+                        "source": "cve@mitre.org"
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2007-6014",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2007-12-05T11:46:00.000",
+                "lastModified": "2018-10-15T21:48:58.540",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "SQL injection vulnerability in post.php in Beehive Forum 0.7.1 and earlier allows remote attackers to execute arbitrary SQL commands via the t_dedupe parameter."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Vulnerabilidad de inyecci\u00f3n SQL en Beehive Forum 0.7.1 y anteriores permite a atacantes remotos ejecutar comandos SQL de su elecci\u00f3n mediante el par\u00e1metro t_dedupe."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 7.5
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-89"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "0.7.1",
+                                        "matchCriteriaId": "360ADF41-BCC6-4F05-B10E-4B28AEA02874"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://secunia.com/advisories/27909",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch",
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "http://securityreason.com/securityalert/3417",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://sourceforge.net/project/shownotes.php?group_id=50772&release_id=551758",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch"
+                        ]
+                    },
+                    {
+                        "url": "http://www.securityfocus.com/archive/1/484501/100/0/threaded",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://www.securityfocus.com/bid/26492",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch"
+                        ]
+                    },
+                    {
+                        "url": "http://www.securitytracker.com/id?1019035",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://www.symantec.com/content/en/us/enterprise/research/SYMSA-2007-014.txt",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2007-6241",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2007-12-05T11:46:00.000",
+                "lastModified": "2008-09-05T21:32:45.317",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Multiple unspecified vulnerabilities in Beehive Forum 0.7.1 have unknown \"critical\" impact and attack vectors, different issues than CVE-2007-6014."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "M\u00faltiples vulnerabilidades no especificadas en Beehive Forum 0.7.1 tienen impacto \"cr\u00edtico\" y vectores de ataque desconocidos, asuntos diferentes de CVE-2007-6014."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 7.5
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": true,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "NVD-CWE-noinfo"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "0.7.1",
+                                        "matchCriteriaId": "360ADF41-BCC6-4F05-B10E-4B28AEA02874"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://secunia.com/advisories/27909",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch",
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "http://www.beehiveforum.net/news.php",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2012-0900",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2012-01-20T17:55:02.267",
+                "lastModified": "2017-08-29T01:31:05.523",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Multiple cross-site scripting (XSS) vulnerabilities in Beehive Forum 1.0.1 allow remote attackers to inject arbitrary web script or HTML via the PATH_INFO to (1) forum/register.php or (2) forum/logon.php."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Multiples vulnerabilidades de ejecuci\u00f3n de secuencias de comandos en sitios cruzados (XSS) en Beehive Forum v1.0.1, permite a atacantes remotos inyectar secuencias de comandos web o HTML a trav\u00e9s de PATH_INFO en forum/register.php o (2) forum/logon.php."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:1.0.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "17B3ACE2-2684-4E56-8BD3-24181BC45FEE"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://archives.neohapsis.com/archives/bugtraq/2012-01/0103.html",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit"
+                        ]
+                    },
+                    {
+                        "url": "http://secunia.com/advisories/47595",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "http://www.darksecurity.de/advisories/SSCHADV2011-042.txt",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit"
+                        ]
+                    },
+                    {
+                        "url": "http://www.securityfocus.com/bid/51424",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit"
+                        ]
+                    },
+                    {
+                        "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/72411",
+                        "source": "cve@mitre.org"
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2015-2198",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2015-03-03T19:59:04.653",
+                "lastModified": "2015-03-04T19:13:39.313",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Multiple cross-site scripting (XSS) vulnerabilities in edit_prefs.php in Beehive Forum 1.4.4 allow remote attackers to inject arbitrary web script or HTML via the (1) homepage_url, (2) pic_url, or (3) avatar_url parameter, which are not properly handled in an error message."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "M\u00faltiples vulnerabilidades de XSS en edit_prefs.php en Beehive Forum 1.4.4 permiten a atacantes remotos inyectar secuencias de comandos web arbitrarios o HTML a trav\u00e9s del par\u00e1metro (1) homepage_url, (2) pic_url, o (3) avatar_url, los cuales no se manejan correctamente en un mensaje de error."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:beehive_forum:beehive_forum:1.4.4:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "7F6C4ED5-79AF-4592-A9FB-1E40E5CEAFCA"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://sourceforge.net/p/beehiveforum/news/2015/02/beehive-forum-145-released/",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://www.exploit-db.com/exploits/36154",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

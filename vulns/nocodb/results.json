@@ -1,1 +1,1486 @@
-{"resultsPerPage":11,"startIndex":0,"totalResults":11,"format":"NVD_CVE","version":"2.0","timestamp":"2024-04-30T10:48:53.107","vulnerabilities":[{"cve":{"id":"CVE-2022-22120","sourceIdentifier":"vulnerabilitylab@mend.io","published":"2022-01-10T16:15:10.180","lastModified":"2022-01-19T18:30:52.887","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"In NocoDB, versions 0.9 to 0.83.8 are vulnerable to Observable Discrepancy in the password-reset feature. When requesting a password reset for a given email address, the application displays an error message when the email isn't registered within the system. This allows attackers to enumerate the registered users' email addresses."},{"lang":"es","value":"En NocoDB, versiones 0.9 a 0.83.8, son vulnerables a una Discrepancia Observable en la funcionalidad password-reset. Cuando es solicitado un restablecimiento de contraseña para una dirección de correo electrónico determinada, la aplicación muestra un mensaje de error cuando el correo electrónico no está registrado en el sistema. Esto permite a atacantes enumerar las direcciones de correo electrónico de usuarios registrados"}],"metrics":{"cvssMetricV31":[{"source":"vulnerabilitylab@mend.io","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:L\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":5.3,"baseSeverity":"MEDIUM"},"exploitabilityScore":3.9,"impactScore":1.4}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:N\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":5.0},"baseSeverity":"MEDIUM","exploitabilityScore":10.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"vulnerabilitylab@mend.io","type":"Primary","description":[{"lang":"en","value":"CWE-203"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:xgenecloud:nocodb:*:*:*:*:*:*:*:*","versionStartIncluding":"0.9","versionEndIncluding":"0.83.8","matchCriteriaId":"9A317204-AB4B-4E4B-AD96-8A04CBD690D0"}]}]}],"references":[{"url":"https:\/\/github.com\/nocodb\/nocodb\/commit\/f46e89b0","source":"vulnerabilitylab@mend.io","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/www.whitesourcesoftware.com\/vulnerability-database\/CVE-2022-22120","source":"vulnerabilitylab@mend.io","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-22121","sourceIdentifier":"vulnerabilitylab@mend.io","published":"2022-01-10T16:15:10.243","lastModified":"2022-01-19T18:24:49.953","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"In NocoDB, versions 0.81.0 through 0.83.8 are affected by CSV Injection vulnerability (Formula Injection). A low privileged attacker can create a new table to inject payloads in the table rows. When an administrator accesses the User Management endpoint and exports the data as a CSV file and opens it, the payload gets executed."},{"lang":"es","value":"En NocoDB, versiones 0.81.0 hasta 0.83.8, están afectadas por una vulnerabilidad de Inyección CSV (inyección de fórmulas). Un atacante con pocos privilegios puede crear una nueva tabla para inyectar cargas útiles en las filas de la tabla. Cuando un administrador accede al endpoint de Administración de Usuarios y exporta los datos como un archivo CSV y lo abre, la carga útil es ejecutada"}],"metrics":{"cvssMetricV31":[{"source":"vulnerabilitylab@mend.io","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:R\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":8.0,"baseSeverity":"HIGH"},"exploitabilityScore":2.1,"impactScore":5.9}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:S\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"SINGLE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":6.0},"baseSeverity":"MEDIUM","exploitabilityScore":6.8,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"vulnerabilitylab@mend.io","type":"Primary","description":[{"lang":"en","value":"CWE-1236"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:xgenecloud:nocodb:*:*:*:*:*:*:*:*","versionStartIncluding":"0.81.0","versionEndIncluding":"0.83.8","matchCriteriaId":"67BF56F5-AAFA-46B5-A12C-F1586B4BBACA"}]}]}],"references":[{"url":"https:\/\/github.com\/nocodb\/nocodb\/commit\/079e3abe","source":"vulnerabilitylab@mend.io","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/www.whitesourcesoftware.com\/vulnerability-database\/CVE-2022-22121","source":"vulnerabilitylab@mend.io","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-2022","sourceIdentifier":"security@huntr.dev","published":"2022-06-07T20:15:08.707","lastModified":"2022-06-16T14:47:19.530","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Cross-site Scripting (XSS) - Stored in GitHub repository nocodb\/nocodb prior to 0.91.7."},{"lang":"es","value":"Una vulnerabilidad de tipo Cross-site Scripting (XSS) - Almacenado en el repositorio GitHub nocodb\/nocodb versiones anteriores a 0.91.7"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.3,"impactScore":2.7}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.0,"baseSeverity":"CRITICAL"},"exploitabilityScore":2.3,"impactScore":6.0}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:S\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"SINGLE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":3.5},"baseSeverity":"LOW","exploitabilityScore":6.8,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]},{"source":"security@huntr.dev","type":"Secondary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:xgenecloud:nocodb:*:*:*:*:*:*:*:*","versionEndExcluding":"0.91.7","matchCriteriaId":"1E79120D-C248-4A67-AC09-AECFDFFB240F"}]}]}],"references":[{"url":"https:\/\/github.com\/nocodb\/nocodb\/commit\/ffad5a318ad60d1da1c75dd28152827b94c92e9d","source":"security@huntr.dev","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/f6082949-40d3-411c-b613-23ada2691913","source":"security@huntr.dev","tags":["Exploit","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-2062","sourceIdentifier":"security@huntr.dev","published":"2022-06-13T12:15:08.107","lastModified":"2023-06-29T09:15:11.030","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"Generation of Error Message Containing Sensitive Information in GitHub repository nocodb\/nocodb prior to 0.91.7+."},{"lang":"es","value":"Una Exposición de Información Confidencial a un Actor no Autorizado en el repositorio de GitHub nocodb\/nocodb versiones anteriores a 0.91.7+"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":7.5,"baseSeverity":"HIGH"},"exploitabilityScore":3.9,"impactScore":3.6}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:L\/UI:N\/S:C\/C:H\/I:L\/A:L","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"CHANGED","confidentialityImpact":"HIGH","integrityImpact":"LOW","availabilityImpact":"LOW","baseScore":9.1,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.1,"impactScore":5.3}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:N\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":5.0},"baseSeverity":"MEDIUM","exploitabilityScore":10.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"security@huntr.dev","type":"Primary","description":[{"lang":"en","value":"CWE-209"}]},{"source":"nvd@nist.gov","type":"Secondary","description":[{"lang":"en","value":"CWE-209"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:xgenecloud:nocodb:*:*:*:*:*:*:*:*","versionEndExcluding":"0.91.7","matchCriteriaId":"1E79120D-C248-4A67-AC09-AECFDFFB240F"}]}]}],"references":[{"url":"https:\/\/github.com\/nocodb\/nocodb\/commit\/a18f5dd53811b9ec1c1bb2fdbfb328c0c87d7fb4","source":"security@huntr.dev","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/35593b4c-f127-4699-8ad3-f0b2203a8ef6","source":"security@huntr.dev","tags":["Exploit","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-2063","sourceIdentifier":"security@huntr.dev","published":"2022-06-13T12:15:08.187","lastModified":"2022-06-22T15:15:56.310","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Improper Privilege Management in GitHub repository nocodb\/nocodb prior to 0.91.7+."},{"lang":"es","value":"Una Administración inapropiada de Privilegios en el repositorio de GitHub nocodb\/nocodb versiones anteriores a 0.91.7+"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":8.8,"baseSeverity":"HIGH"},"exploitabilityScore":2.8,"impactScore":5.9}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.0,"baseSeverity":"CRITICAL"},"exploitabilityScore":2.3,"impactScore":6.0}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":6.8},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-269"}]},{"source":"security@huntr.dev","type":"Secondary","description":[{"lang":"en","value":"CWE-269"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:xgenecloud:nocodb:*:*:*:*:*:*:*:*","versionEndExcluding":"0.91.7","matchCriteriaId":"1E79120D-C248-4A67-AC09-AECFDFFB240F"}]}]}],"references":[{"url":"https:\/\/github.com\/nocodb\/nocodb\/commit\/269a19c2ad89a0e8a7596498e3806ff2ec1040c2","source":"security@huntr.dev","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/156f405b-21d6-4384-9bff-17ebfe484e20","source":"security@huntr.dev","tags":["Exploit","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-2064","sourceIdentifier":"security@huntr.dev","published":"2022-06-13T12:15:08.270","lastModified":"2022-06-22T16:07:33.080","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Insufficient Session Expiration in GitHub repository nocodb\/nocodb prior to 0.91.7+."},{"lang":"es","value":"Una Expiración de Sesión Insuficiente en el repositorio de GitHub nocodb\/nocodb versiones anteriores a 0.91.7+"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":8.8,"baseSeverity":"HIGH"},"exploitabilityScore":2.8,"impactScore":5.9}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:H\/UI:N\/S:C\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"HIGH","userInteraction":"NONE","scope":"CHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.1,"baseSeverity":"CRITICAL"},"exploitabilityScore":2.3,"impactScore":6.0}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:S\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"SINGLE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":6.5},"baseSeverity":"MEDIUM","exploitabilityScore":8.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-613"}]},{"source":"security@huntr.dev","type":"Secondary","description":[{"lang":"en","value":"CWE-613"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:xgenecloud:nocodb:*:*:*:*:*:*:*:*","versionEndExcluding":"0.91.7","matchCriteriaId":"1E79120D-C248-4A67-AC09-AECFDFFB240F"}]}]}],"references":[{"url":"https:\/\/github.com\/nocodb\/nocodb\/commit\/c9b5111b25aea2781e19395a8e9107ddbd235a2b","source":"security@huntr.dev","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/39523d51-fc5c-48b8-a082-171da79761bb","source":"security@huntr.dev","tags":["Exploit","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-2079","sourceIdentifier":"security@huntr.dev","published":"2022-06-14T09:15:09.823","lastModified":"2022-06-22T20:27:29.463","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Cross-site Scripting (XSS) - Stored in GitHub repository nocodb\/nocodb prior to 0.91.7+."},{"lang":"es","value":"Una vulnerabilidad de tipo Cross-site Scripting (XSS) - Almacenado en el repositorio GitHub nocodb\/nocodb versiones anteriores a 0.91.7+"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.3,"impactScore":2.7}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:L\/UI:R\/S:U\/C:H\/I:H\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"NONE","baseScore":7.3,"baseSeverity":"HIGH"},"exploitabilityScore":2.1,"impactScore":5.2}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:S\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"SINGLE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":3.5},"baseSeverity":"LOW","exploitabilityScore":6.8,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]},{"source":"security@huntr.dev","type":"Secondary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:xgenecloud:nocodb:*:*:*:*:*:*:*:*","versionEndExcluding":"0.91.7","matchCriteriaId":"1E79120D-C248-4A67-AC09-AECFDFFB240F"}]}]}],"references":[{"url":"https:\/\/github.com\/nocodb\/nocodb\/commit\/362f8f0869989bc13bdcd66c6fc9c86ac79b9992","source":"security@huntr.dev","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/2615adf2-ff40-4623-97fb-2e4a3800202a","source":"security@huntr.dev","tags":["Exploit","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-2339","sourceIdentifier":"security@huntr.dev","published":"2022-07-07T04:15:11.467","lastModified":"2022-07-14T17:22:18.410","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"With this SSRF vulnerability, an attacker can reach internal addresses to make a request as the server and read it's contents. This attack can lead to leak of sensitive information."},{"lang":"es","value":"Con esta vulnerabilidad de tipo SSRF, un atacante puede llegar a direcciones internas para hacer una petición como el servidor y leer su contenido. Este ataque puede conllevar a una filtrado de información confidencial"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":7.5,"baseSeverity":"HIGH"},"exploitabilityScore":3.9,"impactScore":3.6}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:N\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"HIGH","baseScore":9.1,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.2}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:N\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":5.0},"baseSeverity":"MEDIUM","exploitabilityScore":10.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"security@huntr.dev","type":"Primary","description":[{"lang":"en","value":"CWE-918"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:xgenecloud:nocodb:*:*:*:*:*:*:*:*","versionEndExcluding":"0.92.0","matchCriteriaId":"D85FA92A-6C12-4804-95FE-926A2F49AEEA"}]}]}],"references":[{"url":"https:\/\/github.com\/nocodb\/nocodb\/commit\/000ecd886738b965b5997cd905825e3244f48b95","source":"security@huntr.dev","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/fff06de8-2a82-49b1-8e81-968731e87eef","source":"security@huntr.dev","tags":["Exploit","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-3423","sourceIdentifier":"security@huntr.dev","published":"2022-10-07T11:15:10.523","lastModified":"2023-08-02T09:15:13.683","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"Allocation of Resources Without Limits or Throttling in GitHub repository nocodb\/nocodb prior to 0.92.0.\n\n"},{"lang":"es","value":"Una Denegación de Servicio en el repositorio de GitHub nocodb\/nocodb versiones anteriores a 0.92.0"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:N\/I:N\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"NONE","integrityImpact":"NONE","availabilityImpact":"HIGH","baseScore":6.5,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":3.6},{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:L\/AC:L\/PR:L\/UI:R\/S:C\/C:L\/I:L\/A:H","attackVector":"LOCAL","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"HIGH","baseScore":7.3,"baseSeverity":"HIGH"},"exploitabilityScore":1.5,"impactScore":5.3}]},"weaknesses":[{"source":"security@huntr.dev","type":"Primary","description":[{"lang":"en","value":"CWE-770"}]},{"source":"nvd@nist.gov","type":"Secondary","description":[{"lang":"en","value":"CWE-770"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:xgenecloud:nocodb:*:*:*:*:*:*:*:*","versionEndExcluding":"0.92.0","matchCriteriaId":"D85FA92A-6C12-4804-95FE-926A2F49AEEA"}]}]}],"references":[{"url":"https:\/\/github.com\/nocodb\/nocodb\/commit\/000ecd886738b965b5997cd905825e3244f48b95","source":"security@huntr.dev","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/94639d8e-8301-4432-ab80-e76e1346e631","source":"security@huntr.dev","tags":["Exploit","Issue Tracking","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2023-5104","sourceIdentifier":"security@huntr.dev","published":"2023-09-21T09:15:10.063","lastModified":"2023-09-22T13:48:21.577","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Improper Input Validation in GitHub repository nocodb\/nocodb prior to 0.96.0."},{"lang":"es","value":"Validación de Entrada Incorrecta en el repositorio de GitHub nocodb\/nocodb anterior a 0.96.0."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:U\/C:N\/I:N\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"UNCHANGED","confidentialityImpact":"NONE","integrityImpact":"NONE","availabilityImpact":"HIGH","baseScore":6.5,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":3.6}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:L\/UI:R\/S:U\/C:N\/I:N\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"UNCHANGED","confidentialityImpact":"NONE","integrityImpact":"NONE","availabilityImpact":"HIGH","baseScore":5.7,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.1,"impactScore":3.6}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-20"}]},{"source":"security@huntr.dev","type":"Secondary","description":[{"lang":"en","value":"CWE-20"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:xgenecloud:nocodb:*:*:*:*:*:*:*:*","versionEndExcluding":"0.96.0","matchCriteriaId":"BF4594AD-B668-43AA-8A82-BFB6DD12CC29"}]}]}],"references":[{"url":"https:\/\/github.com\/nocodb\/nocodb\/commit\/db0385cb8aab2a34e233454607f59152ac62b3e2","source":"security@huntr.dev","tags":["Patch"]},{"url":"https:\/\/huntr.dev\/bounties\/1b5c6d9f-941e-4dd7-a964-42b53d6826b0","source":"security@huntr.dev","tags":["Exploit","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2023-43794","sourceIdentifier":"security-advisories@github.com","published":"2023-10-17T21:15:46.120","lastModified":"2023-10-24T21:00:27.387","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Nocodb is an open source Airtable alternative. Affected versions of nocodb contain a SQL injection vulnerability, that allows an authenticated attacker with creator access to query the underlying database. By supplying a specially crafted payload to the given an attacker can inject arbitrary SQL queries to be executed. Since this is a blind SQL injection, an attacker may need to use time-based payloads which would include a function to delay execution for a given number of seconds. The response time indicates, whether the result of the query execution was true or false. Depending on the result, the HTTP response will be returned after a given number of seconds, indicating TRUE, or immediately, indicating FALSE. In that way, an attacker can reveal the data present in the database. This vulnerability has been addressed in version 0.111.0. Users are advised to upgrade. There are no known workarounds for this vulnerability. This issue is also tracked as `GHSL-2023-141`."},{"lang":"es","value":"Nocodb es una alternativa de código abierto a Airtable. Las versiones afectadas de nocodb contienen una vulnerabilidad de inyección SQL, que permite a un atacante autenticado con acceso de creador consultar la base de datos subyacente. Al proporcionar un payload especialmente manipulada, un atacante puede inyectar consultas SQL arbitrarias para su ejecución. Dado que se trata de una inyección blind SQL, es posible que un atacante necesite utilizar payloads basados en el tiempo que incluirían una función para retrasar la ejecución durante un número determinado de segundos. El tiempo de respuesta indica si el resultado de la ejecución de la consulta fue verdadero o falso. Dependiendo del resultado, la respuesta HTTP se devolverá después de un número determinado de segundos, indicando VERDADERO, o inmediatamente, indicando FALSO. De esa forma, un atacante puede revelar los datos presentes en la base de datos. Esta vulnerabilidad se ha solucionado en la versión 0.111.0. Se recomienda a los usuarios que actualicen. No se conocen workarounds para esta vulnerabilidad. Este problema también se rastrea como \"GHSL-2023-141\"."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:H\/UI:N\/S:U\/C:H\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"HIGH","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":4.9,"baseSeverity":"MEDIUM"},"exploitabilityScore":1.2,"impactScore":3.6},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:H\/UI:N\/S:U\/C:H\/I:H\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"HIGH","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"NONE","baseScore":6.5,"baseSeverity":"MEDIUM"},"exploitabilityScore":1.2,"impactScore":5.2}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-89"}]},{"source":"security-advisories@github.com","type":"Secondary","description":[{"lang":"en","value":"CWE-89"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:xgenecloud:nocodb:0.109.2:*:*:*:*:*:*:*","matchCriteriaId":"3193E82C-7D6C-4A7D-8DA8-F0E9F5D8ED8B"}]}]}],"references":[{"url":"https:\/\/github.com\/nocodb\/nocodb\/security\/advisories\/GHSA-3m5q-q39v-xf8f","source":"security-advisories@github.com","tags":["Exploit","Third Party Advisory"]}]}}]}
+{
+    "resultsPerPage": 11,
+    "startIndex": 0,
+    "totalResults": 11,
+    "format": "NVD_CVE",
+    "version": "2.0",
+    "timestamp": "2024-04-30T10:48:53.107",
+    "vulnerabilities": [
+        {
+            "cve": {
+                "id": "CVE-2022-22120",
+                "sourceIdentifier": "vulnerabilitylab@mend.io",
+                "published": "2022-01-10T16:15:10.180",
+                "lastModified": "2022-01-19T18:30:52.887",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "In NocoDB, versions 0.9 to 0.83.8 are vulnerable to Observable Discrepancy in the password-reset feature. When requesting a password reset for a given email address, the application displays an error message when the email isn't registered within the system. This allows attackers to enumerate the registered users' email addresses."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "En NocoDB, versiones 0.9 a 0.83.8, son vulnerables a una Discrepancia Observable en la funcionalidad password-reset. Cuando es solicitado un restablecimiento de contrase\u00f1a para una direcci\u00f3n de correo electr\u00f3nico determinada, la aplicaci\u00f3n muestra un mensaje de error cuando el correo electr\u00f3nico no est\u00e1 registrado en el sistema. Esto permite a atacantes enumerar las direcciones de correo electr\u00f3nico de usuarios registrados"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "vulnerabilitylab@mend.io",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.3,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 1.4
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "vulnerabilitylab@mend.io",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-203"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:xgenecloud:nocodb:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "0.9",
+                                        "versionEndIncluding": "0.83.8",
+                                        "matchCriteriaId": "9A317204-AB4B-4E4B-AD96-8A04CBD690D0"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/nocodb/nocodb/commit/f46e89b0",
+                        "source": "vulnerabilitylab@mend.io",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.whitesourcesoftware.com/vulnerability-database/CVE-2022-22120",
+                        "source": "vulnerabilitylab@mend.io",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-22121",
+                "sourceIdentifier": "vulnerabilitylab@mend.io",
+                "published": "2022-01-10T16:15:10.243",
+                "lastModified": "2022-01-19T18:24:49.953",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "In NocoDB, versions 0.81.0 through 0.83.8 are affected by CSV Injection vulnerability (Formula Injection). A low privileged attacker can create a new table to inject payloads in the table rows. When an administrator accesses the User Management endpoint and exports the data as a CSV file and opens it, the payload gets executed."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "En NocoDB, versiones 0.81.0 hasta 0.83.8, est\u00e1n afectadas por una vulnerabilidad de Inyecci\u00f3n CSV (inyecci\u00f3n de f\u00f3rmulas). Un atacante con pocos privilegios puede crear una nueva tabla para inyectar cargas \u00fatiles en las filas de la tabla. Cuando un administrador accede al endpoint de Administraci\u00f3n de Usuarios y exporta los datos como un archivo CSV y lo abre, la carga \u00fatil es ejecutada"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "vulnerabilitylab@mend.io",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 8.0,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.1,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:S/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 6.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 6.8,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "vulnerabilitylab@mend.io",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-1236"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:xgenecloud:nocodb:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "0.81.0",
+                                        "versionEndIncluding": "0.83.8",
+                                        "matchCriteriaId": "67BF56F5-AAFA-46B5-A12C-F1586B4BBACA"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/nocodb/nocodb/commit/079e3abe",
+                        "source": "vulnerabilitylab@mend.io",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.whitesourcesoftware.com/vulnerability-database/CVE-2022-22121",
+                        "source": "vulnerabilitylab@mend.io",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-2022",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2022-06-07T20:15:08.707",
+                "lastModified": "2022-06-16T14:47:19.530",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Cross-site Scripting (XSS) - Stored in GitHub repository nocodb/nocodb prior to 0.91.7."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Una vulnerabilidad de tipo Cross-site Scripting (XSS) - Almacenado en el repositorio GitHub nocodb/nocodb versiones anteriores a 0.91.7"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.0,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 6.0
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 3.5
+                            },
+                            "baseSeverity": "LOW",
+                            "exploitabilityScore": 6.8,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:xgenecloud:nocodb:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "0.91.7",
+                                        "matchCriteriaId": "1E79120D-C248-4A67-AC09-AECFDFFB240F"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/nocodb/nocodb/commit/ffad5a318ad60d1da1c75dd28152827b94c92e9d",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/f6082949-40d3-411c-b613-23ada2691913",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-2062",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2022-06-13T12:15:08.107",
+                "lastModified": "2023-06-29T09:15:11.030",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Generation of Error Message Containing Sensitive Information in GitHub repository nocodb/nocodb prior to 0.91.7+."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Una Exposici\u00f3n de Informaci\u00f3n Confidencial a un Actor no Autorizado en el repositorio de GitHub nocodb/nocodb versiones anteriores a 0.91.7+"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 7.5,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 3.6
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:L/A:L",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "LOW",
+                                "baseScore": 9.1,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.1,
+                            "impactScore": 5.3
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-209"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-209"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:xgenecloud:nocodb:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "0.91.7",
+                                        "matchCriteriaId": "1E79120D-C248-4A67-AC09-AECFDFFB240F"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/nocodb/nocodb/commit/a18f5dd53811b9ec1c1bb2fdbfb328c0c87d7fb4",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/35593b4c-f127-4699-8ad3-f0b2203a8ef6",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-2063",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2022-06-13T12:15:08.187",
+                "lastModified": "2022-06-22T15:15:56.310",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Improper Privilege Management in GitHub repository nocodb/nocodb prior to 0.91.7+."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Una Administraci\u00f3n inapropiada de Privilegios en el repositorio de GitHub nocodb/nocodb versiones anteriores a 0.91.7+"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 8.8,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.0,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 6.0
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 6.8
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-269"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-269"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:xgenecloud:nocodb:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "0.91.7",
+                                        "matchCriteriaId": "1E79120D-C248-4A67-AC09-AECFDFFB240F"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/nocodb/nocodb/commit/269a19c2ad89a0e8a7596498e3806ff2ec1040c2",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/156f405b-21d6-4384-9bff-17ebfe484e20",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-2064",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2022-06-13T12:15:08.270",
+                "lastModified": "2022-06-22T16:07:33.080",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Insufficient Session Expiration in GitHub repository nocodb/nocodb prior to 0.91.7+."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Una Expiraci\u00f3n de Sesi\u00f3n Insuficiente en el repositorio de GitHub nocodb/nocodb versiones anteriores a 0.91.7+"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 8.8,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "HIGH",
+                                "userInteraction": "NONE",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.1,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 6.0
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 6.5
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-613"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-613"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:xgenecloud:nocodb:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "0.91.7",
+                                        "matchCriteriaId": "1E79120D-C248-4A67-AC09-AECFDFFB240F"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/nocodb/nocodb/commit/c9b5111b25aea2781e19395a8e9107ddbd235a2b",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/39523d51-fc5c-48b8-a082-171da79761bb",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-2079",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2022-06-14T09:15:09.823",
+                "lastModified": "2022-06-22T20:27:29.463",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Cross-site Scripting (XSS) - Stored in GitHub repository nocodb/nocodb prior to 0.91.7+."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Una vulnerabilidad de tipo Cross-site Scripting (XSS) - Almacenado en el repositorio GitHub nocodb/nocodb versiones anteriores a 0.91.7+"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 7.3,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.1,
+                            "impactScore": 5.2
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 3.5
+                            },
+                            "baseSeverity": "LOW",
+                            "exploitabilityScore": 6.8,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:xgenecloud:nocodb:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "0.91.7",
+                                        "matchCriteriaId": "1E79120D-C248-4A67-AC09-AECFDFFB240F"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/nocodb/nocodb/commit/362f8f0869989bc13bdcd66c6fc9c86ac79b9992",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/2615adf2-ff40-4623-97fb-2e4a3800202a",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-2339",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2022-07-07T04:15:11.467",
+                "lastModified": "2022-07-14T17:22:18.410",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "With this SSRF vulnerability, an attacker can reach internal addresses to make a request as the server and read it's contents. This attack can lead to leak of sensitive information."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Con esta vulnerabilidad de tipo SSRF, un atacante puede llegar a direcciones internas para hacer una petici\u00f3n como el servidor y leer su contenido. Este ataque puede conllevar a una filtrado de informaci\u00f3n confidencial"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 7.5,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 3.6
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.1,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.2
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-918"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:xgenecloud:nocodb:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "0.92.0",
+                                        "matchCriteriaId": "D85FA92A-6C12-4804-95FE-926A2F49AEEA"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/nocodb/nocodb/commit/000ecd886738b965b5997cd905825e3244f48b95",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/fff06de8-2a82-49b1-8e81-968731e87eef",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-3423",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2022-10-07T11:15:10.523",
+                "lastModified": "2023-08-02T09:15:13.683",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Allocation of Resources Without Limits or Throttling in GitHub repository nocodb/nocodb prior to 0.92.0.\n\n"
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Una Denegaci\u00f3n de Servicio en el repositorio de GitHub nocodb/nocodb versiones anteriores a 0.92.0"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 6.5,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 3.6
+                        },
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:H",
+                                "attackVector": "LOCAL",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 7.3,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 1.5,
+                            "impactScore": 5.3
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-770"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-770"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:xgenecloud:nocodb:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "0.92.0",
+                                        "matchCriteriaId": "D85FA92A-6C12-4804-95FE-926A2F49AEEA"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/nocodb/nocodb/commit/000ecd886738b965b5997cd905825e3244f48b95",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/94639d8e-8301-4432-ab80-e76e1346e631",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Issue Tracking",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-5104",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2023-09-21T09:15:10.063",
+                "lastModified": "2023-09-22T13:48:21.577",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Improper Input Validation in GitHub repository nocodb/nocodb prior to 0.96.0."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Validaci\u00f3n de Entrada Incorrecta en el repositorio de GitHub nocodb/nocodb anterior a 0.96.0."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 6.5,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 3.6
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:N/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 5.7,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.1,
+                            "impactScore": 3.6
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-20"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-20"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:xgenecloud:nocodb:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "0.96.0",
+                                        "matchCriteriaId": "BF4594AD-B668-43AA-8A82-BFB6DD12CC29"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/nocodb/nocodb/commit/db0385cb8aab2a34e233454607f59152ac62b3e2",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/1b5c6d9f-941e-4dd7-a964-42b53d6826b0",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-43794",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2023-10-17T21:15:46.120",
+                "lastModified": "2023-10-24T21:00:27.387",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Nocodb is an open source Airtable alternative. Affected versions of nocodb contain a SQL injection vulnerability, that allows an authenticated attacker with creator access to query the underlying database. By supplying a specially crafted payload to the given an attacker can inject arbitrary SQL queries to be executed. Since this is a blind SQL injection, an attacker may need to use time-based payloads which would include a function to delay execution for a given number of seconds. The response time indicates, whether the result of the query execution was true or false. Depending on the result, the HTTP response will be returned after a given number of seconds, indicating TRUE, or immediately, indicating FALSE. In that way, an attacker can reveal the data present in the database. This vulnerability has been addressed in version 0.111.0. Users are advised to upgrade. There are no known workarounds for this vulnerability. This issue is also tracked as `GHSL-2023-141`."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Nocodb es una alternativa de c\u00f3digo abierto a Airtable. Las versiones afectadas de nocodb contienen una vulnerabilidad de inyecci\u00f3n SQL, que permite a un atacante autenticado con acceso de creador consultar la base de datos subyacente. Al proporcionar un payload especialmente manipulada, un atacante puede inyectar consultas SQL arbitrarias para su ejecuci\u00f3n. Dado que se trata de una inyecci\u00f3n blind SQL, es posible que un atacante necesite utilizar payloads basados en el tiempo que incluir\u00edan una funci\u00f3n para retrasar la ejecuci\u00f3n durante un n\u00famero determinado de segundos. El tiempo de respuesta indica si el resultado de la ejecuci\u00f3n de la consulta fue verdadero o falso. Dependiendo del resultado, la respuesta HTTP se devolver\u00e1 despu\u00e9s de un n\u00famero determinado de segundos, indicando VERDADERO, o inmediatamente, indicando FALSO. De esa forma, un atacante puede revelar los datos presentes en la base de datos. Esta vulnerabilidad se ha solucionado en la versi\u00f3n 0.111.0. Se recomienda a los usuarios que actualicen. No se conocen workarounds para esta vulnerabilidad. Este problema tambi\u00e9n se rastrea como \"GHSL-2023-141\"."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "HIGH",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.9,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 1.2,
+                            "impactScore": 3.6
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "HIGH",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.5,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 1.2,
+                            "impactScore": 5.2
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-89"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-89"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:xgenecloud:nocodb:0.109.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "3193E82C-7D6C-4A7D-8DA8-F0E9F5D8ED8B"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/nocodb/nocodb/security/advisories/GHSA-3m5q-q39v-xf8f",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

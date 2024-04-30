@@ -1,1 +1,1995 @@
-{"resultsPerPage":17,"startIndex":0,"totalResults":17,"format":"NVD_CVE","version":"2.0","timestamp":"2024-04-30T10:42:34.737","vulnerabilities":[{"cve":{"id":"CVE-2016-10983","sourceIdentifier":"cve@mitre.org","published":"2019-09-17T15:15:12.130","lastModified":"2019-09-18T15:03:22.000","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"The ghost plugin before 0.5.6 for WordPress has no access control for wp-admin\/tools.php?ghostexport=true downloads of exported data."},{"lang":"es","value":"El plugin ghost versiones anteriores a 0.5.6 para WordPress, no posee un control de acceso para descargas de datos exportados de wp-admin\/tools.php?ghostexport=true ."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":6.5,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":3.6}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:S\/C:P\/I:N\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"SINGLE","confidentialityImpact":"PARTIAL","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":4.0},"baseSeverity":"MEDIUM","exploitabilityScore":8.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-287"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:ghost:ghost:*:*:*:*:*:wordpress:*:*","versionEndExcluding":"0.5.6","matchCriteriaId":"700718E3-D02F-4BE5-9600-F153C1FBB54E"}]}]}],"references":[{"url":"https:\/\/packetstormsecurity.com\/files\/136887\/","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory","VDB Entry"]},{"url":"https:\/\/wordpress.org\/plugins\/ghost\/#developers","source":"cve@mitre.org","tags":["Release Notes"]}]}},{"cve":{"id":"CVE-2020-8134","sourceIdentifier":"support@hackerone.com","published":"2020-03-20T19:15:12.797","lastModified":"2020-03-26T19:01:36.957","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Server-side request forgery (SSRF) vulnerability in Ghost CMS < 3.10.0 allows an attacker to scan local or external network or otherwise interact with internal systems."},{"lang":"es","value":"Una vulnerabilidad de tipo Server-side request forgery (SSRF) en Ghost CMS versiones anteriores a 3.10.0, permite a un atacante escanear redes locales o externas o si no interactuar con sistemas internos."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:H\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"NONE","baseScore":8.1,"baseSeverity":"HIGH"},"exploitabilityScore":2.8,"impactScore":5.2}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:S\/C:P\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"SINGLE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":5.5},"baseSeverity":"MEDIUM","exploitabilityScore":8.0,"impactScore":4.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-918"}]},{"source":"support@hackerone.com","type":"Secondary","description":[{"lang":"en","value":"CWE-918"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:ghost:ghost:*:*:*:*:*:node.js:*:*","versionEndExcluding":"3.10.0","matchCriteriaId":"593AD762-6D6D-4925-8EE7-5B606A2FF6AF"}]}]}],"references":[{"url":"https:\/\/hackerone.com\/reports\/793704","source":"support@hackerone.com","tags":["Exploit","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2021-29484","sourceIdentifier":"security-advisories@github.com","published":"2021-04-29T21:15:08.590","lastModified":"2021-09-14T18:47:05.297","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Ghost is a Node.js CMS. An unused endpoint added during the development of 4.0.0 has left sites vulnerable to untrusted users gaining access to Ghost Admin. Attackers can gain access by getting logged in users to click a link containing malicious code. Users do not need to enter credentials and may not know they've visited a malicious site. Ghost(Pro) has already been patched. We can find no evidence that the issue was exploited on Ghost(Pro) prior to the patch being added. Self-hosters are impacted if running Ghost a version between 4.0.0 and 4.3.2. Immediate action should be taken to secure your site. The issue has been fixed in 4.3.3, all 4.x sites should upgrade as soon as possible. As the endpoint is unused, the patch simply removes it. As a workaround blocking access to \/ghost\/preview can also mitigate the issue."},{"lang":"es","value":"Ghost es un CMS Node.js. Un endpoint sin uso agregado durante el desarrollo de la versión 4.0.0 ha dejado los sitios vulnerables a que usuarios no confiables que obtienen acceso a Ghost Admin. Los atacantes pueden conseguir acceso al hacer que unos usuarios que tengan iniciada la sesión hagan clic en un enlace que contenga código malicioso. Los usuarios no necesitan introducir sus credenciales y es posible que no sepan que han visitado un sitio malicioso. Ghost(Pro) ya ha sido parcheado. No hemos encontrado pruebas de que el problema se haya explotado en Ghost(Pro) antes de que se agregara el parche. Los  autohospedadores están afectados si ejecutan Ghost en una versión entre 4.0.0 y 4.3.2. Se deben tomar medidas inmediatas para proteger su sitio. El problema ha sido corregido en 4.3.3, todos los sitios 4.x deberían actualizarse lo antes posible. Como el endpoint sin uso, el parche simplemente lo elimina. Como solución alternativa, bloquear el acceso a \/ghost\/preview también puede mitigar el problema."}],"metrics":{"cvssMetricV31":[{"source":"security-advisories@github.com","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:H\/PR:N\/UI:R\/S:U\/C:H\/I:H\/A:N","attackVector":"NETWORK","attackComplexity":"HIGH","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"NONE","baseScore":6.8,"baseSeverity":"MEDIUM"},"exploitabilityScore":1.6,"impactScore":5.2},{"source":"nvd@nist.gov","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.1,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.3},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]},{"source":"security-advisories@github.com","type":"Secondary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:ghost:ghost:*:*:*:*:*:node.js:*:*","versionStartIncluding":"4.0.0","versionEndExcluding":"4.3.3","matchCriteriaId":"23DB22EA-9BED-4114-AD2E-CDD95FBA9D42"}]}]}],"references":[{"url":"https:\/\/blog.sonarsource.com\/ghost-admin-takeover","source":"security-advisories@github.com","tags":["Exploit","Third Party Advisory"]},{"url":"https:\/\/forum.ghost.org\/t\/critical-security-update-available-for-ghost-4-x\/22290","source":"security-advisories@github.com","tags":["Vendor Advisory"]},{"url":"https:\/\/github.com\/TryGhost\/Ghost\/security\/advisories\/GHSA-9fgx-q25h-jxrg","source":"security-advisories@github.com","tags":["Mitigation","Third Party Advisory"]},{"url":"https:\/\/www.npmjs.com\/package\/ghost","source":"security-advisories@github.com","tags":["Product","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2021-39192","sourceIdentifier":"security-advisories@github.com","published":"2021-09-03T15:15:09.410","lastModified":"2021-09-10T19:02:46.283","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Ghost is a Node.js content management system. An error in the implementation of the limits service between versions 4.0.0 and 4.9.4 allows all authenticated users (including contributors) to view admin-level API keys via the integrations API endpoint, leading to a privilege escalation vulnerability. This issue is patched in Ghost version 4.10.0. As a workaround, disable all non-Administrator accounts to prevent API access. It is highly recommended to regenerate all API keys after patching or applying the workaround."},{"lang":"es","value":"Ghost es un sistema de administración de contenidos Node.js. Un error en la implementación del servicio de límites entre las versiones 4.0.0 y 4.9.4, permite a todos los usuarios autenticados (incluidos los colaboradores) visualizar las claves de la API a nivel de administrador por medio del endpoint de la API de integraciones, conllevando a una vulnerabilidad de escalada de privilegios. Este problema se ha corregido en la versión 4.10.0 de Ghost. Como solución, deshabilite todas las cuentas que no sean de administrador para prevenir el acceso a la API. Se recomienda encarecidamente regenerar todas las claves de la API después de aplicar el parche o la solución"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:H\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"HIGH","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":7.2,"baseSeverity":"HIGH"},"exploitabilityScore":1.2,"impactScore":5.9},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:H\/UI:N\/S:U\/C:H\/I:H\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"HIGH","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"NONE","baseScore":6.5,"baseSeverity":"MEDIUM"},"exploitabilityScore":1.2,"impactScore":5.2}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:S\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"SINGLE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":6.5},"baseSeverity":"MEDIUM","exploitabilityScore":8.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-269"}]},{"source":"security-advisories@github.com","type":"Secondary","description":[{"lang":"en","value":"CWE-200"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:ghost:ghost:*:*:*:*:*:node.js:*:*","versionStartIncluding":"4.0.0","versionEndExcluding":"4.10.0","matchCriteriaId":"1CD08534-3B8F-47EC-AE75-2F3F3FA6BF03"}]}]}],"references":[{"url":"https:\/\/github.com\/TryGhost\/Ghost\/releases\/tag\/v4.10.0","source":"security-advisories@github.com","tags":["Release Notes","Third Party Advisory"]},{"url":"https:\/\/github.com\/TryGhost\/Ghost\/security\/advisories\/GHSA-j5c2-hm46-wp5c","source":"security-advisories@github.com","tags":["Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-27139","sourceIdentifier":"cve@mitre.org","published":"2022-04-12T17:15:09.840","lastModified":"2024-04-11T01:15:02.370","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"An arbitrary file upload vulnerability in the file upload module of Ghost v4.39.0 allows attackers to execute arbitrary code via a crafted SVG file. NOTE: Vendor states that as outlined in Ghost's security documentation, upload of SVGs is only possible by trusted authenticated users. The uploading of SVG files to Ghost does not represent a remote code execution vulnerability. SVGs are not executable on the server, and may only execute javascript in a client's browser - this is expected and intentional functionality"},{"lang":"es","value":"** EN DISPUTA ** Una vulnerabilidad de carga de archivos arbitraria en el módulo de carga de archivos de Ghost versión v4.39.0, permite a atacantes ejecutar código arbitrario por medio de un archivo SVG diseñado. NOTA: El proveedor afirma que, tal y como se indica en la documentación de seguridad de Ghost, la carga de SVG sólo es posible por parte de usuarios autentificados de confianza. La carga de archivos SVG en Ghost no representa una vulnerabilidad de ejecución remota de código. Los SVG no son ejecutables en el servidor, y sólo pueden ejecutar javascript en el navegador de un cliente; se trata de una funcionalidad esperada e intencionada"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.8,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.9}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":7.5},"baseSeverity":"HIGH","exploitabilityScore":10.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-434"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:ghost:ghost:4.39.0:*:*:*:*:node.js:*:*","matchCriteriaId":"385A2C69-1F04-4162-BBFB-2FA2704DFC3E"}]}]}],"references":[{"url":"http:\/\/ghost.org\/docs\/security\/#privilege-escalation-attacks","source":"cve@mitre.org"},{"url":"https:\/\/youtu.be\/FCqWEvir2wE","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-28397","sourceIdentifier":"cve@mitre.org","published":"2022-04-12T17:15:10.730","lastModified":"2024-04-11T01:15:10.050","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"An arbitrary file upload vulnerability in the file upload module of Ghost CMS v4.42.0 allows attackers to execute arbitrary code via a crafted file. NOTE: Vendor states as detailed in Ghost's security documentation, files can only be uploaded and published by trusted users, this is intentional"},{"lang":"es","value":"** EN DISPUTA ** Una vulnerabilidad de carga de archivos arbitraria en el módulo de carga de archivos de Ghost CMS versión v4.42.0, permite a atacantes ejecutar código arbitrario por medio de un archivo diseñado. NOTA: Según la documentación de seguridad de Ghost, los archivos sólo pueden ser cargados y publicados por usuarios de confianza, esto es intencional"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.8,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.9}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":7.5},"baseSeverity":"HIGH","exploitabilityScore":10.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-434"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:ghost:ghost:4.42.0:*:*:*:*:node.js:*:*","matchCriteriaId":"0C5928ED-7E55-4771-A0A5-6ED78480552D"}]}]}],"references":[{"url":"http:\/\/ghost.com","source":"cve@mitre.org","tags":["Product"]},{"url":"https:\/\/ghost.org\/customers\/","source":"cve@mitre.org","tags":["Product"]},{"url":"https:\/\/ghost.org\/docs\/security\/#privilege-escalation-attacks","source":"cve@mitre.org"},{"url":"https:\/\/github.com\/TryGhost\/Ghost","source":"cve@mitre.org","tags":["Third Party Advisory"]},{"url":"https:\/\/trends.builtwith.com\/cms\/Ghost","source":"cve@mitre.org","tags":["Product"]},{"url":"https:\/\/youtu.be\/PncfBetPk2g","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-41654","sourceIdentifier":"talos-cna@cisco.com","published":"2022-12-22T10:15:10.047","lastModified":"2022-12-29T20:33:41.597","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"An authentication bypass vulnerability exists in the newsletter subscription functionality of Ghost Foundation Ghost 5.9.4. A specially-crafted HTTP request can lead to increased privileges. An attacker can send an HTTP request to trigger this vulnerability."},{"lang":"es","value":"Existe una vulnerabilidad de omisión de autenticación en la funcionalidad de suscripción al boletín de Ghost Foundation Ghost 5.9.4. Una solicitud HTTP especialmente manipulada puede generar mayores privilegios. Un atacante puede enviar una solicitud HTTP para desencadenar esta vulnerabilidad."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:N\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"NONE","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":4.3,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":1.4}],"cvssMetricV30":[{"source":"talos-cna@cisco.com","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.6,"baseSeverity":"CRITICAL"},"exploitabilityScore":2.8,"impactScore":6.0}]},"weaknesses":[{"source":"talos-cna@cisco.com","type":"Primary","description":[{"lang":"en","value":"CWE-284"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:ghost:ghost:*:*:*:*:*:node.js:*:*","versionStartIncluding":"4.46.0","versionEndExcluding":"4.48.8","matchCriteriaId":"8E71806D-2CBB-4D88-8D27-117A20737E25"},{"vulnerable":true,"criteria":"cpe:2.3:a:ghost:ghost:*:*:*:*:*:node.js:*:*","versionStartIncluding":"5.0.0","versionEndExcluding":"5.22.7","matchCriteriaId":"10D8C53F-5C69-42AC-A343-2FF04D23395D"}]}]}],"references":[{"url":"https:\/\/github.com\/TryGhost\/Ghost\/security\/advisories\/GHSA-9gh8-wp53-ccc6","source":"talos-cna@cisco.com","tags":["Third Party Advisory"]},{"url":"https:\/\/talosintelligence.com\/vulnerability_reports\/TALOS-2022-1624","source":"talos-cna@cisco.com","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-41697","sourceIdentifier":"talos-cna@cisco.com","published":"2022-12-22T10:15:10.120","lastModified":"2022-12-29T18:21:24.217","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"A user enumeration vulnerability exists in the login functionality of Ghost Foundation Ghost 5.9.4. A specially-crafted HTTP request can lead to a disclosure of sensitive information. An attacker can send a series of HTTP requests to trigger this vulnerability."},{"lang":"es","value":"Existe una vulnerabilidad de enumeración de usuarios en la funcionalidad de inicio de sesión de Ghost Foundation Ghost 5.9.4. Una solicitud HTTP especialmente manipulada puede dar lugar a la divulgación de información confidencial. Un atacante puede enviar una serie de solicitudes HTTP para desencadenar esta vulnerabilidad."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:L\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":5.3,"baseSeverity":"MEDIUM"},"exploitabilityScore":3.9,"impactScore":1.4}],"cvssMetricV30":[{"source":"talos-cna@cisco.com","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:L\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":5.3,"baseSeverity":"MEDIUM"},"exploitabilityScore":3.9,"impactScore":1.4}]},"weaknesses":[{"source":"talos-cna@cisco.com","type":"Primary","description":[{"lang":"en","value":"CWE-204"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:ghost:ghost:5.9.4:*:*:*:*:node.js:*:*","matchCriteriaId":"83AD75D8-518F-4F53-98F0-8AFA3F7B18D9"}]}]}],"references":[{"url":"https:\/\/talosintelligence.com\/vulnerability_reports\/TALOS-2022-1625","source":"talos-cna@cisco.com","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-47194","sourceIdentifier":"talos-cna@cisco.com","published":"2023-01-19T18:15:13.553","lastModified":"2023-06-27T13:31:29.440","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"An insecure default vulnerability exists in the Post Creation functionality of Ghost Foundation Ghost 5.9.4. Default installations of Ghost allow non-administrator users to inject arbitrary Javascript in posts, which allow privilege escalation to administrator via XSS. To trigger this vulnerability, an attacker can send an HTTP request to inject Javascript in a post to trick an administrator into visiting the post.A stored XSS vulnerability exists in the `twitter` field for a user."},{"lang":"es","value":"Existe una vulnerabilidad predeterminada insegura en la funcionalidad de creación posterior de Ghost Foundation Ghost 5.9.4. Las instalaciones predeterminadas de Ghost permiten a los usuarios que no son administradores inyectar Javascript arbitrario en las publicaciones, lo que permite escalar privilegios al administrador a través de XSS. Para desencadenar esta vulnerabilidad, un atacante puede enviar una solicitud HTTP para inyectar Javascript en una publicación para engañar a un administrador para que visite la publicación. Existe una vulnerabilidad XSS almacenada en el campo \"twitter\" de un usuario."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.3,"impactScore":2.7}],"cvssMetricV30":[{"source":"talos-cna@cisco.com","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.0,"baseSeverity":"CRITICAL"},"exploitabilityScore":2.3,"impactScore":6.0}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-1188"},{"lang":"en","value":"CWE-79"}]},{"source":"talos-cna@cisco.com","type":"Secondary","description":[{"lang":"en","value":"CWE-453"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:ghost:ghost:5.9.4:*:*:*:*:node.js:*:*","matchCriteriaId":"83AD75D8-518F-4F53-98F0-8AFA3F7B18D9"}]}]}],"references":[{"url":"https:\/\/talosintelligence.com\/vulnerability_reports\/TALOS-2022-1686","source":"talos-cna@cisco.com","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-47195","sourceIdentifier":"talos-cna@cisco.com","published":"2023-01-19T18:15:14.120","lastModified":"2023-01-27T14:55:13.117","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"An insecure default vulnerability exists in the Post Creation functionality of Ghost Foundation Ghost 5.9.4. Default installations of Ghost allow non-administrator users to inject arbitrary Javascript in posts, which allow privilege escalation to administrator via XSS. To trigger this vulnerability, an attacker can send an HTTP request to inject Javascript in a post to trick an administrator into visiting the post.A stored XSS vulnerability exists in the `facebook` field for a user."},{"lang":"es","value":"Existe una vulnerabilidad predeterminada insegura en la funcionalidad de creación posterior de Ghost Foundation Ghost 5.9.4. Las instalaciones predeterminadas de Ghost permiten a los usuarios que no son administradores inyectar Javascript arbitrario en las publicaciones, lo que permite escalar privilegios al administrador a través de XSS. Para desencadenar esta vulnerabilidad, un atacante puede enviar una solicitud HTTP para inyectar Javascript en una publicación para engañar a un administrador para que visite la publicación. Existe una vulnerabilidad XSS almacenada en el campo \"facebook\" de un usuario."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.3,"impactScore":2.7}],"cvssMetricV30":[{"source":"talos-cna@cisco.com","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.0,"baseSeverity":"CRITICAL"},"exploitabilityScore":2.3,"impactScore":6.0}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]},{"source":"talos-cna@cisco.com","type":"Secondary","description":[{"lang":"en","value":"CWE-453"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:ghost:ghost:5.9.4:*:*:*:*:node.js:*:*","matchCriteriaId":"83AD75D8-518F-4F53-98F0-8AFA3F7B18D9"}]}]}],"references":[{"url":"https:\/\/talosintelligence.com\/vulnerability_reports\/TALOS-2022-1686","source":"talos-cna@cisco.com","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-47196","sourceIdentifier":"talos-cna@cisco.com","published":"2023-01-19T18:15:14.380","lastModified":"2023-06-23T16:11:01.037","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"An insecure default vulnerability exists in the Post Creation functionality of Ghost Foundation Ghost 5.9.4. Default installations of Ghost allow non-administrator users to inject arbitrary Javascript in posts, which allow privilege escalation to administrator via XSS. To trigger this vulnerability, an attacker can send an HTTP request to inject Javascript in a post to trick an administrator into visiting the post.A stored XSS vulnerability exists in the `codeinjection_head` for a post."},{"lang":"es","value":"Existe una vulnerabilidad predeterminada insegura en la funcionalidad de creación posterior de Ghost Foundation Ghost 5.9.4. Las instalaciones predeterminadas de Ghost permiten a los usuarios que no son administradores inyectar Javascript arbitrario en las publicaciones, lo que permite escalar privilegios al administrador a través de XSS. Para desencadenar esta vulnerabilidad, un atacante puede enviar una solicitud HTTP para inyectar Javascript en una publicación para engañar a un administrador para que visite la publicación. Existe una vulnerabilidad XSS almacenada en el `codeinjection_head` de una publicación."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.3,"impactScore":2.7}],"cvssMetricV30":[{"source":"talos-cna@cisco.com","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.0,"baseSeverity":"CRITICAL"},"exploitabilityScore":2.3,"impactScore":6.0}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-1188"},{"lang":"en","value":"CWE-79"}]},{"source":"talos-cna@cisco.com","type":"Secondary","description":[{"lang":"en","value":"CWE-453"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:ghost:ghost:5.9.4:*:*:*:*:node.js:*:*","matchCriteriaId":"83AD75D8-518F-4F53-98F0-8AFA3F7B18D9"}]}]}],"references":[{"url":"https:\/\/talosintelligence.com\/vulnerability_reports\/TALOS-2022-1686","source":"talos-cna@cisco.com","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-47197","sourceIdentifier":"talos-cna@cisco.com","published":"2023-01-19T18:15:14.650","lastModified":"2023-01-27T14:58:31.187","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"An insecure default vulnerability exists in the Post Creation functionality of Ghost Foundation Ghost 5.9.4. Default installations of Ghost allow non-administrator users to inject arbitrary Javascript in posts, which allow privilege escalation to administrator via XSS. To trigger this vulnerability, an attacker can send an HTTP request to inject Javascript in a post to trick an administrator into visiting the post.A stored XSS vulnerability exists in the `codeinjection_foot` for a post."},{"lang":"es","value":"Existe una vulnerabilidad predeterminada insegura en la funcionalidad de creación posterior de Ghost Foundation Ghost 5.9.4. Las instalaciones predeterminadas de Ghost permiten a los usuarios que no son administradores inyectar Javascript arbitrario en las publicaciones, lo que permite escalar privilegios al administrador a través de XSS. Para desencadenar esta vulnerabilidad, un atacante puede enviar una solicitud HTTP para inyectar Javascript en una publicación para engañar a un administrador para que visite la publicación. Existe una vulnerabilidad XSS almacenada en `codeinjection_foot` de una publicación."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.3,"impactScore":2.7}],"cvssMetricV30":[{"source":"talos-cna@cisco.com","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.0,"baseSeverity":"CRITICAL"},"exploitabilityScore":2.3,"impactScore":6.0}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]},{"source":"talos-cna@cisco.com","type":"Secondary","description":[{"lang":"en","value":"CWE-453"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:ghost:ghost:5.9.4:*:*:*:*:node.js:*:*","matchCriteriaId":"83AD75D8-518F-4F53-98F0-8AFA3F7B18D9"}]}]}],"references":[{"url":"https:\/\/talosintelligence.com\/vulnerability_reports\/TALOS-2022-1686","source":"talos-cna@cisco.com","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2023-26510","sourceIdentifier":"cve@mitre.org","published":"2023-03-05T22:15:08.747","lastModified":"2023-03-09T20:58:45.250","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Ghost 5.35.0 allows authorization bypass: contributors can view draft posts of other users, which is arguably inconsistent with a security policy in which a contributor's draft can only be read by editors until published by an editor. NOTE: the vendor's position is that this behavior has no security impact."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:R\/S:U\/C:H\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":5.7,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.1,"impactScore":3.6}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-862"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:ghost:ghost:5.35.0:*:*:*:*:node.js:*:*","matchCriteriaId":"64162013-6B6D-48AA-A3E1-320F290DD94C"}]}]}],"references":[{"url":"https:\/\/ghost.org\/docs\/security\/","source":"cve@mitre.org","tags":["Vendor Advisory"]},{"url":"https:\/\/gist.github.com\/yurahod\/2e11eabbe4b92ef1d44b08e37023ecfb","source":"cve@mitre.org","tags":["Third Party Advisory"]},{"url":"https:\/\/gist.github.com\/yurahod\/828d5e6a077c12f3f74c6485d1c7f0e7","source":"cve@mitre.org","tags":["Third Party Advisory"]}]}},{"cve":{"id":"CVE-2023-32235","sourceIdentifier":"cve@mitre.org","published":"2023-05-05T05:15:09.293","lastModified":"2023-05-11T14:19:32.100","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Ghost before 5.42.1 allows remote attackers to read arbitrary files within the active theme's folder via \/assets\/built%2F..%2F..%2F\/ directory traversal. This occurs in frontend\/web\/middleware\/static-theme.js."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":7.5,"baseSeverity":"HIGH"},"exploitabilityScore":3.9,"impactScore":3.6}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-22"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:ghost:ghost:*:*:*:*:*:node.js:*:*","versionEndExcluding":"5.42.1","matchCriteriaId":"94A4053D-FF36-4B2A-937B-A94C8DEF67AD"}]}]}],"references":[{"url":"https:\/\/github.com\/TryGhost\/Ghost\/commit\/378dd913aa8d0fd0da29b0ffced8884579598b0f","source":"cve@mitre.org","tags":["Patch"]},{"url":"https:\/\/github.com\/TryGhost\/Ghost\/compare\/v5.42.0...v5.42.1","source":"cve@mitre.org","tags":["Release Notes"]}]}},{"cve":{"id":"CVE-2023-31133","sourceIdentifier":"security-advisories@github.com","published":"2023-05-08T21:15:11.600","lastModified":"2023-05-15T18:19:28.143","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Ghost is an app for new-media creators with tools to build a website, publish content, send newsletters, and offer paid subscriptions to members. Prior to version 5.46.1, due to a lack of validation when filtering on the public API endpoints, it is possible to reveal private fields via a brute force attack.\n\nGhost(Pro) has already been patched. Maintainers can find no evidence that the issue was exploited on Ghost(Pro) prior to the patch being added. Self-hosters are impacted if running Ghost a version below v5.46.1. v5.46.1 contains a fix for this issue. As a workaround, add a block for requests to `\/ghost\/api\/content\/*` where the `filter` query parameter contains `password` or `email`."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":7.5,"baseSeverity":"HIGH"},"exploitabilityScore":3.9,"impactScore":3.6},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":7.5,"baseSeverity":"HIGH"},"exploitabilityScore":3.9,"impactScore":3.6}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"NVD-CWE-noinfo"}]},{"source":"security-advisories@github.com","type":"Secondary","description":[{"lang":"en","value":"CWE-200"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:ghost:ghost:*:*:*:*:*:node.js:*:*","versionEndExcluding":"5.46.1","matchCriteriaId":"019CF5DA-91CB-485C-8C00-7E82585A682E"}]}]}],"references":[{"url":"https:\/\/github.com\/TryGhost\/Ghost\/commit\/b3caf16005289cc9909488391b4a26f3f4a66a90","source":"security-advisories@github.com","tags":["Patch"]},{"url":"https:\/\/github.com\/TryGhost\/Ghost\/releases\/tag\/v5.46.1","source":"security-advisories@github.com","tags":["Release Notes"]},{"url":"https:\/\/github.com\/TryGhost\/Ghost\/security\/advisories\/GHSA-r97q-ghch-82j9","source":"security-advisories@github.com","tags":["Vendor Advisory"]}]}},{"cve":{"id":"CVE-2023-40028","sourceIdentifier":"security-advisories@github.com","published":"2023-08-15T18:15:10.547","lastModified":"2023-08-23T00:04:32.267","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Ghost is an open source content management system. Versions prior to 5.59.1 are subject to a vulnerability which allows authenticated users to upload files that are symlinks. This can be exploited to perform an arbitrary file read of any file on the host operating system. Site administrators can check for exploitation of this issue by looking for unknown symlinks within Ghost's `content\/` folder. Version 5.59.1 contains a fix for this issue. All users are advised to upgrade. There are no known workarounds for this vulnerability."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":6.5,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":3.6},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:H\/UI:N\/S:U\/C:H\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"HIGH","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":4.9,"baseSeverity":"MEDIUM"},"exploitabilityScore":1.2,"impactScore":3.6}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-59"}]},{"source":"security-advisories@github.com","type":"Secondary","description":[{"lang":"en","value":"CWE-22"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:ghost:ghost:*:*:*:*:*:node.js:*:*","versionEndExcluding":"5.59.1","matchCriteriaId":"FC21CBC6-473C-4BF5-8F11-317A9FE0F1FB"}]}]}],"references":[{"url":"https:\/\/github.com\/TryGhost\/Ghost\/commit\/690fbf3f7302ff3f77159c0795928bdd20f41205","source":"security-advisories@github.com","tags":["Patch"]},{"url":"https:\/\/github.com\/TryGhost\/Ghost\/security\/advisories\/GHSA-9c9v-w225-v5rg","source":"security-advisories@github.com","tags":["Vendor Advisory"]}]}},{"cve":{"id":"CVE-2024-23725","sourceIdentifier":"cve@mitre.org","published":"2024-01-21T04:15:19.177","lastModified":"2024-01-29T15:25:48.110","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Ghost before 5.76.0 allows XSS via a post excerpt in excerpt.js. An XSS payload can be rendered in post summaries."},{"lang":"es","value":"Ghost anterior a 5.76.0 permite XSS a través de un extracto de publicación en excerpt.js. Se puede representar un payload XSS en resúmenes de publicaciones."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.1,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.7}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:ghost:ghost:*:*:*:*:*:node.js:*:*","versionEndExcluding":"5.76.0","matchCriteriaId":"9AF7EED4-0B02-4CAC-A131-738E58F171F4"}]}]}],"references":[{"url":"https:\/\/github.com\/TryGhost\/Ghost\/pull\/17190","source":"cve@mitre.org","tags":["Issue Tracking","Patch"]},{"url":"https:\/\/github.com\/TryGhost\/Ghost\/releases\/tag\/v5.76.0","source":"cve@mitre.org","tags":["Patch","Release Notes"]}]}}]}
+{
+    "resultsPerPage": 17,
+    "startIndex": 0,
+    "totalResults": 17,
+    "format": "NVD_CVE",
+    "version": "2.0",
+    "timestamp": "2024-04-30T10:42:34.737",
+    "vulnerabilities": [
+        {
+            "cve": {
+                "id": "CVE-2016-10983",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2019-09-17T15:15:12.130",
+                "lastModified": "2019-09-18T15:03:22.000",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "The ghost plugin before 0.5.6 for WordPress has no access control for wp-admin/tools.php?ghostexport=true downloads of exported data."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "El plugin ghost versiones anteriores a 0.5.6 para WordPress, no posee un control de acceso para descargas de datos exportados de wp-admin/tools.php?ghostexport=true ."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.5,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 3.6
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:S/C:P/I:N/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-287"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:ghost:ghost:*:*:*:*:*:wordpress:*:*",
+                                        "versionEndExcluding": "0.5.6",
+                                        "matchCriteriaId": "700718E3-D02F-4BE5-9600-F153C1FBB54E"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://packetstormsecurity.com/files/136887/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory",
+                            "VDB Entry"
+                        ]
+                    },
+                    {
+                        "url": "https://wordpress.org/plugins/ghost/#developers",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Release Notes"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2020-8134",
+                "sourceIdentifier": "support@hackerone.com",
+                "published": "2020-03-20T19:15:12.797",
+                "lastModified": "2020-03-26T19:01:36.957",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Server-side request forgery (SSRF) vulnerability in Ghost CMS < 3.10.0 allows an attacker to scan local or external network or otherwise interact with internal systems."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Una vulnerabilidad de tipo Server-side request forgery (SSRF) en Ghost CMS versiones anteriores a 3.10.0, permite a un atacante escanear redes locales o externas o si no interactuar con sistemas internos."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 8.1,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 5.2
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:S/C:P/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.5
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.0,
+                            "impactScore": 4.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-918"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "support@hackerone.com",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-918"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:ghost:ghost:*:*:*:*:*:node.js:*:*",
+                                        "versionEndExcluding": "3.10.0",
+                                        "matchCriteriaId": "593AD762-6D6D-4925-8EE7-5B606A2FF6AF"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://hackerone.com/reports/793704",
+                        "source": "support@hackerone.com",
+                        "tags": [
+                            "Exploit",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-29484",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2021-04-29T21:15:08.590",
+                "lastModified": "2021-09-14T18:47:05.297",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Ghost is a Node.js CMS. An unused endpoint added during the development of 4.0.0 has left sites vulnerable to untrusted users gaining access to Ghost Admin. Attackers can gain access by getting logged in users to click a link containing malicious code. Users do not need to enter credentials and may not know they've visited a malicious site. Ghost(Pro) has already been patched. We can find no evidence that the issue was exploited on Ghost(Pro) prior to the patch being added. Self-hosters are impacted if running Ghost a version between 4.0.0 and 4.3.2. Immediate action should be taken to secure your site. The issue has been fixed in 4.3.3, all 4.x sites should upgrade as soon as possible. As the endpoint is unused, the patch simply removes it. As a workaround blocking access to /ghost/preview can also mitigate the issue."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Ghost es un CMS Node.js. Un endpoint sin uso agregado durante el desarrollo de la versi\u00f3n 4.0.0 ha dejado los sitios vulnerables a que usuarios no confiables que obtienen acceso a Ghost Admin. Los atacantes pueden conseguir acceso al hacer que unos usuarios que tengan iniciada la sesi\u00f3n hagan clic en un enlace que contenga c\u00f3digo malicioso. Los usuarios no necesitan introducir sus credenciales y es posible que no sepan que han visitado un sitio malicioso. Ghost(Pro) ya ha sido parcheado. No hemos encontrado pruebas de que el problema se haya explotado en Ghost(Pro) antes de que se agregara el parche. Los  autohospedadores est\u00e1n afectados si ejecutan Ghost en una versi\u00f3n entre 4.0.0 y 4.3.2. Se deben tomar medidas inmediatas para proteger su sitio. El problema ha sido corregido en 4.3.3, todos los sitios 4.x deber\u00edan actualizarse lo antes posible. Como el endpoint sin uso, el parche simplemente lo elimina. Como soluci\u00f3n alternativa, bloquear el acceso a /ghost/preview tambi\u00e9n puede mitigar el problema."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "HIGH",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.8,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 1.6,
+                            "impactScore": 5.2
+                        },
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.1,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:ghost:ghost:*:*:*:*:*:node.js:*:*",
+                                        "versionStartIncluding": "4.0.0",
+                                        "versionEndExcluding": "4.3.3",
+                                        "matchCriteriaId": "23DB22EA-9BED-4114-AD2E-CDD95FBA9D42"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://blog.sonarsource.com/ghost-admin-takeover",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://forum.ghost.org/t/critical-security-update-available-for-ghost-4-x/22290",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/TryGhost/Ghost/security/advisories/GHSA-9fgx-q25h-jxrg",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Mitigation",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.npmjs.com/package/ghost",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Product",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-39192",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2021-09-03T15:15:09.410",
+                "lastModified": "2021-09-10T19:02:46.283",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Ghost is a Node.js content management system. An error in the implementation of the limits service between versions 4.0.0 and 4.9.4 allows all authenticated users (including contributors) to view admin-level API keys via the integrations API endpoint, leading to a privilege escalation vulnerability. This issue is patched in Ghost version 4.10.0. As a workaround, disable all non-Administrator accounts to prevent API access. It is highly recommended to regenerate all API keys after patching or applying the workaround."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Ghost es un sistema de administraci\u00f3n de contenidos Node.js. Un error en la implementaci\u00f3n del servicio de l\u00edmites entre las versiones 4.0.0 y 4.9.4, permite a todos los usuarios autenticados (incluidos los colaboradores) visualizar las claves de la API a nivel de administrador por medio del endpoint de la API de integraciones, conllevando a una vulnerabilidad de escalada de privilegios. Este problema se ha corregido en la versi\u00f3n 4.10.0 de Ghost. Como soluci\u00f3n, deshabilite todas las cuentas que no sean de administrador para prevenir el acceso a la API. Se recomienda encarecidamente regenerar todas las claves de la API despu\u00e9s de aplicar el parche o la soluci\u00f3n"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "HIGH",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 7.2,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 1.2,
+                            "impactScore": 5.9
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "HIGH",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.5,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 1.2,
+                            "impactScore": 5.2
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 6.5
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-269"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-200"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:ghost:ghost:*:*:*:*:*:node.js:*:*",
+                                        "versionStartIncluding": "4.0.0",
+                                        "versionEndExcluding": "4.10.0",
+                                        "matchCriteriaId": "1CD08534-3B8F-47EC-AE75-2F3F3FA6BF03"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/TryGhost/Ghost/releases/tag/v4.10.0",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Release Notes",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/TryGhost/Ghost/security/advisories/GHSA-j5c2-hm46-wp5c",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-27139",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2022-04-12T17:15:09.840",
+                "lastModified": "2024-04-11T01:15:02.370",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "An arbitrary file upload vulnerability in the file upload module of Ghost v4.39.0 allows attackers to execute arbitrary code via a crafted SVG file. NOTE: Vendor states that as outlined in Ghost's security documentation, upload of SVGs is only possible by trusted authenticated users. The uploading of SVG files to Ghost does not represent a remote code execution vulnerability. SVGs are not executable on the server, and may only execute javascript in a client's browser - this is expected and intentional functionality"
+                    },
+                    {
+                        "lang": "es",
+                        "value": "** EN DISPUTA ** Una vulnerabilidad de carga de archivos arbitraria en el m\u00f3dulo de carga de archivos de Ghost versi\u00f3n v4.39.0, permite a atacantes ejecutar c\u00f3digo arbitrario por medio de un archivo SVG dise\u00f1ado. NOTA: El proveedor afirma que, tal y como se indica en la documentaci\u00f3n de seguridad de Ghost, la carga de SVG s\u00f3lo es posible por parte de usuarios autentificados de confianza. La carga de archivos SVG en Ghost no representa una vulnerabilidad de ejecuci\u00f3n remota de c\u00f3digo. Los SVG no son ejecutables en el servidor, y s\u00f3lo pueden ejecutar javascript en el navegador de un cliente; se trata de una funcionalidad esperada e intencionada"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.8,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 7.5
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-434"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:ghost:ghost:4.39.0:*:*:*:*:node.js:*:*",
+                                        "matchCriteriaId": "385A2C69-1F04-4162-BBFB-2FA2704DFC3E"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://ghost.org/docs/security/#privilege-escalation-attacks",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "https://youtu.be/FCqWEvir2wE",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-28397",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2022-04-12T17:15:10.730",
+                "lastModified": "2024-04-11T01:15:10.050",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "An arbitrary file upload vulnerability in the file upload module of Ghost CMS v4.42.0 allows attackers to execute arbitrary code via a crafted file. NOTE: Vendor states as detailed in Ghost's security documentation, files can only be uploaded and published by trusted users, this is intentional"
+                    },
+                    {
+                        "lang": "es",
+                        "value": "** EN DISPUTA ** Una vulnerabilidad de carga de archivos arbitraria en el m\u00f3dulo de carga de archivos de Ghost CMS versi\u00f3n v4.42.0, permite a atacantes ejecutar c\u00f3digo arbitrario por medio de un archivo dise\u00f1ado. NOTA: Seg\u00fan la documentaci\u00f3n de seguridad de Ghost, los archivos s\u00f3lo pueden ser cargados y publicados por usuarios de confianza, esto es intencional"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.8,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 7.5
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-434"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:ghost:ghost:4.42.0:*:*:*:*:node.js:*:*",
+                                        "matchCriteriaId": "0C5928ED-7E55-4771-A0A5-6ED78480552D"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://ghost.com",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Product"
+                        ]
+                    },
+                    {
+                        "url": "https://ghost.org/customers/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Product"
+                        ]
+                    },
+                    {
+                        "url": "https://ghost.org/docs/security/#privilege-escalation-attacks",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "https://github.com/TryGhost/Ghost",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://trends.builtwith.com/cms/Ghost",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Product"
+                        ]
+                    },
+                    {
+                        "url": "https://youtu.be/PncfBetPk2g",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-41654",
+                "sourceIdentifier": "talos-cna@cisco.com",
+                "published": "2022-12-22T10:15:10.047",
+                "lastModified": "2022-12-29T20:33:41.597",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "An authentication bypass vulnerability exists in the newsletter subscription functionality of Ghost Foundation Ghost 5.9.4. A specially-crafted HTTP request can lead to increased privileges. An attacker can send an HTTP request to trigger this vulnerability."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Existe una vulnerabilidad de omisi\u00f3n de autenticaci\u00f3n en la funcionalidad de suscripci\u00f3n al bolet\u00edn de Ghost Foundation Ghost 5.9.4. Una solicitud HTTP especialmente manipulada puede generar mayores privilegios. Un atacante puede enviar una solicitud HTTP para desencadenar esta vulnerabilidad."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 1.4
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "talos-cna@cisco.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.6,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 6.0
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "talos-cna@cisco.com",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-284"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:ghost:ghost:*:*:*:*:*:node.js:*:*",
+                                        "versionStartIncluding": "4.46.0",
+                                        "versionEndExcluding": "4.48.8",
+                                        "matchCriteriaId": "8E71806D-2CBB-4D88-8D27-117A20737E25"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:ghost:ghost:*:*:*:*:*:node.js:*:*",
+                                        "versionStartIncluding": "5.0.0",
+                                        "versionEndExcluding": "5.22.7",
+                                        "matchCriteriaId": "10D8C53F-5C69-42AC-A343-2FF04D23395D"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/TryGhost/Ghost/security/advisories/GHSA-9gh8-wp53-ccc6",
+                        "source": "talos-cna@cisco.com",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1624",
+                        "source": "talos-cna@cisco.com",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-41697",
+                "sourceIdentifier": "talos-cna@cisco.com",
+                "published": "2022-12-22T10:15:10.120",
+                "lastModified": "2022-12-29T18:21:24.217",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "A user enumeration vulnerability exists in the login functionality of Ghost Foundation Ghost 5.9.4. A specially-crafted HTTP request can lead to a disclosure of sensitive information. An attacker can send a series of HTTP requests to trigger this vulnerability."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Existe una vulnerabilidad de enumeraci\u00f3n de usuarios en la funcionalidad de inicio de sesi\u00f3n de Ghost Foundation Ghost 5.9.4. Una solicitud HTTP especialmente manipulada puede dar lugar a la divulgaci\u00f3n de informaci\u00f3n confidencial. Un atacante puede enviar una serie de solicitudes HTTP para desencadenar esta vulnerabilidad."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.3,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 1.4
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "talos-cna@cisco.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.3,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 1.4
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "talos-cna@cisco.com",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-204"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:ghost:ghost:5.9.4:*:*:*:*:node.js:*:*",
+                                        "matchCriteriaId": "83AD75D8-518F-4F53-98F0-8AFA3F7B18D9"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1625",
+                        "source": "talos-cna@cisco.com",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-47194",
+                "sourceIdentifier": "talos-cna@cisco.com",
+                "published": "2023-01-19T18:15:13.553",
+                "lastModified": "2023-06-27T13:31:29.440",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "An insecure default vulnerability exists in the Post Creation functionality of Ghost Foundation Ghost 5.9.4. Default installations of Ghost allow non-administrator users to inject arbitrary Javascript in posts, which allow privilege escalation to administrator via XSS. To trigger this vulnerability, an attacker can send an HTTP request to inject Javascript in a post to trick an administrator into visiting the post.A stored XSS vulnerability exists in the `twitter` field for a user."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Existe una vulnerabilidad predeterminada insegura en la funcionalidad de creaci\u00f3n posterior de Ghost Foundation Ghost 5.9.4. Las instalaciones predeterminadas de Ghost permiten a los usuarios que no son administradores inyectar Javascript arbitrario en las publicaciones, lo que permite escalar privilegios al administrador a trav\u00e9s de XSS. Para desencadenar esta vulnerabilidad, un atacante puede enviar una solicitud HTTP para inyectar Javascript en una publicaci\u00f3n para enga\u00f1ar a un administrador para que visite la publicaci\u00f3n. Existe una vulnerabilidad XSS almacenada en el campo \"twitter\" de un usuario."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "talos-cna@cisco.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.0,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 6.0
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-1188"
+                            },
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "talos-cna@cisco.com",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-453"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:ghost:ghost:5.9.4:*:*:*:*:node.js:*:*",
+                                        "matchCriteriaId": "83AD75D8-518F-4F53-98F0-8AFA3F7B18D9"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1686",
+                        "source": "talos-cna@cisco.com",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-47195",
+                "sourceIdentifier": "talos-cna@cisco.com",
+                "published": "2023-01-19T18:15:14.120",
+                "lastModified": "2023-01-27T14:55:13.117",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "An insecure default vulnerability exists in the Post Creation functionality of Ghost Foundation Ghost 5.9.4. Default installations of Ghost allow non-administrator users to inject arbitrary Javascript in posts, which allow privilege escalation to administrator via XSS. To trigger this vulnerability, an attacker can send an HTTP request to inject Javascript in a post to trick an administrator into visiting the post.A stored XSS vulnerability exists in the `facebook` field for a user."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Existe una vulnerabilidad predeterminada insegura en la funcionalidad de creaci\u00f3n posterior de Ghost Foundation Ghost 5.9.4. Las instalaciones predeterminadas de Ghost permiten a los usuarios que no son administradores inyectar Javascript arbitrario en las publicaciones, lo que permite escalar privilegios al administrador a trav\u00e9s de XSS. Para desencadenar esta vulnerabilidad, un atacante puede enviar una solicitud HTTP para inyectar Javascript en una publicaci\u00f3n para enga\u00f1ar a un administrador para que visite la publicaci\u00f3n. Existe una vulnerabilidad XSS almacenada en el campo \"facebook\" de un usuario."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "talos-cna@cisco.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.0,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 6.0
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "talos-cna@cisco.com",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-453"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:ghost:ghost:5.9.4:*:*:*:*:node.js:*:*",
+                                        "matchCriteriaId": "83AD75D8-518F-4F53-98F0-8AFA3F7B18D9"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1686",
+                        "source": "talos-cna@cisco.com",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-47196",
+                "sourceIdentifier": "talos-cna@cisco.com",
+                "published": "2023-01-19T18:15:14.380",
+                "lastModified": "2023-06-23T16:11:01.037",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "An insecure default vulnerability exists in the Post Creation functionality of Ghost Foundation Ghost 5.9.4. Default installations of Ghost allow non-administrator users to inject arbitrary Javascript in posts, which allow privilege escalation to administrator via XSS. To trigger this vulnerability, an attacker can send an HTTP request to inject Javascript in a post to trick an administrator into visiting the post.A stored XSS vulnerability exists in the `codeinjection_head` for a post."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Existe una vulnerabilidad predeterminada insegura en la funcionalidad de creaci\u00f3n posterior de Ghost Foundation Ghost 5.9.4. Las instalaciones predeterminadas de Ghost permiten a los usuarios que no son administradores inyectar Javascript arbitrario en las publicaciones, lo que permite escalar privilegios al administrador a trav\u00e9s de XSS. Para desencadenar esta vulnerabilidad, un atacante puede enviar una solicitud HTTP para inyectar Javascript en una publicaci\u00f3n para enga\u00f1ar a un administrador para que visite la publicaci\u00f3n. Existe una vulnerabilidad XSS almacenada en el `codeinjection_head` de una publicaci\u00f3n."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "talos-cna@cisco.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.0,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 6.0
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-1188"
+                            },
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "talos-cna@cisco.com",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-453"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:ghost:ghost:5.9.4:*:*:*:*:node.js:*:*",
+                                        "matchCriteriaId": "83AD75D8-518F-4F53-98F0-8AFA3F7B18D9"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1686",
+                        "source": "talos-cna@cisco.com",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-47197",
+                "sourceIdentifier": "talos-cna@cisco.com",
+                "published": "2023-01-19T18:15:14.650",
+                "lastModified": "2023-01-27T14:58:31.187",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "An insecure default vulnerability exists in the Post Creation functionality of Ghost Foundation Ghost 5.9.4. Default installations of Ghost allow non-administrator users to inject arbitrary Javascript in posts, which allow privilege escalation to administrator via XSS. To trigger this vulnerability, an attacker can send an HTTP request to inject Javascript in a post to trick an administrator into visiting the post.A stored XSS vulnerability exists in the `codeinjection_foot` for a post."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Existe una vulnerabilidad predeterminada insegura en la funcionalidad de creaci\u00f3n posterior de Ghost Foundation Ghost 5.9.4. Las instalaciones predeterminadas de Ghost permiten a los usuarios que no son administradores inyectar Javascript arbitrario en las publicaciones, lo que permite escalar privilegios al administrador a trav\u00e9s de XSS. Para desencadenar esta vulnerabilidad, un atacante puede enviar una solicitud HTTP para inyectar Javascript en una publicaci\u00f3n para enga\u00f1ar a un administrador para que visite la publicaci\u00f3n. Existe una vulnerabilidad XSS almacenada en `codeinjection_foot` de una publicaci\u00f3n."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "talos-cna@cisco.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.0,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 6.0
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "talos-cna@cisco.com",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-453"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:ghost:ghost:5.9.4:*:*:*:*:node.js:*:*",
+                                        "matchCriteriaId": "83AD75D8-518F-4F53-98F0-8AFA3F7B18D9"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://talosintelligence.com/vulnerability_reports/TALOS-2022-1686",
+                        "source": "talos-cna@cisco.com",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-26510",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2023-03-05T22:15:08.747",
+                "lastModified": "2023-03-09T20:58:45.250",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Ghost 5.35.0 allows authorization bypass: contributors can view draft posts of other users, which is arguably inconsistent with a security policy in which a contributor's draft can only be read by editors until published by an editor. NOTE: the vendor's position is that this behavior has no security impact."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.7,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.1,
+                            "impactScore": 3.6
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-862"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:ghost:ghost:5.35.0:*:*:*:*:node.js:*:*",
+                                        "matchCriteriaId": "64162013-6B6D-48AA-A3E1-320F290DD94C"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://ghost.org/docs/security/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://gist.github.com/yurahod/2e11eabbe4b92ef1d44b08e37023ecfb",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://gist.github.com/yurahod/828d5e6a077c12f3f74c6485d1c7f0e7",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-32235",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2023-05-05T05:15:09.293",
+                "lastModified": "2023-05-11T14:19:32.100",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Ghost before 5.42.1 allows remote attackers to read arbitrary files within the active theme's folder via /assets/built%2F..%2F..%2F/ directory traversal. This occurs in frontend/web/middleware/static-theme.js."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 7.5,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 3.6
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-22"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:ghost:ghost:*:*:*:*:*:node.js:*:*",
+                                        "versionEndExcluding": "5.42.1",
+                                        "matchCriteriaId": "94A4053D-FF36-4B2A-937B-A94C8DEF67AD"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/TryGhost/Ghost/commit/378dd913aa8d0fd0da29b0ffced8884579598b0f",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/TryGhost/Ghost/compare/v5.42.0...v5.42.1",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Release Notes"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-31133",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2023-05-08T21:15:11.600",
+                "lastModified": "2023-05-15T18:19:28.143",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Ghost is an app for new-media creators with tools to build a website, publish content, send newsletters, and offer paid subscriptions to members. Prior to version 5.46.1, due to a lack of validation when filtering on the public API endpoints, it is possible to reveal private fields via a brute force attack.\n\nGhost(Pro) has already been patched. Maintainers can find no evidence that the issue was exploited on Ghost(Pro) prior to the patch being added. Self-hosters are impacted if running Ghost a version below v5.46.1. v5.46.1 contains a fix for this issue. As a workaround, add a block for requests to `/ghost/api/content/*` where the `filter` query parameter contains `password` or `email`."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 7.5,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 3.6
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 7.5,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 3.6
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "NVD-CWE-noinfo"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-200"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:ghost:ghost:*:*:*:*:*:node.js:*:*",
+                                        "versionEndExcluding": "5.46.1",
+                                        "matchCriteriaId": "019CF5DA-91CB-485C-8C00-7E82585A682E"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/TryGhost/Ghost/commit/b3caf16005289cc9909488391b4a26f3f4a66a90",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/TryGhost/Ghost/releases/tag/v5.46.1",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Release Notes"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/TryGhost/Ghost/security/advisories/GHSA-r97q-ghch-82j9",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Vendor Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-40028",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2023-08-15T18:15:10.547",
+                "lastModified": "2023-08-23T00:04:32.267",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Ghost is an open source content management system. Versions prior to 5.59.1 are subject to a vulnerability which allows authenticated users to upload files that are symlinks. This can be exploited to perform an arbitrary file read of any file on the host operating system. Site administrators can check for exploitation of this issue by looking for unknown symlinks within Ghost's `content/` folder. Version 5.59.1 contains a fix for this issue. All users are advised to upgrade. There are no known workarounds for this vulnerability."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.5,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 3.6
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "HIGH",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.9,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 1.2,
+                            "impactScore": 3.6
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-59"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-22"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:ghost:ghost:*:*:*:*:*:node.js:*:*",
+                                        "versionEndExcluding": "5.59.1",
+                                        "matchCriteriaId": "FC21CBC6-473C-4BF5-8F11-317A9FE0F1FB"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/TryGhost/Ghost/commit/690fbf3f7302ff3f77159c0795928bdd20f41205",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/TryGhost/Ghost/security/advisories/GHSA-9c9v-w225-v5rg",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Vendor Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2024-23725",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2024-01-21T04:15:19.177",
+                "lastModified": "2024-01-29T15:25:48.110",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Ghost before 5.76.0 allows XSS via a post excerpt in excerpt.js. An XSS payload can be rendered in post summaries."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Ghost anterior a 5.76.0 permite XSS a trav\u00e9s de un extracto de publicaci\u00f3n en excerpt.js. Se puede representar un payload XSS en res\u00famenes de publicaciones."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.1,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.7
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:ghost:ghost:*:*:*:*:*:node.js:*:*",
+                                        "versionEndExcluding": "5.76.0",
+                                        "matchCriteriaId": "9AF7EED4-0B02-4CAC-A131-738E58F171F4"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/TryGhost/Ghost/pull/17190",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Issue Tracking",
+                            "Patch"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/TryGhost/Ghost/releases/tag/v5.76.0",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch",
+                            "Release Notes"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

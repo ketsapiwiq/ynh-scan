@@ -1,1 +1,460 @@
-{"resultsPerPage":4,"startIndex":0,"totalResults":4,"format":"NVD_CVE","version":"2.0","timestamp":"2024-04-30T10:49:44.667","vulnerabilities":[{"cve":{"id":"CVE-2021-39183","sourceIdentifier":"security-advisories@github.com","published":"2021-12-14T20:15:07.490","lastModified":"2021-12-20T20:38:47.083","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Owncast is an open source, self-hosted live video streaming and chat server. In affected versions inline scripts are executed when Javascript is parsed via a paste action. This issue is patched in 0.0.9 by blocking unsafe-inline Content Security Policy and specifying the script-src. The worker-src is required to be set to blob for the video player."},{"lang":"es","value":"Owncast es un servidor de chat y transmisión de vídeo en directo de código abierto y autoalojado. En las versiones afectadas son ejecutados scripts en línea cuando es analizado Javascript mediante una acción de pegado. Este problema está parcheado en la versión 0.0.9 al bloquear la política de seguridad de contenidos unsafe-inline y la especificación del script-src. Es requerido que el worker-src sea establecido como blob para el reproductor de vídeo"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.1,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.7},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:L\/I:H\/A:L","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"HIGH","availabilityImpact":"LOW","baseScore":8.2,"baseSeverity":"HIGH"},"exploitabilityScore":2.3,"impactScore":5.3}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.3},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"security-advisories@github.com","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:owncast_project:owncast:*:*:*:*:*:*:*:*","versionEndExcluding":"0.0.9","matchCriteriaId":"07529BE1-AAF9-477D-986B-72F77DDE0529"}]}]}],"references":[{"url":"https:\/\/github.com\/owncast\/owncast\/security\/advisories\/GHSA-2hfj-cxw7-g45p","source":"security-advisories@github.com","tags":["Exploit","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-3751","sourceIdentifier":"security@huntr.dev","published":"2022-11-29T21:15:11.217","lastModified":"2022-12-01T20:48:15.087","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"SQL Injection in GitHub repository owncast\/owncast prior to 0.0.13."},{"lang":"es","value":"Inyección SQL en el repositorio de GitHub owncast\/owncast anterior a 0.0.13."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.8,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.9}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":8.8,"baseSeverity":"HIGH"},"exploitabilityScore":2.8,"impactScore":5.9}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-89"}]},{"source":"security@huntr.dev","type":"Secondary","description":[{"lang":"en","value":"CWE-89"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:owncast_project:owncast:*:*:*:*:*:*:*:*","versionEndExcluding":"0.0.13","matchCriteriaId":"684DD047-F3B9-4A01-88EE-29B6AF281651"}]}]}],"references":[{"url":"https:\/\/github.com\/owncast\/owncast\/commit\/23b6e5868d5501726c27a3fabbecf49000968591","source":"security@huntr.dev","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/a04cff99-5d53-45e5-a882-771b0fad62c9","source":"security@huntr.dev","tags":["Permissions Required","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2023-3188","sourceIdentifier":"security@huntr.dev","published":"2023-06-10T02:15:09.157","lastModified":"2023-06-16T03:47:37.890","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Server-Side Request Forgery (SSRF) in GitHub repository owncast\/owncast prior to 0.1.0."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.5,"baseSeverity":"MEDIUM"},"exploitabilityScore":3.9,"impactScore":2.5}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:N\/S:C\/C:L\/I:L\/A:L","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"LOW","baseScore":8.3,"baseSeverity":"HIGH"},"exploitabilityScore":3.9,"impactScore":3.7}]},"weaknesses":[{"source":"security@huntr.dev","type":"Primary","description":[{"lang":"en","value":"CWE-918"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:owncast_project:owncast:*:*:*:*:*:*:*:*","versionEndExcluding":"0.1.0","matchCriteriaId":"90B3824C-C8FF-45C5-A8D3-A6E9D4B12650"}]}]}],"references":[{"url":"https:\/\/github.com\/owncast\/owncast\/commit\/f40135dbf28093864482f9662c23e478ea192b16","source":"security@huntr.dev","tags":["Patch"]},{"url":"https:\/\/huntr.dev\/bounties\/0d0d526a-1c39-4e6a-b081-d3914468e495","source":"security@huntr.dev","tags":["Exploit","Issue Tracking","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2023-46480","sourceIdentifier":"cve@mitre.org","published":"2023-11-27T23:15:07.567","lastModified":"2023-12-01T21:04:35.097","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"An issue in OwnCast v.0.1.1 allows a remote attacker to execute arbitrary code and obtain sensitive information via the authHost parameter of the indieauth function."},{"lang":"es","value":"Un problema en OwnCast v.0.1.1 permite a un atacante remoto ejecutar código arbitrario y obtener información confidencial a través del parámetro authHost de la función indieauth."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.8,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.9}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-918"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:owncast_project:owncast:0.1.1:*:*:*:*:*:*:*","matchCriteriaId":"60E81CAB-A9D8-4197-83F5-F1D4915D3D54"}]}]}],"references":[{"url":"https:\/\/github.com\/owncast\/owncast","source":"cve@mitre.org","tags":["Product"]},{"url":"https:\/\/github.com\/shahzaibak96\/CVE-2023-46480","source":"cve@mitre.org","tags":["Third Party Advisory"]}]}}]}
+{
+    "resultsPerPage": 4,
+    "startIndex": 0,
+    "totalResults": 4,
+    "format": "NVD_CVE",
+    "version": "2.0",
+    "timestamp": "2024-04-30T10:49:44.667",
+    "vulnerabilities": [
+        {
+            "cve": {
+                "id": "CVE-2021-39183",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2021-12-14T20:15:07.490",
+                "lastModified": "2021-12-20T20:38:47.083",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Owncast is an open source, self-hosted live video streaming and chat server. In affected versions inline scripts are executed when Javascript is parsed via a paste action. This issue is patched in 0.0.9 by blocking unsafe-inline Content Security Policy and specifying the script-src. The worker-src is required to be set to blob for the video player."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Owncast es un servidor de chat y transmisi\u00f3n de v\u00eddeo en directo de c\u00f3digo abierto y autoalojado. En las versiones afectadas son ejecutados scripts en l\u00ednea cuando es analizado Javascript mediante una acci\u00f3n de pegado. Este problema est\u00e1 parcheado en la versi\u00f3n 0.0.9 al bloquear la pol\u00edtica de seguridad de contenidos unsafe-inline y la especificaci\u00f3n del script-src. Es requerido que el worker-src sea establecido como blob para el reproductor de v\u00eddeo"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.1,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.7
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:H/A:L",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "LOW",
+                                "baseScore": 8.2,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 5.3
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:owncast_project:owncast:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "0.0.9",
+                                        "matchCriteriaId": "07529BE1-AAF9-477D-986B-72F77DDE0529"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/owncast/owncast/security/advisories/GHSA-2hfj-cxw7-g45p",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Exploit",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-3751",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2022-11-29T21:15:11.217",
+                "lastModified": "2022-12-01T20:48:15.087",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "SQL Injection in GitHub repository owncast/owncast prior to 0.0.13."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Inyecci\u00f3n SQL en el repositorio de GitHub owncast/owncast anterior a 0.0.13."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.8,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 8.8,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 5.9
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-89"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-89"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:owncast_project:owncast:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "0.0.13",
+                                        "matchCriteriaId": "684DD047-F3B9-4A01-88EE-29B6AF281651"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/owncast/owncast/commit/23b6e5868d5501726c27a3fabbecf49000968591",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/a04cff99-5d53-45e5-a882-771b0fad62c9",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Permissions Required",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-3188",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2023-06-10T02:15:09.157",
+                "lastModified": "2023-06-16T03:47:37.890",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Server-Side Request Forgery (SSRF) in GitHub repository owncast/owncast prior to 0.1.0."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.5,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 2.5
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:L",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "LOW",
+                                "baseScore": 8.3,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 3.7
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-918"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:owncast_project:owncast:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "0.1.0",
+                                        "matchCriteriaId": "90B3824C-C8FF-45C5-A8D3-A6E9D4B12650"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/owncast/owncast/commit/f40135dbf28093864482f9662c23e478ea192b16",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/0d0d526a-1c39-4e6a-b081-d3914468e495",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Issue Tracking",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-46480",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2023-11-27T23:15:07.567",
+                "lastModified": "2023-12-01T21:04:35.097",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "An issue in OwnCast v.0.1.1 allows a remote attacker to execute arbitrary code and obtain sensitive information via the authHost parameter of the indieauth function."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Un problema en OwnCast v.0.1.1 permite a un atacante remoto ejecutar c\u00f3digo arbitrario y obtener informaci\u00f3n confidencial a trav\u00e9s del par\u00e1metro authHost de la funci\u00f3n indieauth."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.8,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.9
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-918"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:owncast_project:owncast:0.1.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "60E81CAB-A9D8-4197-83F5-F1D4915D3D54"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/owncast/owncast",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Product"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/shahzaibak96/CVE-2023-46480",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

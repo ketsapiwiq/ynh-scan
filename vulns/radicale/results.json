@@ -1,1 +1,568 @@
-{"resultsPerPage":4,"startIndex":0,"totalResults":4,"format":"NVD_CVE","version":"2.0","timestamp":"2024-04-30T10:51:56.427","vulnerabilities":[{"cve":{"id":"CVE-2015-8747","sourceIdentifier":"security@debian.org","published":"2016-02-03T18:59:05.773","lastModified":"2016-12-06T03:04:12.317","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"The multifilesystem storage backend in Radicale before 1.1 allows remote attackers to read or write to arbitrary files via a crafted component name."},{"lang":"es","value":"El backend de almacenamiento del sistema multiarchivo en Radicale en versiones anteriores a 1.1 permite a atacantes remotos leer o escribir en archivos arbitrarios a través de un nombre de componente manipulado."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:N\/S:C\/C:H\/I:H\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"CHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"NONE","baseScore":10.0,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.8}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":7.5},"baseSeverity":"HIGH","exploitabilityScore":10.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-20"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:radicale:radicale:*:*:*:*:*:*:*:*","versionEndIncluding":"1.0.1","matchCriteriaId":"7DEE81B3-0AB4-4246-9FE5-DD483A5157A2"}]}]}],"references":[{"url":"http:\/\/lists.fedoraproject.org\/pipermail\/package-announce\/2016-January\/175738.html","source":"security@debian.org"},{"url":"http:\/\/lists.fedoraproject.org\/pipermail\/package-announce\/2016-January\/175776.html","source":"security@debian.org"},{"url":"http:\/\/www.debian.org\/security\/2016\/dsa-3462","source":"security@debian.org"},{"url":"http:\/\/www.openwall.com\/lists\/oss-security\/2016\/01\/05\/7","source":"security@debian.org"},{"url":"http:\/\/www.openwall.com\/lists\/oss-security\/2016\/01\/06\/4","source":"security@debian.org"},{"url":"http:\/\/www.openwall.com\/lists\/oss-security\/2016\/01\/06\/7","source":"security@debian.org"},{"url":"http:\/\/www.securityfocus.com\/bid\/80255","source":"security@debian.org"},{"url":"https:\/\/github.com\/Kozea\/Radicale\/pull\/343","source":"security@debian.org","tags":["Patch"]},{"url":"https:\/\/github.com\/Unrud\/Radicale\/commit\/bcaf452e516c02c9bed584a73736431c5e8831f1","source":"security@debian.org"}]}},{"cve":{"id":"CVE-2015-8748","sourceIdentifier":"security@debian.org","published":"2016-02-03T18:59:06.837","lastModified":"2016-12-06T03:04:13.473","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"Radicale before 1.1 allows remote authenticated users to bypass owner_write and owner_only limitations via regex metacharacters in the user name, as demonstrated by \".*\"."},{"lang":"es","value":"Radicale en versiones anteriores a 1.1 permite a usuarios remotos autenticados eludir las limitaciones owner_write y owner_only a través de metacaracteres regex en el nombre de usuario, según lo demostrado por \".*\"."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:N\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"NONE","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.3,"baseSeverity":"MEDIUM"},"exploitabilityScore":3.9,"impactScore":1.4}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":5.0},"baseSeverity":"MEDIUM","exploitabilityScore":10.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-264"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:radicale:radicale:*:*:*:*:*:*:*:*","versionEndIncluding":"1.0.1","matchCriteriaId":"7DEE81B3-0AB4-4246-9FE5-DD483A5157A2"}]}]}],"references":[{"url":"http:\/\/lists.fedoraproject.org\/pipermail\/package-announce\/2016-January\/175738.html","source":"security@debian.org"},{"url":"http:\/\/lists.fedoraproject.org\/pipermail\/package-announce\/2016-January\/175776.html","source":"security@debian.org"},{"url":"http:\/\/www.debian.org\/security\/2016\/dsa-3462","source":"security@debian.org"},{"url":"http:\/\/www.openwall.com\/lists\/oss-security\/2016\/01\/05\/7","source":"security@debian.org"},{"url":"http:\/\/www.openwall.com\/lists\/oss-security\/2016\/01\/06\/4","source":"security@debian.org"},{"url":"http:\/\/www.securityfocus.com\/bid\/80255","source":"security@debian.org"},{"url":"https:\/\/github.com\/Kozea\/Radicale\/pull\/341","source":"security@debian.org","tags":["Patch","Vendor Advisory"]},{"url":"https:\/\/github.com\/Unrud\/Radicale\/commit\/4bfe7c9f7991d534c8b9fbe153af9d341f925f98","source":"security@debian.org"}]}},{"cve":{"id":"CVE-2016-1505","sourceIdentifier":"cve@mitre.org","published":"2016-02-03T18:59:07.807","lastModified":"2016-11-28T19:59:55.070","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"The filesystem storage backend in Radicale before 1.1 on Windows allows remote attackers to read or write to arbitrary files via a crafted path, as demonstrated by \/c:\/file\/ignore."},{"lang":"es","value":"El backened de almacenamiento del sistema de archivos en Radicale en versiones anteriores a 1.1 en Windows permite a atacantes remotos leer o escribir en archivos arbitrarios a través de una ruta manipulada, según lo demostrado por \/c:\/file\/ignore."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:N\/S:C\/C:H\/I:H\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"CHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"NONE","baseScore":10.0,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.8}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":7.5},"baseSeverity":"HIGH","exploitabilityScore":10.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-21"}]}],"configurations":[{"operator":"AND","nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:radicale:radicale:*:*:*:*:*:*:*:*","versionEndIncluding":"1.0.1","matchCriteriaId":"7DEE81B3-0AB4-4246-9FE5-DD483A5157A2"}]},{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":false,"criteria":"cpe:2.3:o:microsoft:windows:*:*:*:*:*:*:*:*","matchCriteriaId":"2CF61F35-5905-4BA9-AD7E-7DB261D2F256"}]}]}],"references":[{"url":"http:\/\/www.openwall.com\/lists\/oss-security\/2016\/01\/05\/7","source":"cve@mitre.org"},{"url":"http:\/\/www.openwall.com\/lists\/oss-security\/2016\/01\/06\/4","source":"cve@mitre.org"},{"url":"http:\/\/www.openwall.com\/lists\/oss-security\/2016\/01\/06\/7","source":"cve@mitre.org"},{"url":"http:\/\/www.openwall.com\/lists\/oss-security\/2016\/01\/07\/7","source":"cve@mitre.org"},{"url":"http:\/\/www.securityfocus.com\/bid\/80255","source":"cve@mitre.org"},{"url":"https:\/\/github.com\/Kozea\/Radicale\/pull\/343","source":"cve@mitre.org","tags":["Patch"]},{"url":"https:\/\/github.com\/Unrud\/Radicale\/commit\/b4b3d51f33c7623d312f289252dd7bbb8f58bbe6","source":"cve@mitre.org"}]}},{"cve":{"id":"CVE-2017-8342","sourceIdentifier":"cve@mitre.org","published":"2017-04-30T15:59:00.153","lastModified":"2020-04-25T23:15:10.577","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"Radicale before 1.1.2 and 2.x before 2.0.0rc2 is prone to timing oracles and simple brute-force attacks when using the htpasswd authentication method."},{"lang":"es","value":"Radicale anterior a 1.1.2 y 2.x anterior a 2.0.0rc2 es propenso a ataques basados en tiempo y ataques simples de fuerza bruta cuando se utiliza el método de autenticación htpasswd."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:H\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"HIGH","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":8.1,"baseSeverity":"HIGH"},"exploitabilityScore":2.2,"impactScore":5.9}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:P\/I:N\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":4.3},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-362"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:radicale:radicale:*:*:*:*:*:*:*:*","versionEndIncluding":"1.1.1","matchCriteriaId":"8ECE0BB4-F1C0-4B17-9036-2A304CCF6739"},{"vulnerable":true,"criteria":"cpe:2.3:a:radicale:radicale:2.0.0:rc1:*:*:*:*:*:*","matchCriteriaId":"16EAED4B-E061-4C6C-807B-8048E2AF0AB2"}]}]}],"references":[{"url":"https:\/\/bugs.debian.org\/861514","source":"cve@mitre.org","tags":["Exploit","Issue Tracking","Patch","VDB Entry"]},{"url":"https:\/\/github.com\/Kozea\/Radicale\/blob\/1.1.2\/NEWS.rst","source":"cve@mitre.org","tags":["Release Notes","Third Party Advisory"]},{"url":"https:\/\/github.com\/Kozea\/Radicale\/commit\/059ba8dec1f22ccbeab837e288b3833a099cee2d","source":"cve@mitre.org","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/Kozea\/Radicale\/commit\/190b1dd795f0c552a4992445a231da760211183b","source":"cve@mitre.org","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/lists.debian.org\/debian-lts-announce\/2020\/04\/msg00019.html","source":"cve@mitre.org"}]}}]}
+{
+    "resultsPerPage": 4,
+    "startIndex": 0,
+    "totalResults": 4,
+    "format": "NVD_CVE",
+    "version": "2.0",
+    "timestamp": "2024-04-30T10:51:56.427",
+    "vulnerabilities": [
+        {
+            "cve": {
+                "id": "CVE-2015-8747",
+                "sourceIdentifier": "security@debian.org",
+                "published": "2016-02-03T18:59:05.773",
+                "lastModified": "2016-12-06T03:04:12.317",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "The multifilesystem storage backend in Radicale before 1.1 allows remote attackers to read or write to arbitrary files via a crafted component name."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "El backend de almacenamiento del sistema multiarchivo en Radicale en versiones anteriores a 1.1 permite a atacantes remotos leer o escribir en archivos arbitrarios a trav\u00e9s de un nombre de componente manipulado."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 10.0,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.8
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 7.5
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-20"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:radicale:radicale:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "1.0.1",
+                                        "matchCriteriaId": "7DEE81B3-0AB4-4246-9FE5-DD483A5157A2"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://lists.fedoraproject.org/pipermail/package-announce/2016-January/175738.html",
+                        "source": "security@debian.org"
+                    },
+                    {
+                        "url": "http://lists.fedoraproject.org/pipermail/package-announce/2016-January/175776.html",
+                        "source": "security@debian.org"
+                    },
+                    {
+                        "url": "http://www.debian.org/security/2016/dsa-3462",
+                        "source": "security@debian.org"
+                    },
+                    {
+                        "url": "http://www.openwall.com/lists/oss-security/2016/01/05/7",
+                        "source": "security@debian.org"
+                    },
+                    {
+                        "url": "http://www.openwall.com/lists/oss-security/2016/01/06/4",
+                        "source": "security@debian.org"
+                    },
+                    {
+                        "url": "http://www.openwall.com/lists/oss-security/2016/01/06/7",
+                        "source": "security@debian.org"
+                    },
+                    {
+                        "url": "http://www.securityfocus.com/bid/80255",
+                        "source": "security@debian.org"
+                    },
+                    {
+                        "url": "https://github.com/Kozea/Radicale/pull/343",
+                        "source": "security@debian.org",
+                        "tags": [
+                            "Patch"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/Unrud/Radicale/commit/bcaf452e516c02c9bed584a73736431c5e8831f1",
+                        "source": "security@debian.org"
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2015-8748",
+                "sourceIdentifier": "security@debian.org",
+                "published": "2016-02-03T18:59:06.837",
+                "lastModified": "2016-12-06T03:04:13.473",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Radicale before 1.1 allows remote authenticated users to bypass owner_write and owner_only limitations via regex metacharacters in the user name, as demonstrated by \".*\"."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Radicale en versiones anteriores a 1.1 permite a usuarios remotos autenticados eludir las limitaciones owner_write y owner_only a trav\u00e9s de metacaracteres regex en el nombre de usuario, seg\u00fan lo demostrado por \".*\"."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.3,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 1.4
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-264"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:radicale:radicale:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "1.0.1",
+                                        "matchCriteriaId": "7DEE81B3-0AB4-4246-9FE5-DD483A5157A2"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://lists.fedoraproject.org/pipermail/package-announce/2016-January/175738.html",
+                        "source": "security@debian.org"
+                    },
+                    {
+                        "url": "http://lists.fedoraproject.org/pipermail/package-announce/2016-January/175776.html",
+                        "source": "security@debian.org"
+                    },
+                    {
+                        "url": "http://www.debian.org/security/2016/dsa-3462",
+                        "source": "security@debian.org"
+                    },
+                    {
+                        "url": "http://www.openwall.com/lists/oss-security/2016/01/05/7",
+                        "source": "security@debian.org"
+                    },
+                    {
+                        "url": "http://www.openwall.com/lists/oss-security/2016/01/06/4",
+                        "source": "security@debian.org"
+                    },
+                    {
+                        "url": "http://www.securityfocus.com/bid/80255",
+                        "source": "security@debian.org"
+                    },
+                    {
+                        "url": "https://github.com/Kozea/Radicale/pull/341",
+                        "source": "security@debian.org",
+                        "tags": [
+                            "Patch",
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/Unrud/Radicale/commit/4bfe7c9f7991d534c8b9fbe153af9d341f925f98",
+                        "source": "security@debian.org"
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2016-1505",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2016-02-03T18:59:07.807",
+                "lastModified": "2016-11-28T19:59:55.070",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "The filesystem storage backend in Radicale before 1.1 on Windows allows remote attackers to read or write to arbitrary files via a crafted path, as demonstrated by /c:/file/ignore."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "El backened de almacenamiento del sistema de archivos en Radicale en versiones anteriores a 1.1 en Windows permite a atacantes remotos leer o escribir en archivos arbitrarios a trav\u00e9s de una ruta manipulada, seg\u00fan lo demostrado por /c:/file/ignore."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 10.0,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.8
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 7.5
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-21"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "operator": "AND",
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:radicale:radicale:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "1.0.1",
+                                        "matchCriteriaId": "7DEE81B3-0AB4-4246-9FE5-DD483A5157A2"
+                                    }
+                                ]
+                            },
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": false,
+                                        "criteria": "cpe:2.3:o:microsoft:windows:*:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "2CF61F35-5905-4BA9-AD7E-7DB261D2F256"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://www.openwall.com/lists/oss-security/2016/01/05/7",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://www.openwall.com/lists/oss-security/2016/01/06/4",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://www.openwall.com/lists/oss-security/2016/01/06/7",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://www.openwall.com/lists/oss-security/2016/01/07/7",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://www.securityfocus.com/bid/80255",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "https://github.com/Kozea/Radicale/pull/343",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/Unrud/Radicale/commit/b4b3d51f33c7623d312f289252dd7bbb8f58bbe6",
+                        "source": "cve@mitre.org"
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2017-8342",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2017-04-30T15:59:00.153",
+                "lastModified": "2020-04-25T23:15:10.577",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Radicale before 1.1.2 and 2.x before 2.0.0rc2 is prone to timing oracles and simple brute-force attacks when using the htpasswd authentication method."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Radicale anterior a 1.1.2 y 2.x anterior a 2.0.0rc2 es propenso a ataques basados en tiempo y ataques simples de fuerza bruta cuando se utiliza el m\u00e9todo de autenticaci\u00f3n htpasswd."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "HIGH",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 8.1,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.2,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:P/I:N/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-362"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:radicale:radicale:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "1.1.1",
+                                        "matchCriteriaId": "8ECE0BB4-F1C0-4B17-9036-2A304CCF6739"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:radicale:radicale:2.0.0:rc1:*:*:*:*:*:*",
+                                        "matchCriteriaId": "16EAED4B-E061-4C6C-807B-8048E2AF0AB2"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://bugs.debian.org/861514",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Issue Tracking",
+                            "Patch",
+                            "VDB Entry"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/Kozea/Radicale/blob/1.1.2/NEWS.rst",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Release Notes",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/Kozea/Radicale/commit/059ba8dec1f22ccbeab837e288b3833a099cee2d",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/Kozea/Radicale/commit/190b1dd795f0c552a4992445a231da760211183b",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://lists.debian.org/debian-lts-announce/2020/04/msg00019.html",
+                        "source": "cve@mitre.org"
+                    }
+                ]
+            }
+        }
+    ]
+}

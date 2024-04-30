@@ -1,1 +1,555 @@
-{"resultsPerPage":5,"startIndex":0,"totalResults":5,"format":"NVD_CVE","version":"2.0","timestamp":"2024-04-30T10:54:56.377","vulnerabilities":[{"cve":{"id":"CVE-2018-1000549","sourceIdentifier":"cve@mitre.org","published":"2018-06-26T16:29:02.523","lastModified":"2020-08-03T19:15:09.083","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"Wekan version 1.04.0 contains a Email \/ Username Enumeration vulnerability in Register' and 'Forgot your password?' pages that can result in A remote attacker could perform a brute force attack to obtain valid usernames and email addresses.. This attack appear to be exploitable via HTTP Request."},{"lang":"es","value":"Wekan 1.04.0 contiene una vulnerabilidad de enumeración de emails\/nombres de usuario en las páginas \"Register\" y \"Forgot your password?\" que puede resultar en que un atacante remoto podría realizar un ataque de fuerza bruta para obtener nombres de usuario y direcciones de correo válidos. Parece ser que este ataque puede ser explotado mediante una petición HTTP."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:L\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":5.3,"baseSeverity":"MEDIUM"},"exploitabilityScore":3.9,"impactScore":1.4}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:N\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":5.0},"baseSeverity":"MEDIUM","exploitabilityScore":10.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-200"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:wekan_project:wekan:1.04.0:*:*:*:*:*:*:*","matchCriteriaId":"DD7BB1D1-63DE-4B5D-8D98-3FAFBDEEB9FD"}]}]}],"references":[{"url":"https:\/\/raw.githubusercontent.com\/distributedweaknessfiling\/cvelist\/master\/2018\/1000xxx\/CVE-2018-1000549.json","source":"cve@mitre.org"},{"url":"https:\/\/shadow-vault.com\/wekan.html","source":"cve@mitre.org","tags":["Third Party Advisory"]},{"url":"https:\/\/wekan.github.io\/hall-of-fame\/brutebleed\/","source":"cve@mitre.org"}]}},{"cve":{"id":"CVE-2021-3309","sourceIdentifier":"cve@mitre.org","published":"2021-01-26T21:15:13.063","lastModified":"2021-02-02T15:20:35.127","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"packages\/wekan-ldap\/server\/ldap.js in Wekan before 4.87 can process connections even though they are not authorized by the Certification Authority trust store,"},{"lang":"es","value":"El archivo packages\/wekan-ldap\/server\/ldap.js en Wekan versiones anteriores a 4.87, pueden procesar conexiones aunque no estén autorizadas por el almacén confiable de Certification Authority"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:H\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"HIGH","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":8.1,"baseSeverity":"HIGH"},"exploitabilityScore":2.2,"impactScore":5.9}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":6.8},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-295"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:wekan_project:wekan:*:*:*:*:*:*:*:*","versionEndExcluding":"4.87","matchCriteriaId":"FD5D1800-99E6-4E68-B5B9-B22CF9E6CCE3"}]}]}],"references":[{"url":"https:\/\/github.com\/wekan\/wekan\/issues\/3482","source":"cve@mitre.org","tags":["Exploit","Issue Tracking","Third Party Advisory"]},{"url":"https:\/\/github.com\/wekan\/wekan\/pull\/3483\/commits\/31f89121fecca5a761b05cc3a26d4f237e90b484","source":"cve@mitre.org","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/wekan\/wekan\/releases\/tag\/v4.87","source":"cve@mitre.org","tags":["Release Notes","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2021-20654","sourceIdentifier":"vultures@jpcert.or.jp","published":"2021-02-10T09:15:12.887","lastModified":"2021-02-16T18:14:06.500","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Wekan, open source kanban board system, between version 3.12 and 4.11, is vulnerable to multiple stored cross-site scripting. This is named 'Fieldbleed' in the vendor's site."},{"lang":"es","value":"Wekan, el sistema de placa kanban de código abierto, entre versiones 3.12 y 4.11, es vulnerable a múltiples ataques de tipo cross-site scripting almacenado.&#xa0;Esto es denominado \"Fieldbleed\" en el sitio del proveedor"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.3,"impactScore":2.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:S\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"SINGLE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":3.5},"baseSeverity":"LOW","exploitabilityScore":6.8,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]},{"source":"vultures@jpcert.or.jp","type":"Secondary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:wekan_project:wekan:*:*:*:*:*:*:*:*","versionStartIncluding":"3.12","versionEndIncluding":"4.11","matchCriteriaId":"D2B2CB93-E64A-4005-B5D1-2E401A39EAE6"}]}]}],"references":[{"url":"https:\/\/jvn.jp\/en\/jp\/JVN80785288\/","source":"vultures@jpcert.or.jp","tags":["Third Party Advisory"]},{"url":"https:\/\/wekan.github.io\/hall-of-fame\/fieldbleed\/","source":"vultures@jpcert.or.jp","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2023-31779","sourceIdentifier":"cve@mitre.org","published":"2023-05-22T13:15:09.913","lastModified":"2023-05-31T13:38:31.893","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Wekan v6.84 and earlier is vulnerable to Cross Site Scripting (XSS). An attacker with user privilege on kanban board can insert JavaScript code in in \"Reaction to comment\" feature."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.3,"impactScore":2.7}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:wekan_project:wekan:*:*:*:*:*:*:*:*","versionEndIncluding":"6.84","matchCriteriaId":"F6B847F3-637F-4F2D-A8D0-A02D2447C642"}]}]}],"references":[{"url":"https:\/\/github.com\/wekan\/wekan\/blob\/master\/CHANGELOG.md","source":"cve@mitre.org","tags":["Release Notes"]},{"url":"https:\/\/github.com\/wekan\/wekan\/commit\/47ac33d6c234359c31d9b5eae49ed3e793907279","source":"cve@mitre.org","tags":["Patch"]}]}},{"cve":{"id":"CVE-2023-28485","sourceIdentifier":"cve@mitre.org","published":"2023-06-26T16:15:09.537","lastModified":"2023-07-03T19:22:57.320","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"A stored cross-site scripting (Stored XSS) vulnerability in file preview in WeKan before 6.75 allows remote authenticated users to inject arbitrary web script or HTML via names of file attachments. Any user can obtain the privilege to rename within their own board (where they have BoardAdmin access), and renameAttachment does not block XSS payloads."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.3,"impactScore":2.7}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:wekan_project:wekan:*:*:*:*:*:*:*:*","versionEndExcluding":"6.75","matchCriteriaId":"5811ACF9-EA77-4434-9012-022410D2BCD5"}]}]}],"references":[{"url":"http:\/\/packetstormsecurity.com\/files\/172649\/Wekan-6.74-Cross-Site-Scripting.html","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory","VDB Entry"]},{"url":"https:\/\/wekan.github.io\/","source":"cve@mitre.org","tags":["Product"]},{"url":"https:\/\/wekan.github.io\/hall-of-fame\/filebleed\/","source":"cve@mitre.org","tags":["Exploit","Vendor Advisory"]}]}}]}
+{
+    "resultsPerPage": 5,
+    "startIndex": 0,
+    "totalResults": 5,
+    "format": "NVD_CVE",
+    "version": "2.0",
+    "timestamp": "2024-04-30T10:54:56.377",
+    "vulnerabilities": [
+        {
+            "cve": {
+                "id": "CVE-2018-1000549",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2018-06-26T16:29:02.523",
+                "lastModified": "2020-08-03T19:15:09.083",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Wekan version 1.04.0 contains a Email / Username Enumeration vulnerability in Register' and 'Forgot your password?' pages that can result in A remote attacker could perform a brute force attack to obtain valid usernames and email addresses.. This attack appear to be exploitable via HTTP Request."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Wekan 1.04.0 contiene una vulnerabilidad de enumeraci\u00f3n de emails/nombres de usuario en las p\u00e1ginas \"Register\" y \"Forgot your password?\" que puede resultar en que un atacante remoto podr\u00eda realizar un ataque de fuerza bruta para obtener nombres de usuario y direcciones de correo v\u00e1lidos. Parece ser que este ataque puede ser explotado mediante una petici\u00f3n HTTP."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.3,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 1.4
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-200"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:wekan_project:wekan:1.04.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "DD7BB1D1-63DE-4B5D-8D98-3FAFBDEEB9FD"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://raw.githubusercontent.com/distributedweaknessfiling/cvelist/master/2018/1000xxx/CVE-2018-1000549.json",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "https://shadow-vault.com/wekan.html",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://wekan.github.io/hall-of-fame/brutebleed/",
+                        "source": "cve@mitre.org"
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-3309",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2021-01-26T21:15:13.063",
+                "lastModified": "2021-02-02T15:20:35.127",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "packages/wekan-ldap/server/ldap.js in Wekan before 4.87 can process connections even though they are not authorized by the Certification Authority trust store,"
+                    },
+                    {
+                        "lang": "es",
+                        "value": "El archivo packages/wekan-ldap/server/ldap.js en Wekan versiones anteriores a 4.87, pueden procesar conexiones aunque no est\u00e9n autorizadas por el almac\u00e9n confiable de Certification Authority"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "HIGH",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 8.1,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.2,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 6.8
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-295"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:wekan_project:wekan:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "4.87",
+                                        "matchCriteriaId": "FD5D1800-99E6-4E68-B5B9-B22CF9E6CCE3"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/wekan/wekan/issues/3482",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Issue Tracking",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/wekan/wekan/pull/3483/commits/31f89121fecca5a761b05cc3a26d4f237e90b484",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/wekan/wekan/releases/tag/v4.87",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Release Notes",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-20654",
+                "sourceIdentifier": "vultures@jpcert.or.jp",
+                "published": "2021-02-10T09:15:12.887",
+                "lastModified": "2021-02-16T18:14:06.500",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Wekan, open source kanban board system, between version 3.12 and 4.11, is vulnerable to multiple stored cross-site scripting. This is named 'Fieldbleed' in the vendor's site."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Wekan, el sistema de placa kanban de c\u00f3digo abierto, entre versiones 3.12 y 4.11, es vulnerable a m\u00faltiples ataques de tipo cross-site scripting almacenado.&#xa0;Esto es denominado \"Fieldbleed\" en el sitio del proveedor"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 3.5
+                            },
+                            "baseSeverity": "LOW",
+                            "exploitabilityScore": 6.8,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "vultures@jpcert.or.jp",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:wekan_project:wekan:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "3.12",
+                                        "versionEndIncluding": "4.11",
+                                        "matchCriteriaId": "D2B2CB93-E64A-4005-B5D1-2E401A39EAE6"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://jvn.jp/en/jp/JVN80785288/",
+                        "source": "vultures@jpcert.or.jp",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://wekan.github.io/hall-of-fame/fieldbleed/",
+                        "source": "vultures@jpcert.or.jp",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-31779",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2023-05-22T13:15:09.913",
+                "lastModified": "2023-05-31T13:38:31.893",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Wekan v6.84 and earlier is vulnerable to Cross Site Scripting (XSS). An attacker with user privilege on kanban board can insert JavaScript code in in \"Reaction to comment\" feature."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 2.7
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:wekan_project:wekan:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "6.84",
+                                        "matchCriteriaId": "F6B847F3-637F-4F2D-A8D0-A02D2447C642"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/wekan/wekan/blob/master/CHANGELOG.md",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Release Notes"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/wekan/wekan/commit/47ac33d6c234359c31d9b5eae49ed3e793907279",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-28485",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2023-06-26T16:15:09.537",
+                "lastModified": "2023-07-03T19:22:57.320",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "A stored cross-site scripting (Stored XSS) vulnerability in file preview in WeKan before 6.75 allows remote authenticated users to inject arbitrary web script or HTML via names of file attachments. Any user can obtain the privilege to rename within their own board (where they have BoardAdmin access), and renameAttachment does not block XSS payloads."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 2.7
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:wekan_project:wekan:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "6.75",
+                                        "matchCriteriaId": "5811ACF9-EA77-4434-9012-022410D2BCD5"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://packetstormsecurity.com/files/172649/Wekan-6.74-Cross-Site-Scripting.html",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory",
+                            "VDB Entry"
+                        ]
+                    },
+                    {
+                        "url": "https://wekan.github.io/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Product"
+                        ]
+                    },
+                    {
+                        "url": "https://wekan.github.io/hall-of-fame/filebleed/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Vendor Advisory"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,1 +1,1166 @@
-{"resultsPerPage":8,"startIndex":0,"totalResults":8,"format":"NVD_CVE","version":"2.0","timestamp":"2024-04-30T10:49:58.290","vulnerabilities":[{"cve":{"id":"CVE-2021-3780","sourceIdentifier":"security@huntr.dev","published":"2021-09-15T12:15:16.133","lastModified":"2021-09-23T19:47:52.177","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"peertube is vulnerable to Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"},{"lang":"es","value":"peertube es vulnerable a una Neutralización Inapropiada de Entradas Durante la Generación de Páginas Web (\"Cross-site Scripting\")"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.1,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.7}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:R\/S:U\/C:H\/I:L\/A:L","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"LOW","availabilityImpact":"LOW","baseScore":7.6,"baseSeverity":"HIGH"},"exploitabilityScore":2.8,"impactScore":4.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.3},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]},{"source":"security@huntr.dev","type":"Secondary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:framasoft:peertube:*:*:*:*:*:*:*:*","versionEndExcluding":"3.4.0","matchCriteriaId":"64CE5E95-DA39-4851-BF85-FA3E29CFF0BD"}]}]}],"references":[{"url":"https:\/\/github.com\/chocobozzz\/peertube\/commit\/0ea2f79d45b301fcd660efc894469a99b2239bf6","source":"security@huntr.dev","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/282807a8-4bf5-4fe2-af62-e05f945b3d65","source":"security@huntr.dev","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-0132","sourceIdentifier":"security@huntr.dev","published":"2022-01-10T14:12:26.720","lastModified":"2022-01-14T16:06:40.243","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"peertube is vulnerable to Server-Side Request Forgery (SSRF)"},{"lang":"es","value":"peertube es vulnerable a un ataque de tipo Server-Side Request Forgery (SSRF)"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":7.5,"baseSeverity":"HIGH"},"exploitabilityScore":3.9,"impactScore":3.6}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:H\/PR:N\/UI:N\/S:U\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"HIGH","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":4.8,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.2,"impactScore":2.5}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:N\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":5.0},"baseSeverity":"MEDIUM","exploitabilityScore":10.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-918"}]},{"source":"security@huntr.dev","type":"Secondary","description":[{"lang":"en","value":"CWE-918"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:framasoft:peertube:-:*:*:*:*:*:*:*","matchCriteriaId":"D93B2533-6077-4A83-9D8D-94A0391F428E"}]}]}],"references":[{"url":"https:\/\/github.com\/chocobozzz\/peertube\/commit\/7b54a81cccf6b4c12269e9d6897d608b1a99537a","source":"security@huntr.dev","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/77ec5308-5561-4664-af21-d780df2d1e4b","source":"security@huntr.dev","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-0133","sourceIdentifier":"security@huntr.dev","published":"2022-01-10T14:12:27.957","lastModified":"2022-01-14T16:52:36.573","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"peertube is vulnerable to Improper Access Control"},{"lang":"es","value":"peertube es vulnerable a un Control de Acceso Inapropiado"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":7.5,"baseSeverity":"HIGH"},"exploitabilityScore":3.9,"impactScore":3.6}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:L\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":5.3,"baseSeverity":"MEDIUM"},"exploitabilityScore":3.9,"impactScore":1.4}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:N\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":5.0},"baseSeverity":"MEDIUM","exploitabilityScore":10.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"security@huntr.dev","type":"Primary","description":[{"lang":"en","value":"CWE-284"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:framasoft:peertube:*:*:*:*:*:*:*:*","versionEndExcluding":"2022-01-06","matchCriteriaId":"E75028A0-3D2E-469D-A871-9565DE7AEEF7"}]}]}],"references":[{"url":"https:\/\/github.com\/chocobozzz\/peertube\/commit\/795212f7acc690c88c86d0fab8772f6564d59cb8","source":"security@huntr.dev","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/80aabdc1-89fe-47b8-87ca-9d68107fc0b4","source":"security@huntr.dev","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-0170","sourceIdentifier":"security@huntr.dev","published":"2022-01-11T16:15:07.860","lastModified":"2022-01-19T19:31:56.187","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"peertube is vulnerable to Improper Access Control"},{"lang":"es","value":"peertube es vulnerable a un Control de Acceso Inapropiado"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:L\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":4.3,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":1.4}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:L\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":5.3,"baseSeverity":"MEDIUM"},"exploitabilityScore":3.9,"impactScore":1.4}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:S\/C:P\/I:N\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"SINGLE","confidentialityImpact":"PARTIAL","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":4.0},"baseSeverity":"MEDIUM","exploitabilityScore":8.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"security@huntr.dev","type":"Primary","description":[{"lang":"en","value":"CWE-284"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:framasoft:peertube:*:*:*:*:*:*:*:*","versionEndIncluding":"4.0.0","matchCriteriaId":"9612EB04-5E64-485B-B1BB-5420EB0BF1C4"}]}]}],"references":[{"url":"https:\/\/github.com\/chocobozzz\/peertube\/commit\/84c8d9866890f479faf0168c29be5eb7816ccc8e","source":"security@huntr.dev","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/f2a003fc-b911-43b6-81ec-f856cdfeaefc","source":"security@huntr.dev","tags":["Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-0508","sourceIdentifier":"security@huntr.dev","published":"2022-02-08T11:15:07.797","lastModified":"2022-02-15T20:22:59.270","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Server-Side Request Forgery (SSRF) in GitHub repository chocobozzz\/peertube prior to f33e515991a32885622b217bf2ed1d1b0d9d6832"},{"lang":"es","value":"Una vulnerabilidad de tipo Server-Side Request Forgery (SSRF) en el repositorio GitHub chocobozzz\/peertube versiones anteriores a f33e515991a32885622b217bf2ed1d1b0d9d6832"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:L\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":5.3,"baseSeverity":"MEDIUM"},"exploitabilityScore":3.9,"impactScore":1.4}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.5,"baseSeverity":"MEDIUM"},"exploitabilityScore":3.9,"impactScore":2.5}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:N\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":5.0},"baseSeverity":"MEDIUM","exploitabilityScore":10.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"security@huntr.dev","type":"Primary","description":[{"lang":"en","value":"CWE-918"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:framasoft:peertube:*:*:*:*:*:*:*:*","versionEndExcluding":"2021-12-13","matchCriteriaId":"1A29FA91-F5E5-48B2-A7AF-A7765704C461"}]}]}],"references":[{"url":"https:\/\/github.com\/chocobozzz\/peertube\/commit\/f33e515991a32885622b217bf2ed1d1b0d9d6832","source":"security@huntr.dev","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/c3724574-b6c9-430b-849b-40dd2b20f23c","source":"security@huntr.dev","tags":["Exploit","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-0726","sourceIdentifier":"security@huntr.dev","published":"2022-02-23T14:15:07.930","lastModified":"2023-06-29T09:15:10.120","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"Missing Authorization in GitHub repository chocobozzz\/peertube prior to 4.1.0."},{"lang":"es","value":"Una Autorización Incorrecta en el repositorio de GitHub chocobozzz\/peertube versiones anteriores a 4.1.0"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.5}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.5}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:S\/C:P\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"SINGLE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":5.5},"baseSeverity":"MEDIUM","exploitabilityScore":8.0,"impactScore":4.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"security@huntr.dev","type":"Primary","description":[{"lang":"en","value":"CWE-862"}]},{"source":"nvd@nist.gov","type":"Secondary","description":[{"lang":"en","value":"CWE-862"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:framasoft:peertube:*:*:*:*:*:*:*:*","versionEndExcluding":"4.1.0","matchCriteriaId":"5AC7935A-1B57-4A2A-BC91-2A5381DB00E0"}]}]}],"references":[{"url":"https:\/\/github.com\/chocobozzz\/peertube\/commit\/6ea9295b8f5dd7cc254202a79aad61c666cc4259","source":"security@huntr.dev","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/8928ab08-7fcb-475e-8da7-18e8412c1ac3","source":"security@huntr.dev","tags":["Exploit","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-0727","sourceIdentifier":"security@huntr.dev","published":"2022-02-23T14:15:08.037","lastModified":"2022-03-02T02:15:38.733","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Improper Access Control in GitHub repository chocobozzz\/peertube prior to 4.1.0."},{"lang":"es","value":"Un Control de Acceso Inapropiado en el repositorio de GitHub chocobozzz\/peertube versiones anteriores a 4.1.0"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.5}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.5}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:S\/C:P\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"SINGLE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":5.5},"baseSeverity":"MEDIUM","exploitabilityScore":8.0,"impactScore":4.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-863"}]},{"source":"security@huntr.dev","type":"Secondary","description":[{"lang":"en","value":"CWE-284"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:framasoft:peertube:*:*:*:*:*:*:*:*","versionEndExcluding":"4.1.0","matchCriteriaId":"5AC7935A-1B57-4A2A-BC91-2A5381DB00E0"}]}]}],"references":[{"url":"https:\/\/github.com\/chocobozzz\/peertube\/commit\/6ea9295b8f5dd7cc254202a79aad61c666cc4259","source":"security@huntr.dev","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/d1faa10f-0640-480c-bb52-089adb351e6e","source":"security@huntr.dev","tags":["Exploit","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-0881","sourceIdentifier":"security@huntr.dev","published":"2022-03-09T09:15:07.117","lastModified":"2022-03-11T21:16:13.517","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Insecure Storage of Sensitive Information in GitHub repository chocobozzz\/peertube prior to 4.1.1."},{"lang":"es","value":"Un Almacenamiento no Seguro de Información Confidencial en el repositorio de GitHub chocobozzz\/peertube versiones anteriores a 4.1.1"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":6.5,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":3.6}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:H\/PR:H\/UI:R\/S:C\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"HIGH","privilegesRequired":"HIGH","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":7.6,"baseSeverity":"HIGH"},"exploitabilityScore":1.0,"impactScore":6.0}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:S\/C:P\/I:N\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"SINGLE","confidentialityImpact":"PARTIAL","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":4.0},"baseSeverity":"MEDIUM","exploitabilityScore":8.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-922"}]},{"source":"security@huntr.dev","type":"Secondary","description":[{"lang":"en","value":"CWE-922"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:framasoft:peertube:*:*:*:*:*:*:*:*","versionEndExcluding":"4.1.1","matchCriteriaId":"3324723D-2A21-4A93-BAE0-E5E8BFC8888B"}]}]}],"references":[{"url":"https:\/\/github.com\/chocobozzz\/peertube\/commit\/0c058f256a195b92f124be10109c95d1fbe93ad8","source":"security@huntr.dev","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/2628431e-6a98-4063-a0e3-a8b1d9ebaa9c","source":"security@huntr.dev","tags":["Exploit","Patch","Third Party Advisory"]}]}}]}
+{
+    "resultsPerPage": 8,
+    "startIndex": 0,
+    "totalResults": 8,
+    "format": "NVD_CVE",
+    "version": "2.0",
+    "timestamp": "2024-04-30T10:49:58.290",
+    "vulnerabilities": [
+        {
+            "cve": {
+                "id": "CVE-2021-3780",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2021-09-15T12:15:16.133",
+                "lastModified": "2021-09-23T19:47:52.177",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "peertube is vulnerable to Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+                    },
+                    {
+                        "lang": "es",
+                        "value": "peertube es vulnerable a una Neutralizaci\u00f3n Inapropiada de Entradas Durante la Generaci\u00f3n de P\u00e1ginas Web (\"Cross-site Scripting\")"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.1,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:L/A:L",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "LOW",
+                                "baseScore": 7.6,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 4.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:framasoft:peertube:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "3.4.0",
+                                        "matchCriteriaId": "64CE5E95-DA39-4851-BF85-FA3E29CFF0BD"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/chocobozzz/peertube/commit/0ea2f79d45b301fcd660efc894469a99b2239bf6",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/282807a8-4bf5-4fe2-af62-e05f945b3d65",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-0132",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2022-01-10T14:12:26.720",
+                "lastModified": "2022-01-14T16:06:40.243",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "peertube is vulnerable to Server-Side Request Forgery (SSRF)"
+                    },
+                    {
+                        "lang": "es",
+                        "value": "peertube es vulnerable a un ataque de tipo Server-Side Request Forgery (SSRF)"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 7.5,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 3.6
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "HIGH",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.8,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.2,
+                            "impactScore": 2.5
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-918"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-918"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:framasoft:peertube:-:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "D93B2533-6077-4A83-9D8D-94A0391F428E"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/chocobozzz/peertube/commit/7b54a81cccf6b4c12269e9d6897d608b1a99537a",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/77ec5308-5561-4664-af21-d780df2d1e4b",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-0133",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2022-01-10T14:12:27.957",
+                "lastModified": "2022-01-14T16:52:36.573",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "peertube is vulnerable to Improper Access Control"
+                    },
+                    {
+                        "lang": "es",
+                        "value": "peertube es vulnerable a un Control de Acceso Inapropiado"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 7.5,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 3.6
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.3,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 1.4
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-284"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:framasoft:peertube:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "2022-01-06",
+                                        "matchCriteriaId": "E75028A0-3D2E-469D-A871-9565DE7AEEF7"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/chocobozzz/peertube/commit/795212f7acc690c88c86d0fab8772f6564d59cb8",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/80aabdc1-89fe-47b8-87ca-9d68107fc0b4",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-0170",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2022-01-11T16:15:07.860",
+                "lastModified": "2022-01-19T19:31:56.187",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "peertube is vulnerable to Improper Access Control"
+                    },
+                    {
+                        "lang": "es",
+                        "value": "peertube es vulnerable a un Control de Acceso Inapropiado"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 1.4
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.3,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 1.4
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:S/C:P/I:N/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-284"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:framasoft:peertube:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "4.0.0",
+                                        "matchCriteriaId": "9612EB04-5E64-485B-B1BB-5420EB0BF1C4"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/chocobozzz/peertube/commit/84c8d9866890f479faf0168c29be5eb7816ccc8e",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/f2a003fc-b911-43b6-81ec-f856cdfeaefc",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-0508",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2022-02-08T11:15:07.797",
+                "lastModified": "2022-02-15T20:22:59.270",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Server-Side Request Forgery (SSRF) in GitHub repository chocobozzz/peertube prior to f33e515991a32885622b217bf2ed1d1b0d9d6832"
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Una vulnerabilidad de tipo Server-Side Request Forgery (SSRF) en el repositorio GitHub chocobozzz/peertube versiones anteriores a f33e515991a32885622b217bf2ed1d1b0d9d6832"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.3,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 1.4
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.5,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 2.5
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-918"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:framasoft:peertube:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "2021-12-13",
+                                        "matchCriteriaId": "1A29FA91-F5E5-48B2-A7AF-A7765704C461"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/chocobozzz/peertube/commit/f33e515991a32885622b217bf2ed1d1b0d9d6832",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/c3724574-b6c9-430b-849b-40dd2b20f23c",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-0726",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2022-02-23T14:15:07.930",
+                "lastModified": "2023-06-29T09:15:10.120",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Missing Authorization in GitHub repository chocobozzz/peertube prior to 4.1.0."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Una Autorizaci\u00f3n Incorrecta en el repositorio de GitHub chocobozzz/peertube versiones anteriores a 4.1.0"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.5
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.5
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:S/C:P/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.5
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.0,
+                            "impactScore": 4.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-862"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-862"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:framasoft:peertube:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "4.1.0",
+                                        "matchCriteriaId": "5AC7935A-1B57-4A2A-BC91-2A5381DB00E0"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/chocobozzz/peertube/commit/6ea9295b8f5dd7cc254202a79aad61c666cc4259",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/8928ab08-7fcb-475e-8da7-18e8412c1ac3",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-0727",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2022-02-23T14:15:08.037",
+                "lastModified": "2022-03-02T02:15:38.733",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Improper Access Control in GitHub repository chocobozzz/peertube prior to 4.1.0."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Un Control de Acceso Inapropiado en el repositorio de GitHub chocobozzz/peertube versiones anteriores a 4.1.0"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.5
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.5
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:S/C:P/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.5
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.0,
+                            "impactScore": 4.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-863"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-284"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:framasoft:peertube:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "4.1.0",
+                                        "matchCriteriaId": "5AC7935A-1B57-4A2A-BC91-2A5381DB00E0"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/chocobozzz/peertube/commit/6ea9295b8f5dd7cc254202a79aad61c666cc4259",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/d1faa10f-0640-480c-bb52-089adb351e6e",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-0881",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2022-03-09T09:15:07.117",
+                "lastModified": "2022-03-11T21:16:13.517",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Insecure Storage of Sensitive Information in GitHub repository chocobozzz/peertube prior to 4.1.1."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Un Almacenamiento no Seguro de Informaci\u00f3n Confidencial en el repositorio de GitHub chocobozzz/peertube versiones anteriores a 4.1.1"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.5,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 3.6
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:H/PR:H/UI:R/S:C/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "HIGH",
+                                "privilegesRequired": "HIGH",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 7.6,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 1.0,
+                            "impactScore": 6.0
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:S/C:P/I:N/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-922"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-922"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:framasoft:peertube:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "4.1.1",
+                                        "matchCriteriaId": "3324723D-2A21-4A93-BAE0-E5E8BFC8888B"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/chocobozzz/peertube/commit/0c058f256a195b92f124be10109c95d1fbe93ad8",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/2628431e-6a98-4063-a0e3-a8b1d9ebaa9c",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

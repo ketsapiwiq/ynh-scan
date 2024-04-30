@@ -1,1 +1,718 @@
-{"resultsPerPage":5,"startIndex":0,"totalResults":5,"format":"NVD_CVE","version":"2.0","timestamp":"2024-04-30T10:38:02.073","vulnerabilities":[{"cve":{"id":"CVE-2018-7667","sourceIdentifier":"cve@mitre.org","published":"2018-03-05T07:29:00.493","lastModified":"2018-03-27T13:32:42.290","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Adminer through 4.3.1 has SSRF via the server parameter."},{"lang":"es","value":"Adminer hasta la versión 4.3.1 tiene SSRF mediante el parámetro server."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.8,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.9}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":7.5},"baseSeverity":"HIGH","exploitabilityScore":10.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-918"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:adminer:adminer:*:*:*:*:*:*:*:*","versionEndIncluding":"4.3.1","matchCriteriaId":"8CA03BBA-8A5A-4538-B77C-E5623A6F97FD"}]}]}],"references":[{"url":"http:\/\/hyp3rlinx.altervista.org\/advisories\/ADMINER-UNAUTHENTICATED-SERVER-SIDE-REQUEST-FORGERY.txt","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]},{"url":"https:\/\/lists.debian.org\/debian-lts-announce\/2018\/03\/msg00014.html","source":"cve@mitre.org","tags":["Third Party Advisory"]}]}},{"cve":{"id":"CVE-2020-35572","sourceIdentifier":"cve@mitre.org","published":"2021-02-09T18:15:44.073","lastModified":"2021-02-11T16:25:17.593","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Adminer through 4.7.8 allows XSS via the history parameter to the default URI."},{"lang":"es","value":"Adminer versiones hasta 4.7.8 permite un ataque de tipo XSS por medio del parámetro history en el URI predeterminado"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.1,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.3},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:adminer:adminer:*:*:*:*:*:*:*:*","versionEndIncluding":"4.7.8","matchCriteriaId":"A66B65BF-2155-4E6E-8511-207B891113FF"}]}]}],"references":[{"url":"https:\/\/sourceforge.net\/p\/adminer\/bugs-and-features\/775\/","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]},{"url":"https:\/\/sourceforge.net\/p\/adminer\/news\/","source":"cve@mitre.org","tags":["Release Notes","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2021-21311","sourceIdentifier":"security-advisories@github.com","published":"2021-02-11T21:15:13.820","lastModified":"2021-06-24T12:50:46.897","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Adminer is an open-source database management in a single PHP file. In adminer from version 4.0.0 and before 4.7.9 there is a server-side request forgery vulnerability. Users of Adminer versions bundling all drivers (e.g. `adminer.php`) are affected. This is fixed in version 4.7.9."},{"lang":"es","value":"Adminer es una administración de base de datos de código abierto en un solo archivo PHP.&#xa0;En el administrador de la versión 4.0.0 y antes de la 4.7.9, se presenta una vulnerabilidad de tipo server-side request forgery.&#xa0;Los usuarios de las versiones Adminer que incluyen todos los controladores (por ejemplo, \"adminer.php\") están afectados.&#xa0;Esto es corregido en la versión 4.7.9"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":7.2,"baseSeverity":"HIGH"},"exploitabilityScore":3.9,"impactScore":2.7},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":7.2,"baseSeverity":"HIGH"},"exploitabilityScore":3.9,"impactScore":2.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":6.4},"baseSeverity":"MEDIUM","exploitabilityScore":10.0,"impactScore":4.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"security-advisories@github.com","type":"Primary","description":[{"lang":"en","value":"CWE-918"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:adminer:adminer:*:*:*:*:*:*:*:*","versionStartIncluding":"4.0.0","versionEndExcluding":"4.7.9","matchCriteriaId":"F5E19DCC-D7A6-4325-8E91-E601C9967B8F"}]}]},{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:o:debian:debian_linux:9.0:*:*:*:*:*:*:*","matchCriteriaId":"DEECE5FC-CACF-4496-A3E7-164736409252"}]}]}],"references":[{"url":"https:\/\/github.com\/vrana\/adminer\/commit\/ccd2374b0b12bd547417bf0dacdf153826c83351","source":"security-advisories@github.com","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/vrana\/adminer\/files\/5957311\/Adminer.SSRF.pdf","source":"security-advisories@github.com","tags":["Exploit","Third Party Advisory"]},{"url":"https:\/\/github.com\/vrana\/adminer\/security\/advisories\/GHSA-x5r2-hj5c-8jx6","source":"security-advisories@github.com","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/lists.debian.org\/debian-lts-announce\/2021\/03\/msg00002.html","source":"security-advisories@github.com","tags":["Mailing List","Third Party Advisory"]},{"url":"https:\/\/packagist.org\/packages\/vrana\/adminer","source":"security-advisories@github.com","tags":["Product","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2021-29625","sourceIdentifier":"security-advisories@github.com","published":"2021-05-19T22:15:07.903","lastModified":"2021-05-25T20:26:15.900","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Adminer is open-source database management software. A cross-site scripting vulnerability in Adminer versions 4.6.1 to 4.8.0 affects users of MySQL, MariaDB, PgSQL and SQLite. XSS is in most cases prevented by strict CSP in all modern browsers. The only exception is when Adminer is using a `pdo_` extension to communicate with the database (it is used if the native extensions are not enabled). In browsers without CSP, Adminer versions 4.6.1 to 4.8.0 are affected. The vulnerability is patched in version 4.8.1. As workarounds, one can use a browser supporting strict CSP or enable the native PHP extensions (e.g. `mysqli`) or disable displaying PHP errors (`display_errors`)."},{"lang":"es","value":"Adminer es un software de administración de bases de datos de código abierto.&#xa0;Una vulnerabilidad de tipo cross-site scripting en Adminer versiones 4.6.1 hasta 4.8.0, afecta a los usuarios de MySQL, MariaDB, PgSQL y SQLite.&#xa0;Un ataque de tipo XSS en la mayoría de los casos es impedido por un CSP estricto en todos los navegadores modernos.&#xa0;La única excepción es cuando Adminer está usando una extensión \"pdo_\" para comunicarse con la base de datos (se usa si las extensiones nativas no están habilitadas).&#xa0;En los navegadores sin CSP, las versiones de Adminer 4.6.1 hasta 4.8.0 están afectadas.&#xa0;La vulnerabilidad está parcheada en la versión 4.8.1.&#xa0;Como soluciones alternativas, se puede usar un navegador que admita CSP estricto o habilitar las extensiones nativas de PHP (por ejemplo, \"mysqli\") o deshabilitar la visualización de errores de PHP (\"display_errors\")"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.1,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.7},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:H\/PR:N\/UI:R\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"HIGH","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":7.5,"baseSeverity":"HIGH"},"exploitabilityScore":1.6,"impactScore":5.9}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.3},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"security-advisories@github.com","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:adminer:adminer:*:*:*:*:*:*:*:*","versionStartIncluding":"4.6.1","versionEndExcluding":"4.8.1","matchCriteriaId":"141DCC97-784C-4851-B1DC-01F41E749177"}]}]}],"references":[{"url":"https:\/\/github.com\/vrana\/adminer\/commit\/4043092ec2c0de2258d60a99d0c5958637d051a7","source":"security-advisories@github.com","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/vrana\/adminer\/security\/advisories\/GHSA-2v82-5746-vwqc","source":"security-advisories@github.com","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/sourceforge.net\/p\/adminer\/bugs-and-features\/797\/","source":"security-advisories@github.com","tags":["Exploit","Product","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2021-43008","sourceIdentifier":"cve@mitre.org","published":"2022-04-05T02:15:06.887","lastModified":"2022-09-30T13:03:53.617","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Improper Access Control in Adminer versions 1.12.0 to 4.6.2 (fixed in version 4.6.3) allows an attacker to achieve Arbitrary File Read on the remote server by requesting the Adminer to connect to a remote MySQL database."},{"lang":"es","value":"Un control de acceso inapropiado en las versiones 1.12.0 a 4.6.2 de Adminer (corregido en la versión 4.6.3) permite a un atacante lograr una lectura arbitraria de archivos en el servidor remoto solicitando a Adminer que sea conectado a una base de datos MySQL remota"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":7.5,"baseSeverity":"HIGH"},"exploitabilityScore":3.9,"impactScore":3.6}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:N\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":5.0},"baseSeverity":"MEDIUM","exploitabilityScore":10.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"NVD-CWE-Other"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:adminer:adminer:*:*:*:*:*:*:*:*","versionStartIncluding":"1.12.0","versionEndIncluding":"4.6.2","matchCriteriaId":"D549BB34-3EDB-4FD7-8645-7D51C39B3773"}]}]},{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:o:debian:debian_linux:9.0:*:*:*:*:*:*:*","matchCriteriaId":"DEECE5FC-CACF-4496-A3E7-164736409252"}]}]}],"references":[{"url":"https:\/\/github.com\/vrana\/adminer\/releases\/tag\/v4.6.3","source":"cve@mitre.org","tags":["Release Notes","Third Party Advisory"]},{"url":"https:\/\/lists.debian.org\/debian-lts-announce\/2022\/05\/msg00012.html","source":"cve@mitre.org","tags":["Mailing List","Third Party Advisory"]},{"url":"https:\/\/podalirius.net\/en\/cves\/2021-43008\/","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]},{"url":"https:\/\/sansec.io\/research\/adminer-4.6.2-file-disclosure-vulnerability","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]},{"url":"https:\/\/www.adminer.org\/","source":"cve@mitre.org","tags":["Product"]}]}}]}
+{
+    "resultsPerPage": 5,
+    "startIndex": 0,
+    "totalResults": 5,
+    "format": "NVD_CVE",
+    "version": "2.0",
+    "timestamp": "2024-04-30T10:38:02.073",
+    "vulnerabilities": [
+        {
+            "cve": {
+                "id": "CVE-2018-7667",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2018-03-05T07:29:00.493",
+                "lastModified": "2018-03-27T13:32:42.290",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Adminer through 4.3.1 has SSRF via the server parameter."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Adminer hasta la versi\u00f3n 4.3.1 tiene SSRF mediante el par\u00e1metro server."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.8,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 7.5
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-918"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:adminer:adminer:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "4.3.1",
+                                        "matchCriteriaId": "8CA03BBA-8A5A-4538-B77C-E5623A6F97FD"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://hyp3rlinx.altervista.org/advisories/ADMINER-UNAUTHENTICATED-SERVER-SIDE-REQUEST-FORGERY.txt",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://lists.debian.org/debian-lts-announce/2018/03/msg00014.html",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2020-35572",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2021-02-09T18:15:44.073",
+                "lastModified": "2021-02-11T16:25:17.593",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Adminer through 4.7.8 allows XSS via the history parameter to the default URI."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Adminer versiones hasta 4.7.8 permite un ataque de tipo XSS por medio del par\u00e1metro history en el URI predeterminado"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.1,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:adminer:adminer:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "4.7.8",
+                                        "matchCriteriaId": "A66B65BF-2155-4E6E-8511-207B891113FF"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://sourceforge.net/p/adminer/bugs-and-features/775/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://sourceforge.net/p/adminer/news/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Release Notes",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-21311",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2021-02-11T21:15:13.820",
+                "lastModified": "2021-06-24T12:50:46.897",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Adminer is an open-source database management in a single PHP file. In adminer from version 4.0.0 and before 4.7.9 there is a server-side request forgery vulnerability. Users of Adminer versions bundling all drivers (e.g. `adminer.php`) are affected. This is fixed in version 4.7.9."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Adminer es una administraci\u00f3n de base de datos de c\u00f3digo abierto en un solo archivo PHP.&#xa0;En el administrador de la versi\u00f3n 4.0.0 y antes de la 4.7.9, se presenta una vulnerabilidad de tipo server-side request forgery.&#xa0;Los usuarios de las versiones Adminer que incluyen todos los controladores (por ejemplo, \"adminer.php\") est\u00e1n afectados.&#xa0;Esto es corregido en la versi\u00f3n 4.7.9"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 7.2,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 2.7
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 7.2,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.4
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 4.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-918"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:adminer:adminer:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "4.0.0",
+                                        "versionEndExcluding": "4.7.9",
+                                        "matchCriteriaId": "F5E19DCC-D7A6-4325-8E91-E601C9967B8F"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:debian:debian_linux:9.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "DEECE5FC-CACF-4496-A3E7-164736409252"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/vrana/adminer/commit/ccd2374b0b12bd547417bf0dacdf153826c83351",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/vrana/adminer/files/5957311/Adminer.SSRF.pdf",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/vrana/adminer/security/advisories/GHSA-x5r2-hj5c-8jx6",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://lists.debian.org/debian-lts-announce/2021/03/msg00002.html",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Mailing List",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://packagist.org/packages/vrana/adminer",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Product",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-29625",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2021-05-19T22:15:07.903",
+                "lastModified": "2021-05-25T20:26:15.900",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Adminer is open-source database management software. A cross-site scripting vulnerability in Adminer versions 4.6.1 to 4.8.0 affects users of MySQL, MariaDB, PgSQL and SQLite. XSS is in most cases prevented by strict CSP in all modern browsers. The only exception is when Adminer is using a `pdo_` extension to communicate with the database (it is used if the native extensions are not enabled). In browsers without CSP, Adminer versions 4.6.1 to 4.8.0 are affected. The vulnerability is patched in version 4.8.1. As workarounds, one can use a browser supporting strict CSP or enable the native PHP extensions (e.g. `mysqli`) or disable displaying PHP errors (`display_errors`)."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Adminer es un software de administraci\u00f3n de bases de datos de c\u00f3digo abierto.&#xa0;Una vulnerabilidad de tipo cross-site scripting en Adminer versiones 4.6.1 hasta 4.8.0, afecta a los usuarios de MySQL, MariaDB, PgSQL y SQLite.&#xa0;Un ataque de tipo XSS en la mayor\u00eda de los casos es impedido por un CSP estricto en todos los navegadores modernos.&#xa0;La \u00fanica excepci\u00f3n es cuando Adminer est\u00e1 usando una extensi\u00f3n \"pdo_\" para comunicarse con la base de datos (se usa si las extensiones nativas no est\u00e1n habilitadas).&#xa0;En los navegadores sin CSP, las versiones de Adminer 4.6.1 hasta 4.8.0 est\u00e1n afectadas.&#xa0;La vulnerabilidad est\u00e1 parcheada en la versi\u00f3n 4.8.1.&#xa0;Como soluciones alternativas, se puede usar un navegador que admita CSP estricto o habilitar las extensiones nativas de PHP (por ejemplo, \"mysqli\") o deshabilitar la visualizaci\u00f3n de errores de PHP (\"display_errors\")"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.1,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.7
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "HIGH",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 7.5,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 1.6,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:adminer:adminer:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "4.6.1",
+                                        "versionEndExcluding": "4.8.1",
+                                        "matchCriteriaId": "141DCC97-784C-4851-B1DC-01F41E749177"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/vrana/adminer/commit/4043092ec2c0de2258d60a99d0c5958637d051a7",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/vrana/adminer/security/advisories/GHSA-2v82-5746-vwqc",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://sourceforge.net/p/adminer/bugs-and-features/797/",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Exploit",
+                            "Product",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-43008",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2022-04-05T02:15:06.887",
+                "lastModified": "2022-09-30T13:03:53.617",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Improper Access Control in Adminer versions 1.12.0 to 4.6.2 (fixed in version 4.6.3) allows an attacker to achieve Arbitrary File Read on the remote server by requesting the Adminer to connect to a remote MySQL database."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Un control de acceso inapropiado en las versiones 1.12.0 a 4.6.2 de Adminer (corregido en la versi\u00f3n 4.6.3) permite a un atacante lograr una lectura arbitraria de archivos en el servidor remoto solicitando a Adminer que sea conectado a una base de datos MySQL remota"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 7.5,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 3.6
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "NVD-CWE-Other"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:adminer:adminer:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "1.12.0",
+                                        "versionEndIncluding": "4.6.2",
+                                        "matchCriteriaId": "D549BB34-3EDB-4FD7-8645-7D51C39B3773"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:debian:debian_linux:9.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "DEECE5FC-CACF-4496-A3E7-164736409252"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/vrana/adminer/releases/tag/v4.6.3",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Release Notes",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://lists.debian.org/debian-lts-announce/2022/05/msg00012.html",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Mailing List",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://podalirius.net/en/cves/2021-43008/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://sansec.io/research/adminer-4.6.2-file-disclosure-vulnerability",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.adminer.org/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Product"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

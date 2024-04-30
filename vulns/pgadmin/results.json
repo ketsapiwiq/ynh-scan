@@ -1,1 +1,372 @@
-{"resultsPerPage":3,"startIndex":0,"totalResults":3,"format":"NVD_CVE","version":"2.0","timestamp":"2024-04-30T10:50:04.670","vulnerabilities":[{"cve":{"id":"CVE-2012-1600","sourceIdentifier":"secalert@redhat.com","published":"2014-05-14T00:55:06.587","lastModified":"2023-02-13T04:33:14.730","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"Multiple cross-site scripting (XSS) vulnerabilities in functions.php in phpPgAdmin before 5.0.4 allow remote attackers to inject arbitrary web script or HTML via the (1) name or (2) type of a function."},{"lang":"es","value":"Múltiples vulnerabilidades de XSS en functions.php en phpPgAdmin anterior a 5.0.4 permiten a atacantes remotos inyectar secuencias de comandos web o HTML arbitrarios a través del (1) nombre o (2) tipo de una función."}],"metrics":{"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.3},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:phppgadmin_project:phppgadmin:*:*:*:*:*:*:*:*","versionEndIncluding":"5.0.3","matchCriteriaId":"BAE528CD-0F2D-4E86-8544-AFBEDF2F921A"},{"vulnerable":true,"criteria":"cpe:2.3:a:phppgadmin_project:phppgadmin:5.0:*:*:*:*:*:*:*","matchCriteriaId":"196B6B12-3392-43CC-9CF2-AE5F02202224"},{"vulnerable":true,"criteria":"cpe:2.3:a:phppgadmin_project:phppgadmin:5.0.1:*:*:*:*:*:*:*","matchCriteriaId":"97CAC6C6-6D5C-4565-B7DD-8CC8E87840CF"},{"vulnerable":true,"criteria":"cpe:2.3:a:phppgadmin_project:phppgadmin:5.0.2:*:*:*:*:*:*:*","matchCriteriaId":"57A68D4B-DC8B-4D79-9557-B52A3C2BB084"}]}]},{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:o:opensuse:opensuse:11.4:*:*:*:*:*:*:*","matchCriteriaId":"DE554781-1EB9-446E-911F-6C11970C47F4"},{"vulnerable":true,"criteria":"cpe:2.3:o:opensuse:opensuse:12.1:*:*:*:*:*:*:*","matchCriteriaId":"EBB2C482-D2A4-48B3-ACE7-E1DFDCC409B5"}]}]}],"references":[{"url":"http:\/\/lists.opensuse.org\/opensuse-updates\/2012-04\/msg00033.html","source":"secalert@redhat.com"},{"url":"http:\/\/secunia.com\/advisories\/48574","source":"secalert@redhat.com","tags":["Vendor Advisory"]},{"url":"http:\/\/sourceforge.net\/p\/phppgadmin\/mailman\/message\/28783470\/","source":"secalert@redhat.com"},{"url":"http:\/\/www.openwall.com\/lists\/oss-security\/2012\/03\/28\/11","source":"secalert@redhat.com"},{"url":"http:\/\/www.openwall.com\/lists\/oss-security\/2012\/03\/29\/6","source":"secalert@redhat.com"},{"url":"http:\/\/www.openwall.com\/lists\/oss-security\/2012\/03\/30\/7","source":"secalert@redhat.com"},{"url":"http:\/\/www.osvdb.org\/80870","source":"secalert@redhat.com"},{"url":"http:\/\/www.postgresql.org\/message-id\/4F6B447C.6080204%40dalibo.com","source":"secalert@redhat.com"},{"url":"http:\/\/www.securityfocus.com\/bid\/52761","source":"secalert@redhat.com"},{"url":"https:\/\/bugzilla.redhat.com\/show_bug.cgi?id=808439","source":"secalert@redhat.com"},{"url":"https:\/\/exchange.xforce.ibmcloud.com\/vulnerabilities\/74440","source":"secalert@redhat.com"},{"url":"https:\/\/github.com\/phppgadmin\/phppgadmin\/commit\/74174ad639664b52cc1609ede0af8bc403e98a00","source":"secalert@redhat.com"},{"url":"https:\/\/github.com\/phppgadmin\/phppgadmin\/commit\/e92a003624609a445c4cf57c9c3d1fcef0eae47c#diff-0","source":"secalert@redhat.com"}]}},{"cve":{"id":"CVE-2019-10784","sourceIdentifier":"report@snyk.io","published":"2020-02-04T19:15:10.727","lastModified":"2020-02-12T16:09:08.830","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"phppgadmin through 7.12.1 allows sensitive actions to be performed without validating that the request originated from the application. One such area, \"database.php\" does not verify the source of an HTTP request. This can be leveraged by a remote attacker to trick a logged-in administrator to visit a malicious page with a CSRF exploit and execute arbitrary system commands on the server."},{"lang":"es","value":"phppgadmin versiones hasta 7.12.1, permite que acciones confidenciales sean llevadas a cabo sin comprobar que la petición se originó en la aplicación. Una de esas áreas, \"database.php\" no comprueba el origen de una petición HTTP. Esto puede ser aprovechado por un atacante remoto para engañar a un administrador registrado para que visite una página maliciosa con un explotación de tipo CSRF y ejecute comandos arbitrarios de sistema sobre el servidor."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.6,"baseSeverity":"CRITICAL"},"exploitabilityScore":2.8,"impactScore":6.0}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:C\/I:C\/A:C","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"COMPLETE","integrityImpact":"COMPLETE","availabilityImpact":"COMPLETE","baseScore":9.3},"baseSeverity":"HIGH","exploitabilityScore":8.6,"impactScore":10.0,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-352"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:phppgadmin_project:phppgadmin:*:*:*:*:*:*:*:*","versionEndIncluding":"7.12.1","matchCriteriaId":"45ECEF3E-5BCE-43E7-AC1E-338C26803919"}]}]}],"references":[{"url":"https:\/\/snyk.io\/vuln\/SNYK-PHP-PHPPGADMINPHPPGADMIN-543885","source":"report@snyk.io","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2023-40619","sourceIdentifier":"cve@mitre.org","published":"2023-09-20T18:15:12.433","lastModified":"2023-11-03T11:15:08.183","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"phpPgAdmin 7.14.4 and earlier is vulnerable to deserialization of untrusted data which may lead to remote code execution because user-controlled data is directly passed to the PHP 'unserialize()' function in multiple places. An example is the functionality to manage tables in 'tables.php' where the 'ma[]' POST parameter is deserialized."},{"lang":"es","value":"phpPgAdmin 7.14.4 y versiones anteriores son vulnerables a la sanitización de datos que no son de confianza, lo que puede provocar la ejecución remota de código porque los datos controlados por el usuario se pasan directamente a la función PHP 'unserialize()' en varios lugares. Un ejemplo es la funcionalidad para administrar tablas en 'tables.php' donde se deserializa el parámetro POST 'ma[]'."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.8,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.9}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-502"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:phppgadmin_project:phppgadmin:*:*:*:*:*:*:*:*","versionEndIncluding":"7.14.4","matchCriteriaId":"CFC4DC01-9BEB-43FC-A53B-FE23FBD57EAA"}]}]}],"references":[{"url":"https:\/\/github.com\/dub-flow\/vulnerability-research\/tree\/main\/CVE-2023-40619","source":"cve@mitre.org","tags":["Third Party Advisory"]},{"url":"https:\/\/lists.debian.org\/debian-lts-announce\/2023\/11\/msg00000.html","source":"cve@mitre.org"}]}}]}
+{
+    "resultsPerPage": 3,
+    "startIndex": 0,
+    "totalResults": 3,
+    "format": "NVD_CVE",
+    "version": "2.0",
+    "timestamp": "2024-04-30T10:50:04.670",
+    "vulnerabilities": [
+        {
+            "cve": {
+                "id": "CVE-2012-1600",
+                "sourceIdentifier": "secalert@redhat.com",
+                "published": "2014-05-14T00:55:06.587",
+                "lastModified": "2023-02-13T04:33:14.730",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Multiple cross-site scripting (XSS) vulnerabilities in functions.php in phpPgAdmin before 5.0.4 allow remote attackers to inject arbitrary web script or HTML via the (1) name or (2) type of a function."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "M\u00faltiples vulnerabilidades de XSS en functions.php en phpPgAdmin anterior a 5.0.4 permiten a atacantes remotos inyectar secuencias de comandos web o HTML arbitrarios a trav\u00e9s del (1) nombre o (2) tipo de una funci\u00f3n."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:phppgadmin_project:phppgadmin:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "5.0.3",
+                                        "matchCriteriaId": "BAE528CD-0F2D-4E86-8544-AFBEDF2F921A"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:phppgadmin_project:phppgadmin:5.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "196B6B12-3392-43CC-9CF2-AE5F02202224"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:phppgadmin_project:phppgadmin:5.0.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "97CAC6C6-6D5C-4565-B7DD-8CC8E87840CF"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:phppgadmin_project:phppgadmin:5.0.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "57A68D4B-DC8B-4D79-9557-B52A3C2BB084"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:opensuse:opensuse:11.4:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "DE554781-1EB9-446E-911F-6C11970C47F4"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:opensuse:opensuse:12.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "EBB2C482-D2A4-48B3-ACE7-E1DFDCC409B5"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://lists.opensuse.org/opensuse-updates/2012-04/msg00033.html",
+                        "source": "secalert@redhat.com"
+                    },
+                    {
+                        "url": "http://secunia.com/advisories/48574",
+                        "source": "secalert@redhat.com",
+                        "tags": [
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "http://sourceforge.net/p/phppgadmin/mailman/message/28783470/",
+                        "source": "secalert@redhat.com"
+                    },
+                    {
+                        "url": "http://www.openwall.com/lists/oss-security/2012/03/28/11",
+                        "source": "secalert@redhat.com"
+                    },
+                    {
+                        "url": "http://www.openwall.com/lists/oss-security/2012/03/29/6",
+                        "source": "secalert@redhat.com"
+                    },
+                    {
+                        "url": "http://www.openwall.com/lists/oss-security/2012/03/30/7",
+                        "source": "secalert@redhat.com"
+                    },
+                    {
+                        "url": "http://www.osvdb.org/80870",
+                        "source": "secalert@redhat.com"
+                    },
+                    {
+                        "url": "http://www.postgresql.org/message-id/4F6B447C.6080204%40dalibo.com",
+                        "source": "secalert@redhat.com"
+                    },
+                    {
+                        "url": "http://www.securityfocus.com/bid/52761",
+                        "source": "secalert@redhat.com"
+                    },
+                    {
+                        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=808439",
+                        "source": "secalert@redhat.com"
+                    },
+                    {
+                        "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/74440",
+                        "source": "secalert@redhat.com"
+                    },
+                    {
+                        "url": "https://github.com/phppgadmin/phppgadmin/commit/74174ad639664b52cc1609ede0af8bc403e98a00",
+                        "source": "secalert@redhat.com"
+                    },
+                    {
+                        "url": "https://github.com/phppgadmin/phppgadmin/commit/e92a003624609a445c4cf57c9c3d1fcef0eae47c#diff-0",
+                        "source": "secalert@redhat.com"
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2019-10784",
+                "sourceIdentifier": "report@snyk.io",
+                "published": "2020-02-04T19:15:10.727",
+                "lastModified": "2020-02-12T16:09:08.830",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "phppgadmin through 7.12.1 allows sensitive actions to be performed without validating that the request originated from the application. One such area, \"database.php\" does not verify the source of an HTTP request. This can be leveraged by a remote attacker to trick a logged-in administrator to visit a malicious page with a CSRF exploit and execute arbitrary system commands on the server."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "phppgadmin versiones hasta 7.12.1, permite que acciones confidenciales sean llevadas a cabo sin comprobar que la petici\u00f3n se origin\u00f3 en la aplicaci\u00f3n. Una de esas \u00e1reas, \"database.php\" no comprueba el origen de una petici\u00f3n HTTP. Esto puede ser aprovechado por un atacante remoto para enga\u00f1ar a un administrador registrado para que visite una p\u00e1gina maliciosa con un explotaci\u00f3n de tipo CSRF y ejecute comandos arbitrarios de sistema sobre el servidor."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.6,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 6.0
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:C/I:C/A:C",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "COMPLETE",
+                                "integrityImpact": "COMPLETE",
+                                "availabilityImpact": "COMPLETE",
+                                "baseScore": 9.3
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 10.0,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-352"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:phppgadmin_project:phppgadmin:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "7.12.1",
+                                        "matchCriteriaId": "45ECEF3E-5BCE-43E7-AC1E-338C26803919"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://snyk.io/vuln/SNYK-PHP-PHPPGADMINPHPPGADMIN-543885",
+                        "source": "report@snyk.io",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-40619",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2023-09-20T18:15:12.433",
+                "lastModified": "2023-11-03T11:15:08.183",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "phpPgAdmin 7.14.4 and earlier is vulnerable to deserialization of untrusted data which may lead to remote code execution because user-controlled data is directly passed to the PHP 'unserialize()' function in multiple places. An example is the functionality to manage tables in 'tables.php' where the 'ma[]' POST parameter is deserialized."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "phpPgAdmin 7.14.4 y versiones anteriores son vulnerables a la sanitizaci\u00f3n de datos que no son de confianza, lo que puede provocar la ejecuci\u00f3n remota de c\u00f3digo porque los datos controlados por el usuario se pasan directamente a la funci\u00f3n PHP 'unserialize()' en varios lugares. Un ejemplo es la funcionalidad para administrar tablas en 'tables.php' donde se deserializa el par\u00e1metro POST 'ma[]'."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.8,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.9
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-502"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:phppgadmin_project:phppgadmin:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "7.14.4",
+                                        "matchCriteriaId": "CFC4DC01-9BEB-43FC-A53B-FE23FBD57EAA"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/dub-flow/vulnerability-research/tree/main/CVE-2023-40619",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://lists.debian.org/debian-lts-announce/2023/11/msg00000.html",
+                        "source": "cve@mitre.org"
+                    }
+                ]
+            }
+        }
+    ]
+}

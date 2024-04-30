@@ -1,1 +1,374 @@
-{"resultsPerPage":3,"startIndex":0,"totalResults":3,"format":"NVD_CVE","version":"2.0","timestamp":"2024-04-30T10:48:40.077","vulnerabilities":[{"cve":{"id":"CVE-2019-9834","sourceIdentifier":"cve@mitre.org","published":"2019-03-15T17:29:00.383","lastModified":"2024-04-11T01:06:22.390","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"The Netdata web application through 1.13.0 allows remote attackers to inject their own malicious HTML code into an imported snapshot, aka HTML Injection. Successful exploitation will allow attacker-supplied HTML to run in the context of the affected browser, potentially allowing the attacker to steal authentication credentials or to control how the site is rendered to the user. NOTE: the vendor disputes the risk because there is a clear warning next to the button for importing a snapshot"},{"lang":"es","value":"** EN DISPUTA ** La aplicación web Netdata, hasta la versión 1.13.0, permite que los atacantes remotos inyecten su propio código HTML en una instantánea importada. Esto también se conoce como inyección HTML. Su explotación con éxito permite que se ejecute HTML proporcionado por el atacante en el contexto del navegador afectado, pudiendo permitir al atacante robar las credenciales de autenticación o controlar cómo se renderiza el sitio al usuario. NOTA: el proveedor no está de acuerdo con el riesgo porque hay una advertencia clara junto al botón al importar una instantánea."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.1,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.3},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:netdata:netdata:*:*:*:*:*:*:*:*","versionEndIncluding":"1.13.0","matchCriteriaId":"CC637690-4B20-4183-9C15-ECEC65272965"}]}]}],"references":[{"url":"https:\/\/github.com\/netdata\/netdata\/issues\/5800#issuecomment-510986112","source":"cve@mitre.org","tags":["Third Party Advisory"]},{"url":"https:\/\/www.exploit-db.com\/exploits\/46545","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory","VDB Entry"]},{"url":"https:\/\/www.youtube.com\/watch?v=zSG93yX0B8k","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2023-22496","sourceIdentifier":"security-advisories@github.com","published":"2023-01-14T01:15:15.393","lastModified":"2023-01-24T18:52:06.223","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Netdata is an open source option for real-time infrastructure monitoring and troubleshooting. An attacker with the ability to establish a streaming connection can execute arbitrary commands on the targeted Netdata agent. When an alert is triggered, the function `health_alarm_execute` is called. This function performs different checks and then enqueues a command by calling `spawn_enq_cmd`. This command is populated with several arguments that are not sanitized. One of them is the `registry_hostname` of the node for which the alert is raised. By providing a specially crafted `registry_hostname` as part of the health data that is streamed to a Netdata (parent) agent, an attacker can execute arbitrary commands at the remote host as a side-effect of the raised alert. Note that the commands are executed as the user running the Netdata Agent. This user is usually named `netdata`. The ability to run arbitrary commands may allow an attacker to escalate privileges by escalating other vulnerabilities in the system, as that user. The problem has been fixed in: Netdata agent v1.37 (stable) and Netdata agent v1.36.0-409 (nightly). As a workaround, streaming is not enabled by default. If you have previously enabled this, it can be disabled. Limiting access to the port on the recipient Agent to trusted child connections may mitigate the impact of this vulnerability."},{"lang":"es","value":"Netdata es una opción de código abierto para monitoreo y resolución de problemas de infraestructura en tiempo real. Un atacante con la capacidad de establecer una conexión de transmisión puede ejecutar comandos arbitrarios en el agente Netdata objetivo. Cuando se activa una alerta, se llama a la función `health_alarm_execute`. Esta función realiza diferentes comprobaciones y luego pone en cola un comando llamando a `spawn_enq_cmd`. Este comando se completa con varios argumentos que no están sanitizados. Uno de ellos es el `registry_hostname` del nodo para el cual se genera la alerta. Al proporcionar un `registry_hostname` especialmente manipulado como parte de los datos de estado que se transmiten a un agente Netdata (principal), un atacante puede ejecutar comandos arbitrarios en el host remoto como efecto secundario de la alerta generada. Tenga en cuenta que los comandos se ejecutan como el usuario que ejecuta Netdata Agent. Este usuario suele denominarse \"netdata\". La capacidad de ejecutar comandos arbitrarios puede permitir a un atacante escalar privilegios escalando otras vulnerabilidades en el sistema, como ese usuario. El problema se solucionó en: Netdata Agent v1.37 (estable) y Netdata Agent v1.36.0-409 (todas las noches). Como workaround, la transmisión en streaming no está habilitada de forma predeterminada. Si ha habilitado esto anteriormente, puede deshabilitarlo. Limitar el acceso al puerto del Agente destinatario a conexiones secundarias confiables puede mitigar el impacto de esta vulnerabilidad."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.8,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.9},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:H\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"HIGH","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":8.1,"baseSeverity":"HIGH"},"exploitabilityScore":2.2,"impactScore":5.9}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-77"}]},{"source":"security-advisories@github.com","type":"Secondary","description":[{"lang":"en","value":"CWE-20"},{"lang":"en","value":"CWE-77"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:netdata:netdata:*:*:*:*:*:*:*:*","versionEndExcluding":"1.37.0","matchCriteriaId":"9B7BA18D-438F-4098-8D0E-9A25F07C5BAB"}]}]}],"references":[{"url":"https:\/\/github.com\/netdata\/netdata\/security\/advisories\/GHSA-xg38-3vmw-2978","source":"security-advisories@github.com","tags":["Exploit","Mitigation","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2023-22497","sourceIdentifier":"security-advisories@github.com","published":"2023-01-14T02:15:10.483","lastModified":"2023-01-24T17:35:46.157","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Netdata is an open source option for real-time infrastructure monitoring and troubleshooting. Each Netdata Agent has an automatically generated MACHINE GUID. It is generated when the agent first starts and it is saved to disk, so that it will persist across restarts and reboots. Anyone who has access to a Netdata Agent has access to its MACHINE_GUID. Streaming is a feature that allows a Netdata Agent to act as parent for other Netdata Agents (children), offloading children from various functions (increased data retention, ML, health monitoring, etc) that can now be handled by the parent Agent. Configuration is done via `stream.conf`. On the parent side, users configure in `stream.conf` an API key (any random UUID can do) to provide common configuration for all children using this API key and per MACHINE GUID configuration to customize the configuration for each child. The way this was implemented, allowed an attacker to use a valid MACHINE_GUID as an API key. This affects all users who expose their Netdata Agents (children) to non-trusted users and they also expose to the same users Netdata Agent parents that aggregate data from all these children. The problem has been fixed in: Netdata agent v1.37 (stable) and Netdata agent v1.36.0-409 (nightly). As a workaround, do not enable streaming by default. If you have previously enabled this, it can be disabled. Limiting access to the port on the recipient Agent to trusted child connections may mitigate the impact of this vulnerability."},{"lang":"es","value":"Netdata es una opción de código abierto para monitoreo y resolución de problemas de infraestructura en tiempo real. Cada agente Netdata tiene un GUID DE MÁQUINA generado automáticamente. Se genera cuando el agente se inicia por primera vez y se guarda en el disco, de modo que persistirá durante los reinicios y los reinicios. Cualquiera que tenga acceso a un Agente de Netdata tiene acceso a su MACHINE_GUID. La transmisión es una característica que permite que un Agente de Netdata actúe como padre de otros Agentes de Netdata (hijos), descargando a los hijos de diversas funciones (mayor retención de datos, ML, monitoreo de salud, etc.) que ahora pueden ser manejadas por el Agente principal. La configuración se realiza a través de `stream.conf`. En el lado de los padres, los usuarios configuran en `stream.conf` una clave API (cualquier UUID aleatorio puede servir) para proporcionar una configuración común para todos los hijos que usan esta clave API y por configuración GUID DE MÁQUINA para personalizar la configuración para cada hijo. La forma en que se implementó esto permitió a un atacante usar un MACHINE_GUID válido como clave API. Esto afecta a todos los usuarios que exponen sus agentes Netdata (hijos) a usuarios que no son de confianza y también exponen a los mismos usuarios a los padres de los agentes Netdata que agregan datos de todos estos hijos. El problema se solucionó en: Netdata Agent v1.37 (estable) y Netdata Agent v1.36.0-409 (todas las noches). Como workaround, no habilite la transmisión por streaming de forma predeterminada. Si ha habilitado esto anteriormente, puede deshabilitarlo. Limitar el acceso al puerto del Agente destinatario a conexiones secundarias confiables puede mitigar el impacto de esta vulnerabilidad."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"NONE","baseScore":9.1,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.2},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:H\/PR:N\/UI:N\/S:U\/C:N\/I:L\/A:H","attackVector":"NETWORK","attackComplexity":"HIGH","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"NONE","integrityImpact":"LOW","availabilityImpact":"HIGH","baseScore":6.5,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.2,"impactScore":4.2}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-668"}]},{"source":"security-advisories@github.com","type":"Secondary","description":[{"lang":"en","value":"CWE-287"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:netdata:netdata:*:*:*:*:*:*:*:*","versionEndExcluding":"1.37.0","matchCriteriaId":"9B7BA18D-438F-4098-8D0E-9A25F07C5BAB"}]}]}],"references":[{"url":"https:\/\/github.com\/netdata\/netdata\/releases\/tag\/v1.37.0","source":"security-advisories@github.com","tags":["Release Notes","Third Party Advisory"]},{"url":"https:\/\/github.com\/netdata\/netdata\/security\/advisories\/GHSA-jx85-39cw-66f2","source":"security-advisories@github.com","tags":["Exploit","Mitigation","Third Party Advisory"]}]}}]}
+{
+    "resultsPerPage": 3,
+    "startIndex": 0,
+    "totalResults": 3,
+    "format": "NVD_CVE",
+    "version": "2.0",
+    "timestamp": "2024-04-30T10:48:40.077",
+    "vulnerabilities": [
+        {
+            "cve": {
+                "id": "CVE-2019-9834",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2019-03-15T17:29:00.383",
+                "lastModified": "2024-04-11T01:06:22.390",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "The Netdata web application through 1.13.0 allows remote attackers to inject their own malicious HTML code into an imported snapshot, aka HTML Injection. Successful exploitation will allow attacker-supplied HTML to run in the context of the affected browser, potentially allowing the attacker to steal authentication credentials or to control how the site is rendered to the user. NOTE: the vendor disputes the risk because there is a clear warning next to the button for importing a snapshot"
+                    },
+                    {
+                        "lang": "es",
+                        "value": "** EN DISPUTA ** La aplicaci\u00f3n web Netdata, hasta la versi\u00f3n 1.13.0, permite que los atacantes remotos inyecten su propio c\u00f3digo HTML en una instant\u00e1nea importada. Esto tambi\u00e9n se conoce como inyecci\u00f3n HTML. Su explotaci\u00f3n con \u00e9xito permite que se ejecute HTML proporcionado por el atacante en el contexto del navegador afectado, pudiendo permitir al atacante robar las credenciales de autenticaci\u00f3n o controlar c\u00f3mo se renderiza el sitio al usuario. NOTA: el proveedor no est\u00e1 de acuerdo con el riesgo porque hay una advertencia clara junto al bot\u00f3n al importar una instant\u00e1nea."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.1,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:netdata:netdata:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "1.13.0",
+                                        "matchCriteriaId": "CC637690-4B20-4183-9C15-ECEC65272965"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/netdata/netdata/issues/5800#issuecomment-510986112",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.exploit-db.com/exploits/46545",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory",
+                            "VDB Entry"
+                        ]
+                    },
+                    {
+                        "url": "https://www.youtube.com/watch?v=zSG93yX0B8k",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-22496",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2023-01-14T01:15:15.393",
+                "lastModified": "2023-01-24T18:52:06.223",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Netdata is an open source option for real-time infrastructure monitoring and troubleshooting. An attacker with the ability to establish a streaming connection can execute arbitrary commands on the targeted Netdata agent. When an alert is triggered, the function `health_alarm_execute` is called. This function performs different checks and then enqueues a command by calling `spawn_enq_cmd`. This command is populated with several arguments that are not sanitized. One of them is the `registry_hostname` of the node for which the alert is raised. By providing a specially crafted `registry_hostname` as part of the health data that is streamed to a Netdata (parent) agent, an attacker can execute arbitrary commands at the remote host as a side-effect of the raised alert. Note that the commands are executed as the user running the Netdata Agent. This user is usually named `netdata`. The ability to run arbitrary commands may allow an attacker to escalate privileges by escalating other vulnerabilities in the system, as that user. The problem has been fixed in: Netdata agent v1.37 (stable) and Netdata agent v1.36.0-409 (nightly). As a workaround, streaming is not enabled by default. If you have previously enabled this, it can be disabled. Limiting access to the port on the recipient Agent to trusted child connections may mitigate the impact of this vulnerability."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Netdata es una opci\u00f3n de c\u00f3digo abierto para monitoreo y resoluci\u00f3n de problemas de infraestructura en tiempo real. Un atacante con la capacidad de establecer una conexi\u00f3n de transmisi\u00f3n puede ejecutar comandos arbitrarios en el agente Netdata objetivo. Cuando se activa una alerta, se llama a la funci\u00f3n `health_alarm_execute`. Esta funci\u00f3n realiza diferentes comprobaciones y luego pone en cola un comando llamando a `spawn_enq_cmd`. Este comando se completa con varios argumentos que no est\u00e1n sanitizados. Uno de ellos es el `registry_hostname` del nodo para el cual se genera la alerta. Al proporcionar un `registry_hostname` especialmente manipulado como parte de los datos de estado que se transmiten a un agente Netdata (principal), un atacante puede ejecutar comandos arbitrarios en el host remoto como efecto secundario de la alerta generada. Tenga en cuenta que los comandos se ejecutan como el usuario que ejecuta Netdata Agent. Este usuario suele denominarse \"netdata\". La capacidad de ejecutar comandos arbitrarios puede permitir a un atacante escalar privilegios escalando otras vulnerabilidades en el sistema, como ese usuario. El problema se solucion\u00f3 en: Netdata Agent v1.37 (estable) y Netdata Agent v1.36.0-409 (todas las noches). Como workaround, la transmisi\u00f3n en streaming no est\u00e1 habilitada de forma predeterminada. Si ha habilitado esto anteriormente, puede deshabilitarlo. Limitar el acceso al puerto del Agente destinatario a conexiones secundarias confiables puede mitigar el impacto de esta vulnerabilidad."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.8,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.9
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "HIGH",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 8.1,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.2,
+                            "impactScore": 5.9
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-77"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-20"
+                            },
+                            {
+                                "lang": "en",
+                                "value": "CWE-77"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:netdata:netdata:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "1.37.0",
+                                        "matchCriteriaId": "9B7BA18D-438F-4098-8D0E-9A25F07C5BAB"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/netdata/netdata/security/advisories/GHSA-xg38-3vmw-2978",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Exploit",
+                            "Mitigation",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-22497",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2023-01-14T02:15:10.483",
+                "lastModified": "2023-01-24T17:35:46.157",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Netdata is an open source option for real-time infrastructure monitoring and troubleshooting. Each Netdata Agent has an automatically generated MACHINE GUID. It is generated when the agent first starts and it is saved to disk, so that it will persist across restarts and reboots. Anyone who has access to a Netdata Agent has access to its MACHINE_GUID. Streaming is a feature that allows a Netdata Agent to act as parent for other Netdata Agents (children), offloading children from various functions (increased data retention, ML, health monitoring, etc) that can now be handled by the parent Agent. Configuration is done via `stream.conf`. On the parent side, users configure in `stream.conf` an API key (any random UUID can do) to provide common configuration for all children using this API key and per MACHINE GUID configuration to customize the configuration for each child. The way this was implemented, allowed an attacker to use a valid MACHINE_GUID as an API key. This affects all users who expose their Netdata Agents (children) to non-trusted users and they also expose to the same users Netdata Agent parents that aggregate data from all these children. The problem has been fixed in: Netdata agent v1.37 (stable) and Netdata agent v1.36.0-409 (nightly). As a workaround, do not enable streaming by default. If you have previously enabled this, it can be disabled. Limiting access to the port on the recipient Agent to trusted child connections may mitigate the impact of this vulnerability."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Netdata es una opci\u00f3n de c\u00f3digo abierto para monitoreo y resoluci\u00f3n de problemas de infraestructura en tiempo real. Cada agente Netdata tiene un GUID DE M\u00c1QUINA generado autom\u00e1ticamente. Se genera cuando el agente se inicia por primera vez y se guarda en el disco, de modo que persistir\u00e1 durante los reinicios y los reinicios. Cualquiera que tenga acceso a un Agente de Netdata tiene acceso a su MACHINE_GUID. La transmisi\u00f3n es una caracter\u00edstica que permite que un Agente de Netdata act\u00fae como padre de otros Agentes de Netdata (hijos), descargando a los hijos de diversas funciones (mayor retenci\u00f3n de datos, ML, monitoreo de salud, etc.) que ahora pueden ser manejadas por el Agente principal. La configuraci\u00f3n se realiza a trav\u00e9s de `stream.conf`. En el lado de los padres, los usuarios configuran en `stream.conf` una clave API (cualquier UUID aleatorio puede servir) para proporcionar una configuraci\u00f3n com\u00fan para todos los hijos que usan esta clave API y por configuraci\u00f3n GUID DE M\u00c1QUINA para personalizar la configuraci\u00f3n para cada hijo. La forma en que se implement\u00f3 esto permiti\u00f3 a un atacante usar un MACHINE_GUID v\u00e1lido como clave API. Esto afecta a todos los usuarios que exponen sus agentes Netdata (hijos) a usuarios que no son de confianza y tambi\u00e9n exponen a los mismos usuarios a los padres de los agentes Netdata que agregan datos de todos estos hijos. El problema se solucion\u00f3 en: Netdata Agent v1.37 (estable) y Netdata Agent v1.36.0-409 (todas las noches). Como workaround, no habilite la transmisi\u00f3n por streaming de forma predeterminada. Si ha habilitado esto anteriormente, puede deshabilitarlo. Limitar el acceso al puerto del Agente destinatario a conexiones secundarias confiables puede mitigar el impacto de esta vulnerabilidad."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 9.1,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.2
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "HIGH",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 6.5,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.2,
+                            "impactScore": 4.2
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-668"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-287"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:netdata:netdata:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "1.37.0",
+                                        "matchCriteriaId": "9B7BA18D-438F-4098-8D0E-9A25F07C5BAB"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/netdata/netdata/releases/tag/v1.37.0",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Release Notes",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/netdata/netdata/security/advisories/GHSA-jx85-39cw-66f2",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Exploit",
+                            "Mitigation",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

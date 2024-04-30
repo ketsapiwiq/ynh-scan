@@ -1,1 +1,1307 @@
-{"resultsPerPage":10,"startIndex":0,"totalResults":10,"format":"NVD_CVE","version":"2.0","timestamp":"2024-04-30T10:47:39.937","vulnerabilities":[{"cve":{"id":"CVE-2019-1020010","sourceIdentifier":"josh@bress.net","published":"2019-07-29T13:15:11.683","lastModified":"2019-09-05T19:01:26.277","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Misskey before 10.102.4 allows hijacking a user's token."},{"lang":"es","value":"Misskey anterior a versión 10.102.4, permite el secuestro de un token de usuario."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.1,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.3},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:misskey:misskey:*:*:*:*:*:*:*:*","versionStartIncluding":"10.46.0","versionEndExcluding":"10.102.4","matchCriteriaId":"05F0B34A-BB65-408C-8053-48DDC3D1C3FF"},{"vulnerable":true,"criteria":"cpe:2.3:a:misskey:misskey:*:*:*:*:*:*:*:*","versionStartIncluding":"11.0.0","versionEndExcluding":"11.20.2","matchCriteriaId":"AC50D734-FB0A-47EF-8BB1-0E353FC22D4D"},{"vulnerable":true,"criteria":"cpe:2.3:a:misskey:misskey:11.0.0:alpha1:*:*:*:*:*:*","matchCriteriaId":"E964986E-D270-4B93-B275-C6392F007B84"},{"vulnerable":true,"criteria":"cpe:2.3:a:misskey:misskey:11.0.0:alpha10:*:*:*:*:*:*","matchCriteriaId":"37073996-D41A-4749-B70A-3B998B9853BF"},{"vulnerable":true,"criteria":"cpe:2.3:a:misskey:misskey:11.0.0:alpha2:*:*:*:*:*:*","matchCriteriaId":"025F97A7-2145-45C9-AFDC-53441526EEA5"},{"vulnerable":true,"criteria":"cpe:2.3:a:misskey:misskey:11.0.0:alpha3:*:*:*:*:*:*","matchCriteriaId":"E5326C03-A022-4C55-9862-C43EE7B23451"},{"vulnerable":true,"criteria":"cpe:2.3:a:misskey:misskey:11.0.0:alpha4:*:*:*:*:*:*","matchCriteriaId":"9CE8D977-0BC7-434B-8581-0D3BEB2A7ABA"},{"vulnerable":true,"criteria":"cpe:2.3:a:misskey:misskey:11.0.0:alpha5:*:*:*:*:*:*","matchCriteriaId":"E479DF22-5D06-45AD-A51B-CFF26E100860"},{"vulnerable":true,"criteria":"cpe:2.3:a:misskey:misskey:11.0.0:alpha6:*:*:*:*:*:*","matchCriteriaId":"BCE52C36-182E-47B9-BA0A-7A29DB1E43A4"},{"vulnerable":true,"criteria":"cpe:2.3:a:misskey:misskey:11.0.0:alpha7:*:*:*:*:*:*","matchCriteriaId":"56D8F658-5E7F-403C-BDAD-526E0DB24D82"},{"vulnerable":true,"criteria":"cpe:2.3:a:misskey:misskey:11.0.0:alpha8:*:*:*:*:*:*","matchCriteriaId":"89A6933D-402D-4AD0-8BED-7EC8A135AAFA"},{"vulnerable":true,"criteria":"cpe:2.3:a:misskey:misskey:11.0.0:beta1:*:*:*:*:*:*","matchCriteriaId":"F9249CEF-1388-4BF2-B04B-C450D5B216F0"},{"vulnerable":true,"criteria":"cpe:2.3:a:misskey:misskey:11.0.0:beta10:*:*:*:*:*:*","matchCriteriaId":"CAD8DBB6-0977-471C-8C09-610AA4AFB271"},{"vulnerable":true,"criteria":"cpe:2.3:a:misskey:misskey:11.0.0:beta11:*:*:*:*:*:*","matchCriteriaId":"F22BA296-6C19-435C-9303-DD960CA5ACD9"},{"vulnerable":true,"criteria":"cpe:2.3:a:misskey:misskey:11.0.0:beta12:*:*:*:*:*:*","matchCriteriaId":"CEC5809D-6C0C-4C6C-8555-955BB7390BB7"},{"vulnerable":true,"criteria":"cpe:2.3:a:misskey:misskey:11.0.0:beta13:*:*:*:*:*:*","matchCriteriaId":"7860133F-D265-477F-B3B4-7B88ABABBDE2"},{"vulnerable":true,"criteria":"cpe:2.3:a:misskey:misskey:11.0.0:beta14:*:*:*:*:*:*","matchCriteriaId":"F4F50B3F-A99E-49F7-9959-D11CBE875EC8"},{"vulnerable":true,"criteria":"cpe:2.3:a:misskey:misskey:11.0.0:beta15:*:*:*:*:*:*","matchCriteriaId":"4274117D-10A8-4D91-83CA-4912E3B4734E"},{"vulnerable":true,"criteria":"cpe:2.3:a:misskey:misskey:11.0.0:beta16:*:*:*:*:*:*","matchCriteriaId":"3B76A5E9-5B23-4902-93EE-32E8D6D6AE45"},{"vulnerable":true,"criteria":"cpe:2.3:a:misskey:misskey:11.0.0:beta2:*:*:*:*:*:*","matchCriteriaId":"6860F62C-3498-4876-8906-570CDE9E05F9"},{"vulnerable":true,"criteria":"cpe:2.3:a:misskey:misskey:11.0.0:beta3:*:*:*:*:*:*","matchCriteriaId":"75A0DAD9-8F53-4692-B4E9-B21A7A26BEB3"},{"vulnerable":true,"criteria":"cpe:2.3:a:misskey:misskey:11.0.0:beta4:*:*:*:*:*:*","matchCriteriaId":"7887424B-E9F7-4313-8E40-D408C13FC329"},{"vulnerable":true,"criteria":"cpe:2.3:a:misskey:misskey:11.0.0:beta5:*:*:*:*:*:*","matchCriteriaId":"EE8A70A6-5D45-47BB-80B5-F3B19E493601"},{"vulnerable":true,"criteria":"cpe:2.3:a:misskey:misskey:11.0.0:beta6:*:*:*:*:*:*","matchCriteriaId":"E1F4D4AF-5E5D-4E89-B1A6-3CA993EB5666"},{"vulnerable":true,"criteria":"cpe:2.3:a:misskey:misskey:11.0.0:beta7:*:*:*:*:*:*","matchCriteriaId":"9C3503EC-223C-473C-AF5C-2EF3496C2003"},{"vulnerable":true,"criteria":"cpe:2.3:a:misskey:misskey:11.0.0:beta8:*:*:*:*:*:*","matchCriteriaId":"E3998793-764F-4BCF-A978-D45A2A111668"},{"vulnerable":true,"criteria":"cpe:2.3:a:misskey:misskey:11.0.0:beta9:*:*:*:*:*:*","matchCriteriaId":"DBEBD39D-DB2D-49C5-8D80-531316C33F63"}]}]}],"references":[{"url":"https:\/\/github.com\/syuilo\/misskey\/security\/advisories\/GHSA-6qw9-6jxq-xj3p","source":"josh@bress.net","tags":["Exploit","Mitigation","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2021-39169","sourceIdentifier":"security-advisories@github.com","published":"2021-08-27T13:15:07.020","lastModified":"2021-09-08T13:14:55.150","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Misskey is a decentralized microblogging platform. In versions of Misskey prior to 12.51.0, malicious actors can use the web client built-in dialog to display a malicious string, leading to cross-site scripting (XSS). XSS could compromise the API request token. This issue has been fixed in version 12.51.0. There are no known workarounds aside from upgrading."},{"lang":"es","value":"Misskey es una platamanera de microblogging descentralizada. En las versiones de Misskey anteriores a 12.51.0, unos actores maliciosos pueden usar el diálogo incorporado en el cliente web para mostrar una cadena maliciosa, conllevando a un ataque de tipo cross-site scripting (XSS). El ataque de  tipo XSS podría comprometer el token de petición de la API. Este problema ha sido corregido en la versión 12.51.0. No se conocen soluciones aparte de la actualización."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.3,"impactScore":2.7},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:R\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":8.0,"baseSeverity":"HIGH"},"exploitabilityScore":2.1,"impactScore":5.9}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:S\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"SINGLE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":3.5},"baseSeverity":"LOW","exploitabilityScore":6.8,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"security-advisories@github.com","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:misskey:misskey:*:*:*:*:*:*:*:*","versionEndExcluding":"12.51.0","matchCriteriaId":"8E6D51FB-70AB-4EF8-B173-168D76D8338A"}]}]}],"references":[{"url":"https:\/\/github.com\/misskey-dev\/misskey\/commit\/ec203f7f795766f76b55fecc9248168c1cdf6c99","source":"security-advisories@github.com","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/misskey-dev\/misskey\/security\/advisories\/GHSA-pmmv-jwqh-f5ww","source":"security-advisories@github.com","tags":["Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2021-39195","sourceIdentifier":"security-advisories@github.com","published":"2021-09-07T19:15:08.600","lastModified":"2021-09-14T16:20:41.183","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Misskey is an open source, decentralized microblogging platform. In affected versions a Server-Side Request Forgery vulnerability exists in \"Upload from URL\" and remote attachment handling. This could result in the disclosure of non-public information within the internal network. This has been fixed in 12.90.0. However, if you are using a proxy, you will need to take additional measures. As a workaround this exploit may be avoided by appropriately restricting access to private networks from the host where the application is running."},{"lang":"es","value":"Misskey es una plataforma de microblogging descentralizada de código abierto. En las versiones afectadas se presenta una vulnerabilidad de tipo Server-Side Request Forgery en el manejo de \"Upload from URL\" y archivos adjuntos remotos. Esto podría resultar en una divulgación de información no pública dentro de la red interna. Esto es corregido en versión 12.90.0. Sin embargo, si esta usando un proxy, necesitará tomar medidas adicionales. Como solución alternativa, este problema puede ser  evitado restringiendo apropiadamente el acceso a las redes privadas desde el host donde se ejecuta la aplicación"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":6.5,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":3.6},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:C\/C:H\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"CHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":7.7,"baseSeverity":"HIGH"},"exploitabilityScore":3.1,"impactScore":4.0}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:S\/C:P\/I:N\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"SINGLE","confidentialityImpact":"PARTIAL","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":4.0},"baseSeverity":"MEDIUM","exploitabilityScore":8.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"security-advisories@github.com","type":"Primary","description":[{"lang":"en","value":"CWE-918"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:misskey:misskey:*:*:*:*:*:*:*:*","versionEndExcluding":"12.90.0","matchCriteriaId":"0A2733AC-B327-4BA4-92A0-735E36B8ED7B"}]}]}],"references":[{"url":"https:\/\/github.com\/misskey-dev\/misskey\/blob\/develop\/CHANGELOG.md#12900-20210904","source":"security-advisories@github.com","tags":["Release Notes","Third Party Advisory"]},{"url":"https:\/\/github.com\/misskey-dev\/misskey\/commit\/e1a8b158e04ad567d92d8daf3cc0898ee18f1a2e","source":"security-advisories@github.com","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/misskey-dev\/misskey\/security\/advisories\/GHSA-mqv7-gxh4-r5vf","source":"security-advisories@github.com","tags":["Issue Tracking","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2023-25154","sourceIdentifier":"security-advisories@github.com","published":"2023-02-22T19:15:11.610","lastModified":"2023-03-03T15:11:35.467","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Misskey is an open source, decentralized social media platform. In versions prior to 13.5.0 the link to the instance to the sender that appears when viewing a user or note received through ActivityPub is not properly validated, so by inserting a URL with a javascript scheme an attacker may execute JavaScript code in the context of the recipient. This issue has been fixed in version 13.5.0. Users are advised to upgrade. Users unable to upgrade should not \"view on remote\" for untrusted instances."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.1,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.7},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:L","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"LOW","baseScore":7.1,"baseSeverity":"HIGH"},"exploitabilityScore":2.8,"impactScore":3.7}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]},{"source":"security-advisories@github.com","type":"Secondary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:misskey:misskey:*:*:*:*:*:*:*:*","versionEndExcluding":"13.5.0","matchCriteriaId":"FFC6D0B2-D52A-49DC-AFD1-7E49379F3013"}]}]}],"references":[{"url":"https:\/\/github.com\/misskey-dev\/misskey\/security\/advisories\/GHSA-pfp5-r48x-fg25","source":"security-advisories@github.com","tags":["Vendor Advisory"]}]}},{"cve":{"id":"CVE-2023-24810","sourceIdentifier":"security-advisories@github.com","published":"2023-02-22T20:15:12.630","lastModified":"2023-03-03T04:43:46.990","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Misskey is an open source, decentralized social media platform. Due to insufficient validation of the redirect URL during `miauth` authentication in Misskey, arbitrary JavaScript can be executed when a user allows the link. All versions below 13.3.1 (including 12.x) are affected. This has been fixed in version 13.3.1. Users are advised to upgrade. Users unable to upgrade should not allow authentication of untrusted apps."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.1,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.7},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:L","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"LOW","baseScore":7.1,"baseSeverity":"HIGH"},"exploitabilityScore":2.8,"impactScore":3.7}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]},{"source":"security-advisories@github.com","type":"Secondary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:misskey:misskey:*:*:*:*:*:*:*:*","versionEndExcluding":"13.3.1","matchCriteriaId":"981BA492-22E1-491A-945F-7106858A5249"}]}]}],"references":[{"url":"https:\/\/github.com\/misskey-dev\/misskey\/security\/advisories\/GHSA-cc6r-chgr-8r5m","source":"security-advisories@github.com","tags":["Vendor Advisory"]}]}},{"cve":{"id":"CVE-2023-24811","sourceIdentifier":"security-advisories@github.com","published":"2023-02-22T20:15:12.700","lastModified":"2023-11-07T04:08:43.257","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"Misskey is an open source, decentralized social media platform. In versions prior to 13.3.2 the URL preview function is subject to a cross site scripting vulnerability due to insufficient URL validation. Arbitrary JavaScript is executed when a malicious URL is loaded in the `View in Player` or `View in Window` preview. This has been fixed in version 13.3.2. Users are advised to upgrade. Users unable to upgrade should avoid usage of the `View in Player` or `View in Window` functions.\n"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.1,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.7},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:L","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"LOW","baseScore":7.1,"baseSeverity":"HIGH"},"exploitabilityScore":2.8,"impactScore":3.7}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]},{"source":"security-advisories@github.com","type":"Secondary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:misskey:misskey:*:*:*:*:*:*:*:*","versionEndExcluding":"13.3.2","matchCriteriaId":"E4B92EAB-F584-4A4F-9F1F-3C5AF8C44008"}]}]}],"references":[{"url":"https:\/\/github.com\/misskey-dev\/misskey\/commit\/38f9d1e76428bea47c5944c440eab25428c7d99e","source":"security-advisories@github.com","tags":["Patch"]},{"url":"https:\/\/github.com\/misskey-dev\/misskey\/security\/advisories\/GHSA-vc39-c453-67g3","source":"security-advisories@github.com","tags":["Vendor Advisory"]}]}},{"cve":{"id":"CVE-2023-24812","sourceIdentifier":"security-advisories@github.com","published":"2023-02-22T20:15:12.777","lastModified":"2023-04-10T16:27:37.823","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Misskey is an open source, decentralized social media platform. In versions prior to 13.3.3 SQL injection is possible due to insufficient parameter validation in the note search API by tag (notes\/search-by-tag). This has been fixed in version 13.3.3. Users are advised to upgrade. Users unable to upgrade should block access to the `api\/notes\/search-by-tag` endpoint."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.8,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.9},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":8.8,"baseSeverity":"HIGH"},"exploitabilityScore":2.8,"impactScore":5.9}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-89"}]},{"source":"security-advisories@github.com","type":"Secondary","description":[{"lang":"en","value":"CWE-89"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:misskey:misskey:*:*:*:*:*:*:*:*","versionEndExcluding":"13.3.3","matchCriteriaId":"C283C863-C990-470A-9815-AC6A14462687"}]}]}],"references":[{"url":"https:\/\/github.com\/misskey-dev\/misskey\/commit\/ee74df68233adcd5b167258c621565f97c3b2306","source":"security-advisories@github.com","tags":["Patch"]},{"url":"https:\/\/github.com\/misskey-dev\/misskey\/security\/advisories\/GHSA-cgwp-vmr4-wx4q","source":"security-advisories@github.com","tags":["Vendor Advisory"]}]}},{"cve":{"id":"CVE-2023-43793","sourceIdentifier":"security-advisories@github.com","published":"2023-10-04T21:15:10.040","lastModified":"2023-10-11T17:47:46.247","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Misskey is an open source, decentralized social media platform. Prior to version 2023.9.0, by editing the URL, a user can bypass the authentication of the Bull dashboard, which is the job queue management UI, and access it. Version 2023.9.0 contains a fix. There are no known workarounds."},{"lang":"es","value":"Misskey es una plataforma de redes sociales descentralizada y de código abierto. Antes de la versión 2023.9.0, al editar la URL, un usuario podía omitir la autenticación del panel Bull, que es la interfaz de usuario de administración de la cola de trabajos, y acceder a él. La versión 2023.9.0 contiene una solución. No se conocen workarounds."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":7.5,"baseSeverity":"HIGH"},"exploitabilityScore":3.9,"impactScore":3.6},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":7.5,"baseSeverity":"HIGH"},"exploitabilityScore":3.9,"impactScore":3.6}]},"weaknesses":[{"source":"security-advisories@github.com","type":"Primary","description":[{"lang":"en","value":"CWE-287"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:misskey:misskey:*:*:*:*:*:*:*:*","versionEndExcluding":"2023.9.0","matchCriteriaId":"76183927-4600-43CA-A33B-D329E57A3A03"}]}]}],"references":[{"url":"https:\/\/github.com\/misskey-dev\/misskey\/commit\/c9aeccb2ab260ceedc126e6e366da8cd13ece4b2","source":"security-advisories@github.com","tags":["Patch"]},{"url":"https:\/\/github.com\/misskey-dev\/misskey\/security\/advisories\/GHSA-9fj2-gjcf-cqqc","source":"security-advisories@github.com","tags":["Vendor Advisory"]},{"url":"https:\/\/github.com\/nexryai\/nexkey\/security\/advisories\/GHSA-g8w5-568f-ffwf","source":"security-advisories@github.com","tags":["Not Applicable"]}]}},{"cve":{"id":"CVE-2023-49079","sourceIdentifier":"security-advisories@github.com","published":"2023-11-29T19:15:07.713","lastModified":"2023-12-05T17:26:39.853","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Misskey is an open source, decentralized social media platform. Misskey's missing signature validation allows arbitrary users to impersonate any remote user. This issue has been patched in version 2023.11.1-beta.1."},{"lang":"es","value":"Misskey es una plataforma de redes sociales descentralizada y de código abierto. La validación de firma faltante de Misskey permite a usuarios arbitrarios hacerse pasar por cualquier usuario remoto. Este problema se solucionó en la versión 2023.11.1-beta.1."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:N\/I:H\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"NONE","integrityImpact":"HIGH","availabilityImpact":"NONE","baseScore":7.5,"baseSeverity":"HIGH"},"exploitabilityScore":3.9,"impactScore":3.6},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:C\/C:L\/I:H\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"HIGH","availabilityImpact":"NONE","baseScore":9.3,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":4.7}]},"weaknesses":[{"source":"security-advisories@github.com","type":"Primary","description":[{"lang":"en","value":"CWE-347"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:misskey:misskey:*:*:*:*:*:*:*:*","versionEndExcluding":"2023.11.1","matchCriteriaId":"8D48B2F6-D125-4D8F-85CC-65D219F85763"}]}]}],"references":[{"url":"https:\/\/github.com\/misskey-dev\/misskey\/security\/advisories\/GHSA-3f39-6537-3cgc","source":"security-advisories@github.com","tags":["Mitigation","Vendor Advisory"]}]}},{"cve":{"id":"CVE-2023-52139","sourceIdentifier":"security-advisories@github.com","published":"2023-12-29T18:15:39.227","lastModified":"2024-01-05T18:43:04.173","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Misskey is an open source, decentralized social media platform. Third-party applications may be able to access some endpoints or Websocket APIs that are incorrectly specified as [kind](https:\/\/github.com\/misskey-dev\/misskey\/blob\/406b4bdbe79b5b0b68fcdcb3c4b6e419460a0258\/packages\/backend\/src\/server\/api\/endpoints.ts#L811) or [secure](https:\/\/github.com\/misskey-dev\/misskey\/blob\/406b4bdbe79b5b0b68fcdcb3c4b6e419460a0258\/packages\/backend\/src\/server\/api\/endpoints.ts#L805) without the user's permission and perform operations such as reading or adding non-public content. As a result, if the user who authenticated the application is an administrator, confidential information such as object storage secret keys and SMTP server passwords will be leaked, and general users can also create invitation codes without permission and leak non-public user information. This is patched in version [2023.12.1](https:\/\/github.com\/misskey-dev\/misskey\/commit\/c96bc36fedc804dc840ea791a9355d7df0748e64)."},{"lang":"es","value":"Misskey es una plataforma de redes sociales descentralizada y de código abierto. Es posible que las aplicaciones de terceros puedan acceder a algunos endpoints o API de Websocket que están especificados incorrectamente como [kind] (https:\/\/github.com\/misskey-dev\/misskey\/blob\/406b4bdbe79b5b0b68fcdcb3c4b6e419460a0258\/packages\/backend\/src\/server\/api\/endpoints.ts#L811) o [secure](https:\/\/github.com\/misskey-dev\/misskey\/blob\/406b4bdbe79b5b0b68fcdcb3c4b6e419460a0258\/packages\/backend\/src\/server\/api\/endpoints.ts#L805) sin el permiso del usuario y realizar operaciones como leer o agregar contenido no público. Como resultado, si el usuario que autenticó la aplicación es un administrador, se filtrará información confidencial como claves secretas de almacenamiento de objetos y contraseñas del servidor SMTP, y los usuarios generales también pueden crear códigos de invitación sin permiso y filtrar información de usuario no pública. Esto está parcheado en la versión [2023.12.1] (https:\/\/github.com\/misskey-dev\/misskey\/commit\/c96bc36fedc804dc840ea791a9355d7df0748e64)."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:C\/C:H\/I:H\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"CHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"NONE","baseScore":9.6,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.1,"impactScore":5.8},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.0,"baseSeverity":"CRITICAL"},"exploitabilityScore":2.3,"impactScore":6.0}]},"weaknesses":[{"source":"security-advisories@github.com","type":"Primary","description":[{"lang":"en","value":"CWE-285"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:misskey:misskey:*:*:*:*:*:*:*:*","versionEndExcluding":"2023.12.1","matchCriteriaId":"734BD3CF-AAAF-430C-B820-D6E86655FD82"}]}]}],"references":[{"url":"https:\/\/github.com\/misskey-dev\/misskey\/commit\/c96bc36fedc804dc840ea791a9355d7df0748e64","source":"security-advisories@github.com","tags":["Patch"]},{"url":"https:\/\/github.com\/misskey-dev\/misskey\/security\/advisories\/GHSA-7pxq-6xx9-xpgm","source":"security-advisories@github.com","tags":["Third Party Advisory"]}]}}]}
+{
+    "resultsPerPage": 10,
+    "startIndex": 0,
+    "totalResults": 10,
+    "format": "NVD_CVE",
+    "version": "2.0",
+    "timestamp": "2024-04-30T10:47:39.937",
+    "vulnerabilities": [
+        {
+            "cve": {
+                "id": "CVE-2019-1020010",
+                "sourceIdentifier": "josh@bress.net",
+                "published": "2019-07-29T13:15:11.683",
+                "lastModified": "2019-09-05T19:01:26.277",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Misskey before 10.102.4 allows hijacking a user's token."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Misskey anterior a versi\u00f3n 10.102.4, permite el secuestro de un token de usuario."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.1,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:misskey:misskey:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "10.46.0",
+                                        "versionEndExcluding": "10.102.4",
+                                        "matchCriteriaId": "05F0B34A-BB65-408C-8053-48DDC3D1C3FF"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:misskey:misskey:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "11.0.0",
+                                        "versionEndExcluding": "11.20.2",
+                                        "matchCriteriaId": "AC50D734-FB0A-47EF-8BB1-0E353FC22D4D"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:misskey:misskey:11.0.0:alpha1:*:*:*:*:*:*",
+                                        "matchCriteriaId": "E964986E-D270-4B93-B275-C6392F007B84"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:misskey:misskey:11.0.0:alpha10:*:*:*:*:*:*",
+                                        "matchCriteriaId": "37073996-D41A-4749-B70A-3B998B9853BF"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:misskey:misskey:11.0.0:alpha2:*:*:*:*:*:*",
+                                        "matchCriteriaId": "025F97A7-2145-45C9-AFDC-53441526EEA5"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:misskey:misskey:11.0.0:alpha3:*:*:*:*:*:*",
+                                        "matchCriteriaId": "E5326C03-A022-4C55-9862-C43EE7B23451"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:misskey:misskey:11.0.0:alpha4:*:*:*:*:*:*",
+                                        "matchCriteriaId": "9CE8D977-0BC7-434B-8581-0D3BEB2A7ABA"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:misskey:misskey:11.0.0:alpha5:*:*:*:*:*:*",
+                                        "matchCriteriaId": "E479DF22-5D06-45AD-A51B-CFF26E100860"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:misskey:misskey:11.0.0:alpha6:*:*:*:*:*:*",
+                                        "matchCriteriaId": "BCE52C36-182E-47B9-BA0A-7A29DB1E43A4"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:misskey:misskey:11.0.0:alpha7:*:*:*:*:*:*",
+                                        "matchCriteriaId": "56D8F658-5E7F-403C-BDAD-526E0DB24D82"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:misskey:misskey:11.0.0:alpha8:*:*:*:*:*:*",
+                                        "matchCriteriaId": "89A6933D-402D-4AD0-8BED-7EC8A135AAFA"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:misskey:misskey:11.0.0:beta1:*:*:*:*:*:*",
+                                        "matchCriteriaId": "F9249CEF-1388-4BF2-B04B-C450D5B216F0"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:misskey:misskey:11.0.0:beta10:*:*:*:*:*:*",
+                                        "matchCriteriaId": "CAD8DBB6-0977-471C-8C09-610AA4AFB271"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:misskey:misskey:11.0.0:beta11:*:*:*:*:*:*",
+                                        "matchCriteriaId": "F22BA296-6C19-435C-9303-DD960CA5ACD9"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:misskey:misskey:11.0.0:beta12:*:*:*:*:*:*",
+                                        "matchCriteriaId": "CEC5809D-6C0C-4C6C-8555-955BB7390BB7"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:misskey:misskey:11.0.0:beta13:*:*:*:*:*:*",
+                                        "matchCriteriaId": "7860133F-D265-477F-B3B4-7B88ABABBDE2"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:misskey:misskey:11.0.0:beta14:*:*:*:*:*:*",
+                                        "matchCriteriaId": "F4F50B3F-A99E-49F7-9959-D11CBE875EC8"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:misskey:misskey:11.0.0:beta15:*:*:*:*:*:*",
+                                        "matchCriteriaId": "4274117D-10A8-4D91-83CA-4912E3B4734E"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:misskey:misskey:11.0.0:beta16:*:*:*:*:*:*",
+                                        "matchCriteriaId": "3B76A5E9-5B23-4902-93EE-32E8D6D6AE45"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:misskey:misskey:11.0.0:beta2:*:*:*:*:*:*",
+                                        "matchCriteriaId": "6860F62C-3498-4876-8906-570CDE9E05F9"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:misskey:misskey:11.0.0:beta3:*:*:*:*:*:*",
+                                        "matchCriteriaId": "75A0DAD9-8F53-4692-B4E9-B21A7A26BEB3"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:misskey:misskey:11.0.0:beta4:*:*:*:*:*:*",
+                                        "matchCriteriaId": "7887424B-E9F7-4313-8E40-D408C13FC329"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:misskey:misskey:11.0.0:beta5:*:*:*:*:*:*",
+                                        "matchCriteriaId": "EE8A70A6-5D45-47BB-80B5-F3B19E493601"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:misskey:misskey:11.0.0:beta6:*:*:*:*:*:*",
+                                        "matchCriteriaId": "E1F4D4AF-5E5D-4E89-B1A6-3CA993EB5666"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:misskey:misskey:11.0.0:beta7:*:*:*:*:*:*",
+                                        "matchCriteriaId": "9C3503EC-223C-473C-AF5C-2EF3496C2003"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:misskey:misskey:11.0.0:beta8:*:*:*:*:*:*",
+                                        "matchCriteriaId": "E3998793-764F-4BCF-A978-D45A2A111668"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:misskey:misskey:11.0.0:beta9:*:*:*:*:*:*",
+                                        "matchCriteriaId": "DBEBD39D-DB2D-49C5-8D80-531316C33F63"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/syuilo/misskey/security/advisories/GHSA-6qw9-6jxq-xj3p",
+                        "source": "josh@bress.net",
+                        "tags": [
+                            "Exploit",
+                            "Mitigation",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-39169",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2021-08-27T13:15:07.020",
+                "lastModified": "2021-09-08T13:14:55.150",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Misskey is a decentralized microblogging platform. In versions of Misskey prior to 12.51.0, malicious actors can use the web client built-in dialog to display a malicious string, leading to cross-site scripting (XSS). XSS could compromise the API request token. This issue has been fixed in version 12.51.0. There are no known workarounds aside from upgrading."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Misskey es una platamanera de microblogging descentralizada. En las versiones de Misskey anteriores a 12.51.0, unos actores maliciosos pueden usar el di\u00e1logo incorporado en el cliente web para mostrar una cadena maliciosa, conllevando a un ataque de tipo cross-site scripting (XSS). El ataque de  tipo XSS podr\u00eda comprometer el token de petici\u00f3n de la API. Este problema ha sido corregido en la versi\u00f3n 12.51.0. No se conocen soluciones aparte de la actualizaci\u00f3n."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 2.7
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 8.0,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.1,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 3.5
+                            },
+                            "baseSeverity": "LOW",
+                            "exploitabilityScore": 6.8,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:misskey:misskey:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "12.51.0",
+                                        "matchCriteriaId": "8E6D51FB-70AB-4EF8-B173-168D76D8338A"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/misskey-dev/misskey/commit/ec203f7f795766f76b55fecc9248168c1cdf6c99",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/misskey-dev/misskey/security/advisories/GHSA-pmmv-jwqh-f5ww",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-39195",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2021-09-07T19:15:08.600",
+                "lastModified": "2021-09-14T16:20:41.183",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Misskey is an open source, decentralized microblogging platform. In affected versions a Server-Side Request Forgery vulnerability exists in \"Upload from URL\" and remote attachment handling. This could result in the disclosure of non-public information within the internal network. This has been fixed in 12.90.0. However, if you are using a proxy, you will need to take additional measures. As a workaround this exploit may be avoided by appropriately restricting access to private networks from the host where the application is running."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Misskey es una plataforma de microblogging descentralizada de c\u00f3digo abierto. En las versiones afectadas se presenta una vulnerabilidad de tipo Server-Side Request Forgery en el manejo de \"Upload from URL\" y archivos adjuntos remotos. Esto podr\u00eda resultar en una divulgaci\u00f3n de informaci\u00f3n no p\u00fablica dentro de la red interna. Esto es corregido en versi\u00f3n 12.90.0. Sin embargo, si esta usando un proxy, necesitar\u00e1 tomar medidas adicionales. Como soluci\u00f3n alternativa, este problema puede ser  evitado restringiendo apropiadamente el acceso a las redes privadas desde el host donde se ejecuta la aplicaci\u00f3n"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.5,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 3.6
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 7.7,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.1,
+                            "impactScore": 4.0
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:S/C:P/I:N/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-918"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:misskey:misskey:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "12.90.0",
+                                        "matchCriteriaId": "0A2733AC-B327-4BA4-92A0-735E36B8ED7B"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/misskey-dev/misskey/blob/develop/CHANGELOG.md#12900-20210904",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Release Notes",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/misskey-dev/misskey/commit/e1a8b158e04ad567d92d8daf3cc0898ee18f1a2e",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/misskey-dev/misskey/security/advisories/GHSA-mqv7-gxh4-r5vf",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Issue Tracking",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-25154",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2023-02-22T19:15:11.610",
+                "lastModified": "2023-03-03T15:11:35.467",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Misskey is an open source, decentralized social media platform. In versions prior to 13.5.0 the link to the instance to the sender that appears when viewing a user or note received through ActivityPub is not properly validated, so by inserting a URL with a javascript scheme an attacker may execute JavaScript code in the context of the recipient. This issue has been fixed in version 13.5.0. Users are advised to upgrade. Users unable to upgrade should not \"view on remote\" for untrusted instances."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.1,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.7
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "LOW",
+                                "baseScore": 7.1,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 3.7
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:misskey:misskey:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "13.5.0",
+                                        "matchCriteriaId": "FFC6D0B2-D52A-49DC-AFD1-7E49379F3013"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/misskey-dev/misskey/security/advisories/GHSA-pfp5-r48x-fg25",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Vendor Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-24810",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2023-02-22T20:15:12.630",
+                "lastModified": "2023-03-03T04:43:46.990",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Misskey is an open source, decentralized social media platform. Due to insufficient validation of the redirect URL during `miauth` authentication in Misskey, arbitrary JavaScript can be executed when a user allows the link. All versions below 13.3.1 (including 12.x) are affected. This has been fixed in version 13.3.1. Users are advised to upgrade. Users unable to upgrade should not allow authentication of untrusted apps."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.1,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.7
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "LOW",
+                                "baseScore": 7.1,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 3.7
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:misskey:misskey:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "13.3.1",
+                                        "matchCriteriaId": "981BA492-22E1-491A-945F-7106858A5249"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/misskey-dev/misskey/security/advisories/GHSA-cc6r-chgr-8r5m",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Vendor Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-24811",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2023-02-22T20:15:12.700",
+                "lastModified": "2023-11-07T04:08:43.257",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Misskey is an open source, decentralized social media platform. In versions prior to 13.3.2 the URL preview function is subject to a cross site scripting vulnerability due to insufficient URL validation. Arbitrary JavaScript is executed when a malicious URL is loaded in the `View in Player` or `View in Window` preview. This has been fixed in version 13.3.2. Users are advised to upgrade. Users unable to upgrade should avoid usage of the `View in Player` or `View in Window` functions.\n"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.1,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.7
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "LOW",
+                                "baseScore": 7.1,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 3.7
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:misskey:misskey:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "13.3.2",
+                                        "matchCriteriaId": "E4B92EAB-F584-4A4F-9F1F-3C5AF8C44008"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/misskey-dev/misskey/commit/38f9d1e76428bea47c5944c440eab25428c7d99e",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/misskey-dev/misskey/security/advisories/GHSA-vc39-c453-67g3",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Vendor Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-24812",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2023-02-22T20:15:12.777",
+                "lastModified": "2023-04-10T16:27:37.823",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Misskey is an open source, decentralized social media platform. In versions prior to 13.3.3 SQL injection is possible due to insufficient parameter validation in the note search API by tag (notes/search-by-tag). This has been fixed in version 13.3.3. Users are advised to upgrade. Users unable to upgrade should block access to the `api/notes/search-by-tag` endpoint."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.8,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.9
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 8.8,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 5.9
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-89"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-89"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:misskey:misskey:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "13.3.3",
+                                        "matchCriteriaId": "C283C863-C990-470A-9815-AC6A14462687"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/misskey-dev/misskey/commit/ee74df68233adcd5b167258c621565f97c3b2306",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/misskey-dev/misskey/security/advisories/GHSA-cgwp-vmr4-wx4q",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Vendor Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-43793",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2023-10-04T21:15:10.040",
+                "lastModified": "2023-10-11T17:47:46.247",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Misskey is an open source, decentralized social media platform. Prior to version 2023.9.0, by editing the URL, a user can bypass the authentication of the Bull dashboard, which is the job queue management UI, and access it. Version 2023.9.0 contains a fix. There are no known workarounds."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Misskey es una plataforma de redes sociales descentralizada y de c\u00f3digo abierto. Antes de la versi\u00f3n 2023.9.0, al editar la URL, un usuario pod\u00eda omitir la autenticaci\u00f3n del panel Bull, que es la interfaz de usuario de administraci\u00f3n de la cola de trabajos, y acceder a \u00e9l. La versi\u00f3n 2023.9.0 contiene una soluci\u00f3n. No se conocen workarounds."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 7.5,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 3.6
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 7.5,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 3.6
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-287"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:misskey:misskey:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "2023.9.0",
+                                        "matchCriteriaId": "76183927-4600-43CA-A33B-D329E57A3A03"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/misskey-dev/misskey/commit/c9aeccb2ab260ceedc126e6e366da8cd13ece4b2",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/misskey-dev/misskey/security/advisories/GHSA-9fj2-gjcf-cqqc",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/nexryai/nexkey/security/advisories/GHSA-g8w5-568f-ffwf",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Not Applicable"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-49079",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2023-11-29T19:15:07.713",
+                "lastModified": "2023-12-05T17:26:39.853",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Misskey is an open source, decentralized social media platform. Misskey's missing signature validation allows arbitrary users to impersonate any remote user. This issue has been patched in version 2023.11.1-beta.1."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Misskey es una plataforma de redes sociales descentralizada y de c\u00f3digo abierto. La validaci\u00f3n de firma faltante de Misskey permite a usuarios arbitrarios hacerse pasar por cualquier usuario remoto. Este problema se solucion\u00f3 en la versi\u00f3n 2023.11.1-beta.1."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 7.5,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 3.6
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:H/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 9.3,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 4.7
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-347"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:misskey:misskey:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "2023.11.1",
+                                        "matchCriteriaId": "8D48B2F6-D125-4D8F-85CC-65D219F85763"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/misskey-dev/misskey/security/advisories/GHSA-3f39-6537-3cgc",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Mitigation",
+                            "Vendor Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-52139",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2023-12-29T18:15:39.227",
+                "lastModified": "2024-01-05T18:43:04.173",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Misskey is an open source, decentralized social media platform. Third-party applications may be able to access some endpoints or Websocket APIs that are incorrectly specified as [kind](https://github.com/misskey-dev/misskey/blob/406b4bdbe79b5b0b68fcdcb3c4b6e419460a0258/packages/backend/src/server/api/endpoints.ts#L811) or [secure](https://github.com/misskey-dev/misskey/blob/406b4bdbe79b5b0b68fcdcb3c4b6e419460a0258/packages/backend/src/server/api/endpoints.ts#L805) without the user's permission and perform operations such as reading or adding non-public content. As a result, if the user who authenticated the application is an administrator, confidential information such as object storage secret keys and SMTP server passwords will be leaked, and general users can also create invitation codes without permission and leak non-public user information. This is patched in version [2023.12.1](https://github.com/misskey-dev/misskey/commit/c96bc36fedc804dc840ea791a9355d7df0748e64)."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Misskey es una plataforma de redes sociales descentralizada y de c\u00f3digo abierto. Es posible que las aplicaciones de terceros puedan acceder a algunos endpoints o API de Websocket que est\u00e1n especificados incorrectamente como [kind] (https://github.com/misskey-dev/misskey/blob/406b4bdbe79b5b0b68fcdcb3c4b6e419460a0258/packages/backend/src/server/api/endpoints.ts#L811) o [secure](https://github.com/misskey-dev/misskey/blob/406b4bdbe79b5b0b68fcdcb3c4b6e419460a0258/packages/backend/src/server/api/endpoints.ts#L805) sin el permiso del usuario y realizar operaciones como leer o agregar contenido no p\u00fablico. Como resultado, si el usuario que autentic\u00f3 la aplicaci\u00f3n es un administrador, se filtrar\u00e1 informaci\u00f3n confidencial como claves secretas de almacenamiento de objetos y contrase\u00f1as del servidor SMTP, y los usuarios generales tambi\u00e9n pueden crear c\u00f3digos de invitaci\u00f3n sin permiso y filtrar informaci\u00f3n de usuario no p\u00fablica. Esto est\u00e1 parcheado en la versi\u00f3n [2023.12.1] (https://github.com/misskey-dev/misskey/commit/c96bc36fedc804dc840ea791a9355d7df0748e64)."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 9.6,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.1,
+                            "impactScore": 5.8
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.0,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 6.0
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-285"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:misskey:misskey:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "2023.12.1",
+                                        "matchCriteriaId": "734BD3CF-AAAF-430C-B820-D6E86655FD82"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/misskey-dev/misskey/commit/c96bc36fedc804dc840ea791a9355d7df0748e64",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/misskey-dev/misskey/security/advisories/GHSA-7pxq-6xx9-xpgm",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,1 +1,1082 @@
-{"resultsPerPage":8,"startIndex":0,"totalResults":8,"format":"NVD_CVE","version":"2.0","timestamp":"2024-04-30T10:39:48.810","vulnerabilities":[{"cve":{"id":"CVE-2012-5181","sourceIdentifier":"vultures@jpcert.or.jp","published":"2012-12-21T21:55:01.627","lastModified":"2017-11-21T18:25:15.757","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Cross-site scripting (XSS) vulnerability in concrete5 Japanese 5.5.1 through 5.5.2.1 and concrete5 English 5.5.0 through 5.6.0.2 allows remote attackers to inject arbitrary web script or HTML via unspecified vectors."},{"lang":"es","value":"Vulnerabilidad de secuencias de comandos en sitios cruzados (XSS) en concrete5 Japanese v5.5.1 hasta la v5.5.2.1 y concrete5 English v5.5.0 hasta la v5.6.0.2 permite a atacantes remotos inyectar secuencias de comandos web o HTML a través de vectores no especificados."}],"metrics":{"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.3},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:concrete5:concrete5:5.5.0:*:*:en:*:*:*:*","matchCriteriaId":"427D9852-7256-4F9D-B1F4-57875B2DE00E"},{"vulnerable":true,"criteria":"cpe:2.3:a:concrete5:concrete5:5.5.1:*:*:en:*:*:*:*","matchCriteriaId":"286F3B33-5FA9-47F0-8211-FAD3582B99AE"},{"vulnerable":true,"criteria":"cpe:2.3:a:concrete5:concrete5:5.5.1:*:*:ja:*:*:*:*","matchCriteriaId":"9B9BEA0A-C718-4244-A904-EB16DFD55A4D"},{"vulnerable":true,"criteria":"cpe:2.3:a:concrete5:concrete5:5.5.2:*:*:en:*:*:*:*","matchCriteriaId":"A8818745-0AEC-4ED7-875C-DAB58D5352F0"},{"vulnerable":true,"criteria":"cpe:2.3:a:concrete5:concrete5:5.5.2:*:*:ja:*:*:*:*","matchCriteriaId":"3FFACC5D-B215-4217-A413-369A3CA45A37"},{"vulnerable":true,"criteria":"cpe:2.3:a:concrete5:concrete5:5.5.2.1:*:*:en:*:*:*:*","matchCriteriaId":"B3BE982C-8DB3-4815-92B6-441628344364"},{"vulnerable":true,"criteria":"cpe:2.3:a:concrete5:concrete5:5.5.2.1:*:*:ja:*:*:*:*","matchCriteriaId":"FF72B562-BCF1-422E-83BC-373F7AB0662F"},{"vulnerable":true,"criteria":"cpe:2.3:a:concrete5:concrete5:5.6.0:*:*:en:*:*:*:*","matchCriteriaId":"6A41A79F-BE08-4C4F-926A-1688962B66EB"},{"vulnerable":true,"criteria":"cpe:2.3:a:concrete5:concrete5:5.6.0.1:*:*:en:*:*:*:*","matchCriteriaId":"FB8774E2-4651-42ED-9A38-1BF2DF1D68CE"},{"vulnerable":true,"criteria":"cpe:2.3:a:concrete5:concrete5:5.6.0.2:*:*:en:*:*:*:*","matchCriteriaId":"789FFC3F-30F4-4806-983B-7B895980151E"}]}]}],"references":[{"url":"http:\/\/concrete5-japan.org\/news\/concrete5602ja-release\/","source":"vultures@jpcert.or.jp","tags":["Patch","Vendor Advisory"]},{"url":"http:\/\/jvn.jp\/en\/jp\/JVN65458431\/index.html","source":"vultures@jpcert.or.jp","tags":["VDB Entry","Third Party Advisory"]},{"url":"http:\/\/jvndb.jvn.jp\/jvndb\/JVNDB-2012-000113","source":"vultures@jpcert.or.jp","tags":["Third Party Advisory","VDB Entry"]}]}},{"cve":{"id":"CVE-2014-5107","sourceIdentifier":"cve@mitre.org","published":"2014-07-28T15:55:04.273","lastModified":"2021-07-15T20:42:50.310","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"concrete5 before 5.6.3 allows remote attackers to obtain the installation path via a direct request to (1) system\/basics\/editor.php, (2) system\/view.php, (3) system\/environment\/file_storage_locations.php, (4) system\/mail\/importers.php, (5) system\/mail\/method.php, (6) system\/permissions\/file_types.php, (7) system\/permissions\/files.php, (8) system\/permissions\/tasks.php, (9) system\/permissions\/users.php, (10) system\/seo\/view.php, (11) view.php, (12) users\/attributes.php, (13) scrapbook\/view.php, (14) pages\/attributes.php, (15) files\/attributes.php, or (16) files\/search.php in single_pages\/dashboard\/."},{"lang":"es","value":"concrete5 anterior a 5.6.3 permite a atacantes remotos obtener la ruta de instalación a través de una solicitud directa en (1) system\/basics\/editor.php, (2) system\/view.php, (3) system\/environment\/file_storage_locations.php, (4) system\/mail\/importers.php, (5) system\/mail\/method.php, (6) system\/permissions\/file_types.php, (7) system\/permissions\/files.php, (8) system\/permissions\/tasks.php, (9) system\/permissions\/users.php, (10) system\/seo\/view.php, (11) view.php, (12) users\/attributes.php, (13) scrapbook\/view.php, (14) pages\/attributes.php, (15) files\/attributes.php o (16) files\/search.php en single_pages\/dashboard\/."}],"metrics":{"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:N\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":5.0},"baseSeverity":"MEDIUM","exploitabilityScore":10.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-200"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:concrete5:concrete5:5.5.0:*:*:*:*:*:*:*","matchCriteriaId":"250CFE10-0DA1-4B24-B873-E63BE104A19C"},{"vulnerable":true,"criteria":"cpe:2.3:a:concrete5:concrete5:5.5.1:*:*:*:*:*:*:*","matchCriteriaId":"308B25FB-E532-46A7-ABF9-7885FD3270CB"},{"vulnerable":true,"criteria":"cpe:2.3:a:concrete5:concrete5:5.5.2:*:*:*:*:*:*:*","matchCriteriaId":"B96F3766-1454-4CDF-B577-DDFF8B2C6BE6"},{"vulnerable":true,"criteria":"cpe:2.3:a:concrete5:concrete5:5.5.2.1:*:*:*:*:*:*:*","matchCriteriaId":"CC5EF680-8DA0-4ABE-8586-E68C580933DE"},{"vulnerable":true,"criteria":"cpe:2.3:a:concrete5:concrete5:5.6.0:*:*:*:*:*:*:*","matchCriteriaId":"BC77707C-CC4D-413F-A216-D55803498051"},{"vulnerable":true,"criteria":"cpe:2.3:a:concrete5:concrete5:5.6.0.1:*:*:*:*:*:*:*","matchCriteriaId":"05EE0D05-ABD3-4120-9917-1EC79986DC69"},{"vulnerable":true,"criteria":"cpe:2.3:a:concrete5:concrete5:5.6.0.2:*:*:*:*:*:*:*","matchCriteriaId":"BC461A9A-67CF-4578-B59F-67A373FE9573"},{"vulnerable":true,"criteria":"cpe:2.3:a:concretecms:concrete_cms:5.4.2:*:*:*:*:*:*:*","matchCriteriaId":"F624FF30-4B2C-46E5-89B4-CE3113D14783"},{"vulnerable":true,"criteria":"cpe:2.3:a:concretecms:concrete_cms:5.4.2.1:*:*:*:*:*:*:*","matchCriteriaId":"E7EEAB3A-D088-42AB-AA8E-5F727DE9BA9C"},{"vulnerable":true,"criteria":"cpe:2.3:a:concretecms:concrete_cms:5.4.2.2:*:*:*:*:*:*:*","matchCriteriaId":"22B02DDC-BBAA-47CA-BF9E-A3A23C144797"},{"vulnerable":true,"criteria":"cpe:2.3:a:concretecms:concrete_cms:5.6.1:*:*:*:*:*:*:*","matchCriteriaId":"CF28819C-C2EA-4E49-B4D3-0DE6138FBC31"},{"vulnerable":true,"criteria":"cpe:2.3:a:concretecms:concrete_cms:5.6.1.1:*:*:*:*:*:*:*","matchCriteriaId":"7D4DB672-BEE5-48D9-B90F-44DE09726590"},{"vulnerable":true,"criteria":"cpe:2.3:a:concretecms:concrete_cms:5.6.1.2:*:*:*:*:*:*:*","matchCriteriaId":"E281C5E1-1006-4CE1-81D4-84DDF8B952A9"},{"vulnerable":true,"criteria":"cpe:2.3:a:concretecms:concrete_cms:5.6.2:*:*:*:*:*:*:*","matchCriteriaId":"2E70A6C5-83E1-4A40-A777-7609AE41A5AE"},{"vulnerable":true,"criteria":"cpe:2.3:a:concretecms:concrete_cms:5.6.2.1:*:*:*:*:*:*:*","matchCriteriaId":"6DADCACB-8606-4AF3-954F-B2EF5E35AC8B"}]}]}],"references":[{"url":"http:\/\/osvdb.org\/show\/osvdb\/109269","source":"cve@mitre.org","tags":["Broken Link"]},{"url":"http:\/\/packetstormsecurity.com\/files\/127493\/Concrete-5.6.2.1-REFERER-Cross-Site-Scripting.html","source":"cve@mitre.org","tags":["Third Party Advisory"]},{"url":"http:\/\/www.securityfocus.com\/bid\/68685","source":"cve@mitre.org","tags":["Third Party Advisory","VDB Entry"]},{"url":"https:\/\/www.concrete5.org\/documentation\/background\/version_history\/5-6-3-release-notes","source":"cve@mitre.org","tags":["Broken Link","Vendor Advisory"]}]}},{"cve":{"id":"CVE-2014-5108","sourceIdentifier":"cve@mitre.org","published":"2014-07-28T15:55:04.320","lastModified":"2021-07-15T20:42:50.310","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Cross-site scripting (XSS) vulnerability in single_pages\\download_file.php in concrete5 before 5.6.3 allows remote attackers to inject arbitrary web script or HTML via the HTTP Referer header to index.php\/download_file."},{"lang":"es","value":"Vulnerabilidad de XSS en single_pages\\download_file.php en concrete5 anterior a 5.6.3 permite a atacantes remotos inyectar secuencias de comandos web o HTML arbitrarios a través de la cabecera HTTP Referer en index.php\/download_file."}],"metrics":{"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.3},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:concrete5:concrete5:5.5.0:*:*:*:*:*:*:*","matchCriteriaId":"250CFE10-0DA1-4B24-B873-E63BE104A19C"},{"vulnerable":true,"criteria":"cpe:2.3:a:concrete5:concrete5:5.5.1:*:*:*:*:*:*:*","matchCriteriaId":"308B25FB-E532-46A7-ABF9-7885FD3270CB"},{"vulnerable":true,"criteria":"cpe:2.3:a:concrete5:concrete5:5.5.2:*:*:*:*:*:*:*","matchCriteriaId":"B96F3766-1454-4CDF-B577-DDFF8B2C6BE6"},{"vulnerable":true,"criteria":"cpe:2.3:a:concrete5:concrete5:5.5.2.1:*:*:*:*:*:*:*","matchCriteriaId":"CC5EF680-8DA0-4ABE-8586-E68C580933DE"},{"vulnerable":true,"criteria":"cpe:2.3:a:concrete5:concrete5:5.6.0:*:*:*:*:*:*:*","matchCriteriaId":"BC77707C-CC4D-413F-A216-D55803498051"},{"vulnerable":true,"criteria":"cpe:2.3:a:concrete5:concrete5:5.6.0.1:*:*:*:*:*:*:*","matchCriteriaId":"05EE0D05-ABD3-4120-9917-1EC79986DC69"},{"vulnerable":true,"criteria":"cpe:2.3:a:concrete5:concrete5:5.6.0.2:*:*:*:*:*:*:*","matchCriteriaId":"BC461A9A-67CF-4578-B59F-67A373FE9573"},{"vulnerable":true,"criteria":"cpe:2.3:a:concretecms:concrete_cms:5.4.2:*:*:*:*:*:*:*","matchCriteriaId":"F624FF30-4B2C-46E5-89B4-CE3113D14783"},{"vulnerable":true,"criteria":"cpe:2.3:a:concretecms:concrete_cms:5.4.2.1:*:*:*:*:*:*:*","matchCriteriaId":"E7EEAB3A-D088-42AB-AA8E-5F727DE9BA9C"},{"vulnerable":true,"criteria":"cpe:2.3:a:concretecms:concrete_cms:5.4.2.2:*:*:*:*:*:*:*","matchCriteriaId":"22B02DDC-BBAA-47CA-BF9E-A3A23C144797"},{"vulnerable":true,"criteria":"cpe:2.3:a:concretecms:concrete_cms:5.6.1:*:*:*:*:*:*:*","matchCriteriaId":"CF28819C-C2EA-4E49-B4D3-0DE6138FBC31"},{"vulnerable":true,"criteria":"cpe:2.3:a:concretecms:concrete_cms:5.6.1.1:*:*:*:*:*:*:*","matchCriteriaId":"7D4DB672-BEE5-48D9-B90F-44DE09726590"},{"vulnerable":true,"criteria":"cpe:2.3:a:concretecms:concrete_cms:5.6.1.2:*:*:*:*:*:*:*","matchCriteriaId":"E281C5E1-1006-4CE1-81D4-84DDF8B952A9"},{"vulnerable":true,"criteria":"cpe:2.3:a:concretecms:concrete_cms:5.6.2:*:*:*:*:*:*:*","matchCriteriaId":"2E70A6C5-83E1-4A40-A777-7609AE41A5AE"},{"vulnerable":true,"criteria":"cpe:2.3:a:concretecms:concrete_cms:5.6.2.1:*:*:*:*:*:*:*","matchCriteriaId":"6DADCACB-8606-4AF3-954F-B2EF5E35AC8B"}]}]}],"references":[{"url":"http:\/\/osvdb.org\/show\/osvdb\/109273","source":"cve@mitre.org","tags":["Broken Link"]},{"url":"http:\/\/packetstormsecurity.com\/files\/127493\/Concrete-5.6.2.1-REFERER-Cross-Site-Scripting.html","source":"cve@mitre.org","tags":["Third Party Advisory"]},{"url":"http:\/\/www.securityfocus.com\/bid\/68685","source":"cve@mitre.org","tags":["Third Party Advisory","VDB Entry"]},{"url":"https:\/\/www.concrete5.org\/documentation\/background\/version_history\/5-6-3-release-notes","source":"cve@mitre.org","tags":["Broken Link","Vendor Advisory"]}]}},{"cve":{"id":"CVE-2014-9526","sourceIdentifier":"cve@mitre.org","published":"2015-01-05T21:59:00.060","lastModified":"2021-07-15T20:42:44.600","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"Multiple cross-site scripting (XSS) vulnerabilities in concrete5 5.7.2.1, 5.7.2, and earlier allow remote attackers to inject arbitrary web script or HTML via the (1) gName parameter in single_pages\/dashboard\/users\/groups\/bulkupdate.php or (2) instance_id parameter in tools\/dashboard\/sitemap_drag_request.php."},{"lang":"es","value":"Múltiples vulnerabilidades de XSS en concrete5 5.7.2.1, 5.7.2, y anteriores permiten a atacantes remotos inyectar secuencias de comandos web o HTML arbitrarios a través (1) del parámetro gName en single_pages\/dashboard\/users\/groups\/bulkupdate.php o (2) del parámetro instance_id en tools\/dashboard\/sitemap_drag_request.php."}],"metrics":{"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.3},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:concrete5:concrete5:*:*:*:*:*:*:*:*","versionEndIncluding":"5.7.2.1","matchCriteriaId":"50ED7531-AD35-4181-90D6-EE684E91F86A"},{"vulnerable":true,"criteria":"cpe:2.3:a:concretecms:concrete_cms:5.7.2:*:*:*:*:*:*:*","matchCriteriaId":"BB4D3058-4254-4F70-AE64-D4802650177B"}]}]}],"references":[{"url":"http:\/\/morxploit.com\/morxploits\/morxconxss.txt","source":"cve@mitre.org","tags":["Exploit"]},{"url":"http:\/\/packetstormsecurity.com\/files\/129446\/Concrete5-CMS-5.7.2-5.7.2.1-Cross-Site-Scripting.html","source":"cve@mitre.org","tags":["Exploit"]},{"url":"http:\/\/seclists.org\/fulldisclosure\/2014\/Dec\/38","source":"cve@mitre.org","tags":["Exploit"]},{"url":"http:\/\/www.securityfocus.com\/archive\/1\/534189\/100\/0\/threaded","source":"cve@mitre.org"},{"url":"https:\/\/exchange.xforce.ibmcloud.com\/vulnerabilities\/99264","source":"cve@mitre.org"}]}},{"cve":{"id":"CVE-2015-2250","sourceIdentifier":"cve@mitre.org","published":"2015-05-15T18:59:00.087","lastModified":"2018-10-09T19:56:10.747","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"Multiple cross-site scripting (XSS) vulnerabilities in concrete5 before 5.7.4 allow remote attackers to inject arbitrary web script or HTML via the (1) banned_word[] parameter to index.php\/dashboard\/system\/conversations\/bannedwords\/success, (2) channel parameter to index.php\/dashboard\/reports\/logs\/view, (3) accessType parameter to index.php\/tools\/required\/permissions\/access_entity, (4) msCountry parameter to index.php\/dashboard\/system\/multilingual\/setup\/load_icon, arHandle parameter to (5) design\/submit or (6) design in index.php\/ccm\/system\/dialogs\/area\/design\/submit, (7) pageURL to index.php\/dashboard\/pages\/single, (8) SEARCH_INDEX_AREA_METHOD parameter to index.php\/dashboard\/system\/seo\/searchindex\/updated, (9) unit parameter to index.php\/dashboard\/system\/optimization\/jobs\/job_scheduled, (10) register_notification_email parameter to index.php\/dashboard\/system\/registration\/open\/1, or (11) PATH_INFO to index.php\/dashboard\/extend\/connect\/."},{"lang":"es","value":"Múltiples vulnerabilidades de XSS en concrete5 anterior a 5.7.4 permiten a atacantes remotos inyectar secuencias de comandos web arbitrarios o HTML a través (1) del parámetro banned_word[] en index.php\/dashboard\/system\/conversations\/bannedwords\/success, (2) del parámetro channel en index.php\/dashboard\/reports\/logs\/view, (3) del parámetro accessType en index.php\/tools\/required\/permissions\/access_entity, (4) del parámetro msCountry en index.php\/dashboard\/system\/multilingual\/setup\/load_icon, del parámetro arHandle en (5) design\/submit o (6) design en index.php\/ccm\/system\/dialogs\/area\/design\/submit, (7) pageURL en index.php\/dashboard\/pages\/single, (8) del parámetro SEARCH_INDEX_AREA_METHOD en index.php\/dashboard\/system\/seo\/searchindex\/updated, (9) del parámetro unit en index.php\/dashboard\/system\/optimization\/jobs\/job_scheduled, (10) del parámetro register_notification_email en index.php\/dashboard\/system\/registration\/open\/1, o (11) PATH_INFO en index.php\/dashboard\/extend\/connect\/."}],"metrics":{"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.3},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:concrete5:concrete5:*:*:*:*:*:*:*:*","versionEndIncluding":"5.7.3.1","matchCriteriaId":"FEF6220B-2F6B-4D7E-AF63-E3A02F1FDB48"}]}]}],"references":[{"url":"http:\/\/packetstormsecurity.com\/files\/131882\/Concrete5-5.7.3.1-Cross-Site-Scripting.html","source":"cve@mitre.org","tags":["Exploit"]},{"url":"http:\/\/seclists.org\/fulldisclosure\/2015\/May\/51","source":"cve@mitre.org","tags":["Exploit"]},{"url":"http:\/\/www.securityfocus.com\/archive\/1\/535531\/100\/0\/threaded","source":"cve@mitre.org"},{"url":"http:\/\/www.securityfocus.com\/bid\/74651","source":"cve@mitre.org"},{"url":"https:\/\/www.concrete5.org\/documentation\/developers\/5.7\/background\/version-history\/5-7-4-release-notes\/","source":"cve@mitre.org","tags":["Patch","Vendor Advisory"]},{"url":"https:\/\/www.netsparker.com\/cve-2015-2250-multiple-xss-vulnerabilities-identified-in-concrete5\/","source":"cve@mitre.org","tags":["Exploit"]}]}},{"cve":{"id":"CVE-2015-3989","sourceIdentifier":"cve@mitre.org","published":"2015-05-15T18:59:02.963","lastModified":"2016-12-06T03:01:46.933","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"Multiple cross-site scripting (XSS) vulnerabilities in concrete5 before 5.7.4 allow remote attackers to inject arbitrary web script or HTML via vectors related to private messages or other unspecified vectors."},{"lang":"es","value":"Múltiples vulnerabilidades de XSS en concrete5 anterior a 5.7.4 permiten a atacantes remotos inyectaqr secuencias de comandos web arbitrarios o HTML a través de vectores relacionados con mensajes privados u otros vectores no especificados."}],"metrics":{"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.3},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:concrete5:concrete5:*:*:*:*:*:*:*:*","versionEndIncluding":"5.7.3.1","matchCriteriaId":"FEF6220B-2F6B-4D7E-AF63-E3A02F1FDB48"}]}]}],"references":[{"url":"http:\/\/www.securityfocus.com\/bid\/74699","source":"cve@mitre.org"},{"url":"https:\/\/www.concrete5.org\/documentation\/developers\/5.7\/background\/version-history\/5-7-4-release-notes\/","source":"cve@mitre.org","tags":["Patch","Vendor Advisory"]}]}},{"cve":{"id":"CVE-2017-6905","sourceIdentifier":"cve@mitre.org","published":"2017-03-15T00:59:00.160","lastModified":"2017-03-23T17:43:09.240","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"An issue was discovered in concrete5 <= 5.6.3.4. The vulnerability exists due to insufficient filtration of user-supplied data (disable_choose) passed to the \"concrete5-legacy-master\/web\/concrete\/tools\/files\/search_dialog.php\" URL. An attacker could execute arbitrary HTML and script code in a browser in the context of the vulnerable website."},{"lang":"es","value":"Se ha descubierto un problema en concrete5 <= 5.6.3.4. La vulnerabilidad existe debido a filtración insuficiente de datos suministrados por el usuario (disable_choose) pasados a la URL \"concrete5-legacy-master\/web\/concrete\/tools\/files\/search_dialog.php\". Un atacante podría ejecutar código HTML y secuencia de comandos arbitrario en un buscador en el contexto del sitio web vulnerable."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.1,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.3},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:concrete5:concrete5:*:*:*:*:*:*:*:*","versionEndIncluding":"5.6.3.4","matchCriteriaId":"5C3593B0-7408-4C7B-B710-EF2110817B77"}]}]}],"references":[{"url":"http:\/\/www.securityfocus.com\/bid\/96891","source":"cve@mitre.org","tags":["Third Party Advisory","VDB Entry"]},{"url":"https:\/\/github.com\/Mnkras\/concrete5\/commit\/3eab581ab670982676e9dabddc9ad439391174ee","source":"cve@mitre.org","tags":["Issue Tracking","Patch"]},{"url":"https:\/\/github.com\/concrete5\/concrete5-legacy\/commit\/2b16399ce3e962a8c27fb3ec14bc8e855d65b63a","source":"cve@mitre.org","tags":["Issue Tracking","Patch"]},{"url":"https:\/\/github.com\/concrete5\/concrete5-legacy\/issues\/1947","source":"cve@mitre.org","tags":["Issue Tracking"]}]}},{"cve":{"id":"CVE-2017-6908","sourceIdentifier":"cve@mitre.org","published":"2017-03-15T00:59:00.253","lastModified":"2017-03-22T13:38:42.070","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"An issue was discovered in concrete5 <= 5.6.3.4. The vulnerability exists due to insufficient filtration of user-supplied data (fID) passed to the \"concrete5-legacy-master\/web\/concrete\/tools\/files\/selector_data.php\" URL. An attacker could execute arbitrary HTML and script code in a browser in the context of the vulnerable website."},{"lang":"es","value":"Se ha descubierto un problema en concrete5 <= 5.6.3.4. La vulnerabilidad existe debido a filtración insuficiente de datos suministrados por el usuario (fID) pasados a la URL \"concrete5-legacy-master\/web\/concrete\/tools\/files\/selector_data.php\". Un atacante podría ejecutar código HTML y secuencia de comandos arbitrario en un buscador en el contexto del sitio web vulnerable."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.1,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.3},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:concrete5:concrete5:*:*:*:*:*:*:*:*","versionEndIncluding":"5.6.3.3","matchCriteriaId":"7D6FA92E-3131-47C7-9D41-725ACA502217"}]}]}],"references":[{"url":"http:\/\/www.securityfocus.com\/bid\/96891","source":"cve@mitre.org","tags":["Third Party Advisory","VDB Entry"]},{"url":"https:\/\/github.com\/concrete5\/concrete5-legacy\/commit\/62046f511fc02ad783ad170404c80db3c69f0408","source":"cve@mitre.org","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/concrete5\/concrete5-legacy\/issues\/1948","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]}]}}]}
+{
+    "resultsPerPage": 8,
+    "startIndex": 0,
+    "totalResults": 8,
+    "format": "NVD_CVE",
+    "version": "2.0",
+    "timestamp": "2024-04-30T10:39:48.810",
+    "vulnerabilities": [
+        {
+            "cve": {
+                "id": "CVE-2012-5181",
+                "sourceIdentifier": "vultures@jpcert.or.jp",
+                "published": "2012-12-21T21:55:01.627",
+                "lastModified": "2017-11-21T18:25:15.757",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Cross-site scripting (XSS) vulnerability in concrete5 Japanese 5.5.1 through 5.5.2.1 and concrete5 English 5.5.0 through 5.6.0.2 allows remote attackers to inject arbitrary web script or HTML via unspecified vectors."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Vulnerabilidad de secuencias de comandos en sitios cruzados (XSS) en concrete5 Japanese v5.5.1 hasta la v5.5.2.1 y concrete5 English v5.5.0 hasta la v5.6.0.2 permite a atacantes remotos inyectar secuencias de comandos web o HTML a trav\u00e9s de vectores no especificados."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concrete5:concrete5:5.5.0:*:*:en:*:*:*:*",
+                                        "matchCriteriaId": "427D9852-7256-4F9D-B1F4-57875B2DE00E"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concrete5:concrete5:5.5.1:*:*:en:*:*:*:*",
+                                        "matchCriteriaId": "286F3B33-5FA9-47F0-8211-FAD3582B99AE"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concrete5:concrete5:5.5.1:*:*:ja:*:*:*:*",
+                                        "matchCriteriaId": "9B9BEA0A-C718-4244-A904-EB16DFD55A4D"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concrete5:concrete5:5.5.2:*:*:en:*:*:*:*",
+                                        "matchCriteriaId": "A8818745-0AEC-4ED7-875C-DAB58D5352F0"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concrete5:concrete5:5.5.2:*:*:ja:*:*:*:*",
+                                        "matchCriteriaId": "3FFACC5D-B215-4217-A413-369A3CA45A37"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concrete5:concrete5:5.5.2.1:*:*:en:*:*:*:*",
+                                        "matchCriteriaId": "B3BE982C-8DB3-4815-92B6-441628344364"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concrete5:concrete5:5.5.2.1:*:*:ja:*:*:*:*",
+                                        "matchCriteriaId": "FF72B562-BCF1-422E-83BC-373F7AB0662F"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concrete5:concrete5:5.6.0:*:*:en:*:*:*:*",
+                                        "matchCriteriaId": "6A41A79F-BE08-4C4F-926A-1688962B66EB"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concrete5:concrete5:5.6.0.1:*:*:en:*:*:*:*",
+                                        "matchCriteriaId": "FB8774E2-4651-42ED-9A38-1BF2DF1D68CE"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concrete5:concrete5:5.6.0.2:*:*:en:*:*:*:*",
+                                        "matchCriteriaId": "789FFC3F-30F4-4806-983B-7B895980151E"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://concrete5-japan.org/news/concrete5602ja-release/",
+                        "source": "vultures@jpcert.or.jp",
+                        "tags": [
+                            "Patch",
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "http://jvn.jp/en/jp/JVN65458431/index.html",
+                        "source": "vultures@jpcert.or.jp",
+                        "tags": [
+                            "VDB Entry",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "http://jvndb.jvn.jp/jvndb/JVNDB-2012-000113",
+                        "source": "vultures@jpcert.or.jp",
+                        "tags": [
+                            "Third Party Advisory",
+                            "VDB Entry"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2014-5107",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2014-07-28T15:55:04.273",
+                "lastModified": "2021-07-15T20:42:50.310",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "concrete5 before 5.6.3 allows remote attackers to obtain the installation path via a direct request to (1) system/basics/editor.php, (2) system/view.php, (3) system/environment/file_storage_locations.php, (4) system/mail/importers.php, (5) system/mail/method.php, (6) system/permissions/file_types.php, (7) system/permissions/files.php, (8) system/permissions/tasks.php, (9) system/permissions/users.php, (10) system/seo/view.php, (11) view.php, (12) users/attributes.php, (13) scrapbook/view.php, (14) pages/attributes.php, (15) files/attributes.php, or (16) files/search.php in single_pages/dashboard/."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "concrete5 anterior a 5.6.3 permite a atacantes remotos obtener la ruta de instalaci\u00f3n a trav\u00e9s de una solicitud directa en (1) system/basics/editor.php, (2) system/view.php, (3) system/environment/file_storage_locations.php, (4) system/mail/importers.php, (5) system/mail/method.php, (6) system/permissions/file_types.php, (7) system/permissions/files.php, (8) system/permissions/tasks.php, (9) system/permissions/users.php, (10) system/seo/view.php, (11) view.php, (12) users/attributes.php, (13) scrapbook/view.php, (14) pages/attributes.php, (15) files/attributes.php o (16) files/search.php en single_pages/dashboard/."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-200"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concrete5:concrete5:5.5.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "250CFE10-0DA1-4B24-B873-E63BE104A19C"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concrete5:concrete5:5.5.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "308B25FB-E532-46A7-ABF9-7885FD3270CB"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concrete5:concrete5:5.5.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "B96F3766-1454-4CDF-B577-DDFF8B2C6BE6"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concrete5:concrete5:5.5.2.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "CC5EF680-8DA0-4ABE-8586-E68C580933DE"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concrete5:concrete5:5.6.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "BC77707C-CC4D-413F-A216-D55803498051"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concrete5:concrete5:5.6.0.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "05EE0D05-ABD3-4120-9917-1EC79986DC69"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concrete5:concrete5:5.6.0.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "BC461A9A-67CF-4578-B59F-67A373FE9573"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concretecms:concrete_cms:5.4.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "F624FF30-4B2C-46E5-89B4-CE3113D14783"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concretecms:concrete_cms:5.4.2.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "E7EEAB3A-D088-42AB-AA8E-5F727DE9BA9C"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concretecms:concrete_cms:5.4.2.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "22B02DDC-BBAA-47CA-BF9E-A3A23C144797"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concretecms:concrete_cms:5.6.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "CF28819C-C2EA-4E49-B4D3-0DE6138FBC31"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concretecms:concrete_cms:5.6.1.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "7D4DB672-BEE5-48D9-B90F-44DE09726590"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concretecms:concrete_cms:5.6.1.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "E281C5E1-1006-4CE1-81D4-84DDF8B952A9"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concretecms:concrete_cms:5.6.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "2E70A6C5-83E1-4A40-A777-7609AE41A5AE"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concretecms:concrete_cms:5.6.2.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "6DADCACB-8606-4AF3-954F-B2EF5E35AC8B"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://osvdb.org/show/osvdb/109269",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Broken Link"
+                        ]
+                    },
+                    {
+                        "url": "http://packetstormsecurity.com/files/127493/Concrete-5.6.2.1-REFERER-Cross-Site-Scripting.html",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "http://www.securityfocus.com/bid/68685",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory",
+                            "VDB Entry"
+                        ]
+                    },
+                    {
+                        "url": "https://www.concrete5.org/documentation/background/version_history/5-6-3-release-notes",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Broken Link",
+                            "Vendor Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2014-5108",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2014-07-28T15:55:04.320",
+                "lastModified": "2021-07-15T20:42:50.310",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Cross-site scripting (XSS) vulnerability in single_pages\\download_file.php in concrete5 before 5.6.3 allows remote attackers to inject arbitrary web script or HTML via the HTTP Referer header to index.php/download_file."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Vulnerabilidad de XSS en single_pages\\download_file.php en concrete5 anterior a 5.6.3 permite a atacantes remotos inyectar secuencias de comandos web o HTML arbitrarios a trav\u00e9s de la cabecera HTTP Referer en index.php/download_file."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concrete5:concrete5:5.5.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "250CFE10-0DA1-4B24-B873-E63BE104A19C"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concrete5:concrete5:5.5.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "308B25FB-E532-46A7-ABF9-7885FD3270CB"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concrete5:concrete5:5.5.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "B96F3766-1454-4CDF-B577-DDFF8B2C6BE6"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concrete5:concrete5:5.5.2.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "CC5EF680-8DA0-4ABE-8586-E68C580933DE"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concrete5:concrete5:5.6.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "BC77707C-CC4D-413F-A216-D55803498051"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concrete5:concrete5:5.6.0.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "05EE0D05-ABD3-4120-9917-1EC79986DC69"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concrete5:concrete5:5.6.0.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "BC461A9A-67CF-4578-B59F-67A373FE9573"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concretecms:concrete_cms:5.4.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "F624FF30-4B2C-46E5-89B4-CE3113D14783"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concretecms:concrete_cms:5.4.2.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "E7EEAB3A-D088-42AB-AA8E-5F727DE9BA9C"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concretecms:concrete_cms:5.4.2.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "22B02DDC-BBAA-47CA-BF9E-A3A23C144797"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concretecms:concrete_cms:5.6.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "CF28819C-C2EA-4E49-B4D3-0DE6138FBC31"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concretecms:concrete_cms:5.6.1.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "7D4DB672-BEE5-48D9-B90F-44DE09726590"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concretecms:concrete_cms:5.6.1.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "E281C5E1-1006-4CE1-81D4-84DDF8B952A9"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concretecms:concrete_cms:5.6.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "2E70A6C5-83E1-4A40-A777-7609AE41A5AE"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concretecms:concrete_cms:5.6.2.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "6DADCACB-8606-4AF3-954F-B2EF5E35AC8B"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://osvdb.org/show/osvdb/109273",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Broken Link"
+                        ]
+                    },
+                    {
+                        "url": "http://packetstormsecurity.com/files/127493/Concrete-5.6.2.1-REFERER-Cross-Site-Scripting.html",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "http://www.securityfocus.com/bid/68685",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory",
+                            "VDB Entry"
+                        ]
+                    },
+                    {
+                        "url": "https://www.concrete5.org/documentation/background/version_history/5-6-3-release-notes",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Broken Link",
+                            "Vendor Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2014-9526",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2015-01-05T21:59:00.060",
+                "lastModified": "2021-07-15T20:42:44.600",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Multiple cross-site scripting (XSS) vulnerabilities in concrete5 5.7.2.1, 5.7.2, and earlier allow remote attackers to inject arbitrary web script or HTML via the (1) gName parameter in single_pages/dashboard/users/groups/bulkupdate.php or (2) instance_id parameter in tools/dashboard/sitemap_drag_request.php."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "M\u00faltiples vulnerabilidades de XSS en concrete5 5.7.2.1, 5.7.2, y anteriores permiten a atacantes remotos inyectar secuencias de comandos web o HTML arbitrarios a trav\u00e9s (1) del par\u00e1metro gName en single_pages/dashboard/users/groups/bulkupdate.php o (2) del par\u00e1metro instance_id en tools/dashboard/sitemap_drag_request.php."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concrete5:concrete5:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "5.7.2.1",
+                                        "matchCriteriaId": "50ED7531-AD35-4181-90D6-EE684E91F86A"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concretecms:concrete_cms:5.7.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "BB4D3058-4254-4F70-AE64-D4802650177B"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://morxploit.com/morxploits/morxconxss.txt",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit"
+                        ]
+                    },
+                    {
+                        "url": "http://packetstormsecurity.com/files/129446/Concrete5-CMS-5.7.2-5.7.2.1-Cross-Site-Scripting.html",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit"
+                        ]
+                    },
+                    {
+                        "url": "http://seclists.org/fulldisclosure/2014/Dec/38",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit"
+                        ]
+                    },
+                    {
+                        "url": "http://www.securityfocus.com/archive/1/534189/100/0/threaded",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/99264",
+                        "source": "cve@mitre.org"
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2015-2250",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2015-05-15T18:59:00.087",
+                "lastModified": "2018-10-09T19:56:10.747",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Multiple cross-site scripting (XSS) vulnerabilities in concrete5 before 5.7.4 allow remote attackers to inject arbitrary web script or HTML via the (1) banned_word[] parameter to index.php/dashboard/system/conversations/bannedwords/success, (2) channel parameter to index.php/dashboard/reports/logs/view, (3) accessType parameter to index.php/tools/required/permissions/access_entity, (4) msCountry parameter to index.php/dashboard/system/multilingual/setup/load_icon, arHandle parameter to (5) design/submit or (6) design in index.php/ccm/system/dialogs/area/design/submit, (7) pageURL to index.php/dashboard/pages/single, (8) SEARCH_INDEX_AREA_METHOD parameter to index.php/dashboard/system/seo/searchindex/updated, (9) unit parameter to index.php/dashboard/system/optimization/jobs/job_scheduled, (10) register_notification_email parameter to index.php/dashboard/system/registration/open/1, or (11) PATH_INFO to index.php/dashboard/extend/connect/."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "M\u00faltiples vulnerabilidades de XSS en concrete5 anterior a 5.7.4 permiten a atacantes remotos inyectar secuencias de comandos web arbitrarios o HTML a trav\u00e9s (1) del par\u00e1metro banned_word[] en index.php/dashboard/system/conversations/bannedwords/success, (2) del par\u00e1metro channel en index.php/dashboard/reports/logs/view, (3) del par\u00e1metro accessType en index.php/tools/required/permissions/access_entity, (4) del par\u00e1metro msCountry en index.php/dashboard/system/multilingual/setup/load_icon, del par\u00e1metro arHandle en (5) design/submit o (6) design en index.php/ccm/system/dialogs/area/design/submit, (7) pageURL en index.php/dashboard/pages/single, (8) del par\u00e1metro SEARCH_INDEX_AREA_METHOD en index.php/dashboard/system/seo/searchindex/updated, (9) del par\u00e1metro unit en index.php/dashboard/system/optimization/jobs/job_scheduled, (10) del par\u00e1metro register_notification_email en index.php/dashboard/system/registration/open/1, o (11) PATH_INFO en index.php/dashboard/extend/connect/."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concrete5:concrete5:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "5.7.3.1",
+                                        "matchCriteriaId": "FEF6220B-2F6B-4D7E-AF63-E3A02F1FDB48"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://packetstormsecurity.com/files/131882/Concrete5-5.7.3.1-Cross-Site-Scripting.html",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit"
+                        ]
+                    },
+                    {
+                        "url": "http://seclists.org/fulldisclosure/2015/May/51",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit"
+                        ]
+                    },
+                    {
+                        "url": "http://www.securityfocus.com/archive/1/535531/100/0/threaded",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://www.securityfocus.com/bid/74651",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "https://www.concrete5.org/documentation/developers/5.7/background/version-history/5-7-4-release-notes/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch",
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.netsparker.com/cve-2015-2250-multiple-xss-vulnerabilities-identified-in-concrete5/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2015-3989",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2015-05-15T18:59:02.963",
+                "lastModified": "2016-12-06T03:01:46.933",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Multiple cross-site scripting (XSS) vulnerabilities in concrete5 before 5.7.4 allow remote attackers to inject arbitrary web script or HTML via vectors related to private messages or other unspecified vectors."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "M\u00faltiples vulnerabilidades de XSS en concrete5 anterior a 5.7.4 permiten a atacantes remotos inyectaqr secuencias de comandos web arbitrarios o HTML a trav\u00e9s de vectores relacionados con mensajes privados u otros vectores no especificados."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concrete5:concrete5:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "5.7.3.1",
+                                        "matchCriteriaId": "FEF6220B-2F6B-4D7E-AF63-E3A02F1FDB48"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://www.securityfocus.com/bid/74699",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "https://www.concrete5.org/documentation/developers/5.7/background/version-history/5-7-4-release-notes/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch",
+                            "Vendor Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2017-6905",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2017-03-15T00:59:00.160",
+                "lastModified": "2017-03-23T17:43:09.240",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "An issue was discovered in concrete5 <= 5.6.3.4. The vulnerability exists due to insufficient filtration of user-supplied data (disable_choose) passed to the \"concrete5-legacy-master/web/concrete/tools/files/search_dialog.php\" URL. An attacker could execute arbitrary HTML and script code in a browser in the context of the vulnerable website."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Se ha descubierto un problema en concrete5 <= 5.6.3.4. La vulnerabilidad existe debido a filtraci\u00f3n insuficiente de datos suministrados por el usuario (disable_choose) pasados a la URL \"concrete5-legacy-master/web/concrete/tools/files/search_dialog.php\". Un atacante podr\u00eda ejecutar c\u00f3digo HTML y secuencia de comandos arbitrario en un buscador en el contexto del sitio web vulnerable."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.1,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concrete5:concrete5:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "5.6.3.4",
+                                        "matchCriteriaId": "5C3593B0-7408-4C7B-B710-EF2110817B77"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://www.securityfocus.com/bid/96891",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory",
+                            "VDB Entry"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/Mnkras/concrete5/commit/3eab581ab670982676e9dabddc9ad439391174ee",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Issue Tracking",
+                            "Patch"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/concrete5/concrete5-legacy/commit/2b16399ce3e962a8c27fb3ec14bc8e855d65b63a",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Issue Tracking",
+                            "Patch"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/concrete5/concrete5-legacy/issues/1947",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Issue Tracking"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2017-6908",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2017-03-15T00:59:00.253",
+                "lastModified": "2017-03-22T13:38:42.070",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "An issue was discovered in concrete5 <= 5.6.3.4. The vulnerability exists due to insufficient filtration of user-supplied data (fID) passed to the \"concrete5-legacy-master/web/concrete/tools/files/selector_data.php\" URL. An attacker could execute arbitrary HTML and script code in a browser in the context of the vulnerable website."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Se ha descubierto un problema en concrete5 <= 5.6.3.4. La vulnerabilidad existe debido a filtraci\u00f3n insuficiente de datos suministrados por el usuario (fID) pasados a la URL \"concrete5-legacy-master/web/concrete/tools/files/selector_data.php\". Un atacante podr\u00eda ejecutar c\u00f3digo HTML y secuencia de comandos arbitrario en un buscador en el contexto del sitio web vulnerable."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.1,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:concrete5:concrete5:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "5.6.3.3",
+                                        "matchCriteriaId": "7D6FA92E-3131-47C7-9D41-725ACA502217"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://www.securityfocus.com/bid/96891",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory",
+                            "VDB Entry"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/concrete5/concrete5-legacy/commit/62046f511fc02ad783ad170404c80db3c69f0408",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/concrete5/concrete5-legacy/issues/1948",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

@@ -1,1 +1,1623 @@
-{"resultsPerPage":12,"startIndex":0,"totalResults":12,"format":"NVD_CVE","version":"2.0","timestamp":"2024-04-30T10:43:36.800","vulnerabilities":[{"cve":{"id":"CVE-2016-1566","sourceIdentifier":"cve@mitre.org","published":"2017-02-02T15:59:00.140","lastModified":"2021-05-07T18:33:45.173","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Cross-site scripting (XSS) vulnerability in the file browser in Guacamole 0.9.8 and 0.9.9, when file transfer is enabled to a location shared by multiple users, allows remote authenticated users to inject arbitrary web script or HTML via a crafted filename.  NOTE: this vulnerability was fixed in guacamole.war on 2016-01-13, but the version number was not changed."},{"lang":"es","value":"Vulnerabilidad de XSS en el navegador de archivos de Guacamole 0.9.8 y 0.9.9, cuando la transferencia de archivos está habilitada en una ubicación compartida por varios usuarios, permite a usuarios remotos autenticados inyectar secuencias de comandos web o HTML arbitrarios a través de un nombre de archivo manipulado. NOTA: esta vulnerabilidad se corrigió en guacamole.war el 2016-01-13, pero no se cambió el número de versión."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.3,"impactScore":2.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:S\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"SINGLE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":3.5},"baseSeverity":"LOW","exploitabilityScore":6.8,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:apache:guacamole:0.9.8:*:*:*:*:*:*:*","matchCriteriaId":"499312E8-42AE-4250-B3E2-DAE773A72C0D"},{"vulnerable":true,"criteria":"cpe:2.3:a:apache:guacamole:0.9.9:*:*:*:*:*:*:*","matchCriteriaId":"DBACA320-E201-404A-9B7E-121ABACD5ED7"}]}]}],"references":[{"url":"https:\/\/sourceforge.net\/p\/guacamole\/news\/2016\/02\/security-advisory---stored-xss-cve-2016-1566--guac-1465\/","source":"cve@mitre.org","tags":["Third Party Advisory"]}]}},{"cve":{"id":"CVE-2017-3158","sourceIdentifier":"security@apache.org","published":"2018-01-18T20:29:00.257","lastModified":"2023-11-07T02:44:03.947","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"A race condition in Guacamole's terminal emulator in versions 0.9.5 through 0.9.10-incubating could allow writes of blocks of printed data to overlap. Such overlapping writes could cause packet data to be misread as the packet length, resulting in the remaining data being written beyond the end of a statically-allocated buffer."},{"lang":"es","value":"Una condición de carrera en el emulador de terminal Guacamole en versiones 0.9.5 hasta la versión 0.9.10-incubating podría permitir que se solapen escrituras de bloques de datos impresos. Estas escrituras solapadas podrían provocar que los datos del paquete se lean de forma incorrecta como la longitud del paquete, lo que resultaría en que los datos que quedan se escribirían más allá del final de un búfer asignado estáticamente."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:H\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"HIGH","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":8.1,"baseSeverity":"HIGH"},"exploitabilityScore":2.2,"impactScore":5.9}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":6.8},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-362"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:apache:guacamole:*:*:*:*:*:*:*:*","versionEndIncluding":"0.9.9","matchCriteriaId":"7CA16CBF-F157-4C52-9B9C-7FCF4E8F2B36"},{"vulnerable":true,"criteria":"cpe:2.3:a:apache:guacamole:0.9.10-incubating:*:*:*:*:*:*:*","matchCriteriaId":"81FD0727-B3B1-462B-8D32-6EAAD3C4A348"}]}]}],"references":[{"url":"https:\/\/lists.apache.org\/thread.html\/b218d36bfdaf655d27382daec4dcd02ec717631f4aee8b7e4300ad65%40%3Cuser.guacamole.apache.org%3E","source":"security@apache.org"}]}},{"cve":{"id":"CVE-2018-1340","sourceIdentifier":"security@apache.org","published":"2019-02-07T22:29:00.287","lastModified":"2023-11-07T02:55:59.530","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"Prior to 1.0.0, Apache Guacamole used a cookie for client-side storage of the user's session token. This cookie lacked the \"secure\" flag, which could allow an attacker eavesdropping on the network to intercept the user's session token if unencrypted HTTP requests are made to the same domain."},{"lang":"es","value":"En versiones anteriores a la 1.0.0, Apache Guacamole empleó una cookie para el almacenamiento del lado del cliente del token de sesión del usuario. Esta cookie carecía del flag \"secure\", que podría permitir que un atacante escuche en la red para interceptar la sesión del usuario si se realizan peticiones HTTP no cifradas al mismo dominio."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":7.5,"baseSeverity":"HIGH"},"exploitabilityScore":3.9,"impactScore":3.6}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:N\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":5.0},"baseSeverity":"MEDIUM","exploitabilityScore":10.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-311"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:apache:guacamole:*:*:*:*:*:*:*:*","versionEndIncluding":"0.9.14","matchCriteriaId":"2E4787AD-4833-4AB1-A367-FC7A4E00D188"}]}]}],"references":[{"url":"http:\/\/www.securityfocus.com\/bid\/106768","source":"security@apache.org","tags":["Third Party Advisory"]},{"url":"https:\/\/lists.apache.org\/thread.html\/af1632e13dd9acf7537546660cae9143cbb10fdd2f9bb0832a690979%40%3Cannounce.guacamole.apache.org%3E","source":"security@apache.org"}]}},{"cve":{"id":"CVE-2019-19603","sourceIdentifier":"cve@mitre.org","published":"2019-12-09T19:15:14.710","lastModified":"2023-11-07T03:07:43.340","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"SQLite 3.30.1 mishandles certain SELECT statements with a nonexistent VIEW, leading to an application crash."},{"lang":"es","value":"SQLite 3.30.1 maneja mal ciertas declaraciones SELECT con una VISTA inexistente, lo que lleva a un bloqueo de la aplicación."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:N\/I:N\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"NONE","integrityImpact":"NONE","availabilityImpact":"HIGH","baseScore":7.5,"baseSeverity":"HIGH"},"exploitabilityScore":3.9,"impactScore":3.6}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:N\/I:N\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"NONE","availabilityImpact":"PARTIAL","baseScore":5.0},"baseSeverity":"MEDIUM","exploitabilityScore":10.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"NVD-CWE-noinfo"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:sqlite:sqlite:3.30.1:*:*:*:*:*:*:*","matchCriteriaId":"0175D7DA-13DD-44A4-91BB-77489F76C878"}]}]},{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:oracle:mysql_workbench:*:*:*:*:*:*:*:*","versionEndIncluding":"8.0.19","matchCriteriaId":"7B4DA1DD-9BC1-4D76-BB41-6E6D69838571"}]}]},{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:siemens:sinec_infrastructure_network_services:*:*:*:*:*:*:*:*","versionEndExcluding":"1.0.1.1","matchCriteriaId":"B0F46497-4AB0-49A7-9453-CC26837BF253"},{"vulnerable":true,"criteria":"cpe:2.3:a:siemens:sinec_infrastructure_network_services:1.0.1.1:*:*:*:*:*:*:*","matchCriteriaId":"E921362A-6421-4B18-B76D-FE6402FDD70D"}]}]},{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:apache:guacamole:1.3.0:-:*:*:*:*:*:*","matchCriteriaId":"2526DE35-521D-4709-A0E8-022B430F1AF5"}]}]},{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:netapp:cloud_backup:-:*:*:*:*:*:*:*","matchCriteriaId":"5C2089EE-5D7F-47EC-8EA5-0F69790564C4"},{"vulnerable":true,"criteria":"cpe:2.3:a:netapp:ontap_select_deploy_administration_utility:-:*:*:*:*:*:*:*","matchCriteriaId":"E7CF3019-975D-40BB-A8A4-894E62BD3797"}]}]}],"references":[{"url":"https:\/\/cert-portal.siemens.com\/productcert\/pdf\/ssa-389290.pdf","source":"cve@mitre.org","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/sqlite\/sqlite\/commit\/527cbd4a104cb93bf3994b3dd3619a6299a78b13","source":"cve@mitre.org","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/lists.apache.org\/thread.html\/rc713534b10f9daeee2e0990239fa407e2118e4aa9e88a7041177497c%40%3Cissues.guacamole.apache.org%3E","source":"cve@mitre.org"},{"url":"https:\/\/security.netapp.com\/advisory\/ntap-20191223-0001\/","source":"cve@mitre.org","tags":["Third Party Advisory"]},{"url":"https:\/\/usn.ubuntu.com\/4394-1\/","source":"cve@mitre.org","tags":["Third Party Advisory"]},{"url":"https:\/\/www.oracle.com\/security-alerts\/cpuapr2020.html","source":"cve@mitre.org","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/www.sqlite.org\/","source":"cve@mitre.org","tags":["Vendor Advisory"]}]}},{"cve":{"id":"CVE-2020-9497","sourceIdentifier":"security@apache.org","published":"2020-07-02T13:15:10.997","lastModified":"2023-11-07T03:26:55.990","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"Apache Guacamole 1.1.0 and older do not properly validate datareceived from RDP servers via static virtual channels. If a userconnects to a malicious or compromised RDP server, specially-craftedPDUs could result in disclosure of information within the memory ofthe guacd process handling the connection."},{"lang":"es","value":"Apache Guacamole versiones 1.1.0 y anteriores, no comprueban apropiadamente los datos recibidos desde servidores RDP por medio de canales virtuales estáticos. Si un usuario se conecta a un servidor RDP malicioso o comprometido, las PDU especialmente diseñadas podrían resultar en divulgación de información dentro de la memoria del proceso guacd que maneja la conexión"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:L\/AC:H\/PR:L\/UI:R\/S:U\/C:H\/I:N\/A:N","attackVector":"LOCAL","attackComplexity":"HIGH","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":4.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":0.8,"impactScore":3.6}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:L\/AC:H\/Au:N\/C:P\/I:N\/A:N","accessVector":"LOCAL","accessComplexity":"HIGH","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":1.2},"baseSeverity":"LOW","exploitabilityScore":1.9,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-20"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:apache:guacamole:*:*:*:*:*:*:*:*","versionEndIncluding":"1.1.0","matchCriteriaId":"10392618-48D8-4B41-8546-1123888661C7"}]}]},{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:o:fedoraproject:fedora:32:*:*:*:*:*:*:*","matchCriteriaId":"36D96259-24BD-44E2-96D9-78CE1D41F956"},{"vulnerable":true,"criteria":"cpe:2.3:o:fedoraproject:fedora:33:*:*:*:*:*:*:*","matchCriteriaId":"E460AA51-FCDA-46B9-AE97-E6676AA5E194"}]}]},{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:o:debian:debian_linux:9.0:*:*:*:*:*:*:*","matchCriteriaId":"DEECE5FC-CACF-4496-A3E7-164736409252"}]}]}],"references":[{"url":"https:\/\/kb.pulsesecure.net\/articles\/Pulse_Security_Advisories\/SA44525","source":"security@apache.org","tags":["Third Party Advisory"]},{"url":"https:\/\/lists.apache.org\/thread.html\/r066543f0565e97b27c0dfe27e93e8a387b99e1e35764000224ed96e7%40%3Cuser.guacamole.apache.org%3E","source":"security@apache.org"},{"url":"https:\/\/lists.apache.org\/thread.html\/r1125f3044a0946d1e7e6f125a6170b58d413ebd4a95157e4608041c7%40%3Cannounce.apache.org%3E","source":"security@apache.org"},{"url":"https:\/\/lists.apache.org\/thread.html\/r181b1d5b1acb31cfa69f41b2c86ed3a2cb0b5bc09c2cbd31e9e7c847%40%3Cuser.guacamole.apache.org%3E","source":"security@apache.org"},{"url":"https:\/\/lists.apache.org\/thread.html\/r3f071de70ea1facd3601e0fa894e6cadc960627ee7199437b5a56f7f%40%3Cannounce.apache.org%3E","source":"security@apache.org"},{"url":"https:\/\/lists.apache.org\/thread.html\/r65f75d3d65d1af68141f42071ebb27dda24af3e45570e593c1dbd81f%40%3Cannounce.guacamole.apache.org%3E","source":"security@apache.org","tags":["Mailing List","Vendor Advisory"]},{"url":"https:\/\/lists.apache.org\/thread.html\/r90890afea72a9571d666820b2fe5942a0a5f86be406fa31da3dd0922%40%3Cannounce.apache.org%3E","source":"security@apache.org"},{"url":"https:\/\/lists.debian.org\/debian-lts-announce\/2020\/11\/msg00010.html","source":"security@apache.org","tags":["Mailing List","Third Party Advisory"]},{"url":"https:\/\/lists.fedoraproject.org\/archives\/list\/package-announce%40lists.fedoraproject.org\/message\/TVV5K2X4EXSAVUUL7IJ3MUJ3ADWMVSBM\/","source":"security@apache.org"},{"url":"https:\/\/lists.fedoraproject.org\/archives\/list\/package-announce%40lists.fedoraproject.org\/message\/WNS7UHBOFV6JHWH5XOEZTE3BREGRSSQ3\/","source":"security@apache.org"},{"url":"https:\/\/research.checkpoint.com\/2020\/apache-guacamole-rce\/","source":"security@apache.org","tags":["Third Party Advisory"]}]}},{"cve":{"id":"CVE-2020-9498","sourceIdentifier":"security@apache.org","published":"2020-07-02T13:15:11.090","lastModified":"2023-11-07T03:26:56.067","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"Apache Guacamole 1.1.0 and older may mishandle pointers involved inprocessing data received via RDP static virtual channels. If a userconnects to a malicious or compromised RDP server, a series ofspecially-crafted PDUs could result in memory corruption, possiblyallowing arbitrary code to be executed with the privileges of therunning guacd process."},{"lang":"es","value":"Apache Guacamole versiones 1.1.0 y anteriores, pueden manejar inapropiadamente los punteros involucrados en el procesamiento de datos recibidos por medio de canales virtuales estáticos RDP. Si un usuario se conecta a un servidor RDP malicioso o comprometido, una serie de PDU especialmente diseñadas podrían resultar en corrupción en la memoria, posiblemente permitiendo una ejecución de código arbitraria con los privilegios del proceso guacd en ejecución"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:L\/AC:H\/PR:L\/UI:R\/S:U\/C:H\/I:H\/A:H","attackVector":"LOCAL","attackComplexity":"HIGH","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":6.7,"baseSeverity":"MEDIUM"},"exploitabilityScore":0.8,"impactScore":5.9}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:L\/AC:H\/Au:N\/C:C\/I:C\/A:C","accessVector":"LOCAL","accessComplexity":"HIGH","authentication":"NONE","confidentialityImpact":"COMPLETE","integrityImpact":"COMPLETE","availabilityImpact":"COMPLETE","baseScore":6.2},"baseSeverity":"MEDIUM","exploitabilityScore":1.9,"impactScore":10.0,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-787"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:apache:guacamole:*:*:*:*:*:*:*:*","versionEndIncluding":"1.1.0","matchCriteriaId":"10392618-48D8-4B41-8546-1123888661C7"}]}]},{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:o:fedoraproject:fedora:32:*:*:*:*:*:*:*","matchCriteriaId":"36D96259-24BD-44E2-96D9-78CE1D41F956"},{"vulnerable":true,"criteria":"cpe:2.3:o:fedoraproject:fedora:33:*:*:*:*:*:*:*","matchCriteriaId":"E460AA51-FCDA-46B9-AE97-E6676AA5E194"}]}]},{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:o:debian:debian_linux:9.0:*:*:*:*:*:*:*","matchCriteriaId":"DEECE5FC-CACF-4496-A3E7-164736409252"}]}]}],"references":[{"url":"https:\/\/kb.pulsesecure.net\/articles\/Pulse_Security_Advisories\/SA44525","source":"security@apache.org","tags":["Third Party Advisory"]},{"url":"https:\/\/lists.apache.org\/thread.html\/r1125f3044a0946d1e7e6f125a6170b58d413ebd4a95157e4608041c7%40%3Cannounce.apache.org%3E","source":"security@apache.org"},{"url":"https:\/\/lists.apache.org\/thread.html\/r26fb170edebff842c74aacdb1333c1338f0e19e5ec7854d72e4680fc%40%3Cannounce.apache.org%3E","source":"security@apache.org"},{"url":"https:\/\/lists.apache.org\/thread.html\/r90890afea72a9571d666820b2fe5942a0a5f86be406fa31da3dd0922%40%3Cannounce.apache.org%3E","source":"security@apache.org"},{"url":"https:\/\/lists.apache.org\/thread.html\/rff824b38ebd2fddc726b816f0e509696b83b9f78979d0cd021ca623b%40%3Cannounce.guacamole.apache.org%3E","source":"security@apache.org","tags":["Mailing List","Third Party Advisory"]},{"url":"https:\/\/lists.debian.org\/debian-lts-announce\/2020\/11\/msg00010.html","source":"security@apache.org","tags":["Mailing List","Third Party Advisory"]},{"url":"https:\/\/lists.fedoraproject.org\/archives\/list\/package-announce%40lists.fedoraproject.org\/message\/TVV5K2X4EXSAVUUL7IJ3MUJ3ADWMVSBM\/","source":"security@apache.org"},{"url":"https:\/\/lists.fedoraproject.org\/archives\/list\/package-announce%40lists.fedoraproject.org\/message\/WNS7UHBOFV6JHWH5XOEZTE3BREGRSSQ3\/","source":"security@apache.org"},{"url":"https:\/\/research.checkpoint.com\/2020\/apache-guacamole-rce\/","source":"security@apache.org","tags":["Third Party Advisory"]}]}},{"cve":{"id":"CVE-2020-11997","sourceIdentifier":"security@apache.org","published":"2021-01-19T22:15:12.317","lastModified":"2021-01-22T20:26:54.763","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Apache Guacamole 1.2.0 and earlier do not consistently restrict access to connection history based on user visibility. If multiple users share access to the same connection, those users may be able to see which other users have accessed that connection, as well as the IP addresses from which that connection was accessed, even if those users do not otherwise have permission to see other users."},{"lang":"es","value":"Apache Guacamole versiones 1.2.0 y anteriores, no restringen constantemente el acceso al historial de conexiones según la visibilidad del usuario.&#xa0;Si múltiples usuarios comparten el acceso a la misma conexión, esos usuarios pueden ser capaz de visualizar qué otros usuarios han accedido a esa conexión, así como las direcciones IP desde las que se accedió a esa conexión, inclusive si esos usuarios no tienen permiso para visualizar otros usuarios"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:L\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":4.3,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":1.4}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:S\/C:P\/I:N\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"SINGLE","confidentialityImpact":"PARTIAL","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":4.0},"baseSeverity":"MEDIUM","exploitabilityScore":8.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-276"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:apache:guacamole:*:*:*:*:*:*:*:*","versionEndIncluding":"1.2.0","matchCriteriaId":"79BE7DF7-26AD-410B-8037-8153371A53B0"}]}]}],"references":[{"url":"https:\/\/lists.apache.org\/thread.html\/r1a9ae9d1608c9f846875c4191cd738f95543d1be06b52dc1320e8117%40%3Cannounce.guacamole.apache.org%3E","source":"security@apache.org","tags":["Mailing List","Vendor Advisory"]}]}},{"cve":{"id":"CVE-2021-41767","sourceIdentifier":"security@apache.org","published":"2022-01-11T22:15:07.570","lastModified":"2022-01-14T16:40:46.483","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Apache Guacamole 1.3.0 and older may incorrectly include a private tunnel identifier in the non-private details of some REST responses. This may allow an authenticated user who already has permission to access a particular connection to read from or interact with another user's active use of that same connection."},{"lang":"es","value":"Apache Guacamole versiones 1.3.0 y anteriores, pueden incluir incorrectamente un identificador de túnel privado en los detalles no privados de algunas respuestas REST. Esto puede permitir que un usuario autenticado que ya presenta permiso para acceder a una conexión particular lea o interactúe con el uso activo de otro usuario de esa misma conexión"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":6.5,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":3.6}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:S\/C:P\/I:N\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"SINGLE","confidentialityImpact":"PARTIAL","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":4.0},"baseSeverity":"MEDIUM","exploitabilityScore":8.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-200"}]},{"source":"security@apache.org","type":"Secondary","description":[{"lang":"en","value":"CWE-200"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:apache:guacamole:*:*:*:*:*:*:*:*","versionEndIncluding":"1.3.0","matchCriteriaId":"F3A733CC-43E3-4A1C-BF40-54C1113B8B5C"}]}]}],"references":[{"url":"http:\/\/www.openwall.com\/lists\/oss-security\/2022\/01\/11\/6","source":"security@apache.org","tags":["Mailing List","Third Party Advisory"]},{"url":"https:\/\/lists.apache.org\/thread\/5l31k4jmzdsfz0xt8osrbl878gb3b7ro","source":"security@apache.org","tags":["Mailing List","Vendor Advisory"]}]}},{"cve":{"id":"CVE-2021-43999","sourceIdentifier":"security@apache.org","published":"2022-01-11T22:15:07.627","lastModified":"2022-01-14T16:16:49.483","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Apache Guacamole 1.2.0 and 1.3.0 do not properly validate responses received from a SAML identity provider. If SAML support is enabled, this may allow a malicious user to assume the identity of another Guacamole user."},{"lang":"es","value":"Apache Guacamole versiones 1.2.0 y 1.3.0, no comprueban correctamente las respuestas recibidas de un proveedor de identidad SAML. Si la compatibilidad con SAML está habilitada, esto puede permitir que un usuario malicioso asuma la identidad de otro usuario de Guacamole"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":8.8,"baseSeverity":"HIGH"},"exploitabilityScore":2.8,"impactScore":5.9}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:S\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"SINGLE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":6.0},"baseSeverity":"MEDIUM","exploitabilityScore":6.8,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-287"}]},{"source":"security@apache.org","type":"Secondary","description":[{"lang":"en","value":"CWE-287"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:apache:guacamole:1.2.0:-:*:*:*:*:*:*","matchCriteriaId":"19C6CFCC-0796-4201-BEF4-78A6E5A11C85"},{"vulnerable":true,"criteria":"cpe:2.3:a:apache:guacamole:1.3.0:-:*:*:*:*:*:*","matchCriteriaId":"2526DE35-521D-4709-A0E8-022B430F1AF5"}]}]}],"references":[{"url":"http:\/\/www.openwall.com\/lists\/oss-security\/2022\/01\/11\/7","source":"security@apache.org","tags":["Mailing List","Third Party Advisory"]},{"url":"https:\/\/lists.apache.org\/thread\/4dt9h5mo4o9rxlgxm3rp8wfqdtdjn2z9","source":"security@apache.org","tags":["Mailing List","Vendor Advisory"]}]}},{"cve":{"id":"CVE-2023-30575","sourceIdentifier":"security@apache.org","published":"2023-06-07T09:15:09.993","lastModified":"2023-06-15T08:15:09.223","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"Apache Guacamole 1.5.1 and older may incorrectly calculate the lengths of instruction elements sent during the Guacamole protocol handshake, potentially allowing an attacker to inject Guacamole instructions during the handshake through specially-crafted data.\n\n"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:N\/I:H\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"NONE","integrityImpact":"HIGH","availabilityImpact":"NONE","baseScore":7.5,"baseSeverity":"HIGH"},"exploitabilityScore":3.9,"impactScore":3.6},{"source":"security@apache.org","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:N\/I:H\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"NONE","integrityImpact":"HIGH","availabilityImpact":"NONE","baseScore":6.5,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":3.6}]},"weaknesses":[{"source":"security@apache.org","type":"Primary","description":[{"lang":"en","value":"CWE-131"}]},{"source":"nvd@nist.gov","type":"Secondary","description":[{"lang":"en","value":"CWE-131"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:apache:guacamole:*:*:*:*:*:*:*:*","versionEndExcluding":"1.5.2","matchCriteriaId":"AE5D0D8B-CE5F-4168-A1CB-4872610F5B67"}]}]}],"references":[{"url":"https:\/\/lists.apache.org\/thread\/tn63n2lon0h5p45oft834t1dqvvxownv","source":"security@apache.org","tags":["Mailing List","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2023-30576","sourceIdentifier":"security@apache.org","published":"2023-06-07T09:15:10.080","lastModified":"2023-06-14T14:33:16.713","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Apache Guacamole 0.9.10 through 1.5.1 may continue to reference a freed RDP audio input buffer. Depending on timing, this may allow an attacker to execute arbitrary code with the privileges of the guacd process.\n\n"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:H\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"HIGH","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":8.1,"baseSeverity":"HIGH"},"exploitabilityScore":2.2,"impactScore":5.9},{"source":"security@apache.org","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:H\/PR:L\/UI:N\/S:U\/C:H\/I:H\/A:N","attackVector":"NETWORK","attackComplexity":"HIGH","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"NONE","baseScore":6.8,"baseSeverity":"MEDIUM"},"exploitabilityScore":1.6,"impactScore":5.2}]},"weaknesses":[{"source":"security@apache.org","type":"Primary","description":[{"lang":"en","value":"CWE-416"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:apache:guacamole:*:*:*:*:*:*:*:*","versionStartIncluding":"0.9.0","versionEndExcluding":"1.5.2","matchCriteriaId":"E7970D34-6918-473C-9F47-674134658E48"}]}]}],"references":[{"url":"https:\/\/lists.apache.org\/thread\/vgtvxb3w7mm84hx6v8dfc0onsoz05gb6","source":"security@apache.org","tags":["Mailing List","Vendor Advisory"]}]}},{"cve":{"id":"CVE-2023-43826","sourceIdentifier":"security@apache.org","published":"2023-12-19T20:15:08.300","lastModified":"2023-12-22T20:45:28.967","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Apache Guacamole 1.5.3 and older do not consistently ensure that values received from a VNC server will not result in integer overflow. If a user connects to a malicious or compromised VNC server, specially-crafted data could result in memory corruption, possibly allowing arbitrary code to be executed with the privileges of the running guacd process.\n\nUsers are recommended to upgrade to version 1.5.4, which fixes this issue.\n\n"},{"lang":"es","value":"Apache Guacamole 1.5.3 y anteriores no garantizan sistemáticamente que los valores recibidos de un servidor VNC no produzcan un desbordamiento de enteros. Si un usuario se conecta a un servidor VNC malicioso o comprometido, los datos especialmente manipulados podrían dañar la memoria, permitiendo posiblemente que se ejecute código arbitrario con los privilegios del proceso guacd en ejecución. Se recomienda a los usuarios actualizar a la versión 1.5.4, que soluciona este problema."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":8.8,"baseSeverity":"HIGH"},"exploitabilityScore":2.8,"impactScore":5.9},{"source":"security@apache.org","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:H\/PR:L\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"HIGH","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":7.5,"baseSeverity":"HIGH"},"exploitabilityScore":1.6,"impactScore":5.9}]},"weaknesses":[{"source":"security@apache.org","type":"Primary","description":[{"lang":"en","value":"CWE-190"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:apache:guacamole:*:*:*:*:*:*:*:*","versionEndIncluding":"1.5.3","matchCriteriaId":"BCF38330-2A18-4595-BDB4-0789A9F4BD2C"}]}]}],"references":[{"url":"http:\/\/www.openwall.com\/lists\/oss-security\/2023\/12\/19\/4","source":"security@apache.org","tags":["Mailing List","Third Party Advisory"]},{"url":"https:\/\/lists.apache.org\/thread\/23gzwftpfgtq97tj6ttmbclry53kmwv6","source":"security@apache.org","tags":["Mailing List","Vendor Advisory"]}]}}]}
+{
+    "resultsPerPage": 12,
+    "startIndex": 0,
+    "totalResults": 12,
+    "format": "NVD_CVE",
+    "version": "2.0",
+    "timestamp": "2024-04-30T10:43:36.800",
+    "vulnerabilities": [
+        {
+            "cve": {
+                "id": "CVE-2016-1566",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2017-02-02T15:59:00.140",
+                "lastModified": "2021-05-07T18:33:45.173",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Cross-site scripting (XSS) vulnerability in the file browser in Guacamole 0.9.8 and 0.9.9, when file transfer is enabled to a location shared by multiple users, allows remote authenticated users to inject arbitrary web script or HTML via a crafted filename.  NOTE: this vulnerability was fixed in guacamole.war on 2016-01-13, but the version number was not changed."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Vulnerabilidad de XSS en el navegador de archivos de Guacamole 0.9.8 y 0.9.9, cuando la transferencia de archivos est\u00e1 habilitada en una ubicaci\u00f3n compartida por varios usuarios, permite a usuarios remotos autenticados inyectar secuencias de comandos web o HTML arbitrarios a trav\u00e9s de un nombre de archivo manipulado. NOTA: esta vulnerabilidad se corrigi\u00f3 en guacamole.war el 2016-01-13, pero no se cambi\u00f3 el n\u00famero de versi\u00f3n."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 3.5
+                            },
+                            "baseSeverity": "LOW",
+                            "exploitabilityScore": 6.8,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:apache:guacamole:0.9.8:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "499312E8-42AE-4250-B3E2-DAE773A72C0D"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:apache:guacamole:0.9.9:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "DBACA320-E201-404A-9B7E-121ABACD5ED7"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://sourceforge.net/p/guacamole/news/2016/02/security-advisory---stored-xss-cve-2016-1566--guac-1465/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2017-3158",
+                "sourceIdentifier": "security@apache.org",
+                "published": "2018-01-18T20:29:00.257",
+                "lastModified": "2023-11-07T02:44:03.947",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "A race condition in Guacamole's terminal emulator in versions 0.9.5 through 0.9.10-incubating could allow writes of blocks of printed data to overlap. Such overlapping writes could cause packet data to be misread as the packet length, resulting in the remaining data being written beyond the end of a statically-allocated buffer."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Una condici\u00f3n de carrera en el emulador de terminal Guacamole en versiones 0.9.5 hasta la versi\u00f3n 0.9.10-incubating podr\u00eda permitir que se solapen escrituras de bloques de datos impresos. Estas escrituras solapadas podr\u00edan provocar que los datos del paquete se lean de forma incorrecta como la longitud del paquete, lo que resultar\u00eda en que los datos que quedan se escribir\u00edan m\u00e1s all\u00e1 del final de un b\u00fafer asignado est\u00e1ticamente."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "HIGH",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 8.1,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.2,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 6.8
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-362"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:apache:guacamole:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "0.9.9",
+                                        "matchCriteriaId": "7CA16CBF-F157-4C52-9B9C-7FCF4E8F2B36"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:apache:guacamole:0.9.10-incubating:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "81FD0727-B3B1-462B-8D32-6EAAD3C4A348"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://lists.apache.org/thread.html/b218d36bfdaf655d27382daec4dcd02ec717631f4aee8b7e4300ad65%40%3Cuser.guacamole.apache.org%3E",
+                        "source": "security@apache.org"
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2018-1340",
+                "sourceIdentifier": "security@apache.org",
+                "published": "2019-02-07T22:29:00.287",
+                "lastModified": "2023-11-07T02:55:59.530",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Prior to 1.0.0, Apache Guacamole used a cookie for client-side storage of the user's session token. This cookie lacked the \"secure\" flag, which could allow an attacker eavesdropping on the network to intercept the user's session token if unencrypted HTTP requests are made to the same domain."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "En versiones anteriores a la 1.0.0, Apache Guacamole emple\u00f3 una cookie para el almacenamiento del lado del cliente del token de sesi\u00f3n del usuario. Esta cookie carec\u00eda del flag \"secure\", que podr\u00eda permitir que un atacante escuche en la red para interceptar la sesi\u00f3n del usuario si se realizan peticiones HTTP no cifradas al mismo dominio."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 7.5,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 3.6
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-311"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:apache:guacamole:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "0.9.14",
+                                        "matchCriteriaId": "2E4787AD-4833-4AB1-A367-FC7A4E00D188"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://www.securityfocus.com/bid/106768",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/af1632e13dd9acf7537546660cae9143cbb10fdd2f9bb0832a690979%40%3Cannounce.guacamole.apache.org%3E",
+                        "source": "security@apache.org"
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2019-19603",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2019-12-09T19:15:14.710",
+                "lastModified": "2023-11-07T03:07:43.340",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "SQLite 3.30.1 mishandles certain SELECT statements with a nonexistent VIEW, leading to an application crash."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "SQLite 3.30.1 maneja mal ciertas declaraciones SELECT con una VISTA inexistente, lo que lleva a un bloqueo de la aplicaci\u00f3n."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 7.5,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 3.6
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 5.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "NVD-CWE-noinfo"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:sqlite:sqlite:3.30.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "0175D7DA-13DD-44A4-91BB-77489F76C878"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:oracle:mysql_workbench:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "8.0.19",
+                                        "matchCriteriaId": "7B4DA1DD-9BC1-4D76-BB41-6E6D69838571"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:sinec_infrastructure_network_services:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "1.0.1.1",
+                                        "matchCriteriaId": "B0F46497-4AB0-49A7-9453-CC26837BF253"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:siemens:sinec_infrastructure_network_services:1.0.1.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "E921362A-6421-4B18-B76D-FE6402FDD70D"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:apache:guacamole:1.3.0:-:*:*:*:*:*:*",
+                                        "matchCriteriaId": "2526DE35-521D-4709-A0E8-022B430F1AF5"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:netapp:cloud_backup:-:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "5C2089EE-5D7F-47EC-8EA5-0F69790564C4"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:netapp:ontap_select_deploy_administration_utility:-:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "E7CF3019-975D-40BB-A8A4-894E62BD3797"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-389290.pdf",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/sqlite/sqlite/commit/527cbd4a104cb93bf3994b3dd3619a6299a78b13",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/rc713534b10f9daeee2e0990239fa407e2118e4aa9e88a7041177497c%40%3Cissues.guacamole.apache.org%3E",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "https://security.netapp.com/advisory/ntap-20191223-0001/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://usn.ubuntu.com/4394-1/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.oracle.com/security-alerts/cpuapr2020.html",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.sqlite.org/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Vendor Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2020-9497",
+                "sourceIdentifier": "security@apache.org",
+                "published": "2020-07-02T13:15:10.997",
+                "lastModified": "2023-11-07T03:26:55.990",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Apache Guacamole 1.1.0 and older do not properly validate datareceived from RDP servers via static virtual channels. If a userconnects to a malicious or compromised RDP server, specially-craftedPDUs could result in disclosure of information within the memory ofthe guacd process handling the connection."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Apache Guacamole versiones 1.1.0 y anteriores, no comprueban apropiadamente los datos recibidos desde servidores RDP por medio de canales virtuales est\u00e1ticos. Si un usuario se conecta a un servidor RDP malicioso o comprometido, las PDU especialmente dise\u00f1adas podr\u00edan resultar en divulgaci\u00f3n de informaci\u00f3n dentro de la memoria del proceso guacd que maneja la conexi\u00f3n"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:H/I:N/A:N",
+                                "attackVector": "LOCAL",
+                                "attackComplexity": "HIGH",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 0.8,
+                            "impactScore": 3.6
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:L/AC:H/Au:N/C:P/I:N/A:N",
+                                "accessVector": "LOCAL",
+                                "accessComplexity": "HIGH",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 1.2
+                            },
+                            "baseSeverity": "LOW",
+                            "exploitabilityScore": 1.9,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-20"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:apache:guacamole:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "1.1.0",
+                                        "matchCriteriaId": "10392618-48D8-4B41-8546-1123888661C7"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:fedoraproject:fedora:32:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "36D96259-24BD-44E2-96D9-78CE1D41F956"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:fedoraproject:fedora:33:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "E460AA51-FCDA-46B9-AE97-E6676AA5E194"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:debian:debian_linux:9.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "DEECE5FC-CACF-4496-A3E7-164736409252"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://kb.pulsesecure.net/articles/Pulse_Security_Advisories/SA44525",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/r066543f0565e97b27c0dfe27e93e8a387b99e1e35764000224ed96e7%40%3Cuser.guacamole.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/r1125f3044a0946d1e7e6f125a6170b58d413ebd4a95157e4608041c7%40%3Cannounce.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/r181b1d5b1acb31cfa69f41b2c86ed3a2cb0b5bc09c2cbd31e9e7c847%40%3Cuser.guacamole.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/r3f071de70ea1facd3601e0fa894e6cadc960627ee7199437b5a56f7f%40%3Cannounce.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/r65f75d3d65d1af68141f42071ebb27dda24af3e45570e593c1dbd81f%40%3Cannounce.guacamole.apache.org%3E",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Mailing List",
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/r90890afea72a9571d666820b2fe5942a0a5f86be406fa31da3dd0922%40%3Cannounce.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.debian.org/debian-lts-announce/2020/11/msg00010.html",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Mailing List",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/TVV5K2X4EXSAVUUL7IJ3MUJ3ADWMVSBM/",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/WNS7UHBOFV6JHWH5XOEZTE3BREGRSSQ3/",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://research.checkpoint.com/2020/apache-guacamole-rce/",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2020-9498",
+                "sourceIdentifier": "security@apache.org",
+                "published": "2020-07-02T13:15:11.090",
+                "lastModified": "2023-11-07T03:26:56.067",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Apache Guacamole 1.1.0 and older may mishandle pointers involved inprocessing data received via RDP static virtual channels. If a userconnects to a malicious or compromised RDP server, a series ofspecially-crafted PDUs could result in memory corruption, possiblyallowing arbitrary code to be executed with the privileges of therunning guacd process."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Apache Guacamole versiones 1.1.0 y anteriores, pueden manejar inapropiadamente los punteros involucrados en el procesamiento de datos recibidos por medio de canales virtuales est\u00e1ticos RDP. Si un usuario se conecta a un servidor RDP malicioso o comprometido, una serie de PDU especialmente dise\u00f1adas podr\u00edan resultar en corrupci\u00f3n en la memoria, posiblemente permitiendo una ejecuci\u00f3n de c\u00f3digo arbitraria con los privilegios del proceso guacd en ejecuci\u00f3n"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H",
+                                "attackVector": "LOCAL",
+                                "attackComplexity": "HIGH",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 6.7,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 0.8,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:L/AC:H/Au:N/C:C/I:C/A:C",
+                                "accessVector": "LOCAL",
+                                "accessComplexity": "HIGH",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "COMPLETE",
+                                "integrityImpact": "COMPLETE",
+                                "availabilityImpact": "COMPLETE",
+                                "baseScore": 6.2
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 1.9,
+                            "impactScore": 10.0,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-787"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:apache:guacamole:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "1.1.0",
+                                        "matchCriteriaId": "10392618-48D8-4B41-8546-1123888661C7"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:fedoraproject:fedora:32:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "36D96259-24BD-44E2-96D9-78CE1D41F956"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:fedoraproject:fedora:33:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "E460AA51-FCDA-46B9-AE97-E6676AA5E194"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:debian:debian_linux:9.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "DEECE5FC-CACF-4496-A3E7-164736409252"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://kb.pulsesecure.net/articles/Pulse_Security_Advisories/SA44525",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/r1125f3044a0946d1e7e6f125a6170b58d413ebd4a95157e4608041c7%40%3Cannounce.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/r26fb170edebff842c74aacdb1333c1338f0e19e5ec7854d72e4680fc%40%3Cannounce.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/r90890afea72a9571d666820b2fe5942a0a5f86be406fa31da3dd0922%40%3Cannounce.apache.org%3E",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread.html/rff824b38ebd2fddc726b816f0e509696b83b9f78979d0cd021ca623b%40%3Cannounce.guacamole.apache.org%3E",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Mailing List",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://lists.debian.org/debian-lts-announce/2020/11/msg00010.html",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Mailing List",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/TVV5K2X4EXSAVUUL7IJ3MUJ3ADWMVSBM/",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/WNS7UHBOFV6JHWH5XOEZTE3BREGRSSQ3/",
+                        "source": "security@apache.org"
+                    },
+                    {
+                        "url": "https://research.checkpoint.com/2020/apache-guacamole-rce/",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2020-11997",
+                "sourceIdentifier": "security@apache.org",
+                "published": "2021-01-19T22:15:12.317",
+                "lastModified": "2021-01-22T20:26:54.763",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Apache Guacamole 1.2.0 and earlier do not consistently restrict access to connection history based on user visibility. If multiple users share access to the same connection, those users may be able to see which other users have accessed that connection, as well as the IP addresses from which that connection was accessed, even if those users do not otherwise have permission to see other users."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Apache Guacamole versiones 1.2.0 y anteriores, no restringen constantemente el acceso al historial de conexiones seg\u00fan la visibilidad del usuario.&#xa0;Si m\u00faltiples usuarios comparten el acceso a la misma conexi\u00f3n, esos usuarios pueden ser capaz de visualizar qu\u00e9 otros usuarios han accedido a esa conexi\u00f3n, as\u00ed como las direcciones IP desde las que se accedi\u00f3 a esa conexi\u00f3n, inclusive si esos usuarios no tienen permiso para visualizar otros usuarios"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 1.4
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:S/C:P/I:N/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-276"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:apache:guacamole:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "1.2.0",
+                                        "matchCriteriaId": "79BE7DF7-26AD-410B-8037-8153371A53B0"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://lists.apache.org/thread.html/r1a9ae9d1608c9f846875c4191cd738f95543d1be06b52dc1320e8117%40%3Cannounce.guacamole.apache.org%3E",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Mailing List",
+                            "Vendor Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-41767",
+                "sourceIdentifier": "security@apache.org",
+                "published": "2022-01-11T22:15:07.570",
+                "lastModified": "2022-01-14T16:40:46.483",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Apache Guacamole 1.3.0 and older may incorrectly include a private tunnel identifier in the non-private details of some REST responses. This may allow an authenticated user who already has permission to access a particular connection to read from or interact with another user's active use of that same connection."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Apache Guacamole versiones 1.3.0 y anteriores, pueden incluir incorrectamente un identificador de t\u00fanel privado en los detalles no privados de algunas respuestas REST. Esto puede permitir que un usuario autenticado que ya presenta permiso para acceder a una conexi\u00f3n particular lea o interact\u00fae con el uso activo de otro usuario de esa misma conexi\u00f3n"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.5,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 3.6
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:S/C:P/I:N/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-200"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security@apache.org",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-200"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:apache:guacamole:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "1.3.0",
+                                        "matchCriteriaId": "F3A733CC-43E3-4A1C-BF40-54C1113B8B5C"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://www.openwall.com/lists/oss-security/2022/01/11/6",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Mailing List",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread/5l31k4jmzdsfz0xt8osrbl878gb3b7ro",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Mailing List",
+                            "Vendor Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-43999",
+                "sourceIdentifier": "security@apache.org",
+                "published": "2022-01-11T22:15:07.627",
+                "lastModified": "2022-01-14T16:16:49.483",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Apache Guacamole 1.2.0 and 1.3.0 do not properly validate responses received from a SAML identity provider. If SAML support is enabled, this may allow a malicious user to assume the identity of another Guacamole user."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Apache Guacamole versiones 1.2.0 y 1.3.0, no comprueban correctamente las respuestas recibidas de un proveedor de identidad SAML. Si la compatibilidad con SAML est\u00e1 habilitada, esto puede permitir que un usuario malicioso asuma la identidad de otro usuario de Guacamole"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 8.8,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:S/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 6.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 6.8,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-287"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security@apache.org",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-287"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:apache:guacamole:1.2.0:-:*:*:*:*:*:*",
+                                        "matchCriteriaId": "19C6CFCC-0796-4201-BEF4-78A6E5A11C85"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:apache:guacamole:1.3.0:-:*:*:*:*:*:*",
+                                        "matchCriteriaId": "2526DE35-521D-4709-A0E8-022B430F1AF5"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://www.openwall.com/lists/oss-security/2022/01/11/7",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Mailing List",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread/4dt9h5mo4o9rxlgxm3rp8wfqdtdjn2z9",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Mailing List",
+                            "Vendor Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-30575",
+                "sourceIdentifier": "security@apache.org",
+                "published": "2023-06-07T09:15:09.993",
+                "lastModified": "2023-06-15T08:15:09.223",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Apache Guacamole 1.5.1 and older may incorrectly calculate the lengths of instruction elements sent during the Guacamole protocol handshake, potentially allowing an attacker to inject Guacamole instructions during the handshake through specially-crafted data.\n\n"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 7.5,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 3.6
+                        },
+                        {
+                            "source": "security@apache.org",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.5,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 3.6
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security@apache.org",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-131"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-131"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:apache:guacamole:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "1.5.2",
+                                        "matchCriteriaId": "AE5D0D8B-CE5F-4168-A1CB-4872610F5B67"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://lists.apache.org/thread/tn63n2lon0h5p45oft834t1dqvvxownv",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Mailing List",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-30576",
+                "sourceIdentifier": "security@apache.org",
+                "published": "2023-06-07T09:15:10.080",
+                "lastModified": "2023-06-14T14:33:16.713",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Apache Guacamole 0.9.10 through 1.5.1 may continue to reference a freed RDP audio input buffer. Depending on timing, this may allow an attacker to execute arbitrary code with the privileges of the guacd process.\n\n"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "HIGH",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 8.1,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.2,
+                            "impactScore": 5.9
+                        },
+                        {
+                            "source": "security@apache.org",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "HIGH",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.8,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 1.6,
+                            "impactScore": 5.2
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security@apache.org",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-416"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:apache:guacamole:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "0.9.0",
+                                        "versionEndExcluding": "1.5.2",
+                                        "matchCriteriaId": "E7970D34-6918-473C-9F47-674134658E48"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://lists.apache.org/thread/vgtvxb3w7mm84hx6v8dfc0onsoz05gb6",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Mailing List",
+                            "Vendor Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-43826",
+                "sourceIdentifier": "security@apache.org",
+                "published": "2023-12-19T20:15:08.300",
+                "lastModified": "2023-12-22T20:45:28.967",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Apache Guacamole 1.5.3 and older do not consistently ensure that values received from a VNC server will not result in integer overflow. If a user connects to a malicious or compromised VNC server, specially-crafted data could result in memory corruption, possibly allowing arbitrary code to be executed with the privileges of the running guacd process.\n\nUsers are recommended to upgrade to version 1.5.4, which fixes this issue.\n\n"
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Apache Guacamole 1.5.3 y anteriores no garantizan sistem\u00e1ticamente que los valores recibidos de un servidor VNC no produzcan un desbordamiento de enteros. Si un usuario se conecta a un servidor VNC malicioso o comprometido, los datos especialmente manipulados podr\u00edan da\u00f1ar la memoria, permitiendo posiblemente que se ejecute c\u00f3digo arbitrario con los privilegios del proceso guacd en ejecuci\u00f3n. Se recomienda a los usuarios actualizar a la versi\u00f3n 1.5.4, que soluciona este problema."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 8.8,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 5.9
+                        },
+                        {
+                            "source": "security@apache.org",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "HIGH",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 7.5,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 1.6,
+                            "impactScore": 5.9
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security@apache.org",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-190"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:apache:guacamole:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "1.5.3",
+                                        "matchCriteriaId": "BCF38330-2A18-4595-BDB4-0789A9F4BD2C"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://www.openwall.com/lists/oss-security/2023/12/19/4",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Mailing List",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://lists.apache.org/thread/23gzwftpfgtq97tj6ttmbclry53kmwv6",
+                        "source": "security@apache.org",
+                        "tags": [
+                            "Mailing List",
+                            "Vendor Advisory"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

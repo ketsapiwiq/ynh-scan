@@ -1,1 +1,1510 @@
-{"resultsPerPage":11,"startIndex":0,"totalResults":11,"format":"NVD_CVE","version":"2.0","timestamp":"2024-04-30T10:44:09.170","vulnerabilities":[{"cve":{"id":"CVE-2014-9528","sourceIdentifier":"cve@mitre.org","published":"2015-01-06T15:59:06.930","lastModified":"2017-09-08T01:29:35.887","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"SQL injection vulnerability in the actionIndex function in protected\/modules_core\/notification\/controllers\/ListController.php in HumHub 0.10.0-rc.1 and earlier allows remote authenticated users to execute arbitrary SQL commands via the from parameter to index.php. NOTE: this can be leveraged for cross-site scripting (XSS) attacks via a request that causes an error."},{"lang":"es","value":"Vulnerabilidad de inyección SQL en la función actionIndex en protected\/modules_core\/notification\/controllers\/ListController.php en HumHub 0.10.0-rc.1 y anteriores permite a usuarios remotos autenticados ejecutar comandos SQL arbitrarios a través del parámetro from en index.php. NOTA: esto puede ser aprovechado para ataques de XSS a través de una solicitud que causa un error."}],"metrics":{"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":7.5},"baseSeverity":"HIGH","exploitabilityScore":10.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-89"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:humhub:humhub:*:rc1:*:*:*:*:*:*","versionEndIncluding":"0.10.0","matchCriteriaId":"F595E34A-41BF-42A0-8CA5-8E8C82C28BB8"}]}]}],"references":[{"url":"http:\/\/packetstormsecurity.com\/files\/129440\/Humhub-0.10.0-rc.1-Cross-Site-Scripting-SQL-Injection.html","source":"cve@mitre.org","tags":["Exploit"]},{"url":"http:\/\/seclists.org\/fulldisclosure\/2014\/Dec\/31","source":"cve@mitre.org","tags":["Exploit"]},{"url":"http:\/\/www.exploit-db.com\/exploits\/35510","source":"cve@mitre.org","tags":["Exploit"]},{"url":"https:\/\/exchange.xforce.ibmcloud.com\/vulnerabilities\/99272","source":"cve@mitre.org"},{"url":"https:\/\/github.com\/humhub\/humhub\/commit\/febb89ab823d0bd6246c6cf460addabb6d7a01d4","source":"cve@mitre.org"}]}},{"cve":{"id":"CVE-2016-1229","sourceIdentifier":"vultures@jpcert.or.jp","published":"2016-06-05T01:59:03.297","lastModified":"2022-06-27T15:02:18.603","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Cross-site scripting (XSS) vulnerability in HumHub 0.20.0-beta.1 through 0.20.1 and 1.0.0-beta before 1.0.0-beta.3 allows remote authenticated users to inject arbitrary web script or HTML via unspecified vectors."},{"lang":"es","value":"Vulnerabilidad de XSS en HumHub 0.20.0-beta.1 hasta la versión 0.20.1 y 1.0.0-beta en versiones anteriores a 1.0.0-beta.3 permite a usuarios remotos autenticados inyectar secuencias de comandos web o HTML arbitrarios a través de vectores no especificados."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.3,"impactScore":2.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:S\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"SINGLE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":3.5},"baseSeverity":"LOW","exploitabilityScore":6.8,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:humhub:humhub:0.20.0:*:*:*:*:*:*:*","matchCriteriaId":"4CDF357E-A251-474F-AA09-78B5E7FD6800"},{"vulnerable":true,"criteria":"cpe:2.3:a:humhub:humhub:0.20.0:beta1:*:*:*:*:*:*","matchCriteriaId":"9E0DE64F-7CC6-4906-9F40-2DE0E90CE89E"},{"vulnerable":true,"criteria":"cpe:2.3:a:humhub:humhub:0.20.0:beta2:*:*:*:*:*:*","matchCriteriaId":"4304B529-55A2-409A-A6D9-92990CEF0CCB"},{"vulnerable":true,"criteria":"cpe:2.3:a:humhub:humhub:0.20.1:*:*:*:*:*:*:*","matchCriteriaId":"55D34949-04CE-46EF-8D60-21998DC34DC8"},{"vulnerable":true,"criteria":"cpe:2.3:a:humhub:humhub:1.0.0:beta1:*:*:*:*:*:*","matchCriteriaId":"D2362411-F584-4A1C-9D5C-345DF51E0A0A"},{"vulnerable":true,"criteria":"cpe:2.3:a:humhub:humhub:1.0.0:beta2:*:*:*:*:*:*","matchCriteriaId":"21AF7C19-FF1A-4511-9EFD-F3BF4973A08D"}]}]}],"references":[{"url":"http:\/\/jvn.jp\/en\/jp\/JVN56167268\/index.html","source":"vultures@jpcert.or.jp","tags":["Vendor Advisory"]},{"url":"http:\/\/jvndb.jvn.jp\/jvndb\/JVNDB-2016-000068","source":"vultures@jpcert.or.jp","tags":["Vendor Advisory"]},{"url":"https:\/\/github.com\/humhub\/humhub\/releases\/tag\/v1.0.0-beta.3","source":"vultures@jpcert.or.jp","tags":["Patch"]}]}},{"cve":{"id":"CVE-2019-9093","sourceIdentifier":"cve@mitre.org","published":"2019-03-21T16:01:15.187","lastModified":"2019-03-25T18:29:30.357","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"A Reflected Cross Site Scripting (XSS) Vulnerability was discovered in file\/file\/upload in Humhub 1.3.10 Community Edition. The user-supplied input containing a JavaScript payload in the filename parameter is echoed back, which resulted in reflected XSS."},{"lang":"es","value":"Se ha descubierto una vulnerabilidad Cross-Site Scripting (XSS) reflejado en file\/file\/upload en Humhub 1.3.10 Community Edition. La entrada del usuario que contiene una carga útil JavaScript en el parámetro filename se devuelve, lo que resulta en Cross-Site Scripting (XSS) reflejado."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.1,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.3},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:humhub:humhub:1.3.10:*:*:*:community:*:*:*","matchCriteriaId":"C04BC2B4-71F0-4B34-8C5F-5A9B8CD27DE7"}]}]}],"references":[{"url":"https:\/\/github.com\/humhub\/humhub\/blob\/master\/protected\/humhub\/docs\/CHANGELOG.md","source":"cve@mitre.org","tags":["Release Notes","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2019-9094","sourceIdentifier":"cve@mitre.org","published":"2019-03-21T16:01:15.233","lastModified":"2019-03-25T18:24:58.207","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"A Reflected Cross Site Scripting (XSS) Vulnerability was discovered in \/s\/adada\/cfiles\/upload in Humhub 1.3.10 Community Edition. The user-supplied input containing JavaScript in the filename is echoed back in JavaScript code, which resulted in XSS."},{"lang":"es","value":"Se ha descubierto una vulnerabilidad Cross-Site Scripting (XSS) reflejado en \/s\/adada\/cfiles\/upload en Humhub 1.3.10 Community Edition. La entrada proporcionada por el usuario que contiene JavaScript en el nombre de usuario se devuelve en el código JavaScript, lo que resultó en Cross-Site Scripting (XSS)."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.1,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.3},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:humhub:humhub:1.3.10:*:*:*:community:*:*:*","matchCriteriaId":"C04BC2B4-71F0-4B34-8C5F-5A9B8CD27DE7"}]}]}],"references":[{"url":"https:\/\/github.com\/humhub\/humhub\/blob\/master\/protected\/humhub\/docs\/CHANGELOG.md","source":"cve@mitre.org","tags":["Release Notes","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2019-11564","sourceIdentifier":"cve@mitre.org","published":"2019-05-08T16:29:00.470","lastModified":"2019-05-08T18:20:47.753","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"A cross-site scripting (XSS) vulnerability in HumHub 1.3.12 allows remote attackers to inject arbitrary web script or HTML via a \/protected\/vendor\/codeception\/codeception\/tests\/data\/app\/view\/index.php POST request."},{"lang":"es","value":"Una vulnerabilidad de  cross-site scripting (XSS) en HumHub 1.3.12, permite a los atacantes remotos inyectar secuencias de comandos web o HTML arbitrarias a través de una solicitud POST \/protegida\/de proveedor\/codecepción\/codecepción\/codecepción\/pruebas\/data\/app\/view\/index.php."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.1,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.3},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:humhub:humhub:1.3.12:*:*:*:*:*:*:*","matchCriteriaId":"D601D09C-5476-44FF-9CAF-6434012D8B39"}]}]}],"references":[{"url":"https:\/\/humhub.org\/en\/news","source":"cve@mitre.org","tags":["Release Notes","Vendor Advisory"]},{"url":"https:\/\/www.exploit-db.com\/exploits\/46771\/","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory","VDB Entry"]}]}},{"cve":{"id":"CVE-2021-43847","sourceIdentifier":"security-advisories@github.com","published":"2021-12-20T22:15:08.003","lastModified":"2022-08-09T13:27:59.707","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"HumHub is an open-source social network kit written in PHP. Prior to HumHub version 1.10.3 or 1.9.3, it could be possible for registered users to become unauthorized members of private Spaces. Versions 1.10.3 and 1.9.3 contain a patch for this issue."},{"lang":"es","value":"HumHub es un kit de red social de código abierto escrito en PHP. En HumHub versiones anteriores a 1.10.3 o 1.9.3, era posible que los usuarios registrados se convirtieran en miembros no autorizados de espacios privados. Las versiones 1.10.3 y 1.9.3 contienen un parche para este problema"}],"metrics":{"cvssMetricV31":[{"source":"security-advisories@github.com","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":6.5,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":3.6}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:S\/C:P\/I:N\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"SINGLE","confidentialityImpact":"PARTIAL","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":4.0},"baseSeverity":"MEDIUM","exploitabilityScore":8.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-862"}]},{"source":"security-advisories@github.com","type":"Secondary","description":[{"lang":"en","value":"CWE-285"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:humhub:humhub:*:*:*:*:*:*:*:*","versionEndExcluding":"1.9.3","matchCriteriaId":"900F1776-7E44-465E-8814-4BED5391880C"},{"vulnerable":true,"criteria":"cpe:2.3:a:humhub:humhub:*:*:*:*:*:*:*:*","versionStartIncluding":"1.10.0","versionEndExcluding":"1.10.3","matchCriteriaId":"F81E6636-F68D-4210-8BCC-EF5863FC9682"}]}]}],"references":[{"url":"https:\/\/github.com\/humhub\/humhub\/pull\/5473","source":"security-advisories@github.com","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/humhub\/humhub\/releases\/tag\/v1.10.3","source":"security-advisories@github.com","tags":["Release Notes","Third Party Advisory"]},{"url":"https:\/\/github.com\/humhub\/humhub\/releases\/tag\/v1.9.3","source":"security-advisories@github.com","tags":["Release Notes","Third Party Advisory"]},{"url":"https:\/\/github.com\/humhub\/humhub\/security\/advisories\/GHSA-f5hc-5wfr-7v74","source":"security-advisories@github.com","tags":["Exploit","Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/943dad83-f0ed-4c74-ba81-7dfce7ca0ef2\/","source":"security-advisories@github.com","tags":["Exploit","Issue Tracking","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-24865","sourceIdentifier":"security-advisories@github.com","published":"2022-04-20T20:15:08.583","lastModified":"2022-05-02T19:23:47.277","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"HumHub is an Open Source Enterprise Social Network. In affected versions users who are forced to change their password by an administrator may retrieve other users' data. This issue has been resolved by commit `eb83de20`. It is recommended that the HumHub is upgraded to 1.11.0, 1.10.4 or 1.9.4. There are no known workarounds for this issue."},{"lang":"es","value":"HumHub es una red social empresarial de código abierto. En las versiones afectadas, los usuarios que son forzados a cambiar su contraseña por un administrador pueden recuperar los datos de otros usuarios. Este problema ha sido resuelto por el commit \"eb83de20\". Es recomendado actualizar HumHub a versiones 1.11.0, 1.10.4 o 1.9.4. No se presentan medidas de mitigación conocidas para este problema"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":6.5,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":3.6},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":6.5,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":3.6}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:S\/C:P\/I:N\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"SINGLE","confidentialityImpact":"PARTIAL","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":4.0},"baseSeverity":"MEDIUM","exploitabilityScore":8.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-863"}]},{"source":"security-advisories@github.com","type":"Secondary","description":[{"lang":"en","value":"CWE-200"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:humhub:humhub:*:*:*:*:*:*:*:*","versionEndExcluding":"1.9.4","matchCriteriaId":"E960B8AF-6069-4859-A112-BB1058EFA3B6"},{"vulnerable":true,"criteria":"cpe:2.3:a:humhub:humhub:*:*:*:*:*:*:*:*","versionStartIncluding":"1.10.0","versionEndExcluding":"1.10.4","matchCriteriaId":"C6115394-5CE7-4B7D-8AB2-A500C561FBB7"}]}]}],"references":[{"url":"https:\/\/github.com\/humhub\/humhub\/commit\/eb83de20aaecc559ab77a44a6179646a99607e33","source":"security-advisories@github.com","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/humhub\/humhub\/security\/advisories\/GHSA-2h35-f226-3f57","source":"security-advisories@github.com","tags":["Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/89d996a2-de30-4261-8e3f-98e54cb25f76\/","source":"security-advisories@github.com","tags":["Exploit","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2017-20026","sourceIdentifier":"cna@vuldb.com","published":"2022-06-09T23:15:08.350","lastModified":"2022-06-17T19:07:08.210","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"A vulnerability has been found in HumHub up to 1.0.1 and classified as problematic. Affected by this vulnerability is an unknown functionality. The manipulation leads to cross site scripting (Reflected). The attack can be launched remotely. The exploit has been disclosed to the public and may be used. Upgrading to version 1.1.1 is able to address this issue. It is recommended to upgrade the affected component."},{"lang":"es","value":"Se ha encontrado una vulnerabilidad en HumHub versiones hasta 1.0.1 y ha sido clasificada como problemática. Esta vulnerabilidad afecta a una funcionalidad desconocida. La manipulación conlleva a un ataque de tipo cross site scripting (reflejado). El ataque puede ser lanzado remotamente. La explotación ha sido revelada al público y puede ser usada. La actualización a versión 1.1.1 puede abordar este problema. Es recomendado actualizar el componente afectado"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.1,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.7},{"source":"cna@vuldb.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:U\/C:N\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"UNCHANGED","confidentialityImpact":"NONE","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":4.3,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":1.4}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.3},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]},{"source":"cna@vuldb.com","type":"Secondary","description":[{"lang":"en","value":"CWE-80"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:humhub:humhub:*:*:*:*:*:*:*:*","versionEndExcluding":"1.1.1","matchCriteriaId":"E7112E82-E13A-4AF4-9979-22523787123B"}]}]}],"references":[{"url":"http:\/\/seclists.org\/fulldisclosure\/2017\/Mar\/47","source":"cna@vuldb.com","tags":["Exploit","Mailing List","Patch","Third Party Advisory"]},{"url":"https:\/\/vuldb.com\/?id.98923","source":"cna@vuldb.com","tags":["Third Party Advisory"]}]}},{"cve":{"id":"CVE-2017-20027","sourceIdentifier":"cna@vuldb.com","published":"2022-06-09T23:15:08.410","lastModified":"2022-06-17T19:08:01.443","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"A vulnerability was found in HumHub up to 1.0.1 and classified as problematic. Affected by this issue is some unknown functionality. The manipulation leads to cross site scripting (DOM). The attack may be launched remotely. The exploit has been disclosed to the public and may be used. Upgrading to version 1.1.1 is able to address this issue. It is recommended to upgrade the affected component."},{"lang":"es","value":"Se ha encontrado una vulnerabilidad en HumHub versiones hasta 1.0.1 y ha sido clasificada como problemática. Este problema afecta a una funcionalidad desconocida. La manipulación conlleva a un ataque de tipo cross site scripting (DOM). El ataque puede ser lanzado remotamente. La explotación ha sido revelada al público y puede ser usada. La actualización a versión 1.1.1 puede abordar este problema. Es recomendado actualizar el componente afectado"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.1,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.7},{"source":"cna@vuldb.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:U\/C:N\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"UNCHANGED","confidentialityImpact":"NONE","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":4.3,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":1.4}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.3},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]},{"source":"cna@vuldb.com","type":"Secondary","description":[{"lang":"en","value":"CWE-80"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:humhub:humhub:*:*:*:*:*:*:*:*","versionEndExcluding":"1.1.1","matchCriteriaId":"E7112E82-E13A-4AF4-9979-22523787123B"}]}]}],"references":[{"url":"http:\/\/seclists.org\/fulldisclosure\/2017\/Mar\/47","source":"cna@vuldb.com","tags":["Mailing List","Third Party Advisory"]},{"url":"https:\/\/vuldb.com\/?id.98924","source":"cna@vuldb.com","tags":["Third Party Advisory"]}]}},{"cve":{"id":"CVE-2017-20028","sourceIdentifier":"cna@vuldb.com","published":"2022-06-09T23:15:08.467","lastModified":"2022-06-27T15:02:53.097","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"A vulnerability was found in HumHub 0.20.1\/1.0.0-beta.3. It has been classified as critical. This affects an unknown part. The manipulation leads to privilege escalation. It is possible to initiate the attack remotely. Upgrading to version 1.0.0 is able to address this issue. It is recommended to upgrade the affected component."},{"lang":"es","value":"Se ha encontrado una vulnerabilidad en HumHub 0.20.1\/1.0.0-beta.3. ha sido clasificada como crítica. Afecta a una parte desconocida. La manipulación conlleva a una escalada de privilegios. Es posible iniciar el ataque de forma remota. La actualización a versión 1.0.0 puede abordar este problema. Es recomendado actualizar el componente afectado"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.8,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.9},{"source":"cna@vuldb.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:H\/PR:N\/UI:N\/S:U\/C:L\/I:L\/A:L","attackVector":"NETWORK","attackComplexity":"HIGH","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"LOW","baseScore":5.6,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.2,"impactScore":3.4}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":7.5},"baseSeverity":"HIGH","exploitabilityScore":10.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-269"}]},{"source":"cna@vuldb.com","type":"Secondary","description":[{"lang":"en","value":"CWE-269"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:humhub:humhub:0.20.1:*:*:*:*:*:*:*","matchCriteriaId":"55D34949-04CE-46EF-8D60-21998DC34DC8"},{"vulnerable":true,"criteria":"cpe:2.3:a:humhub:humhub:1.0.0:beta3:*:*:*:*:*:*","matchCriteriaId":"C9450C30-2C7A-4214-BDF5-23D54C7A800E"}]}]}],"references":[{"url":"http:\/\/seclists.org\/fulldisclosure\/2017\/Mar\/48","source":"cna@vuldb.com","tags":["Mailing List","Third Party Advisory"]},{"url":"https:\/\/vuldb.com\/?id.98925","source":"cna@vuldb.com","tags":["Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-31133","sourceIdentifier":"security-advisories@github.com","published":"2022-07-07T18:15:09.580","lastModified":"2022-07-14T19:03:35.207","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"HumHub is an Open Source Enterprise Social Network. Affected versions of HumHub are vulnerable to a stored Cross-Site Scripting (XSS) vulnerability. For exploitation, the attacker would need a permission to administer the Spaces feature. The names of individual \"spaces\" are not properly escaped and so an attacker with sufficient privilege could insert malicious javascript into a space name and exploit system users who visit that space. It is recommended that the HumHub is upgraded to 1.11.4, 1.10.5. There are no known workarounds for this issue."},{"lang":"es","value":"HumHub es una red social empresarial de código abierto. Las versiones afectadas de HumHub son susceptibles a una vulnerabilidad de tipo Cross-Site Scripting (XSS) almacenado. Para explotarla, el atacante necesitaría un permiso para administrar la función Spaces. Los nombres de los \"espacios\" individuales no se escapan apropiadamente, por lo que un atacante con suficientes privilegios podría insertar javascript malicioso en el nombre de un espacio y explotar a usuarios del sistema que visiten ese espacio. Es recomendado actualizar el HumHub a versiones 1.11.4, 1.10.5. No se presentan mitigaciones conocidas para este problema"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:H\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"HIGH","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":4.8,"baseSeverity":"MEDIUM"},"exploitabilityScore":1.7,"impactScore":2.7},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:H\/UI:R\/S:C\/C:L\/I:L\/A:L","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"HIGH","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"LOW","baseScore":5.9,"baseSeverity":"MEDIUM"},"exploitabilityScore":1.7,"impactScore":3.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:S\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"SINGLE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":3.5},"baseSeverity":"LOW","exploitabilityScore":6.8,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"security-advisories@github.com","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:humhub:humhub:*:*:*:*:*:*:*:*","versionEndExcluding":"1.10.5","matchCriteriaId":"23837D27-E03F-4CC0-9D84-1CB41813F425"},{"vulnerable":true,"criteria":"cpe:2.3:a:humhub:humhub:*:*:*:*:*:*:*:*","versionStartIncluding":"1.11.0","versionEndExcluding":"1.11.4","matchCriteriaId":"A1C1DB65-A60A-43F9-98B7-1C2C44433770"}]}]}],"references":[{"url":"https:\/\/github.com\/humhub\/humhub\/commit\/07d9f8f9b6334970ee38156a3416c3708d157cae","source":"security-advisories@github.com","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/humhub\/humhub\/commit\/f88991dfe56a05870df165ac89a2755dd4c1ffa1","source":"security-advisories@github.com","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/humhub\/humhub\/security\/advisories\/GHSA-p7h3-73v7-959c","source":"security-advisories@github.com","tags":["Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/89d996a2-de30-4261-8e3f-98e54cb25f76","source":"security-advisories@github.com","tags":["Not Applicable"]}]}}]}
+{
+    "resultsPerPage": 11,
+    "startIndex": 0,
+    "totalResults": 11,
+    "format": "NVD_CVE",
+    "version": "2.0",
+    "timestamp": "2024-04-30T10:44:09.170",
+    "vulnerabilities": [
+        {
+            "cve": {
+                "id": "CVE-2014-9528",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2015-01-06T15:59:06.930",
+                "lastModified": "2017-09-08T01:29:35.887",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "SQL injection vulnerability in the actionIndex function in protected/modules_core/notification/controllers/ListController.php in HumHub 0.10.0-rc.1 and earlier allows remote authenticated users to execute arbitrary SQL commands via the from parameter to index.php. NOTE: this can be leveraged for cross-site scripting (XSS) attacks via a request that causes an error."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Vulnerabilidad de inyecci\u00f3n SQL en la funci\u00f3n actionIndex en protected/modules_core/notification/controllers/ListController.php en HumHub 0.10.0-rc.1 y anteriores permite a usuarios remotos autenticados ejecutar comandos SQL arbitrarios a trav\u00e9s del par\u00e1metro from en index.php. NOTA: esto puede ser aprovechado para ataques de XSS a trav\u00e9s de una solicitud que causa un error."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 7.5
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-89"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:humhub:humhub:*:rc1:*:*:*:*:*:*",
+                                        "versionEndIncluding": "0.10.0",
+                                        "matchCriteriaId": "F595E34A-41BF-42A0-8CA5-8E8C82C28BB8"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://packetstormsecurity.com/files/129440/Humhub-0.10.0-rc.1-Cross-Site-Scripting-SQL-Injection.html",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit"
+                        ]
+                    },
+                    {
+                        "url": "http://seclists.org/fulldisclosure/2014/Dec/31",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit"
+                        ]
+                    },
+                    {
+                        "url": "http://www.exploit-db.com/exploits/35510",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit"
+                        ]
+                    },
+                    {
+                        "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/99272",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "https://github.com/humhub/humhub/commit/febb89ab823d0bd6246c6cf460addabb6d7a01d4",
+                        "source": "cve@mitre.org"
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2016-1229",
+                "sourceIdentifier": "vultures@jpcert.or.jp",
+                "published": "2016-06-05T01:59:03.297",
+                "lastModified": "2022-06-27T15:02:18.603",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Cross-site scripting (XSS) vulnerability in HumHub 0.20.0-beta.1 through 0.20.1 and 1.0.0-beta before 1.0.0-beta.3 allows remote authenticated users to inject arbitrary web script or HTML via unspecified vectors."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Vulnerabilidad de XSS en HumHub 0.20.0-beta.1 hasta la versi\u00f3n 0.20.1 y 1.0.0-beta en versiones anteriores a 1.0.0-beta.3 permite a usuarios remotos autenticados inyectar secuencias de comandos web o HTML arbitrarios a trav\u00e9s de vectores no especificados."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 3.5
+                            },
+                            "baseSeverity": "LOW",
+                            "exploitabilityScore": 6.8,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:humhub:humhub:0.20.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "4CDF357E-A251-474F-AA09-78B5E7FD6800"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:humhub:humhub:0.20.0:beta1:*:*:*:*:*:*",
+                                        "matchCriteriaId": "9E0DE64F-7CC6-4906-9F40-2DE0E90CE89E"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:humhub:humhub:0.20.0:beta2:*:*:*:*:*:*",
+                                        "matchCriteriaId": "4304B529-55A2-409A-A6D9-92990CEF0CCB"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:humhub:humhub:0.20.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "55D34949-04CE-46EF-8D60-21998DC34DC8"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:humhub:humhub:1.0.0:beta1:*:*:*:*:*:*",
+                                        "matchCriteriaId": "D2362411-F584-4A1C-9D5C-345DF51E0A0A"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:humhub:humhub:1.0.0:beta2:*:*:*:*:*:*",
+                                        "matchCriteriaId": "21AF7C19-FF1A-4511-9EFD-F3BF4973A08D"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://jvn.jp/en/jp/JVN56167268/index.html",
+                        "source": "vultures@jpcert.or.jp",
+                        "tags": [
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "http://jvndb.jvn.jp/jvndb/JVNDB-2016-000068",
+                        "source": "vultures@jpcert.or.jp",
+                        "tags": [
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/humhub/humhub/releases/tag/v1.0.0-beta.3",
+                        "source": "vultures@jpcert.or.jp",
+                        "tags": [
+                            "Patch"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2019-9093",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2019-03-21T16:01:15.187",
+                "lastModified": "2019-03-25T18:29:30.357",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "A Reflected Cross Site Scripting (XSS) Vulnerability was discovered in file/file/upload in Humhub 1.3.10 Community Edition. The user-supplied input containing a JavaScript payload in the filename parameter is echoed back, which resulted in reflected XSS."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Se ha descubierto una vulnerabilidad Cross-Site Scripting (XSS) reflejado en file/file/upload en Humhub 1.3.10 Community Edition. La entrada del usuario que contiene una carga \u00fatil JavaScript en el par\u00e1metro filename se devuelve, lo que resulta en Cross-Site Scripting (XSS) reflejado."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.1,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:humhub:humhub:1.3.10:*:*:*:community:*:*:*",
+                                        "matchCriteriaId": "C04BC2B4-71F0-4B34-8C5F-5A9B8CD27DE7"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/humhub/humhub/blob/master/protected/humhub/docs/CHANGELOG.md",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Release Notes",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2019-9094",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2019-03-21T16:01:15.233",
+                "lastModified": "2019-03-25T18:24:58.207",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "A Reflected Cross Site Scripting (XSS) Vulnerability was discovered in /s/adada/cfiles/upload in Humhub 1.3.10 Community Edition. The user-supplied input containing JavaScript in the filename is echoed back in JavaScript code, which resulted in XSS."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Se ha descubierto una vulnerabilidad Cross-Site Scripting (XSS) reflejado en /s/adada/cfiles/upload en Humhub 1.3.10 Community Edition. La entrada proporcionada por el usuario que contiene JavaScript en el nombre de usuario se devuelve en el c\u00f3digo JavaScript, lo que result\u00f3 en Cross-Site Scripting (XSS)."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.1,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:humhub:humhub:1.3.10:*:*:*:community:*:*:*",
+                                        "matchCriteriaId": "C04BC2B4-71F0-4B34-8C5F-5A9B8CD27DE7"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/humhub/humhub/blob/master/protected/humhub/docs/CHANGELOG.md",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Release Notes",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2019-11564",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2019-05-08T16:29:00.470",
+                "lastModified": "2019-05-08T18:20:47.753",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "A cross-site scripting (XSS) vulnerability in HumHub 1.3.12 allows remote attackers to inject arbitrary web script or HTML via a /protected/vendor/codeception/codeception/tests/data/app/view/index.php POST request."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Una vulnerabilidad de  cross-site scripting (XSS) en HumHub 1.3.12, permite a los atacantes remotos inyectar secuencias de comandos web o HTML arbitrarias a trav\u00e9s de una solicitud POST /protegida/de proveedor/codecepci\u00f3n/codecepci\u00f3n/codecepci\u00f3n/pruebas/data/app/view/index.php."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.1,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:humhub:humhub:1.3.12:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "D601D09C-5476-44FF-9CAF-6434012D8B39"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://humhub.org/en/news",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Release Notes",
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.exploit-db.com/exploits/46771/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory",
+                            "VDB Entry"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-43847",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2021-12-20T22:15:08.003",
+                "lastModified": "2022-08-09T13:27:59.707",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "HumHub is an open-source social network kit written in PHP. Prior to HumHub version 1.10.3 or 1.9.3, it could be possible for registered users to become unauthorized members of private Spaces. Versions 1.10.3 and 1.9.3 contain a patch for this issue."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "HumHub es un kit de red social de c\u00f3digo abierto escrito en PHP. En HumHub versiones anteriores a 1.10.3 o 1.9.3, era posible que los usuarios registrados se convirtieran en miembros no autorizados de espacios privados. Las versiones 1.10.3 y 1.9.3 contienen un parche para este problema"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.5,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 3.6
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:S/C:P/I:N/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-862"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-285"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:humhub:humhub:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "1.9.3",
+                                        "matchCriteriaId": "900F1776-7E44-465E-8814-4BED5391880C"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:humhub:humhub:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "1.10.0",
+                                        "versionEndExcluding": "1.10.3",
+                                        "matchCriteriaId": "F81E6636-F68D-4210-8BCC-EF5863FC9682"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/humhub/humhub/pull/5473",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/humhub/humhub/releases/tag/v1.10.3",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Release Notes",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/humhub/humhub/releases/tag/v1.9.3",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Release Notes",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/humhub/humhub/security/advisories/GHSA-f5hc-5wfr-7v74",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/943dad83-f0ed-4c74-ba81-7dfce7ca0ef2/",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Exploit",
+                            "Issue Tracking",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-24865",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2022-04-20T20:15:08.583",
+                "lastModified": "2022-05-02T19:23:47.277",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "HumHub is an Open Source Enterprise Social Network. In affected versions users who are forced to change their password by an administrator may retrieve other users' data. This issue has been resolved by commit `eb83de20`. It is recommended that the HumHub is upgraded to 1.11.0, 1.10.4 or 1.9.4. There are no known workarounds for this issue."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "HumHub es una red social empresarial de c\u00f3digo abierto. En las versiones afectadas, los usuarios que son forzados a cambiar su contrase\u00f1a por un administrador pueden recuperar los datos de otros usuarios. Este problema ha sido resuelto por el commit \"eb83de20\". Es recomendado actualizar HumHub a versiones 1.11.0, 1.10.4 o 1.9.4. No se presentan medidas de mitigaci\u00f3n conocidas para este problema"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.5,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 3.6
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.5,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 3.6
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:S/C:P/I:N/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-863"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-200"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:humhub:humhub:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "1.9.4",
+                                        "matchCriteriaId": "E960B8AF-6069-4859-A112-BB1058EFA3B6"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:humhub:humhub:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "1.10.0",
+                                        "versionEndExcluding": "1.10.4",
+                                        "matchCriteriaId": "C6115394-5CE7-4B7D-8AB2-A500C561FBB7"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/humhub/humhub/commit/eb83de20aaecc559ab77a44a6179646a99607e33",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/humhub/humhub/security/advisories/GHSA-2h35-f226-3f57",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/89d996a2-de30-4261-8e3f-98e54cb25f76/",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Exploit",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2017-20026",
+                "sourceIdentifier": "cna@vuldb.com",
+                "published": "2022-06-09T23:15:08.350",
+                "lastModified": "2022-06-17T19:07:08.210",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "A vulnerability has been found in HumHub up to 1.0.1 and classified as problematic. Affected by this vulnerability is an unknown functionality. The manipulation leads to cross site scripting (Reflected). The attack can be launched remotely. The exploit has been disclosed to the public and may be used. Upgrading to version 1.1.1 is able to address this issue. It is recommended to upgrade the affected component."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Se ha encontrado una vulnerabilidad en HumHub versiones hasta 1.0.1 y ha sido clasificada como problem\u00e1tica. Esta vulnerabilidad afecta a una funcionalidad desconocida. La manipulaci\u00f3n conlleva a un ataque de tipo cross site scripting (reflejado). El ataque puede ser lanzado remotamente. La explotaci\u00f3n ha sido revelada al p\u00fablico y puede ser usada. La actualizaci\u00f3n a versi\u00f3n 1.1.1 puede abordar este problema. Es recomendado actualizar el componente afectado"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.1,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.7
+                        },
+                        {
+                            "source": "cna@vuldb.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 1.4
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "cna@vuldb.com",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-80"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:humhub:humhub:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "1.1.1",
+                                        "matchCriteriaId": "E7112E82-E13A-4AF4-9979-22523787123B"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://seclists.org/fulldisclosure/2017/Mar/47",
+                        "source": "cna@vuldb.com",
+                        "tags": [
+                            "Exploit",
+                            "Mailing List",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://vuldb.com/?id.98923",
+                        "source": "cna@vuldb.com",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2017-20027",
+                "sourceIdentifier": "cna@vuldb.com",
+                "published": "2022-06-09T23:15:08.410",
+                "lastModified": "2022-06-17T19:08:01.443",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "A vulnerability was found in HumHub up to 1.0.1 and classified as problematic. Affected by this issue is some unknown functionality. The manipulation leads to cross site scripting (DOM). The attack may be launched remotely. The exploit has been disclosed to the public and may be used. Upgrading to version 1.1.1 is able to address this issue. It is recommended to upgrade the affected component."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Se ha encontrado una vulnerabilidad en HumHub versiones hasta 1.0.1 y ha sido clasificada como problem\u00e1tica. Este problema afecta a una funcionalidad desconocida. La manipulaci\u00f3n conlleva a un ataque de tipo cross site scripting (DOM). El ataque puede ser lanzado remotamente. La explotaci\u00f3n ha sido revelada al p\u00fablico y puede ser usada. La actualizaci\u00f3n a versi\u00f3n 1.1.1 puede abordar este problema. Es recomendado actualizar el componente afectado"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.1,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.7
+                        },
+                        {
+                            "source": "cna@vuldb.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 1.4
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "cna@vuldb.com",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-80"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:humhub:humhub:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "1.1.1",
+                                        "matchCriteriaId": "E7112E82-E13A-4AF4-9979-22523787123B"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://seclists.org/fulldisclosure/2017/Mar/47",
+                        "source": "cna@vuldb.com",
+                        "tags": [
+                            "Mailing List",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://vuldb.com/?id.98924",
+                        "source": "cna@vuldb.com",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2017-20028",
+                "sourceIdentifier": "cna@vuldb.com",
+                "published": "2022-06-09T23:15:08.467",
+                "lastModified": "2022-06-27T15:02:53.097",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "A vulnerability was found in HumHub 0.20.1/1.0.0-beta.3. It has been classified as critical. This affects an unknown part. The manipulation leads to privilege escalation. It is possible to initiate the attack remotely. Upgrading to version 1.0.0 is able to address this issue. It is recommended to upgrade the affected component."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Se ha encontrado una vulnerabilidad en HumHub 0.20.1/1.0.0-beta.3. ha sido clasificada como cr\u00edtica. Afecta a una parte desconocida. La manipulaci\u00f3n conlleva a una escalada de privilegios. Es posible iniciar el ataque de forma remota. La actualizaci\u00f3n a versi\u00f3n 1.0.0 puede abordar este problema. Es recomendado actualizar el componente afectado"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.8,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.9
+                        },
+                        {
+                            "source": "cna@vuldb.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "HIGH",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "LOW",
+                                "baseScore": 5.6,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.2,
+                            "impactScore": 3.4
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 7.5
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-269"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "cna@vuldb.com",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-269"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:humhub:humhub:0.20.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "55D34949-04CE-46EF-8D60-21998DC34DC8"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:humhub:humhub:1.0.0:beta3:*:*:*:*:*:*",
+                                        "matchCriteriaId": "C9450C30-2C7A-4214-BDF5-23D54C7A800E"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://seclists.org/fulldisclosure/2017/Mar/48",
+                        "source": "cna@vuldb.com",
+                        "tags": [
+                            "Mailing List",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://vuldb.com/?id.98925",
+                        "source": "cna@vuldb.com",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-31133",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2022-07-07T18:15:09.580",
+                "lastModified": "2022-07-14T19:03:35.207",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "HumHub is an Open Source Enterprise Social Network. Affected versions of HumHub are vulnerable to a stored Cross-Site Scripting (XSS) vulnerability. For exploitation, the attacker would need a permission to administer the Spaces feature. The names of individual \"spaces\" are not properly escaped and so an attacker with sufficient privilege could insert malicious javascript into a space name and exploit system users who visit that space. It is recommended that the HumHub is upgraded to 1.11.4, 1.10.5. There are no known workarounds for this issue."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "HumHub es una red social empresarial de c\u00f3digo abierto. Las versiones afectadas de HumHub son susceptibles a una vulnerabilidad de tipo Cross-Site Scripting (XSS) almacenado. Para explotarla, el atacante necesitar\u00eda un permiso para administrar la funci\u00f3n Spaces. Los nombres de los \"espacios\" individuales no se escapan apropiadamente, por lo que un atacante con suficientes privilegios podr\u00eda insertar javascript malicioso en el nombre de un espacio y explotar a usuarios del sistema que visiten ese espacio. Es recomendado actualizar el HumHub a versiones 1.11.4, 1.10.5. No se presentan mitigaciones conocidas para este problema"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "HIGH",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.8,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 1.7,
+                            "impactScore": 2.7
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:L",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "HIGH",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "LOW",
+                                "baseScore": 5.9,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 1.7,
+                            "impactScore": 3.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 3.5
+                            },
+                            "baseSeverity": "LOW",
+                            "exploitabilityScore": 6.8,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:humhub:humhub:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "1.10.5",
+                                        "matchCriteriaId": "23837D27-E03F-4CC0-9D84-1CB41813F425"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:humhub:humhub:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "1.11.0",
+                                        "versionEndExcluding": "1.11.4",
+                                        "matchCriteriaId": "A1C1DB65-A60A-43F9-98B7-1C2C44433770"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/humhub/humhub/commit/07d9f8f9b6334970ee38156a3416c3708d157cae",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/humhub/humhub/commit/f88991dfe56a05870df165ac89a2755dd4c1ffa1",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/humhub/humhub/security/advisories/GHSA-p7h3-73v7-959c",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/89d996a2-de30-4261-8e3f-98e54cb25f76",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Not Applicable"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

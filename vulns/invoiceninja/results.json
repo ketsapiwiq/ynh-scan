@@ -1,1 +1,373 @@
-{"resultsPerPage":3,"startIndex":0,"totalResults":3,"format":"NVD_CVE","version":"2.0","timestamp":"2024-04-30T10:44:34.643","vulnerabilities":[{"cve":{"id":"CVE-2017-1000466","sourceIdentifier":"cve@mitre.org","published":"2018-01-03T01:29:00.220","lastModified":"2018-01-16T18:36:54.430","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Invoice Ninja version 3.8.1 is vulnerable to stored cross-site scripting vulnerability, within the invoice creation page, which can result in disruption of service and execution of javascript code."},{"lang":"es","value":"Invoice Ninja versión 3.8.1 es vulnerable a Cross-Site Scripting (XSS) persistente en la página invoice creation. Esto puede resultar en la interrupción del servicio y la ejecución de código JavaScript."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.3,"impactScore":2.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:S\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"SINGLE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":3.5},"baseSeverity":"LOW","exploitabilityScore":6.8,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:invoiceninja:invoice_ninja:3.8.1:*:*:*:*:*:*:*","matchCriteriaId":"874EA22A-5B16-452D-A879-BFDA0DCCE7AA"}]}]}],"references":[{"url":"https:\/\/github.com\/invoiceninja\/invoiceninja\/issues\/1727","source":"cve@mitre.org","tags":["Exploit","Issue Tracking","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2021-33898","sourceIdentifier":"cve@mitre.org","published":"2021-06-06T23:15:07.517","lastModified":"2021-06-15T18:33:32.387","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"In Invoice Ninja before 4.4.0, there is an unsafe call to unserialize() in app\/Ninja\/Repositories\/AccountRepository.php that may allow an attacker to deserialize arbitrary PHP classes. In certain contexts, this can result in remote code execution. The attacker's input must be hosted at http:\/\/www.geoplugin.net (cleartext HTTP), and thus a successful attack requires spoofing that site or obtaining control of it."},{"lang":"es","value":"En Invoice Ninja versiones anteriores a 4.4.0, se presenta una llamada no segura a la función unserialize() en el archivo app\/Ninja\/Repositories\/AccountRepository.php que puede permitir a un atacante deserializar clases PHP arbitrarias. En determinados contextos, esto puede resultar en una ejecución de código remota. La entrada del atacante debe estar alojada en http:\/\/www.geoplugin.net (texto sin cifrar HTTP), y por lo tanto un ataque con éxito requiere una suplantación de ese sitio u obtener el control del mismo"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:H\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"HIGH","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":8.1,"baseSeverity":"HIGH"},"exploitabilityScore":2.2,"impactScore":5.9}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":6.8},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-502"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:invoiceninja:invoice_ninja:*:*:*:*:*:*:*:*","versionEndExcluding":"4.4.0","matchCriteriaId":"8C208851-BE2C-4DC9-BC23-A4F015A57CF8"}]}]}],"references":[{"url":"https:\/\/github.com\/invoiceninja\/invoiceninja\/issues\/5909","source":"cve@mitre.org","tags":["Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2021-3977","sourceIdentifier":"security@huntr.dev","published":"2021-12-24T20:15:08.137","lastModified":"2021-12-30T19:14:04.140","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"invoiceninja is vulnerable to Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"},{"lang":"es","value":"invoiceninja es vulnerable a una Neutralización Inapropiada de Entradas Durante la Generación de Páginas Web (\"Cross-site Scripting\")"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.3,"impactScore":2.7}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":6.5,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":3.6}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:S\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"SINGLE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":3.5},"baseSeverity":"LOW","exploitabilityScore":6.8,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"security@huntr.dev","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:invoiceninja:invoice_ninja:*:*:*:*:*:*:*:*","versionEndExcluding":"4.5.47","matchCriteriaId":"39AAF484-8923-4804-9A82-99F75753FE97"},{"vulnerable":true,"criteria":"cpe:2.3:a:invoiceninja:invoice_ninja:*:*:*:*:*:*:*:*","versionStartIncluding":"5.0","versionEndExcluding":"5.3.33","matchCriteriaId":"C387CCC5-A8A9-47BC-9192-3F6C132FEF97"}]}]}],"references":[{"url":"https:\/\/github.com\/invoiceninja\/invoiceninja\/commit\/1186eaa82375692d01d5ef3369c5b7bc7315b55f","source":"security@huntr.dev","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/99c4ed09-b66f-474a-bd74-eeccf9339fde","source":"security@huntr.dev","tags":["Exploit","Issue Tracking","Patch","Third Party Advisory"]}]}}]}
+{
+    "resultsPerPage": 3,
+    "startIndex": 0,
+    "totalResults": 3,
+    "format": "NVD_CVE",
+    "version": "2.0",
+    "timestamp": "2024-04-30T10:44:34.643",
+    "vulnerabilities": [
+        {
+            "cve": {
+                "id": "CVE-2017-1000466",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2018-01-03T01:29:00.220",
+                "lastModified": "2018-01-16T18:36:54.430",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Invoice Ninja version 3.8.1 is vulnerable to stored cross-site scripting vulnerability, within the invoice creation page, which can result in disruption of service and execution of javascript code."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Invoice Ninja versi\u00f3n 3.8.1 es vulnerable a Cross-Site Scripting (XSS) persistente en la p\u00e1gina invoice creation. Esto puede resultar en la interrupci\u00f3n del servicio y la ejecuci\u00f3n de c\u00f3digo JavaScript."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 3.5
+                            },
+                            "baseSeverity": "LOW",
+                            "exploitabilityScore": 6.8,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:invoiceninja:invoice_ninja:3.8.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "874EA22A-5B16-452D-A879-BFDA0DCCE7AA"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/invoiceninja/invoiceninja/issues/1727",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Issue Tracking",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-33898",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2021-06-06T23:15:07.517",
+                "lastModified": "2021-06-15T18:33:32.387",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "In Invoice Ninja before 4.4.0, there is an unsafe call to unserialize() in app/Ninja/Repositories/AccountRepository.php that may allow an attacker to deserialize arbitrary PHP classes. In certain contexts, this can result in remote code execution. The attacker's input must be hosted at http://www.geoplugin.net (cleartext HTTP), and thus a successful attack requires spoofing that site or obtaining control of it."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "En Invoice Ninja versiones anteriores a 4.4.0, se presenta una llamada no segura a la funci\u00f3n unserialize() en el archivo app/Ninja/Repositories/AccountRepository.php que puede permitir a un atacante deserializar clases PHP arbitrarias. En determinados contextos, esto puede resultar en una ejecuci\u00f3n de c\u00f3digo remota. La entrada del atacante debe estar alojada en http://www.geoplugin.net (texto sin cifrar HTTP), y por lo tanto un ataque con \u00e9xito requiere una suplantaci\u00f3n de ese sitio u obtener el control del mismo"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "HIGH",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 8.1,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.2,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 6.8
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-502"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:invoiceninja:invoice_ninja:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "4.4.0",
+                                        "matchCriteriaId": "8C208851-BE2C-4DC9-BC23-A4F015A57CF8"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/invoiceninja/invoiceninja/issues/5909",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-3977",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2021-12-24T20:15:08.137",
+                "lastModified": "2021-12-30T19:14:04.140",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "invoiceninja is vulnerable to Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+                    },
+                    {
+                        "lang": "es",
+                        "value": "invoiceninja es vulnerable a una Neutralizaci\u00f3n Inapropiada de Entradas Durante la Generaci\u00f3n de P\u00e1ginas Web (\"Cross-site Scripting\")"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.5,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 3.6
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 3.5
+                            },
+                            "baseSeverity": "LOW",
+                            "exploitabilityScore": 6.8,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:invoiceninja:invoice_ninja:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "4.5.47",
+                                        "matchCriteriaId": "39AAF484-8923-4804-9A82-99F75753FE97"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:invoiceninja:invoice_ninja:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "5.0",
+                                        "versionEndExcluding": "5.3.33",
+                                        "matchCriteriaId": "C387CCC5-A8A9-47BC-9192-3F6C132FEF97"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/invoiceninja/invoiceninja/commit/1186eaa82375692d01d5ef3369c5b7bc7315b55f",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/99c4ed09-b66f-474a-bd74-eeccf9339fde",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Issue Tracking",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

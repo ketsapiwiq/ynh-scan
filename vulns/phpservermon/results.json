@@ -1,1 +1,521 @@
-{"resultsPerPage":4,"startIndex":0,"totalResults":4,"format":"NVD_CVE","version":"2.0","timestamp":"2024-04-30T10:50:38.637","vulnerabilities":[{"cve":{"id":"CVE-2018-18921","sourceIdentifier":"cve@mitre.org","published":"2018-12-18T22:29:04.837","lastModified":"2019-01-07T17:01:00.577","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"PHP Server Monitor before 3.3.2 has CSRF, as demonstrated by a Delete action."},{"lang":"es","value":"PHP Server Monitor en versiones anteriores a la 3.3.2 tiene Cross-Site Request Forgery (CSRF), tal y como queda demostrado con una acción Delete."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:R\/S:U\/C:N\/I:H\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"UNCHANGED","confidentialityImpact":"NONE","integrityImpact":"HIGH","availabilityImpact":"NONE","baseScore":6.5,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":3.6}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:N\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":5.8},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":4.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-352"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:phpservermonitor:php_server_monitor:*:*:*:*:*:*:*:*","versionEndExcluding":"3.3.2","matchCriteriaId":"8DE0B4D1-ED25-4EFC-A631-6C311A3FF146"}]}]}],"references":[{"url":"https:\/\/github.com\/phpservermon\/phpservermon\/issues\/670","source":"cve@mitre.org","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/medium.com\/bugbountywriteup\/cve-2018-18921-php-server-monitor-3-3-1-cross-site-request-forgery-a73e8dae563","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2021-4097","sourceIdentifier":"security@huntr.dev","published":"2021-12-12T00:15:07.743","lastModified":"2021-12-15T15:49:32.450","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"phpservermon is vulnerable to Improper Neutralization of CRLF Sequences"},{"lang":"es","value":"phpservermon es vulnerable a una Neutralización Inapropiada de Secuencias CRLF"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:U\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.5}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:R\/S:U\/C:L\/I:L\/A:L","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"LOW","baseScore":6.3,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":3.4}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:P\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":5.8},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":4.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"security@huntr.dev","type":"Primary","description":[{"lang":"en","value":"CWE-93"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:phpservermonitor:php_server_monitor:*:*:*:*:*:*:*:*","versionEndExcluding":"3.6.0","matchCriteriaId":"9B2188E1-0FA7-40B8-9AE7-52E50B0312CC"}]}]}],"references":[{"url":"https:\/\/github.com\/phpservermon\/phpservermon\/commit\/162bba0046fcda1580f4fbc7b9ababe3c7c13ce4","source":"security@huntr.dev","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/d617ced7-be06-4e34-9db0-63d45c003a43","source":"security@huntr.dev","tags":["Exploit","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2021-4240","sourceIdentifier":"cna@vuldb.com","published":"2022-11-15T23:15:10.233","lastModified":"2023-11-07T03:40:25.040","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"A vulnerability, which was classified as problematic, was found in phpservermon. This affects the function generatePasswordResetToken of the file src\/psm\/Service\/User.php. The manipulation leads to use of predictable algorithm in random number generator. The exploit has been disclosed to the public and may be used. The name of the patch is 3daa804d5f56c55b3ae13bfac368bb84ec632193. It is recommended to apply a patch to fix this issue. The identifier VDB-213717 was assigned to this vulnerability."},{"lang":"es","value":"Una vulnerabilidad fue encontrada en phpservermon y clasificada como problemática. Esto afecta a la función generatePasswordResetToken del archivo src\/psm\/Service\/User.php. La manipulación conduce al uso de un algoritmo predecible en un generador de números aleatorios. El exploit ha sido divulgado al público y puede utilizarse. El nombre del parche es 3daa804d5f56c55b3ae13bfac368bb84ec632193. Se recomienda aplicar un parche para solucionar este problema. A esta vulnerabilidad se le asignó el identificador VDB-213717."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:L\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":5.3,"baseSeverity":"MEDIUM"},"exploitabilityScore":3.9,"impactScore":1.4},{"source":"cna@vuldb.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:A\/AC:H\/PR:L\/UI:N\/S:U\/C:L\/I:N\/A:N","attackVector":"ADJACENT_NETWORK","attackComplexity":"HIGH","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":2.6,"baseSeverity":"LOW"},"exploitabilityScore":1.2,"impactScore":1.4}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-330"}]},{"source":"cna@vuldb.com","type":"Secondary","description":[{"lang":"en","value":"CWE-331"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:phpservermonitor:php_server_monitor:-:*:*:*:*:*:*:*","matchCriteriaId":"8BA6165A-0BEC-4027-BFF8-92EF2B82B3CF"}]}]}],"references":[{"url":"https:\/\/github.com\/phpservermon\/phpservermon\/commit\/3daa804d5f56c55b3ae13bfac368bb84ec632193","source":"cna@vuldb.com","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/2-phpservermon\/phpservermon\/","source":"cna@vuldb.com","tags":["Exploit","Patch","Third Party Advisory"]},{"url":"https:\/\/vuldb.com\/?id.213717","source":"cna@vuldb.com","tags":["Third Party Advisory"]}]}},{"cve":{"id":"CVE-2021-4241","sourceIdentifier":"cna@vuldb.com","published":"2022-11-15T23:15:14.737","lastModified":"2023-11-07T03:40:25.163","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"A vulnerability, which was classified as problematic, was found in phpservermon. Affected is the function setUserLoggedIn of the file src\/psm\/Service\/User.php. The manipulation leads to use of predictable algorithm in random number generator. The exploit has been disclosed to the public and may be used. The name of the patch is bb10a5f3c68527c58073258cb12446782d223bc3. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-213744."},{"lang":"es","value":"Una vulnerabilidad fue encontrada en phpservermon y clasificada como problemática. La función setUserLoggedIn del archivo src\/psm\/Service\/User.php es afectada por la vulnerabilidad. La manipulación conduce al uso de un algoritmo predecible en un generador de números aleatorios. El exploit ha sido divulgado al público y puede utilizarse. El nombre del parche es bb10a5f3c68527c58073258cb12446782d223bc3. Se recomienda aplicar el parche para solucionar este problema. El identificador de esta vulnerabilidad es VDB-213744."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:L\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":5.3,"baseSeverity":"MEDIUM"},"exploitabilityScore":3.9,"impactScore":1.4},{"source":"cna@vuldb.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:A\/AC:H\/PR:L\/UI:N\/S:U\/C:L\/I:N\/A:N","attackVector":"ADJACENT_NETWORK","attackComplexity":"HIGH","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":2.6,"baseSeverity":"LOW"},"exploitabilityScore":1.2,"impactScore":1.4}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-330"}]},{"source":"cna@vuldb.com","type":"Secondary","description":[{"lang":"en","value":"CWE-331"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:phpservermonitor:php_server_monitor:-:*:*:*:*:*:*:*","matchCriteriaId":"8BA6165A-0BEC-4027-BFF8-92EF2B82B3CF"}]}]}],"references":[{"url":"https:\/\/github.com\/phpservermon\/phpservermon\/commit\/bb10a5f3c68527c58073258cb12446782d223bc3","source":"cna@vuldb.com","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/1-phpservermon\/phpservermon\/","source":"cna@vuldb.com","tags":["Exploit","Patch","Third Party Advisory"]},{"url":"https:\/\/vuldb.com\/?id.213744","source":"cna@vuldb.com","tags":["Third Party Advisory"]}]}}]}
+{
+    "resultsPerPage": 4,
+    "startIndex": 0,
+    "totalResults": 4,
+    "format": "NVD_CVE",
+    "version": "2.0",
+    "timestamp": "2024-04-30T10:50:38.637",
+    "vulnerabilities": [
+        {
+            "cve": {
+                "id": "CVE-2018-18921",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2018-12-18T22:29:04.837",
+                "lastModified": "2019-01-07T17:01:00.577",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "PHP Server Monitor before 3.3.2 has CSRF, as demonstrated by a Delete action."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "PHP Server Monitor en versiones anteriores a la 3.3.2 tiene Cross-Site Request Forgery (CSRF), tal y como queda demostrado con una acci\u00f3n Delete."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.5,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 3.6
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 5.8
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 4.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-352"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:phpservermonitor:php_server_monitor:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "3.3.2",
+                                        "matchCriteriaId": "8DE0B4D1-ED25-4EFC-A631-6C311A3FF146"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/phpservermon/phpservermon/issues/670",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://medium.com/bugbountywriteup/cve-2018-18921-php-server-monitor-3-3-1-cross-site-request-forgery-a73e8dae563",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-4097",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2021-12-12T00:15:07.743",
+                "lastModified": "2021-12-15T15:49:32.450",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "phpservermon is vulnerable to Improper Neutralization of CRLF Sequences"
+                    },
+                    {
+                        "lang": "es",
+                        "value": "phpservermon es vulnerable a una Neutralizaci\u00f3n Inapropiada de Secuencias CRLF"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.5
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "LOW",
+                                "baseScore": 6.3,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 3.4
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:P/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.8
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 4.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-93"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:phpservermonitor:php_server_monitor:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "3.6.0",
+                                        "matchCriteriaId": "9B2188E1-0FA7-40B8-9AE7-52E50B0312CC"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/phpservermon/phpservermon/commit/162bba0046fcda1580f4fbc7b9ababe3c7c13ce4",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/d617ced7-be06-4e34-9db0-63d45c003a43",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-4240",
+                "sourceIdentifier": "cna@vuldb.com",
+                "published": "2022-11-15T23:15:10.233",
+                "lastModified": "2023-11-07T03:40:25.040",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "A vulnerability, which was classified as problematic, was found in phpservermon. This affects the function generatePasswordResetToken of the file src/psm/Service/User.php. The manipulation leads to use of predictable algorithm in random number generator. The exploit has been disclosed to the public and may be used. The name of the patch is 3daa804d5f56c55b3ae13bfac368bb84ec632193. It is recommended to apply a patch to fix this issue. The identifier VDB-213717 was assigned to this vulnerability."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Una vulnerabilidad fue encontrada en phpservermon y clasificada como problem\u00e1tica. Esto afecta a la funci\u00f3n generatePasswordResetToken del archivo src/psm/Service/User.php. La manipulaci\u00f3n conduce al uso de un algoritmo predecible en un generador de n\u00fameros aleatorios. El exploit ha sido divulgado al p\u00fablico y puede utilizarse. El nombre del parche es 3daa804d5f56c55b3ae13bfac368bb84ec632193. Se recomienda aplicar un parche para solucionar este problema. A esta vulnerabilidad se le asign\u00f3 el identificador VDB-213717."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.3,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 1.4
+                        },
+                        {
+                            "source": "cna@vuldb.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:A/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N",
+                                "attackVector": "ADJACENT_NETWORK",
+                                "attackComplexity": "HIGH",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 2.6,
+                                "baseSeverity": "LOW"
+                            },
+                            "exploitabilityScore": 1.2,
+                            "impactScore": 1.4
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-330"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "cna@vuldb.com",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-331"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:phpservermonitor:php_server_monitor:-:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "8BA6165A-0BEC-4027-BFF8-92EF2B82B3CF"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/phpservermon/phpservermon/commit/3daa804d5f56c55b3ae13bfac368bb84ec632193",
+                        "source": "cna@vuldb.com",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/2-phpservermon/phpservermon/",
+                        "source": "cna@vuldb.com",
+                        "tags": [
+                            "Exploit",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://vuldb.com/?id.213717",
+                        "source": "cna@vuldb.com",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-4241",
+                "sourceIdentifier": "cna@vuldb.com",
+                "published": "2022-11-15T23:15:14.737",
+                "lastModified": "2023-11-07T03:40:25.163",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "A vulnerability, which was classified as problematic, was found in phpservermon. Affected is the function setUserLoggedIn of the file src/psm/Service/User.php. The manipulation leads to use of predictable algorithm in random number generator. The exploit has been disclosed to the public and may be used. The name of the patch is bb10a5f3c68527c58073258cb12446782d223bc3. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-213744."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Una vulnerabilidad fue encontrada en phpservermon y clasificada como problem\u00e1tica. La funci\u00f3n setUserLoggedIn del archivo src/psm/Service/User.php es afectada por la vulnerabilidad. La manipulaci\u00f3n conduce al uso de un algoritmo predecible en un generador de n\u00fameros aleatorios. El exploit ha sido divulgado al p\u00fablico y puede utilizarse. El nombre del parche es bb10a5f3c68527c58073258cb12446782d223bc3. Se recomienda aplicar el parche para solucionar este problema. El identificador de esta vulnerabilidad es VDB-213744."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.3,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 1.4
+                        },
+                        {
+                            "source": "cna@vuldb.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:A/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N",
+                                "attackVector": "ADJACENT_NETWORK",
+                                "attackComplexity": "HIGH",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 2.6,
+                                "baseSeverity": "LOW"
+                            },
+                            "exploitabilityScore": 1.2,
+                            "impactScore": 1.4
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-330"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "cna@vuldb.com",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-331"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:phpservermonitor:php_server_monitor:-:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "8BA6165A-0BEC-4027-BFF8-92EF2B82B3CF"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/phpservermon/phpservermon/commit/bb10a5f3c68527c58073258cb12446782d223bc3",
+                        "source": "cna@vuldb.com",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/1-phpservermon/phpservermon/",
+                        "source": "cna@vuldb.com",
+                        "tags": [
+                            "Exploit",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://vuldb.com/?id.213744",
+                        "source": "cna@vuldb.com",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

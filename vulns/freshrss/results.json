@@ -1,1 +1,370 @@
-{"resultsPerPage":3,"startIndex":0,"totalResults":3,"format":"NVD_CVE","version":"2.0","timestamp":"2024-04-30T10:42:08.907","vulnerabilities":[{"cve":{"id":"CVE-2018-19782","sourceIdentifier":"cve@mitre.org","published":"2019-01-30T15:29:06.303","lastModified":"2019-01-30T17:58:04.513","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Multiple cross-site scripting (XSS) vulnerabilities in GET requests in FreshRSS 1.11.1 allow remote attackers to inject arbitrary web script or HTML via the (1) c parameter or (2) a parameter."},{"lang":"es","value":"Múltiples vulnerabilidades de Cross-Site Scripting (XSS) en las peticiones GET en FreshRSS 1.11.1 permiten que atacantes remotos inyecten scripts web o HTML arbitrarios mediante (1) el parámetro c o (2) el parámetro a."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.1,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.3},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:freshrss:freshrss:1.11.1:*:*:*:*:*:*:*","matchCriteriaId":"B41F9090-C381-459A-AEA5-F782AEF88F14"}]}]}],"references":[{"url":"http:\/\/packetstormsecurity.com\/files\/150608\/FreshRSS-1.11.1-Cross-Site-Scripting.html","source":"cve@mitre.org","tags":["Exploit","VDB Entry","Third Party Advisory"]},{"url":"http:\/\/seclists.org\/fulldisclosure\/2018\/Dec\/3","source":"cve@mitre.org","tags":["Exploit","Mailing List","Third Party Advisory"]},{"url":"https:\/\/www.exploit-db.com\/exploits\/45954\/","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory","VDB Entry"]},{"url":"https:\/\/www.netsparker.com\/web-applications-advisories\/ns-18-024-multiple-cross-site-scripting-vulnerabilities-in-freshrss\/","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-23497","sourceIdentifier":"security-advisories@github.com","published":"2022-12-09T23:15:11.680","lastModified":"2022-12-13T15:14:40.763","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"FreshRSS is a free, self-hostable RSS aggregator. User configuration files can be accessed by a remote user. In addition to user preferences, such configurations contain hashed passwords (brypt with cost 9, salted) of FreshRSS Web interface. If the API is used, the configuration might contain a hashed password (brypt with cost 9, salted) of the GReader API, and a hashed password (MD5 salted) of the Fever API. Users should update to version 1.20.2 or edge. Users unable to upgrade can apply the patch manually or delete the file `.\/FreshRSS\/p\/ext.php`."},{"lang":"es","value":"FreshRSS es un agregador de RSS gratuito y autohospedable. Un usuario remoto puede acceder a los archivos de configuración del usuario. Además de las preferencias del usuario, dichas configuraciones contienen contraseñas hash (brypt con costo 9, saladas) de la interfaz web FreshRSS. Si se utiliza la API, la configuración puede contener una contraseña hash (brypt con costo 9, salada) de la API GReader y una contraseña hash (MD5 salada) de la API Fever. Los usuarios deben actualizar a la versión 1.20.2 o edge. Los usuarios que no puedan actualizar pueden aplicar el parche manualmente o eliminar el archivo `.\/FreshRSS\/p\/ext.php`."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":7.5,"baseSeverity":"HIGH"},"exploitabilityScore":3.9,"impactScore":3.6},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:L\/I:N\/A:L","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"NONE","availabilityImpact":"LOW","baseScore":6.5,"baseSeverity":"MEDIUM"},"exploitabilityScore":3.9,"impactScore":2.5}]},"weaknesses":[{"source":"security-advisories@github.com","type":"Primary","description":[{"lang":"en","value":"CWE-200"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:freshrss:freshrss:*:*:*:*:*:*:*:*","versionStartIncluding":"1.18.0","versionEndExcluding":"1.20.2","matchCriteriaId":"EE2D8147-E1C5-47A5-A70A-FDB48A4F291A"}]}]}],"references":[{"url":"https:\/\/github.com\/FreshRSS\/FreshRSS\/pull\/4928","source":"security-advisories@github.com","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/FreshRSS\/FreshRSS\/releases\/tag\/1.20.2","source":"security-advisories@github.com","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/FreshRSS\/FreshRSS\/security\/advisories\/GHSA-hvrj-5fwj-p7v6","source":"security-advisories@github.com","tags":["Third Party Advisory"]}]}},{"cve":{"id":"CVE-2023-22481","sourceIdentifier":"security-advisories@github.com","published":"2023-03-06T18:15:10.357","lastModified":"2023-11-07T04:06:59.633","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"FreshRSS is a self-hosted RSS feed aggregator. When using the greader API, the provided password is logged in clear in `users\/_\/log_api.txt` in the case where the authentication fails. The issues occurs in `authorizationToUser()` in `greader.php`. If there is an issue with the request or the credentials, `unauthorized()` or `badRequest()` is called. Both these functions are printing the return of `debugInfo()` in the logs.  `debugInfo()` will return the content of the request. By default, this will be saved in `users\/_\/log_api.txt` and if the const `COPY_LOG_TO_SYSLOG` is true, in syslogs as well. Exploiting this issue requires having access to logs produced by FreshRSS. Using the information from the logs, a malicious individual could get users' API keys (would be displayed if the users fills in a bad username) or passwords."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:L\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:N\/A:N","attackVector":"LOCAL","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":5.5,"baseSeverity":"MEDIUM"},"exploitabilityScore":1.8,"impactScore":3.6},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:A\/AC:H\/PR:H\/UI:R\/S:U\/C:H\/I:N\/A:N","attackVector":"ADJACENT_NETWORK","attackComplexity":"HIGH","privilegesRequired":"HIGH","userInteraction":"REQUIRED","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":4.0,"baseSeverity":"MEDIUM"},"exploitabilityScore":0.4,"impactScore":3.6}]},"weaknesses":[{"source":"security-advisories@github.com","type":"Primary","description":[{"lang":"en","value":"CWE-532"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:freshrss:freshrss:*:*:*:*:*:*:*:*","versionStartIncluding":"1.9.0","versionEndExcluding":"1.21.0","matchCriteriaId":"744D12B2-7A0C-450A-8E1B-B608756A46C5"}]}]}],"references":[{"url":"https:\/\/github.com\/FreshRSS\/FreshRSS\/commit\/075cf4c800063e3cc65c3d41a9c23222e8ebb554","source":"security-advisories@github.com","tags":["Patch"]},{"url":"https:\/\/github.com\/FreshRSS\/FreshRSS\/security\/advisories\/GHSA-8vvv-jxg6-8578","source":"security-advisories@github.com","tags":["Exploit","Vendor Advisory"]}]}}]}
+{
+    "resultsPerPage": 3,
+    "startIndex": 0,
+    "totalResults": 3,
+    "format": "NVD_CVE",
+    "version": "2.0",
+    "timestamp": "2024-04-30T10:42:08.907",
+    "vulnerabilities": [
+        {
+            "cve": {
+                "id": "CVE-2018-19782",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2019-01-30T15:29:06.303",
+                "lastModified": "2019-01-30T17:58:04.513",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Multiple cross-site scripting (XSS) vulnerabilities in GET requests in FreshRSS 1.11.1 allow remote attackers to inject arbitrary web script or HTML via the (1) c parameter or (2) a parameter."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "M\u00faltiples vulnerabilidades de Cross-Site Scripting (XSS) en las peticiones GET en FreshRSS 1.11.1 permiten que atacantes remotos inyecten scripts web o HTML arbitrarios mediante (1) el par\u00e1metro c o (2) el par\u00e1metro a."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.1,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:freshrss:freshrss:1.11.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "B41F9090-C381-459A-AEA5-F782AEF88F14"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://packetstormsecurity.com/files/150608/FreshRSS-1.11.1-Cross-Site-Scripting.html",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "VDB Entry",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "http://seclists.org/fulldisclosure/2018/Dec/3",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Mailing List",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.exploit-db.com/exploits/45954/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory",
+                            "VDB Entry"
+                        ]
+                    },
+                    {
+                        "url": "https://www.netsparker.com/web-applications-advisories/ns-18-024-multiple-cross-site-scripting-vulnerabilities-in-freshrss/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-23497",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2022-12-09T23:15:11.680",
+                "lastModified": "2022-12-13T15:14:40.763",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "FreshRSS is a free, self-hostable RSS aggregator. User configuration files can be accessed by a remote user. In addition to user preferences, such configurations contain hashed passwords (brypt with cost 9, salted) of FreshRSS Web interface. If the API is used, the configuration might contain a hashed password (brypt with cost 9, salted) of the GReader API, and a hashed password (MD5 salted) of the Fever API. Users should update to version 1.20.2 or edge. Users unable to upgrade can apply the patch manually or delete the file `./FreshRSS/p/ext.php`."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "FreshRSS es un agregador de RSS gratuito y autohospedable. Un usuario remoto puede acceder a los archivos de configuraci\u00f3n del usuario. Adem\u00e1s de las preferencias del usuario, dichas configuraciones contienen contrase\u00f1as hash (brypt con costo 9, saladas) de la interfaz web FreshRSS. Si se utiliza la API, la configuraci\u00f3n puede contener una contrase\u00f1a hash (brypt con costo 9, salada) de la API GReader y una contrase\u00f1a hash (MD5 salada) de la API Fever. Los usuarios deben actualizar a la versi\u00f3n 1.20.2 o edge. Los usuarios que no puedan actualizar pueden aplicar el parche manualmente o eliminar el archivo `./FreshRSS/p/ext.php`."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 7.5,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 3.6
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:L",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "LOW",
+                                "baseScore": 6.5,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 2.5
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-200"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:freshrss:freshrss:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "1.18.0",
+                                        "versionEndExcluding": "1.20.2",
+                                        "matchCriteriaId": "EE2D8147-E1C5-47A5-A70A-FDB48A4F291A"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/FreshRSS/FreshRSS/pull/4928",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/FreshRSS/FreshRSS/releases/tag/1.20.2",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/FreshRSS/FreshRSS/security/advisories/GHSA-hvrj-5fwj-p7v6",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-22481",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2023-03-06T18:15:10.357",
+                "lastModified": "2023-11-07T04:06:59.633",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "FreshRSS is a self-hosted RSS feed aggregator. When using the greader API, the provided password is logged in clear in `users/_/log_api.txt` in the case where the authentication fails. The issues occurs in `authorizationToUser()` in `greader.php`. If there is an issue with the request or the credentials, `unauthorized()` or `badRequest()` is called. Both these functions are printing the return of `debugInfo()` in the logs.  `debugInfo()` will return the content of the request. By default, this will be saved in `users/_/log_api.txt` and if the const `COPY_LOG_TO_SYSLOG` is true, in syslogs as well. Exploiting this issue requires having access to logs produced by FreshRSS. Using the information from the logs, a malicious individual could get users' API keys (would be displayed if the users fills in a bad username) or passwords."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+                                "attackVector": "LOCAL",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.5,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 1.8,
+                            "impactScore": 3.6
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:A/AC:H/PR:H/UI:R/S:U/C:H/I:N/A:N",
+                                "attackVector": "ADJACENT_NETWORK",
+                                "attackComplexity": "HIGH",
+                                "privilegesRequired": "HIGH",
+                                "userInteraction": "REQUIRED",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.0,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 0.4,
+                            "impactScore": 3.6
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-532"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:freshrss:freshrss:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "1.9.0",
+                                        "versionEndExcluding": "1.21.0",
+                                        "matchCriteriaId": "744D12B2-7A0C-450A-8E1B-B608756A46C5"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/FreshRSS/FreshRSS/commit/075cf4c800063e3cc65c3d41a9c23222e8ebb554",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/FreshRSS/FreshRSS/security/advisories/GHSA-8vvv-jxg6-8578",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Exploit",
+                            "Vendor Advisory"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

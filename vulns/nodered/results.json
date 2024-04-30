@@ -1,1 +1,364 @@
-{"resultsPerPage":3,"startIndex":0,"totalResults":3,"format":"NVD_CVE","version":"2.0","timestamp":"2024-04-30T10:49:05.940","vulnerabilities":[{"cve":{"id":"CVE-2019-10756","sourceIdentifier":"report@snyk.io","published":"2019-10-08T19:15:09.823","lastModified":"2019-10-17T18:30:29.767","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"It is possible to inject JavaScript within node-red-dashboard versions prior to version 2.17.0 due to the ui_notification node accepting raw HTML by default."},{"lang":"es","value":"Es posible inyectar JavaScript dentro de node-red-dashboard versiones anteriores a 2.17.0, debido a que el nodo ui_notification acepta HTML crudo por defecto."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.3,"impactScore":2.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:S\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"SINGLE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":3.5},"baseSeverity":"LOW","exploitabilityScore":6.8,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:nodered:node-red-dashboard:*:*:*:*:*:node.js:*:*","versionEndExcluding":"2.17.0","matchCriteriaId":"08AA7507-2F7D-49AE-81EA-76A4B507E5B1"}]}]}],"references":[{"url":"https:\/\/snyk.io\/vuln\/SNYK-JS-NODEREDDASHBOARD-471939","source":"report@snyk.io","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2021-3223","sourceIdentifier":"cve@mitre.org","published":"2021-01-26T18:16:28.757","lastModified":"2021-01-28T21:42:38.933","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Node-RED-Dashboard before 2.26.2 allows ui_base\/js\/..%2f directory traversal to read files."},{"lang":"es","value":"Node-RED-Dashboard versiones anteriores a 2.26.2, permite un salto del directorio de ui_base\/js\/..%2f para leer archivos"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":7.5,"baseSeverity":"HIGH"},"exploitabilityScore":3.9,"impactScore":3.6}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:N\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":5.0},"baseSeverity":"MEDIUM","exploitabilityScore":10.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-22"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:nodered:node-red-dashboard:*:*:*:*:*:node.js:*:*","versionEndExcluding":"2.26.2","matchCriteriaId":"F56DC439-AA58-48A1-9FE7-33422246B5DA"}]}]}],"references":[{"url":"https:\/\/github.com\/node-red\/node-red-dashboard\/issues\/669","source":"cve@mitre.org","tags":["Third Party Advisory"]},{"url":"https:\/\/github.com\/node-red\/node-red-dashboard\/releases\/tag\/2.26.2","source":"cve@mitre.org","tags":["Release Notes","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-3783","sourceIdentifier":"cna@vuldb.com","published":"2022-10-31T21:15:12.413","lastModified":"2023-11-07T03:51:47.793","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"A vulnerability, which was classified as problematic, has been found in node-red-dashboard. This issue affects some unknown processing of the file components\/ui-component\/ui-component-ctrl.js of the component ui_text Format Handler. The manipulation leads to cross site scripting. The attack may be initiated remotely. The name of the patch is 9305d1a82f19b235dfad24a7d1dd4ed244db7743. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-212555."},{"lang":"es","value":"Una vulnerabilidad clasificada como problemática ha sido encontrada en node-red-dashboard. Este problema afecta un procesamiento desconocido del archivo componentes\/ui-component\/ui-component-ctrl.js del componente ui_text Format Handler. La manipulación conduce a Cross-Site Scripting (XSS). El ataque puede iniciarse de forma remota. El nombre del parche es 9305d1a82f19b235dfad24a7d1dd4ed244db7743. Se recomienda aplicar un parche para solucionar este problema. El identificador asociado de esta vulnerabilidad es VDB-212555.\n\n"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.1,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.7},{"source":"cna@vuldb.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:R\/S:U\/C:N\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"UNCHANGED","confidentialityImpact":"NONE","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":3.5,"baseSeverity":"LOW"},"exploitabilityScore":2.1,"impactScore":1.4}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]},{"source":"cna@vuldb.com","type":"Secondary","description":[{"lang":"en","value":"CWE-707"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:nodered:node-red-dashboard:*:*:*:*:*:*:*:*","versionEndExcluding":"3.2.0","matchCriteriaId":"B3BED8AC-2ECA-409C-955E-83D046AE1733"}]}]}],"references":[{"url":"https:\/\/github.com\/node-red\/node-red-dashboard\/commit\/9305d1a82f19b235dfad24a7d1dd4ed244db7743","source":"cna@vuldb.com","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/node-red\/node-red-dashboard\/issues\/772","source":"cna@vuldb.com","tags":["Exploit","Issue Tracking","Third Party Advisory"]},{"url":"https:\/\/vuldb.com\/?id.212555","source":"cna@vuldb.com","tags":["Permissions Required","Third Party Advisory","VDB Entry"]}]}}]}
+{
+    "resultsPerPage": 3,
+    "startIndex": 0,
+    "totalResults": 3,
+    "format": "NVD_CVE",
+    "version": "2.0",
+    "timestamp": "2024-04-30T10:49:05.940",
+    "vulnerabilities": [
+        {
+            "cve": {
+                "id": "CVE-2019-10756",
+                "sourceIdentifier": "report@snyk.io",
+                "published": "2019-10-08T19:15:09.823",
+                "lastModified": "2019-10-17T18:30:29.767",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "It is possible to inject JavaScript within node-red-dashboard versions prior to version 2.17.0 due to the ui_notification node accepting raw HTML by default."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Es posible inyectar JavaScript dentro de node-red-dashboard versiones anteriores a 2.17.0, debido a que el nodo ui_notification acepta HTML crudo por defecto."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 3.5
+                            },
+                            "baseSeverity": "LOW",
+                            "exploitabilityScore": 6.8,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:nodered:node-red-dashboard:*:*:*:*:*:node.js:*:*",
+                                        "versionEndExcluding": "2.17.0",
+                                        "matchCriteriaId": "08AA7507-2F7D-49AE-81EA-76A4B507E5B1"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://snyk.io/vuln/SNYK-JS-NODEREDDASHBOARD-471939",
+                        "source": "report@snyk.io",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-3223",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2021-01-26T18:16:28.757",
+                "lastModified": "2021-01-28T21:42:38.933",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Node-RED-Dashboard before 2.26.2 allows ui_base/js/..%2f directory traversal to read files."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Node-RED-Dashboard versiones anteriores a 2.26.2, permite un salto del directorio de ui_base/js/..%2f para leer archivos"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 7.5,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 3.6
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-22"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:nodered:node-red-dashboard:*:*:*:*:*:node.js:*:*",
+                                        "versionEndExcluding": "2.26.2",
+                                        "matchCriteriaId": "F56DC439-AA58-48A1-9FE7-33422246B5DA"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/node-red/node-red-dashboard/issues/669",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/node-red/node-red-dashboard/releases/tag/2.26.2",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Release Notes",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-3783",
+                "sourceIdentifier": "cna@vuldb.com",
+                "published": "2022-10-31T21:15:12.413",
+                "lastModified": "2023-11-07T03:51:47.793",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "A vulnerability, which was classified as problematic, has been found in node-red-dashboard. This issue affects some unknown processing of the file components/ui-component/ui-component-ctrl.js of the component ui_text Format Handler. The manipulation leads to cross site scripting. The attack may be initiated remotely. The name of the patch is 9305d1a82f19b235dfad24a7d1dd4ed244db7743. It is recommended to apply a patch to fix this issue. The associated identifier of this vulnerability is VDB-212555."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Una vulnerabilidad clasificada como problem\u00e1tica ha sido encontrada en node-red-dashboard. Este problema afecta un procesamiento desconocido del archivo componentes/ui-component/ui-component-ctrl.js del componente ui_text Format Handler. La manipulaci\u00f3n conduce a Cross-Site Scripting (XSS). El ataque puede iniciarse de forma remota. El nombre del parche es 9305d1a82f19b235dfad24a7d1dd4ed244db7743. Se recomienda aplicar un parche para solucionar este problema. El identificador asociado de esta vulnerabilidad es VDB-212555.\n\n"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.1,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.7
+                        },
+                        {
+                            "source": "cna@vuldb.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 3.5,
+                                "baseSeverity": "LOW"
+                            },
+                            "exploitabilityScore": 2.1,
+                            "impactScore": 1.4
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "cna@vuldb.com",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-707"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:nodered:node-red-dashboard:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "3.2.0",
+                                        "matchCriteriaId": "B3BED8AC-2ECA-409C-955E-83D046AE1733"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/node-red/node-red-dashboard/commit/9305d1a82f19b235dfad24a7d1dd4ed244db7743",
+                        "source": "cna@vuldb.com",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/node-red/node-red-dashboard/issues/772",
+                        "source": "cna@vuldb.com",
+                        "tags": [
+                            "Exploit",
+                            "Issue Tracking",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://vuldb.com/?id.212555",
+                        "source": "cna@vuldb.com",
+                        "tags": [
+                            "Permissions Required",
+                            "Third Party Advisory",
+                            "VDB Entry"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

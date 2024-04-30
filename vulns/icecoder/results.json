@@ -1,1 +1,382 @@
-{"resultsPerPage":3,"startIndex":0,"totalResults":3,"format":"NVD_CVE","version":"2.0","timestamp":"2024-04-30T10:44:15.540","vulnerabilities":[{"cve":{"id":"CVE-2021-32106","sourceIdentifier":"cve@mitre.org","published":"2021-06-08T13:15:07.640","lastModified":"2021-09-16T13:21:13.460","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"In ICEcoder 8.0 allows, a reflected XSS vulnerability was identified in the multipe-results.php page due to insufficient sanitization of the _GET['replace'] variable. As a result, arbitrary Javascript code can get executed."},{"lang":"es","value":"En ICEcoder versión 8.0 permite, una vulnerabilidad de tipo XSS reflejada fue identificada en la página multipe-results.php debido a un saneamiento insuficiente de la variable _GET[\"replace\"]. Como resultado, un código Javascript arbitrario puede ser ejecutado"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.3,"impactScore":2.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:S\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"SINGLE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":3.5},"baseSeverity":"LOW","exploitabilityScore":6.8,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:icecoder:icecoder:8.0:-:*:*:*:*:*:*","matchCriteriaId":"34248A0E-80AF-4ECB-B27A-3B33DAD6D76D"}]}]}],"references":[{"url":"https:\/\/github.com\/icecoder\/ICEcoder","source":"cve@mitre.org","tags":["Product","Third Party Advisory"]},{"url":"https:\/\/groups.google.com\/g\/icecoder\/c\/xcAc8_1UPxQ","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]},{"url":"https:\/\/prophaze.com\/cve\/icecoder-8-0-multipe-results-php-replace-cross-site-scripting\/","source":"cve@mitre.org","tags":["Third Party Advisory"]}]}},{"cve":{"id":"CVE-2021-3862","sourceIdentifier":"security@huntr.dev","published":"2022-01-17T14:15:07.923","lastModified":"2022-01-24T14:45:09.637","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"icecoder is vulnerable to Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"},{"lang":"es","value":"icecoder es vulnerable a una Neutralización Inapropiada de la Entrada Durante la Generación de la Página Web (\"Cross-site Scripting\")"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:H\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"HIGH","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":4.8,"baseSeverity":"MEDIUM"},"exploitabilityScore":1.7,"impactScore":2.7}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.3,"impactScore":2.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:S\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"SINGLE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":3.5},"baseSeverity":"LOW","exploitabilityScore":6.8,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"security@huntr.dev","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:icecoder:icecoder:*:*:*:*:*:*:*:*","versionEndExcluding":"8.1","matchCriteriaId":"0C00C1E9-47E5-4B2A-B875-B37BD8BDFF94"}]}]}],"references":[{"url":"https:\/\/github.com\/icecoder\/icecoder\/commit\/51cf24b2a39138e6a7b5739ef59eb38cd7c39763","source":"security@huntr.dev","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/5c9c228e-2a39-4643-bb82-2b02a2b0a601","source":"security@huntr.dev","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-34026","sourceIdentifier":"cve@mitre.org","published":"2022-09-22T18:15:09.983","lastModified":"2022-09-24T02:35:28.383","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"ICEcoder v8.1 allows attackers to execute a directory traversal."},{"lang":"es","value":"ICEcoder versión v8.1, permite a atacantes ejecutar un salto de directorio"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":7.5,"baseSeverity":"HIGH"},"exploitabilityScore":3.9,"impactScore":3.6}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-22"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:icecoder:icecoder:8.1:*:*:*:*:*:*:*","matchCriteriaId":"4C47354C-DE50-4271-8884-807BC04EB07F"}]}]}],"references":[{"url":"http:\/\/icecoder.com","source":"cve@mitre.org","tags":["Vendor Advisory"]},{"url":"https:\/\/gist.github.com\/enferas\/85cdbadf5cba32ec7c8db6ea9e6833bf","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]},{"url":"https:\/\/github.com\/icecoder\/ICEcoder","source":"cve@mitre.org","tags":["Third Party Advisory"]},{"url":"https:\/\/github.com\/icecoder\/ICEcoder\/blob\/master\/classes\/Settings.php","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]},{"url":"https:\/\/github.com\/icecoder\/ICEcoder\/blob\/master\/lib\/settings.php","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]}]}}]}
+{
+    "resultsPerPage": 3,
+    "startIndex": 0,
+    "totalResults": 3,
+    "format": "NVD_CVE",
+    "version": "2.0",
+    "timestamp": "2024-04-30T10:44:15.540",
+    "vulnerabilities": [
+        {
+            "cve": {
+                "id": "CVE-2021-32106",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2021-06-08T13:15:07.640",
+                "lastModified": "2021-09-16T13:21:13.460",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "In ICEcoder 8.0 allows, a reflected XSS vulnerability was identified in the multipe-results.php page due to insufficient sanitization of the _GET['replace'] variable. As a result, arbitrary Javascript code can get executed."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "En ICEcoder versi\u00f3n 8.0 permite, una vulnerabilidad de tipo XSS reflejada fue identificada en la p\u00e1gina multipe-results.php debido a un saneamiento insuficiente de la variable _GET[\"replace\"]. Como resultado, un c\u00f3digo Javascript arbitrario puede ser ejecutado"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 3.5
+                            },
+                            "baseSeverity": "LOW",
+                            "exploitabilityScore": 6.8,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:icecoder:icecoder:8.0:-:*:*:*:*:*:*",
+                                        "matchCriteriaId": "34248A0E-80AF-4ECB-B27A-3B33DAD6D76D"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/icecoder/ICEcoder",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Product",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://groups.google.com/g/icecoder/c/xcAc8_1UPxQ",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://prophaze.com/cve/icecoder-8-0-multipe-results-php-replace-cross-site-scripting/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-3862",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2022-01-17T14:15:07.923",
+                "lastModified": "2022-01-24T14:45:09.637",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "icecoder is vulnerable to Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+                    },
+                    {
+                        "lang": "es",
+                        "value": "icecoder es vulnerable a una Neutralizaci\u00f3n Inapropiada de la Entrada Durante la Generaci\u00f3n de la P\u00e1gina Web (\"Cross-site Scripting\")"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "HIGH",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.8,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 1.7,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 3.5
+                            },
+                            "baseSeverity": "LOW",
+                            "exploitabilityScore": 6.8,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:icecoder:icecoder:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "8.1",
+                                        "matchCriteriaId": "0C00C1E9-47E5-4B2A-B875-B37BD8BDFF94"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/icecoder/icecoder/commit/51cf24b2a39138e6a7b5739ef59eb38cd7c39763",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/5c9c228e-2a39-4643-bb82-2b02a2b0a601",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-34026",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2022-09-22T18:15:09.983",
+                "lastModified": "2022-09-24T02:35:28.383",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "ICEcoder v8.1 allows attackers to execute a directory traversal."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "ICEcoder versi\u00f3n v8.1, permite a atacantes ejecutar un salto de directorio"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 7.5,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 3.6
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-22"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:icecoder:icecoder:8.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "4C47354C-DE50-4271-8884-807BC04EB07F"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://icecoder.com",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://gist.github.com/enferas/85cdbadf5cba32ec7c8db6ea9e6833bf",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/icecoder/ICEcoder",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/icecoder/ICEcoder/blob/master/classes/Settings.php",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/icecoder/ICEcoder/blob/master/lib/settings.php",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

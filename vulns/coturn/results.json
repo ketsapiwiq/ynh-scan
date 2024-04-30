@@ -1,1 +1,1351 @@
-{"resultsPerPage":7,"startIndex":0,"totalResults":7,"format":"NVD_CVE","version":"2.0","timestamp":"2024-04-30T10:40:01.990","vulnerabilities":[{"cve":{"id":"CVE-2018-4056","sourceIdentifier":"talos-cna@cisco.com","published":"2019-02-05T18:29:00.850","lastModified":"2022-06-07T17:18:02.710","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"An exploitable SQL injection vulnerability exists in the administrator web portal function of coTURN prior to version 4.5.0.9. A login message with a specially crafted username can cause an SQL injection, resulting in authentication bypass, which could give access to the TURN server administrator web portal. An attacker can log in via the external interface of the TURN server to trigger this vulnerability."},{"lang":"es","value":"Existe una vulnerabilidad de Inyección SQL explotable en la función del portal web de administrador de coTURN en versiones anteriores a la 4.5.0.9. Un mensaje de inicio de sesión con un nombre de usuario especialmente manipulado puede causar una inyección SQL, conduciendo a una omisión de autenticación, lo que podría conceder acceso al portal web de administrador del servidor TURN. Un atacante puede iniciar sesión mediante la interfaz externa del servidor TURN para provocar esta vulnerabilidad."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.8,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.9}],"cvssMetricV30":[{"source":"talos-cna@cisco.com","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:N\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"NONE","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.1,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.2}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":7.5},"baseSeverity":"HIGH","exploitabilityScore":10.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-89"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:coturn_project:coturn:*:*:*:*:*:*:*:*","versionEndExcluding":"4.5.0.9","matchCriteriaId":"2000F9A5-D594-4ED7-8C14-CE3F0409FEE0"}]}]},{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:o:debian:debian_linux:8.0:*:*:*:*:*:*:*","matchCriteriaId":"C11E6FB0-C8C0-4527-9AA0-CB9B316F8F43"},{"vulnerable":true,"criteria":"cpe:2.3:o:debian:debian_linux:9.0:*:*:*:*:*:*:*","matchCriteriaId":"DEECE5FC-CACF-4496-A3E7-164736409252"}]}]}],"references":[{"url":"https:\/\/lists.debian.org\/debian-lts-announce\/2019\/02\/msg00017.html","source":"talos-cna@cisco.com","tags":["Mailing List","Third Party Advisory"]},{"url":"https:\/\/talosintelligence.com\/vulnerability_reports\/TALOS-2018-0730","source":"talos-cna@cisco.com","tags":["Exploit","Third Party Advisory"]},{"url":"https:\/\/www.debian.org\/security\/2019\/dsa-4373","source":"talos-cna@cisco.com","tags":["Third Party Advisory"]}]}},{"cve":{"id":"CVE-2018-4058","sourceIdentifier":"talos-cna@cisco.com","published":"2019-03-21T16:00:54.077","lastModified":"2022-06-07T17:18:23.497","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"An exploitable unsafe default configuration vulnerability exists in the TURN server functionality of coTURN prior to 4.5.0.9. By default, the TURN server allows relaying external traffic to the loopback interface of its own host. This can provide access to other private services running on that host, which can lead to further attacks. An attacker can set up a relay with a loopback address as the peer on an affected TURN server to trigger this vulnerability."},{"lang":"es","value":"Existe una vulnerabilidad explotable de configuración insegura por defecto en la funcionalidad del servidor TURN de coTURN, en versiones anteriores a la 4.5.0.9. Por defecto, el servidor TURN permite la reproducción de tráfico externo en la interfaz de bucle invertido de su propio host. Esto puede proporcionar acceso a otros servicios privados que se ejecutan en dicho host, lo que puede conducir a más ataques. Un atacante puede configurar un relay con una dirección de bucle invertido como peer en un servidor TURN afectado para desencadenar esta vulnerabilidad."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:C\/C:N\/I:H\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"CHANGED","confidentialityImpact":"NONE","integrityImpact":"HIGH","availabilityImpact":"NONE","baseScore":7.7,"baseSeverity":"HIGH"},"exploitabilityScore":3.1,"impactScore":4.0}],"cvssMetricV30":[{"source":"talos-cna@cisco.com","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:L\/UI:N\/S:C\/C:N\/I:H\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"CHANGED","confidentialityImpact":"NONE","integrityImpact":"HIGH","availabilityImpact":"NONE","baseScore":7.7,"baseSeverity":"HIGH"},"exploitabilityScore":3.1,"impactScore":4.0}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:S\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"SINGLE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.0},"baseSeverity":"MEDIUM","exploitabilityScore":8.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"NVD-CWE-noinfo"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:coturn_project:coturn:*:*:*:*:*:*:*:*","versionEndExcluding":"4.5.0.9","matchCriteriaId":"2000F9A5-D594-4ED7-8C14-CE3F0409FEE0"}]}]}],"references":[{"url":"https:\/\/talosintelligence.com\/vulnerability_reports\/TALOS-2018-0732","source":"talos-cna@cisco.com","tags":["Mitigation","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2018-4059","sourceIdentifier":"talos-cna@cisco.com","published":"2019-03-21T16:00:54.140","lastModified":"2022-06-07T17:18:47.310","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"An exploitable unsafe default configuration vulnerability exists in the TURN server function of coTURN prior to version 4.5.0.9. By default, the TURN server runs an unauthenticated telnet admin portal on the loopback interface. This can provide administrator access to the TURN server configuration, which can lead to additional attacks. An attacker who can get access to the telnet port can gain administrator access to the TURN server."},{"lang":"es","value":"Existe una vulnerabilidad explotable de configuración insegura por defecto en la función del servidor TURN de coTURN, en versiones anteriores a la 4.5.0.9. Por defecto, el servidor TURN ejecuta un portal de administrador telnet no autenticado en la interfaz de bucle invertido. Esto puede proporcionar acceso de administrador a la configuración del servidor TURN, lo que puede conducir a ataques adicionales. Un atacante que puede obtener acceso al puerto telnet puede obtener acceso de administrador al servidor TURN."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.8,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.9}],"cvssMetricV30":[{"source":"talos-cna@cisco.com","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:H\/UI:N\/S:U\/C:N\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"HIGH","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"NONE","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":6.5,"baseSeverity":"MEDIUM"},"exploitabilityScore":1.2,"impactScore":5.2}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:C\/I:C\/A:C","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"COMPLETE","integrityImpact":"COMPLETE","availabilityImpact":"COMPLETE","baseScore":10.0},"baseSeverity":"HIGH","exploitabilityScore":10.0,"impactScore":10.0,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-862"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:coturn_project:coturn:*:*:*:*:*:*:*:*","versionEndExcluding":"4.5.0.9","matchCriteriaId":"2000F9A5-D594-4ED7-8C14-CE3F0409FEE0"}]}]}],"references":[{"url":"https:\/\/talosintelligence.com\/vulnerability_reports\/TALOS-2018-0733","source":"talos-cna@cisco.com","tags":["Mitigation","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2020-6061","sourceIdentifier":"talos-cna@cisco.com","published":"2020-02-19T19:15:12.147","lastModified":"2023-11-07T03:24:11.567","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"An exploitable heap out-of-bounds read vulnerability exists in the way CoTURN 4.5.1.1 web server parses POST requests. A specially crafted HTTP POST request can lead to information leaks and other misbehavior. An attacker needs to send an HTTPS request to trigger this vulnerability."},{"lang":"es","value":"Existe una vulnerabilidad explotable de lectura fuera de límites en la forma en que el servidor web CoTURN 4.5.1.1 analiza las solicitudes POST. Una solicitud HTTP POST especialmente diseñada puede provocar fugas de información y otros comportamientos incorrectos. Un atacante necesita enviar una solicitud HTTPS para activar esta vulnerabilidad"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.8,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.9}],"cvssMetricV30":[{"source":"talos-cna@cisco.com","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:H\/PR:N\/UI:N\/S:U\/C:L\/I:L\/A:H","attackVector":"NETWORK","attackComplexity":"HIGH","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"HIGH","baseScore":7.0,"baseSeverity":"HIGH"},"exploitabilityScore":2.2,"impactScore":4.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":7.5},"baseSeverity":"HIGH","exploitabilityScore":10.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-125"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:coturn_project:coturn:4.5.1.1:*:*:*:*:*:*:*","matchCriteriaId":"7275C144-F604-4F59-94DA-082F29683B52"}]}]},{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:o:fedoraproject:fedora:30:*:*:*:*:*:*:*","matchCriteriaId":"97A4B8DF-58DA-4AB6-A1F9-331B36409BA3"},{"vulnerable":true,"criteria":"cpe:2.3:o:fedoraproject:fedora:31:*:*:*:*:*:*:*","matchCriteriaId":"80F0FA5D-8D3B-4C0E-81E2-87998286AF33"},{"vulnerable":true,"criteria":"cpe:2.3:o:fedoraproject:fedora:32:*:*:*:*:*:*:*","matchCriteriaId":"36D96259-24BD-44E2-96D9-78CE1D41F956"}]}]},{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:o:debian:debian_linux:9.0:*:*:*:*:*:*:*","matchCriteriaId":"DEECE5FC-CACF-4496-A3E7-164736409252"},{"vulnerable":true,"criteria":"cpe:2.3:o:debian:debian_linux:10.0:*:*:*:*:*:*:*","matchCriteriaId":"07B237A9-69A3-4A9C-9DA0-4E06BD37AE73"}]}]},{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:o:canonical:ubuntu_linux:16.04:*:*:*:esm:*:*:*","matchCriteriaId":"7A5301BF-1402-4BE0-A0F8-69FBE79BC6D6"},{"vulnerable":true,"criteria":"cpe:2.3:o:canonical:ubuntu_linux:18.04:*:*:*:lts:*:*:*","matchCriteriaId":"23A7C53F-B80F-4E6A-AFA9-58EEA84BE11D"},{"vulnerable":true,"criteria":"cpe:2.3:o:canonical:ubuntu_linux:19.10:*:*:*:*:*:*:*","matchCriteriaId":"A31C8344-3E02-4EB8-8BD8-4C84B7959624"},{"vulnerable":true,"criteria":"cpe:2.3:o:canonical:ubuntu_linux:20.04:*:*:*:lts:*:*:*","matchCriteriaId":"902B8056-9E37-443B-8905-8AA93E2447FB"}]}]}],"references":[{"url":"https:\/\/lists.fedoraproject.org\/archives\/list\/package-announce%40lists.fedoraproject.org\/message\/HQZZPI34LAS3SFNW6Z2ZJ46RKVGEODNA\/","source":"talos-cna@cisco.com"},{"url":"https:\/\/lists.fedoraproject.org\/archives\/list\/package-announce%40lists.fedoraproject.org\/message\/OUVZRXW5ZIGWVKOLF3NPXRPP74YX7BUY\/","source":"talos-cna@cisco.com"},{"url":"https:\/\/lists.fedoraproject.org\/archives\/list\/package-announce%40lists.fedoraproject.org\/message\/XN2NK6FT7AMW5UIZNXDNHKEAYWAUMGSF\/","source":"talos-cna@cisco.com"},{"url":"https:\/\/talosintelligence.com\/vulnerability_reports\/TALOS-2020-0984","source":"talos-cna@cisco.com","tags":["Exploit","Third Party Advisory"]},{"url":"https:\/\/usn.ubuntu.com\/4415-1\/","source":"talos-cna@cisco.com","tags":["Third Party Advisory"]},{"url":"https:\/\/www.debian.org\/security\/2020\/dsa-4711","source":"talos-cna@cisco.com","tags":["Third Party Advisory"]}]}},{"cve":{"id":"CVE-2020-6062","sourceIdentifier":"talos-cna@cisco.com","published":"2020-02-19T19:15:12.227","lastModified":"2023-11-07T03:24:11.650","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"An exploitable denial-of-service vulnerability exists in the way CoTURN 4.5.1.1 web server parses POST requests. A specially crafted HTTP POST request can lead to server crash and denial of service. An attacker needs to send an HTTP request to trigger this vulnerability."},{"lang":"es","value":"Se presenta una vulnerabilidad de denegación de servicio explotable en la manera en que el servidor web CoTURN versión 4.5.1.1 analiza las peticiones POST. Una petición HTTP POST especialmente diseñada puede conllevar a un bloqueo del servidor y una denegación de servicio. Un atacante necesita enviar una petición HTTP para desencadenar esta vulnerabilidad."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:N\/I:N\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"NONE","integrityImpact":"NONE","availabilityImpact":"HIGH","baseScore":7.5,"baseSeverity":"HIGH"},"exploitabilityScore":3.9,"impactScore":3.6}],"cvssMetricV30":[{"source":"talos-cna@cisco.com","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:H\/PR:N\/UI:N\/S:U\/C:N\/I:N\/A:H","attackVector":"NETWORK","attackComplexity":"HIGH","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"NONE","integrityImpact":"NONE","availabilityImpact":"HIGH","baseScore":5.9,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.2,"impactScore":3.6}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:N\/I:N\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"NONE","availabilityImpact":"PARTIAL","baseScore":5.0},"baseSeverity":"MEDIUM","exploitabilityScore":10.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-476"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:coturn_project:coturn:4.5.1.1:*:*:*:*:*:*:*","matchCriteriaId":"7275C144-F604-4F59-94DA-082F29683B52"}]}]},{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:o:debian:debian_linux:9.0:*:*:*:*:*:*:*","matchCriteriaId":"DEECE5FC-CACF-4496-A3E7-164736409252"},{"vulnerable":true,"criteria":"cpe:2.3:o:debian:debian_linux:10.0:*:*:*:*:*:*:*","matchCriteriaId":"07B237A9-69A3-4A9C-9DA0-4E06BD37AE73"}]}]},{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:o:fedoraproject:fedora:30:*:*:*:*:*:*:*","matchCriteriaId":"97A4B8DF-58DA-4AB6-A1F9-331B36409BA3"},{"vulnerable":true,"criteria":"cpe:2.3:o:fedoraproject:fedora:31:*:*:*:*:*:*:*","matchCriteriaId":"80F0FA5D-8D3B-4C0E-81E2-87998286AF33"},{"vulnerable":true,"criteria":"cpe:2.3:o:fedoraproject:fedora:32:*:*:*:*:*:*:*","matchCriteriaId":"36D96259-24BD-44E2-96D9-78CE1D41F956"}]}]},{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:o:canonical:ubuntu_linux:16.04:*:*:*:esm:*:*:*","matchCriteriaId":"7A5301BF-1402-4BE0-A0F8-69FBE79BC6D6"},{"vulnerable":true,"criteria":"cpe:2.3:o:canonical:ubuntu_linux:18.04:*:*:*:lts:*:*:*","matchCriteriaId":"23A7C53F-B80F-4E6A-AFA9-58EEA84BE11D"},{"vulnerable":true,"criteria":"cpe:2.3:o:canonical:ubuntu_linux:19.10:*:*:*:*:*:*:*","matchCriteriaId":"A31C8344-3E02-4EB8-8BD8-4C84B7959624"},{"vulnerable":true,"criteria":"cpe:2.3:o:canonical:ubuntu_linux:20.04:*:*:*:lts:*:*:*","matchCriteriaId":"902B8056-9E37-443B-8905-8AA93E2447FB"}]}]}],"references":[{"url":"https:\/\/lists.fedoraproject.org\/archives\/list\/package-announce%40lists.fedoraproject.org\/message\/HQZZPI34LAS3SFNW6Z2ZJ46RKVGEODNA\/","source":"talos-cna@cisco.com"},{"url":"https:\/\/lists.fedoraproject.org\/archives\/list\/package-announce%40lists.fedoraproject.org\/message\/OUVZRXW5ZIGWVKOLF3NPXRPP74YX7BUY\/","source":"talos-cna@cisco.com"},{"url":"https:\/\/lists.fedoraproject.org\/archives\/list\/package-announce%40lists.fedoraproject.org\/message\/XN2NK6FT7AMW5UIZNXDNHKEAYWAUMGSF\/","source":"talos-cna@cisco.com"},{"url":"https:\/\/talosintelligence.com\/vulnerability_reports\/TALOS-2020-0985","source":"talos-cna@cisco.com","tags":["Exploit","Third Party Advisory"]},{"url":"https:\/\/usn.ubuntu.com\/4415-1\/","source":"talos-cna@cisco.com","tags":["Third Party Advisory"]},{"url":"https:\/\/www.debian.org\/security\/2020\/dsa-4711","source":"talos-cna@cisco.com","tags":["Third Party Advisory"]}]}},{"cve":{"id":"CVE-2020-4067","sourceIdentifier":"security-advisories@github.com","published":"2020-06-29T20:15:10.413","lastModified":"2023-11-07T03:23:11.123","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"In coturn before version 4.5.1.3, there is an issue whereby STUN\/TURN response buffer is not initialized properly. There is a leak of information between different client connections. One client (an attacker) could use their connection to intelligently query coturn to get interesting bytes in the padding bytes from the connection of another client. This has been fixed in 4.5.1.3."},{"lang":"es","value":"En coturn anterior a la versión 4.5.1.3, se presenta un problema por el cual el búfer de respuesta STUN\/TURN no se inicializa apropiadamente. Se presenta una fuga de información entre diferentes conexiones de clientes. Un cliente (un atacante) podría usar su conexión para consultar inteligentemente coturn para obtener bytes de interés en los bytes de relleno de la conexión de otro cliente. Esto ha sido corregido en la versión 4.5.1.3"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":7.5,"baseSeverity":"HIGH"},"exploitabilityScore":3.9,"impactScore":3.6},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:H\/PR:N\/UI:N\/S:U\/C:H\/I:L\/A:L","attackVector":"NETWORK","attackComplexity":"HIGH","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"LOW","availabilityImpact":"LOW","baseScore":7.0,"baseSeverity":"HIGH"},"exploitabilityScore":2.2,"impactScore":4.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:N\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":5.0},"baseSeverity":"MEDIUM","exploitabilityScore":10.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"security-advisories@github.com","type":"Primary","description":[{"lang":"en","value":"CWE-665"}]},{"source":"nvd@nist.gov","type":"Secondary","description":[{"lang":"en","value":"CWE-665"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:coturn_project:coturn:*:*:*:*:*:*:*:*","versionEndExcluding":"4.5.1.3","matchCriteriaId":"C96CC629-0987-4323-8C5D-37D26FFE603B"}]}]},{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:o:debian:debian_linux:8.0:*:*:*:*:*:*:*","matchCriteriaId":"C11E6FB0-C8C0-4527-9AA0-CB9B316F8F43"},{"vulnerable":true,"criteria":"cpe:2.3:o:debian:debian_linux:9.0:*:*:*:*:*:*:*","matchCriteriaId":"DEECE5FC-CACF-4496-A3E7-164736409252"},{"vulnerable":true,"criteria":"cpe:2.3:o:debian:debian_linux:10.0:*:*:*:*:*:*:*","matchCriteriaId":"07B237A9-69A3-4A9C-9DA0-4E06BD37AE73"}]}]},{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:o:fedoraproject:fedora:31:*:*:*:*:*:*:*","matchCriteriaId":"80F0FA5D-8D3B-4C0E-81E2-87998286AF33"},{"vulnerable":true,"criteria":"cpe:2.3:o:fedoraproject:fedora:32:*:*:*:*:*:*:*","matchCriteriaId":"36D96259-24BD-44E2-96D9-78CE1D41F956"}]}]},{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:o:canonical:ubuntu_linux:16.04:*:*:*:esm:*:*:*","matchCriteriaId":"7A5301BF-1402-4BE0-A0F8-69FBE79BC6D6"},{"vulnerable":true,"criteria":"cpe:2.3:o:canonical:ubuntu_linux:18.04:*:*:*:lts:*:*:*","matchCriteriaId":"23A7C53F-B80F-4E6A-AFA9-58EEA84BE11D"},{"vulnerable":true,"criteria":"cpe:2.3:o:canonical:ubuntu_linux:19.10:*:*:*:*:*:*:*","matchCriteriaId":"A31C8344-3E02-4EB8-8BD8-4C84B7959624"},{"vulnerable":true,"criteria":"cpe:2.3:o:canonical:ubuntu_linux:20.04:*:*:*:lts:*:*:*","matchCriteriaId":"902B8056-9E37-443B-8905-8AA93E2447FB"}]}]},{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:o:opensuse:leap:15.2:*:*:*:*:*:*:*","matchCriteriaId":"B009C22E-30A4-4288-BCF6-C3E81DEAF45A"}]}]}],"references":[{"url":"http:\/\/lists.opensuse.org\/opensuse-security-announce\/2020-07\/msg00010.html","source":"security-advisories@github.com","tags":["Mailing List","Third Party Advisory"]},{"url":"https:\/\/github.com\/coturn\/coturn\/blob\/aab60340b201d55c007bcdc853230f47aa2dfdf1\/ChangeLog#L15","source":"security-advisories@github.com","tags":["Release Notes"]},{"url":"https:\/\/github.com\/coturn\/coturn\/issues\/583","source":"security-advisories@github.com","tags":["Issue Tracking","Third Party Advisory"]},{"url":"https:\/\/github.com\/coturn\/coturn\/security\/advisories\/GHSA-c8r8-8vp5-6gcm","source":"security-advisories@github.com","tags":["Third Party Advisory"]},{"url":"https:\/\/lists.debian.org\/debian-lts-announce\/2020\/07\/msg00002.html","source":"security-advisories@github.com","tags":["Mailing List","Third Party Advisory"]},{"url":"https:\/\/lists.fedoraproject.org\/archives\/list\/package-announce%40lists.fedoraproject.org\/message\/5G35UBNSRLL6SYRTODYTMBJ65TLQILUM\/","source":"security-advisories@github.com"},{"url":"https:\/\/lists.fedoraproject.org\/archives\/list\/package-announce%40lists.fedoraproject.org\/message\/TNJJO77ZLGGFJWNUGP6VDG5HPAC5UDBK\/","source":"security-advisories@github.com"},{"url":"https:\/\/usn.ubuntu.com\/4415-1\/","source":"security-advisories@github.com","tags":["Third Party Advisory"]},{"url":"https:\/\/www.debian.org\/security\/2020\/dsa-4711","source":"security-advisories@github.com","tags":["Third Party Advisory"]}]}},{"cve":{"id":"CVE-2020-26262","sourceIdentifier":"security-advisories@github.com","published":"2021-01-13T19:15:16.027","lastModified":"2023-11-07T03:20:32.470","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"Coturn is free open source implementation of TURN and STUN Server. Coturn before version 4.5.2 by default does not allow peers to connect and relay packets to loopback addresses in the range of `127.x.x.x`. However, it was observed that when sending a `CONNECT` request with the `XOR-PEER-ADDRESS` value of `0.0.0.0`, a successful response was received and subsequently, `CONNECTIONBIND` also received a successful response. Coturn then is able to relay packets to the loopback interface. Additionally, when coturn is listening on IPv6, which is default, the loopback interface can also be reached by making use of either `[::1]` or `[::]` as the peer address. By using the address `0.0.0.0` as the peer address, a malicious user will be able to relay packets to the loopback interface, unless `--denied-peer-ip=0.0.0.0` (or similar) has been specified. Since the default configuration implies that loopback peers are not allowed, coturn administrators may choose to not set the `denied-peer-ip` setting. The issue patched in version 4.5.2. As a workaround the addresses in the address block `0.0.0.0\/8`, `[::1]` and `[::]` should be denied by default unless `--allow-loopback-peers` has been specified."},{"lang":"es","value":"Coturn es una implementación gratuita de código abierto de TURN y STUN Server.&#xa0;Coturn anterior a la versión 4.5.2 por defecto no permite a los peers conectarse y retransmitir paquetes a direcciones loopback en el rango de \"127.xxx\".&#xa0;Sin embargo, se observó que al enviar una petición \"CONNECT\" con el valor \"XOR-PEER-ADDRESS\" de \"0.0.0.0\", se recibió una respuesta con éxito y, posteriormente, \"CONNECTIONBIND\" también recibió una respuesta exitosa.&#xa0;Coturn entonces puede retransmitir paquetes hacia la interfaz loopback.&#xa0;Además, cuando coturn está escuchando en IPv6, que es el valor predeterminado, también se puede acceder a la interfaz de bucle invertido haciendo uso de \"[::1]\" o \"[::]\" como dirección del mismo nivel.&#xa0;Al usar la dirección \"0.0.0.0\" como dirección del peer, un usuario malicioso podrá retransmitir paquetes a la interfaz de bucle invertido, a menos que se haya especificado \"--denied-peer-ip=0.0.0.0\" (o similar).&#xa0;Dado que la configuración predeterminada implica que no se permiten los peers de bucle invertido, los administradores de turno pueden optar por no establecer la configuración \"denegado-ip\".&#xa0;El problema es parcheado en la versión 4.5.2.&#xa0;Como solución alternativa, las direcciones en el bloque de direcciones \"0.0.0.0\/8\", \"[::1]\" y \"[::]\" deben denegarse por defecto a menos que se haya especificado \"--allow-loopback-peers\"."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":7.2,"baseSeverity":"HIGH"},"exploitabilityScore":3.9,"impactScore":2.7},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":7.2,"baseSeverity":"HIGH"},"exploitabilityScore":3.9,"impactScore":2.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":6.4},"baseSeverity":"MEDIUM","exploitabilityScore":10.0,"impactScore":4.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"security-advisories@github.com","type":"Primary","description":[{"lang":"en","value":"CWE-441"},{"lang":"en","value":"CWE-682"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:coturn_project:coturn:*:*:*:*:*:*:*:*","versionEndExcluding":"4.5.2","matchCriteriaId":"0AB3C866-6E5A-4FD5-895D-FFF6AEF3BDF2"}]}]},{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:o:fedoraproject:fedora:32:*:*:*:*:*:*:*","matchCriteriaId":"36D96259-24BD-44E2-96D9-78CE1D41F956"},{"vulnerable":true,"criteria":"cpe:2.3:o:fedoraproject:fedora:33:*:*:*:*:*:*:*","matchCriteriaId":"E460AA51-FCDA-46B9-AE97-E6676AA5E194"}]}]}],"references":[{"url":"https:\/\/github.com\/coturn\/coturn\/blob\/57180ab60afcaeb13537e69ae8cb8aefd8f3f546\/ChangeLog#L48","source":"security-advisories@github.com","tags":["Release Notes","Third Party Advisory"]},{"url":"https:\/\/github.com\/coturn\/coturn\/commit\/abfe1fd08d78baa0947d17dac0f7411c3d948e4d","source":"security-advisories@github.com","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/coturn\/coturn\/security\/advisories\/GHSA-6g6j-r9rf-cm7p","source":"security-advisories@github.com","tags":["Exploit","Third Party Advisory"]},{"url":"https:\/\/lists.fedoraproject.org\/archives\/list\/package-announce%40lists.fedoraproject.org\/message\/G54UIUFTEC6RLPOISMB6FUW7456SBZC4\/","source":"security-advisories@github.com"},{"url":"https:\/\/lists.fedoraproject.org\/archives\/list\/package-announce%40lists.fedoraproject.org\/message\/M4CJOPAQT43MYAFU3UROGLEXN3Z6RS4H\/","source":"security-advisories@github.com"}]}}]}
+{
+    "resultsPerPage": 7,
+    "startIndex": 0,
+    "totalResults": 7,
+    "format": "NVD_CVE",
+    "version": "2.0",
+    "timestamp": "2024-04-30T10:40:01.990",
+    "vulnerabilities": [
+        {
+            "cve": {
+                "id": "CVE-2018-4056",
+                "sourceIdentifier": "talos-cna@cisco.com",
+                "published": "2019-02-05T18:29:00.850",
+                "lastModified": "2022-06-07T17:18:02.710",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "An exploitable SQL injection vulnerability exists in the administrator web portal function of coTURN prior to version 4.5.0.9. A login message with a specially crafted username can cause an SQL injection, resulting in authentication bypass, which could give access to the TURN server administrator web portal. An attacker can log in via the external interface of the TURN server to trigger this vulnerability."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Existe una vulnerabilidad de Inyecci\u00f3n SQL explotable en la funci\u00f3n del portal web de administrador de coTURN en versiones anteriores a la 4.5.0.9. Un mensaje de inicio de sesi\u00f3n con un nombre de usuario especialmente manipulado puede causar una inyecci\u00f3n SQL, conduciendo a una omisi\u00f3n de autenticaci\u00f3n, lo que podr\u00eda conceder acceso al portal web de administrador del servidor TURN. Un atacante puede iniciar sesi\u00f3n mediante la interfaz externa del servidor TURN para provocar esta vulnerabilidad."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.8,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "talos-cna@cisco.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.1,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.2
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 7.5
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-89"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:coturn_project:coturn:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "4.5.0.9",
+                                        "matchCriteriaId": "2000F9A5-D594-4ED7-8C14-CE3F0409FEE0"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:debian:debian_linux:8.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "C11E6FB0-C8C0-4527-9AA0-CB9B316F8F43"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:debian:debian_linux:9.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "DEECE5FC-CACF-4496-A3E7-164736409252"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://lists.debian.org/debian-lts-announce/2019/02/msg00017.html",
+                        "source": "talos-cna@cisco.com",
+                        "tags": [
+                            "Mailing List",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://talosintelligence.com/vulnerability_reports/TALOS-2018-0730",
+                        "source": "talos-cna@cisco.com",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.debian.org/security/2019/dsa-4373",
+                        "source": "talos-cna@cisco.com",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2018-4058",
+                "sourceIdentifier": "talos-cna@cisco.com",
+                "published": "2019-03-21T16:00:54.077",
+                "lastModified": "2022-06-07T17:18:23.497",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "An exploitable unsafe default configuration vulnerability exists in the TURN server functionality of coTURN prior to 4.5.0.9. By default, the TURN server allows relaying external traffic to the loopback interface of its own host. This can provide access to other private services running on that host, which can lead to further attacks. An attacker can set up a relay with a loopback address as the peer on an affected TURN server to trigger this vulnerability."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Existe una vulnerabilidad explotable de configuraci\u00f3n insegura por defecto en la funcionalidad del servidor TURN de coTURN, en versiones anteriores a la 4.5.0.9. Por defecto, el servidor TURN permite la reproducci\u00f3n de tr\u00e1fico externo en la interfaz de bucle invertido de su propio host. Esto puede proporcionar acceso a otros servicios privados que se ejecutan en dicho host, lo que puede conducir a m\u00e1s ataques. Un atacante puede configurar un relay con una direcci\u00f3n de bucle invertido como peer en un servidor TURN afectado para desencadenar esta vulnerabilidad."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 7.7,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.1,
+                            "impactScore": 4.0
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "talos-cna@cisco.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:H/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 7.7,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.1,
+                            "impactScore": 4.0
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:S/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "NVD-CWE-noinfo"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:coturn_project:coturn:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "4.5.0.9",
+                                        "matchCriteriaId": "2000F9A5-D594-4ED7-8C14-CE3F0409FEE0"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://talosintelligence.com/vulnerability_reports/TALOS-2018-0732",
+                        "source": "talos-cna@cisco.com",
+                        "tags": [
+                            "Mitigation",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2018-4059",
+                "sourceIdentifier": "talos-cna@cisco.com",
+                "published": "2019-03-21T16:00:54.140",
+                "lastModified": "2022-06-07T17:18:47.310",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "An exploitable unsafe default configuration vulnerability exists in the TURN server function of coTURN prior to version 4.5.0.9. By default, the TURN server runs an unauthenticated telnet admin portal on the loopback interface. This can provide administrator access to the TURN server configuration, which can lead to additional attacks. An attacker who can get access to the telnet port can gain administrator access to the TURN server."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Existe una vulnerabilidad explotable de configuraci\u00f3n insegura por defecto en la funci\u00f3n del servidor TURN de coTURN, en versiones anteriores a la 4.5.0.9. Por defecto, el servidor TURN ejecuta un portal de administrador telnet no autenticado en la interfaz de bucle invertido. Esto puede proporcionar acceso de administrador a la configuraci\u00f3n del servidor TURN, lo que puede conducir a ataques adicionales. Un atacante que puede obtener acceso al puerto telnet puede obtener acceso de administrador al servidor TURN."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.8,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "talos-cna@cisco.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "HIGH",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 6.5,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 1.2,
+                            "impactScore": 5.2
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "COMPLETE",
+                                "integrityImpact": "COMPLETE",
+                                "availabilityImpact": "COMPLETE",
+                                "baseScore": 10.0
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 10.0,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-862"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:coturn_project:coturn:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "4.5.0.9",
+                                        "matchCriteriaId": "2000F9A5-D594-4ED7-8C14-CE3F0409FEE0"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://talosintelligence.com/vulnerability_reports/TALOS-2018-0733",
+                        "source": "talos-cna@cisco.com",
+                        "tags": [
+                            "Mitigation",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2020-6061",
+                "sourceIdentifier": "talos-cna@cisco.com",
+                "published": "2020-02-19T19:15:12.147",
+                "lastModified": "2023-11-07T03:24:11.567",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "An exploitable heap out-of-bounds read vulnerability exists in the way CoTURN 4.5.1.1 web server parses POST requests. A specially crafted HTTP POST request can lead to information leaks and other misbehavior. An attacker needs to send an HTTPS request to trigger this vulnerability."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Existe una vulnerabilidad explotable de lectura fuera de l\u00edmites en la forma en que el servidor web CoTURN 4.5.1.1 analiza las solicitudes POST. Una solicitud HTTP POST especialmente dise\u00f1ada puede provocar fugas de informaci\u00f3n y otros comportamientos incorrectos. Un atacante necesita enviar una solicitud HTTPS para activar esta vulnerabilidad"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.8,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "talos-cna@cisco.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "HIGH",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 7.0,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.2,
+                            "impactScore": 4.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 7.5
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-125"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:coturn_project:coturn:4.5.1.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "7275C144-F604-4F59-94DA-082F29683B52"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:fedoraproject:fedora:30:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "97A4B8DF-58DA-4AB6-A1F9-331B36409BA3"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:fedoraproject:fedora:31:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "80F0FA5D-8D3B-4C0E-81E2-87998286AF33"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:fedoraproject:fedora:32:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "36D96259-24BD-44E2-96D9-78CE1D41F956"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:debian:debian_linux:9.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "DEECE5FC-CACF-4496-A3E7-164736409252"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:debian:debian_linux:10.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "07B237A9-69A3-4A9C-9DA0-4E06BD37AE73"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:canonical:ubuntu_linux:16.04:*:*:*:esm:*:*:*",
+                                        "matchCriteriaId": "7A5301BF-1402-4BE0-A0F8-69FBE79BC6D6"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:canonical:ubuntu_linux:18.04:*:*:*:lts:*:*:*",
+                                        "matchCriteriaId": "23A7C53F-B80F-4E6A-AFA9-58EEA84BE11D"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:canonical:ubuntu_linux:19.10:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "A31C8344-3E02-4EB8-8BD8-4C84B7959624"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:canonical:ubuntu_linux:20.04:*:*:*:lts:*:*:*",
+                                        "matchCriteriaId": "902B8056-9E37-443B-8905-8AA93E2447FB"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/HQZZPI34LAS3SFNW6Z2ZJ46RKVGEODNA/",
+                        "source": "talos-cna@cisco.com"
+                    },
+                    {
+                        "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/OUVZRXW5ZIGWVKOLF3NPXRPP74YX7BUY/",
+                        "source": "talos-cna@cisco.com"
+                    },
+                    {
+                        "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/XN2NK6FT7AMW5UIZNXDNHKEAYWAUMGSF/",
+                        "source": "talos-cna@cisco.com"
+                    },
+                    {
+                        "url": "https://talosintelligence.com/vulnerability_reports/TALOS-2020-0984",
+                        "source": "talos-cna@cisco.com",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://usn.ubuntu.com/4415-1/",
+                        "source": "talos-cna@cisco.com",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.debian.org/security/2020/dsa-4711",
+                        "source": "talos-cna@cisco.com",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2020-6062",
+                "sourceIdentifier": "talos-cna@cisco.com",
+                "published": "2020-02-19T19:15:12.227",
+                "lastModified": "2023-11-07T03:24:11.650",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "An exploitable denial-of-service vulnerability exists in the way CoTURN 4.5.1.1 web server parses POST requests. A specially crafted HTTP POST request can lead to server crash and denial of service. An attacker needs to send an HTTP request to trigger this vulnerability."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Se presenta una vulnerabilidad de denegaci\u00f3n de servicio explotable en la manera en que el servidor web CoTURN versi\u00f3n 4.5.1.1 analiza las peticiones POST. Una petici\u00f3n HTTP POST especialmente dise\u00f1ada puede conllevar a un bloqueo del servidor y una denegaci\u00f3n de servicio. Un atacante necesita enviar una petici\u00f3n HTTP para desencadenar esta vulnerabilidad."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 7.5,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 3.6
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "talos-cna@cisco.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "HIGH",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 5.9,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.2,
+                            "impactScore": 3.6
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 5.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-476"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:coturn_project:coturn:4.5.1.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "7275C144-F604-4F59-94DA-082F29683B52"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:debian:debian_linux:9.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "DEECE5FC-CACF-4496-A3E7-164736409252"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:debian:debian_linux:10.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "07B237A9-69A3-4A9C-9DA0-4E06BD37AE73"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:fedoraproject:fedora:30:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "97A4B8DF-58DA-4AB6-A1F9-331B36409BA3"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:fedoraproject:fedora:31:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "80F0FA5D-8D3B-4C0E-81E2-87998286AF33"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:fedoraproject:fedora:32:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "36D96259-24BD-44E2-96D9-78CE1D41F956"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:canonical:ubuntu_linux:16.04:*:*:*:esm:*:*:*",
+                                        "matchCriteriaId": "7A5301BF-1402-4BE0-A0F8-69FBE79BC6D6"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:canonical:ubuntu_linux:18.04:*:*:*:lts:*:*:*",
+                                        "matchCriteriaId": "23A7C53F-B80F-4E6A-AFA9-58EEA84BE11D"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:canonical:ubuntu_linux:19.10:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "A31C8344-3E02-4EB8-8BD8-4C84B7959624"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:canonical:ubuntu_linux:20.04:*:*:*:lts:*:*:*",
+                                        "matchCriteriaId": "902B8056-9E37-443B-8905-8AA93E2447FB"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/HQZZPI34LAS3SFNW6Z2ZJ46RKVGEODNA/",
+                        "source": "talos-cna@cisco.com"
+                    },
+                    {
+                        "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/OUVZRXW5ZIGWVKOLF3NPXRPP74YX7BUY/",
+                        "source": "talos-cna@cisco.com"
+                    },
+                    {
+                        "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/XN2NK6FT7AMW5UIZNXDNHKEAYWAUMGSF/",
+                        "source": "talos-cna@cisco.com"
+                    },
+                    {
+                        "url": "https://talosintelligence.com/vulnerability_reports/TALOS-2020-0985",
+                        "source": "talos-cna@cisco.com",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://usn.ubuntu.com/4415-1/",
+                        "source": "talos-cna@cisco.com",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.debian.org/security/2020/dsa-4711",
+                        "source": "talos-cna@cisco.com",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2020-4067",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2020-06-29T20:15:10.413",
+                "lastModified": "2023-11-07T03:23:11.123",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "In coturn before version 4.5.1.3, there is an issue whereby STUN/TURN response buffer is not initialized properly. There is a leak of information between different client connections. One client (an attacker) could use their connection to intelligently query coturn to get interesting bytes in the padding bytes from the connection of another client. This has been fixed in 4.5.1.3."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "En coturn anterior a la versi\u00f3n 4.5.1.3, se presenta un problema por el cual el b\u00fafer de respuesta STUN/TURN no se inicializa apropiadamente. Se presenta una fuga de informaci\u00f3n entre diferentes conexiones de clientes. Un cliente (un atacante) podr\u00eda usar su conexi\u00f3n para consultar inteligentemente coturn para obtener bytes de inter\u00e9s en los bytes de relleno de la conexi\u00f3n de otro cliente. Esto ha sido corregido en la versi\u00f3n 4.5.1.3"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 7.5,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 3.6
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:L",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "HIGH",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "LOW",
+                                "baseScore": 7.0,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.2,
+                            "impactScore": 4.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-665"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-665"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:coturn_project:coturn:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "4.5.1.3",
+                                        "matchCriteriaId": "C96CC629-0987-4323-8C5D-37D26FFE603B"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:debian:debian_linux:8.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "C11E6FB0-C8C0-4527-9AA0-CB9B316F8F43"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:debian:debian_linux:9.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "DEECE5FC-CACF-4496-A3E7-164736409252"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:debian:debian_linux:10.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "07B237A9-69A3-4A9C-9DA0-4E06BD37AE73"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:fedoraproject:fedora:31:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "80F0FA5D-8D3B-4C0E-81E2-87998286AF33"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:fedoraproject:fedora:32:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "36D96259-24BD-44E2-96D9-78CE1D41F956"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:canonical:ubuntu_linux:16.04:*:*:*:esm:*:*:*",
+                                        "matchCriteriaId": "7A5301BF-1402-4BE0-A0F8-69FBE79BC6D6"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:canonical:ubuntu_linux:18.04:*:*:*:lts:*:*:*",
+                                        "matchCriteriaId": "23A7C53F-B80F-4E6A-AFA9-58EEA84BE11D"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:canonical:ubuntu_linux:19.10:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "A31C8344-3E02-4EB8-8BD8-4C84B7959624"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:canonical:ubuntu_linux:20.04:*:*:*:lts:*:*:*",
+                                        "matchCriteriaId": "902B8056-9E37-443B-8905-8AA93E2447FB"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:opensuse:leap:15.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "B009C22E-30A4-4288-BCF6-C3E81DEAF45A"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://lists.opensuse.org/opensuse-security-announce/2020-07/msg00010.html",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Mailing List",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/coturn/coturn/blob/aab60340b201d55c007bcdc853230f47aa2dfdf1/ChangeLog#L15",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Release Notes"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/coturn/coturn/issues/583",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Issue Tracking",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/coturn/coturn/security/advisories/GHSA-c8r8-8vp5-6gcm",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://lists.debian.org/debian-lts-announce/2020/07/msg00002.html",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Mailing List",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/5G35UBNSRLL6SYRTODYTMBJ65TLQILUM/",
+                        "source": "security-advisories@github.com"
+                    },
+                    {
+                        "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/TNJJO77ZLGGFJWNUGP6VDG5HPAC5UDBK/",
+                        "source": "security-advisories@github.com"
+                    },
+                    {
+                        "url": "https://usn.ubuntu.com/4415-1/",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.debian.org/security/2020/dsa-4711",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2020-26262",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2021-01-13T19:15:16.027",
+                "lastModified": "2023-11-07T03:20:32.470",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Coturn is free open source implementation of TURN and STUN Server. Coturn before version 4.5.2 by default does not allow peers to connect and relay packets to loopback addresses in the range of `127.x.x.x`. However, it was observed that when sending a `CONNECT` request with the `XOR-PEER-ADDRESS` value of `0.0.0.0`, a successful response was received and subsequently, `CONNECTIONBIND` also received a successful response. Coturn then is able to relay packets to the loopback interface. Additionally, when coturn is listening on IPv6, which is default, the loopback interface can also be reached by making use of either `[::1]` or `[::]` as the peer address. By using the address `0.0.0.0` as the peer address, a malicious user will be able to relay packets to the loopback interface, unless `--denied-peer-ip=0.0.0.0` (or similar) has been specified. Since the default configuration implies that loopback peers are not allowed, coturn administrators may choose to not set the `denied-peer-ip` setting. The issue patched in version 4.5.2. As a workaround the addresses in the address block `0.0.0.0/8`, `[::1]` and `[::]` should be denied by default unless `--allow-loopback-peers` has been specified."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Coturn es una implementaci\u00f3n gratuita de c\u00f3digo abierto de TURN y STUN Server.&#xa0;Coturn anterior a la versi\u00f3n 4.5.2 por defecto no permite a los peers conectarse y retransmitir paquetes a direcciones loopback en el rango de \"127.xxx\".&#xa0;Sin embargo, se observ\u00f3 que al enviar una petici\u00f3n \"CONNECT\" con el valor \"XOR-PEER-ADDRESS\" de \"0.0.0.0\", se recibi\u00f3 una respuesta con \u00e9xito y, posteriormente, \"CONNECTIONBIND\" tambi\u00e9n recibi\u00f3 una respuesta exitosa.&#xa0;Coturn entonces puede retransmitir paquetes hacia la interfaz loopback.&#xa0;Adem\u00e1s, cuando coturn est\u00e1 escuchando en IPv6, que es el valor predeterminado, tambi\u00e9n se puede acceder a la interfaz de bucle invertido haciendo uso de \"[::1]\" o \"[::]\" como direcci\u00f3n del mismo nivel.&#xa0;Al usar la direcci\u00f3n \"0.0.0.0\" como direcci\u00f3n del peer, un usuario malicioso podr\u00e1 retransmitir paquetes a la interfaz de bucle invertido, a menos que se haya especificado \"--denied-peer-ip=0.0.0.0\" (o similar).&#xa0;Dado que la configuraci\u00f3n predeterminada implica que no se permiten los peers de bucle invertido, los administradores de turno pueden optar por no establecer la configuraci\u00f3n \"denegado-ip\".&#xa0;El problema es parcheado en la versi\u00f3n 4.5.2.&#xa0;Como soluci\u00f3n alternativa, las direcciones en el bloque de direcciones \"0.0.0.0/8\", \"[::1]\" y \"[::]\" deben denegarse por defecto a menos que se haya especificado \"--allow-loopback-peers\"."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 7.2,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 2.7
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 7.2,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.4
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 4.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-441"
+                            },
+                            {
+                                "lang": "en",
+                                "value": "CWE-682"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:coturn_project:coturn:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "4.5.2",
+                                        "matchCriteriaId": "0AB3C866-6E5A-4FD5-895D-FFF6AEF3BDF2"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:fedoraproject:fedora:32:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "36D96259-24BD-44E2-96D9-78CE1D41F956"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:fedoraproject:fedora:33:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "E460AA51-FCDA-46B9-AE97-E6676AA5E194"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/coturn/coturn/blob/57180ab60afcaeb13537e69ae8cb8aefd8f3f546/ChangeLog#L48",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Release Notes",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/coturn/coturn/commit/abfe1fd08d78baa0947d17dac0f7411c3d948e4d",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/coturn/coturn/security/advisories/GHSA-6g6j-r9rf-cm7p",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/G54UIUFTEC6RLPOISMB6FUW7456SBZC4/",
+                        "source": "security-advisories@github.com"
+                    },
+                    {
+                        "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/M4CJOPAQT43MYAFU3UROGLEXN3Z6RS4H/",
+                        "source": "security-advisories@github.com"
+                    }
+                ]
+            }
+        }
+    ]
+}

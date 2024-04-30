@@ -1,1 +1,2478 @@
-{"resultsPerPage":22,"startIndex":0,"totalResults":22,"format":"NVD_CVE","version":"2.0","timestamp":"2024-04-30T10:55:02.713","vulnerabilities":[{"cve":{"id":"CVE-2011-5317","sourceIdentifier":"cve@mitre.org","published":"2015-01-01T11:59:21.723","lastModified":"2015-01-02T15:46:26.013","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Cross-site scripting (XSS) vulnerability in editText.php in WonderCMS before 0.4 allows remote attackers to inject arbitrary web script or HTML via the content parameter."},{"lang":"es","value":"Vulnerabilidad de XSS en editText.php en WonderCMS anterior a 0.4 permite a atacantes remotos inyectar secuencias de comandos web o HTML arbitrarios a través del parámetro content."}],"metrics":{"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.3},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:wondercms:wondercms:*:*:*:*:*:*:*:*","versionEndIncluding":"0.3.3","matchCriteriaId":"903332C1-9BFF-417A-8167-006AB9B12B36"}]}]}],"references":[{"url":"https:\/\/www.htbridge.com\/advisory\/HTB22759","source":"cve@mitre.org"}]}},{"cve":{"id":"CVE-2014-8701","sourceIdentifier":"cve@mitre.org","published":"2017-03-17T14:59:00.170","lastModified":"2017-03-20T17:00:41.407","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Wonder CMS 2014 allows remote attackers to obtain sensitive information by viewing \/files\/password, which reveals the unsalted MD5 hashed password."},{"lang":"es","value":"Wonder CMS 2014 permite a atacantes remotos obtener información sensible mediante la visualización de \/files\/password, lo que revela la contraseña de hash MD5 sin saltar."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":7.5,"baseSeverity":"HIGH"},"exploitabilityScore":3.9,"impactScore":3.6}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:N\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":5.0},"baseSeverity":"MEDIUM","exploitabilityScore":10.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-200"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:wondercms:wondercms:2014:*:*:*:*:*:*:*","matchCriteriaId":"5773491C-5714-4A8A-8CC8-DD02512B5FDD"}]}]}],"references":[{"url":"http:\/\/rossmarks.uk\/portfolio.php","source":"cve@mitre.org","tags":["Third Party Advisory"]},{"url":"http:\/\/rossmarks.uk\/whitepapers\/wonder_cms_2014.txt","source":"cve@mitre.org","tags":["Exploit"]}]}},{"cve":{"id":"CVE-2014-8702","sourceIdentifier":"cve@mitre.org","published":"2017-03-17T14:59:00.203","lastModified":"2017-03-31T01:59:00.220","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"Wonder CMS 2014 allows remote attackers to obtain sensitive information by logging into the application with an array for the password, which reveals the installation path in an error message."},{"lang":"es","value":"Wonder CMS 2014 permite a atacantes remotos obtener información sensible iniciando sesión en la aplicación con una matriz para la contraseña, lo que revela la ruta de instalación en un mensaje de error."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:L\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":5.3,"baseSeverity":"MEDIUM"},"exploitabilityScore":3.9,"impactScore":1.4}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:N\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":5.0},"baseSeverity":"MEDIUM","exploitabilityScore":10.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-200"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:wondercms:wondercms:2014:*:*:*:*:*:*:*","matchCriteriaId":"5773491C-5714-4A8A-8CC8-DD02512B5FDD"}]}]}],"references":[{"url":"http:\/\/rossmarks.uk\/portfolio.php","source":"cve@mitre.org","tags":["Third Party Advisory"]},{"url":"http:\/\/rossmarks.uk\/whitepapers\/wonder_cms_2014.txt","source":"cve@mitre.org","tags":["Exploit"]},{"url":"http:\/\/www.securityfocus.com\/bid\/97192","source":"cve@mitre.org"}]}},{"cve":{"id":"CVE-2014-8703","sourceIdentifier":"cve@mitre.org","published":"2017-03-17T14:59:00.233","lastModified":"2017-03-20T16:58:19.263","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Cross-site scripting (XSS) vulnerability in Wonder CMS 2014 allows remote attackers to inject arbitrary web script or HTML."},{"lang":"es","value":"Vulnerabilidad de XSS en Wonder CMS 2014 permite a atacantes remotos inyectar secuencias de comandos web o HTML arbitrarios."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.1,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.3},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:wondercms:wondercms:2014:*:*:*:*:*:*:*","matchCriteriaId":"5773491C-5714-4A8A-8CC8-DD02512B5FDD"}]}]}],"references":[{"url":"http:\/\/rossmarks.uk\/portfolio.php","source":"cve@mitre.org","tags":["Third Party Advisory"]},{"url":"http:\/\/rossmarks.uk\/whitepapers\/wonder_cms_2014.txt","source":"cve@mitre.org","tags":["Exploit"]}]}},{"cve":{"id":"CVE-2014-8704","sourceIdentifier":"cve@mitre.org","published":"2017-03-17T14:59:00.267","lastModified":"2017-03-20T16:58:09.123","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Directory traversal vulnerability in index.php in Wonder CMS 2014 allows remote attackers to include and execute arbitrary local files via a crafted theme."},{"lang":"es","value":"Vulnerabilidad de slato de directorio en index.php en Wonder CMS 2014 permite a atacantes remotos incluir y ejecutar archivos locales arbitrarios a través de un tema manipulado."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.8,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.9}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":7.5},"baseSeverity":"HIGH","exploitabilityScore":10.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-22"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:wondercms:wondercms:2014:*:*:*:*:*:*:*","matchCriteriaId":"5773491C-5714-4A8A-8CC8-DD02512B5FDD"}]}]}],"references":[{"url":"http:\/\/rossmarks.uk\/portfolio.php","source":"cve@mitre.org","tags":["Third Party Advisory"]}]}},{"cve":{"id":"CVE-2014-8705","sourceIdentifier":"cve@mitre.org","published":"2017-03-17T14:59:00.313","lastModified":"2017-03-20T16:57:04.920","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"PHP remote file inclusion vulnerability in editInplace.php in Wonder CMS 2014 allows remote attackers to execute arbitrary PHP code via a URL in the hook parameter."},{"lang":"es","value":"Vulnerabilidad de inclusión de archivos remotos de PHP en editInplace.php en Wonder CMS 2014 permite a atacantes remotos ejecutar código PHP arbitrario a través de una URL en el parámetro hook."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.8,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.9}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":7.5},"baseSeverity":"HIGH","exploitabilityScore":10.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-20"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:wondercms:wondercms:2014:*:*:*:*:*:*:*","matchCriteriaId":"5773491C-5714-4A8A-8CC8-DD02512B5FDD"}]}]}],"references":[{"url":"http:\/\/rossmarks.uk\/portfolio.php","source":"cve@mitre.org","tags":["Third Party Advisory"]},{"url":"http:\/\/rossmarks.uk\/whitepapers\/wonder_cms_2014.txt","source":"cve@mitre.org","tags":["Patch"]}]}},{"cve":{"id":"CVE-2017-7951","sourceIdentifier":"cve@mitre.org","published":"2017-04-21T02:59:00.277","lastModified":"2017-04-24T14:59:23.560","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"WonderCMS before 2.0.3 has CSRF because of lack of a token in an unspecified context."},{"lang":"es","value":"WonderCMS en versiones anteriores a 2.0.3 tiene CSRF debido a la falta de un token en un contexto no especificado."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:R\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":8.8,"baseSeverity":"HIGH"},"exploitabilityScore":2.8,"impactScore":5.9}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":6.8},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-352"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:wondercms:wondercms:*:*:*:*:*:*:*:*","versionEndIncluding":"2.0.2","matchCriteriaId":"DEB931E1-EE9A-4E61-A8A3-AE66DBE683D0"}]}]}],"references":[{"url":"https:\/\/github.com\/robiso\/wondercms\/releases\/tag\/2.0.3","source":"cve@mitre.org","tags":["Issue Tracking","Patch","Third Party Advisory"]},{"url":"https:\/\/www.wondercms.com\/forum\/viewtopic.php?f=8&p=1684","source":"cve@mitre.org","tags":["Patch","Vendor Advisory"]}]}},{"cve":{"id":"CVE-2017-14521","sourceIdentifier":"cve@mitre.org","published":"2018-01-26T20:29:00.783","lastModified":"2019-04-26T19:58:57.437","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"In WonderCMS 2.3.1, the upload functionality accepts random application extensions and leads to malicious File Upload."},{"lang":"es","value":"En WonderCMS 2.3.1, la funcionalidad de subida acepta extensiones de aplicación aleatorias y conduce a la subida de archivos maliciosa."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":8.8,"baseSeverity":"HIGH"},"exploitabilityScore":2.8,"impactScore":5.9}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:S\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"SINGLE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":6.5},"baseSeverity":"MEDIUM","exploitabilityScore":8.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-434"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:wondercms:wondercms:2.3.0:*:*:*:*:*:*:*","matchCriteriaId":"A4E1FFA1-C4B2-4E30-87A9-B9E8BC20BFEB"},{"vulnerable":true,"criteria":"cpe:2.3:a:wondercms:wondercms:2.3.1:*:*:*:*:*:*:*","matchCriteriaId":"F3345E32-0808-402C-8F0E-9F576B0AD771"}]}]}],"references":[{"url":"https:\/\/securitywarrior9.blogspot.in\/2018\/01\/vulnerability-in-wonder-cms-leading-to.html","source":"cve@mitre.org","tags":["Exploit","Technical Description","Third Party Advisory"]},{"url":"https:\/\/www.exploit-db.com\/exploits\/43963\/","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory","VDB Entry"]}]}},{"cve":{"id":"CVE-2017-14522","sourceIdentifier":"cve@mitre.org","published":"2018-01-26T20:29:00.847","lastModified":"2024-04-11T00:57:29.770","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"In WonderCMS 2.3.1, the application's input fields accept arbitrary user input resulting in execution of malicious JavaScript. NOTE: the vendor disputes this issue stating that this is a feature that enables only a logged in administrator to write execute JavaScript anywhere on their website"},{"lang":"es","value":"** EN DISPUTA ** En WonderCMS 2.3.1, los campos de entrada de la aplicación aceptan entradas arbitrarias de usuario, lo que resulta en la ejecución de JavaScript malicioso. NOTA: el fabricante discute este problema diciendo que esta es una característica que permite que solo un administrador que haya iniciado sesión escriba o ejecute JavaScript en cualquier sitio de su web."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.1,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.3},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:wondercms:wondercms:2.3.1:*:*:*:*:*:*:*","matchCriteriaId":"F3345E32-0808-402C-8F0E-9F576B0AD771"}]}]}],"references":[{"url":"https:\/\/securitywarrior9.blogspot.in\/2018\/01\/stored-xss-in-wonder-cms.html","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2017-14523","sourceIdentifier":"cve@mitre.org","published":"2018-01-26T20:29:00.927","lastModified":"2024-04-11T00:57:29.843","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"WonderCMS 2.3.1 is vulnerable to an HTTP Host header injection attack. It uses user-entered values to redirect pages. NOTE: the vendor reports that exploitation is unlikely because the attack can only come from a local machine or from the administrator as a self attack"},{"lang":"es","value":"** EN DISPUTA ** WonderCMS 2.3.1 es vulnerable a un ataque de inyección de cabeceras de host HTTP. Emplea valores introducidos por el usuario para redireccionar páginas. NOTA: el fabricante reporta que es improbable explotar esta vulnerabilidad debido a que el ataque solo puede venir desde un equipo local o desde el administrador como un autoataque."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:N\/I:H\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"NONE","integrityImpact":"HIGH","availabilityImpact":"NONE","baseScore":7.5,"baseSeverity":"HIGH"},"exploitabilityScore":3.9,"impactScore":3.6}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":5.0},"baseSeverity":"MEDIUM","exploitabilityScore":10.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-74"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:wondercms:wondercms:2.3.1:*:*:*:*:*:*:*","matchCriteriaId":"F3345E32-0808-402C-8F0E-9F576B0AD771"}]}]}],"references":[{"url":"https:\/\/securitywarrior9.blogspot.in\/2018\/01\/host-header-injection-in-wonder-cms.html","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]},{"url":"https:\/\/www.exploit-db.com\/exploits\/43964\/","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory","VDB Entry"]}]}},{"cve":{"id":"CVE-2018-1000062","sourceIdentifier":"cve@mitre.org","published":"2018-02-09T23:29:02.307","lastModified":"2018-03-05T16:18:41.327","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"WonderCMS version 2.4.0 contains a Stored Cross-Site Scripting on File Upload through SVG vulnerability in uploadFileAction(), 'svg' => 'image\/svg+xml' that can result in An attacker can execute arbitrary script on an unsuspecting user's browser. This attack appear to be exploitable via Crafted SVG File."},{"lang":"es","value":"WonderCMS 2.4.0 contiene una vulnerabilidad de Cross-Site Scripting persistente en la subida de archivos mediante SVG en uploadFileAction() y 'svg' => 'image\/svg+xml' que puede resultar en que un atacante pueda ejecutar scripts arbitrarios en el navegador de un usuario desprevenido. Parece ser que este ataque puede ser explotado mediante un archivo SVG manipulado."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:H\/PR:L\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"HIGH","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":4.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":1.3,"impactScore":2.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:S\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"SINGLE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":3.5},"baseSeverity":"LOW","exploitabilityScore":6.8,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:wondercms:wondercms:2.4.0:*:*:*:*:*:*:*","matchCriteriaId":"F34A8B50-4AD8-4654-8F1F-B477B77C4D42"}]}]}],"references":[{"url":"https:\/\/github.com\/robiso\/wondercms\/blob\/ea640a02b4b8d88835d2e01600d24b23176fb665\/index.php#L737","source":"cve@mitre.org","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/robiso\/wondercms\/issues\/56","source":"cve@mitre.org","tags":["Third Party Advisory"]}]}},{"cve":{"id":"CVE-2018-7172","sourceIdentifier":"cve@mitre.org","published":"2018-02-27T15:29:00.553","lastModified":"2018-03-23T15:06:05.983","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"In index.php in WonderCMS before 2.4.1, remote attackers can delete arbitrary files via directory traversal."},{"lang":"es","value":"En index.php en WonderCMS, en versiones anteriores a la 2.4.1, los atacantes remotos pueden eliminar archivos arbitrarios mediante salto de directorio."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:H\/UI:N\/S:U\/C:N\/I:H\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"HIGH","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"NONE","integrityImpact":"HIGH","availabilityImpact":"NONE","baseScore":4.9,"baseSeverity":"MEDIUM"},"exploitabilityScore":1.2,"impactScore":3.6}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:S\/C:N\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"SINGLE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":5.5},"baseSeverity":"MEDIUM","exploitabilityScore":8.0,"impactScore":4.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-22"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:wondercms:wondercms:*:*:*:*:*:*:*:*","versionEndIncluding":"2.4.0","matchCriteriaId":"176BA27D-D437-4A79-9BE4-9CC7DAFA82B8"}]}]}],"references":[{"url":"http:\/\/foreversong.cn\/archives\/1070","source":"cve@mitre.org","tags":["Third Party Advisory"]},{"url":"https:\/\/github.com\/robiso\/wondercms\/commit\/64efdc4fd974c83cedd221b46e7c3854a81650ec","source":"cve@mitre.org","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/www.wondercms.com\/whatsnew","source":"cve@mitre.org","tags":["Vendor Advisory"]}]}},{"cve":{"id":"CVE-2018-14387","sourceIdentifier":"cve@mitre.org","published":"2018-07-18T19:29:00.260","lastModified":"2018-09-19T15:03:16.577","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"An issue was discovered in WonderCMS before 2.5.2. An attacker can create a new session on a web application and record the associated session identifier. The attacker then causes the victim to authenticate against the server using the same session identifier. The attacker can access the user's account through the active session. The Session Fixation attack fixes a session on the victim's browser, so the attack starts before the user logs in."},{"lang":"es","value":"Se ha descubierto un problema en versiones anteriores a la 2.5.2 de WonderCMS. Un atacante puede crear una nueva sesión en una aplicación web y grabar el identificador de sesión asociado. Después, el atacante provoca que la víctima se autentique contra el servidor usando el mismo identificador de sesión. A través de la sesión activa, el atacante puede acceder a la cuenta de usuario. El ataque de fijación de sesión fija una sesión en el navegador de la víctima, por lo que el ataque se inicia antes de que el usuario inicie sesión."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:R\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":8.8,"baseSeverity":"HIGH"},"exploitabilityScore":2.8,"impactScore":5.9}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":6.8},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-384"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:wondercms:wondercms:*:*:*:*:*:*:*:*","versionEndExcluding":"2.5.2","matchCriteriaId":"9B9583C9-BCCE-434E-8842-532A760C77F8"}]}]}],"references":[{"url":"https:\/\/github.com\/robiso\/wondercms\/issues\/64","source":"cve@mitre.org","tags":["Exploit","Issue Tracking","Third Party Advisory"]},{"url":"https:\/\/www.wondercms.com\/whatsnew","source":"cve@mitre.org","tags":["Vendor Advisory"]}]}},{"cve":{"id":"CVE-2019-5956","sourceIdentifier":"vultures@jpcert.or.jp","published":"2019-09-12T17:15:13.547","lastModified":"2019-09-13T18:22:03.600","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Directory traversal vulnerability in WonderCMS 2.6.0 and earlier allows remote attackers to delete arbitrary files via unspecified vectors."},{"lang":"es","value":"Una vulnerabilidad de salto de directorio en WonderCMS versión 2.6.0 y anteriores, permite a atacantes remotos eliminar archivos arbitrarios por medio de vectores no especificados."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.5,"baseSeverity":"MEDIUM"},"exploitabilityScore":3.9,"impactScore":2.5}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":7.5},"baseSeverity":"HIGH","exploitabilityScore":10.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-22"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:wondercms:wondercms:*:*:*:*:*:*:*:*","versionEndIncluding":"2.6.0","matchCriteriaId":"C6FC6C43-A556-4192-872D-3FAE4905BEFD"}]}]}],"references":[{"url":"http:\/\/jvn.jp\/en\/vu\/JVNVU93628467\/index.html","source":"vultures@jpcert.or.jp","tags":["Third Party Advisory"]}]}},{"cve":{"id":"CVE-2020-29247","sourceIdentifier":"cve@mitre.org","published":"2020-12-24T20:15:12.523","lastModified":"2021-04-22T13:13:45.263","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"WonderCMS 3.1.3 is affected by cross-site scripting (XSS) in the Admin Panel. An attacker can inject the XSS payload in Page keywords and each time any user will visit the website, the XSS triggers, and the attacker can able to steal the cookie according to the crafted payload."},{"lang":"es","value":"WonderCMS versión 3.1.3, está afectado por una vulnerabilidad de tipo cross-site scripting (XSS) en el Panel Admin.&#xa0;Un atacante puede inyectar la carga útil XSS en las palabras clave de la Página y cada vez que algún usuario visita el sitio web, activa el ataque XSS y el atacante es capaz de robar la cookie de acuerdo con la carga útil diseñada"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:H\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"HIGH","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":4.8,"baseSeverity":"MEDIUM"},"exploitabilityScore":1.7,"impactScore":2.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:S\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"SINGLE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":3.5},"baseSeverity":"LOW","exploitabilityScore":6.8,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:wondercms:wondercms:3.1.3:*:*:*:*:*:*:*","matchCriteriaId":"C34DD4B5-9079-44C3-B20C-1B5DC5236D30"}]}]}],"references":[{"url":"http:\/\/wondercms.com","source":"cve@mitre.org","tags":["Product","Vendor Advisory"]},{"url":"https:\/\/systemweakness.com\/cve-2020-29247-wondercms-3-1-3-page-persistent-cross-site-scripting-3dd2bb210beb","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]},{"url":"https:\/\/www.exploit-db.com\/exploits\/49102","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory","VDB Entry"]}]}},{"cve":{"id":"CVE-2020-29233","sourceIdentifier":"cve@mitre.org","published":"2020-12-30T15:15:12.480","lastModified":"2021-01-04T15:21:38.630","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"WonderCMS 3.1.3 is affected by cross-site scripting (XSS) in the Page description component. This vulnerability can allow an attacker to inject the XSS payload in the Page description and each time any user will visits the website, the XSS triggers and attacker can steal the cookie according to the crafted payload."},{"lang":"es","value":"WonderCMS versión 3.1.3, está afectado por una vulnerabilidad de tipo cross-site scripting (XSS) en el componente Page description.&#xa0;Esta vulnerabilidad puede permitir a un atacante inyectar una carga útil de tipo XSS en la Page description y cada vez que un usuario visita el sitio web, el XSS se desencadena y el atacante puede ser capaz de robar la cookie de acuerdo a la carga útil diseñada."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.3,"impactScore":2.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:S\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"SINGLE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":3.5},"baseSeverity":"LOW","exploitabilityScore":6.8,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:wondercms:wondercms:3.1.3:*:*:*:*:*:*:*","matchCriteriaId":"C34DD4B5-9079-44C3-B20C-1B5DC5236D30"}]}]}],"references":[{"url":"https:\/\/www.exploit-db.com\/exploits\/49085","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory","VDB Entry"]}]}},{"cve":{"id":"CVE-2020-29469","sourceIdentifier":"cve@mitre.org","published":"2020-12-30T15:15:12.653","lastModified":"2021-01-04T15:16:23.030","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"WonderCMS 3.1.3 is affected by cross-site scripting (XSS) in the Menu component. This vulnerability can allow an attacker to inject the XSS payload in the Setting - Menu and each time any user will visits the website directory, the XSS triggers and attacker can steal the cookie according to the crafted payload."},{"lang":"es","value":"WonderCMS versión 3.1.3, está afectado por una vulnerabilidad de tipo cross-site scripting (XSS) en el componente Menu.&#xa0;Esta vulnerabilidad puede permitir a un atacante inyectar una carga útil de tipo XSS en el Menu Setting y cada vez que un usuario visita el directorio del sitio web, el XSS se desencadena y el atacante puede ser capaz de robar la cookie de acuerdo a la carga útil diseñada."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.3,"impactScore":2.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:S\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"SINGLE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":3.5},"baseSeverity":"LOW","exploitabilityScore":6.8,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:wondercms:wondercms:3.1.3:*:*:*:*:*:*:*","matchCriteriaId":"C34DD4B5-9079-44C3-B20C-1B5DC5236D30"}]}]}],"references":[{"url":"https:\/\/www.exploit-db.com\/exploits\/49164","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory","VDB Entry"]}]}},{"cve":{"id":"CVE-2020-35313","sourceIdentifier":"cve@mitre.org","published":"2021-04-20T20:15:07.930","lastModified":"2021-04-23T21:18:21.000","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"A server-side request forgery (SSRF) vulnerability in the addCustomThemePluginRepository function in index.php in WonderCMS 3.1.3 allows remote attackers to execute arbitrary code via a crafted URL to the theme\/plugin installer."},{"lang":"es","value":"Una vulnerabilidad de server-side request forgery (SSRF) en la función addCustomThemePluginRepository en el archivo index.php en WonderCMS versión 3.1.3 permite a atacantes remotos ejecutar código arbitrario por medio de una URL diseñada para el instalador de theme\/plugin"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.8,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.9}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":7.5},"baseSeverity":"HIGH","exploitabilityScore":10.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-918"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:wondercms:wondercms:3.1.3:*:*:*:*:*:*:*","matchCriteriaId":"C34DD4B5-9079-44C3-B20C-1B5DC5236D30"}]}]}],"references":[{"url":"https:\/\/github.com\/robiso\/wondercms","source":"cve@mitre.org","tags":["Product","Third Party Advisory"]},{"url":"https:\/\/packetstormsecurity.com\/files\/160310\/WonderCMS-3.1.3-Code-Execution-Server-Side-Request-Forgery.html","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory","VDB Entry"]},{"url":"https:\/\/zetc0de.github.io\/post\/authenticated-rce-ssrf-wondercms\/","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2020-35314","sourceIdentifier":"cve@mitre.org","published":"2021-04-20T20:15:08.057","lastModified":"2021-06-01T20:34:58.733","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"A remote code execution vulnerability in the installUpdateThemePluginAction function in index.php in WonderCMS 3.1.3, allows remote attackers to upload a custom plugin which can contain arbitrary code and obtain a webshell via the theme\/plugin installer."},{"lang":"es","value":"Una vulnerabilidad de ejecución remota de código en la función installUpdateThemePluginAction en index.php en WonderCMS versión 3.1.3, permite a los atacantes remotos cargar un plugin personalizado que puede contener código arbitrario y obtener un webshell a través del instalador de temas\/plugins"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.8,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.9}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":7.5},"baseSeverity":"HIGH","exploitabilityScore":10.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-78"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:wondercms:wondercms:3.1.3:*:*:*:*:*:*:*","matchCriteriaId":"C34DD4B5-9079-44C3-B20C-1B5DC5236D30"}]}]}],"references":[{"url":"https:\/\/github.com\/robiso\/wondercms","source":"cve@mitre.org","tags":["Product","Third Party Advisory"]},{"url":"https:\/\/packetstormsecurity.com\/files\/160311\/WonderCMS-3.1.3-Remote-Code-Execution.html","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory","VDB Entry"]},{"url":"https:\/\/zetc0de.github.io\/post\/authenticated-rce-ssrf-wondercms\/","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]},{"url":"https:\/\/zetc0de.github.io\/post\/authenticated-rce-ssrf-wondercms\/#authenticated-remote-code-execution","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2021-42233","sourceIdentifier":"cve@mitre.org","published":"2022-05-23T19:16:07.377","lastModified":"2022-06-03T15:26:37.683","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"The Simple Blog plugin in Wondercms 3.4.1 is vulnerable to stored cross-site scripting (XSS) vulnerability. When any user opens a particular blog hosted on an attackers' site, XSS may occur."},{"lang":"es","value":"El plugin Simple Blog de Wondercms versión 3.4.1, es vulnerable a una vulnerabilidad de tipo cross-site scripting (XSS) almacenado. Cuando cualquier usuario abre un blog particular alojado en el sitio de un atacante, puede producirse un ataque de tipo XSS"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.3,"impactScore":2.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:S\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"SINGLE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":3.5},"baseSeverity":"LOW","exploitabilityScore":6.8,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"operator":"AND","nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:simple_blog_project:simple_blog:-:*:*:*:*:*:*:*","matchCriteriaId":"ABD79668-9FC5-4AF8-A085-60CE62B25C63"}]},{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":false,"criteria":"cpe:2.3:a:wondercms:wondercms:3.4.1:*:*:*:*:*:*:*","matchCriteriaId":"76896C97-591E-46EE-9593-7BCB8D6F6188"}]}]}],"references":[{"url":"https:\/\/hackerone.com\/reports\/485748","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]},{"url":"https:\/\/hackerone.com\/reports\/647130","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]},{"url":"https:\/\/hackerone.com\/reports\/961046","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-43332","sourceIdentifier":"cve@mitre.org","published":"2022-11-17T23:15:23.947","lastModified":"2022-11-18T18:28:44.967","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"A cross-site scripting (XSS) vulnerability in Wondercms v3.3.4 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Site title field of the Configuration Panel."},{"lang":"es","value":"Una vulnerabilidad de Cross-Site Scripting (XSS) en Wondercms v3.3.4 permite a los atacantes ejecutar scripts web o HTML arbitrarios a través de un payload manipulado inyectado en el campo Título del sitio del Panel de configuración."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.1,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.7}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:wondercms:wondercms:3.3.4:*:*:*:*:*:*:*","matchCriteriaId":"DCDBB9AD-5D7B-445E-B8DD-30BA2995FF1B"}]}]}],"references":[{"url":"https:\/\/github.com\/maikroservice\/CVE-2022-43332","source":"cve@mitre.org","tags":["Third Party Advisory"]}]}},{"cve":{"id":"CVE-2023-41425","sourceIdentifier":"cve@mitre.org","published":"2023-11-07T16:15:28.867","lastModified":"2023-11-14T20:20:51.567","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Cross Site Scripting vulnerability in Wonder CMS v.3.2.0 thru v.3.4.2 allows a remote attacker to execute arbitrary code via a crafted script uploaded to the installModule component."},{"lang":"es","value":"Vulnerabilidad de Cross-Site Scripting en Wonder CMS v.3.2.0 a v.3.4.2 permite a un atacante remoto ejecutar código arbitrario a través de un script manipulado y cargado en el componente installModule."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.1,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.7}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:wondercms:wondercms:*:*:*:*:*:*:*:*","versionStartIncluding":"3.2.0","versionEndIncluding":"3.4.2","matchCriteriaId":"12378343-FA06-47FB-B3A5-BE3858A34347"}]}]}],"references":[{"url":"http:\/\/wondercms.com","source":"cve@mitre.org","tags":["Product"]},{"url":"https:\/\/gist.github.com\/prodigiousMind\/fc69a79629c4ba9ee88a7ad526043413","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]}]}}]}
+{
+    "resultsPerPage": 22,
+    "startIndex": 0,
+    "totalResults": 22,
+    "format": "NVD_CVE",
+    "version": "2.0",
+    "timestamp": "2024-04-30T10:55:02.713",
+    "vulnerabilities": [
+        {
+            "cve": {
+                "id": "CVE-2011-5317",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2015-01-01T11:59:21.723",
+                "lastModified": "2015-01-02T15:46:26.013",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Cross-site scripting (XSS) vulnerability in editText.php in WonderCMS before 0.4 allows remote attackers to inject arbitrary web script or HTML via the content parameter."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Vulnerabilidad de XSS en editText.php en WonderCMS anterior a 0.4 permite a atacantes remotos inyectar secuencias de comandos web o HTML arbitrarios a trav\u00e9s del par\u00e1metro content."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:wondercms:wondercms:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "0.3.3",
+                                        "matchCriteriaId": "903332C1-9BFF-417A-8167-006AB9B12B36"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://www.htbridge.com/advisory/HTB22759",
+                        "source": "cve@mitre.org"
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2014-8701",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2017-03-17T14:59:00.170",
+                "lastModified": "2017-03-20T17:00:41.407",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Wonder CMS 2014 allows remote attackers to obtain sensitive information by viewing /files/password, which reveals the unsalted MD5 hashed password."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Wonder CMS 2014 permite a atacantes remotos obtener informaci\u00f3n sensible mediante la visualizaci\u00f3n de /files/password, lo que revela la contrase\u00f1a de hash MD5 sin saltar."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 7.5,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 3.6
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-200"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:wondercms:wondercms:2014:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "5773491C-5714-4A8A-8CC8-DD02512B5FDD"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://rossmarks.uk/portfolio.php",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "http://rossmarks.uk/whitepapers/wonder_cms_2014.txt",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2014-8702",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2017-03-17T14:59:00.203",
+                "lastModified": "2017-03-31T01:59:00.220",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Wonder CMS 2014 allows remote attackers to obtain sensitive information by logging into the application with an array for the password, which reveals the installation path in an error message."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Wonder CMS 2014 permite a atacantes remotos obtener informaci\u00f3n sensible iniciando sesi\u00f3n en la aplicaci\u00f3n con una matriz para la contrase\u00f1a, lo que revela la ruta de instalaci\u00f3n en un mensaje de error."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.3,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 1.4
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-200"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:wondercms:wondercms:2014:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "5773491C-5714-4A8A-8CC8-DD02512B5FDD"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://rossmarks.uk/portfolio.php",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "http://rossmarks.uk/whitepapers/wonder_cms_2014.txt",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit"
+                        ]
+                    },
+                    {
+                        "url": "http://www.securityfocus.com/bid/97192",
+                        "source": "cve@mitre.org"
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2014-8703",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2017-03-17T14:59:00.233",
+                "lastModified": "2017-03-20T16:58:19.263",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Cross-site scripting (XSS) vulnerability in Wonder CMS 2014 allows remote attackers to inject arbitrary web script or HTML."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Vulnerabilidad de XSS en Wonder CMS 2014 permite a atacantes remotos inyectar secuencias de comandos web o HTML arbitrarios."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.1,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:wondercms:wondercms:2014:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "5773491C-5714-4A8A-8CC8-DD02512B5FDD"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://rossmarks.uk/portfolio.php",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "http://rossmarks.uk/whitepapers/wonder_cms_2014.txt",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2014-8704",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2017-03-17T14:59:00.267",
+                "lastModified": "2017-03-20T16:58:09.123",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Directory traversal vulnerability in index.php in Wonder CMS 2014 allows remote attackers to include and execute arbitrary local files via a crafted theme."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Vulnerabilidad de slato de directorio en index.php en Wonder CMS 2014 permite a atacantes remotos incluir y ejecutar archivos locales arbitrarios a trav\u00e9s de un tema manipulado."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.8,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 7.5
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-22"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:wondercms:wondercms:2014:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "5773491C-5714-4A8A-8CC8-DD02512B5FDD"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://rossmarks.uk/portfolio.php",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2014-8705",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2017-03-17T14:59:00.313",
+                "lastModified": "2017-03-20T16:57:04.920",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "PHP remote file inclusion vulnerability in editInplace.php in Wonder CMS 2014 allows remote attackers to execute arbitrary PHP code via a URL in the hook parameter."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Vulnerabilidad de inclusi\u00f3n de archivos remotos de PHP en editInplace.php en Wonder CMS 2014 permite a atacantes remotos ejecutar c\u00f3digo PHP arbitrario a trav\u00e9s de una URL en el par\u00e1metro hook."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.8,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 7.5
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-20"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:wondercms:wondercms:2014:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "5773491C-5714-4A8A-8CC8-DD02512B5FDD"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://rossmarks.uk/portfolio.php",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "http://rossmarks.uk/whitepapers/wonder_cms_2014.txt",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2017-7951",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2017-04-21T02:59:00.277",
+                "lastModified": "2017-04-24T14:59:23.560",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "WonderCMS before 2.0.3 has CSRF because of lack of a token in an unspecified context."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "WonderCMS en versiones anteriores a 2.0.3 tiene CSRF debido a la falta de un token en un contexto no especificado."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 8.8,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 6.8
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-352"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:wondercms:wondercms:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "2.0.2",
+                                        "matchCriteriaId": "DEB931E1-EE9A-4E61-A8A3-AE66DBE683D0"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/robiso/wondercms/releases/tag/2.0.3",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Issue Tracking",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.wondercms.com/forum/viewtopic.php?f=8&p=1684",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch",
+                            "Vendor Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2017-14521",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2018-01-26T20:29:00.783",
+                "lastModified": "2019-04-26T19:58:57.437",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "In WonderCMS 2.3.1, the upload functionality accepts random application extensions and leads to malicious File Upload."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "En WonderCMS 2.3.1, la funcionalidad de subida acepta extensiones de aplicaci\u00f3n aleatorias y conduce a la subida de archivos maliciosa."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 8.8,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 6.5
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-434"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:wondercms:wondercms:2.3.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "A4E1FFA1-C4B2-4E30-87A9-B9E8BC20BFEB"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:wondercms:wondercms:2.3.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "F3345E32-0808-402C-8F0E-9F576B0AD771"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://securitywarrior9.blogspot.in/2018/01/vulnerability-in-wonder-cms-leading-to.html",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Technical Description",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.exploit-db.com/exploits/43963/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory",
+                            "VDB Entry"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2017-14522",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2018-01-26T20:29:00.847",
+                "lastModified": "2024-04-11T00:57:29.770",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "In WonderCMS 2.3.1, the application's input fields accept arbitrary user input resulting in execution of malicious JavaScript. NOTE: the vendor disputes this issue stating that this is a feature that enables only a logged in administrator to write execute JavaScript anywhere on their website"
+                    },
+                    {
+                        "lang": "es",
+                        "value": "** EN DISPUTA ** En WonderCMS 2.3.1, los campos de entrada de la aplicaci\u00f3n aceptan entradas arbitrarias de usuario, lo que resulta en la ejecuci\u00f3n de JavaScript malicioso. NOTA: el fabricante discute este problema diciendo que esta es una caracter\u00edstica que permite que solo un administrador que haya iniciado sesi\u00f3n escriba o ejecute JavaScript en cualquier sitio de su web."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.1,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:wondercms:wondercms:2.3.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "F3345E32-0808-402C-8F0E-9F576B0AD771"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://securitywarrior9.blogspot.in/2018/01/stored-xss-in-wonder-cms.html",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2017-14523",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2018-01-26T20:29:00.927",
+                "lastModified": "2024-04-11T00:57:29.843",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "WonderCMS 2.3.1 is vulnerable to an HTTP Host header injection attack. It uses user-entered values to redirect pages. NOTE: the vendor reports that exploitation is unlikely because the attack can only come from a local machine or from the administrator as a self attack"
+                    },
+                    {
+                        "lang": "es",
+                        "value": "** EN DISPUTA ** WonderCMS 2.3.1 es vulnerable a un ataque de inyecci\u00f3n de cabeceras de host HTTP. Emplea valores introducidos por el usuario para redireccionar p\u00e1ginas. NOTA: el fabricante reporta que es improbable explotar esta vulnerabilidad debido a que el ataque solo puede venir desde un equipo local o desde el administrador como un autoataque."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 7.5,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 3.6
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-74"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:wondercms:wondercms:2.3.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "F3345E32-0808-402C-8F0E-9F576B0AD771"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://securitywarrior9.blogspot.in/2018/01/host-header-injection-in-wonder-cms.html",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.exploit-db.com/exploits/43964/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory",
+                            "VDB Entry"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2018-1000062",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2018-02-09T23:29:02.307",
+                "lastModified": "2018-03-05T16:18:41.327",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "WonderCMS version 2.4.0 contains a Stored Cross-Site Scripting on File Upload through SVG vulnerability in uploadFileAction(), 'svg' => 'image/svg+xml' that can result in An attacker can execute arbitrary script on an unsuspecting user's browser. This attack appear to be exploitable via Crafted SVG File."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "WonderCMS 2.4.0 contiene una vulnerabilidad de Cross-Site Scripting persistente en la subida de archivos mediante SVG en uploadFileAction() y 'svg' => 'image/svg+xml' que puede resultar en que un atacante pueda ejecutar scripts arbitrarios en el navegador de un usuario desprevenido. Parece ser que este ataque puede ser explotado mediante un archivo SVG manipulado."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:H/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "HIGH",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 1.3,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 3.5
+                            },
+                            "baseSeverity": "LOW",
+                            "exploitabilityScore": 6.8,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:wondercms:wondercms:2.4.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "F34A8B50-4AD8-4654-8F1F-B477B77C4D42"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/robiso/wondercms/blob/ea640a02b4b8d88835d2e01600d24b23176fb665/index.php#L737",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/robiso/wondercms/issues/56",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2018-7172",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2018-02-27T15:29:00.553",
+                "lastModified": "2018-03-23T15:06:05.983",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "In index.php in WonderCMS before 2.4.1, remote attackers can delete arbitrary files via directory traversal."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "En index.php en WonderCMS, en versiones anteriores a la 2.4.1, los atacantes remotos pueden eliminar archivos arbitrarios mediante salto de directorio."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:H/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "HIGH",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.9,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 1.2,
+                            "impactScore": 3.6
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:S/C:N/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 5.5
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.0,
+                            "impactScore": 4.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-22"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:wondercms:wondercms:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "2.4.0",
+                                        "matchCriteriaId": "176BA27D-D437-4A79-9BE4-9CC7DAFA82B8"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://foreversong.cn/archives/1070",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/robiso/wondercms/commit/64efdc4fd974c83cedd221b46e7c3854a81650ec",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.wondercms.com/whatsnew",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Vendor Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2018-14387",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2018-07-18T19:29:00.260",
+                "lastModified": "2018-09-19T15:03:16.577",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "An issue was discovered in WonderCMS before 2.5.2. An attacker can create a new session on a web application and record the associated session identifier. The attacker then causes the victim to authenticate against the server using the same session identifier. The attacker can access the user's account through the active session. The Session Fixation attack fixes a session on the victim's browser, so the attack starts before the user logs in."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Se ha descubierto un problema en versiones anteriores a la 2.5.2 de WonderCMS. Un atacante puede crear una nueva sesi\u00f3n en una aplicaci\u00f3n web y grabar el identificador de sesi\u00f3n asociado. Despu\u00e9s, el atacante provoca que la v\u00edctima se autentique contra el servidor usando el mismo identificador de sesi\u00f3n. A trav\u00e9s de la sesi\u00f3n activa, el atacante puede acceder a la cuenta de usuario. El ataque de fijaci\u00f3n de sesi\u00f3n fija una sesi\u00f3n en el navegador de la v\u00edctima, por lo que el ataque se inicia antes de que el usuario inicie sesi\u00f3n."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 8.8,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 6.8
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-384"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:wondercms:wondercms:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "2.5.2",
+                                        "matchCriteriaId": "9B9583C9-BCCE-434E-8842-532A760C77F8"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/robiso/wondercms/issues/64",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Issue Tracking",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.wondercms.com/whatsnew",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Vendor Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2019-5956",
+                "sourceIdentifier": "vultures@jpcert.or.jp",
+                "published": "2019-09-12T17:15:13.547",
+                "lastModified": "2019-09-13T18:22:03.600",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Directory traversal vulnerability in WonderCMS 2.6.0 and earlier allows remote attackers to delete arbitrary files via unspecified vectors."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Una vulnerabilidad de salto de directorio en WonderCMS versi\u00f3n 2.6.0 y anteriores, permite a atacantes remotos eliminar archivos arbitrarios por medio de vectores no especificados."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.5,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 2.5
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 7.5
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-22"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:wondercms:wondercms:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "2.6.0",
+                                        "matchCriteriaId": "C6FC6C43-A556-4192-872D-3FAE4905BEFD"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://jvn.jp/en/vu/JVNVU93628467/index.html",
+                        "source": "vultures@jpcert.or.jp",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2020-29247",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2020-12-24T20:15:12.523",
+                "lastModified": "2021-04-22T13:13:45.263",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "WonderCMS 3.1.3 is affected by cross-site scripting (XSS) in the Admin Panel. An attacker can inject the XSS payload in Page keywords and each time any user will visit the website, the XSS triggers, and the attacker can able to steal the cookie according to the crafted payload."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "WonderCMS versi\u00f3n 3.1.3, est\u00e1 afectado por una vulnerabilidad de tipo cross-site scripting (XSS) en el Panel Admin.&#xa0;Un atacante puede inyectar la carga \u00fatil XSS en las palabras clave de la P\u00e1gina y cada vez que alg\u00fan usuario visita el sitio web, activa el ataque XSS y el atacante es capaz de robar la cookie de acuerdo con la carga \u00fatil dise\u00f1ada"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "HIGH",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.8,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 1.7,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 3.5
+                            },
+                            "baseSeverity": "LOW",
+                            "exploitabilityScore": 6.8,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:wondercms:wondercms:3.1.3:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "C34DD4B5-9079-44C3-B20C-1B5DC5236D30"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://wondercms.com",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Product",
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://systemweakness.com/cve-2020-29247-wondercms-3-1-3-page-persistent-cross-site-scripting-3dd2bb210beb",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.exploit-db.com/exploits/49102",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory",
+                            "VDB Entry"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2020-29233",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2020-12-30T15:15:12.480",
+                "lastModified": "2021-01-04T15:21:38.630",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "WonderCMS 3.1.3 is affected by cross-site scripting (XSS) in the Page description component. This vulnerability can allow an attacker to inject the XSS payload in the Page description and each time any user will visits the website, the XSS triggers and attacker can steal the cookie according to the crafted payload."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "WonderCMS versi\u00f3n 3.1.3, est\u00e1 afectado por una vulnerabilidad de tipo cross-site scripting (XSS) en el componente Page description.&#xa0;Esta vulnerabilidad puede permitir a un atacante inyectar una carga \u00fatil de tipo XSS en la Page description y cada vez que un usuario visita el sitio web, el XSS se desencadena y el atacante puede ser capaz de robar la cookie de acuerdo a la carga \u00fatil dise\u00f1ada."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 3.5
+                            },
+                            "baseSeverity": "LOW",
+                            "exploitabilityScore": 6.8,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:wondercms:wondercms:3.1.3:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "C34DD4B5-9079-44C3-B20C-1B5DC5236D30"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://www.exploit-db.com/exploits/49085",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory",
+                            "VDB Entry"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2020-29469",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2020-12-30T15:15:12.653",
+                "lastModified": "2021-01-04T15:16:23.030",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "WonderCMS 3.1.3 is affected by cross-site scripting (XSS) in the Menu component. This vulnerability can allow an attacker to inject the XSS payload in the Setting - Menu and each time any user will visits the website directory, the XSS triggers and attacker can steal the cookie according to the crafted payload."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "WonderCMS versi\u00f3n 3.1.3, est\u00e1 afectado por una vulnerabilidad de tipo cross-site scripting (XSS) en el componente Menu.&#xa0;Esta vulnerabilidad puede permitir a un atacante inyectar una carga \u00fatil de tipo XSS en el Menu Setting y cada vez que un usuario visita el directorio del sitio web, el XSS se desencadena y el atacante puede ser capaz de robar la cookie de acuerdo a la carga \u00fatil dise\u00f1ada."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 3.5
+                            },
+                            "baseSeverity": "LOW",
+                            "exploitabilityScore": 6.8,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:wondercms:wondercms:3.1.3:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "C34DD4B5-9079-44C3-B20C-1B5DC5236D30"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://www.exploit-db.com/exploits/49164",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory",
+                            "VDB Entry"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2020-35313",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2021-04-20T20:15:07.930",
+                "lastModified": "2021-04-23T21:18:21.000",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "A server-side request forgery (SSRF) vulnerability in the addCustomThemePluginRepository function in index.php in WonderCMS 3.1.3 allows remote attackers to execute arbitrary code via a crafted URL to the theme/plugin installer."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Una vulnerabilidad de server-side request forgery (SSRF) en la funci\u00f3n addCustomThemePluginRepository en el archivo index.php en WonderCMS versi\u00f3n 3.1.3 permite a atacantes remotos ejecutar c\u00f3digo arbitrario por medio de una URL dise\u00f1ada para el instalador de theme/plugin"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.8,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 7.5
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-918"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:wondercms:wondercms:3.1.3:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "C34DD4B5-9079-44C3-B20C-1B5DC5236D30"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/robiso/wondercms",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Product",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://packetstormsecurity.com/files/160310/WonderCMS-3.1.3-Code-Execution-Server-Side-Request-Forgery.html",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory",
+                            "VDB Entry"
+                        ]
+                    },
+                    {
+                        "url": "https://zetc0de.github.io/post/authenticated-rce-ssrf-wondercms/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2020-35314",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2021-04-20T20:15:08.057",
+                "lastModified": "2021-06-01T20:34:58.733",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "A remote code execution vulnerability in the installUpdateThemePluginAction function in index.php in WonderCMS 3.1.3, allows remote attackers to upload a custom plugin which can contain arbitrary code and obtain a webshell via the theme/plugin installer."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Una vulnerabilidad de ejecuci\u00f3n remota de c\u00f3digo en la funci\u00f3n installUpdateThemePluginAction en index.php en WonderCMS versi\u00f3n 3.1.3, permite a los atacantes remotos cargar un plugin personalizado que puede contener c\u00f3digo arbitrario y obtener un webshell a trav\u00e9s del instalador de temas/plugins"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.8,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 7.5
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-78"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:wondercms:wondercms:3.1.3:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "C34DD4B5-9079-44C3-B20C-1B5DC5236D30"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/robiso/wondercms",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Product",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://packetstormsecurity.com/files/160311/WonderCMS-3.1.3-Remote-Code-Execution.html",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory",
+                            "VDB Entry"
+                        ]
+                    },
+                    {
+                        "url": "https://zetc0de.github.io/post/authenticated-rce-ssrf-wondercms/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://zetc0de.github.io/post/authenticated-rce-ssrf-wondercms/#authenticated-remote-code-execution",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-42233",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2022-05-23T19:16:07.377",
+                "lastModified": "2022-06-03T15:26:37.683",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "The Simple Blog plugin in Wondercms 3.4.1 is vulnerable to stored cross-site scripting (XSS) vulnerability. When any user opens a particular blog hosted on an attackers' site, XSS may occur."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "El plugin Simple Blog de Wondercms versi\u00f3n 3.4.1, es vulnerable a una vulnerabilidad de tipo cross-site scripting (XSS) almacenado. Cuando cualquier usuario abre un blog particular alojado en el sitio de un atacante, puede producirse un ataque de tipo XSS"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 3.5
+                            },
+                            "baseSeverity": "LOW",
+                            "exploitabilityScore": 6.8,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "operator": "AND",
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:simple_blog_project:simple_blog:-:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "ABD79668-9FC5-4AF8-A085-60CE62B25C63"
+                                    }
+                                ]
+                            },
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": false,
+                                        "criteria": "cpe:2.3:a:wondercms:wondercms:3.4.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "76896C97-591E-46EE-9593-7BCB8D6F6188"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://hackerone.com/reports/485748",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://hackerone.com/reports/647130",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://hackerone.com/reports/961046",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-43332",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2022-11-17T23:15:23.947",
+                "lastModified": "2022-11-18T18:28:44.967",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "A cross-site scripting (XSS) vulnerability in Wondercms v3.3.4 allows attackers to execute arbitrary web scripts or HTML via a crafted payload injected into the Site title field of the Configuration Panel."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Una vulnerabilidad de Cross-Site Scripting (XSS) en Wondercms v3.3.4 permite a los atacantes ejecutar scripts web o HTML arbitrarios a trav\u00e9s de un payload manipulado inyectado en el campo T\u00edtulo del sitio del Panel de configuraci\u00f3n."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.1,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.7
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:wondercms:wondercms:3.3.4:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "DCDBB9AD-5D7B-445E-B8DD-30BA2995FF1B"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/maikroservice/CVE-2022-43332",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-41425",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2023-11-07T16:15:28.867",
+                "lastModified": "2023-11-14T20:20:51.567",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Cross Site Scripting vulnerability in Wonder CMS v.3.2.0 thru v.3.4.2 allows a remote attacker to execute arbitrary code via a crafted script uploaded to the installModule component."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Vulnerabilidad de Cross-Site Scripting en Wonder CMS v.3.2.0 a v.3.4.2 permite a un atacante remoto ejecutar c\u00f3digo arbitrario a trav\u00e9s de un script manipulado y cargado en el componente installModule."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.1,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.7
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:wondercms:wondercms:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "3.2.0",
+                                        "versionEndIncluding": "3.4.2",
+                                        "matchCriteriaId": "12378343-FA06-47FB-B3A5-BE3858A34347"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://wondercms.com",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Product"
+                        ]
+                    },
+                    {
+                        "url": "https://gist.github.com/prodigiousMind/fc69a79629c4ba9ee88a7ad526043413",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

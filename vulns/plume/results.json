@@ -1,1 +1,1195 @@
-{"resultsPerPage":10,"startIndex":0,"totalResults":10,"format":"NVD_CVE","version":"2.0","timestamp":"2024-04-30T10:50:58.177","vulnerabilities":[{"cve":{"id":"CVE-2006-0725","sourceIdentifier":"cve@mitre.org","published":"2006-02-16T11:02:00.000","lastModified":"2017-07-20T01:30:00.940","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"PHP remote file inclusion vulnerability in prepend.php in Plume CMS 1.0.2, when register_globals is enabled, allows remote attackers to include arbitrary files via a URL in the _PX_config[manager_path] parameter.  NOTE: this is a different executable and affected version than CVE-2006-2645."}],"metrics":{"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":6.8},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":true,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-94"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:plume-cms:plume_cms:1.0.2:*:*:*:*:*:*:*","matchCriteriaId":"B3B174BD-A02F-46FF-BFD7-0EABDBCAB0C3"}]}]}],"references":[{"url":"http:\/\/plume-cms.net\/news\/77-Security-Notice-Please-Update-Your-Prependphp-File","source":"cve@mitre.org"},{"url":"http:\/\/secunia.com\/advisories\/18883","source":"cve@mitre.org","tags":["Vendor Advisory"]},{"url":"http:\/\/securitytracker.com\/id?1015624","source":"cve@mitre.org"},{"url":"http:\/\/www.osvdb.org\/23204","source":"cve@mitre.org"},{"url":"http:\/\/www.securityfocus.com\/bid\/16662","source":"cve@mitre.org"},{"url":"http:\/\/www.vupen.com\/english\/advisories\/2006\/0599","source":"cve@mitre.org","tags":["Vendor Advisory"]},{"url":"https:\/\/exchange.xforce.ibmcloud.com\/vulnerabilities\/24697","source":"cve@mitre.org"},{"url":"https:\/\/exchange.xforce.ibmcloud.com\/vulnerabilities\/27699","source":"cve@mitre.org"}]}},{"cve":{"id":"CVE-2006-2645","sourceIdentifier":"cve@mitre.org","published":"2006-05-30T10:02:00.000","lastModified":"2018-10-18T16:41:08.900","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"PHP remote file inclusion vulnerability in manager\/frontinc\/prepend.php for Plume 1.0.3 allows remote attackers to execute arbitrary code via a URL in the _PX_config[manager_path] parameter.  NOTE: this is a different executable and affected version than CVE-2006-0725."}],"metrics":{"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":7.5},"baseSeverity":"HIGH","exploitabilityScore":10.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":true,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-94"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:plume-cms:plume_cms:1.0.3:*:*:*:*:*:*:*","matchCriteriaId":"74437F07-216C-4DE3-8716-51AB78FA43E0"}]}]}],"references":[{"url":"http:\/\/secunia.com\/advisories\/20310","source":"cve@mitre.org","tags":["Vendor Advisory"]},{"url":"http:\/\/securityreason.com\/securityalert\/975","source":"cve@mitre.org"},{"url":"http:\/\/securitytracker.com\/id?1016165","source":"cve@mitre.org","tags":["Exploit"]},{"url":"http:\/\/www.securityfocus.com\/archive\/1\/435130\/100\/0\/threaded","source":"cve@mitre.org"},{"url":"http:\/\/www.vupen.com\/english\/advisories\/2006\/2014","source":"cve@mitre.org","tags":["Vendor Advisory"]},{"url":"https:\/\/exchange.xforce.ibmcloud.com\/vulnerabilities\/24697","source":"cve@mitre.org"},{"url":"https:\/\/exchange.xforce.ibmcloud.com\/vulnerabilities\/27699","source":"cve@mitre.org"}]}},{"cve":{"id":"CVE-2006-3562","sourceIdentifier":"cve@mitre.org","published":"2006-07-13T01:05:00.000","lastModified":"2018-10-18T16:48:00.440","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"PHP remote file inclusion vulnerabilities in plume cms 1.0.4 allow remote attackers to execute arbitrary PHP code via a URL in the _PX_config[manager_path] parameter to (1) index.php, (2) rss.php, or (3) search.php, a different set of vectors and versions than CVE-2006-2645 and CVE-2006-0725."},{"lang":"es","value":"Vulnerabilidad de inclusión remota de archivo en PHP en plume cms 1.0.4 permite a atacantes remotos ejecutar código PHP de su elección mediante un URL en el parámetro (1) index.php, (2) rss.php, o (3) search.php, un conjunto diferente de vectores y versiones que en CVE-2006-2645 y CVE-2006-0725."}],"metrics":{"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":7.5},"baseSeverity":"HIGH","exploitabilityScore":10.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":true,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-94"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:plume-cms:plume_cms:1.0.4:*:*:*:*:*:*:*","matchCriteriaId":"737216F6-CC70-4117-BCDE-28F8421FA007"}]}]}],"references":[{"url":"http:\/\/securityreason.com\/securityalert\/1220","source":"cve@mitre.org"},{"url":"http:\/\/securitytracker.com\/id?1016426","source":"cve@mitre.org","tags":["Exploit"]},{"url":"http:\/\/www.securityfocus.com\/archive\/1\/438948\/100\/100\/threaded","source":"cve@mitre.org"},{"url":"http:\/\/www.securityfocus.com\/bid\/18780","source":"cve@mitre.org","tags":["Exploit"]},{"url":"https:\/\/exchange.xforce.ibmcloud.com\/vulnerabilities\/27530","source":"cve@mitre.org"}]}},{"cve":{"id":"CVE-2006-4533","sourceIdentifier":"cve@mitre.org","published":"2006-09-01T23:04:00.000","lastModified":"2011-11-10T05:00:00.000","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Multiple PHP remote file inclusion vulnerabilities in Plume CMS 1.0.6 and earlier allow remote attackers to execute arbitrary PHP code via the _PX_config[manager_path] parameter to (1) articles.php, (2) categories.php, (3) news.php, (4) prefs.php, (5) sites.php, (6) subtypes.php, (7) users.php, (8) xmedia.php, (9) frontinc\/class.template.php, (10) inc\/lib.text.php, (11) install\/index.php, (12) install\/upgrade.php, and (13) tools\/htaccess\/index.php.  NOTE: other vectors are covered by CVE-2006-3562, CVE-2006-2645, and CVE-2006-0725."},{"lang":"es","value":"Múltiples vulnerabilidades de inclusión de fichero PHP en Plume CMS 1.0.6 y anteriores permiten a atacantes remotos ejecutar código PHP de su elección mediante el parámetro  _PX_config[manager_path] en (1) articles.php, (2) categories.php, (3) news.php, (4) prefs.php, (5) sites.php, (6) subtypes.php, (7) users.php, (8) xmedia.php, (9) frontinc\/class.template.php, (10) inc\/lib.text.php, (11) install\/index.php, (12) install\/upgrade.php, and (13) tools\/htaccess\/index.php. NOTA: otros vectores se tratan en CVE-2006-3562, CVE-2006-2645, y CVE-2006-0725.\r\n"}],"metrics":{"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":7.5},"baseSeverity":"HIGH","exploitabilityScore":10.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":true,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-94"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:plume-cms:plume_cms:*:*:*:*:*:*:*:*","versionEndIncluding":"1.0.6","matchCriteriaId":"B3381BC6-FBBA-4A8A-A695-716FA41B1017"},{"vulnerable":true,"criteria":"cpe:2.3:a:plume-cms:plume_cms:1.0.5:*:*:*:*:*:*:*","matchCriteriaId":"39A16986-E49C-438B-8773-170FB4BFD8DE"}]}]}],"references":[{"url":"http:\/\/packetstormsecurity.org\/0608-exploits\/plume-1.0.6.txt","source":"cve@mitre.org"},{"url":"http:\/\/www.osvdb.org\/31171","source":"cve@mitre.org"},{"url":"http:\/\/www.osvdb.org\/31172","source":"cve@mitre.org"},{"url":"http:\/\/www.osvdb.org\/31173","source":"cve@mitre.org"},{"url":"http:\/\/www.osvdb.org\/31174","source":"cve@mitre.org"},{"url":"http:\/\/www.osvdb.org\/31175","source":"cve@mitre.org"},{"url":"http:\/\/www.osvdb.org\/31176","source":"cve@mitre.org"},{"url":"http:\/\/www.osvdb.org\/31177","source":"cve@mitre.org"},{"url":"http:\/\/www.osvdb.org\/31178","source":"cve@mitre.org"},{"url":"http:\/\/www.osvdb.org\/31179","source":"cve@mitre.org"},{"url":"http:\/\/www.osvdb.org\/31180","source":"cve@mitre.org"},{"url":"http:\/\/www.osvdb.org\/31181","source":"cve@mitre.org"},{"url":"http:\/\/www.osvdb.org\/31182","source":"cve@mitre.org"},{"url":"http:\/\/www.osvdb.org\/31183","source":"cve@mitre.org"},{"url":"http:\/\/www.securityfocus.com\/bid\/19629","source":"cve@mitre.org"}]}},{"cve":{"id":"CVE-2006-7021","sourceIdentifier":"cve@mitre.org","published":"2007-02-15T02:28:00.000","lastModified":"2017-07-29T01:29:46.767","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"PHP remote file inclusion vulnerability in manager\/tools\/link\/dbinstall.php in Plume CMS 1.1.3 allows remote attackers to execute arbitrary PHP code via a URL in the _PX_config[manager_path] parameter."},{"lang":"es","value":"Vulnerabilidad PHP de inclusión remota de archivo en manager\/tools\/link\/dbinstall.php en Plume CMS 1.1.3 permite a atacantes remotos ejecutar código PHP de su elección a través de una URL en el parámetro _PX_config[manager_path]."}],"metrics":{"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":7.5},"baseSeverity":"HIGH","exploitabilityScore":10.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":true,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-94"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:plume-cms:plume_cms:1.1.3:*:*:*:*:*:*:*","matchCriteriaId":"87D700AB-EF9C-4B1C-A2E3-D802B91B5967"}]}]}],"references":[{"url":"http:\/\/www.hamid.ir\/security\/plume.txt","source":"cve@mitre.org","tags":["Exploit"]},{"url":"http:\/\/www.securiteam.com\/unixfocus\/5KP031FJ5A.html","source":"cve@mitre.org","tags":["Exploit"]},{"url":"http:\/\/www.securityfocus.com\/bid\/18750","source":"cve@mitre.org"},{"url":"http:\/\/www.securitytracker.com\/id?1016415","source":"cve@mitre.org"},{"url":"https:\/\/exchange.xforce.ibmcloud.com\/vulnerabilities\/27535","source":"cve@mitre.org"}]}},{"cve":{"id":"CVE-2008-1048","sourceIdentifier":"cve@mitre.org","published":"2008-02-27T19:44:00.000","lastModified":"2017-08-08T01:29:50.947","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"Cross-site scripting (XSS) vulnerability in manager\/xmedia.php in Plume CMS 1.2.2 allows remote attackers to inject arbitrary web script or HTML via the dir parameter."},{"lang":"es","value":"Vulnerabilidad de secuencias de comandos en sitios cruzados (XSS) en manager\/xmedia.php de Plume CMS 1.2.2 permite a atacantes remotos inyectar web script o HTML de su elección a través del parámetro dir."}],"metrics":{"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.3},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:plume-cms:plume_cms:1.2.2:*:*:*:*:*:*:*","matchCriteriaId":"99901636-80ED-4F0E-9DC1-CCE280A6CBD0"}]}]}],"references":[{"url":"http:\/\/secunia.com\/advisories\/29116","source":"cve@mitre.org","tags":["Vendor Advisory"]},{"url":"http:\/\/www.digitrustgroup.com\/advisories\/web-application-security-plume-cms.html","source":"cve@mitre.org","tags":["Exploit"]},{"url":"http:\/\/www.securityfocus.com\/bid\/27999","source":"cve@mitre.org"},{"url":"http:\/\/www.securitytracker.com\/id?1019507","source":"cve@mitre.org"},{"url":"https:\/\/exchange.xforce.ibmcloud.com\/vulnerabilities\/40841","source":"cve@mitre.org"}]}},{"cve":{"id":"CVE-2009-3418","sourceIdentifier":"cve@mitre.org","published":"2009-09-25T22:30:09.313","lastModified":"2024-02-14T01:17:43.863","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Multiple SQL injection vulnerabilities in Plume CMS 1.2.3 allow (1) remote authenticated users to execute arbitrary SQL commands via the m parameter to manager\/index.php and (2) remote authenticated administrators to execute arbitrary SQL commands via the id parameter in an edit_link action to manager\/tools.php.  NOTE: some of these details are obtained from third party information."},{"lang":"es","value":"Múltiples vulnerabilidades de inyección SQL en Plume CMS v1.2.3 permite (1) a usuarios autenticados remotamente ejecutar comandos SQL de su elección mediante el parámetro \"m\" de manager\/index.php y (2) a administradores autenticados remotamente ejecutar comandos SQL de su elección mediante el parámetro \"id\" en una acción \"edit_link\" de manager\/tools.php. NOTA: algunos de estos detalles se han obtenido de información de terceros."}],"metrics":{"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:S\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"SINGLE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":6.5},"baseSeverity":"MEDIUM","exploitabilityScore":8.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-89"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:plume-cms:plume_cms:1.2.3:*:*:*:*:*:*:*","matchCriteriaId":"1B1B8EA7-E01F-4DAD-8A53-5F190E9854E5"}]}]}],"references":[{"url":"http:\/\/secunia.com\/advisories\/36277","source":"cve@mitre.org","tags":["Vendor Advisory"]},{"url":"http:\/\/www.senseofsecurity.com.au\/advisories\/SOS-09-006.pdf","source":"cve@mitre.org","tags":["URL Repurposed"]}]}},{"cve":{"id":"CVE-2011-3985","sourceIdentifier":"vultures@jpcert.or.jp","published":"2011-11-09T23:55:01.960","lastModified":"2011-11-10T05:00:00.000","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Cross-site scripting (XSS) vulnerability in Plume before 1.2.3 allows remote attackers to inject arbitrary web script or HTML via unspecified vectors."},{"lang":"es","value":"Vulnerabilidad de ejecución de secuencias de comandos en sitios cruzado en Plume antes de v1.2.3, permite a atacantes remotos inyectar secuencias de comandos web o HTML a través de vectores no especificados."}],"metrics":{"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:H\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"HIGH","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":2.6},"baseSeverity":"LOW","exploitabilityScore":4.9,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:plume-cms:plume_cms:*:*:*:*:*:*:*:*","versionEndIncluding":"1.2.2","matchCriteriaId":"59A6CF02-B60F-4578-BF26-BF9BA05DA9BC"},{"vulnerable":true,"criteria":"cpe:2.3:a:plume-cms:plume_cms:1.0.2:*:*:*:*:*:*:*","matchCriteriaId":"B3B174BD-A02F-46FF-BFD7-0EABDBCAB0C3"},{"vulnerable":true,"criteria":"cpe:2.3:a:plume-cms:plume_cms:1.0.3:*:*:*:*:*:*:*","matchCriteriaId":"74437F07-216C-4DE3-8716-51AB78FA43E0"},{"vulnerable":true,"criteria":"cpe:2.3:a:plume-cms:plume_cms:1.0.4:*:*:*:*:*:*:*","matchCriteriaId":"737216F6-CC70-4117-BCDE-28F8421FA007"},{"vulnerable":true,"criteria":"cpe:2.3:a:plume-cms:plume_cms:1.0.5:*:*:*:*:*:*:*","matchCriteriaId":"39A16986-E49C-438B-8773-170FB4BFD8DE"},{"vulnerable":true,"criteria":"cpe:2.3:a:plume-cms:plume_cms:1.0.6:*:*:*:*:*:*:*","matchCriteriaId":"FCFD72DB-1887-4E0D-933D-4BD463B6ECAE"},{"vulnerable":true,"criteria":"cpe:2.3:a:plume-cms:plume_cms:1.1.3:*:*:*:*:*:*:*","matchCriteriaId":"87D700AB-EF9C-4B1C-A2E3-D802B91B5967"},{"vulnerable":true,"criteria":"cpe:2.3:a:plume-cms:plume_cms:1.2:*:*:*:*:*:*:*","matchCriteriaId":"237536C3-D21B-41FC-9D41-202A59F7D26A"},{"vulnerable":true,"criteria":"cpe:2.3:a:plume-cms:plume_cms:1.2.1:*:*:*:*:*:*:*","matchCriteriaId":"DEFBCB71-1048-48AC-9FAE-72F7FE38D940"}]}]}],"references":[{"url":"http:\/\/jvn.jp\/en\/jp\/JVN08307791\/index.html","source":"vultures@jpcert.or.jp"},{"url":"http:\/\/jvndb.jvn.jp\/jvndb\/JVNDB-2011-000083","source":"vultures@jpcert.or.jp"}]}},{"cve":{"id":"CVE-2012-2156","sourceIdentifier":"cve@mitre.org","published":"2012-04-11T10:39:27.153","lastModified":"2017-12-20T02:29:01.427","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"Multiple cross-site scripting (XSS) vulnerabilities in Plume CMS 1.2.4 and earlier allow remote attackers to inject arbitrary web script or HTML via (1) the u_email parameter (aka Authors Email field) to manager\/users.php, (2) the u_realname parameter (aka Authors Name field) to manager\/users.php, or (3) the c_author parameter (aka Author field) in an ADD A COMMENT section."},{"lang":"es","value":"Múltiples vulnerabilidades de secuencias de comandos en sitios cruzados (XSS) en Plume CMS 1.2.4 y anteriores permiten a atacantes remotos inyectar codigo de script web o código HTML de su elección a través del parámetro u_email (campo \"Authors Email\") de manager\/users.php, (2) el parámetro u_realname (campo \"Authors Name\") de manager\/users.php, o (3) el parámetro c_author (campo \"Author\") de una sección ADD A COMMENT.\r\n"}],"metrics":{"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.3},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:plume-cms:plume_cms:*:*:*:*:*:*:*:*","versionEndIncluding":"1.2.4","matchCriteriaId":"EA3D1E19-0F5A-4827-BD3B-1F412ADE353D"},{"vulnerable":true,"criteria":"cpe:2.3:a:plume-cms:plume_cms:1.0.2:*:*:*:*:*:*:*","matchCriteriaId":"B3B174BD-A02F-46FF-BFD7-0EABDBCAB0C3"},{"vulnerable":true,"criteria":"cpe:2.3:a:plume-cms:plume_cms:1.0.3:*:*:*:*:*:*:*","matchCriteriaId":"74437F07-216C-4DE3-8716-51AB78FA43E0"},{"vulnerable":true,"criteria":"cpe:2.3:a:plume-cms:plume_cms:1.0.4:*:*:*:*:*:*:*","matchCriteriaId":"737216F6-CC70-4117-BCDE-28F8421FA007"},{"vulnerable":true,"criteria":"cpe:2.3:a:plume-cms:plume_cms:1.0.5:*:*:*:*:*:*:*","matchCriteriaId":"39A16986-E49C-438B-8773-170FB4BFD8DE"},{"vulnerable":true,"criteria":"cpe:2.3:a:plume-cms:plume_cms:1.0.6:*:*:*:*:*:*:*","matchCriteriaId":"FCFD72DB-1887-4E0D-933D-4BD463B6ECAE"},{"vulnerable":true,"criteria":"cpe:2.3:a:plume-cms:plume_cms:1.1.3:*:*:*:*:*:*:*","matchCriteriaId":"87D700AB-EF9C-4B1C-A2E3-D802B91B5967"},{"vulnerable":true,"criteria":"cpe:2.3:a:plume-cms:plume_cms:1.2:*:*:*:*:*:*:*","matchCriteriaId":"237536C3-D21B-41FC-9D41-202A59F7D26A"},{"vulnerable":true,"criteria":"cpe:2.3:a:plume-cms:plume_cms:1.2.1:*:*:*:*:*:*:*","matchCriteriaId":"DEFBCB71-1048-48AC-9FAE-72F7FE38D940"},{"vulnerable":true,"criteria":"cpe:2.3:a:plume-cms:plume_cms:1.2.2:*:*:*:*:*:*:*","matchCriteriaId":"99901636-80ED-4F0E-9DC1-CCE280A6CBD0"},{"vulnerable":true,"criteria":"cpe:2.3:a:plume-cms:plume_cms:1.2.3:*:*:*:*:*:*:*","matchCriteriaId":"1B1B8EA7-E01F-4DAD-8A53-5F190E9854E5"}]}]}],"references":[{"url":"http:\/\/osvdb.org\/80960","source":"cve@mitre.org"},{"url":"http:\/\/osvdb.org\/80961","source":"cve@mitre.org"},{"url":"http:\/\/www.exploit-db.com\/exploits\/18699","source":"cve@mitre.org"},{"url":"http:\/\/www.securityfocus.com\/bid\/52890","source":"cve@mitre.org"},{"url":"http:\/\/www.webapp-security.com\/2012\/04\/plumecms","source":"cve@mitre.org"},{"url":"http:\/\/www.webapp-security.com\/wp-content\/uploads\/2012\/04\/PlumeCMS-1.2.4-Multiple-Permanent-XSS.txt","source":"cve@mitre.org"},{"url":"https:\/\/exchange.xforce.ibmcloud.com\/vulnerabilities\/74614","source":"cve@mitre.org"}]}},{"cve":{"id":"CVE-2012-1414","sourceIdentifier":"cve@mitre.org","published":"2012-10-07T21:55:01.330","lastModified":"2017-08-29T01:31:16.600","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"Cross-site request forgery (CSRF) vulnerability in manager\/news.php in Plume CMS 1.2.4 and earlier allows remote attackers to hijack the authentication of administrators for requests that create News pages via a publish action."},{"lang":"es","value":"Vulnerabilidad de ejecución de secuencias de comandos en sitios cruzados (XSS) en manager\/news.php en Plume CMS v1.2.4 y anteirores, permite a atacantes remotos inyectar secuencias de comandos web o HTML a través de peticiones que crean páginas de News a través de una acción de publicación."}],"metrics":{"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":6.8},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-352"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:plume-cms:plume_cms:*:*:*:*:*:*:*:*","versionEndIncluding":"1.2.4","matchCriteriaId":"EA3D1E19-0F5A-4827-BD3B-1F412ADE353D"},{"vulnerable":true,"criteria":"cpe:2.3:a:plume-cms:plume_cms:1.0.2:*:*:*:*:*:*:*","matchCriteriaId":"B3B174BD-A02F-46FF-BFD7-0EABDBCAB0C3"},{"vulnerable":true,"criteria":"cpe:2.3:a:plume-cms:plume_cms:1.0.3:*:*:*:*:*:*:*","matchCriteriaId":"74437F07-216C-4DE3-8716-51AB78FA43E0"},{"vulnerable":true,"criteria":"cpe:2.3:a:plume-cms:plume_cms:1.0.4:*:*:*:*:*:*:*","matchCriteriaId":"737216F6-CC70-4117-BCDE-28F8421FA007"},{"vulnerable":true,"criteria":"cpe:2.3:a:plume-cms:plume_cms:1.0.5:*:*:*:*:*:*:*","matchCriteriaId":"39A16986-E49C-438B-8773-170FB4BFD8DE"},{"vulnerable":true,"criteria":"cpe:2.3:a:plume-cms:plume_cms:1.0.6:*:*:*:*:*:*:*","matchCriteriaId":"FCFD72DB-1887-4E0D-933D-4BD463B6ECAE"},{"vulnerable":true,"criteria":"cpe:2.3:a:plume-cms:plume_cms:1.1.3:*:*:*:*:*:*:*","matchCriteriaId":"87D700AB-EF9C-4B1C-A2E3-D802B91B5967"},{"vulnerable":true,"criteria":"cpe:2.3:a:plume-cms:plume_cms:1.2:*:*:*:*:*:*:*","matchCriteriaId":"237536C3-D21B-41FC-9D41-202A59F7D26A"},{"vulnerable":true,"criteria":"cpe:2.3:a:plume-cms:plume_cms:1.2.1:*:*:*:*:*:*:*","matchCriteriaId":"DEFBCB71-1048-48AC-9FAE-72F7FE38D940"},{"vulnerable":true,"criteria":"cpe:2.3:a:plume-cms:plume_cms:1.2.2:*:*:*:*:*:*:*","matchCriteriaId":"99901636-80ED-4F0E-9DC1-CCE280A6CBD0"},{"vulnerable":true,"criteria":"cpe:2.3:a:plume-cms:plume_cms:1.2.3:*:*:*:*:*:*:*","matchCriteriaId":"1B1B8EA7-E01F-4DAD-8A53-5F190E9854E5"}]}]}],"references":[{"url":"http:\/\/www.exploit-db.com\/exploits\/18502","source":"cve@mitre.org","tags":["Exploit"]},{"url":"https:\/\/exchange.xforce.ibmcloud.com\/vulnerabilities\/73317","source":"cve@mitre.org"}]}}]}
+{
+    "resultsPerPage": 10,
+    "startIndex": 0,
+    "totalResults": 10,
+    "format": "NVD_CVE",
+    "version": "2.0",
+    "timestamp": "2024-04-30T10:50:58.177",
+    "vulnerabilities": [
+        {
+            "cve": {
+                "id": "CVE-2006-0725",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2006-02-16T11:02:00.000",
+                "lastModified": "2017-07-20T01:30:00.940",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "PHP remote file inclusion vulnerability in prepend.php in Plume CMS 1.0.2, when register_globals is enabled, allows remote attackers to include arbitrary files via a URL in the _PX_config[manager_path] parameter.  NOTE: this is a different executable and affected version than CVE-2006-2645."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 6.8
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": true,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-94"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:plume-cms:plume_cms:1.0.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "B3B174BD-A02F-46FF-BFD7-0EABDBCAB0C3"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://plume-cms.net/news/77-Security-Notice-Please-Update-Your-Prependphp-File",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://secunia.com/advisories/18883",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "http://securitytracker.com/id?1015624",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://www.osvdb.org/23204",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://www.securityfocus.com/bid/16662",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://www.vupen.com/english/advisories/2006/0599",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/24697",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/27699",
+                        "source": "cve@mitre.org"
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2006-2645",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2006-05-30T10:02:00.000",
+                "lastModified": "2018-10-18T16:41:08.900",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "PHP remote file inclusion vulnerability in manager/frontinc/prepend.php for Plume 1.0.3 allows remote attackers to execute arbitrary code via a URL in the _PX_config[manager_path] parameter.  NOTE: this is a different executable and affected version than CVE-2006-0725."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 7.5
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": true,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-94"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:plume-cms:plume_cms:1.0.3:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "74437F07-216C-4DE3-8716-51AB78FA43E0"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://secunia.com/advisories/20310",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "http://securityreason.com/securityalert/975",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://securitytracker.com/id?1016165",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit"
+                        ]
+                    },
+                    {
+                        "url": "http://www.securityfocus.com/archive/1/435130/100/0/threaded",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://www.vupen.com/english/advisories/2006/2014",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/24697",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/27699",
+                        "source": "cve@mitre.org"
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2006-3562",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2006-07-13T01:05:00.000",
+                "lastModified": "2018-10-18T16:48:00.440",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "PHP remote file inclusion vulnerabilities in plume cms 1.0.4 allow remote attackers to execute arbitrary PHP code via a URL in the _PX_config[manager_path] parameter to (1) index.php, (2) rss.php, or (3) search.php, a different set of vectors and versions than CVE-2006-2645 and CVE-2006-0725."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Vulnerabilidad de inclusi\u00f3n remota de archivo en PHP en plume cms 1.0.4 permite a atacantes remotos ejecutar c\u00f3digo PHP de su elecci\u00f3n mediante un URL en el par\u00e1metro (1) index.php, (2) rss.php, o (3) search.php, un conjunto diferente de vectores y versiones que en CVE-2006-2645 y CVE-2006-0725."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 7.5
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": true,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-94"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:plume-cms:plume_cms:1.0.4:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "737216F6-CC70-4117-BCDE-28F8421FA007"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://securityreason.com/securityalert/1220",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://securitytracker.com/id?1016426",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit"
+                        ]
+                    },
+                    {
+                        "url": "http://www.securityfocus.com/archive/1/438948/100/100/threaded",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://www.securityfocus.com/bid/18780",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit"
+                        ]
+                    },
+                    {
+                        "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/27530",
+                        "source": "cve@mitre.org"
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2006-4533",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2006-09-01T23:04:00.000",
+                "lastModified": "2011-11-10T05:00:00.000",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Multiple PHP remote file inclusion vulnerabilities in Plume CMS 1.0.6 and earlier allow remote attackers to execute arbitrary PHP code via the _PX_config[manager_path] parameter to (1) articles.php, (2) categories.php, (3) news.php, (4) prefs.php, (5) sites.php, (6) subtypes.php, (7) users.php, (8) xmedia.php, (9) frontinc/class.template.php, (10) inc/lib.text.php, (11) install/index.php, (12) install/upgrade.php, and (13) tools/htaccess/index.php.  NOTE: other vectors are covered by CVE-2006-3562, CVE-2006-2645, and CVE-2006-0725."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "M\u00faltiples vulnerabilidades de inclusi\u00f3n de fichero PHP en Plume CMS 1.0.6 y anteriores permiten a atacantes remotos ejecutar c\u00f3digo PHP de su elecci\u00f3n mediante el par\u00e1metro  _PX_config[manager_path] en (1) articles.php, (2) categories.php, (3) news.php, (4) prefs.php, (5) sites.php, (6) subtypes.php, (7) users.php, (8) xmedia.php, (9) frontinc/class.template.php, (10) inc/lib.text.php, (11) install/index.php, (12) install/upgrade.php, and (13) tools/htaccess/index.php. NOTA: otros vectores se tratan en CVE-2006-3562, CVE-2006-2645, y CVE-2006-0725.\r\n"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 7.5
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": true,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-94"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:plume-cms:plume_cms:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "1.0.6",
+                                        "matchCriteriaId": "B3381BC6-FBBA-4A8A-A695-716FA41B1017"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:plume-cms:plume_cms:1.0.5:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "39A16986-E49C-438B-8773-170FB4BFD8DE"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://packetstormsecurity.org/0608-exploits/plume-1.0.6.txt",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://www.osvdb.org/31171",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://www.osvdb.org/31172",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://www.osvdb.org/31173",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://www.osvdb.org/31174",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://www.osvdb.org/31175",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://www.osvdb.org/31176",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://www.osvdb.org/31177",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://www.osvdb.org/31178",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://www.osvdb.org/31179",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://www.osvdb.org/31180",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://www.osvdb.org/31181",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://www.osvdb.org/31182",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://www.osvdb.org/31183",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://www.securityfocus.com/bid/19629",
+                        "source": "cve@mitre.org"
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2006-7021",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2007-02-15T02:28:00.000",
+                "lastModified": "2017-07-29T01:29:46.767",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "PHP remote file inclusion vulnerability in manager/tools/link/dbinstall.php in Plume CMS 1.1.3 allows remote attackers to execute arbitrary PHP code via a URL in the _PX_config[manager_path] parameter."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Vulnerabilidad PHP de inclusi\u00f3n remota de archivo en manager/tools/link/dbinstall.php en Plume CMS 1.1.3 permite a atacantes remotos ejecutar c\u00f3digo PHP de su elecci\u00f3n a trav\u00e9s de una URL en el par\u00e1metro _PX_config[manager_path]."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 7.5
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": true,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-94"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:plume-cms:plume_cms:1.1.3:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "87D700AB-EF9C-4B1C-A2E3-D802B91B5967"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://www.hamid.ir/security/plume.txt",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit"
+                        ]
+                    },
+                    {
+                        "url": "http://www.securiteam.com/unixfocus/5KP031FJ5A.html",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit"
+                        ]
+                    },
+                    {
+                        "url": "http://www.securityfocus.com/bid/18750",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://www.securitytracker.com/id?1016415",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/27535",
+                        "source": "cve@mitre.org"
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2008-1048",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2008-02-27T19:44:00.000",
+                "lastModified": "2017-08-08T01:29:50.947",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Cross-site scripting (XSS) vulnerability in manager/xmedia.php in Plume CMS 1.2.2 allows remote attackers to inject arbitrary web script or HTML via the dir parameter."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Vulnerabilidad de secuencias de comandos en sitios cruzados (XSS) en manager/xmedia.php de Plume CMS 1.2.2 permite a atacantes remotos inyectar web script o HTML de su elecci\u00f3n a trav\u00e9s del par\u00e1metro dir."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:plume-cms:plume_cms:1.2.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "99901636-80ED-4F0E-9DC1-CCE280A6CBD0"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://secunia.com/advisories/29116",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "http://www.digitrustgroup.com/advisories/web-application-security-plume-cms.html",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit"
+                        ]
+                    },
+                    {
+                        "url": "http://www.securityfocus.com/bid/27999",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://www.securitytracker.com/id?1019507",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/40841",
+                        "source": "cve@mitre.org"
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2009-3418",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2009-09-25T22:30:09.313",
+                "lastModified": "2024-02-14T01:17:43.863",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Multiple SQL injection vulnerabilities in Plume CMS 1.2.3 allow (1) remote authenticated users to execute arbitrary SQL commands via the m parameter to manager/index.php and (2) remote authenticated administrators to execute arbitrary SQL commands via the id parameter in an edit_link action to manager/tools.php.  NOTE: some of these details are obtained from third party information."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "M\u00faltiples vulnerabilidades de inyecci\u00f3n SQL en Plume CMS v1.2.3 permite (1) a usuarios autenticados remotamente ejecutar comandos SQL de su elecci\u00f3n mediante el par\u00e1metro \"m\" de manager/index.php y (2) a administradores autenticados remotamente ejecutar comandos SQL de su elecci\u00f3n mediante el par\u00e1metro \"id\" en una acci\u00f3n \"edit_link\" de manager/tools.php. NOTA: algunos de estos detalles se han obtenido de informaci\u00f3n de terceros."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 6.5
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-89"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:plume-cms:plume_cms:1.2.3:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "1B1B8EA7-E01F-4DAD-8A53-5F190E9854E5"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://secunia.com/advisories/36277",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "http://www.senseofsecurity.com.au/advisories/SOS-09-006.pdf",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "URL Repurposed"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2011-3985",
+                "sourceIdentifier": "vultures@jpcert.or.jp",
+                "published": "2011-11-09T23:55:01.960",
+                "lastModified": "2011-11-10T05:00:00.000",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Cross-site scripting (XSS) vulnerability in Plume before 1.2.3 allows remote attackers to inject arbitrary web script or HTML via unspecified vectors."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Vulnerabilidad de ejecuci\u00f3n de secuencias de comandos en sitios cruzado en Plume antes de v1.2.3, permite a atacantes remotos inyectar secuencias de comandos web o HTML a trav\u00e9s de vectores no especificados."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:H/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "HIGH",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 2.6
+                            },
+                            "baseSeverity": "LOW",
+                            "exploitabilityScore": 4.9,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:plume-cms:plume_cms:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "1.2.2",
+                                        "matchCriteriaId": "59A6CF02-B60F-4578-BF26-BF9BA05DA9BC"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:plume-cms:plume_cms:1.0.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "B3B174BD-A02F-46FF-BFD7-0EABDBCAB0C3"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:plume-cms:plume_cms:1.0.3:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "74437F07-216C-4DE3-8716-51AB78FA43E0"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:plume-cms:plume_cms:1.0.4:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "737216F6-CC70-4117-BCDE-28F8421FA007"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:plume-cms:plume_cms:1.0.5:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "39A16986-E49C-438B-8773-170FB4BFD8DE"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:plume-cms:plume_cms:1.0.6:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "FCFD72DB-1887-4E0D-933D-4BD463B6ECAE"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:plume-cms:plume_cms:1.1.3:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "87D700AB-EF9C-4B1C-A2E3-D802B91B5967"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:plume-cms:plume_cms:1.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "237536C3-D21B-41FC-9D41-202A59F7D26A"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:plume-cms:plume_cms:1.2.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "DEFBCB71-1048-48AC-9FAE-72F7FE38D940"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://jvn.jp/en/jp/JVN08307791/index.html",
+                        "source": "vultures@jpcert.or.jp"
+                    },
+                    {
+                        "url": "http://jvndb.jvn.jp/jvndb/JVNDB-2011-000083",
+                        "source": "vultures@jpcert.or.jp"
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2012-2156",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2012-04-11T10:39:27.153",
+                "lastModified": "2017-12-20T02:29:01.427",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Multiple cross-site scripting (XSS) vulnerabilities in Plume CMS 1.2.4 and earlier allow remote attackers to inject arbitrary web script or HTML via (1) the u_email parameter (aka Authors Email field) to manager/users.php, (2) the u_realname parameter (aka Authors Name field) to manager/users.php, or (3) the c_author parameter (aka Author field) in an ADD A COMMENT section."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "M\u00faltiples vulnerabilidades de secuencias de comandos en sitios cruzados (XSS) en Plume CMS 1.2.4 y anteriores permiten a atacantes remotos inyectar codigo de script web o c\u00f3digo HTML de su elecci\u00f3n a trav\u00e9s del par\u00e1metro u_email (campo \"Authors Email\") de manager/users.php, (2) el par\u00e1metro u_realname (campo \"Authors Name\") de manager/users.php, o (3) el par\u00e1metro c_author (campo \"Author\") de una secci\u00f3n ADD A COMMENT.\r\n"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:plume-cms:plume_cms:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "1.2.4",
+                                        "matchCriteriaId": "EA3D1E19-0F5A-4827-BD3B-1F412ADE353D"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:plume-cms:plume_cms:1.0.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "B3B174BD-A02F-46FF-BFD7-0EABDBCAB0C3"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:plume-cms:plume_cms:1.0.3:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "74437F07-216C-4DE3-8716-51AB78FA43E0"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:plume-cms:plume_cms:1.0.4:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "737216F6-CC70-4117-BCDE-28F8421FA007"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:plume-cms:plume_cms:1.0.5:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "39A16986-E49C-438B-8773-170FB4BFD8DE"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:plume-cms:plume_cms:1.0.6:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "FCFD72DB-1887-4E0D-933D-4BD463B6ECAE"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:plume-cms:plume_cms:1.1.3:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "87D700AB-EF9C-4B1C-A2E3-D802B91B5967"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:plume-cms:plume_cms:1.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "237536C3-D21B-41FC-9D41-202A59F7D26A"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:plume-cms:plume_cms:1.2.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "DEFBCB71-1048-48AC-9FAE-72F7FE38D940"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:plume-cms:plume_cms:1.2.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "99901636-80ED-4F0E-9DC1-CCE280A6CBD0"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:plume-cms:plume_cms:1.2.3:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "1B1B8EA7-E01F-4DAD-8A53-5F190E9854E5"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://osvdb.org/80960",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://osvdb.org/80961",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://www.exploit-db.com/exploits/18699",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://www.securityfocus.com/bid/52890",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://www.webapp-security.com/2012/04/plumecms",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://www.webapp-security.com/wp-content/uploads/2012/04/PlumeCMS-1.2.4-Multiple-Permanent-XSS.txt",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/74614",
+                        "source": "cve@mitre.org"
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2012-1414",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2012-10-07T21:55:01.330",
+                "lastModified": "2017-08-29T01:31:16.600",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Cross-site request forgery (CSRF) vulnerability in manager/news.php in Plume CMS 1.2.4 and earlier allows remote attackers to hijack the authentication of administrators for requests that create News pages via a publish action."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Vulnerabilidad de ejecuci\u00f3n de secuencias de comandos en sitios cruzados (XSS) en manager/news.php en Plume CMS v1.2.4 y anteirores, permite a atacantes remotos inyectar secuencias de comandos web o HTML a trav\u00e9s de peticiones que crean p\u00e1ginas de News a trav\u00e9s de una acci\u00f3n de publicaci\u00f3n."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 6.8
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-352"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:plume-cms:plume_cms:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "1.2.4",
+                                        "matchCriteriaId": "EA3D1E19-0F5A-4827-BD3B-1F412ADE353D"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:plume-cms:plume_cms:1.0.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "B3B174BD-A02F-46FF-BFD7-0EABDBCAB0C3"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:plume-cms:plume_cms:1.0.3:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "74437F07-216C-4DE3-8716-51AB78FA43E0"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:plume-cms:plume_cms:1.0.4:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "737216F6-CC70-4117-BCDE-28F8421FA007"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:plume-cms:plume_cms:1.0.5:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "39A16986-E49C-438B-8773-170FB4BFD8DE"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:plume-cms:plume_cms:1.0.6:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "FCFD72DB-1887-4E0D-933D-4BD463B6ECAE"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:plume-cms:plume_cms:1.1.3:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "87D700AB-EF9C-4B1C-A2E3-D802B91B5967"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:plume-cms:plume_cms:1.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "237536C3-D21B-41FC-9D41-202A59F7D26A"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:plume-cms:plume_cms:1.2.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "DEFBCB71-1048-48AC-9FAE-72F7FE38D940"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:plume-cms:plume_cms:1.2.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "99901636-80ED-4F0E-9DC1-CCE280A6CBD0"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:plume-cms:plume_cms:1.2.3:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "1B1B8EA7-E01F-4DAD-8A53-5F190E9854E5"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://www.exploit-db.com/exploits/18502",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit"
+                        ]
+                    },
+                    {
+                        "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/73317",
+                        "source": "cve@mitre.org"
+                    }
+                ]
+            }
+        }
+    ]
+}

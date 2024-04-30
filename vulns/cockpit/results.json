@@ -1,1 +1,3040 @@
-{"resultsPerPage":27,"startIndex":0,"totalResults":27,"format":"NVD_CVE","version":"2.0","timestamp":"2024-04-30T10:39:29.777","vulnerabilities":[{"cve":{"id":"CVE-2017-14611","sourceIdentifier":"cve@mitre.org","published":"2018-04-10T15:29:01.143","lastModified":"2022-08-18T19:44:14.377","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"SSRF (Server Side Request Forgery) in Cockpit 0.13.0 allows remote attackers to read arbitrary files or send TCP traffic to intranet hosts via the url parameter, related to use of the discontinued aheinze\/fetch_url_contents component."},{"lang":"es","value":"SSRF (Server Side Request Forgery) en Cockpit 0.13.0 permite que atacantes remotos lean archivos arbitrarios o envíen tráfico TCP a los hosts de la intranet mediante el parámetro url. Esto está relacionado con el uso del componente descontinuado aheinze\/fetch_url_contents."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"NONE","baseScore":9.1,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.2}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":6.4},"baseSeverity":"MEDIUM","exploitabilityScore":10.0,"impactScore":4.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-918"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:agentejo:cockpit:0.13.0:*:*:*:*:*:*:*","matchCriteriaId":"3B9AF66A-6651-44E3-8F1B-4B71E27E3F9F"}]}]}],"references":[{"url":"http:\/\/seclists.org\/fulldisclosure\/2018\/Apr\/15","source":"cve@mitre.org","tags":["Exploit","Mailing List","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2018-15538","sourceIdentifier":"cve@mitre.org","published":"2018-10-15T19:29:00.727","lastModified":"2018-11-30T16:39:47.053","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Agentejo Cockpit has multiple Cross-Site Scripting vulnerabilities."},{"lang":"es","value":"Agentejo Cockpit tiene múltiples vulnerabilidades Cross-Site Scripting (XSS)."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.1,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.3},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:agentejo:cockpit:-:*:*:*:*:*:*:*","matchCriteriaId":"77FA8324-CC4C-4516-B640-450E67D237B0"}]}]}],"references":[{"url":"http:\/\/seclists.org\/fulldisclosure\/2018\/Oct\/30","source":"cve@mitre.org","tags":["Mailing List","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2018-15539","sourceIdentifier":"cve@mitre.org","published":"2018-10-15T19:29:00.837","lastModified":"2018-11-30T16:52:07.360","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Agentejo Cockpit lacks an anti-CSRF protection mechanism. Thus, an attacker is able to change API tokens, passwords, etc."},{"lang":"es","value":"Agentejo Cockpit carece de un mecanismo de protección antiCSRF. Por lo tanto, un atacante puede cambiar los tokens API, contraseñas, etc."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:R\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":8.8,"baseSeverity":"HIGH"},"exploitabilityScore":2.8,"impactScore":5.9}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":6.8},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-352"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:agentejo:cockpit:-:*:*:*:*:*:*:*","matchCriteriaId":"77FA8324-CC4C-4516-B640-450E67D237B0"}]}]}],"references":[{"url":"http:\/\/seclists.org\/fulldisclosure\/2018\/Oct\/30","source":"cve@mitre.org","tags":["Mailing List","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2018-15540","sourceIdentifier":"cve@mitre.org","published":"2018-10-15T19:29:00.930","lastModified":"2018-11-30T16:51:20.243","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Agentejo Cockpit performs actions on files without appropriate validation and therefore allows an attacker to traverse the file system to unintended locations and\/or access arbitrary files, aka \/media\/api Directory Traversal."},{"lang":"es","value":"Agentejo Cockpit realiza acciones en archivos sin una validación apropiada y, por lo tanto, permite que un atacante salte el sistema de archivos a ubicaciones no planeadas y\/o acceda a archivos arbitrarios. Esto también se conoce como salto de directorio en \/media\/api."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.8,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.9}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":7.5},"baseSeverity":"HIGH","exploitabilityScore":10.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-22"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:agentejo:cockpit:-:*:*:*:*:*:*:*","matchCriteriaId":"77FA8324-CC4C-4516-B640-450E67D237B0"}]}]}],"references":[{"url":"http:\/\/seclists.org\/fulldisclosure\/2018\/Oct\/30","source":"cve@mitre.org","tags":["Exploit","Mailing List","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2020-14408","sourceIdentifier":"cve@mitre.org","published":"2020-06-17T20:15:10.117","lastModified":"2020-06-23T18:20:00.507","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"An issue was discovered in Agentejo Cockpit 0.10.2. Insufficient sanitization of the to parameter in the \/auth\/login route allows for injection of arbitrary JavaScript code into a web page's content, creating a Reflected XSS attack vector."},{"lang":"es","value":"Se detectó un problema en Agentejo Cockpit versión 0.10.2. El saneamiento insuficiente del parámetro to en la ruta \/auth\/login permite una inyección de código arbitrario de JavaScript en el contenido de una página web, creando un vector de ataque de tipo XSS Reflejado"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.1,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.3},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:agentejo:cockpit:0.10.2:*:*:*:*:*:*:*","matchCriteriaId":"F4251B1B-6FD9-4351-BD19-1EC433B1BE8E"}]}]}],"references":[{"url":"https:\/\/github.com\/agentejo\/cockpit\/issues\/1310","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2020-35846","sourceIdentifier":"cve@mitre.org","published":"2020-12-30T01:15:12.497","lastModified":"2022-09-02T15:43:52.990","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Agentejo Cockpit before 0.11.2 allows NoSQL injection via the Controller\/Auth.php check function."},{"lang":"es","value":"Agentejo Cockpit versiones anteriores a  0.11.2, permite una inyección NoSQL por medio de la función check del archivo Controller\/Auth.php."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.8,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.9}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":7.5},"baseSeverity":"HIGH","exploitabilityScore":10.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-89"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:agentejo:cockpit:*:*:*:*:*:*:*:*","versionEndExcluding":"0.11.2","matchCriteriaId":"C8B1C7E7-483D-4B0B-9227-F5E9B1D94E68"}]}]}],"references":[{"url":"http:\/\/packetstormsecurity.com\/files\/162282\/Cockpit-CMS-0.11.1-NoSQL-Injection-Remote-Command-Execution.html","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory","VDB Entry"]},{"url":"https:\/\/getcockpit.com\/","source":"cve@mitre.org","tags":["Product","Vendor Advisory"]},{"url":"https:\/\/github.com\/agentejo\/cockpit\/commit\/2a385af8d80ed60d40d386ed813c1039db00c466","source":"cve@mitre.org","tags":["Patch","Vendor Advisory"]},{"url":"https:\/\/github.com\/agentejo\/cockpit\/commit\/33e7199575631ba1f74cba6b16b10c820bec59af","source":"cve@mitre.org","tags":["Patch","Vendor Advisory"]},{"url":"https:\/\/github.com\/agentejo\/cockpit\/commit\/79fc9631ffa29146e3124ceaf99879b92e1ef24b","source":"cve@mitre.org","tags":["Patch","Vendor Advisory"]}]}},{"cve":{"id":"CVE-2020-35847","sourceIdentifier":"cve@mitre.org","published":"2020-12-30T01:15:12.543","lastModified":"2022-04-05T16:06:09.997","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Agentejo Cockpit before 0.11.2 allows NoSQL injection via the Controller\/Auth.php resetpassword function."},{"lang":"es","value":"Agentejo Cockpit versiones anteriores a  0.11.2, permite una inyección NoSQL por medio de la función resetpassword del archivo Controller\/Auth.php."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.8,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.9}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":7.5},"baseSeverity":"HIGH","exploitabilityScore":10.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-89"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:agentejo:cockpit:*:*:*:*:*:*:*:*","versionEndExcluding":"0.11.2","matchCriteriaId":"C8B1C7E7-483D-4B0B-9227-F5E9B1D94E68"}]}]}],"references":[{"url":"http:\/\/packetstormsecurity.com\/files\/162282\/Cockpit-CMS-0.11.1-NoSQL-Injection-Remote-Command-Execution.html","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory","VDB Entry"]},{"url":"http:\/\/packetstormsecurity.com\/files\/163762\/Cockpit-CMS-0.11.1-NoSQL-Injection.html","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory","VDB Entry"]},{"url":"https:\/\/getcockpit.com\/","source":"cve@mitre.org","tags":["Product","Vendor Advisory"]},{"url":"https:\/\/github.com\/agentejo\/cockpit\/commit\/2a385af8d80ed60d40d386ed813c1039db00c466","source":"cve@mitre.org","tags":["Patch","Vendor Advisory"]},{"url":"https:\/\/github.com\/agentejo\/cockpit\/commit\/33e7199575631ba1f74cba6b16b10c820bec59af","source":"cve@mitre.org","tags":["Patch","Vendor Advisory"]},{"url":"https:\/\/github.com\/agentejo\/cockpit\/commit\/79fc9631ffa29146e3124ceaf99879b92e1ef24b","source":"cve@mitre.org","tags":["Patch","Vendor Advisory"]}]}},{"cve":{"id":"CVE-2020-35848","sourceIdentifier":"cve@mitre.org","published":"2020-12-30T01:15:12.607","lastModified":"2022-04-05T16:06:30.363","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Agentejo Cockpit before 0.11.2 allows NoSQL injection via the Controller\/Auth.php newpassword function."},{"lang":"es","value":"Agentejo Cockpit versiones anteriores a 0.11.2, permite una inyección NoSQL por medio de la función newpassword del archivo Controller\/Auth.php."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.8,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.9}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":7.5},"baseSeverity":"HIGH","exploitabilityScore":10.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-89"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:agentejo:cockpit:*:*:*:*:*:*:*:*","versionEndExcluding":"0.11.2","matchCriteriaId":"C8B1C7E7-483D-4B0B-9227-F5E9B1D94E68"}]}]}],"references":[{"url":"http:\/\/packetstormsecurity.com\/files\/163762\/Cockpit-CMS-0.11.1-NoSQL-Injection.html","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory","VDB Entry"]},{"url":"https:\/\/getcockpit.com\/","source":"cve@mitre.org","tags":["Product","Vendor Advisory"]},{"url":"https:\/\/github.com\/agentejo\/cockpit\/commit\/2a385af8d80ed60d40d386ed813c1039db00c466","source":"cve@mitre.org","tags":["Patch","Vendor Advisory"]},{"url":"https:\/\/github.com\/agentejo\/cockpit\/commit\/33e7199575631ba1f74cba6b16b10c820bec59af","source":"cve@mitre.org","tags":["Patch","Vendor Advisory"]},{"url":"https:\/\/github.com\/agentejo\/cockpit\/commit\/79fc9631ffa29146e3124ceaf99879b92e1ef24b","source":"cve@mitre.org","tags":["Patch","Vendor Advisory"]}]}},{"cve":{"id":"CVE-2020-35131","sourceIdentifier":"cve@mitre.org","published":"2021-01-08T17:15:13.150","lastModified":"2021-01-12T19:46:00.750","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Cockpit before 0.6.1 allows an attacker to inject custom PHP code and achieve Remote Command Execution via registerCriteriaFunction in lib\/MongoLite\/Database.php, as demonstrated by values in JSON data to the \/auth\/check or \/auth\/requestreset URI."},{"lang":"es","value":"Cockpit versiones anteriores a 0.6.1, permite a un atacante inyectar código PHP personalizado y lograr una Ejecución de Comandos Remota por medio de la función registerCriteriaFunction en la biblioteca lib\/MongoLite\/Database.php, como es demostrado por los valores en los datos JSON en el URI \/auth\/check o \/auth\/requestreset"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.8,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.9}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":7.5},"baseSeverity":"HIGH","exploitabilityScore":10.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-94"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:agentejo:cockpit:*:*:*:*:*:*:*:*","versionEndExcluding":"0.6.1","matchCriteriaId":"007A4A88-1820-45EA-AD7A-C9D5B73BD6BE"}]}]}],"references":[{"url":"https:\/\/github.com\/agentejo\/cockpit\/commits\/next\/lib\/MongoLite\/Database.php","source":"cve@mitre.org","tags":["Third Party Advisory"]},{"url":"https:\/\/github.com\/agentejo\/cockpit\/releases\/tag\/0.6.1","source":"cve@mitre.org","tags":["Release Notes","Third Party Advisory"]},{"url":"https:\/\/www.exploit-db.com\/exploits\/49390","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory","VDB Entry"]}]}},{"cve":{"id":"CVE-2022-2713","sourceIdentifier":"security@huntr.dev","published":"2022-08-08T15:15:08.777","lastModified":"2022-08-12T14:50:34.847","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Insufficient Session Expiration in GitHub repository cockpit-hq\/cockpit prior to 2.2.0."},{"lang":"es","value":"Una Expiración no Suficiente de Sesión en el repositorio GitHub cockpit-hq\/cockpit versiones anteriores a 2.2.0"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.8,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.9}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:L\/I:H\/A:L","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"HIGH","availabilityImpact":"LOW","baseScore":8.6,"baseSeverity":"HIGH"},"exploitabilityScore":3.9,"impactScore":4.7}]},"weaknesses":[{"source":"security@huntr.dev","type":"Primary","description":[{"lang":"en","value":"CWE-613"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:agentejo:cockpit:*:*:*:*:*:*:*:*","versionEndExcluding":"2.2.0","matchCriteriaId":"C385E1CE-0E6C-4F72-B012-5BBBABD13157"}]}]}],"references":[{"url":"https:\/\/github.com\/cockpit-hq\/cockpit\/commit\/dd8d0314912fa6517ebd2cc9939d9fafbe68731b","source":"security@huntr.dev","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/3080fc96-75d7-4868-84de-9fc8c9b90290","source":"security@huntr.dev","tags":["Exploit","Issue Tracking","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-2818","sourceIdentifier":"security@huntr.dev","published":"2022-08-15T11:21:31.053","lastModified":"2023-08-02T09:15:13.440","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"Improper Removal of Sensitive Information Before Storage or Transfer in GitHub repository cockpit-hq\/cockpit prior to 2.2.2.\n\n"},{"lang":"es","value":"Una Omisión de Autenticación por Debilidad Primaria en el repositorio de GitHub cockpit-hq\/cockpit versiones anteriores a 2.2.2."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":8.8,"baseSeverity":"HIGH"},"exploitabilityScore":2.8,"impactScore":5.9},{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.8,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.9}]},"weaknesses":[{"source":"security@huntr.dev","type":"Primary","description":[{"lang":"en","value":"CWE-212"}]},{"source":"nvd@nist.gov","type":"Secondary","description":[{"lang":"en","value":"CWE-212"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:agentejo:cockpit:*:*:*:*:*:*:*:*","versionEndExcluding":"2.2.2","matchCriteriaId":"BABCAF08-54A2-4734-BBE9-309F4B36D560"}]}]}],"references":[{"url":"https:\/\/github.com\/cockpit-hq\/cockpit\/commit\/4bee1b903ee20818f4a8ecb9d974b9536cc54cb4","source":"security@huntr.dev","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/ee27e5df-516b-4cf4-9f28-346d907b5491","source":"security@huntr.dev","tags":["Exploit","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2023-0759","sourceIdentifier":"security@huntr.dev","published":"2023-02-09T14:15:24.510","lastModified":"2023-02-16T14:44:58.117","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Privilege Chaining in GitHub repository cockpit-hq\/cockpit prior to 2.3.8."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":8.8,"baseSeverity":"HIGH"},"exploitabilityScore":2.8,"impactScore":5.9}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:L\/AC:L\/PR:L\/UI:N\/S:U\/C:L\/I:L\/A:L","attackVector":"LOCAL","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"LOW","baseScore":5.3,"baseSeverity":"MEDIUM"},"exploitabilityScore":1.8,"impactScore":3.4}]},"weaknesses":[{"source":"security@huntr.dev","type":"Primary","description":[{"lang":"en","value":"CWE-268"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:agentejo:cockpit:*:*:*:*:*:*:*:*","versionEndExcluding":"2.3.8","matchCriteriaId":"9DE9300E-C610-41F7-BF2C-C708C740F196"}]}]}],"references":[{"url":"https:\/\/github.com\/cockpit-hq\/cockpit\/commit\/78d6ed3bf093ee11356ba66320c628c727068714","source":"security@huntr.dev","tags":["Patch"]},{"url":"https:\/\/huntr.dev\/bounties\/49e2cccc-bb56-4633-ba6a-b3803e251347","source":"security@huntr.dev","tags":["Exploit","Issue Tracking","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2023-0780","sourceIdentifier":"security@huntr.dev","published":"2023-02-11T02:20:44.427","lastModified":"2023-02-22T14:44:24.443","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Improper Restriction of Rendered UI Layers or Frames in GitHub repository cockpit-hq\/cockpit prior to 2.3.9-dev."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:U\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.5}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:L\/AC:L\/PR:N\/UI:N\/S:U\/C:L\/I:N\/A:N","attackVector":"LOCAL","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":4.0,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.5,"impactScore":1.4}]},"weaknesses":[{"source":"security@huntr.dev","type":"Primary","description":[{"lang":"en","value":"CWE-1021"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:agentejo:cockpit:*:*:*:*:*:*:*:*","versionEndExcluding":"2.3.9","matchCriteriaId":"F50AE82B-1781-464E-8FF8-5DF13D29901A"}]}]}],"references":[{"url":"https:\/\/github.com\/cockpit-hq\/cockpit\/commit\/8450bdf7e1dc23e9d88adf30a2aa9101c0c41720","source":"security@huntr.dev","tags":["Patch"]},{"url":"https:\/\/huntr.dev\/bounties\/801efd0b-404b-4670-961a-12a986252fa4","source":"security@huntr.dev","tags":["Exploit","Issue Tracking","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2021-32857","sourceIdentifier":"security-advisories@github.com","published":"2023-02-21T15:15:11.630","lastModified":"2023-03-02T16:21:28.717","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Cockpit is a content management system that allows addition of content management functionality to any site. In versions 0.12.2 and prior, bad HTML sanitization in `htmleditor.js` may lead to cross-site scripting (XSS) issues. There are no known patches for this issue."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.1,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.7},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.1,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.7}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]},{"source":"security-advisories@github.com","type":"Secondary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:agentejo:cockpit:*:*:*:*:*:*:*:*","versionEndIncluding":"0.12.2","matchCriteriaId":"B0A8091B-5899-47F1-83C7-E9B6E0FB0B78"}]}]}],"references":[{"url":"https:\/\/github.com\/agentejo\/cockpit\/blob\/f7cd602bcc6134657ccfeb4e400b0050943dd243\/assets\/lib\/uikit\/js\/components\/htmleditor.js","source":"security-advisories@github.com","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/agentejo\/cockpit\/commit\/0c6628cbff3e49bc317c97b03a4666b3a75f76cc","source":"security-advisories@github.com","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/securitylab.github.com\/advisories\/GHSL-2021-1035_Cockpit_Next\/","source":"security-advisories@github.com","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2023-1160","sourceIdentifier":"security@huntr.dev","published":"2023-03-03T02:15:53.640","lastModified":"2023-03-14T16:09:28.123","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Use of Platform-Dependent Third Party Components in GitHub repository cockpit-hq\/cockpit prior to 2.4.0."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:L\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:N\/A:N","attackVector":"LOCAL","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":5.5,"baseSeverity":"MEDIUM"},"exploitabilityScore":1.8,"impactScore":3.6}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:L\/AC:L\/PR:N\/UI:N\/S:U\/C:L\/I:N\/A:N","attackVector":"LOCAL","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":4.0,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.5,"impactScore":1.4}]},"weaknesses":[{"source":"security@huntr.dev","type":"Primary","description":[{"lang":"en","value":"CWE-1103"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:agentejo:cockpit:*:*:*:*:*:*:*:*","versionEndIncluding":"2.3.9","matchCriteriaId":"4F2AF6E0-E846-415A-B46B-4D49D1806856"}]}]}],"references":[{"url":"https:\/\/github.com\/cockpit-hq\/cockpit\/commit\/690016208850f2d788ebc3c67884d4c692587eb8","source":"security@huntr.dev","tags":["Patch"]},{"url":"https:\/\/huntr.dev\/bounties\/3ce480dc-1b1c-4230-9287-0dc3b31c2f87","source":"security@huntr.dev","tags":["Exploit","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2023-1313","sourceIdentifier":"security@huntr.dev","published":"2023-03-10T12:15:21.633","lastModified":"2023-03-15T16:19:51.987","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Unrestricted Upload of File with Dangerous Type in GitHub repository cockpit-hq\/cockpit prior to 2.4.1."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":8.8,"baseSeverity":"HIGH"},"exploitabilityScore":2.8,"impactScore":5.9}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:H\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"HIGH","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":7.2,"baseSeverity":"HIGH"},"exploitabilityScore":1.2,"impactScore":5.9}]},"weaknesses":[{"source":"security@huntr.dev","type":"Primary","description":[{"lang":"en","value":"CWE-434"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:agentejo:cockpit:*:*:*:*:*:*:*:*","versionEndIncluding":"2.4.0","matchCriteriaId":"481FCD50-ECE6-4DCF-8BD2-7BF0AF8D692C"}]}]}],"references":[{"url":"https:\/\/github.com\/cockpit-hq\/cockpit\/commit\/becca806c7071ecc732521bb5ad0bb9c64299592","source":"security@huntr.dev","tags":["Patch"]},{"url":"https:\/\/huntr.dev\/bounties\/f73eef49-004f-4b3b-9717-90525e65ba61","source":"security@huntr.dev","tags":["Exploit","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2023-37649","sourceIdentifier":"cve@mitre.org","published":"2023-07-20T20:15:10.447","lastModified":"2023-07-26T16:18:27.370","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Incorrect access control in the component \/models\/Content of Cockpit CMS v2.5.2 allows unauthorized attackers to access sensitive data."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":7.5,"baseSeverity":"HIGH"},"exploitabilityScore":3.9,"impactScore":3.6}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"NVD-CWE-noinfo"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:agentejo:cockpit:*:*:*:*:*:*:*:*","versionEndIncluding":"2.5.2","matchCriteriaId":"BD2017D1-E9AB-44E3-BCC6-6164AB4CB5C7"}]}]}],"references":[{"url":"https:\/\/github.com\/Cockpit-HQ\/Cockpit\/releases\/tag\/2.6.0","source":"cve@mitre.org","tags":["Release Notes"]},{"url":"https:\/\/www.ghostccamm.com\/blog\/multi_cockpit_vulns\/","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2023-37650","sourceIdentifier":"cve@mitre.org","published":"2023-07-20T20:15:10.503","lastModified":"2023-07-26T16:18:15.067","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"A Cross-Site Request Forgery (CSRF) in the Admin portal of Cockpit CMS v2.5.2 allows attackers to execute arbitrary Administrator commands."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":8.8,"baseSeverity":"HIGH"},"exploitabilityScore":2.8,"impactScore":5.9}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-352"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:agentejo:cockpit:*:*:*:*:*:*:*:*","versionEndIncluding":"2.5.2","matchCriteriaId":"BD2017D1-E9AB-44E3-BCC6-6164AB4CB5C7"}]}]}],"references":[{"url":"https:\/\/github.com\/Cockpit-HQ\/Cockpit\/releases\/tag\/2.6.0","source":"cve@mitre.org","tags":["Release Notes"]},{"url":"https:\/\/www.ghostccamm.com\/blog\/multi_cockpit_vulns\/","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2023-4195","sourceIdentifier":"security@huntr.dev","published":"2023-08-06T18:15:10.440","lastModified":"2023-08-10T16:03:49.010","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"PHP Remote File Inclusion in GitHub repository cockpit-hq\/cockpit prior to 2.6.3."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":8.8,"baseSeverity":"HIGH"},"exploitabilityScore":2.8,"impactScore":5.9}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:L\/UI:N\/S:C\/C:L\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.9,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.1,"impactScore":6.0}]},"weaknesses":[{"source":"security@huntr.dev","type":"Primary","description":[{"lang":"en","value":"CWE-98"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:agentejo:cockpit:*:*:*:*:*:*:*:*","versionEndExcluding":"2.6.3","matchCriteriaId":"01BAF7D9-ECB6-4E46-B1A5-DD318BBE9C8D"}]}]}],"references":[{"url":"https:\/\/github.com\/cockpit-hq\/cockpit\/commit\/800c05f1984db291769ffa5fdfb1d3e50968e95b","source":"security@huntr.dev","tags":["Patch"]},{"url":"https:\/\/huntr.dev\/bounties\/0bd5da2f-0e29-47ce-90f3-06518656bfd6","source":"security@huntr.dev","tags":["Exploit","Issue Tracking","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2023-4196","sourceIdentifier":"security@huntr.dev","published":"2023-08-06T18:15:10.887","lastModified":"2023-08-10T15:04:50.510","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Cross-site Scripting (XSS) - Stored in GitHub repository cockpit-hq\/cockpit prior to 2.6.3."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.3,"impactScore":2.7}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:H\/A:L","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"LOW","baseScore":8.3,"baseSeverity":"HIGH"},"exploitabilityScore":2.8,"impactScore":5.5}]},"weaknesses":[{"source":"security@huntr.dev","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:agentejo:cockpit:*:*:*:*:*:*:*:*","versionEndExcluding":"2.6.3","matchCriteriaId":"01BAF7D9-ECB6-4E46-B1A5-DD318BBE9C8D"}]}]}],"references":[{"url":"https:\/\/github.com\/cockpit-hq\/cockpit\/commit\/039a00cc310bff128ca6e6c1c46c6fbad0385c2c","source":"security@huntr.dev","tags":["Patch"]},{"url":"https:\/\/huntr.dev\/bounties\/c275a2d4-721f-49f7-8787-b146af2056a0","source":"security@huntr.dev","tags":["Exploit","Issue Tracking","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2023-4321","sourceIdentifier":"security@huntr.dev","published":"2023-08-14T11:15:09.443","lastModified":"2023-08-22T20:43:55.613","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Cross-site Scripting (XSS) - Stored in GitHub repository cockpit-hq\/cockpit prior to 2.4.3."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.1,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.7}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:H\/A:L","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"LOW","baseScore":8.3,"baseSeverity":"HIGH"},"exploitabilityScore":2.8,"impactScore":5.5}]},"weaknesses":[{"source":"security@huntr.dev","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:agentejo:cockpit:*:*:*:*:*:*:*:*","versionEndExcluding":"2.4.3","matchCriteriaId":"FFFD4A1E-8DC2-4AA9-A307-91C94B296D02"}]}]}],"references":[{"url":"https:\/\/github.com\/cockpit-hq\/cockpit\/commit\/34ab31ee9362da51b9709e178469dbffd7717249","source":"security@huntr.dev","tags":["Patch"]},{"url":"https:\/\/huntr.dev\/bounties\/fce38751-bfd6-484c-b6e1-935e0aa8ffdc","source":"security@huntr.dev","tags":["Exploit","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2023-4395","sourceIdentifier":"security@huntr.dev","published":"2023-08-17T04:15:10.687","lastModified":"2023-08-22T00:55:09.250","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Cross-site Scripting (XSS) - Stored in GitHub repository cockpit-hq\/cockpit prior to 2.6.4."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.3,"impactScore":2.7}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:N\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"NONE","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":8.1,"baseSeverity":"HIGH"},"exploitabilityScore":2.8,"impactScore":5.2}]},"weaknesses":[{"source":"security@huntr.dev","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:agentejo:cockpit:*:*:*:*:*:*:*:*","versionEndExcluding":"2.6.4","matchCriteriaId":"20AD25FB-82CB-49B5-B01C-BF45CC9CE803"}]}]}],"references":[{"url":"https:\/\/github.com\/cockpit-hq\/cockpit\/commit\/36d1d4d256cbbab028342ba10cc493e5c119172c","source":"security@huntr.dev","tags":["Patch"]},{"url":"https:\/\/huntr.dev\/bounties\/60e38563-7ac8-4a13-ac04-2980cc48b0da","source":"security@huntr.dev","tags":["Exploit","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2023-4422","sourceIdentifier":"security@huntr.dev","published":"2023-08-18T19:15:13.250","lastModified":"2023-08-22T00:58:55.880","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Cross-site Scripting (XSS) - Stored in GitHub repository cockpit-hq\/cockpit prior to 2.6.3."},{"lang":"es","value":"Se ha encontrado una vulnerabilidad de Cross-Site Scripting (XSS) almacenado en el repositorio GitHub cockpit-hq\/cockpit anterior a la versión 2.6.3. "}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:H\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"HIGH","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":4.8,"baseSeverity":"MEDIUM"},"exploitabilityScore":1.7,"impactScore":2.7}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:H\/UI:R\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"HIGH","userInteraction":"REQUIRED","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":6.8,"baseSeverity":"MEDIUM"},"exploitabilityScore":0.9,"impactScore":5.9}]},"weaknesses":[{"source":"security@huntr.dev","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:agentejo:cockpit:*:*:*:*:*:*:*:*","versionEndExcluding":"2.6.3","matchCriteriaId":"01BAF7D9-ECB6-4E46-B1A5-DD318BBE9C8D"}]}]}],"references":[{"url":"https:\/\/github.com\/cockpit-hq\/cockpit\/commit\/b8dad5e070608bb5e4ec58fabbee101b5af737cf","source":"security@huntr.dev","tags":["Patch"]},{"url":"https:\/\/huntr.dev\/bounties\/2e12b773-b6a2-48da-a4bb-55d5d1307d2e","source":"security@huntr.dev","tags":["Exploit"]}]}},{"cve":{"id":"CVE-2023-4432","sourceIdentifier":"security@huntr.dev","published":"2023-08-19T01:15:09.290","lastModified":"2023-08-23T16:58:29.763","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Cross-site Scripting (XSS) - Reflected in GitHub repository cockpit-hq\/cockpit prior to 2.6.4."},{"lang":"es","value":"Vulnerabilidad de Cross-Site Scripting (XSS) reflejado en el repositorio de GitHub cockpit-hq\/cockpit anterior a 2.6.4. "}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.1,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.7}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:H\/A:L","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"LOW","baseScore":8.3,"baseSeverity":"HIGH"},"exploitabilityScore":2.8,"impactScore":5.5}]},"weaknesses":[{"source":"security@huntr.dev","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:agentejo:cockpit:*:*:*:*:*:*:*:*","versionEndIncluding":"2.6.3","matchCriteriaId":"DB13440F-5FAF-437B-A4EF-47CA96DB8FC4"}]}]}],"references":[{"url":"https:\/\/github.com\/cockpit-hq\/cockpit\/commit\/2a93d391fbd2dd9e730f65d43b29beb65903d195","source":"security@huntr.dev","tags":["Patch"]},{"url":"https:\/\/huntr.dev\/bounties\/69684663-6822-41ff-aa05-afbdb8f5268f","source":"security@huntr.dev","tags":["Exploit","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2023-4433","sourceIdentifier":"security@huntr.dev","published":"2023-08-19T01:15:09.573","lastModified":"2023-08-23T16:58:12.130","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Cross-site Scripting (XSS) - Stored in GitHub repository cockpit-hq\/cockpit prior to 2.6.4."},{"lang":"es","value":"Cross-Site Scripting (XSS) almacenado en el repositorio de GitHub cockpit-hq\/cockpit anterior a 2.6.4. \n"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.3,"impactScore":2.7}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:H\/A:L","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"LOW","baseScore":8.3,"baseSeverity":"HIGH"},"exploitabilityScore":2.8,"impactScore":5.5}]},"weaknesses":[{"source":"security@huntr.dev","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:agentejo:cockpit:*:*:*:*:*:*:*:*","versionEndIncluding":"2.6.3","matchCriteriaId":"DB13440F-5FAF-437B-A4EF-47CA96DB8FC4"}]}]}],"references":[{"url":"https:\/\/github.com\/cockpit-hq\/cockpit\/commit\/36d1d4d256cbbab028342ba10cc493e5c119172c","source":"security@huntr.dev","tags":["Patch"]},{"url":"https:\/\/huntr.dev\/bounties\/64f3253d-6852-4b9f-b870-85e896007b1a","source":"security@huntr.dev","tags":["Exploit","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2023-4451","sourceIdentifier":"security@huntr.dev","published":"2023-08-20T15:15:29.760","lastModified":"2023-08-24T20:31:44.960","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Cross-site Scripting (XSS) - Reflected in GitHub repository cockpit-hq\/cockpit prior to 2.6.4."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.1,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.7}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.1,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.7}]},"weaknesses":[{"source":"security@huntr.dev","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:agentejo:cockpit:*:*:*:*:*:*:*:*","versionEndIncluding":"2.6.3","matchCriteriaId":"DB13440F-5FAF-437B-A4EF-47CA96DB8FC4"}]}]}],"references":[{"url":"https:\/\/github.com\/cockpit-hq\/cockpit\/commit\/30609466c817e39f9de1871559603e93cd4d0d0c","source":"security@huntr.dev","tags":["Patch"]},{"url":"https:\/\/huntr.dev\/bounties\/4e111c3e-6cf3-4b4c-b3c1-a540bf30f8fa","source":"security@huntr.dev","tags":["Exploit","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2023-41564","sourceIdentifier":"cve@mitre.org","published":"2023-09-08T23:15:11.877","lastModified":"2023-09-13T17:06:06.760","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"An arbitrary file upload vulnerability in the Upload Asset function of Cockpit CMS v2.6.3 allows attackers to execute arbitrary code via uploading a crafted .shtml file."},{"lang":"es","value":"Una vulnerabilidad de carga de archivos arbitrarios en la función Upload Asset de Cockpit CMS v2.6.3 permite a los atacantes ejecutar código arbitrario cargando un archivo .shtml manipulado."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.1,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.7}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-434"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:agentejo:cockpit:2.6.3:*:*:*:*:*:*:*","matchCriteriaId":"134766A8-60F0-4B41-A36B-EAB70A9EB902"}]}]}],"references":[{"url":"https:\/\/github.com\/LongHair00\/Mitre_opensource_report\/blob\/main\/CockpitCMS-StoredXSS.md","source":"cve@mitre.org","tags":["Third Party Advisory"]}]}}]}
+{
+    "resultsPerPage": 27,
+    "startIndex": 0,
+    "totalResults": 27,
+    "format": "NVD_CVE",
+    "version": "2.0",
+    "timestamp": "2024-04-30T10:39:29.777",
+    "vulnerabilities": [
+        {
+            "cve": {
+                "id": "CVE-2017-14611",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2018-04-10T15:29:01.143",
+                "lastModified": "2022-08-18T19:44:14.377",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "SSRF (Server Side Request Forgery) in Cockpit 0.13.0 allows remote attackers to read arbitrary files or send TCP traffic to intranet hosts via the url parameter, related to use of the discontinued aheinze/fetch_url_contents component."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "SSRF (Server Side Request Forgery) en Cockpit 0.13.0 permite que atacantes remotos lean archivos arbitrarios o env\u00eden tr\u00e1fico TCP a los hosts de la intranet mediante el par\u00e1metro url. Esto est\u00e1 relacionado con el uso del componente descontinuado aheinze/fetch_url_contents."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 9.1,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.2
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.4
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 4.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-918"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:agentejo:cockpit:0.13.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "3B9AF66A-6651-44E3-8F1B-4B71E27E3F9F"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://seclists.org/fulldisclosure/2018/Apr/15",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Mailing List",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2018-15538",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2018-10-15T19:29:00.727",
+                "lastModified": "2018-11-30T16:39:47.053",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Agentejo Cockpit has multiple Cross-Site Scripting vulnerabilities."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Agentejo Cockpit tiene m\u00faltiples vulnerabilidades Cross-Site Scripting (XSS)."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.1,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:agentejo:cockpit:-:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "77FA8324-CC4C-4516-B640-450E67D237B0"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://seclists.org/fulldisclosure/2018/Oct/30",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Mailing List",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2018-15539",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2018-10-15T19:29:00.837",
+                "lastModified": "2018-11-30T16:52:07.360",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Agentejo Cockpit lacks an anti-CSRF protection mechanism. Thus, an attacker is able to change API tokens, passwords, etc."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Agentejo Cockpit carece de un mecanismo de protecci\u00f3n antiCSRF. Por lo tanto, un atacante puede cambiar los tokens API, contrase\u00f1as, etc."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 8.8,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 6.8
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-352"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:agentejo:cockpit:-:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "77FA8324-CC4C-4516-B640-450E67D237B0"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://seclists.org/fulldisclosure/2018/Oct/30",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Mailing List",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2018-15540",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2018-10-15T19:29:00.930",
+                "lastModified": "2018-11-30T16:51:20.243",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Agentejo Cockpit performs actions on files without appropriate validation and therefore allows an attacker to traverse the file system to unintended locations and/or access arbitrary files, aka /media/api Directory Traversal."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Agentejo Cockpit realiza acciones en archivos sin una validaci\u00f3n apropiada y, por lo tanto, permite que un atacante salte el sistema de archivos a ubicaciones no planeadas y/o acceda a archivos arbitrarios. Esto tambi\u00e9n se conoce como salto de directorio en /media/api."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.8,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 7.5
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-22"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:agentejo:cockpit:-:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "77FA8324-CC4C-4516-B640-450E67D237B0"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://seclists.org/fulldisclosure/2018/Oct/30",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Mailing List",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2020-14408",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2020-06-17T20:15:10.117",
+                "lastModified": "2020-06-23T18:20:00.507",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "An issue was discovered in Agentejo Cockpit 0.10.2. Insufficient sanitization of the to parameter in the /auth/login route allows for injection of arbitrary JavaScript code into a web page's content, creating a Reflected XSS attack vector."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Se detect\u00f3 un problema en Agentejo Cockpit versi\u00f3n 0.10.2. El saneamiento insuficiente del par\u00e1metro to en la ruta /auth/login permite una inyecci\u00f3n de c\u00f3digo arbitrario de JavaScript en el contenido de una p\u00e1gina web, creando un vector de ataque de tipo XSS Reflejado"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.1,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:agentejo:cockpit:0.10.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "F4251B1B-6FD9-4351-BD19-1EC433B1BE8E"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/agentejo/cockpit/issues/1310",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2020-35846",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2020-12-30T01:15:12.497",
+                "lastModified": "2022-09-02T15:43:52.990",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Agentejo Cockpit before 0.11.2 allows NoSQL injection via the Controller/Auth.php check function."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Agentejo Cockpit versiones anteriores a  0.11.2, permite una inyecci\u00f3n NoSQL por medio de la funci\u00f3n check del archivo Controller/Auth.php."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.8,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 7.5
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-89"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:agentejo:cockpit:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "0.11.2",
+                                        "matchCriteriaId": "C8B1C7E7-483D-4B0B-9227-F5E9B1D94E68"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://packetstormsecurity.com/files/162282/Cockpit-CMS-0.11.1-NoSQL-Injection-Remote-Command-Execution.html",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory",
+                            "VDB Entry"
+                        ]
+                    },
+                    {
+                        "url": "https://getcockpit.com/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Product",
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/agentejo/cockpit/commit/2a385af8d80ed60d40d386ed813c1039db00c466",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch",
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/agentejo/cockpit/commit/33e7199575631ba1f74cba6b16b10c820bec59af",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch",
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/agentejo/cockpit/commit/79fc9631ffa29146e3124ceaf99879b92e1ef24b",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch",
+                            "Vendor Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2020-35847",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2020-12-30T01:15:12.543",
+                "lastModified": "2022-04-05T16:06:09.997",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Agentejo Cockpit before 0.11.2 allows NoSQL injection via the Controller/Auth.php resetpassword function."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Agentejo Cockpit versiones anteriores a  0.11.2, permite una inyecci\u00f3n NoSQL por medio de la funci\u00f3n resetpassword del archivo Controller/Auth.php."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.8,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 7.5
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-89"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:agentejo:cockpit:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "0.11.2",
+                                        "matchCriteriaId": "C8B1C7E7-483D-4B0B-9227-F5E9B1D94E68"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://packetstormsecurity.com/files/162282/Cockpit-CMS-0.11.1-NoSQL-Injection-Remote-Command-Execution.html",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory",
+                            "VDB Entry"
+                        ]
+                    },
+                    {
+                        "url": "http://packetstormsecurity.com/files/163762/Cockpit-CMS-0.11.1-NoSQL-Injection.html",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory",
+                            "VDB Entry"
+                        ]
+                    },
+                    {
+                        "url": "https://getcockpit.com/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Product",
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/agentejo/cockpit/commit/2a385af8d80ed60d40d386ed813c1039db00c466",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch",
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/agentejo/cockpit/commit/33e7199575631ba1f74cba6b16b10c820bec59af",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch",
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/agentejo/cockpit/commit/79fc9631ffa29146e3124ceaf99879b92e1ef24b",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch",
+                            "Vendor Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2020-35848",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2020-12-30T01:15:12.607",
+                "lastModified": "2022-04-05T16:06:30.363",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Agentejo Cockpit before 0.11.2 allows NoSQL injection via the Controller/Auth.php newpassword function."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Agentejo Cockpit versiones anteriores a 0.11.2, permite una inyecci\u00f3n NoSQL por medio de la funci\u00f3n newpassword del archivo Controller/Auth.php."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.8,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 7.5
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-89"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:agentejo:cockpit:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "0.11.2",
+                                        "matchCriteriaId": "C8B1C7E7-483D-4B0B-9227-F5E9B1D94E68"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://packetstormsecurity.com/files/163762/Cockpit-CMS-0.11.1-NoSQL-Injection.html",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory",
+                            "VDB Entry"
+                        ]
+                    },
+                    {
+                        "url": "https://getcockpit.com/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Product",
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/agentejo/cockpit/commit/2a385af8d80ed60d40d386ed813c1039db00c466",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch",
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/agentejo/cockpit/commit/33e7199575631ba1f74cba6b16b10c820bec59af",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch",
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/agentejo/cockpit/commit/79fc9631ffa29146e3124ceaf99879b92e1ef24b",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch",
+                            "Vendor Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2020-35131",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2021-01-08T17:15:13.150",
+                "lastModified": "2021-01-12T19:46:00.750",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Cockpit before 0.6.1 allows an attacker to inject custom PHP code and achieve Remote Command Execution via registerCriteriaFunction in lib/MongoLite/Database.php, as demonstrated by values in JSON data to the /auth/check or /auth/requestreset URI."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Cockpit versiones anteriores a 0.6.1, permite a un atacante inyectar c\u00f3digo PHP personalizado y lograr una Ejecuci\u00f3n de Comandos Remota por medio de la funci\u00f3n registerCriteriaFunction en la biblioteca lib/MongoLite/Database.php, como es demostrado por los valores en los datos JSON en el URI /auth/check o /auth/requestreset"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.8,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 7.5
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-94"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:agentejo:cockpit:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "0.6.1",
+                                        "matchCriteriaId": "007A4A88-1820-45EA-AD7A-C9D5B73BD6BE"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/agentejo/cockpit/commits/next/lib/MongoLite/Database.php",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/agentejo/cockpit/releases/tag/0.6.1",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Release Notes",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.exploit-db.com/exploits/49390",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory",
+                            "VDB Entry"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-2713",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2022-08-08T15:15:08.777",
+                "lastModified": "2022-08-12T14:50:34.847",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Insufficient Session Expiration in GitHub repository cockpit-hq/cockpit prior to 2.2.0."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Una Expiraci\u00f3n no Suficiente de Sesi\u00f3n en el repositorio GitHub cockpit-hq/cockpit versiones anteriores a 2.2.0"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.8,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:L",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "LOW",
+                                "baseScore": 8.6,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 4.7
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-613"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:agentejo:cockpit:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "2.2.0",
+                                        "matchCriteriaId": "C385E1CE-0E6C-4F72-B012-5BBBABD13157"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/cockpit-hq/cockpit/commit/dd8d0314912fa6517ebd2cc9939d9fafbe68731b",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/3080fc96-75d7-4868-84de-9fc8c9b90290",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Issue Tracking",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-2818",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2022-08-15T11:21:31.053",
+                "lastModified": "2023-08-02T09:15:13.440",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Improper Removal of Sensitive Information Before Storage or Transfer in GitHub repository cockpit-hq/cockpit prior to 2.2.2.\n\n"
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Una Omisi\u00f3n de Autenticaci\u00f3n por Debilidad Primaria en el repositorio de GitHub cockpit-hq/cockpit versiones anteriores a 2.2.2."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 8.8,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 5.9
+                        },
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.8,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.9
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-212"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-212"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:agentejo:cockpit:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "2.2.2",
+                                        "matchCriteriaId": "BABCAF08-54A2-4734-BBE9-309F4B36D560"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/cockpit-hq/cockpit/commit/4bee1b903ee20818f4a8ecb9d974b9536cc54cb4",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/ee27e5df-516b-4cf4-9f28-346d907b5491",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-0759",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2023-02-09T14:15:24.510",
+                "lastModified": "2023-02-16T14:44:58.117",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Privilege Chaining in GitHub repository cockpit-hq/cockpit prior to 2.3.8."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 8.8,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+                                "attackVector": "LOCAL",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "LOW",
+                                "baseScore": 5.3,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 1.8,
+                            "impactScore": 3.4
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-268"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:agentejo:cockpit:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "2.3.8",
+                                        "matchCriteriaId": "9DE9300E-C610-41F7-BF2C-C708C740F196"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/cockpit-hq/cockpit/commit/78d6ed3bf093ee11356ba66320c628c727068714",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/49e2cccc-bb56-4633-ba6a-b3803e251347",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Issue Tracking",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-0780",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2023-02-11T02:20:44.427",
+                "lastModified": "2023-02-22T14:44:24.443",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Improper Restriction of Rendered UI Layers or Frames in GitHub repository cockpit-hq/cockpit prior to 2.3.9-dev."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.5
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                                "attackVector": "LOCAL",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.0,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.5,
+                            "impactScore": 1.4
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-1021"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:agentejo:cockpit:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "2.3.9",
+                                        "matchCriteriaId": "F50AE82B-1781-464E-8FF8-5DF13D29901A"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/cockpit-hq/cockpit/commit/8450bdf7e1dc23e9d88adf30a2aa9101c0c41720",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/801efd0b-404b-4670-961a-12a986252fa4",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Issue Tracking",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-32857",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2023-02-21T15:15:11.630",
+                "lastModified": "2023-03-02T16:21:28.717",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Cockpit is a content management system that allows addition of content management functionality to any site. In versions 0.12.2 and prior, bad HTML sanitization in `htmleditor.js` may lead to cross-site scripting (XSS) issues. There are no known patches for this issue."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.1,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.7
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.1,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.7
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:agentejo:cockpit:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "0.12.2",
+                                        "matchCriteriaId": "B0A8091B-5899-47F1-83C7-E9B6E0FB0B78"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/agentejo/cockpit/blob/f7cd602bcc6134657ccfeb4e400b0050943dd243/assets/lib/uikit/js/components/htmleditor.js",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/agentejo/cockpit/commit/0c6628cbff3e49bc317c97b03a4666b3a75f76cc",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://securitylab.github.com/advisories/GHSL-2021-1035_Cockpit_Next/",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-1160",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2023-03-03T02:15:53.640",
+                "lastModified": "2023-03-14T16:09:28.123",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Use of Platform-Dependent Third Party Components in GitHub repository cockpit-hq/cockpit prior to 2.4.0."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+                                "attackVector": "LOCAL",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.5,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 1.8,
+                            "impactScore": 3.6
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                                "attackVector": "LOCAL",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.0,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.5,
+                            "impactScore": 1.4
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-1103"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:agentejo:cockpit:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "2.3.9",
+                                        "matchCriteriaId": "4F2AF6E0-E846-415A-B46B-4D49D1806856"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/cockpit-hq/cockpit/commit/690016208850f2d788ebc3c67884d4c692587eb8",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/3ce480dc-1b1c-4230-9287-0dc3b31c2f87",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-1313",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2023-03-10T12:15:21.633",
+                "lastModified": "2023-03-15T16:19:51.987",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Unrestricted Upload of File with Dangerous Type in GitHub repository cockpit-hq/cockpit prior to 2.4.1."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 8.8,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "HIGH",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 7.2,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 1.2,
+                            "impactScore": 5.9
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-434"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:agentejo:cockpit:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "2.4.0",
+                                        "matchCriteriaId": "481FCD50-ECE6-4DCF-8BD2-7BF0AF8D692C"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/cockpit-hq/cockpit/commit/becca806c7071ecc732521bb5ad0bb9c64299592",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/f73eef49-004f-4b3b-9717-90525e65ba61",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-37649",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2023-07-20T20:15:10.447",
+                "lastModified": "2023-07-26T16:18:27.370",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Incorrect access control in the component /models/Content of Cockpit CMS v2.5.2 allows unauthorized attackers to access sensitive data."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 7.5,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 3.6
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "NVD-CWE-noinfo"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:agentejo:cockpit:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "2.5.2",
+                                        "matchCriteriaId": "BD2017D1-E9AB-44E3-BCC6-6164AB4CB5C7"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/Cockpit-HQ/Cockpit/releases/tag/2.6.0",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Release Notes"
+                        ]
+                    },
+                    {
+                        "url": "https://www.ghostccamm.com/blog/multi_cockpit_vulns/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-37650",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2023-07-20T20:15:10.503",
+                "lastModified": "2023-07-26T16:18:15.067",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "A Cross-Site Request Forgery (CSRF) in the Admin portal of Cockpit CMS v2.5.2 allows attackers to execute arbitrary Administrator commands."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 8.8,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 5.9
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-352"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:agentejo:cockpit:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "2.5.2",
+                                        "matchCriteriaId": "BD2017D1-E9AB-44E3-BCC6-6164AB4CB5C7"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/Cockpit-HQ/Cockpit/releases/tag/2.6.0",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Release Notes"
+                        ]
+                    },
+                    {
+                        "url": "https://www.ghostccamm.com/blog/multi_cockpit_vulns/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-4195",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2023-08-06T18:15:10.440",
+                "lastModified": "2023-08-10T16:03:49.010",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "PHP Remote File Inclusion in GitHub repository cockpit-hq/cockpit prior to 2.6.3."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 8.8,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.9,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.1,
+                            "impactScore": 6.0
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-98"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:agentejo:cockpit:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "2.6.3",
+                                        "matchCriteriaId": "01BAF7D9-ECB6-4E46-B1A5-DD318BBE9C8D"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/cockpit-hq/cockpit/commit/800c05f1984db291769ffa5fdfb1d3e50968e95b",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/0bd5da2f-0e29-47ce-90f3-06518656bfd6",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Issue Tracking",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-4196",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2023-08-06T18:15:10.887",
+                "lastModified": "2023-08-10T15:04:50.510",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Cross-site Scripting (XSS) - Stored in GitHub repository cockpit-hq/cockpit prior to 2.6.3."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "LOW",
+                                "baseScore": 8.3,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 5.5
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:agentejo:cockpit:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "2.6.3",
+                                        "matchCriteriaId": "01BAF7D9-ECB6-4E46-B1A5-DD318BBE9C8D"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/cockpit-hq/cockpit/commit/039a00cc310bff128ca6e6c1c46c6fbad0385c2c",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/c275a2d4-721f-49f7-8787-b146af2056a0",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Issue Tracking",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-4321",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2023-08-14T11:15:09.443",
+                "lastModified": "2023-08-22T20:43:55.613",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Cross-site Scripting (XSS) - Stored in GitHub repository cockpit-hq/cockpit prior to 2.4.3."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.1,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "LOW",
+                                "baseScore": 8.3,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 5.5
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:agentejo:cockpit:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "2.4.3",
+                                        "matchCriteriaId": "FFFD4A1E-8DC2-4AA9-A307-91C94B296D02"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/cockpit-hq/cockpit/commit/34ab31ee9362da51b9709e178469dbffd7717249",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/fce38751-bfd6-484c-b6e1-935e0aa8ffdc",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-4395",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2023-08-17T04:15:10.687",
+                "lastModified": "2023-08-22T00:55:09.250",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Cross-site Scripting (XSS) - Stored in GitHub repository cockpit-hq/cockpit prior to 2.6.4."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 8.1,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 5.2
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:agentejo:cockpit:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "2.6.4",
+                                        "matchCriteriaId": "20AD25FB-82CB-49B5-B01C-BF45CC9CE803"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/cockpit-hq/cockpit/commit/36d1d4d256cbbab028342ba10cc493e5c119172c",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/60e38563-7ac8-4a13-ac04-2980cc48b0da",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-4422",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2023-08-18T19:15:13.250",
+                "lastModified": "2023-08-22T00:58:55.880",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Cross-site Scripting (XSS) - Stored in GitHub repository cockpit-hq/cockpit prior to 2.6.3."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Se ha encontrado una vulnerabilidad de Cross-Site Scripting (XSS) almacenado en el repositorio GitHub cockpit-hq/cockpit anterior a la versi\u00f3n 2.6.3. "
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "HIGH",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.8,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 1.7,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "HIGH",
+                                "userInteraction": "REQUIRED",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 6.8,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 0.9,
+                            "impactScore": 5.9
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:agentejo:cockpit:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "2.6.3",
+                                        "matchCriteriaId": "01BAF7D9-ECB6-4E46-B1A5-DD318BBE9C8D"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/cockpit-hq/cockpit/commit/b8dad5e070608bb5e4ec58fabbee101b5af737cf",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/2e12b773-b6a2-48da-a4bb-55d5d1307d2e",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-4432",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2023-08-19T01:15:09.290",
+                "lastModified": "2023-08-23T16:58:29.763",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Cross-site Scripting (XSS) - Reflected in GitHub repository cockpit-hq/cockpit prior to 2.6.4."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Vulnerabilidad de Cross-Site Scripting (XSS) reflejado en el repositorio de GitHub cockpit-hq/cockpit anterior a 2.6.4. "
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.1,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "LOW",
+                                "baseScore": 8.3,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 5.5
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:agentejo:cockpit:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "2.6.3",
+                                        "matchCriteriaId": "DB13440F-5FAF-437B-A4EF-47CA96DB8FC4"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/cockpit-hq/cockpit/commit/2a93d391fbd2dd9e730f65d43b29beb65903d195",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/69684663-6822-41ff-aa05-afbdb8f5268f",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-4433",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2023-08-19T01:15:09.573",
+                "lastModified": "2023-08-23T16:58:12.130",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Cross-site Scripting (XSS) - Stored in GitHub repository cockpit-hq/cockpit prior to 2.6.4."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Cross-Site Scripting (XSS) almacenado en el repositorio de GitHub cockpit-hq/cockpit anterior a 2.6.4. \n"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "LOW",
+                                "baseScore": 8.3,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 5.5
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:agentejo:cockpit:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "2.6.3",
+                                        "matchCriteriaId": "DB13440F-5FAF-437B-A4EF-47CA96DB8FC4"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/cockpit-hq/cockpit/commit/36d1d4d256cbbab028342ba10cc493e5c119172c",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/64f3253d-6852-4b9f-b870-85e896007b1a",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-4451",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2023-08-20T15:15:29.760",
+                "lastModified": "2023-08-24T20:31:44.960",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Cross-site Scripting (XSS) - Reflected in GitHub repository cockpit-hq/cockpit prior to 2.6.4."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.1,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.1,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.7
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:agentejo:cockpit:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "2.6.3",
+                                        "matchCriteriaId": "DB13440F-5FAF-437B-A4EF-47CA96DB8FC4"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/cockpit-hq/cockpit/commit/30609466c817e39f9de1871559603e93cd4d0d0c",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/4e111c3e-6cf3-4b4c-b3c1-a540bf30f8fa",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-41564",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2023-09-08T23:15:11.877",
+                "lastModified": "2023-09-13T17:06:06.760",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "An arbitrary file upload vulnerability in the Upload Asset function of Cockpit CMS v2.6.3 allows attackers to execute arbitrary code via uploading a crafted .shtml file."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Una vulnerabilidad de carga de archivos arbitrarios en la funci\u00f3n Upload Asset de Cockpit CMS v2.6.3 permite a los atacantes ejecutar c\u00f3digo arbitrario cargando un archivo .shtml manipulado."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.1,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.7
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-434"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:agentejo:cockpit:2.6.3:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "134766A8-60F0-4B41-A36B-EAB70A9EB902"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/LongHair00/Mitre_opensource_report/blob/main/CockpitCMS-StoredXSS.md",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

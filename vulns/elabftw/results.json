@@ -1,1 +1,1050 @@
-{"resultsPerPage":8,"startIndex":0,"totalResults":8,"format":"NVD_CVE","version":"2.0","timestamp":"2024-04-30T10:41:17.257","vulnerabilities":[{"cve":{"id":"CVE-2017-1000478","sourceIdentifier":"cve@mitre.org","published":"2018-01-03T18:29:00.277","lastModified":"2018-01-17T14:51:39.217","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"ELabftw version 1.7.8 is vulnerable to stored cross-site scripting in the experiment infos component resulting in arbitrary execution of JavaScript and denial of service."},{"lang":"es","value":"ELabftw, versión 1.7.8, es vulnerable a Cross-Site Scripting (XSS) persistente en el componente experiment infos. Esto resulta en la ejecución arbitraria de JavaScript y en una denegación de servicio (DoS)."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.3,"impactScore":2.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:S\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"SINGLE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":3.5},"baseSeverity":"LOW","exploitabilityScore":6.8,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:elabftw:elabftw:1.7.8:*:*:*:*:*:*:*","matchCriteriaId":"B3EBDF58-E219-4EB4-B1BD-AF5CC24B78B8"}]}]}],"references":[{"url":"https:\/\/github.com\/elabftw\/elabftw\/issues\/531","source":"cve@mitre.org","tags":["Exploit","Issue Tracking","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2019-12185","sourceIdentifier":"cve@mitre.org","published":"2019-05-20T00:29:00.397","lastModified":"2024-02-14T01:17:43.863","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"eLabFTW 1.8.5 is vulnerable to arbitrary file uploads via the \/app\/controllers\/EntityController.php component. This may result in remote command execution. An attacker can use a user account to fully compromise the system using a POST request. This will allow for PHP files to be written to the web root, and for code to execute on the remote server."},{"lang":"es","value":"eLabFTW 1.8.5 es vulnerable a cargas de archivos arbitrarios a través del componente \/app\/controllers\/EntityController.php. Esto puede resultar en la ejecución remota de comandos. Un atacante puede usar una cuenta de usuario para comprometer completamente el sistema mediante una solicitud POST. Esto permitirá que los archivos PHP se escriban en la raíz web y que el código se ejecute en el servidor remoto."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":8.8,"baseSeverity":"HIGH"},"exploitabilityScore":2.8,"impactScore":5.9}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:S\/C:C\/I:C\/A:C","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"SINGLE","confidentialityImpact":"COMPLETE","integrityImpact":"COMPLETE","availabilityImpact":"COMPLETE","baseScore":9.0},"baseSeverity":"HIGH","exploitabilityScore":8.0,"impactScore":10.0,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-434"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:elabftw:elabftw:1.8.5:*:*:*:*:*:*:*","matchCriteriaId":"B2A7E64B-CD81-4EBE-9D2B-4DFFC5B2183A"}]}]}],"references":[{"url":"http:\/\/incidentsecurity.com\/elabftw-1-8-5-entitycontroller-arbitrary-file-upload-rce\/","source":"cve@mitre.org","tags":["Exploit","Vendor Advisory","URL Repurposed"]},{"url":"https:\/\/github.com\/fuzzlove\/eLabFTW-1.8.5-EntityController-Arbitrary-File-Upload-RCE","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2021-32698","sourceIdentifier":"security-advisories@github.com","published":"2021-06-21T22:15:07.483","lastModified":"2021-06-28T20:45:18.300","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"eLabFTW is an open source electronic lab notebook for research labs. This vulnerability allows an attacker to make GET requests on behalf of the server. It is \"blind\" because the attacker cannot see the result of the request. Issue has been patched in eLabFTW 4.0.0."},{"lang":"es","value":"eLabFTW es un cuaderno de laboratorio electrónico de código abierto para laboratorios de investigación. Esta vulnerabilidad permite a un atacante realizar peticiones GET en nombre del servidor. Es \"blind\" porque el atacante no puede visualizar el resultado de la petición. El problema ha sido parcheado en eLabFTW versión 4.0.0"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:H\/UI:N\/S:U\/C:H\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"HIGH","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":4.9,"baseSeverity":"MEDIUM"},"exploitabilityScore":1.2,"impactScore":3.6},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:H\/UI:N\/S:C\/C:H\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"HIGH","userInteraction":"NONE","scope":"CHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":6.8,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.3,"impactScore":4.0}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:S\/C:P\/I:N\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"SINGLE","confidentialityImpact":"PARTIAL","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":4.0},"baseSeverity":"MEDIUM","exploitabilityScore":8.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"security-advisories@github.com","type":"Primary","description":[{"lang":"en","value":"CWE-918"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:elabftw:elabftw:*:*:*:*:*:*:*:*","versionEndExcluding":"4.0.0","matchCriteriaId":"AEF0E086-47D6-4F5D-BB3F-2A6DE76713F3"}]}]}],"references":[{"url":"https:\/\/github.com\/elabftw\/elabftw\/commit\/3d2db4d3ad90b0915f29f05aeba41eaaf6a7c726","source":"security-advisories@github.com","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/elabftw\/elabftw\/security\/advisories\/GHSA-mh6g-62p8-26m4","source":"security-advisories@github.com","tags":["Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2021-41171","sourceIdentifier":"security-advisories@github.com","published":"2021-10-22T19:15:07.923","lastModified":"2021-10-28T16:40:09.843","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"eLabFTW is an open source electronic lab notebook manager for research teams. In versions of eLabFTW before 4.1.0, it allows attackers to bypass a brute-force protection mechanism by using many different forged PHPSESSID values in HTTP Cookie header. This issue has been addressed by implementing brute force login protection, as recommended by Owasp with Device Cookies. This mechanism will not impact users and will effectively thwart any brute-force attempts at guessing passwords. The only correct way to address this is to upgrade to version 4.1.0. Adding rate limitation upstream of the eLabFTW service is of course a valid option, with or without upgrading."},{"lang":"es","value":"eLabFTW es un administrador de cuadernos de laboratorio electrónicos de código abierto para equipos de investigación. En las versiones de eLabFTW anteriores a 4.1.0, permite a atacantes omitir un mecanismo de protección de fuerza bruta mediante el uso de varios valores falsos de PHPSESSID en el encabezado de la cookie HTTP. Este problema ha sido solucionado al implementar una protección de inicio de sesión por fuerza bruta, tal y como recomienda Owasp con las Cookies de Dispositivo. Este mecanismo no afectará a usuarios y frustrará eficazmente cualquier intento de fuerza bruta para adivinar las contraseñas. La única forma correcta de abordar esto es actualizar a la versión 4.1.0. Añadir la limitación de la tasa del servicio eLabFTW es por supuesto una opción válida, con o sin actualización"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":8.8,"baseSeverity":"HIGH"},"exploitabilityScore":2.8,"impactScore":5.9},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:H\/PR:N\/UI:N\/S:U\/C:H\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"HIGH","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":5.9,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.2,"impactScore":3.6}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:S\/C:P\/I:N\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"SINGLE","confidentialityImpact":"PARTIAL","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":4.0},"baseSeverity":"MEDIUM","exploitabilityScore":8.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"security-advisories@github.com","type":"Primary","description":[{"lang":"en","value":"CWE-307"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:elabftw:elabftw:*:*:*:*:*:*:*:*","versionEndExcluding":"4.1.0","matchCriteriaId":"FCCABB20-2259-4D25-8D9E-61F132310943"}]}]}],"references":[{"url":"https:\/\/github.com\/elabftw\/elabftw\/commit\/8e92afeec4c3a68dc88333881b7e6307f425706b","source":"security-advisories@github.com","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/elabftw\/elabftw\/releases\/tag\/4.1.0","source":"security-advisories@github.com","tags":["Release Notes","Third Party Advisory"]},{"url":"https:\/\/github.com\/elabftw\/elabftw\/security\/advisories\/GHSA-q67h-5pc3-g6jv","source":"security-advisories@github.com","tags":["Third Party Advisory"]},{"url":"https:\/\/owasp.org\/www-community\/Slow_Down_Online_Guessing_Attacks_with_Device_Cookies","source":"security-advisories@github.com","tags":["Third Party Advisory"]},{"url":"https:\/\/www.exploit-db.com\/docs\/50436","source":"security-advisories@github.com","tags":["Exploit","Third Party Advisory","VDB Entry"]}]}},{"cve":{"id":"CVE-2021-43833","sourceIdentifier":"security-advisories@github.com","published":"2021-12-16T00:15:07.447","lastModified":"2021-12-21T15:45:48.747","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"eLabFTW is an electronic lab notebook manager for research teams. In versions prior to 4.2.0 there is a vulnerability which allows any authenticated user to gain access to arbitrary accounts by setting a specially crafted email address. This vulnerability impacts all instances that have not set an explicit email domain name allowlist. Note that whereas neither administrators nor targeted users are notified of a change, an attacker will need to control an account. The default settings require administrators to validate newly created accounts. The problem has been patched. Users should upgrade to at least version 4.2.0. For users unable to upgrade enabling an email domain allow list (from Sysconfig panel, Security tab) will completely resolve the issue."},{"lang":"es","value":"eLabFTW es un administrador de cuadernos de laboratorio electrónicos para equipos de investigación. En versiones anteriores a 4.2.0, se presenta una vulnerabilidad que permite a cualquier usuario autenticado conseguir acceso a cuentas arbitrarias mediante la configuración de una dirección de correo electrónico especialmente diseñada. Esta vulnerabilidad afecta a todas las instancias que no han configurado una lista explícita de nombres de dominio de correo electrónico permitidos. Tenga en cuenta que, mientras que ni los administradores ni los usuarios a los que se dirige la aplicación son notificados de un cambio, un atacante necesitará controlar una cuenta. La configuración por defecto requiere que los administradores comprueben las cuentas recién creadas. El problema ha sido parcheado. Los usuarios deben actualizar al menos a la versión 4.2.0. Para los usuarios que no puedan actualizar, la habilitación de una lista de dominios permitidos de correo electrónico (desde el panel Sysconfig, pestaña Seguridad) resolverá completamente el problema"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":8.8,"baseSeverity":"HIGH"},"exploitabilityScore":2.8,"impactScore":5.9},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:H\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"NONE","baseScore":8.1,"baseSeverity":"HIGH"},"exploitabilityScore":2.8,"impactScore":5.2}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:S\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"SINGLE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":6.5},"baseSeverity":"MEDIUM","exploitabilityScore":8.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"security-advisories@github.com","type":"Primary","description":[{"lang":"en","value":"CWE-287"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:elabftw:elabftw:*:*:*:*:*:*:*:*","versionEndExcluding":"4.2.0","matchCriteriaId":"094D67B9-C2BD-426A-9118-5EEBE51AE16E"}]}]}],"references":[{"url":"https:\/\/github.com\/elabftw\/elabftw\/releases\/tag\/4.2.0","source":"security-advisories@github.com","tags":["Release Notes","Third Party Advisory"]},{"url":"https:\/\/github.com\/elabftw\/elabftw\/security\/advisories\/GHSA-v659-q2fh-v99w","source":"security-advisories@github.com","tags":["Third Party Advisory"]}]}},{"cve":{"id":"CVE-2021-43834","sourceIdentifier":"security-advisories@github.com","published":"2021-12-16T00:15:07.507","lastModified":"2021-12-21T15:58:17.350","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"eLabFTW is an electronic lab notebook manager for research teams. In versions prior to 4.2.0 there is a vulnerability which allows an attacker to authenticate as an existing user, if that user was created using a single sign-on authentication option such as LDAP or SAML. It impacts instances where LDAP or SAML is used for authentication instead of the (default) local password mechanism. Users should upgrade to at least version 4.2.0."},{"lang":"es","value":"eLabFTW es un administrador de cuadernos de laboratorio electrónicos para equipos de investigación. En versiones anteriores a 4.2.0, se presenta una vulnerabilidad que permite a un atacante autenticarse como un usuario existente, si ese usuario fue creado usando una opción de autenticación de inicio de sesión único como LDAP o SAML. Afecta a los casos en los que se usa LDAP o SAML para la autenticación en lugar del mecanismo de contraseña local (por defecto). Los usuarios deben actualizar al menos a la versión 4.2.0"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.8,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.9},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"NONE","baseScore":9.1,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.2}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:S\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"SINGLE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":6.5},"baseSeverity":"MEDIUM","exploitabilityScore":8.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"security-advisories@github.com","type":"Primary","description":[{"lang":"en","value":"CWE-287"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:elabftw:elabftw:*:*:*:*:*:*:*:*","versionEndExcluding":"4.2.0","matchCriteriaId":"094D67B9-C2BD-426A-9118-5EEBE51AE16E"}]}]}],"references":[{"url":"https:\/\/github.com\/elabftw\/elabftw\/releases\/tag\/4.2.0","source":"security-advisories@github.com","tags":["Release Notes","Third Party Advisory"]},{"url":"https:\/\/github.com\/elabftw\/elabftw\/security\/advisories\/GHSA-98rp-gx76-33ph","source":"security-advisories@github.com","tags":["Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-31007","sourceIdentifier":"security-advisories@github.com","published":"2022-05-31T20:15:08.033","lastModified":"2022-06-10T13:48:42.660","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"eLabFTW is an electronic lab notebook manager for research teams. Prior to version 4.3.0, a vulnerability allows an authenticated user with an administrator role in a team to assign itself system administrator privileges within the application, or create a new system administrator account. The issue has been corrected in eLabFTW version 4.3.0. In the context of eLabFTW, an administrator is a user account with certain privileges to manage users and content in their assigned team\/teams. A system administrator account can manage all accounts, teams and edit system-wide settings within the application. The impact is not deemed as high, as it requires the attacker to have access to an administrator account. Regular user accounts cannot exploit this to gain admin rights. A workaround for one if the issues is removing the ability of administrators to create accounts."},{"lang":"es","value":"eLabFTW es un administrador de cuadernos de laboratorio electrónicos para equipos de investigación. En versiones anteriores a 4.3.0, una vulnerabilidad permite a un usuario autenticado con un rol de administrador en un equipo asignarse a sí mismo privilegios de administrador del sistema dentro de la aplicación, o crear una nueva cuenta de administrador del sistema. El problema ha sido corregido en eLabFTW versión 4.3.0. En el contexto de eLabFTW, un administrador es una cuenta de usuario con ciertos privilegios para administrar usuarios y contenidos en su equipo\/equipos asignados. Una cuenta de administrador del sistema puede administrar todas las cuentas, equipos y editar la configuración de todo el sistema dentro de la aplicación. El impacto no es considerado tan alto, ya que requiere que el atacante tenga acceso a una cuenta de administrador. Las cuentas de usuarios normales no pueden aprovechar esta situación para obtener derechos de administrador. Una mitigación para uno de los problemas es eliminar la capacidad de los administradores para crear cuentas"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:H\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"HIGH","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":7.2,"baseSeverity":"HIGH"},"exploitabilityScore":1.2,"impactScore":5.9},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:H\/UI:N\/S:U\/C:N\/I:H\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"HIGH","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"NONE","integrityImpact":"HIGH","availabilityImpact":"NONE","baseScore":4.9,"baseSeverity":"MEDIUM"},"exploitabilityScore":1.2,"impactScore":3.6}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:S\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"SINGLE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":6.5},"baseSeverity":"MEDIUM","exploitabilityScore":8.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"NVD-CWE-Other"}]},{"source":"security-advisories@github.com","type":"Secondary","description":[{"lang":"en","value":"CWE-1287"},{"lang":"en","value":"CWE-842"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:elabftw:elabftw:*:*:*:*:*:*:*:*","versionEndExcluding":"4.3.0","matchCriteriaId":"37F51E69-E8CA-42A2-B819-D5E1393F30FD"}]}]}],"references":[{"url":"https:\/\/github.com\/elabftw\/elabftw\/releases\/tag\/4.3.0","source":"security-advisories@github.com","tags":["Release Notes","Third Party Advisory"]},{"url":"https:\/\/github.com\/elabftw\/elabftw\/security\/advisories\/GHSA-937c-m7p3-775v","source":"security-advisories@github.com","tags":["Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-31178","sourceIdentifier":"security-advisories@github.com","published":"2022-08-01T19:15:08.453","lastModified":"2022-08-06T02:42:29.787","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"eLabFTW is an electronic lab notebook manager for research teams. A vulnerability was discovered which allows a logged in user to read a template without being authorized to do so. This vulnerability has been patched in 4.3.4. Users are advised to upgrade. There are no known workarounds for this issue."},{"lang":"es","value":"eLabFTW es un gestor de cuadernos de laboratorio electrónicos para equipos de investigación. Se ha detectado una vulnerabilidad que permite a un usuario conectado leer una plantilla sin estar autorizado para ello. Esta vulnerabilidad ha sido parcheada en versión 4.3.4. Es recomendado a usuarios actualizar. No se presentan mitigaciones conocidas para este problema"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:L\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":4.3,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":1.4},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:L\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":4.3,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":1.4}]},"weaknesses":[{"source":"security-advisories@github.com","type":"Primary","description":[{"lang":"en","value":"CWE-863"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:elabftw:elabftw:*:*:*:*:*:*:*:*","versionEndExcluding":"4.3.4","matchCriteriaId":"3FF3C390-C0DD-4AD8-8D2B-444BC3AD15B4"}]}]}],"references":[{"url":"https:\/\/github.com\/elabftw\/elabftw\/security\/advisories\/GHSA-63qq-hw97-8q7x","source":"security-advisories@github.com","tags":["Third Party Advisory"]}]}}]}
+{
+    "resultsPerPage": 8,
+    "startIndex": 0,
+    "totalResults": 8,
+    "format": "NVD_CVE",
+    "version": "2.0",
+    "timestamp": "2024-04-30T10:41:17.257",
+    "vulnerabilities": [
+        {
+            "cve": {
+                "id": "CVE-2017-1000478",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2018-01-03T18:29:00.277",
+                "lastModified": "2018-01-17T14:51:39.217",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "ELabftw version 1.7.8 is vulnerable to stored cross-site scripting in the experiment infos component resulting in arbitrary execution of JavaScript and denial of service."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "ELabftw, versi\u00f3n 1.7.8, es vulnerable a Cross-Site Scripting (XSS) persistente en el componente experiment infos. Esto resulta en la ejecuci\u00f3n arbitraria de JavaScript y en una denegaci\u00f3n de servicio (DoS)."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 3.5
+                            },
+                            "baseSeverity": "LOW",
+                            "exploitabilityScore": 6.8,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:elabftw:elabftw:1.7.8:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "B3EBDF58-E219-4EB4-B1BD-AF5CC24B78B8"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/elabftw/elabftw/issues/531",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Issue Tracking",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2019-12185",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2019-05-20T00:29:00.397",
+                "lastModified": "2024-02-14T01:17:43.863",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "eLabFTW 1.8.5 is vulnerable to arbitrary file uploads via the /app/controllers/EntityController.php component. This may result in remote command execution. An attacker can use a user account to fully compromise the system using a POST request. This will allow for PHP files to be written to the web root, and for code to execute on the remote server."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "eLabFTW 1.8.5 es vulnerable a cargas de archivos arbitrarios a trav\u00e9s del componente /app/controllers/EntityController.php. Esto puede resultar en la ejecuci\u00f3n remota de comandos. Un atacante puede usar una cuenta de usuario para comprometer completamente el sistema mediante una solicitud POST. Esto permitir\u00e1 que los archivos PHP se escriban en la ra\u00edz web y que el c\u00f3digo se ejecute en el servidor remoto."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 8.8,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:S/C:C/I:C/A:C",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "COMPLETE",
+                                "integrityImpact": "COMPLETE",
+                                "availabilityImpact": "COMPLETE",
+                                "baseScore": 9.0
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 8.0,
+                            "impactScore": 10.0,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-434"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:elabftw:elabftw:1.8.5:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "B2A7E64B-CD81-4EBE-9D2B-4DFFC5B2183A"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://incidentsecurity.com/elabftw-1-8-5-entitycontroller-arbitrary-file-upload-rce/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Vendor Advisory",
+                            "URL Repurposed"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/fuzzlove/eLabFTW-1.8.5-EntityController-Arbitrary-File-Upload-RCE",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-32698",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2021-06-21T22:15:07.483",
+                "lastModified": "2021-06-28T20:45:18.300",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "eLabFTW is an open source electronic lab notebook for research labs. This vulnerability allows an attacker to make GET requests on behalf of the server. It is \"blind\" because the attacker cannot see the result of the request. Issue has been patched in eLabFTW 4.0.0."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "eLabFTW es un cuaderno de laboratorio electr\u00f3nico de c\u00f3digo abierto para laboratorios de investigaci\u00f3n. Esta vulnerabilidad permite a un atacante realizar peticiones GET en nombre del servidor. Es \"blind\" porque el atacante no puede visualizar el resultado de la petici\u00f3n. El problema ha sido parcheado en eLabFTW versi\u00f3n 4.0.0"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "HIGH",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.9,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 1.2,
+                            "impactScore": 3.6
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "HIGH",
+                                "userInteraction": "NONE",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.8,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 4.0
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:S/C:P/I:N/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-918"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:elabftw:elabftw:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "4.0.0",
+                                        "matchCriteriaId": "AEF0E086-47D6-4F5D-BB3F-2A6DE76713F3"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/elabftw/elabftw/commit/3d2db4d3ad90b0915f29f05aeba41eaaf6a7c726",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/elabftw/elabftw/security/advisories/GHSA-mh6g-62p8-26m4",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-41171",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2021-10-22T19:15:07.923",
+                "lastModified": "2021-10-28T16:40:09.843",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "eLabFTW is an open source electronic lab notebook manager for research teams. In versions of eLabFTW before 4.1.0, it allows attackers to bypass a brute-force protection mechanism by using many different forged PHPSESSID values in HTTP Cookie header. This issue has been addressed by implementing brute force login protection, as recommended by Owasp with Device Cookies. This mechanism will not impact users and will effectively thwart any brute-force attempts at guessing passwords. The only correct way to address this is to upgrade to version 4.1.0. Adding rate limitation upstream of the eLabFTW service is of course a valid option, with or without upgrading."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "eLabFTW es un administrador de cuadernos de laboratorio electr\u00f3nicos de c\u00f3digo abierto para equipos de investigaci\u00f3n. En las versiones de eLabFTW anteriores a 4.1.0, permite a atacantes omitir un mecanismo de protecci\u00f3n de fuerza bruta mediante el uso de varios valores falsos de PHPSESSID en el encabezado de la cookie HTTP. Este problema ha sido solucionado al implementar una protecci\u00f3n de inicio de sesi\u00f3n por fuerza bruta, tal y como recomienda Owasp con las Cookies de Dispositivo. Este mecanismo no afectar\u00e1 a usuarios y frustrar\u00e1 eficazmente cualquier intento de fuerza bruta para adivinar las contrase\u00f1as. La \u00fanica forma correcta de abordar esto es actualizar a la versi\u00f3n 4.1.0. A\u00f1adir la limitaci\u00f3n de la tasa del servicio eLabFTW es por supuesto una opci\u00f3n v\u00e1lida, con o sin actualizaci\u00f3n"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 8.8,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 5.9
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "HIGH",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.9,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.2,
+                            "impactScore": 3.6
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:S/C:P/I:N/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-307"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:elabftw:elabftw:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "4.1.0",
+                                        "matchCriteriaId": "FCCABB20-2259-4D25-8D9E-61F132310943"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/elabftw/elabftw/commit/8e92afeec4c3a68dc88333881b7e6307f425706b",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/elabftw/elabftw/releases/tag/4.1.0",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Release Notes",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/elabftw/elabftw/security/advisories/GHSA-q67h-5pc3-g6jv",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://owasp.org/www-community/Slow_Down_Online_Guessing_Attacks_with_Device_Cookies",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.exploit-db.com/docs/50436",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory",
+                            "VDB Entry"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-43833",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2021-12-16T00:15:07.447",
+                "lastModified": "2021-12-21T15:45:48.747",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "eLabFTW is an electronic lab notebook manager for research teams. In versions prior to 4.2.0 there is a vulnerability which allows any authenticated user to gain access to arbitrary accounts by setting a specially crafted email address. This vulnerability impacts all instances that have not set an explicit email domain name allowlist. Note that whereas neither administrators nor targeted users are notified of a change, an attacker will need to control an account. The default settings require administrators to validate newly created accounts. The problem has been patched. Users should upgrade to at least version 4.2.0. For users unable to upgrade enabling an email domain allow list (from Sysconfig panel, Security tab) will completely resolve the issue."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "eLabFTW es un administrador de cuadernos de laboratorio electr\u00f3nicos para equipos de investigaci\u00f3n. En versiones anteriores a 4.2.0, se presenta una vulnerabilidad que permite a cualquier usuario autenticado conseguir acceso a cuentas arbitrarias mediante la configuraci\u00f3n de una direcci\u00f3n de correo electr\u00f3nico especialmente dise\u00f1ada. Esta vulnerabilidad afecta a todas las instancias que no han configurado una lista expl\u00edcita de nombres de dominio de correo electr\u00f3nico permitidos. Tenga en cuenta que, mientras que ni los administradores ni los usuarios a los que se dirige la aplicaci\u00f3n son notificados de un cambio, un atacante necesitar\u00e1 controlar una cuenta. La configuraci\u00f3n por defecto requiere que los administradores comprueben las cuentas reci\u00e9n creadas. El problema ha sido parcheado. Los usuarios deben actualizar al menos a la versi\u00f3n 4.2.0. Para los usuarios que no puedan actualizar, la habilitaci\u00f3n de una lista de dominios permitidos de correo electr\u00f3nico (desde el panel Sysconfig, pesta\u00f1a Seguridad) resolver\u00e1 completamente el problema"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 8.8,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 5.9
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 8.1,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 5.2
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 6.5
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-287"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:elabftw:elabftw:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "4.2.0",
+                                        "matchCriteriaId": "094D67B9-C2BD-426A-9118-5EEBE51AE16E"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/elabftw/elabftw/releases/tag/4.2.0",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Release Notes",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/elabftw/elabftw/security/advisories/GHSA-v659-q2fh-v99w",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-43834",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2021-12-16T00:15:07.507",
+                "lastModified": "2021-12-21T15:58:17.350",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "eLabFTW is an electronic lab notebook manager for research teams. In versions prior to 4.2.0 there is a vulnerability which allows an attacker to authenticate as an existing user, if that user was created using a single sign-on authentication option such as LDAP or SAML. It impacts instances where LDAP or SAML is used for authentication instead of the (default) local password mechanism. Users should upgrade to at least version 4.2.0."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "eLabFTW es un administrador de cuadernos de laboratorio electr\u00f3nicos para equipos de investigaci\u00f3n. En versiones anteriores a 4.2.0, se presenta una vulnerabilidad que permite a un atacante autenticarse como un usuario existente, si ese usuario fue creado usando una opci\u00f3n de autenticaci\u00f3n de inicio de sesi\u00f3n \u00fanico como LDAP o SAML. Afecta a los casos en los que se usa LDAP o SAML para la autenticaci\u00f3n en lugar del mecanismo de contrase\u00f1a local (por defecto). Los usuarios deben actualizar al menos a la versi\u00f3n 4.2.0"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.8,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.9
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 9.1,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.2
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 6.5
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-287"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:elabftw:elabftw:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "4.2.0",
+                                        "matchCriteriaId": "094D67B9-C2BD-426A-9118-5EEBE51AE16E"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/elabftw/elabftw/releases/tag/4.2.0",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Release Notes",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/elabftw/elabftw/security/advisories/GHSA-98rp-gx76-33ph",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-31007",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2022-05-31T20:15:08.033",
+                "lastModified": "2022-06-10T13:48:42.660",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "eLabFTW is an electronic lab notebook manager for research teams. Prior to version 4.3.0, a vulnerability allows an authenticated user with an administrator role in a team to assign itself system administrator privileges within the application, or create a new system administrator account. The issue has been corrected in eLabFTW version 4.3.0. In the context of eLabFTW, an administrator is a user account with certain privileges to manage users and content in their assigned team/teams. A system administrator account can manage all accounts, teams and edit system-wide settings within the application. The impact is not deemed as high, as it requires the attacker to have access to an administrator account. Regular user accounts cannot exploit this to gain admin rights. A workaround for one if the issues is removing the ability of administrators to create accounts."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "eLabFTW es un administrador de cuadernos de laboratorio electr\u00f3nicos para equipos de investigaci\u00f3n. En versiones anteriores a 4.3.0, una vulnerabilidad permite a un usuario autenticado con un rol de administrador en un equipo asignarse a s\u00ed mismo privilegios de administrador del sistema dentro de la aplicaci\u00f3n, o crear una nueva cuenta de administrador del sistema. El problema ha sido corregido en eLabFTW versi\u00f3n 4.3.0. En el contexto de eLabFTW, un administrador es una cuenta de usuario con ciertos privilegios para administrar usuarios y contenidos en su equipo/equipos asignados. Una cuenta de administrador del sistema puede administrar todas las cuentas, equipos y editar la configuraci\u00f3n de todo el sistema dentro de la aplicaci\u00f3n. El impacto no es considerado tan alto, ya que requiere que el atacante tenga acceso a una cuenta de administrador. Las cuentas de usuarios normales no pueden aprovechar esta situaci\u00f3n para obtener derechos de administrador. Una mitigaci\u00f3n para uno de los problemas es eliminar la capacidad de los administradores para crear cuentas"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "HIGH",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 7.2,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 1.2,
+                            "impactScore": 5.9
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:H/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "HIGH",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.9,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 1.2,
+                            "impactScore": 3.6
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 6.5
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "NVD-CWE-Other"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-1287"
+                            },
+                            {
+                                "lang": "en",
+                                "value": "CWE-842"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:elabftw:elabftw:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "4.3.0",
+                                        "matchCriteriaId": "37F51E69-E8CA-42A2-B819-D5E1393F30FD"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/elabftw/elabftw/releases/tag/4.3.0",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Release Notes",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/elabftw/elabftw/security/advisories/GHSA-937c-m7p3-775v",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-31178",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2022-08-01T19:15:08.453",
+                "lastModified": "2022-08-06T02:42:29.787",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "eLabFTW is an electronic lab notebook manager for research teams. A vulnerability was discovered which allows a logged in user to read a template without being authorized to do so. This vulnerability has been patched in 4.3.4. Users are advised to upgrade. There are no known workarounds for this issue."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "eLabFTW es un gestor de cuadernos de laboratorio electr\u00f3nicos para equipos de investigaci\u00f3n. Se ha detectado una vulnerabilidad que permite a un usuario conectado leer una plantilla sin estar autorizado para ello. Esta vulnerabilidad ha sido parcheada en versi\u00f3n 4.3.4. Es recomendado a usuarios actualizar. No se presentan mitigaciones conocidas para este problema"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 1.4
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 1.4
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-863"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:elabftw:elabftw:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "4.3.4",
+                                        "matchCriteriaId": "3FF3C390-C0DD-4AD8-8D2B-444BC3AD15B4"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/elabftw/elabftw/security/advisories/GHSA-63qq-hw97-8q7x",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

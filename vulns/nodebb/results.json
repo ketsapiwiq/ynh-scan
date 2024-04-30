@@ -1,1 +1,1866 @@
-{"resultsPerPage":14,"startIndex":0,"totalResults":14,"format":"NVD_CVE","version":"2.0","timestamp":"2024-04-30T10:48:59.480","vulnerabilities":[{"cve":{"id":"CVE-2015-3296","sourceIdentifier":"cve@mitre.org","published":"2017-09-21T14:29:00.183","lastModified":"2017-09-28T17:06:54.370","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Multiple cross-site scripting (XSS) vulnerabilities in NodeBB before 0.7 allow remote attackers to inject arbitrary web script or HTML via vectors related to (1) javascript: or (2) data: URLs."},{"lang":"es","value":"Múltiples vulnerabilidades de tipo Cross-Site Scripting (XSS) en NodeBB en versiones anteriores a la 0.7 permiten que atacantes remotos inyecten scripts web o HTML arbitrarios mediante vectores relacionados con URL (1) javascript: o (2) data:"}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.1,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.3},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:nodebb:nodebb:*:*:*:*:*:*:*:*","versionEndIncluding":"0.6.1","matchCriteriaId":"F16BE8B1-E3E6-4509-9752-CFB47BBD08FD"}]}]}],"references":[{"url":"http:\/\/www.openwall.com\/lists\/oss-security\/2015\/04\/10\/10","source":"cve@mitre.org","tags":["Mailing List","Patch","Third Party Advisory"]},{"url":"http:\/\/www.securityfocus.com\/bid\/71824","source":"cve@mitre.org","tags":["Third Party Advisory","VDB Entry"]},{"url":"https:\/\/github.com\/julianlam\/nodebb-plugin-markdown\/commit\/ab7f2684750882f7baefbfa31db8d5aac71e6ec3","source":"cve@mitre.org","tags":["Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2015-9286","sourceIdentifier":"cve@mitre.org","published":"2019-04-30T14:29:00.240","lastModified":"2019-05-01T14:22:21.613","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Controllers.outgoing in controllers\/index.js in NodeBB before 0.7.3 has outgoing XSS."},{"lang":"es","value":"La función Controllers.outgoing en el archivo controllers\/index.js en NodeBB anterior a versión 0.7.3, presenta una vulnerabilidad de tipo XSS."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.1,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.3},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:nodebb:nodebb:*:*:*:*:*:*:*:*","versionEndExcluding":"0.7.3","matchCriteriaId":"377E3CDC-3D39-4068-9758-E8A64A9D8AA2"}]}]}],"references":[{"url":"https:\/\/github.com\/NodeBB\/NodeBB\/compare\/56b79a9...4de7529","source":"cve@mitre.org","tags":["Release Notes","Third Party Advisory"]},{"url":"https:\/\/github.com\/NodeBB\/NodeBB\/pull\/3371","source":"cve@mitre.org","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/vulners.com\/securityvulns\/SECURITYVULNS:DOC:32625","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]},{"url":"https:\/\/www.vulnerability-lab.com\/get_content.php?id=1608","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2020-15149","sourceIdentifier":"security-advisories@github.com","published":"2020-08-20T01:17:12.337","lastModified":"2021-11-18T18:34:43.587","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"NodeBB before version 1.14.3 has a bug introduced in version 1.12.2 in the validation logic that makes it possible to change the password of any user on a running NodeBB forum by sending a specially crafted socket.io call to the server. This could lead to a privilege escalation event due via an account takeover. As a workaround you may cherry-pick the following commit from the project's repository to your running instance of NodeBB: 16cee1b03ba3eee177834a1fdac4aa8a12b39d2a. This is fixed in version 1.14.3."},{"lang":"es","value":"NodeBB versiones anteriores a 1.14.3, presenta un error introducido en la versión 1.12.2 en la lógica de comprobación que hace posible cambiar la contraseña de cualquier usuario en un foro NodeBB en ejecución mediante el envío de una llamada socket.io especialmente diseñada al servidor. Esto podría conllevar a un evento de escalada de privilegios debido a una toma de control de la cuenta. Como solución alternativa, puede seleccionar la siguiente confirmación del repositorio del proyecto en su instancia en ejecución de NodeBB: 16cee1b03ba3eee177834a1fdac4aa8a12b39d2a. Esto es corregido en la versión 1.14.3."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:C\/C:H\/I:H\/A:L","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"CHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"LOW","baseScore":9.9,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.1,"impactScore":6.0},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:C\/C:H\/I:H\/A:L","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"CHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"LOW","baseScore":9.9,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.1,"impactScore":6.0}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:S\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"SINGLE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":6.5},"baseSeverity":"MEDIUM","exploitabilityScore":8.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-287"}]},{"source":"security-advisories@github.com","type":"Secondary","description":[{"lang":"en","value":"CWE-269"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:nodebb:nodebb:*:*:*:*:*:*:*:*","versionStartIncluding":"1.12.2","versionEndExcluding":"1.14.3","matchCriteriaId":"1A40F1AF-6D61-48FD-84F1-68578FF119C1"}]}]}],"references":[{"url":"http:\/\/packetstormsecurity.com\/files\/159560\/NodeBB-Forum-1.14.2-Account-Takeover.html","source":"security-advisories@github.com","tags":["Third Party Advisory","VDB Entry"]},{"url":"https:\/\/github.com\/NodeBB\/NodeBB\/commit\/c2477d9d5ffc43e5ffeb537ea2ceb4ce9592aa39","source":"security-advisories@github.com","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/NodeBB\/NodeBB\/security\/advisories\/GHSA-hr66-c8pg-5mg7","source":"security-advisories@github.com","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/zeroauth.ltd\/blog\/2020\/08\/20\/proof-of-concept-exploit-for-cve-2020-15149-nodebb-arbitrary-user-password-change\/","source":"security-advisories@github.com","tags":["Third Party Advisory"]}]}},{"cve":{"id":"CVE-2021-43786","sourceIdentifier":"security-advisories@github.com","published":"2021-11-29T20:15:08.133","lastModified":"2022-10-27T19:13:01.800","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Nodebb is an open source Node.js based forum software. In affected versions incorrect logic present in the token verification step unintentionally allowed master token access to the API. The vulnerability has been patch as of v1.18.5. Users are advised to upgrade as soon as possible."},{"lang":"es","value":"Nodebb es un software de foro de código abierto basado en Node.js. En las versiones afectadas, una lógica incorrecta presente en el paso de verificación del token permitía involuntariamente el acceso del token maestro a la API. La vulnerabilidad ha sido parcheada a partir de la versión v1.18.5. Se recomienda a usuarios que actualicen lo antes posible"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":7.5,"baseSeverity":"HIGH"},"exploitabilityScore":3.9,"impactScore":3.6},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.8,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.9}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:N\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":5.0},"baseSeverity":"MEDIUM","exploitabilityScore":10.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"security-advisories@github.com","type":"Primary","description":[{"lang":"en","value":"CWE-287"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:nodebb:nodebb:*:*:*:*:*:*:*:*","versionStartIncluding":"1.15.0","versionEndIncluding":"1.18.4","matchCriteriaId":"688C48BA-FEEB-401F-B323-B2E5DCDE248F"}]}]}],"references":[{"url":"https:\/\/blog.sonarsource.com\/nodebb-remote-code-execution-with-one-shot\/","source":"security-advisories@github.com","tags":["Exploit","Third Party Advisory"]},{"url":"https:\/\/github.com\/NodeBB\/NodeBB\/commit\/04dab1d550cdebf4c1567bca9a51f8b9ca48a500","source":"security-advisories@github.com","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/NodeBB\/NodeBB\/releases\/tag\/v1.18.5","source":"security-advisories@github.com","tags":["Release Notes","Third Party Advisory"]},{"url":"https:\/\/github.com\/NodeBB\/NodeBB\/security\/advisories\/GHSA-hf2m-j98r-4fqw","source":"security-advisories@github.com","tags":["Third Party Advisory"]}]}},{"cve":{"id":"CVE-2021-43787","sourceIdentifier":"security-advisories@github.com","published":"2021-11-29T20:15:08.190","lastModified":"2022-10-27T19:45:21.277","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Nodebb is an open source Node.js based forum software. In affected versions a prototype pollution vulnerability in the uploader module allowed a malicious user to inject arbitrary data (i.e. javascript) into the DOM, theoretically allowing for an account takeover when used in conjunction with a path traversal vulnerability disclosed at the same time as this report. The vulnerability has been patched as of v1.18.5. Users are advised to upgrade as soon as possible."},{"lang":"es","value":"Nodebb es un software de foros de código abierto basado en Node.js. En las versiones afectadas, una vulnerabilidad de contaminación del prototipo en el módulo uploader permitía a un usuario malicioso inyectar datos arbitrarios (es decir, javascript) en el DOM, teóricamente permitiendo una toma de control de la cuenta cuando era usada junto con una vulnerabilidad de salto de ruta revelada al mismo tiempo que este informe. La vulnerabilidad ha sido parcheada a partir de la versión 1.18.5. Se aconseja a usuarios que actualicen lo antes posible"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.1,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.7},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.0,"baseSeverity":"CRITICAL"},"exploitabilityScore":2.3,"impactScore":6.0}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.3},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-1321"},{"lang":"en","value":"CWE-79"}]},{"source":"security-advisories@github.com","type":"Secondary","description":[{"lang":"en","value":"CWE-1321"},{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:nodebb:nodebb:*:*:*:*:*:*:*:*","versionStartIncluding":"1.15.5","versionEndIncluding":"1.18.4","matchCriteriaId":"6B1C4028-557A-4F42-B371-0FF7377AE52A"}]}]}],"references":[{"url":"https:\/\/blog.sonarsource.com\/nodebb-remote-code-execution-with-one-shot\/","source":"security-advisories@github.com","tags":["Exploit","Third Party Advisory"]},{"url":"https:\/\/github.com\/NodeBB\/NodeBB\/commit\/1783f918bc19568f421473824461ff2ed7755e4c","source":"security-advisories@github.com","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/NodeBB\/NodeBB\/releases\/tag\/v1.18.5","source":"security-advisories@github.com","tags":["Patch","Release Notes","Third Party Advisory"]},{"url":"https:\/\/github.com\/NodeBB\/NodeBB\/security\/advisories\/GHSA-wx69-rvg3-x7fc","source":"security-advisories@github.com","tags":["Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2021-43788","sourceIdentifier":"security-advisories@github.com","published":"2021-11-29T20:15:08.253","lastModified":"2022-10-27T19:32:51.133","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Nodebb is an open source Node.js based forum software. Prior to v1.18.5, a path traversal vulnerability was present that allowed users to access JSON files outside of the expected `languages\/` directory. The vulnerability has been patched as of v1.18.5. Users are advised to upgrade as soon as possible."},{"lang":"es","value":"Nodebb es un software de foro de código abierto basado en Node.js. En versiones anteriores a v1.18.5, se presentaba una vulnerabilidad de salto de ruta que permitía a usuarios acceder a archivos JSON fuera del directorio esperado \"languages\/\". La vulnerabilidad ha sido parcheada a partir de la versión v1.18.5. Se aconseja a usuarios que actualicen lo antes posible"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:C\/C:L\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":5.0,"baseSeverity":"MEDIUM"},"exploitabilityScore":3.1,"impactScore":1.4},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:C\/C:L\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":5.0,"baseSeverity":"MEDIUM"},"exploitabilityScore":3.1,"impactScore":1.4}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:S\/C:P\/I:N\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"SINGLE","confidentialityImpact":"PARTIAL","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":4.0},"baseSeverity":"MEDIUM","exploitabilityScore":8.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"security-advisories@github.com","type":"Primary","description":[{"lang":"en","value":"CWE-22"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:nodebb:nodebb:*:*:*:*:*:*:*:*","versionStartIncluding":"1.0.4","versionEndIncluding":"1.18.4","matchCriteriaId":"6B0118EF-AB2D-420C-A454-405F2058F38A"}]}]}],"references":[{"url":"https:\/\/blog.sonarsource.com\/nodebb-remote-code-execution-with-one-shot\/","source":"security-advisories@github.com","tags":["Exploit","Third Party Advisory"]},{"url":"https:\/\/github.com\/NodeBB\/NodeBB\/commit\/c8b2fc46dc698db687379106b3f01c71b80f495f","source":"security-advisories@github.com","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/NodeBB\/NodeBB\/releases\/tag\/v1.18.5","source":"security-advisories@github.com","tags":["Release Notes","Third Party Advisory"]},{"url":"https:\/\/github.com\/NodeBB\/NodeBB\/security\/advisories\/GHSA-pfj7-2qfw-vwgm","source":"security-advisories@github.com","tags":["Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-36045","sourceIdentifier":"security-advisories@github.com","published":"2022-08-31T15:15:08.857","lastModified":"2022-09-06T18:09:53.523","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"NodeBB Forum Software is powered by Node.js and supports either Redis, MongoDB, or a PostgreSQL database. It utilizes web sockets for instant interactions and real-time notifications. `utils.generateUUID`, a helper function available in essentially all versions of NodeBB (as far back as v1.0.1 and potentially earlier) used a cryptographically insecure Pseudo-random number generator (`Math.random()`), which meant that a specially crafted script combined with multiple invocations of the password reset functionality could enable an attacker to correctly calculate the reset code for an account they do not have access to. This vulnerability impacts all installations of NodeBB. The vulnerability allows for an attacker to take over any account without the involvement of the victim, and as such, the remediation should be applied immediately (either via NodeBB upgrade or cherry-pick of the specific changeset. The vulnerability has been patched in version 2.x and 1.19.x. There is no known workaround, but the patch sets listed above will fully patch the vulnerability."},{"lang":"es","value":"El software de foros NodeBB está impulsado por Node.js y es compatible con Redis, MongoDB o una base de datos PostgreSQL. Utiliza web sockets para interacciones instantáneas y notificaciones en tiempo real. `utils.generateUUID`, una función de ayuda disponible en prácticamente todas las versiones de NodeBB (desde la v1.0.1 y potencialmente antes) utilizaba un generador de números pseudoaleatorios criptográficamente inseguro (`Math.random()`), lo que significaba que un script especialmente diseñado combinado con múltiples invocaciones de la funcionalidad de restablecimiento de contraseña podía permitir a un atacante calcular correctamente el código de restablecimiento para una cuenta a la que no tuviera acceso. Esta vulnerabilidad afecta a todas las instalaciones de NodeBB. La vulnerabilidad permite a un atacante tomar el control de cualquier cuenta sin la participación de la víctima, y como tal, la remediación debe ser aplicada inmediatamente (ya sea a través de la actualización de NodeBB o cherry-pick del conjunto de cambios específicos. La vulnerabilidad ha sido parcheada en las versiones 2.x y 1.19.x. No hay una solución conocida, pero los conjuntos de parches listados arriba parcharán completamente la vulnerabilidad"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.8,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.9},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:H\/PR:N\/UI:N\/S:C\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"HIGH","privilegesRequired":"NONE","userInteraction":"NONE","scope":"CHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.0,"baseSeverity":"CRITICAL"},"exploitabilityScore":2.2,"impactScore":6.0}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-338"}]},{"source":"security-advisories@github.com","type":"Secondary","description":[{"lang":"en","value":"CWE-330"},{"lang":"en","value":"CWE-338"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:nodebb:nodebb:*:*:*:*:*:*:*:*","versionEndExcluding":"1.19.8","matchCriteriaId":"7C8C6F6C-436C-48C1-B4E5-BBEF11C6C417"},{"vulnerable":true,"criteria":"cpe:2.3:a:nodebb:nodebb:2.0.0:*:*:*:*:*:*:*","matchCriteriaId":"2A75FB8D-A0A2-4888-A241-CE7BB2D081F6"}]}]}],"references":[{"url":"https:\/\/github.com\/NodeBB\/NodeBB\/commit\/81e3c1ba488d03371a5ce8d0ebb5c5803026e0f9","source":"security-advisories@github.com","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/NodeBB\/NodeBB\/commit\/e802fab87f94a13f397f04cfe6068f2f7ddf7888","source":"security-advisories@github.com","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/NodeBB\/NodeBB\/security\/advisories\/GHSA-p4cc-w597-6cpm","source":"security-advisories@github.com","tags":["Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-36076","sourceIdentifier":"security-advisories@github.com","published":"2022-09-02T13:15:08.847","lastModified":"2022-09-08T03:23:11.413","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"NodeBB Forum Software is powered by Node.js and supports either Redis, MongoDB, or a PostgreSQL database. Due to an unnecessarily strict conditional in the code handling the first step of the SSO process, the pre-existing logic that added (and later checked) a nonce was inadvertently rendered opt-in instead of opt-out. This re-exposed a vulnerability in that a specially crafted Man-in-the-Middle (MITM) attack could theoretically take over another user account during the single sign-on process. The issue has been fully patched in version 1.17.2."},{"lang":"es","value":"El software de foros NodeBB funciona con Node.js y soporta Redis, MongoDB o una base de datos PostgreSQL. Debido a un condicional innecesariamente estricto en el código que maneja el primer paso del proceso de SSO, la lógica preexistente que agregaba (y luego verificaba) un nonce es convertido inadvertidamente en opt-in en lugar de opt-out. Esto Re expuso una vulnerabilidad en la que un ataque de tipo Man-in-the-Middle (MITM) especialmente diseñado podría teóricamente tomar el control de otra cuenta de usuario durante el proceso de inicio de sesión único. El problema ha sido completamente parcheado en la versión 1.17.2"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:H\/PR:N\/UI:R\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"HIGH","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":7.5,"baseSeverity":"HIGH"},"exploitabilityScore":1.6,"impactScore":5.9},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":8.8,"baseSeverity":"HIGH"},"exploitabilityScore":2.8,"impactScore":5.9}]},"weaknesses":[{"source":"security-advisories@github.com","type":"Primary","description":[{"lang":"en","value":"CWE-352"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:nodebb:nodebb:*:*:*:*:*:*:*:*","versionEndExcluding":"1.17.2","matchCriteriaId":"AEDC91B9-9893-4291-86CE-33A92DB28E54"}]}]}],"references":[{"url":"https:\/\/blogs.opera.com\/security\/2022\/03\/bug-bounty-adventures-a-nodebb-0-day\/","source":"security-advisories@github.com","tags":["Exploit","Third Party Advisory"]},{"url":"https:\/\/github.com\/NodeBB\/NodeBB\/commit\/a2400f6baff44cb2996487bcd0cc6e2acc74b3d4","source":"security-advisories@github.com","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/NodeBB\/NodeBB\/security\/advisories\/GHSA-xmgg-fx9p-prq6","source":"security-advisories@github.com","tags":["Exploit","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-3978","sourceIdentifier":"cna@vuldb.com","published":"2022-11-13T14:15:10.487","lastModified":"2023-11-07T03:52:03.423","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"A vulnerability, which was classified as problematic, was found in NodeBB up to 2.5.7. This affects an unknown part of the file \/register\/abort. The manipulation leads to cross-site request forgery. It is possible to initiate the attack remotely. Upgrading to version 2.5.8 is able to address this issue. The name of the patch is 2f9d8c350e54543f608d3d4c8e1a49bbb6cdea38. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-213555."},{"lang":"es","value":"Una vulnerabilidad fue encontrada en NodeBB hasta 2.5.7 y clasificada como problemática. Esto afecta a una parte desconocida del archivo \/register\/abort. La manipulación conduce a cross-site request forgery. Es posible iniciar el ataque de forma remota. La actualización a la versión 2.5.8 puede solucionar este problema. El nombre del parche es 2f9d8c350e54543f608d3d4c8e1a49bbb6cdea38. Se recomienda actualizar el componente afectado. El identificador asociado de esta vulnerabilidad es VDB-213555."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:U\/C:N\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"UNCHANGED","confidentialityImpact":"NONE","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":4.3,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":1.4},{"source":"cna@vuldb.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:U\/C:N\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"UNCHANGED","confidentialityImpact":"NONE","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":4.3,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":1.4}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-352"}]},{"source":"cna@vuldb.com","type":"Secondary","description":[{"lang":"en","value":"CWE-863"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:nodebb:nodebb:*:*:*:*:*:*:*:*","versionEndExcluding":"2.5.8","matchCriteriaId":"5FB1FA81-94BA-4943-B016-35E191A9682B"}]}]}],"references":[{"url":"https:\/\/github.com\/NodeBB\/NodeBB\/commit\/2f9d8c350e54543f608d3d4c8e1a49bbb6cdea38","source":"cna@vuldb.com","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/NodeBB\/NodeBB\/issues\/11017","source":"cna@vuldb.com","tags":["Exploit","Issue Tracking","Third Party Advisory"]},{"url":"https:\/\/github.com\/NodeBB\/NodeBB\/releases\/tag\/v2.5.8","source":"cna@vuldb.com","tags":["Release Notes","Third Party Advisory"]},{"url":"https:\/\/vuldb.com\/?id.213555","source":"cna@vuldb.com","tags":["Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-46164","sourceIdentifier":"security-advisories@github.com","published":"2022-12-05T21:15:10.443","lastModified":"2023-11-07T03:55:03.443","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"NodeBB is an open source Node.js based forum software. Due to a plain object with a prototype being used in socket.io message handling a specially crafted payload can be used to impersonate other users and takeover accounts. This vulnerability has been patched in version 2.6.1. Users are advised to upgrade. Users unable to upgrade may cherry-pick commit `48d143921753914da45926cca6370a92ed0c46b8` into their codebase to patch the exploit.\n"},{"lang":"es","value":"NodeBB es un software de foro de código abierto basado en Node.js. Debido a que se utiliza un objeto simple con un prototipo en el manejo de mensajes de socket.io, se puede usar un payload especialmente manipulado para hacerse pasar por otros usuarios y tomar control de cuentas. Esta vulnerabilidad ha sido parcheada en la versión 2.6.1. Se recomienda a los usuarios que actualicen. Los usuarios que no puedan actualizar pueden seleccionar el commit `48d143921753914da45926cca6370a92ed0c46b8` en su código base para parchear el exploit."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.8,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.9},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:L","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"LOW","baseScore":9.4,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.5}]},"weaknesses":[{"source":"security-advisories@github.com","type":"Primary","description":[{"lang":"en","value":"CWE-665"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:nodebb:nodebb:*:*:*:*:*:*:*:*","versionEndExcluding":"2.6.1","matchCriteriaId":"ACBD3E19-5D50-4C0F-9CDA-AE5A240AF776"}]}]}],"references":[{"url":"https:\/\/github.com\/NodeBB\/NodeBB\/commit\/48d143921753914da45926cca6370a92ed0c46b8","source":"security-advisories@github.com","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/NodeBB\/NodeBB\/security\/advisories\/GHSA-rf3g-v8p5-p675","source":"security-advisories@github.com","tags":["Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2023-26045","sourceIdentifier":"security-advisories@github.com","published":"2023-07-24T22:15:10.033","lastModified":"2023-08-31T19:15:08.797","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"NodeBB is Node.js based forum software. Starting in version 2.5.0 and prior to version 2.8.7, due to the use of the object destructuring assignment syntax in the user export code path, combined with a path traversal vulnerability, a specially crafted payload could invoke the user export logic to arbitrarily execute javascript files on the local disk. This issue is patched in version 2.8.7. As a workaround, site maintainers can cherry pick the fix into their codebase to patch the exploit."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.8,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.9},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:C\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"CHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":10.0,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":6.0}]},"weaknesses":[{"source":"security-advisories@github.com","type":"Primary","description":[{"lang":"en","value":"CWE-22"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:nodebb:nodebb:*:*:*:*:*:node.js:*:*","versionStartIncluding":"2.5.0","versionEndExcluding":"2.8.7","matchCriteriaId":"1227286D-9A80-4D3B-AC16-D52EE964A13E"}]}]}],"references":[{"url":"https:\/\/github.com\/NodeBB\/NodeBB\/commit\/ec58700f6dff8e5b4af1544f6205ec362b593092","source":"security-advisories@github.com","tags":["Patch"]},{"url":"https:\/\/github.com\/NodeBB\/NodeBB\/security\/advisories\/GHSA-vh2g-6c4x-5hmp","source":"security-advisories@github.com","tags":["Vendor Advisory"]},{"url":"https:\/\/security.netapp.com\/advisory\/ntap-20230831-0004\/","source":"security-advisories@github.com"}]}},{"cve":{"id":"CVE-2023-2850","sourceIdentifier":"report@snyk.io","published":"2023-07-25T12:15:10.837","lastModified":"2023-08-07T16:58:57.517","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"NodeBB is affected by a Cross-Site WebSocket Hijacking vulnerability due to missing validation of the request origin. Exploitation of this vulnerability allows certain user information to be extracted by attacker."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":4.7,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":1.4},{"source":"report@snyk.io","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":4.7,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":1.4}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-346"}]},{"source":"report@snyk.io","type":"Secondary","description":[{"lang":"en","value":"CWE-1385"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:nodebb:nodebb:*:*:*:*:*:*:*:*","versionEndExcluding":"2.8.13","matchCriteriaId":"8F25C5F7-B985-40D3-AD78-46E8264A4D7A"},{"vulnerable":true,"criteria":"cpe:2.3:a:nodebb:nodebb:*:*:*:*:*:*:*:*","versionStartIncluding":"3.0.0","versionEndExcluding":"3.1.3","matchCriteriaId":"2E60CBF3-000A-4CFE-AB1F-F1CC25A650DB"}]}]}],"references":[{"url":"https:\/\/github.com\/NodeBB\/NodeBB\/commit\/51096ad2345fb1d1380bec0a447113489ef6c359","source":"report@snyk.io","tags":["Patch"]},{"url":"https:\/\/github.com\/NodeBB\/NodeBB\/releases\/tag\/v3.1.3","source":"report@snyk.io","tags":["Release Notes"]},{"url":"https:\/\/github.com\/NodeBB\/NodeBB\/security\/advisories\/GHSA-4qcv-qf38-5j3j","source":"report@snyk.io","tags":["Patch","Vendor Advisory"]}]}},{"cve":{"id":"CVE-2023-43187","sourceIdentifier":"cve@mitre.org","published":"2023-09-27T15:19:33.370","lastModified":"2023-09-28T17:43:53.387","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"A remote code execution (RCE) vulnerability in the xmlrpc.php endpoint of NodeBB Inc NodeBB forum software prior to v1.18.6 allows attackers to execute arbitrary code via crafted XML-RPC requests."},{"lang":"es","value":"Una vulnerabilidad de ejecución remota de código (RCE) en el endpoint xmlrpc.php del software del foro NodeBB Inc de NodeBB anterior a v1.18.6 permite a los atacantes ejecutar código arbitrario a través de solicitudes XML-RPC manipuladas."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.8,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.9}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-91"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:nodebb:nodebb:*:*:*:*:*:*:*:*","versionEndExcluding":"1.18.6","matchCriteriaId":"BEB38CBD-8D29-48F2-A9C6-061120BAB414"}]}]}],"references":[{"url":"https:\/\/github.com\/jagat-singh-chaudhary\/CVE\/blob\/main\/CVE-2023-43187","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2023-30591","sourceIdentifier":"info@starlabs.sg","published":"2023-09-29T06:15:09.870","lastModified":"2023-10-02T18:19:47.023","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Denial-of-service in NodeBB <= v2.8.10 allows unauthenticated attackers to trigger a crash, when invoking `eventName.startsWith()` or `eventName.toString()`, while processing Socket.IO messages via crafted Socket.IO messages containing array or object type for the event name respectively."},{"lang":"es","value":"La denegación de servicio en NodeBB en versiones &lt;=2.8.10 permite a atacantes no autenticados provocar un fallo al invocar `eventName.startsWith()` o `eventName.toString()`, mientras procesan mensajes Socket.IO a través de mensajes Socket.IO manipulados que contienen una matriz o un tipo de objeto para el nombre del evento, respectivamente."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:N\/I:N\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"NONE","integrityImpact":"NONE","availabilityImpact":"HIGH","baseScore":7.5,"baseSeverity":"HIGH"},"exploitabilityScore":3.9,"impactScore":3.6},{"source":"info@starlabs.sg","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:N\/I:N\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"NONE","integrityImpact":"NONE","availabilityImpact":"HIGH","baseScore":7.5,"baseSeverity":"HIGH"},"exploitabilityScore":3.9,"impactScore":3.6}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-754"}]},{"source":"info@starlabs.sg","type":"Secondary","description":[{"lang":"en","value":"CWE-241"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:nodebb:nodebb:*:*:*:*:*:*:*:*","versionEndIncluding":"2.8.10","matchCriteriaId":"99BDD6A9-80DA-4181-84F6-C78E05E0AA97"}]}]}],"references":[{"url":"https:\/\/github.com\/NodeBB\/NodeBB\/commit\/37b48b82a4bc7680c6e4c42647209010cb239c2c","source":"info@starlabs.sg","tags":["Patch"]},{"url":"https:\/\/github.com\/NodeBB\/NodeBB\/commit\/4d2d76897a02e7068ab74c81d17a2febfae8bfb9","source":"info@starlabs.sg","tags":["Patch"]},{"url":"https:\/\/github.com\/NodeBB\/NodeBB\/commit\/830f142b7aea2e597294a84d52c05aab3a3539ca","source":"info@starlabs.sg","tags":["Patch"]},{"url":"https:\/\/starlabs.sg\/advisories\/23\/23-30591\/","source":"info@starlabs.sg","tags":["Third Party Advisory"]}]}}]}
+{
+    "resultsPerPage": 14,
+    "startIndex": 0,
+    "totalResults": 14,
+    "format": "NVD_CVE",
+    "version": "2.0",
+    "timestamp": "2024-04-30T10:48:59.480",
+    "vulnerabilities": [
+        {
+            "cve": {
+                "id": "CVE-2015-3296",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2017-09-21T14:29:00.183",
+                "lastModified": "2017-09-28T17:06:54.370",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Multiple cross-site scripting (XSS) vulnerabilities in NodeBB before 0.7 allow remote attackers to inject arbitrary web script or HTML via vectors related to (1) javascript: or (2) data: URLs."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "M\u00faltiples vulnerabilidades de tipo Cross-Site Scripting (XSS) en NodeBB en versiones anteriores a la 0.7 permiten que atacantes remotos inyecten scripts web o HTML arbitrarios mediante vectores relacionados con URL (1) javascript: o (2) data:"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.1,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:nodebb:nodebb:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "0.6.1",
+                                        "matchCriteriaId": "F16BE8B1-E3E6-4509-9752-CFB47BBD08FD"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://www.openwall.com/lists/oss-security/2015/04/10/10",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Mailing List",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "http://www.securityfocus.com/bid/71824",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory",
+                            "VDB Entry"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/julianlam/nodebb-plugin-markdown/commit/ab7f2684750882f7baefbfa31db8d5aac71e6ec3",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2015-9286",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2019-04-30T14:29:00.240",
+                "lastModified": "2019-05-01T14:22:21.613",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Controllers.outgoing in controllers/index.js in NodeBB before 0.7.3 has outgoing XSS."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "La funci\u00f3n Controllers.outgoing en el archivo controllers/index.js en NodeBB anterior a versi\u00f3n 0.7.3, presenta una vulnerabilidad de tipo XSS."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.1,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:nodebb:nodebb:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "0.7.3",
+                                        "matchCriteriaId": "377E3CDC-3D39-4068-9758-E8A64A9D8AA2"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/NodeBB/NodeBB/compare/56b79a9...4de7529",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Release Notes",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/NodeBB/NodeBB/pull/3371",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://vulners.com/securityvulns/SECURITYVULNS:DOC:32625",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.vulnerability-lab.com/get_content.php?id=1608",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2020-15149",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2020-08-20T01:17:12.337",
+                "lastModified": "2021-11-18T18:34:43.587",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "NodeBB before version 1.14.3 has a bug introduced in version 1.12.2 in the validation logic that makes it possible to change the password of any user on a running NodeBB forum by sending a specially crafted socket.io call to the server. This could lead to a privilege escalation event due via an account takeover. As a workaround you may cherry-pick the following commit from the project's repository to your running instance of NodeBB: 16cee1b03ba3eee177834a1fdac4aa8a12b39d2a. This is fixed in version 1.14.3."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "NodeBB versiones anteriores a 1.14.3, presenta un error introducido en la versi\u00f3n 1.12.2 en la l\u00f3gica de comprobaci\u00f3n que hace posible cambiar la contrase\u00f1a de cualquier usuario en un foro NodeBB en ejecuci\u00f3n mediante el env\u00edo de una llamada socket.io especialmente dise\u00f1ada al servidor. Esto podr\u00eda conllevar a un evento de escalada de privilegios debido a una toma de control de la cuenta. Como soluci\u00f3n alternativa, puede seleccionar la siguiente confirmaci\u00f3n del repositorio del proyecto en su instancia en ejecuci\u00f3n de NodeBB: 16cee1b03ba3eee177834a1fdac4aa8a12b39d2a. Esto es corregido en la versi\u00f3n 1.14.3."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:L",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "LOW",
+                                "baseScore": 9.9,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.1,
+                            "impactScore": 6.0
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:L",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "LOW",
+                                "baseScore": 9.9,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.1,
+                            "impactScore": 6.0
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 6.5
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-287"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-269"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:nodebb:nodebb:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "1.12.2",
+                                        "versionEndExcluding": "1.14.3",
+                                        "matchCriteriaId": "1A40F1AF-6D61-48FD-84F1-68578FF119C1"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://packetstormsecurity.com/files/159560/NodeBB-Forum-1.14.2-Account-Takeover.html",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Third Party Advisory",
+                            "VDB Entry"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/NodeBB/NodeBB/commit/c2477d9d5ffc43e5ffeb537ea2ceb4ce9592aa39",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/NodeBB/NodeBB/security/advisories/GHSA-hr66-c8pg-5mg7",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://zeroauth.ltd/blog/2020/08/20/proof-of-concept-exploit-for-cve-2020-15149-nodebb-arbitrary-user-password-change/",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-43786",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2021-11-29T20:15:08.133",
+                "lastModified": "2022-10-27T19:13:01.800",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Nodebb is an open source Node.js based forum software. In affected versions incorrect logic present in the token verification step unintentionally allowed master token access to the API. The vulnerability has been patch as of v1.18.5. Users are advised to upgrade as soon as possible."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Nodebb es un software de foro de c\u00f3digo abierto basado en Node.js. En las versiones afectadas, una l\u00f3gica incorrecta presente en el paso de verificaci\u00f3n del token permit\u00eda involuntariamente el acceso del token maestro a la API. La vulnerabilidad ha sido parcheada a partir de la versi\u00f3n v1.18.5. Se recomienda a usuarios que actualicen lo antes posible"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 7.5,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 3.6
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.8,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-287"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:nodebb:nodebb:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "1.15.0",
+                                        "versionEndIncluding": "1.18.4",
+                                        "matchCriteriaId": "688C48BA-FEEB-401F-B323-B2E5DCDE248F"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://blog.sonarsource.com/nodebb-remote-code-execution-with-one-shot/",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/NodeBB/NodeBB/commit/04dab1d550cdebf4c1567bca9a51f8b9ca48a500",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/NodeBB/NodeBB/releases/tag/v1.18.5",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Release Notes",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/NodeBB/NodeBB/security/advisories/GHSA-hf2m-j98r-4fqw",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-43787",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2021-11-29T20:15:08.190",
+                "lastModified": "2022-10-27T19:45:21.277",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Nodebb is an open source Node.js based forum software. In affected versions a prototype pollution vulnerability in the uploader module allowed a malicious user to inject arbitrary data (i.e. javascript) into the DOM, theoretically allowing for an account takeover when used in conjunction with a path traversal vulnerability disclosed at the same time as this report. The vulnerability has been patched as of v1.18.5. Users are advised to upgrade as soon as possible."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Nodebb es un software de foros de c\u00f3digo abierto basado en Node.js. En las versiones afectadas, una vulnerabilidad de contaminaci\u00f3n del prototipo en el m\u00f3dulo uploader permit\u00eda a un usuario malicioso inyectar datos arbitrarios (es decir, javascript) en el DOM, te\u00f3ricamente permitiendo una toma de control de la cuenta cuando era usada junto con una vulnerabilidad de salto de ruta revelada al mismo tiempo que este informe. La vulnerabilidad ha sido parcheada a partir de la versi\u00f3n 1.18.5. Se aconseja a usuarios que actualicen lo antes posible"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.1,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.7
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.0,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 6.0
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-1321"
+                            },
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-1321"
+                            },
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:nodebb:nodebb:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "1.15.5",
+                                        "versionEndIncluding": "1.18.4",
+                                        "matchCriteriaId": "6B1C4028-557A-4F42-B371-0FF7377AE52A"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://blog.sonarsource.com/nodebb-remote-code-execution-with-one-shot/",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/NodeBB/NodeBB/commit/1783f918bc19568f421473824461ff2ed7755e4c",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/NodeBB/NodeBB/releases/tag/v1.18.5",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch",
+                            "Release Notes",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/NodeBB/NodeBB/security/advisories/GHSA-wx69-rvg3-x7fc",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-43788",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2021-11-29T20:15:08.253",
+                "lastModified": "2022-10-27T19:32:51.133",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Nodebb is an open source Node.js based forum software. Prior to v1.18.5, a path traversal vulnerability was present that allowed users to access JSON files outside of the expected `languages/` directory. The vulnerability has been patched as of v1.18.5. Users are advised to upgrade as soon as possible."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Nodebb es un software de foro de c\u00f3digo abierto basado en Node.js. En versiones anteriores a v1.18.5, se presentaba una vulnerabilidad de salto de ruta que permit\u00eda a usuarios acceder a archivos JSON fuera del directorio esperado \"languages/\". La vulnerabilidad ha sido parcheada a partir de la versi\u00f3n v1.18.5. Se aconseja a usuarios que actualicen lo antes posible"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.0,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 3.1,
+                            "impactScore": 1.4
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.0,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 3.1,
+                            "impactScore": 1.4
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:S/C:P/I:N/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-22"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:nodebb:nodebb:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "1.0.4",
+                                        "versionEndIncluding": "1.18.4",
+                                        "matchCriteriaId": "6B0118EF-AB2D-420C-A454-405F2058F38A"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://blog.sonarsource.com/nodebb-remote-code-execution-with-one-shot/",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/NodeBB/NodeBB/commit/c8b2fc46dc698db687379106b3f01c71b80f495f",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/NodeBB/NodeBB/releases/tag/v1.18.5",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Release Notes",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/NodeBB/NodeBB/security/advisories/GHSA-pfj7-2qfw-vwgm",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-36045",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2022-08-31T15:15:08.857",
+                "lastModified": "2022-09-06T18:09:53.523",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "NodeBB Forum Software is powered by Node.js and supports either Redis, MongoDB, or a PostgreSQL database. It utilizes web sockets for instant interactions and real-time notifications. `utils.generateUUID`, a helper function available in essentially all versions of NodeBB (as far back as v1.0.1 and potentially earlier) used a cryptographically insecure Pseudo-random number generator (`Math.random()`), which meant that a specially crafted script combined with multiple invocations of the password reset functionality could enable an attacker to correctly calculate the reset code for an account they do not have access to. This vulnerability impacts all installations of NodeBB. The vulnerability allows for an attacker to take over any account without the involvement of the victim, and as such, the remediation should be applied immediately (either via NodeBB upgrade or cherry-pick of the specific changeset. The vulnerability has been patched in version 2.x and 1.19.x. There is no known workaround, but the patch sets listed above will fully patch the vulnerability."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "El software de foros NodeBB est\u00e1 impulsado por Node.js y es compatible con Redis, MongoDB o una base de datos PostgreSQL. Utiliza web sockets para interacciones instant\u00e1neas y notificaciones en tiempo real. `utils.generateUUID`, una funci\u00f3n de ayuda disponible en pr\u00e1cticamente todas las versiones de NodeBB (desde la v1.0.1 y potencialmente antes) utilizaba un generador de n\u00fameros pseudoaleatorios criptogr\u00e1ficamente inseguro (`Math.random()`), lo que significaba que un script especialmente dise\u00f1ado combinado con m\u00faltiples invocaciones de la funcionalidad de restablecimiento de contrase\u00f1a pod\u00eda permitir a un atacante calcular correctamente el c\u00f3digo de restablecimiento para una cuenta a la que no tuviera acceso. Esta vulnerabilidad afecta a todas las instalaciones de NodeBB. La vulnerabilidad permite a un atacante tomar el control de cualquier cuenta sin la participaci\u00f3n de la v\u00edctima, y como tal, la remediaci\u00f3n debe ser aplicada inmediatamente (ya sea a trav\u00e9s de la actualizaci\u00f3n de NodeBB o cherry-pick del conjunto de cambios espec\u00edficos. La vulnerabilidad ha sido parcheada en las versiones 2.x y 1.19.x. No hay una soluci\u00f3n conocida, pero los conjuntos de parches listados arriba parchar\u00e1n completamente la vulnerabilidad"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.8,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.9
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "HIGH",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.0,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 2.2,
+                            "impactScore": 6.0
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-338"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-330"
+                            },
+                            {
+                                "lang": "en",
+                                "value": "CWE-338"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:nodebb:nodebb:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "1.19.8",
+                                        "matchCriteriaId": "7C8C6F6C-436C-48C1-B4E5-BBEF11C6C417"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:nodebb:nodebb:2.0.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "2A75FB8D-A0A2-4888-A241-CE7BB2D081F6"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/NodeBB/NodeBB/commit/81e3c1ba488d03371a5ce8d0ebb5c5803026e0f9",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/NodeBB/NodeBB/commit/e802fab87f94a13f397f04cfe6068f2f7ddf7888",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/NodeBB/NodeBB/security/advisories/GHSA-p4cc-w597-6cpm",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-36076",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2022-09-02T13:15:08.847",
+                "lastModified": "2022-09-08T03:23:11.413",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "NodeBB Forum Software is powered by Node.js and supports either Redis, MongoDB, or a PostgreSQL database. Due to an unnecessarily strict conditional in the code handling the first step of the SSO process, the pre-existing logic that added (and later checked) a nonce was inadvertently rendered opt-in instead of opt-out. This re-exposed a vulnerability in that a specially crafted Man-in-the-Middle (MITM) attack could theoretically take over another user account during the single sign-on process. The issue has been fully patched in version 1.17.2."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "El software de foros NodeBB funciona con Node.js y soporta Redis, MongoDB o una base de datos PostgreSQL. Debido a un condicional innecesariamente estricto en el c\u00f3digo que maneja el primer paso del proceso de SSO, la l\u00f3gica preexistente que agregaba (y luego verificaba) un nonce es convertido inadvertidamente en opt-in en lugar de opt-out. Esto Re expuso una vulnerabilidad en la que un ataque de tipo Man-in-the-Middle (MITM) especialmente dise\u00f1ado podr\u00eda te\u00f3ricamente tomar el control de otra cuenta de usuario durante el proceso de inicio de sesi\u00f3n \u00fanico. El problema ha sido completamente parcheado en la versi\u00f3n 1.17.2"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "HIGH",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 7.5,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 1.6,
+                            "impactScore": 5.9
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 8.8,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 5.9
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-352"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:nodebb:nodebb:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "1.17.2",
+                                        "matchCriteriaId": "AEDC91B9-9893-4291-86CE-33A92DB28E54"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://blogs.opera.com/security/2022/03/bug-bounty-adventures-a-nodebb-0-day/",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/NodeBB/NodeBB/commit/a2400f6baff44cb2996487bcd0cc6e2acc74b3d4",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/NodeBB/NodeBB/security/advisories/GHSA-xmgg-fx9p-prq6",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Exploit",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-3978",
+                "sourceIdentifier": "cna@vuldb.com",
+                "published": "2022-11-13T14:15:10.487",
+                "lastModified": "2023-11-07T03:52:03.423",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "A vulnerability, which was classified as problematic, was found in NodeBB up to 2.5.7. This affects an unknown part of the file /register/abort. The manipulation leads to cross-site request forgery. It is possible to initiate the attack remotely. Upgrading to version 2.5.8 is able to address this issue. The name of the patch is 2f9d8c350e54543f608d3d4c8e1a49bbb6cdea38. It is recommended to upgrade the affected component. The associated identifier of this vulnerability is VDB-213555."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Una vulnerabilidad fue encontrada en NodeBB hasta 2.5.7 y clasificada como problem\u00e1tica. Esto afecta a una parte desconocida del archivo /register/abort. La manipulaci\u00f3n conduce a cross-site request forgery. Es posible iniciar el ataque de forma remota. La actualizaci\u00f3n a la versi\u00f3n 2.5.8 puede solucionar este problema. El nombre del parche es 2f9d8c350e54543f608d3d4c8e1a49bbb6cdea38. Se recomienda actualizar el componente afectado. El identificador asociado de esta vulnerabilidad es VDB-213555."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 1.4
+                        },
+                        {
+                            "source": "cna@vuldb.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 1.4
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-352"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "cna@vuldb.com",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-863"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:nodebb:nodebb:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "2.5.8",
+                                        "matchCriteriaId": "5FB1FA81-94BA-4943-B016-35E191A9682B"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/NodeBB/NodeBB/commit/2f9d8c350e54543f608d3d4c8e1a49bbb6cdea38",
+                        "source": "cna@vuldb.com",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/NodeBB/NodeBB/issues/11017",
+                        "source": "cna@vuldb.com",
+                        "tags": [
+                            "Exploit",
+                            "Issue Tracking",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/NodeBB/NodeBB/releases/tag/v2.5.8",
+                        "source": "cna@vuldb.com",
+                        "tags": [
+                            "Release Notes",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://vuldb.com/?id.213555",
+                        "source": "cna@vuldb.com",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-46164",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2022-12-05T21:15:10.443",
+                "lastModified": "2023-11-07T03:55:03.443",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "NodeBB is an open source Node.js based forum software. Due to a plain object with a prototype being used in socket.io message handling a specially crafted payload can be used to impersonate other users and takeover accounts. This vulnerability has been patched in version 2.6.1. Users are advised to upgrade. Users unable to upgrade may cherry-pick commit `48d143921753914da45926cca6370a92ed0c46b8` into their codebase to patch the exploit.\n"
+                    },
+                    {
+                        "lang": "es",
+                        "value": "NodeBB es un software de foro de c\u00f3digo abierto basado en Node.js. Debido a que se utiliza un objeto simple con un prototipo en el manejo de mensajes de socket.io, se puede usar un payload especialmente manipulado para hacerse pasar por otros usuarios y tomar control de cuentas. Esta vulnerabilidad ha sido parcheada en la versi\u00f3n 2.6.1. Se recomienda a los usuarios que actualicen. Los usuarios que no puedan actualizar pueden seleccionar el commit `48d143921753914da45926cca6370a92ed0c46b8` en su c\u00f3digo base para parchear el exploit."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.8,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.9
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "LOW",
+                                "baseScore": 9.4,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.5
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-665"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:nodebb:nodebb:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "2.6.1",
+                                        "matchCriteriaId": "ACBD3E19-5D50-4C0F-9CDA-AE5A240AF776"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/NodeBB/NodeBB/commit/48d143921753914da45926cca6370a92ed0c46b8",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/NodeBB/NodeBB/security/advisories/GHSA-rf3g-v8p5-p675",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-26045",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2023-07-24T22:15:10.033",
+                "lastModified": "2023-08-31T19:15:08.797",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "NodeBB is Node.js based forum software. Starting in version 2.5.0 and prior to version 2.8.7, due to the use of the object destructuring assignment syntax in the user export code path, combined with a path traversal vulnerability, a specially crafted payload could invoke the user export logic to arbitrarily execute javascript files on the local disk. This issue is patched in version 2.8.7. As a workaround, site maintainers can cherry pick the fix into their codebase to patch the exploit."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.8,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.9
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 10.0,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 6.0
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-22"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:nodebb:nodebb:*:*:*:*:*:node.js:*:*",
+                                        "versionStartIncluding": "2.5.0",
+                                        "versionEndExcluding": "2.8.7",
+                                        "matchCriteriaId": "1227286D-9A80-4D3B-AC16-D52EE964A13E"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/NodeBB/NodeBB/commit/ec58700f6dff8e5b4af1544f6205ec362b593092",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/NodeBB/NodeBB/security/advisories/GHSA-vh2g-6c4x-5hmp",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://security.netapp.com/advisory/ntap-20230831-0004/",
+                        "source": "security-advisories@github.com"
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-2850",
+                "sourceIdentifier": "report@snyk.io",
+                "published": "2023-07-25T12:15:10.837",
+                "lastModified": "2023-08-07T16:58:57.517",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "NodeBB is affected by a Cross-Site WebSocket Hijacking vulnerability due to missing validation of the request origin. Exploitation of this vulnerability allows certain user information to be extracted by attacker."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.7,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 1.4
+                        },
+                        {
+                            "source": "report@snyk.io",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.7,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 1.4
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-346"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "report@snyk.io",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-1385"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:nodebb:nodebb:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "2.8.13",
+                                        "matchCriteriaId": "8F25C5F7-B985-40D3-AD78-46E8264A4D7A"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:nodebb:nodebb:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "3.0.0",
+                                        "versionEndExcluding": "3.1.3",
+                                        "matchCriteriaId": "2E60CBF3-000A-4CFE-AB1F-F1CC25A650DB"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/NodeBB/NodeBB/commit/51096ad2345fb1d1380bec0a447113489ef6c359",
+                        "source": "report@snyk.io",
+                        "tags": [
+                            "Patch"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/NodeBB/NodeBB/releases/tag/v3.1.3",
+                        "source": "report@snyk.io",
+                        "tags": [
+                            "Release Notes"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/NodeBB/NodeBB/security/advisories/GHSA-4qcv-qf38-5j3j",
+                        "source": "report@snyk.io",
+                        "tags": [
+                            "Patch",
+                            "Vendor Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-43187",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2023-09-27T15:19:33.370",
+                "lastModified": "2023-09-28T17:43:53.387",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "A remote code execution (RCE) vulnerability in the xmlrpc.php endpoint of NodeBB Inc NodeBB forum software prior to v1.18.6 allows attackers to execute arbitrary code via crafted XML-RPC requests."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Una vulnerabilidad de ejecuci\u00f3n remota de c\u00f3digo (RCE) en el endpoint xmlrpc.php del software del foro NodeBB Inc de NodeBB anterior a v1.18.6 permite a los atacantes ejecutar c\u00f3digo arbitrario a trav\u00e9s de solicitudes XML-RPC manipuladas."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.8,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.9
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-91"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:nodebb:nodebb:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "1.18.6",
+                                        "matchCriteriaId": "BEB38CBD-8D29-48F2-A9C6-061120BAB414"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/jagat-singh-chaudhary/CVE/blob/main/CVE-2023-43187",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-30591",
+                "sourceIdentifier": "info@starlabs.sg",
+                "published": "2023-09-29T06:15:09.870",
+                "lastModified": "2023-10-02T18:19:47.023",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Denial-of-service in NodeBB <= v2.8.10 allows unauthenticated attackers to trigger a crash, when invoking `eventName.startsWith()` or `eventName.toString()`, while processing Socket.IO messages via crafted Socket.IO messages containing array or object type for the event name respectively."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "La denegaci\u00f3n de servicio en NodeBB en versiones &lt;=2.8.10 permite a atacantes no autenticados provocar un fallo al invocar `eventName.startsWith()` o `eventName.toString()`, mientras procesan mensajes Socket.IO a trav\u00e9s de mensajes Socket.IO manipulados que contienen una matriz o un tipo de objeto para el nombre del evento, respectivamente."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 7.5,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 3.6
+                        },
+                        {
+                            "source": "info@starlabs.sg",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 7.5,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 3.6
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-754"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "info@starlabs.sg",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-241"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:nodebb:nodebb:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "2.8.10",
+                                        "matchCriteriaId": "99BDD6A9-80DA-4181-84F6-C78E05E0AA97"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/NodeBB/NodeBB/commit/37b48b82a4bc7680c6e4c42647209010cb239c2c",
+                        "source": "info@starlabs.sg",
+                        "tags": [
+                            "Patch"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/NodeBB/NodeBB/commit/4d2d76897a02e7068ab74c81d17a2febfae8bfb9",
+                        "source": "info@starlabs.sg",
+                        "tags": [
+                            "Patch"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/NodeBB/NodeBB/commit/830f142b7aea2e597294a84d52c05aab3a3539ca",
+                        "source": "info@starlabs.sg",
+                        "tags": [
+                            "Patch"
+                        ]
+                    },
+                    {
+                        "url": "https://starlabs.sg/advisories/23/23-30591/",
+                        "source": "info@starlabs.sg",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

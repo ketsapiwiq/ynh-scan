@@ -1,1 +1,1802 @@
-{"resultsPerPage":13,"startIndex":0,"totalResults":13,"format":"NVD_CVE","version":"2.0","timestamp":"2024-04-30T10:50:44.933","vulnerabilities":[{"cve":{"id":"CVE-2019-13051","sourceIdentifier":"cve@mitre.org","published":"2019-10-09T12:15:10.327","lastModified":"2019-10-11T15:27:16.937","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Pi-Hole 4.3 allows Command Injection."},{"lang":"es","value":"Pi-Hole versión 4.3, permite la inyección de comandos."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":8.8,"baseSeverity":"HIGH"},"exploitabilityScore":2.8,"impactScore":5.9}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":6.8},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-78"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:pi-hole:pi-hole:4.3:*:*:*:*:*:*:*","matchCriteriaId":"6A09802A-726D-49EF-A7F9-43FA6F6D42BA"}]}]}],"references":[{"url":"https:\/\/github.com\/pi-hole\/AdminLTE\/pull\/974","source":"cve@mitre.org","tags":["Third Party Advisory"]},{"url":"https:\/\/github.com\/pi-hole\/pi-hole\/commits\/master","source":"cve@mitre.org","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/pi-hole.net\/2019\/09\/21\/pi-hole-4-3-2-release-notes\/","source":"cve@mitre.org","tags":["Release Notes","Vendor Advisory"]},{"url":"https:\/\/pi-hole.net\/blog\/","source":"cve@mitre.org","tags":["Release Notes","Vendor Advisory"]}]}},{"cve":{"id":"CVE-2020-11108","sourceIdentifier":"cve@mitre.org","published":"2020-05-11T15:15:11.353","lastModified":"2020-05-27T18:15:12.877","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"The Gravity updater in Pi-hole through 4.4 allows an authenticated adversary to upload arbitrary files. This can be abused for Remote Code Execution by writing to a PHP file in the web directory. (Also, it can be used in conjunction with the sudo rule for the www-data user to escalate privileges to root.) The code error is in gravity_DownloadBlocklistFromUrl in gravity.sh."},{"lang":"es","value":"El actualizador de Gravity en Pi-hole versiones hasta 4.4, permite a un adversario autenticado cargar archivos arbitrarios. Esto puede ser abusado para una Ejecución de Código Remota al escribir en un archivo PHP en el directorio web. (Además, puede ser usado en conjunto con la regla de sudo para el usuario de www-data para escalar privilegios a root). El error de código está en la función gravity_DownloadBlocklistFromUrl en el archivo gravity.sh."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":8.8,"baseSeverity":"HIGH"},"exploitabilityScore":2.8,"impactScore":5.9}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:S\/C:C\/I:C\/A:C","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"SINGLE","confidentialityImpact":"COMPLETE","integrityImpact":"COMPLETE","availabilityImpact":"COMPLETE","baseScore":9.0},"baseSeverity":"HIGH","exploitabilityScore":8.0,"impactScore":10.0,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-434"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:pi-hole:pi-hole:*:*:*:*:*:*:*:*","versionEndIncluding":"4.4","matchCriteriaId":"EADFA361-BFFB-418B-B63B-8E9633AD6EC1"}]}]}],"references":[{"url":"http:\/\/packetstormsecurity.com\/files\/157623\/Pi-hole-4.4-Remote-Code-Execution.html","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory","VDB Entry"]},{"url":"http:\/\/packetstormsecurity.com\/files\/157624\/Pi-hole-4.4-Remote-Code-Execution-Privilege-Escalation.html","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory","VDB Entry"]},{"url":"http:\/\/packetstormsecurity.com\/files\/157748\/Pi-Hole-heisenbergCompensator-Blocklist-OS-Command-Execution.html","source":"cve@mitre.org"},{"url":"http:\/\/packetstormsecurity.com\/files\/157839\/Pi-hole-4.4.0-Remote-Code-Execution.html","source":"cve@mitre.org"},{"url":"https:\/\/frichetten.com\/blog\/cve-2020-11108-pihole-rce\/","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]},{"url":"https:\/\/github.com\/Frichetten\/CVE-2020-11108-PoC","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2020-8816","sourceIdentifier":"cve@mitre.org","published":"2020-05-29T19:15:10.983","lastModified":"2022-07-12T17:42:04.277","vulnStatus":"Analyzed","cisaExploitAdd":"2021-12-10","cisaActionDue":"2022-06-10","cisaRequiredAction":"Apply updates per vendor instructions.","cisaVulnerabilityName":"Pi-Hole AdminLTE Remote Code Execution Vulnerability","descriptions":[{"lang":"en","value":"Pi-hole Web v4.3.2 (aka AdminLTE) allows Remote Code Execution by privileged dashboard users via a crafted DHCP static lease."},{"lang":"es","value":"Pi-hole Web versión v4.3.2 (también se conoce como AdminLTE), permite una Ejecución de Código Remota por usuarios privilegiados del panel por medio de un arrendamiento estático de DHCP diseñado."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:H\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"HIGH","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":7.2,"baseSeverity":"HIGH"},"exploitabilityScore":1.2,"impactScore":5.9}],"cvssMetricV30":[{"source":"cve@mitre.org","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:H\/UI:N\/S:C\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"HIGH","userInteraction":"NONE","scope":"CHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.1,"baseSeverity":"CRITICAL"},"exploitabilityScore":2.3,"impactScore":6.0}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:S\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"SINGLE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":6.5},"baseSeverity":"MEDIUM","exploitabilityScore":8.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-78"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:pi-hole:pi-hole:*:*:*:*:*:*:*:*","versionEndIncluding":"4.3.2","matchCriteriaId":"468DD2EB-29A0-4C5D-8F6D-A24FC237406C"}]}]}],"references":[{"url":"http:\/\/packetstormsecurity.com\/files\/157861\/Pi-Hole-4.3.2-DHCP-MAC-OS-Command-Execution.html","source":"cve@mitre.org","tags":["Third Party Advisory","VDB Entry"]},{"url":"http:\/\/packetstormsecurity.com\/files\/158737\/Pi-hole-4.3.2-Remote-Code-Execution.html","source":"cve@mitre.org","tags":["Third Party Advisory","VDB Entry"]},{"url":"https:\/\/github.com\/pi-hole\/AdminLTE\/commits\/master","source":"cve@mitre.org","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/pi-hole\/AdminLTE\/pull\/1165","source":"cve@mitre.org","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/pi-hole\/AdminLTE\/releases\/tag\/v4.3.3","source":"cve@mitre.org","tags":["Release Notes","Third Party Advisory"]},{"url":"https:\/\/natedotred.wordpress.com\/2020\/03\/28\/cve-2020-8816-pi-hole-remote-code-execution\/","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]},{"url":"https:\/\/twitter.com\/Nate_Kappa\/status\/1243900213665902592?s=20","source":"cve@mitre.org","tags":["Press/Media Coverage"]}]}},{"cve":{"id":"CVE-2020-14971","sourceIdentifier":"cve@mitre.org","published":"2020-06-23T14:15:12.950","lastModified":"2021-07-21T11:39:23.747","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Pi-hole through 5.0 allows code injection in piholedhcp (the Static DHCP Leases section) by modifying Teleporter backup files and then restoring them. This occurs in settings.php. To exploit this, an attacker would request a backup of limited files via teleporter.php. These are placed into a .tar.gz archive. The attacker then modifies the host parameter in dnsmasq.d files, and then compresses and uploads these files again."},{"lang":"es","value":"Pi-hole versiones hasta 5.0, permite una inyección de código en piholedhcp (la sección Static DHCP Leases) al modificar los archivos de respaldo de Teleporter y luego restaurándolos. Esto ocurre en el archivo settings.php. Para explotar esto, un atacante solicitaría una copia de seguridad de archivos limitados por medio del archivo teleporter.php. Estos se colocan en un archivo .tar.gz. Luego, el atacante modifica el parámetro del host en los archivos dnsmasq.d, y luego comprime y carga estos archivos de nuevo"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:L\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"LOCAL","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":7.8,"baseSeverity":"HIGH"},"exploitabilityScore":1.8,"impactScore":5.9}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:L\/AC:L\/Au:N\/C:P\/I:P\/A:P","accessVector":"LOCAL","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":4.6},"baseSeverity":"MEDIUM","exploitabilityScore":3.9,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-862"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:pi-hole:pi-hole:*:*:*:*:*:*:*:*","versionEndIncluding":"5.0","matchCriteriaId":"E14E10D0-24B9-452D-B508-3FFF2B487A60"}]}]}],"references":[{"url":"https:\/\/blog.telspace.co.za\/2020\/06\/pi-hole-code-injection-cve-2020-14971.html","source":"cve@mitre.org","tags":["Third Party Advisory"]},{"url":"https:\/\/github.com\/pi-hole\/AdminLTE\/commit\/8f6e1365b6dec0ae1aa0b0b15b102c9133f347e5","source":"cve@mitre.org","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/pi-hole\/AdminLTE\/commit\/c949516ee15fa6a9b0c8511cc4c4d6b0893f3e69","source":"cve@mitre.org","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/pi-hole\/AdminLTE\/pull\/1443","source":"cve@mitre.org","tags":["Third Party Advisory"]}]}},{"cve":{"id":"CVE-2020-12620","sourceIdentifier":"cve@mitre.org","published":"2020-07-30T14:15:12.043","lastModified":"2021-07-21T11:39:23.747","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Pi-hole 4.4 allows a user able to write to \/etc\/pihole\/dns-servers.conf to escalate privileges through command injection (shell metacharacters after an IP address)."},{"lang":"es","value":"Pi-hole versión 4.4, permite a un usuario escribir en el archivo  \/etc\/pihole\/dns-servers.conf para escalar privilegios por medio de una inyección de comandos (metacaracteres de shell después de una dirección IP)"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:L\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"LOCAL","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":7.8,"baseSeverity":"HIGH"},"exploitabilityScore":1.8,"impactScore":5.9}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:L\/AC:L\/Au:N\/C:C\/I:C\/A:C","accessVector":"LOCAL","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"COMPLETE","integrityImpact":"COMPLETE","availabilityImpact":"COMPLETE","baseScore":7.2},"baseSeverity":"HIGH","exploitabilityScore":3.9,"impactScore":10.0,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-78"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:pi-hole:pi-hole:*:*:*:*:*:*:*:*","versionEndExcluding":"5.0","matchCriteriaId":"43679D50-754D-4ED8-AFFF-57EFE6160D58"}]}]}],"references":[{"url":"https:\/\/0xpanic.github.io\/2020\/07\/21\/Pihole.html","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]},{"url":"https:\/\/github.com\/pi-hole\/pi-hole","source":"cve@mitre.org","tags":["Third Party Advisory"]},{"url":"https:\/\/pi-hole.net\/","source":"cve@mitre.org","tags":["Vendor Advisory"]}]}},{"cve":{"id":"CVE-2020-14162","sourceIdentifier":"cve@mitre.org","published":"2020-07-30T14:15:12.153","lastModified":"2021-07-21T11:39:23.747","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"An issue was discovered in Pi-Hole through 5.0. The local www-data user has sudo privileges to execute the pihole core script as root without a password, which could allow an attacker to obtain root access via shell metacharacters to this script's setdns command."},{"lang":"es","value":"Se detectó un problema en Pi-Hole versiones hasta 5.0. El usuario local de www-data presenta privilegios de sudo para ejecutar el script core de pihole como root sin una contraseña, lo que podría permitir a un atacante obtener acceso root por medio de metacaracteres de shell en este comando setdns de script"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:L\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"LOCAL","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":7.8,"baseSeverity":"HIGH"},"exploitabilityScore":1.8,"impactScore":5.9}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:L\/AC:L\/Au:N\/C:C\/I:C\/A:C","accessVector":"LOCAL","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"COMPLETE","integrityImpact":"COMPLETE","availabilityImpact":"COMPLETE","baseScore":7.2},"baseSeverity":"HIGH","exploitabilityScore":3.9,"impactScore":10.0,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-269"},{"lang":"en","value":"CWE-78"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:pi-hole:pi-hole:*:*:*:*:*:*:*:*","versionEndExcluding":"5.1","matchCriteriaId":"C94A32E2-C02F-4D7A-8F90-49C8BFE699A8"}]}]}],"references":[{"url":"https:\/\/0xpanic.github.io\/2020\/07\/21\/Pihole.html","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]},{"url":"https:\/\/docs.pi-hole.net\/core\/pihole-command\/","source":"cve@mitre.org","tags":["Vendor Advisory"]}]}},{"cve":{"id":"CVE-2020-35659","sourceIdentifier":"cve@mitre.org","published":"2020-12-24T16:15:15.490","lastModified":"2020-12-28T17:40:47.570","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"The DNS query log in Pi-hole before 5.2.2 is vulnerable to stored XSS. An attacker with the ability to directly or indirectly query DNS with a malicious hostname can cause arbitrary JavaScript to execute when the Pi-hole administrator visits the Query Log or Long-term data Query Log page."},{"lang":"es","value":"El registro de consultas DNS en Pi-hole versiones anteriores a 5.2.2, es vulnerable a un ataque XSS almacenado.&#xa0;Un atacante con la capacidad de consultar directa o indirectamente el DNS con un hostname malicioso puede causar que se ejecute un JavaScript arbitrario cuando el administrador de Pi-hole visita la página Query Log o Long-term data Query Log"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.1,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.3},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:pi-hole:pi-hole:*:*:*:*:*:*:*:*","versionEndExcluding":"5.2.2","matchCriteriaId":"494247D2-D97C-4464-BFDE-FC5E784A473F"}]}]}],"references":[{"url":"https:\/\/blog.mirch.io\/2020\/12\/24\/pihole-xss\/","source":"cve@mitre.org","tags":["Third Party Advisory"]},{"url":"https:\/\/discourse.pi-hole.net\/t\/pi-hole-core-web-v5-2-2-and-ftl-v5-3-3-released\/41998","source":"cve@mitre.org","tags":["Release Notes","Vendor Advisory"]},{"url":"https:\/\/github.com\/pi-hole\/AdminLTE\/pull\/1665","source":"cve@mitre.org","tags":["Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2020-35591","sourceIdentifier":"cve@mitre.org","published":"2021-02-18T20:15:12.290","lastModified":"2021-02-26T18:52:59.193","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Pi-hole 5.0, 5.1, and 5.1.1 allows Session Fixation. The application does not generate a new session cookie after the user is logged in. A malicious user is able to create a new session cookie value and inject it to a victim. After the victim logs in, the injected cookie becomes valid, giving the attacker access to the user's account through the active session."},{"lang":"es","value":"Pi-hole versiones 5.0, 5.1 y 5.1.1, permite una Fijación de Sesión.&#xa0;La aplicación no genera una nueva cookie de sesión después de que el usuario inicia sesión. Un usuario malicioso puede crear un nuevo valor de cookie de sesión e inyectarlo a una víctima.&#xa0;Una vez que la víctima inicia sesión, la cookie inyectada se vuelve válida y le otorga al atacante acceso a la cuenta del usuario por medio de la sesión activa"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:U\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.5}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:P\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":5.8},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":4.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-384"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:pi-hole:pi-hole:5.0:*:*:*:*:*:*:*","matchCriteriaId":"CD5CED91-AF0E-4ADE-809E-9AF90A555088"},{"vulnerable":true,"criteria":"cpe:2.3:a:pi-hole:pi-hole:5.1:*:*:*:*:*:*:*","matchCriteriaId":"C9012FBB-21B7-4BBB-8651-DF36FAA8F4C2"},{"vulnerable":true,"criteria":"cpe:2.3:a:pi-hole:pi-hole:5.1.1:*:*:*:*:*:*:*","matchCriteriaId":"84256119-F680-4519-B2DF-FF6B2AD54C65"}]}]}],"references":[{"url":"https:\/\/discourse.pi-hole.net\/c\/announcements\/5","source":"cve@mitre.org","tags":["Release Notes","Vendor Advisory"]},{"url":"https:\/\/n4nj0.github.io\/advisories\/pi-hole-multiple-vulnerabilities-i\/","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2020-35592","sourceIdentifier":"cve@mitre.org","published":"2021-02-18T20:15:12.370","lastModified":"2021-02-24T15:42:57.983","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Pi-hole 5.0, 5.1, and 5.1.1 allows XSS via the Options header to the admin\/ URI. A remote user is able to inject arbitrary web script or HTML due to incorrect sanitization of user-supplied data and achieve a Reflected Cross-Site Scripting attack against other users and steal the session cookie."},{"lang":"es","value":"Pi-hole versiones 5.0, 5.1 y 5.1.1, permite un ataque de tipo XSS por medio del encabezado Options al URI admin\/.&#xa0;Un usuario remoto puede inyectar un script web o HTML arbitrario debido a un saneamiento incorrecto de los datos suministrados por el usuario y lograr un ataque de tipo Cross-Site Scripting Reflejado contra otros usuarios y robar la cookie de sesión"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.3,"impactScore":2.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:S\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"SINGLE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":3.5},"baseSeverity":"LOW","exploitabilityScore":6.8,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:pi-hole:pi-hole:5.0:*:*:*:*:*:*:*","matchCriteriaId":"CD5CED91-AF0E-4ADE-809E-9AF90A555088"},{"vulnerable":true,"criteria":"cpe:2.3:a:pi-hole:pi-hole:5.1:*:*:*:*:*:*:*","matchCriteriaId":"C9012FBB-21B7-4BBB-8651-DF36FAA8F4C2"},{"vulnerable":true,"criteria":"cpe:2.3:a:pi-hole:pi-hole:5.1.1:*:*:*:*:*:*:*","matchCriteriaId":"84256119-F680-4519-B2DF-FF6B2AD54C65"}]}]}],"references":[{"url":"https:\/\/discourse.pi-hole.net\/c\/announcements\/5","source":"cve@mitre.org","tags":["Release Notes","Vendor Advisory"]},{"url":"https:\/\/n4nj0.github.io\/advisories\/pi-hole-multiple-vulnerabilities-i\/","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2021-29449","sourceIdentifier":"security-advisories@github.com","published":"2021-04-14T22:15:12.513","lastModified":"2022-08-02T16:01:10.047","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Pi-hole is a Linux network-level advertisement and Internet tracker blocking application. Multiple privilege escalation vulnerabilities were discovered in version 5.2.4 of Pi-hole core. See the referenced GitHub security advisory for details."},{"lang":"es","value":"Pi-hole es una aplicación de bloqueo de anuncios y rastreadores de Internet a nivel de red de Linux.&#xa0;Se detectaron múltiples vulnerabilidades de escalada de privilegios en versión 5.2.4 de Pi-hole core.&#xa0;Véase el aviso de seguridad de GitHub al que se hace referencia para más detalles"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:L\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"LOCAL","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":7.8,"baseSeverity":"HIGH"},"exploitabilityScore":1.8,"impactScore":5.9},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:L\/AC:L\/PR:L\/UI:N\/S:C\/C:L\/I:L\/A:L","attackVector":"LOCAL","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"LOW","baseScore":6.3,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.0,"impactScore":3.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:L\/AC:L\/Au:N\/C:C\/I:C\/A:C","accessVector":"LOCAL","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"COMPLETE","integrityImpact":"COMPLETE","availabilityImpact":"COMPLETE","baseScore":7.2},"baseSeverity":"HIGH","exploitabilityScore":3.9,"impactScore":10.0,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-78"}]},{"source":"security-advisories@github.com","type":"Secondary","description":[{"lang":"en","value":"CWE-269"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:pi-hole:pi-hole:*:*:*:*:*:*:*:*","versionEndIncluding":"5.2.4","matchCriteriaId":"96CDEA47-5675-4873-BC11-486D327423B4"}]}]}],"references":[{"url":"http:\/\/packetstormsecurity.com\/files\/163715\/Pi-Hole-Remove-Commands-Linux-Privilege-Escalation.html","source":"security-advisories@github.com","tags":["Exploit","Third Party Advisory","VDB Entry"]},{"url":"https:\/\/github.com\/pi-hole\/pi-hole\/security\/advisories\/GHSA-3597-244c-wrpj","source":"security-advisories@github.com","tags":["Exploit","Third Party Advisory"]},{"url":"https:\/\/www.compass-security.com\/fileadmin\/Research\/Advisories\/2021-02_CSNC-2021-008_Pi-hole_Privilege_Escalation.txt","source":"security-advisories@github.com","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2021-29448","sourceIdentifier":"security-advisories@github.com","published":"2021-04-15T16:15:14.033","lastModified":"2021-05-14T20:07:30.970","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Pi-hole is a Linux network-level advertisement and Internet tracker blocking application. The Stored XSS exists in the Pi-hole Admin portal, which can be exploited by the malicious actor with the network access to DNS server. See the referenced GitHub security advisory for patch details."},{"lang":"es","value":"Pi-hole es una aplicación de bloqueo de anuncios y rastreadores de Internet a nivel de red de Linux.&#xa0;El ataque XSS Almacenado se presenta en el portal de Administración de Pi-hole, que puede ser explotado por el actor malicioso con acceso de red al servidor DNS.&#xa0;Consulte el aviso de seguridad de GitHub al que se hace referencia para los detalles del parche"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"HIGH","baseScore":8.8,"baseSeverity":"HIGH"},"exploitabilityScore":2.8,"impactScore":5.3},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:U\/C:L\/I:L\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"HIGH","baseScore":7.6,"baseSeverity":"HIGH"},"exploitabilityScore":2.8,"impactScore":4.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:N\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":5.8},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":4.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]},{"source":"security-advisories@github.com","type":"Secondary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:pi-hole:ftldns:5.7:*:*:*:*:*:*:*","matchCriteriaId":"58019EAF-690C-4C97-810A-9A8A4300B14A"},{"vulnerable":true,"criteria":"cpe:2.3:a:pi-hole:pi-hole:5.2.4:*:*:*:*:*:*:*","matchCriteriaId":"62120E3C-0A70-43F9-A442-8F18B43169C9"},{"vulnerable":true,"criteria":"cpe:2.3:a:pi-hole:web_interface:*:*:*:*:*:*:*:*","versionEndExcluding":"5.5","matchCriteriaId":"8F0D090D-0C5F-476F-B857-10C7F5E29349"}]}]}],"references":[{"url":"https:\/\/github.com\/pi-hole\/AdminLTE\/security\/advisories\/GHSA-cwwf-93p7-73j9","source":"security-advisories@github.com","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2021-32706","sourceIdentifier":"security-advisories@github.com","published":"2021-08-04T18:15:09.447","lastModified":"2022-04-25T19:55:34.857","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Pi-hole's Web interface provides a central location to manage a Pi-hole instance and review performance statistics. Prior to Pi-hole Web interface version 5.5.1, the `validDomainWildcard` preg_match filter allows a malicious character through that can be used to execute code, list directories, and overwrite sensitive files. The issue lies in the fact that one of the periods is not escaped, allowing any character to be used in its place. A patch for this vulnerability was released in version 5.5.1."},{"lang":"es","value":"La interfaz web de Pi-hole proporciona una ubicación central para administrar una instancia de Pi-hole y revisar las estadísticas de rendimiento. Anterior a versión 5.5.1 de la interfaz web de Pi-hole, el filtro \"validDomainWildcard\" preg_match  permite el paso de un carácter malicioso que puede ser usado para ejecutar código, listar directorios y sobrescribir archivos confidenciales. El problema radica en que uno de los puntos no se escapa, permitiendo usar cualquier carácter en su lugar. En versión 5.5.1 se publicó un parche para esta vulnerabilidad"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":8.8,"baseSeverity":"HIGH"},"exploitabilityScore":2.8,"impactScore":5.9},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:L\/I:L\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"HIGH","baseScore":7.6,"baseSeverity":"HIGH"},"exploitabilityScore":2.8,"impactScore":4.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:S\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"SINGLE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":6.5},"baseSeverity":"MEDIUM","exploitabilityScore":8.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"NVD-CWE-Other"}]},{"source":"security-advisories@github.com","type":"Secondary","description":[{"lang":"en","value":"CWE-94"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:pi-hole:pi-hole:*:*:*:*:*:*:*:*","versionEndExcluding":"5.5.1","matchCriteriaId":"D796EB7A-F490-48CC-AA78-4C908CB3D3D7"}]}]}],"references":[{"url":"https:\/\/github.com\/pi-hole\/AdminLTE\/releases\/tag\/v5.5.1","source":"security-advisories@github.com","tags":["Release Notes","Third Party Advisory"]},{"url":"https:\/\/github.com\/pi-hole\/AdminLTE\/security\/advisories\/GHSA-5cm9-6p3m-v259","source":"security-advisories@github.com","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2021-32793","sourceIdentifier":"security-advisories@github.com","published":"2021-08-04T18:15:09.557","lastModified":"2021-08-12T15:24:31.387","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Pi-hole's Web interface provides a central location to manage a Pi-hole instance and review performance statistics. Prior to Pi-hole Web interface version 5.5.1, the function to add domains to blocklists or allowlists is vulnerable to a stored cross-site-scripting vulnerability. User input added as a wildcard domain to a blocklist or allowlist is unfiltered in the web interface. Since the payload is stored permanently as a wildcard domain, this is a persistent XSS vulnerability. A remote attacker can therefore attack administrative user accounts through client-side attacks. Pi-hole Web Interface version 5.5.1 contains a patch for this vulnerability."},{"lang":"es","value":"La interfaz web de Pi-hole proporciona una ubicación central para administrar una instancia de Pi-hole y revisar las estadísticas de rendimiento. Anterior a versión 5.5.1 de la interfaz web de Pi-hole, la función para añadir dominios a las listas de bloqueo o a las listas de permitidos es vulnerable a una vulnerabilidad de tipo cross-site-scripting almacenado. La entrada del usuario añadida como dominio comodín a una lista de bloqueo o lista permitida no se filtra en la interfaz web. Dado que la carga útil es almacenado permanentemente como dominio comodín, se trata de una vulnerabilidad de tipo XSS persistente. Por lo tanto, un atacante remoto puede atacar cuentas de usuario administrativas mediante ataques del lado del cliente. La versión 5.5.1 de la interfaz web de Pi-hole contiene un parche para esta vulnerabilidad"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:H\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"HIGH","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":4.8,"baseSeverity":"MEDIUM"},"exploitabilityScore":1.7,"impactScore":2.7},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:H\/UI:R\/S:U\/C:L\/I:L\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"HIGH","userInteraction":"REQUIRED","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"HIGH","baseScore":5.7,"baseSeverity":"MEDIUM"},"exploitabilityScore":0.9,"impactScore":4.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:S\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"SINGLE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":3.5},"baseSeverity":"LOW","exploitabilityScore":6.8,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]},{"source":"security-advisories@github.com","type":"Secondary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:pi-hole:pi-hole:*:*:*:*:*:*:*:*","versionEndExcluding":"5.5.1","matchCriteriaId":"D796EB7A-F490-48CC-AA78-4C908CB3D3D7"}]}]}],"references":[{"url":"https:\/\/github.com\/pi-hole\/AdminLTE\/releases\/tag\/v5.5.1","source":"security-advisories@github.com","tags":["Release Notes","Third Party Advisory"]},{"url":"https:\/\/github.com\/pi-hole\/AdminLTE\/security\/advisories\/GHSA-g3w6-q4fg-p8x8","source":"security-advisories@github.com","tags":["Exploit","Third Party Advisory"]}]}}]}
+{
+    "resultsPerPage": 13,
+    "startIndex": 0,
+    "totalResults": 13,
+    "format": "NVD_CVE",
+    "version": "2.0",
+    "timestamp": "2024-04-30T10:50:44.933",
+    "vulnerabilities": [
+        {
+            "cve": {
+                "id": "CVE-2019-13051",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2019-10-09T12:15:10.327",
+                "lastModified": "2019-10-11T15:27:16.937",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Pi-Hole 4.3 allows Command Injection."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Pi-Hole versi\u00f3n 4.3, permite la inyecci\u00f3n de comandos."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 8.8,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 6.8
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-78"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:pi-hole:pi-hole:4.3:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "6A09802A-726D-49EF-A7F9-43FA6F6D42BA"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/pi-hole/AdminLTE/pull/974",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/pi-hole/pi-hole/commits/master",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://pi-hole.net/2019/09/21/pi-hole-4-3-2-release-notes/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Release Notes",
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://pi-hole.net/blog/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Release Notes",
+                            "Vendor Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2020-11108",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2020-05-11T15:15:11.353",
+                "lastModified": "2020-05-27T18:15:12.877",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "The Gravity updater in Pi-hole through 4.4 allows an authenticated adversary to upload arbitrary files. This can be abused for Remote Code Execution by writing to a PHP file in the web directory. (Also, it can be used in conjunction with the sudo rule for the www-data user to escalate privileges to root.) The code error is in gravity_DownloadBlocklistFromUrl in gravity.sh."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "El actualizador de Gravity en Pi-hole versiones hasta 4.4, permite a un adversario autenticado cargar archivos arbitrarios. Esto puede ser abusado para una Ejecuci\u00f3n de C\u00f3digo Remota al escribir en un archivo PHP en el directorio web. (Adem\u00e1s, puede ser usado en conjunto con la regla de sudo para el usuario de www-data para escalar privilegios a root). El error de c\u00f3digo est\u00e1 en la funci\u00f3n gravity_DownloadBlocklistFromUrl en el archivo gravity.sh."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 8.8,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:S/C:C/I:C/A:C",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "COMPLETE",
+                                "integrityImpact": "COMPLETE",
+                                "availabilityImpact": "COMPLETE",
+                                "baseScore": 9.0
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 8.0,
+                            "impactScore": 10.0,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-434"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:pi-hole:pi-hole:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "4.4",
+                                        "matchCriteriaId": "EADFA361-BFFB-418B-B63B-8E9633AD6EC1"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://packetstormsecurity.com/files/157623/Pi-hole-4.4-Remote-Code-Execution.html",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory",
+                            "VDB Entry"
+                        ]
+                    },
+                    {
+                        "url": "http://packetstormsecurity.com/files/157624/Pi-hole-4.4-Remote-Code-Execution-Privilege-Escalation.html",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory",
+                            "VDB Entry"
+                        ]
+                    },
+                    {
+                        "url": "http://packetstormsecurity.com/files/157748/Pi-Hole-heisenbergCompensator-Blocklist-OS-Command-Execution.html",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "http://packetstormsecurity.com/files/157839/Pi-hole-4.4.0-Remote-Code-Execution.html",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "https://frichetten.com/blog/cve-2020-11108-pihole-rce/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/Frichetten/CVE-2020-11108-PoC",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2020-8816",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2020-05-29T19:15:10.983",
+                "lastModified": "2022-07-12T17:42:04.277",
+                "vulnStatus": "Analyzed",
+                "cisaExploitAdd": "2021-12-10",
+                "cisaActionDue": "2022-06-10",
+                "cisaRequiredAction": "Apply updates per vendor instructions.",
+                "cisaVulnerabilityName": "Pi-Hole AdminLTE Remote Code Execution Vulnerability",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Pi-hole Web v4.3.2 (aka AdminLTE) allows Remote Code Execution by privileged dashboard users via a crafted DHCP static lease."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Pi-hole Web versi\u00f3n v4.3.2 (tambi\u00e9n se conoce como AdminLTE), permite una Ejecuci\u00f3n de C\u00f3digo Remota por usuarios privilegiados del panel por medio de un arrendamiento est\u00e1tico de DHCP dise\u00f1ado."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "HIGH",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 7.2,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 1.2,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "cve@mitre.org",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "HIGH",
+                                "userInteraction": "NONE",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.1,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 6.0
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 6.5
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-78"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:pi-hole:pi-hole:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "4.3.2",
+                                        "matchCriteriaId": "468DD2EB-29A0-4C5D-8F6D-A24FC237406C"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://packetstormsecurity.com/files/157861/Pi-Hole-4.3.2-DHCP-MAC-OS-Command-Execution.html",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory",
+                            "VDB Entry"
+                        ]
+                    },
+                    {
+                        "url": "http://packetstormsecurity.com/files/158737/Pi-hole-4.3.2-Remote-Code-Execution.html",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory",
+                            "VDB Entry"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/pi-hole/AdminLTE/commits/master",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/pi-hole/AdminLTE/pull/1165",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/pi-hole/AdminLTE/releases/tag/v4.3.3",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Release Notes",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://natedotred.wordpress.com/2020/03/28/cve-2020-8816-pi-hole-remote-code-execution/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://twitter.com/Nate_Kappa/status/1243900213665902592?s=20",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Press/Media Coverage"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2020-14971",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2020-06-23T14:15:12.950",
+                "lastModified": "2021-07-21T11:39:23.747",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Pi-hole through 5.0 allows code injection in piholedhcp (the Static DHCP Leases section) by modifying Teleporter backup files and then restoring them. This occurs in settings.php. To exploit this, an attacker would request a backup of limited files via teleporter.php. These are placed into a .tar.gz archive. The attacker then modifies the host parameter in dnsmasq.d files, and then compresses and uploads these files again."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Pi-hole versiones hasta 5.0, permite una inyecci\u00f3n de c\u00f3digo en piholedhcp (la secci\u00f3n Static DHCP Leases) al modificar los archivos de respaldo de Teleporter y luego restaur\u00e1ndolos. Esto ocurre en el archivo settings.php. Para explotar esto, un atacante solicitar\u00eda una copia de seguridad de archivos limitados por medio del archivo teleporter.php. Estos se colocan en un archivo .tar.gz. Luego, el atacante modifica el par\u00e1metro del host en los archivos dnsmasq.d, y luego comprime y carga estos archivos de nuevo"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "LOCAL",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 7.8,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 1.8,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:L/AC:L/Au:N/C:P/I:P/A:P",
+                                "accessVector": "LOCAL",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 4.6
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-862"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:pi-hole:pi-hole:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "5.0",
+                                        "matchCriteriaId": "E14E10D0-24B9-452D-B508-3FFF2B487A60"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://blog.telspace.co.za/2020/06/pi-hole-code-injection-cve-2020-14971.html",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/pi-hole/AdminLTE/commit/8f6e1365b6dec0ae1aa0b0b15b102c9133f347e5",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/pi-hole/AdminLTE/commit/c949516ee15fa6a9b0c8511cc4c4d6b0893f3e69",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/pi-hole/AdminLTE/pull/1443",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2020-12620",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2020-07-30T14:15:12.043",
+                "lastModified": "2021-07-21T11:39:23.747",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Pi-hole 4.4 allows a user able to write to /etc/pihole/dns-servers.conf to escalate privileges through command injection (shell metacharacters after an IP address)."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Pi-hole versi\u00f3n 4.4, permite a un usuario escribir en el archivo  /etc/pihole/dns-servers.conf para escalar privilegios por medio de una inyecci\u00f3n de comandos (metacaracteres de shell despu\u00e9s de una direcci\u00f3n IP)"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "LOCAL",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 7.8,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 1.8,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:L/AC:L/Au:N/C:C/I:C/A:C",
+                                "accessVector": "LOCAL",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "COMPLETE",
+                                "integrityImpact": "COMPLETE",
+                                "availabilityImpact": "COMPLETE",
+                                "baseScore": 7.2
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 10.0,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-78"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:pi-hole:pi-hole:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "5.0",
+                                        "matchCriteriaId": "43679D50-754D-4ED8-AFFF-57EFE6160D58"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://0xpanic.github.io/2020/07/21/Pihole.html",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/pi-hole/pi-hole",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://pi-hole.net/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Vendor Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2020-14162",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2020-07-30T14:15:12.153",
+                "lastModified": "2021-07-21T11:39:23.747",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "An issue was discovered in Pi-Hole through 5.0. The local www-data user has sudo privileges to execute the pihole core script as root without a password, which could allow an attacker to obtain root access via shell metacharacters to this script's setdns command."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Se detect\u00f3 un problema en Pi-Hole versiones hasta 5.0. El usuario local de www-data presenta privilegios de sudo para ejecutar el script core de pihole como root sin una contrase\u00f1a, lo que podr\u00eda permitir a un atacante obtener acceso root por medio de metacaracteres de shell en este comando setdns de script"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "LOCAL",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 7.8,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 1.8,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:L/AC:L/Au:N/C:C/I:C/A:C",
+                                "accessVector": "LOCAL",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "COMPLETE",
+                                "integrityImpact": "COMPLETE",
+                                "availabilityImpact": "COMPLETE",
+                                "baseScore": 7.2
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 10.0,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-269"
+                            },
+                            {
+                                "lang": "en",
+                                "value": "CWE-78"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:pi-hole:pi-hole:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "5.1",
+                                        "matchCriteriaId": "C94A32E2-C02F-4D7A-8F90-49C8BFE699A8"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://0xpanic.github.io/2020/07/21/Pihole.html",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://docs.pi-hole.net/core/pihole-command/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Vendor Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2020-35659",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2020-12-24T16:15:15.490",
+                "lastModified": "2020-12-28T17:40:47.570",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "The DNS query log in Pi-hole before 5.2.2 is vulnerable to stored XSS. An attacker with the ability to directly or indirectly query DNS with a malicious hostname can cause arbitrary JavaScript to execute when the Pi-hole administrator visits the Query Log or Long-term data Query Log page."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "El registro de consultas DNS en Pi-hole versiones anteriores a 5.2.2, es vulnerable a un ataque XSS almacenado.&#xa0;Un atacante con la capacidad de consultar directa o indirectamente el DNS con un hostname malicioso puede causar que se ejecute un JavaScript arbitrario cuando el administrador de Pi-hole visita la p\u00e1gina Query Log o Long-term data Query Log"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.1,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:pi-hole:pi-hole:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "5.2.2",
+                                        "matchCriteriaId": "494247D2-D97C-4464-BFDE-FC5E784A473F"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://blog.mirch.io/2020/12/24/pihole-xss/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://discourse.pi-hole.net/t/pi-hole-core-web-v5-2-2-and-ftl-v5-3-3-released/41998",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Release Notes",
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/pi-hole/AdminLTE/pull/1665",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2020-35591",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2021-02-18T20:15:12.290",
+                "lastModified": "2021-02-26T18:52:59.193",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Pi-hole 5.0, 5.1, and 5.1.1 allows Session Fixation. The application does not generate a new session cookie after the user is logged in. A malicious user is able to create a new session cookie value and inject it to a victim. After the victim logs in, the injected cookie becomes valid, giving the attacker access to the user's account through the active session."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Pi-hole versiones 5.0, 5.1 y 5.1.1, permite una Fijaci\u00f3n de Sesi\u00f3n.&#xa0;La aplicaci\u00f3n no genera una nueva cookie de sesi\u00f3n despu\u00e9s de que el usuario inicia sesi\u00f3n. Un usuario malicioso puede crear un nuevo valor de cookie de sesi\u00f3n e inyectarlo a una v\u00edctima.&#xa0;Una vez que la v\u00edctima inicia sesi\u00f3n, la cookie inyectada se vuelve v\u00e1lida y le otorga al atacante acceso a la cuenta del usuario por medio de la sesi\u00f3n activa"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.5
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:P/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.8
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 4.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-384"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:pi-hole:pi-hole:5.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "CD5CED91-AF0E-4ADE-809E-9AF90A555088"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:pi-hole:pi-hole:5.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "C9012FBB-21B7-4BBB-8651-DF36FAA8F4C2"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:pi-hole:pi-hole:5.1.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "84256119-F680-4519-B2DF-FF6B2AD54C65"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://discourse.pi-hole.net/c/announcements/5",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Release Notes",
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://n4nj0.github.io/advisories/pi-hole-multiple-vulnerabilities-i/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2020-35592",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2021-02-18T20:15:12.370",
+                "lastModified": "2021-02-24T15:42:57.983",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Pi-hole 5.0, 5.1, and 5.1.1 allows XSS via the Options header to the admin/ URI. A remote user is able to inject arbitrary web script or HTML due to incorrect sanitization of user-supplied data and achieve a Reflected Cross-Site Scripting attack against other users and steal the session cookie."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Pi-hole versiones 5.0, 5.1 y 5.1.1, permite un ataque de tipo XSS por medio del encabezado Options al URI admin/.&#xa0;Un usuario remoto puede inyectar un script web o HTML arbitrario debido a un saneamiento incorrecto de los datos suministrados por el usuario y lograr un ataque de tipo Cross-Site Scripting Reflejado contra otros usuarios y robar la cookie de sesi\u00f3n"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 3.5
+                            },
+                            "baseSeverity": "LOW",
+                            "exploitabilityScore": 6.8,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:pi-hole:pi-hole:5.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "CD5CED91-AF0E-4ADE-809E-9AF90A555088"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:pi-hole:pi-hole:5.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "C9012FBB-21B7-4BBB-8651-DF36FAA8F4C2"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:pi-hole:pi-hole:5.1.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "84256119-F680-4519-B2DF-FF6B2AD54C65"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://discourse.pi-hole.net/c/announcements/5",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Release Notes",
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://n4nj0.github.io/advisories/pi-hole-multiple-vulnerabilities-i/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-29449",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2021-04-14T22:15:12.513",
+                "lastModified": "2022-08-02T16:01:10.047",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Pi-hole is a Linux network-level advertisement and Internet tracker blocking application. Multiple privilege escalation vulnerabilities were discovered in version 5.2.4 of Pi-hole core. See the referenced GitHub security advisory for details."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Pi-hole es una aplicaci\u00f3n de bloqueo de anuncios y rastreadores de Internet a nivel de red de Linux.&#xa0;Se detectaron m\u00faltiples vulnerabilidades de escalada de privilegios en versi\u00f3n 5.2.4 de Pi-hole core.&#xa0;V\u00e9ase el aviso de seguridad de GitHub al que se hace referencia para m\u00e1s detalles"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "LOCAL",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 7.8,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 1.8,
+                            "impactScore": 5.9
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:L",
+                                "attackVector": "LOCAL",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "LOW",
+                                "baseScore": 6.3,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.0,
+                            "impactScore": 3.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:L/AC:L/Au:N/C:C/I:C/A:C",
+                                "accessVector": "LOCAL",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "COMPLETE",
+                                "integrityImpact": "COMPLETE",
+                                "availabilityImpact": "COMPLETE",
+                                "baseScore": 7.2
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 10.0,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-78"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-269"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:pi-hole:pi-hole:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "5.2.4",
+                                        "matchCriteriaId": "96CDEA47-5675-4873-BC11-486D327423B4"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://packetstormsecurity.com/files/163715/Pi-Hole-Remove-Commands-Linux-Privilege-Escalation.html",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory",
+                            "VDB Entry"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/pi-hole/pi-hole/security/advisories/GHSA-3597-244c-wrpj",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.compass-security.com/fileadmin/Research/Advisories/2021-02_CSNC-2021-008_Pi-hole_Privilege_Escalation.txt",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-29448",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2021-04-15T16:15:14.033",
+                "lastModified": "2021-05-14T20:07:30.970",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Pi-hole is a Linux network-level advertisement and Internet tracker blocking application. The Stored XSS exists in the Pi-hole Admin portal, which can be exploited by the malicious actor with the network access to DNS server. See the referenced GitHub security advisory for patch details."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Pi-hole es una aplicaci\u00f3n de bloqueo de anuncios y rastreadores de Internet a nivel de red de Linux.&#xa0;El ataque XSS Almacenado se presenta en el portal de Administraci\u00f3n de Pi-hole, que puede ser explotado por el actor malicioso con acceso de red al servidor DNS.&#xa0;Consulte el aviso de seguridad de GitHub al que se hace referencia para los detalles del parche"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 8.8,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 5.3
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 7.6,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 4.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 5.8
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 4.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:pi-hole:ftldns:5.7:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "58019EAF-690C-4C97-810A-9A8A4300B14A"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:pi-hole:pi-hole:5.2.4:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "62120E3C-0A70-43F9-A442-8F18B43169C9"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:pi-hole:web_interface:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "5.5",
+                                        "matchCriteriaId": "8F0D090D-0C5F-476F-B857-10C7F5E29349"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/pi-hole/AdminLTE/security/advisories/GHSA-cwwf-93p7-73j9",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-32706",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2021-08-04T18:15:09.447",
+                "lastModified": "2022-04-25T19:55:34.857",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Pi-hole's Web interface provides a central location to manage a Pi-hole instance and review performance statistics. Prior to Pi-hole Web interface version 5.5.1, the `validDomainWildcard` preg_match filter allows a malicious character through that can be used to execute code, list directories, and overwrite sensitive files. The issue lies in the fact that one of the periods is not escaped, allowing any character to be used in its place. A patch for this vulnerability was released in version 5.5.1."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "La interfaz web de Pi-hole proporciona una ubicaci\u00f3n central para administrar una instancia de Pi-hole y revisar las estad\u00edsticas de rendimiento. Anterior a versi\u00f3n 5.5.1 de la interfaz web de Pi-hole, el filtro \"validDomainWildcard\" preg_match  permite el paso de un car\u00e1cter malicioso que puede ser usado para ejecutar c\u00f3digo, listar directorios y sobrescribir archivos confidenciales. El problema radica en que uno de los puntos no se escapa, permitiendo usar cualquier car\u00e1cter en su lugar. En versi\u00f3n 5.5.1 se public\u00f3 un parche para esta vulnerabilidad"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 8.8,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 5.9
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 7.6,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 4.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 6.5
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "NVD-CWE-Other"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-94"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:pi-hole:pi-hole:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "5.5.1",
+                                        "matchCriteriaId": "D796EB7A-F490-48CC-AA78-4C908CB3D3D7"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/pi-hole/AdminLTE/releases/tag/v5.5.1",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Release Notes",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/pi-hole/AdminLTE/security/advisories/GHSA-5cm9-6p3m-v259",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-32793",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2021-08-04T18:15:09.557",
+                "lastModified": "2021-08-12T15:24:31.387",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Pi-hole's Web interface provides a central location to manage a Pi-hole instance and review performance statistics. Prior to Pi-hole Web interface version 5.5.1, the function to add domains to blocklists or allowlists is vulnerable to a stored cross-site-scripting vulnerability. User input added as a wildcard domain to a blocklist or allowlist is unfiltered in the web interface. Since the payload is stored permanently as a wildcard domain, this is a persistent XSS vulnerability. A remote attacker can therefore attack administrative user accounts through client-side attacks. Pi-hole Web Interface version 5.5.1 contains a patch for this vulnerability."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "La interfaz web de Pi-hole proporciona una ubicaci\u00f3n central para administrar una instancia de Pi-hole y revisar las estad\u00edsticas de rendimiento. Anterior a versi\u00f3n 5.5.1 de la interfaz web de Pi-hole, la funci\u00f3n para a\u00f1adir dominios a las listas de bloqueo o a las listas de permitidos es vulnerable a una vulnerabilidad de tipo cross-site-scripting almacenado. La entrada del usuario a\u00f1adida como dominio comod\u00edn a una lista de bloqueo o lista permitida no se filtra en la interfaz web. Dado que la carga \u00fatil es almacenado permanentemente como dominio comod\u00edn, se trata de una vulnerabilidad de tipo XSS persistente. Por lo tanto, un atacante remoto puede atacar cuentas de usuario administrativas mediante ataques del lado del cliente. La versi\u00f3n 5.5.1 de la interfaz web de Pi-hole contiene un parche para esta vulnerabilidad"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "HIGH",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.8,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 1.7,
+                            "impactScore": 2.7
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:L/I:L/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "HIGH",
+                                "userInteraction": "REQUIRED",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 5.7,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 0.9,
+                            "impactScore": 4.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 3.5
+                            },
+                            "baseSeverity": "LOW",
+                            "exploitabilityScore": 6.8,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:pi-hole:pi-hole:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "5.5.1",
+                                        "matchCriteriaId": "D796EB7A-F490-48CC-AA78-4C908CB3D3D7"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/pi-hole/AdminLTE/releases/tag/v5.5.1",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Release Notes",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/pi-hole/AdminLTE/security/advisories/GHSA-g3w6-q4fg-p8x8",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

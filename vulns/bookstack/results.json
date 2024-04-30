@@ -1,1 +1,2858 @@
-{"resultsPerPage":20,"startIndex":0,"totalResults":20,"format":"NVD_CVE","version":"2.0","timestamp":"2024-04-30T10:39:10.543","vulnerabilities":[{"cve":{"id":"CVE-2017-1000462","sourceIdentifier":"cve@mitre.org","published":"2018-01-03T20:29:00.313","lastModified":"2018-01-17T15:42:24.513","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"BookStack version 0.18.4 is vulnerable to stored cross-site scripting, within the page creation page, which can result in disruption of service and execution of javascript code."},{"lang":"es","value":"BookStack versión 0.18.4 es vulnerable a Cross-Site Scripting (XSS) persistente en la página page creation. Esto puede resultar en la interrupción del servicio y la ejecución de código JavaScript."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.3,"impactScore":2.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:S\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"SINGLE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":3.5},"baseSeverity":"LOW","exploitabilityScore":6.8,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:bookstackapp:bookstack:0.18.4:*:*:*:*:*:*:*","matchCriteriaId":"8DB0589A-8B75-4BCD-BE78-B709DE5E4B67"}]}]}],"references":[{"url":"https:\/\/github.com\/BookStackApp\/BookStack\/issues\/575","source":"cve@mitre.org","tags":["Exploit","Issue Tracking","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2020-5256","sourceIdentifier":"security-advisories@github.com","published":"2020-03-09T16:15:15.750","lastModified":"2020-03-10T13:34:56.837","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"BookStack before version 0.25.5 has a vulnerability where a user could upload PHP files through image upload functions, which would allow them to execute code on the host system remotely. They would then have the permissions of the PHP process. This most impacts scenarios where non-trusted users are given permission to upload images in any area of the application. The issue was addressed in a series of patches in versions 0.25.3, 0.25.4 and 0.25.5. Users should upgrade to at least v0.25.5 to avoid this vulnerability."},{"lang":"es","value":"BookStack versiones anteriores a 0.25.5, presenta una vulnerabilidad donde un usuario puede cargar archivos PHP por medio de funciones de carga de imágenes, lo que le permitiría ejecutar código sobre el sistema host remotamente. Luego tendrían los permisos del proceso de PHP. Esto impacta más a los escenarios donde los usuarios no confiables tienen permiso para cargar imágenes en cualquier área de la aplicación. El problema fue abordado en una serie de parches en las versiones 0.25.3, 0.25.4 y 0.25.5. Los usuarios deben actualizar al menos a la versión v0.25.5 para evitar esta vulnerabilidad."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":8.8,"baseSeverity":"HIGH"},"exploitabilityScore":2.8,"impactScore":5.9},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:H\/PR:L\/UI:R\/S:C\/C:H\/I:H\/A:L","attackVector":"NETWORK","attackComplexity":"HIGH","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"LOW","baseScore":7.9,"baseSeverity":"HIGH"},"exploitabilityScore":1.3,"impactScore":6.0}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:S\/C:C\/I:C\/A:C","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"SINGLE","confidentialityImpact":"COMPLETE","integrityImpact":"COMPLETE","availabilityImpact":"COMPLETE","baseScore":9.0},"baseSeverity":"HIGH","exploitabilityScore":8.0,"impactScore":10.0,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-434"}]},{"source":"security-advisories@github.com","type":"Secondary","description":[{"lang":"en","value":"CWE-95"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:bookstackapp:bookstack:*:*:*:*:*:*:*:*","versionEndExcluding":"0.25.3","matchCriteriaId":"B8B4AD81-4EED-4873-A781-F389F361A132"}]}]}],"references":[{"url":"https:\/\/github.com\/BookStackApp\/BookStack\/releases\/tag\/v0.25.3","source":"security-advisories@github.com","tags":["Release Notes"]},{"url":"https:\/\/github.com\/BookStackApp\/BookStack\/releases\/tag\/v0.25.4","source":"security-advisories@github.com","tags":["Release Notes"]},{"url":"https:\/\/github.com\/BookStackApp\/BookStack\/releases\/tag\/v0.25.5","source":"security-advisories@github.com","tags":["Release Notes"]},{"url":"https:\/\/github.com\/BookStackApp\/BookStack\/security\/advisories\/GHSA-g9rq-x4fj-f5hx","source":"security-advisories@github.com","tags":["Third Party Advisory"]}]}},{"cve":{"id":"CVE-2020-11055","sourceIdentifier":"security-advisories@github.com","published":"2020-05-07T21:15:11.733","lastModified":"2020-05-13T17:30:15.233","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"In BookStack greater than or equal to 0.18.0 and less than 0.29.2, there is an XSS vulnerability in comment creation. A user with permission to create comments could POST HTML directly to the system to be saved in a comment, which would then be executed\/displayed to others users viewing the comment. Through this vulnerability custom JavaScript code could be injected and therefore ran on other user machines. This most impacts scenarios where not-trusted users are given permission to create comments. This has been fixed in 0.29.2."},{"lang":"es","value":"En BookStack versiones posteriores o igual a 0.18.0 y versiones menores a 0.29.2, se presenta una vulnerabilidad de tipo XSS en la creación de comentarios. Un usuario con permiso para crear comentarios podría PUBLICAR HTML directamente en el sistema para ser guardado en un comentario, que luego es ejecutado y desplegado a otros usuarios que visualicen el comentario. Por medio de esta vulnerabilidad, el código JavaScript personalizado podría ser inyectado y, por lo tanto, ejecutarse en otras máquinas de usuario. Esto impacta más a los escenarios en los que los usuarios no confiables se le otorgan permiso para crear comentarios. Esto se ha corregido en 0.29.2."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.3,"impactScore":2.7},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:L\/I:L\/A:L","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"LOW","baseScore":6.3,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":3.4}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:S\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"SINGLE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":3.5},"baseSeverity":"LOW","exploitabilityScore":6.8,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]},{"source":"security-advisories@github.com","type":"Secondary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:bookstackapp:bookstack:*:*:*:*:*:*:*:*","versionStartIncluding":"0.18.0","versionEndExcluding":"0.29.2","matchCriteriaId":"7B988CCC-6913-4C11-8ABD-A4E5660EDFBB"}]}]}],"references":[{"url":"http:\/\/jvn.jp\/en\/jp\/JVN41035278\/index.html","source":"security-advisories@github.com","tags":["Third Party Advisory"]},{"url":"https:\/\/bookstackapp.com\/blog\/beta-release-v0-29-2\/","source":"security-advisories@github.com","tags":["Release Notes","Vendor Advisory"]},{"url":"https:\/\/github.com\/BookStackApp\/BookStack\/releases\/tag\/v0.29.2","source":"security-advisories@github.com","tags":["Release Notes"]},{"url":"https:\/\/github.com\/BookStackApp\/BookStack\/security\/advisories\/GHSA-5vf7-q87h-pg6w","source":"security-advisories@github.com","tags":["Third Party Advisory"]}]}},{"cve":{"id":"CVE-2020-26210","sourceIdentifier":"security-advisories@github.com","published":"2020-11-03T19:15:13.157","lastModified":"2020-11-16T16:14:37.913","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"In BookStack before version 0.30.4, a user with permissions to edit a page could add an attached link which would execute untrusted JavaScript code when clicked by a viewer of the page. Dangerous content may remain in the database after this update. If you think this could have been exploited the linked advisory provides a SQL query to test. As a workaround, page edit permissions could be limited to only those that are trusted until you can upgrade although this will not address existing exploitation of this vulnerability. The issue is fixed in version 0.30.4."},{"lang":"es","value":"En BookStack anterior a la versión 0.30.4, un usuario con permisos para editar una página podía agregar un enlace adjunto que ejecutaría código JavaScript no confiable cuando un visualizador de la página hiciera clic en él.&#xa0;El contenido peligroso puede permanecer en la base de datos después de esta actualización.&#xa0;Si cree que esto podría haber sido explotado, el aviso vinculado proporciona una consulta SQL para probar.&#xa0;Como solución alternativa, los permisos de edición de página podrían ser limitados solo para aquellos en los que se confía hasta que pueda actualizar, aunque esto no solucionará la explotación existente de esta vulnerabilidad.&#xa0;El problema se corrigió en la versión 0.30.4"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:H\/I:H\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"NONE","baseScore":8.7,"baseSeverity":"HIGH"},"exploitabilityScore":2.3,"impactScore":5.8},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:H\/PR:L\/UI:R\/S:C\/C:H\/I:H\/A:N","attackVector":"NETWORK","attackComplexity":"HIGH","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"NONE","baseScore":7.7,"baseSeverity":"HIGH"},"exploitabilityScore":1.3,"impactScore":5.8}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:S\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"SINGLE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":3.5},"baseSeverity":"LOW","exploitabilityScore":6.8,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"security-advisories@github.com","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:bookstackapp:bookstack:*:*:*:*:*:*:*:*","versionEndExcluding":"0.30.4","matchCriteriaId":"D6DF38A5-A44D-4308-933A-A1288591B880"}]}]}],"references":[{"url":"https:\/\/bookstackapp.com\/blog\/beta-release-v0-30-4\/","source":"security-advisories@github.com","tags":["Exploit","Patch","Vendor Advisory"]},{"url":"https:\/\/github.com\/BookStackApp\/BookStack\/commit\/349162ea139556b2d25e09e155cec84e21cc9227","source":"security-advisories@github.com","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/BookStackApp\/BookStack\/releases\/tag\/v0.30.4","source":"security-advisories@github.com","tags":["Third Party Advisory"]},{"url":"https:\/\/github.com\/BookStackApp\/BookStack\/security\/advisories\/GHSA-7p2j-4h6p-cq3h","source":"security-advisories@github.com","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2020-26211","sourceIdentifier":"security-advisories@github.com","published":"2020-11-03T21:15:12.547","lastModified":"2020-11-16T16:07:57.467","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"In BookStack before version 0.30.4, a user with permissions to edit a page could insert JavaScript code through the use of `javascript:` URIs within a link or form which would run, within the context of the current page, when clicked or submitted. Additionally, a user with permissions to edit a page could insert a particular meta tag which could be used to silently redirect users to a alternative location upon visit of a page. Dangerous content may remain in the database but will be removed before being displayed on a page. If you think this could have been exploited the linked advisory provides a SQL query to test. As a workaround without upgrading, page edit permissions could be limited to only those that are trusted until you can upgrade although this will not address existing exploitation of this vulnerability. The issue is fixed in BookStack version 0.30.4."},{"lang":"es","value":"En BookStack anterior de la versión 0.30.4, un usuario con permisos para editar una página podía insertar código JavaScript mediante el uso de los URI \"javascript:\" dentro de un enlace o formulario que se ejecutaría, dentro del contexto de la página actual, al cliquearse o enviarse .&#xa0;Además, un usuario con permisos para editar una página podría insertar una etiqueta meta particular que podría ser usada para redireccionar silenciosamente a los usuarios hacia una ubicación alternativa tras visitar una página.&#xa0;El contenido peligroso puede permanecer en la base de datos, pero será removido antes de ser mostrado en una página.&#xa0;Si cree que esto podría haber sido explotado, el aviso vinculado proporciona una consulta SQL para probar.&#xa0;Como solución alternativa sin actualizar, los permisos de edición de página podrían ser limitados solo a aquellos en los que se confía hasta que pueda actualizar, aunque esto no solucionará la explotación existente de esta vulnerabilidad"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:H\/I:H\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"NONE","baseScore":8.7,"baseSeverity":"HIGH"},"exploitabilityScore":2.3,"impactScore":5.8},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:H\/PR:L\/UI:R\/S:C\/C:H\/I:H\/A:N","attackVector":"NETWORK","attackComplexity":"HIGH","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"NONE","baseScore":7.7,"baseSeverity":"HIGH"},"exploitabilityScore":1.3,"impactScore":5.8}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:S\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"SINGLE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":3.5},"baseSeverity":"LOW","exploitabilityScore":6.8,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"security-advisories@github.com","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:bookstackapp:bookstack:*:*:*:*:*:*:*:*","versionEndExcluding":"0.30.4","matchCriteriaId":"D6DF38A5-A44D-4308-933A-A1288591B880"}]}]}],"references":[{"url":"https:\/\/github.com\/BookStackApp\/BookStack\/commit\/bbd1384acbe7e52c21f89af69f2dc391c95dbf54","source":"security-advisories@github.com","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/BookStackApp\/BookStack\/releases\/tag\/v0.30.4","source":"security-advisories@github.com","tags":["Release Notes","Third Party Advisory"]},{"url":"https:\/\/github.com\/BookStackApp\/BookStack\/security\/advisories\/GHSA-r2cf-8778-3jgp","source":"security-advisories@github.com","tags":["Third Party Advisory"]},{"url":"https:\/\/www.bookstackapp.com\/blog\/beta-release-v0-30-4\/","source":"security-advisories@github.com","tags":["Patch","Vendor Advisory"]}]}},{"cve":{"id":"CVE-2020-26260","sourceIdentifier":"security-advisories@github.com","published":"2020-12-09T17:15:30.477","lastModified":"2020-12-10T22:51:10.577","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"BookStack is a platform for storing and organising information and documentation. In BookStack before version 0.30.5, a user with permissions to edit a page could set certain image URL's to manipulate functionality in the exporting system, which would allow them to make server side requests and\/or have access to a wider scope of files within the BookStack file storage locations. The issue was addressed in BookStack v0.30.5. As a workaround, page edit permissions could be limited to only those that are trusted until you can upgrade."},{"lang":"es","value":"BookStack es una plataforma para almacenar y organizar información y documentación.&#xa0;En BookStack versiones anteriores a 0.30.5, un usuario con permisos para editar una página podía configurar determinadas URL de imagen para manipular la funcionalidad en el sistema de exportación, lo que podría permitir realizar peticiones del lado del servidor y\/o tener acceso a un alcance más amplio de archivos dentro las ubicaciones de almacenamiento de archivos de BookStack.&#xa0;El problema se abordó en BookStack versión v0.30.5.&#xa0;Como solución alternativa, los permisos de edición de página podrían estar limitada solo a aquellos que son confiables hasta que pueda actualizar"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":3.1,"impactScore":2.7},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":3.1,"impactScore":2.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:S\/C:P\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"SINGLE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":5.5},"baseSeverity":"MEDIUM","exploitabilityScore":8.0,"impactScore":4.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-74"}]},{"source":"security-advisories@github.com","type":"Secondary","description":[{"lang":"en","value":"CWE-74"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:bookstackapp:bookstack:*:*:*:*:*:*:*:*","versionEndExcluding":"0.30.5","matchCriteriaId":"97847080-31E8-47BF-8E66-671D8DB7D28D"}]}]}],"references":[{"url":"https:\/\/bookstackapp.com\/blog\/beta-release-v0-30-5\/","source":"security-advisories@github.com","tags":["Vendor Advisory"]},{"url":"https:\/\/github.com\/BookStackApp\/BookStack\/releases\/tag\/v0.30.5","source":"security-advisories@github.com","tags":["Release Notes","Third Party Advisory"]},{"url":"https:\/\/github.com\/BookStackApp\/BookStack\/security\/advisories\/GHSA-8wfc-w2r5-x7cr","source":"security-advisories@github.com","tags":["Third Party Advisory"]}]}},{"cve":{"id":"CVE-2021-3758","sourceIdentifier":"security@huntr.dev","published":"2021-09-02T12:15:07.693","lastModified":"2021-09-10T18:05:03.760","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"bookstack is vulnerable to Server-Side Request Forgery (SSRF)"},{"lang":"es","value":"bookstack es vulnerable a un ataque de tipo Server-Side Request Forgery (SSRF)"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:N\/I:H\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"NONE","integrityImpact":"HIGH","availabilityImpact":"NONE","baseScore":6.5,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":3.6}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:H\/PR:L\/UI:N\/S:C\/C:H\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"HIGH","privilegesRequired":"LOW","userInteraction":"NONE","scope":"CHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":6.3,"baseSeverity":"MEDIUM"},"exploitabilityScore":1.8,"impactScore":4.0}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:S\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"SINGLE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.0},"baseSeverity":"MEDIUM","exploitabilityScore":8.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-918"}]},{"source":"security@huntr.dev","type":"Secondary","description":[{"lang":"en","value":"CWE-918"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:bookstackapp:bookstack:*:*:*:*:*:*:*:*","versionEndExcluding":"21.08","matchCriteriaId":"0F6C91A0-C3AC-4716-8525-B0EFC23668F1"}]}]}],"references":[{"url":"https:\/\/github.com\/bookstackapp\/bookstack\/commit\/bee5e2c7ca637d034c6985c0328cef0ce068778e","source":"security@huntr.dev","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/a8d7fb24-9a69-42f3-990a-2db93b53f76b","source":"security@huntr.dev","tags":["Exploit","Issue Tracking","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2021-3767","sourceIdentifier":"security@huntr.dev","published":"2021-09-06T12:15:08.237","lastModified":"2021-09-09T18:48:39.287","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"bookstack is vulnerable to Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"},{"lang":"es","value":"bookstack es vulnerable a una Neutralización Inapropiada de Entradas Durante la Generación de Páginas Web (\"Cross-site Scripting\")"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.3,"impactScore":2.7}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.5}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:S\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"SINGLE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":3.5},"baseSeverity":"LOW","exploitabilityScore":6.8,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]},{"source":"security@huntr.dev","type":"Secondary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:bookstackapp:bookstack:*:*:*:*:*:*:*:*","versionEndExcluding":"21.08.2","matchCriteriaId":"44F3B660-3A50-479D-9262-E08C2DA3E004"}]}]}],"references":[{"url":"https:\/\/github.com\/bookstackapp\/bookstack\/commit\/040997fdc4414776bcac06a3cbaac3b26b5e8a64","source":"security@huntr.dev","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/7ec92c85-30eb-4071-8891-6183446ca980","source":"security@huntr.dev","tags":["Exploit","Issue Tracking","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2021-3768","sourceIdentifier":"security@huntr.dev","published":"2021-09-06T12:15:08.307","lastModified":"2021-09-09T18:47:52.393","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"bookstack is vulnerable to Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"},{"lang":"es","value":"bookstack es vulnerable a una Neutralización Inapropiada de Entradas Durante la Generación de Páginas Web (\"Cross-site Scripting\")"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.3,"impactScore":2.7}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.5}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:S\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"SINGLE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":3.5},"baseSeverity":"LOW","exploitabilityScore":6.8,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]},{"source":"security@huntr.dev","type":"Secondary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:bookstackapp:bookstack:*:*:*:*:*:*:*:*","versionEndExcluding":"21.08.2","matchCriteriaId":"44F3B660-3A50-479D-9262-E08C2DA3E004"}]}]}],"references":[{"url":"https:\/\/github.com\/bookstackapp\/bookstack\/commit\/5e6092aaf8fd420202016038286554860bf8ea64","source":"security@huntr.dev","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/64a0229f-ff5e-4c64-b83e-9bfc0698a78e","source":"security@huntr.dev","tags":["Exploit","Issue Tracking","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2021-3874","sourceIdentifier":"security@huntr.dev","published":"2021-10-15T14:15:07.757","lastModified":"2021-10-20T19:40:39.627","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"bookstack is vulnerable to Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"},{"lang":"es","value":"bookstack es vulnerable a una Limitación Inapropiada de un nombre de ruta a un directorio restringido (\"Salto de Ruta\")"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":6.5,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":3.6}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:L\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":4.3,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":1.4}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:S\/C:P\/I:N\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"SINGLE","confidentialityImpact":"PARTIAL","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":4.0},"baseSeverity":"MEDIUM","exploitabilityScore":8.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-22"}]},{"source":"security@huntr.dev","type":"Secondary","description":[{"lang":"en","value":"CWE-22"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:bookstackapp:bookstack:*:*:*:*:*:*:*:*","versionEndExcluding":"21.08.5","matchCriteriaId":"76DDD7E8-B040-4418-9FAA-B5195976C962"}]}]}],"references":[{"url":"https:\/\/github.com\/bookstackapp\/bookstack\/commit\/7224fbcc89f00f2b71644e36bb1b1d96addd1d5a","source":"security@huntr.dev","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/ac268a17-72b5-446f-a09a-9945ef58607a","source":"security@huntr.dev","tags":["Exploit","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2021-3906","sourceIdentifier":"security@huntr.dev","published":"2021-10-27T22:15:07.817","lastModified":"2021-11-03T14:30:27.567","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"bookstack is vulnerable to Unrestricted Upload of File with Dangerous Type"},{"lang":"es","value":"bookstack es vulnerable a una Carga no Restringida de Archivos de Tipo Peligroso"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":6.5,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":3.6}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.3,"impactScore":2.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:S\/C:P\/I:N\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"SINGLE","confidentialityImpact":"PARTIAL","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":4.0},"baseSeverity":"MEDIUM","exploitabilityScore":8.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"security@huntr.dev","type":"Primary","description":[{"lang":"en","value":"CWE-434"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:bookstackapp:bookstack:*:*:*:*:*:*:*:*","versionEndExcluding":"21.10.1","matchCriteriaId":"91F81186-7056-4717-BFAE-66CC63117B8F"}]}]}],"references":[{"url":"https:\/\/github.com\/bookstackapp\/bookstack\/commit\/64937ab826b56d086af9ecea532510d37520ebc8","source":"security@huntr.dev","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/f115bdf5-c06b-4627-a6fa-ba6904a43ba3","source":"security@huntr.dev","tags":["Exploit","Issue Tracking","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2021-3916","sourceIdentifier":"security@huntr.dev","published":"2021-11-05T15:15:07.890","lastModified":"2021-11-09T15:12:50.740","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"bookstack is vulnerable to Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"},{"lang":"es","value":"bookstack es vulnerable a una Limitación Inapropiada de un Nombre de Ruta a un Directorio Restringido (\"Salto de Ruta\")"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":6.5,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":3.6}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":6.5,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":3.6}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:S\/C:P\/I:N\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"SINGLE","confidentialityImpact":"PARTIAL","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":4.0},"baseSeverity":"MEDIUM","exploitabilityScore":8.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"security@huntr.dev","type":"Primary","description":[{"lang":"en","value":"CWE-22"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:bookstackapp:bookstack:*:*:*:*:*:*:*:*","versionEndExcluding":"21.10.3","matchCriteriaId":"8A95589D-22C1-4F53-827C-5CB7BD5B1D1E"}]}]}],"references":[{"url":"https:\/\/github.com\/bookstackapp\/bookstack\/commit\/43830a372fc51a8793199d04a34c3f4ebdfccc7b","source":"security@huntr.dev","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/0be32e6b-7c48-43f0-9cec-433000ad8f64","source":"security@huntr.dev","tags":["Exploit","Issue Tracking","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2021-3915","sourceIdentifier":"security@huntr.dev","published":"2021-11-13T10:15:07.927","lastModified":"2021-11-17T18:56:17.297","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"bookstack is vulnerable to Unrestricted Upload of File with Dangerous Type"},{"lang":"es","value":"bookstack es vulnerable a una Carga no Restringida de Archivos de Tipo Peligroso"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:R\/S:U\/C:H\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":5.7,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.1,"impactScore":3.6}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:L\/UI:R\/S:U\/C:H\/I:L\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"LOW","availabilityImpact":"HIGH","baseScore":7.6,"baseSeverity":"HIGH"},"exploitabilityScore":2.1,"impactScore":5.5}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:S\/C:P\/I:N\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"SINGLE","confidentialityImpact":"PARTIAL","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":3.5},"baseSeverity":"LOW","exploitabilityScore":6.8,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"security@huntr.dev","type":"Primary","description":[{"lang":"en","value":"CWE-434"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:bookstackapp:bookstack:*:*:*:*:*:*:*:*","versionEndExcluding":"21.10.3","matchCriteriaId":"8A95589D-22C1-4F53-827C-5CB7BD5B1D1E"}]}]}],"references":[{"url":"https:\/\/github.com\/bookstackapp\/bookstack\/commit\/ae155d67454d6b9f6c93b2bb457aaa4b2eb1a9ed","source":"security@huntr.dev","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/fcb65f2d-257a-46f4-bac9-f6ded5649079","source":"security@huntr.dev","tags":["Exploit","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2021-4026","sourceIdentifier":"security@huntr.dev","published":"2021-11-30T20:15:07.690","lastModified":"2022-08-09T14:43:13.363","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"bookstack is vulnerable to Improper Access Control"},{"lang":"es","value":"bookstack es vulnerable  a un Control de Acceso Inapropiado"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:L\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":4.3,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":1.4}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":6.5,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":3.6}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:S\/C:P\/I:N\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"SINGLE","confidentialityImpact":"PARTIAL","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":4.0},"baseSeverity":"MEDIUM","exploitabilityScore":8.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-863"}]},{"source":"security@huntr.dev","type":"Secondary","description":[{"lang":"en","value":"CWE-284"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:bookstackapp:bookstack:*:*:*:*:*:*:*:*","versionEndExcluding":"21.11.2","matchCriteriaId":"F20610CF-F2B6-47E2-975A-394784440D3D"}]}]}],"references":[{"url":"https:\/\/github.com\/bookstackapp\/bookstack\/commit\/b4fa82e3298a15443ca40bff205b7a16a1031d92","source":"security@huntr.dev","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/c6dfa80d-43e6-4b49-95af-cc031bb66b1d","source":"security@huntr.dev","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2021-3944","sourceIdentifier":"security@huntr.dev","published":"2021-12-02T17:15:08.140","lastModified":"2021-12-04T02:31:51.397","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"bookstack is vulnerable to Cross-Site Request Forgery (CSRF)"},{"lang":"es","value":"bookstack es vulnerable a un ataque de tipo Cross-Site Request Forgery (CSRF)"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:H\/PR:N\/UI:R\/S:U\/C:H\/I:H\/A:N","attackVector":"NETWORK","attackComplexity":"HIGH","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"NONE","baseScore":6.8,"baseSeverity":"MEDIUM"},"exploitabilityScore":1.6,"impactScore":5.2}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:H\/PR:N\/UI:R\/S:U\/C:L\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"HIGH","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":3.1,"baseSeverity":"LOW"},"exploitabilityScore":1.6,"impactScore":1.4}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:H\/Au:N\/C:P\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"HIGH","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.0},"baseSeverity":"MEDIUM","exploitabilityScore":4.9,"impactScore":4.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"security@huntr.dev","type":"Primary","description":[{"lang":"en","value":"CWE-352"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:bookstackapp:bookstack:*:*:*:*:*:*:*:*","versionEndExcluding":"21.11","matchCriteriaId":"DFC14A4A-EB33-466B-A575-8EC1F788B444"}]}]}],"references":[{"url":"https:\/\/github.com\/bookstackapp\/bookstack\/commit\/88e6f93abf54192a69cc8080e0dc6516ee68ccbb","source":"security@huntr.dev","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/65551490-5ade-49aa-8b8d-274c2ca9fdc9","source":"security@huntr.dev","tags":["Exploit","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2021-4119","sourceIdentifier":"security@huntr.dev","published":"2021-12-15T20:15:08.837","lastModified":"2022-08-09T13:23:41.930","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"bookstack is vulnerable to Improper Access Control"},{"lang":"es","value":"bookstack es vulnerable a un Control de Acceso Inapropiado"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.8,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.9}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:L\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":5.3,"baseSeverity":"MEDIUM"},"exploitabilityScore":3.9,"impactScore":1.4}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":7.5},"baseSeverity":"HIGH","exploitabilityScore":10.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"NVD-CWE-Other"}]},{"source":"security@huntr.dev","type":"Secondary","description":[{"lang":"en","value":"CWE-284"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:bookstackapp:bookstack:*:*:*:*:*:*:*:*","versionEndIncluding":"21.11.2","matchCriteriaId":"3A4EB881-1D55-416D-A52E-F05F489E2CA1"}]}]}],"references":[{"url":"https:\/\/github.com\/bookstackapp\/bookstack\/commit\/e765e618547c92f4e0b46caca6fb91f0174efd99","source":"security@huntr.dev","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/135f2d7d-ab0b-4351-99b9-889efac46fca","source":"security@huntr.dev","tags":["Exploit","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2021-4194","sourceIdentifier":"security@huntr.dev","published":"2022-01-06T18:15:07.920","lastModified":"2022-07-25T10:24:25.243","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"bookstack is vulnerable to Improper Access Control"},{"lang":"es","value":"bookstack es vulnerable a un Control de Acceso Inapropiado"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:N\/I:H\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"NONE","integrityImpact":"HIGH","availabilityImpact":"NONE","baseScore":6.5,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":3.6}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:N\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"NONE","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":4.3,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":1.4}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:S\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"SINGLE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.0},"baseSeverity":"MEDIUM","exploitabilityScore":8.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-863"}]},{"source":"security@huntr.dev","type":"Secondary","description":[{"lang":"en","value":"CWE-284"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:bookstackapp:bookstack:*:*:*:*:*:*:*:*","versionEndExcluding":"21.12.1","matchCriteriaId":"9EFB8269-E54F-44EB-93B7-B90E6BA8279C"}]}]}],"references":[{"url":"https:\/\/github.com\/bookstackapp\/bookstack\/commit\/cb0d674a71449de883713db2fcdccb6e108992ad","source":"security@huntr.dev","tags":["Exploit","Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/0bc8b3f7-9057-4eb7-a989-24cd5689f114","source":"security@huntr.dev","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-0877","sourceIdentifier":"security@huntr.dev","published":"2022-03-08T13:15:08.153","lastModified":"2022-03-11T17:59:47.587","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Cross-site Scripting (XSS) - Stored in GitHub repository bookstackapp\/bookstack prior to v22.02.3."},{"lang":"es","value":"Una vulnerabilidad de tipo Cross-site Scripting (XSS) - Almacenado en el repositorio GitHub bookstackapp\/bookstack versiones anteriores a v22.02.3"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.3,"impactScore":2.7}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:L\/UI:R\/S:U\/C:H\/I:L\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"LOW","availabilityImpact":"HIGH","baseScore":7.6,"baseSeverity":"HIGH"},"exploitabilityScore":2.1,"impactScore":5.5}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:S\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"SINGLE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":3.5},"baseSeverity":"LOW","exploitabilityScore":6.8,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]},{"source":"security@huntr.dev","type":"Secondary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:bookstackapp:bookstack:*:*:*:*:*:*:*:*","versionEndExcluding":"22.02.3","matchCriteriaId":"756A4324-51E8-4895-BE48-F60E78512BD3"}]}]}],"references":[{"url":"https:\/\/github.com\/bookstackapp\/bookstack\/commit\/856fca8289b7370cafa033ea21c408e7d4303fd6","source":"security@huntr.dev","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/b04df4e3-ae5a-4dc6-81ec-496248b15f3c","source":"security@huntr.dev","tags":["Exploit","Issue Tracking","Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-40690","sourceIdentifier":"vultures@jpcert.or.jp","published":"2022-10-24T14:15:52.197","lastModified":"2022-10-24T16:14:11.873","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Cross-site scripting vulnerability in BookStack versions prior to v22.09 allows a remote authenticated attacker to inject an arbitrary script."},{"lang":"es","value":"Una vulnerabilidad de tipo cross-site scripting en BookStack versiones anteriores a v22.09, permite a un atacante remoto autenticado inyectar un script arbitrario"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.3,"impactScore":2.7}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:bookstackapp:bookstack:*:*:*:*:*:*:*:*","versionEndExcluding":"22.09","matchCriteriaId":"83039D98-8A2F-461B-8732-611F78DF2C48"}]}]}],"references":[{"url":"https:\/\/jvn.jp\/en\/jp\/JVN78862034\/index.html","source":"vultures@jpcert.or.jp","tags":["Release Notes","Third Party Advisory"]},{"url":"https:\/\/www.bookstackapp.com\/blog\/bookstack-release-v22-09\/","source":"vultures@jpcert.or.jp","tags":["Release Notes","Vendor Advisory"]},{"url":"https:\/\/www.bookstackapp.com\/docs\/admin\/security\/#using-bookstack-content-externally","source":"vultures@jpcert.or.jp","tags":["Vendor Advisory"]}]}},{"cve":{"id":"CVE-2023-4624","sourceIdentifier":"security@huntr.dev","published":"2023-08-30T13:15:15.287","lastModified":"2023-09-01T19:59:22.693","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Server-Side Request Forgery (SSRF) in GitHub repository bookstackapp\/bookstack prior to v23.08."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:H\/UI:R\/S:U\/C:L\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"HIGH","userInteraction":"REQUIRED","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":2.4,"baseSeverity":"LOW"},"exploitabilityScore":0.9,"impactScore":1.4}],"cvssMetricV30":[{"source":"security@huntr.dev","type":"Secondary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:H\/UI:R\/S:U\/C:L\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"HIGH","userInteraction":"REQUIRED","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":2.4,"baseSeverity":"LOW"},"exploitabilityScore":0.9,"impactScore":1.4}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-918"}]},{"source":"security@huntr.dev","type":"Secondary","description":[{"lang":"en","value":"CWE-918"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:bookstackapp:bookstack:*:*:*:*:*:*:*:*","versionEndExcluding":"23.08","matchCriteriaId":"F1A047AC-D2DC-43E8-94C4-5C4E9851BEDF"}]}]}],"references":[{"url":"https:\/\/github.com\/bookstackapp\/bookstack\/commit\/c324ad928dbdd54ce5b09eb0dabe60ef9de1ea38","source":"security@huntr.dev","tags":["Vendor Advisory"]},{"url":"https:\/\/huntr.dev\/bounties\/9ce5cef6-e546-44e7-addf-a2726fa4e60c","source":"security@huntr.dev","tags":["Exploit","Third Party Advisory"]}]}}]}
+{
+    "resultsPerPage": 20,
+    "startIndex": 0,
+    "totalResults": 20,
+    "format": "NVD_CVE",
+    "version": "2.0",
+    "timestamp": "2024-04-30T10:39:10.543",
+    "vulnerabilities": [
+        {
+            "cve": {
+                "id": "CVE-2017-1000462",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2018-01-03T20:29:00.313",
+                "lastModified": "2018-01-17T15:42:24.513",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "BookStack version 0.18.4 is vulnerable to stored cross-site scripting, within the page creation page, which can result in disruption of service and execution of javascript code."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "BookStack versi\u00f3n 0.18.4 es vulnerable a Cross-Site Scripting (XSS) persistente en la p\u00e1gina page creation. Esto puede resultar en la interrupci\u00f3n del servicio y la ejecuci\u00f3n de c\u00f3digo JavaScript."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 3.5
+                            },
+                            "baseSeverity": "LOW",
+                            "exploitabilityScore": 6.8,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:bookstackapp:bookstack:0.18.4:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "8DB0589A-8B75-4BCD-BE78-B709DE5E4B67"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/BookStackApp/BookStack/issues/575",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Issue Tracking",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2020-5256",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2020-03-09T16:15:15.750",
+                "lastModified": "2020-03-10T13:34:56.837",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "BookStack before version 0.25.5 has a vulnerability where a user could upload PHP files through image upload functions, which would allow them to execute code on the host system remotely. They would then have the permissions of the PHP process. This most impacts scenarios where non-trusted users are given permission to upload images in any area of the application. The issue was addressed in a series of patches in versions 0.25.3, 0.25.4 and 0.25.5. Users should upgrade to at least v0.25.5 to avoid this vulnerability."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "BookStack versiones anteriores a 0.25.5, presenta una vulnerabilidad donde un usuario puede cargar archivos PHP por medio de funciones de carga de im\u00e1genes, lo que le permitir\u00eda ejecutar c\u00f3digo sobre el sistema host remotamente. Luego tendr\u00edan los permisos del proceso de PHP. Esto impacta m\u00e1s a los escenarios donde los usuarios no confiables tienen permiso para cargar im\u00e1genes en cualquier \u00e1rea de la aplicaci\u00f3n. El problema fue abordado en una serie de parches en las versiones 0.25.3, 0.25.4 y 0.25.5. Los usuarios deben actualizar al menos a la versi\u00f3n v0.25.5 para evitar esta vulnerabilidad."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 8.8,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 5.9
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I:H/A:L",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "HIGH",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "LOW",
+                                "baseScore": 7.9,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 1.3,
+                            "impactScore": 6.0
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:S/C:C/I:C/A:C",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "COMPLETE",
+                                "integrityImpact": "COMPLETE",
+                                "availabilityImpact": "COMPLETE",
+                                "baseScore": 9.0
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 8.0,
+                            "impactScore": 10.0,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-434"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-95"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:bookstackapp:bookstack:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "0.25.3",
+                                        "matchCriteriaId": "B8B4AD81-4EED-4873-A781-F389F361A132"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/BookStackApp/BookStack/releases/tag/v0.25.3",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Release Notes"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/BookStackApp/BookStack/releases/tag/v0.25.4",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Release Notes"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/BookStackApp/BookStack/releases/tag/v0.25.5",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Release Notes"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/BookStackApp/BookStack/security/advisories/GHSA-g9rq-x4fj-f5hx",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2020-11055",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2020-05-07T21:15:11.733",
+                "lastModified": "2020-05-13T17:30:15.233",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "In BookStack greater than or equal to 0.18.0 and less than 0.29.2, there is an XSS vulnerability in comment creation. A user with permission to create comments could POST HTML directly to the system to be saved in a comment, which would then be executed/displayed to others users viewing the comment. Through this vulnerability custom JavaScript code could be injected and therefore ran on other user machines. This most impacts scenarios where not-trusted users are given permission to create comments. This has been fixed in 0.29.2."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "En BookStack versiones posteriores o igual a 0.18.0 y versiones menores a 0.29.2, se presenta una vulnerabilidad de tipo XSS en la creaci\u00f3n de comentarios. Un usuario con permiso para crear comentarios podr\u00eda PUBLICAR HTML directamente en el sistema para ser guardado en un comentario, que luego es ejecutado y desplegado a otros usuarios que visualicen el comentario. Por medio de esta vulnerabilidad, el c\u00f3digo JavaScript personalizado podr\u00eda ser inyectado y, por lo tanto, ejecutarse en otras m\u00e1quinas de usuario. Esto impacta m\u00e1s a los escenarios en los que los usuarios no confiables se le otorgan permiso para crear comentarios. Esto se ha corregido en 0.29.2."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 2.7
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "LOW",
+                                "baseScore": 6.3,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 3.4
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 3.5
+                            },
+                            "baseSeverity": "LOW",
+                            "exploitabilityScore": 6.8,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:bookstackapp:bookstack:*:*:*:*:*:*:*:*",
+                                        "versionStartIncluding": "0.18.0",
+                                        "versionEndExcluding": "0.29.2",
+                                        "matchCriteriaId": "7B988CCC-6913-4C11-8ABD-A4E5660EDFBB"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://jvn.jp/en/jp/JVN41035278/index.html",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://bookstackapp.com/blog/beta-release-v0-29-2/",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Release Notes",
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/BookStackApp/BookStack/releases/tag/v0.29.2",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Release Notes"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/BookStackApp/BookStack/security/advisories/GHSA-5vf7-q87h-pg6w",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2020-26210",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2020-11-03T19:15:13.157",
+                "lastModified": "2020-11-16T16:14:37.913",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "In BookStack before version 0.30.4, a user with permissions to edit a page could add an attached link which would execute untrusted JavaScript code when clicked by a viewer of the page. Dangerous content may remain in the database after this update. If you think this could have been exploited the linked advisory provides a SQL query to test. As a workaround, page edit permissions could be limited to only those that are trusted until you can upgrade although this will not address existing exploitation of this vulnerability. The issue is fixed in version 0.30.4."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "En BookStack anterior a la versi\u00f3n 0.30.4, un usuario con permisos para editar una p\u00e1gina pod\u00eda agregar un enlace adjunto que ejecutar\u00eda c\u00f3digo JavaScript no confiable cuando un visualizador de la p\u00e1gina hiciera clic en \u00e9l.&#xa0;El contenido peligroso puede permanecer en la base de datos despu\u00e9s de esta actualizaci\u00f3n.&#xa0;Si cree que esto podr\u00eda haber sido explotado, el aviso vinculado proporciona una consulta SQL para probar.&#xa0;Como soluci\u00f3n alternativa, los permisos de edici\u00f3n de p\u00e1gina podr\u00edan ser limitados solo para aquellos en los que se conf\u00eda hasta que pueda actualizar, aunque esto no solucionar\u00e1 la explotaci\u00f3n existente de esta vulnerabilidad.&#xa0;El problema se corrigi\u00f3 en la versi\u00f3n 0.30.4"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 8.7,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 5.8
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I:H/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "HIGH",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 7.7,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 1.3,
+                            "impactScore": 5.8
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 3.5
+                            },
+                            "baseSeverity": "LOW",
+                            "exploitabilityScore": 6.8,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:bookstackapp:bookstack:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "0.30.4",
+                                        "matchCriteriaId": "D6DF38A5-A44D-4308-933A-A1288591B880"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://bookstackapp.com/blog/beta-release-v0-30-4/",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Exploit",
+                            "Patch",
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/BookStackApp/BookStack/commit/349162ea139556b2d25e09e155cec84e21cc9227",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/BookStackApp/BookStack/releases/tag/v0.30.4",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/BookStackApp/BookStack/security/advisories/GHSA-7p2j-4h6p-cq3h",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2020-26211",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2020-11-03T21:15:12.547",
+                "lastModified": "2020-11-16T16:07:57.467",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "In BookStack before version 0.30.4, a user with permissions to edit a page could insert JavaScript code through the use of `javascript:` URIs within a link or form which would run, within the context of the current page, when clicked or submitted. Additionally, a user with permissions to edit a page could insert a particular meta tag which could be used to silently redirect users to a alternative location upon visit of a page. Dangerous content may remain in the database but will be removed before being displayed on a page. If you think this could have been exploited the linked advisory provides a SQL query to test. As a workaround without upgrading, page edit permissions could be limited to only those that are trusted until you can upgrade although this will not address existing exploitation of this vulnerability. The issue is fixed in BookStack version 0.30.4."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "En BookStack anterior de la versi\u00f3n 0.30.4, un usuario con permisos para editar una p\u00e1gina pod\u00eda insertar c\u00f3digo JavaScript mediante el uso de los URI \"javascript:\" dentro de un enlace o formulario que se ejecutar\u00eda, dentro del contexto de la p\u00e1gina actual, al cliquearse o enviarse .&#xa0;Adem\u00e1s, un usuario con permisos para editar una p\u00e1gina podr\u00eda insertar una etiqueta meta particular que podr\u00eda ser usada para redireccionar silenciosamente a los usuarios hacia una ubicaci\u00f3n alternativa tras visitar una p\u00e1gina.&#xa0;El contenido peligroso puede permanecer en la base de datos, pero ser\u00e1 removido antes de ser mostrado en una p\u00e1gina.&#xa0;Si cree que esto podr\u00eda haber sido explotado, el aviso vinculado proporciona una consulta SQL para probar.&#xa0;Como soluci\u00f3n alternativa sin actualizar, los permisos de edici\u00f3n de p\u00e1gina podr\u00edan ser limitados solo a aquellos en los que se conf\u00eda hasta que pueda actualizar, aunque esto no solucionar\u00e1 la explotaci\u00f3n existente de esta vulnerabilidad"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 8.7,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 5.8
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I:H/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "HIGH",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 7.7,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 1.3,
+                            "impactScore": 5.8
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 3.5
+                            },
+                            "baseSeverity": "LOW",
+                            "exploitabilityScore": 6.8,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:bookstackapp:bookstack:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "0.30.4",
+                                        "matchCriteriaId": "D6DF38A5-A44D-4308-933A-A1288591B880"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/BookStackApp/BookStack/commit/bbd1384acbe7e52c21f89af69f2dc391c95dbf54",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/BookStackApp/BookStack/releases/tag/v0.30.4",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Release Notes",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/BookStackApp/BookStack/security/advisories/GHSA-r2cf-8778-3jgp",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.bookstackapp.com/blog/beta-release-v0-30-4/",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch",
+                            "Vendor Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2020-26260",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2020-12-09T17:15:30.477",
+                "lastModified": "2020-12-10T22:51:10.577",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "BookStack is a platform for storing and organising information and documentation. In BookStack before version 0.30.5, a user with permissions to edit a page could set certain image URL's to manipulate functionality in the exporting system, which would allow them to make server side requests and/or have access to a wider scope of files within the BookStack file storage locations. The issue was addressed in BookStack v0.30.5. As a workaround, page edit permissions could be limited to only those that are trusted until you can upgrade."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "BookStack es una plataforma para almacenar y organizar informaci\u00f3n y documentaci\u00f3n.&#xa0;En BookStack versiones anteriores a 0.30.5, un usuario con permisos para editar una p\u00e1gina pod\u00eda configurar determinadas URL de imagen para manipular la funcionalidad en el sistema de exportaci\u00f3n, lo que podr\u00eda permitir realizar peticiones del lado del servidor y/o tener acceso a un alcance m\u00e1s amplio de archivos dentro las ubicaciones de almacenamiento de archivos de BookStack.&#xa0;El problema se abord\u00f3 en BookStack versi\u00f3n v0.30.5.&#xa0;Como soluci\u00f3n alternativa, los permisos de edici\u00f3n de p\u00e1gina podr\u00edan estar limitada solo a aquellos que son confiables hasta que pueda actualizar"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 3.1,
+                            "impactScore": 2.7
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 3.1,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:S/C:P/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.5
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.0,
+                            "impactScore": 4.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-74"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-74"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:bookstackapp:bookstack:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "0.30.5",
+                                        "matchCriteriaId": "97847080-31E8-47BF-8E66-671D8DB7D28D"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://bookstackapp.com/blog/beta-release-v0-30-5/",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/BookStackApp/BookStack/releases/tag/v0.30.5",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Release Notes",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/BookStackApp/BookStack/security/advisories/GHSA-8wfc-w2r5-x7cr",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-3758",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2021-09-02T12:15:07.693",
+                "lastModified": "2021-09-10T18:05:03.760",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "bookstack is vulnerable to Server-Side Request Forgery (SSRF)"
+                    },
+                    {
+                        "lang": "es",
+                        "value": "bookstack es vulnerable a un ataque de tipo Server-Side Request Forgery (SSRF)"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.5,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 3.6
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "HIGH",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.3,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 1.8,
+                            "impactScore": 4.0
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:S/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-918"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-918"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:bookstackapp:bookstack:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "21.08",
+                                        "matchCriteriaId": "0F6C91A0-C3AC-4716-8525-B0EFC23668F1"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/bookstackapp/bookstack/commit/bee5e2c7ca637d034c6985c0328cef0ce068778e",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/a8d7fb24-9a69-42f3-990a-2db93b53f76b",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Issue Tracking",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-3767",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2021-09-06T12:15:08.237",
+                "lastModified": "2021-09-09T18:48:39.287",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "bookstack is vulnerable to Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+                    },
+                    {
+                        "lang": "es",
+                        "value": "bookstack es vulnerable a una Neutralizaci\u00f3n Inapropiada de Entradas Durante la Generaci\u00f3n de P\u00e1ginas Web (\"Cross-site Scripting\")"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.5
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 3.5
+                            },
+                            "baseSeverity": "LOW",
+                            "exploitabilityScore": 6.8,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:bookstackapp:bookstack:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "21.08.2",
+                                        "matchCriteriaId": "44F3B660-3A50-479D-9262-E08C2DA3E004"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/bookstackapp/bookstack/commit/040997fdc4414776bcac06a3cbaac3b26b5e8a64",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/7ec92c85-30eb-4071-8891-6183446ca980",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Issue Tracking",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-3768",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2021-09-06T12:15:08.307",
+                "lastModified": "2021-09-09T18:47:52.393",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "bookstack is vulnerable to Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+                    },
+                    {
+                        "lang": "es",
+                        "value": "bookstack es vulnerable a una Neutralizaci\u00f3n Inapropiada de Entradas Durante la Generaci\u00f3n de P\u00e1ginas Web (\"Cross-site Scripting\")"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.5
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 3.5
+                            },
+                            "baseSeverity": "LOW",
+                            "exploitabilityScore": 6.8,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:bookstackapp:bookstack:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "21.08.2",
+                                        "matchCriteriaId": "44F3B660-3A50-479D-9262-E08C2DA3E004"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/bookstackapp/bookstack/commit/5e6092aaf8fd420202016038286554860bf8ea64",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/64a0229f-ff5e-4c64-b83e-9bfc0698a78e",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Issue Tracking",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-3874",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2021-10-15T14:15:07.757",
+                "lastModified": "2021-10-20T19:40:39.627",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "bookstack is vulnerable to Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"
+                    },
+                    {
+                        "lang": "es",
+                        "value": "bookstack es vulnerable a una Limitaci\u00f3n Inapropiada de un nombre de ruta a un directorio restringido (\"Salto de Ruta\")"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.5,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 3.6
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 1.4
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:S/C:P/I:N/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-22"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-22"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:bookstackapp:bookstack:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "21.08.5",
+                                        "matchCriteriaId": "76DDD7E8-B040-4418-9FAA-B5195976C962"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/bookstackapp/bookstack/commit/7224fbcc89f00f2b71644e36bb1b1d96addd1d5a",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/ac268a17-72b5-446f-a09a-9945ef58607a",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-3906",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2021-10-27T22:15:07.817",
+                "lastModified": "2021-11-03T14:30:27.567",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "bookstack is vulnerable to Unrestricted Upload of File with Dangerous Type"
+                    },
+                    {
+                        "lang": "es",
+                        "value": "bookstack es vulnerable a una Carga no Restringida de Archivos de Tipo Peligroso"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.5,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 3.6
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:S/C:P/I:N/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-434"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:bookstackapp:bookstack:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "21.10.1",
+                                        "matchCriteriaId": "91F81186-7056-4717-BFAE-66CC63117B8F"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/bookstackapp/bookstack/commit/64937ab826b56d086af9ecea532510d37520ebc8",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/f115bdf5-c06b-4627-a6fa-ba6904a43ba3",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Issue Tracking",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-3916",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2021-11-05T15:15:07.890",
+                "lastModified": "2021-11-09T15:12:50.740",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "bookstack is vulnerable to Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"
+                    },
+                    {
+                        "lang": "es",
+                        "value": "bookstack es vulnerable a una Limitaci\u00f3n Inapropiada de un Nombre de Ruta a un Directorio Restringido (\"Salto de Ruta\")"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.5,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 3.6
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.5,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 3.6
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:S/C:P/I:N/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-22"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:bookstackapp:bookstack:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "21.10.3",
+                                        "matchCriteriaId": "8A95589D-22C1-4F53-827C-5CB7BD5B1D1E"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/bookstackapp/bookstack/commit/43830a372fc51a8793199d04a34c3f4ebdfccc7b",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/0be32e6b-7c48-43f0-9cec-433000ad8f64",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Issue Tracking",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-3915",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2021-11-13T10:15:07.927",
+                "lastModified": "2021-11-17T18:56:17.297",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "bookstack is vulnerable to Unrestricted Upload of File with Dangerous Type"
+                    },
+                    {
+                        "lang": "es",
+                        "value": "bookstack es vulnerable a una Carga no Restringida de Archivos de Tipo Peligroso"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.7,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.1,
+                            "impactScore": 3.6
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:L/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 7.6,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.1,
+                            "impactScore": 5.5
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:S/C:P/I:N/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 3.5
+                            },
+                            "baseSeverity": "LOW",
+                            "exploitabilityScore": 6.8,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-434"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:bookstackapp:bookstack:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "21.10.3",
+                                        "matchCriteriaId": "8A95589D-22C1-4F53-827C-5CB7BD5B1D1E"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/bookstackapp/bookstack/commit/ae155d67454d6b9f6c93b2bb457aaa4b2eb1a9ed",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/fcb65f2d-257a-46f4-bac9-f6ded5649079",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-4026",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2021-11-30T20:15:07.690",
+                "lastModified": "2022-08-09T14:43:13.363",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "bookstack is vulnerable to Improper Access Control"
+                    },
+                    {
+                        "lang": "es",
+                        "value": "bookstack es vulnerable  a un Control de Acceso Inapropiado"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 1.4
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.5,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 3.6
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:S/C:P/I:N/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-863"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-284"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:bookstackapp:bookstack:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "21.11.2",
+                                        "matchCriteriaId": "F20610CF-F2B6-47E2-975A-394784440D3D"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/bookstackapp/bookstack/commit/b4fa82e3298a15443ca40bff205b7a16a1031d92",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/c6dfa80d-43e6-4b49-95af-cc031bb66b1d",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-3944",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2021-12-02T17:15:08.140",
+                "lastModified": "2021-12-04T02:31:51.397",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "bookstack is vulnerable to Cross-Site Request Forgery (CSRF)"
+                    },
+                    {
+                        "lang": "es",
+                        "value": "bookstack es vulnerable a un ataque de tipo Cross-Site Request Forgery (CSRF)"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "HIGH",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.8,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 1.6,
+                            "impactScore": 5.2
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "HIGH",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 3.1,
+                                "baseSeverity": "LOW"
+                            },
+                            "exploitabilityScore": 1.6,
+                            "impactScore": 1.4
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:H/Au:N/C:P/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "HIGH",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 4.9,
+                            "impactScore": 4.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-352"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:bookstackapp:bookstack:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "21.11",
+                                        "matchCriteriaId": "DFC14A4A-EB33-466B-A575-8EC1F788B444"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/bookstackapp/bookstack/commit/88e6f93abf54192a69cc8080e0dc6516ee68ccbb",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/65551490-5ade-49aa-8b8d-274c2ca9fdc9",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-4119",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2021-12-15T20:15:08.837",
+                "lastModified": "2022-08-09T13:23:41.930",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "bookstack is vulnerable to Improper Access Control"
+                    },
+                    {
+                        "lang": "es",
+                        "value": "bookstack es vulnerable a un Control de Acceso Inapropiado"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.8,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.3,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 1.4
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 7.5
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "NVD-CWE-Other"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-284"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:bookstackapp:bookstack:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "21.11.2",
+                                        "matchCriteriaId": "3A4EB881-1D55-416D-A52E-F05F489E2CA1"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/bookstackapp/bookstack/commit/e765e618547c92f4e0b46caca6fb91f0174efd99",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/135f2d7d-ab0b-4351-99b9-889efac46fca",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2021-4194",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2022-01-06T18:15:07.920",
+                "lastModified": "2022-07-25T10:24:25.243",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "bookstack is vulnerable to Improper Access Control"
+                    },
+                    {
+                        "lang": "es",
+                        "value": "bookstack es vulnerable a un Control de Acceso Inapropiado"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.5,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 3.6
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 1.4
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:S/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-863"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-284"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:bookstackapp:bookstack:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "21.12.1",
+                                        "matchCriteriaId": "9EFB8269-E54F-44EB-93B7-B90E6BA8279C"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/bookstackapp/bookstack/commit/cb0d674a71449de883713db2fcdccb6e108992ad",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/0bc8b3f7-9057-4eb7-a989-24cd5689f114",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-0877",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2022-03-08T13:15:08.153",
+                "lastModified": "2022-03-11T17:59:47.587",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Cross-site Scripting (XSS) - Stored in GitHub repository bookstackapp/bookstack prior to v22.02.3."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Una vulnerabilidad de tipo Cross-site Scripting (XSS) - Almacenado en el repositorio GitHub bookstackapp/bookstack versiones anteriores a v22.02.3"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:L/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 7.6,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.1,
+                            "impactScore": 5.5
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 3.5
+                            },
+                            "baseSeverity": "LOW",
+                            "exploitabilityScore": 6.8,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:bookstackapp:bookstack:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "22.02.3",
+                                        "matchCriteriaId": "756A4324-51E8-4895-BE48-F60E78512BD3"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/bookstackapp/bookstack/commit/856fca8289b7370cafa033ea21c408e7d4303fd6",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/b04df4e3-ae5a-4dc6-81ec-496248b15f3c",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Issue Tracking",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-40690",
+                "sourceIdentifier": "vultures@jpcert.or.jp",
+                "published": "2022-10-24T14:15:52.197",
+                "lastModified": "2022-10-24T16:14:11.873",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Cross-site scripting vulnerability in BookStack versions prior to v22.09 allows a remote authenticated attacker to inject an arbitrary script."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Una vulnerabilidad de tipo cross-site scripting en BookStack versiones anteriores a v22.09, permite a un atacante remoto autenticado inyectar un script arbitrario"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 2.7
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:bookstackapp:bookstack:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "22.09",
+                                        "matchCriteriaId": "83039D98-8A2F-461B-8732-611F78DF2C48"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://jvn.jp/en/jp/JVN78862034/index.html",
+                        "source": "vultures@jpcert.or.jp",
+                        "tags": [
+                            "Release Notes",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.bookstackapp.com/blog/bookstack-release-v22-09/",
+                        "source": "vultures@jpcert.or.jp",
+                        "tags": [
+                            "Release Notes",
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://www.bookstackapp.com/docs/admin/security/#using-bookstack-content-externally",
+                        "source": "vultures@jpcert.or.jp",
+                        "tags": [
+                            "Vendor Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2023-4624",
+                "sourceIdentifier": "security@huntr.dev",
+                "published": "2023-08-30T13:15:15.287",
+                "lastModified": "2023-09-01T19:59:22.693",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Server-Side Request Forgery (SSRF) in GitHub repository bookstackapp/bookstack prior to v23.08."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:L/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "HIGH",
+                                "userInteraction": "REQUIRED",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 2.4,
+                                "baseSeverity": "LOW"
+                            },
+                            "exploitabilityScore": 0.9,
+                            "impactScore": 1.4
+                        }
+                    ],
+                    "cvssMetricV30": [
+                        {
+                            "source": "security@huntr.dev",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:H/UI:R/S:U/C:L/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "HIGH",
+                                "userInteraction": "REQUIRED",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 2.4,
+                                "baseSeverity": "LOW"
+                            },
+                            "exploitabilityScore": 0.9,
+                            "impactScore": 1.4
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-918"
+                            }
+                        ]
+                    },
+                    {
+                        "source": "security@huntr.dev",
+                        "type": "Secondary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-918"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:bookstackapp:bookstack:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "23.08",
+                                        "matchCriteriaId": "F1A047AC-D2DC-43E8-94C4-5C4E9851BEDF"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/bookstackapp/bookstack/commit/c324ad928dbdd54ce5b09eb0dabe60ef9de1ea38",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://huntr.dev/bounties/9ce5cef6-e546-44e7-addf-a2726fa4e60c",
+                        "source": "security@huntr.dev",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

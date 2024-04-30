@@ -1,1 +1,1674 @@
-{"resultsPerPage":12,"startIndex":0,"totalResults":12,"format":"NVD_CVE","version":"2.0","timestamp":"2024-04-30T10:50:24.107","vulnerabilities":[{"cve":{"id":"CVE-2005-2654","sourceIdentifier":"security@debian.org","published":"2005-08-30T17:03:00.000","lastModified":"2020-11-16T19:31:13.720","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"phpldapadmin before 0.9.6c allows remote attackers to gain anonymous access to the LDAP server, even when disable_anon_bind is set, via an HTTP request to login.php with the anonymous_bind parameter set."}],"metrics":{"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":7.5},"baseSeverity":"HIGH","exploitabilityScore":10.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":true,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"NVD-CWE-noinfo"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:phpldapadmin_project:phpldapadmin:*:*:*:*:*:*:*:*","versionEndExcluding":"0.9.6c","matchCriteriaId":"BA4FF6B9-F198-4CA9-90AD-41F364DBE14E"}]}]}],"references":[{"url":"http:\/\/bugs.debian.org\/cgi-bin\/bugreport.cgi?bug=322423","source":"security@debian.org","tags":["Third Party Advisory"]},{"url":"http:\/\/www.debian.org\/security\/2005\/dsa-790","source":"security@debian.org","tags":["Patch","Third Party Advisory"]},{"url":"http:\/\/www.gentoo.org\/security\/en\/glsa\/glsa-200509-04.xml","source":"security@debian.org","tags":["Third Party Advisory"]}]}},{"cve":{"id":"CVE-2005-2792","sourceIdentifier":"cve@mitre.org","published":"2005-09-02T23:03:00.000","lastModified":"2020-11-16T19:31:26.567","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Directory traversal vulnerability in welcome.php in phpLDAPadmin 0.9.6 and 0.9.7 allows remote attackers to read arbitrary files via a .. (dot dot) in the custom_welcome_page parameter."}],"metrics":{"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:N\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":5.0},"baseSeverity":"MEDIUM","exploitabilityScore":10.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-22"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:phpldapadmin_project:phpldapadmin:0.9.6:*:*:*:*:*:*:*","matchCriteriaId":"88760DAB-D59C-4633-8D8B-920834D3745C"},{"vulnerable":true,"criteria":"cpe:2.3:a:phpldapadmin_project:phpldapadmin:0.9.7:*:*:*:*:*:*:*","matchCriteriaId":"21D801F8-03E6-4D44-B885-3088656F00DB"}]}]}],"references":[{"url":"http:\/\/marc.info\/?l=bugtraq&m=112542447219235&w=2","source":"cve@mitre.org","tags":["Mailing List","Third Party Advisory"]},{"url":"http:\/\/secunia.com\/advisories\/16617\/","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]},{"url":"http:\/\/www.rgod.altervista.org\/phpldap.html","source":"cve@mitre.org","tags":["Broken Link"]},{"url":"http:\/\/www.securityfocus.com\/bid\/14695","source":"cve@mitre.org","tags":["Third Party Advisory","VDB Entry"]},{"url":"https:\/\/exchange.xforce.ibmcloud.com\/vulnerabilities\/22103","source":"cve@mitre.org","tags":["Third Party Advisory","VDB Entry"]}]}},{"cve":{"id":"CVE-2005-2793","sourceIdentifier":"cve@mitre.org","published":"2005-09-02T23:03:00.000","lastModified":"2020-11-16T19:31:45.940","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"PHP remote file inclusion vulnerability in welcome.php in phpLDAPadmin 0.9.6 and 0.9.7 allows remote attackers to execute arbitrary PHP code via the custom_welcome_page parameter."}],"metrics":{"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":7.5},"baseSeverity":"HIGH","exploitabilityScore":10.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":true,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-77"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:phpldapadmin_project:phpldapadmin:0.9.6:*:*:*:*:*:*:*","matchCriteriaId":"88760DAB-D59C-4633-8D8B-920834D3745C"},{"vulnerable":true,"criteria":"cpe:2.3:a:phpldapadmin_project:phpldapadmin:0.9.7:*:*:*:*:*:*:*","matchCriteriaId":"21D801F8-03E6-4D44-B885-3088656F00DB"}]}]}],"references":[{"url":"http:\/\/marc.info\/?l=bugtraq&m=112542447219235&w=2","source":"cve@mitre.org","tags":["Mailing List","Third Party Advisory"]},{"url":"http:\/\/secunia.com\/advisories\/16617\/","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]},{"url":"http:\/\/www.rgod.altervista.org\/phpldap.html","source":"cve@mitre.org","tags":["Broken Link"]},{"url":"http:\/\/www.securityfocus.com\/bid\/14695","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory","VDB Entry"]},{"url":"https:\/\/exchange.xforce.ibmcloud.com\/vulnerabilities\/22103","source":"cve@mitre.org","tags":["Third Party Advisory","VDB Entry"]}]}},{"cve":{"id":"CVE-2006-2016","sourceIdentifier":"cve@mitre.org","published":"2006-04-25T12:50:00.000","lastModified":"2020-11-16T19:32:00.283","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Multiple cross-site scripting (XSS) vulnerabilities in phpLDAPadmin 0.9.8 and earlier allow remote attackers to inject arbitrary web script or HTML via the (1) dn parameter in (a) compare_form.php, (b) copy_form.php, (c) rename_form.php, (d) template_engine.php, and (e) delete_form.php; (2) scope parameter in (f) search.php; and (3) Container DN, (4) Machine Name, and (5) UID Number fields in (g) template_engine.php."}],"metrics":{"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:H\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"HIGH","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":2.6},"baseSeverity":"LOW","exploitabilityScore":4.9,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:phpldapadmin_project:phpldapadmin:*:*:*:*:*:*:*:*","versionEndIncluding":"0.9.8","matchCriteriaId":"6538805C-3311-4077-8D90-DAAB07F7CEB8"}]}]},{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:o:debian:debian_linux:3.0:*:*:*:*:*:*:*","matchCriteriaId":"2CAE037F-111C-4A76-8FFE-716B74D65EF3"},{"vulnerable":true,"criteria":"cpe:2.3:o:debian:debian_linux:3.1:*:*:*:*:*:*:*","matchCriteriaId":"A2E0C1F8-31F5-4F61-9DF7-E49B43D3C873"}]}]}],"references":[{"url":"http:\/\/pridels0.blogspot.com\/2006\/04\/phpldapadmin-multiple-vuln.html","source":"cve@mitre.org","tags":["Third Party Advisory"]},{"url":"http:\/\/secunia.com\/advisories\/19747","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory"]},{"url":"http:\/\/secunia.com\/advisories\/20124","source":"cve@mitre.org","tags":["Third Party Advisory"]},{"url":"http:\/\/www.debian.org\/security\/2006\/dsa-1057","source":"cve@mitre.org","tags":["Third Party Advisory"]},{"url":"http:\/\/www.osvdb.org\/24788","source":"cve@mitre.org","tags":["Broken Link","Exploit"]},{"url":"http:\/\/www.osvdb.org\/24789","source":"cve@mitre.org","tags":["Broken Link","Exploit"]},{"url":"http:\/\/www.osvdb.org\/24790","source":"cve@mitre.org","tags":["Broken Link","Exploit"]},{"url":"http:\/\/www.osvdb.org\/24792","source":"cve@mitre.org","tags":["Broken Link","Exploit"]},{"url":"http:\/\/www.osvdb.org\/24793","source":"cve@mitre.org","tags":["Broken Link","Exploit"]},{"url":"http:\/\/www.osvdb.org\/24794","source":"cve@mitre.org","tags":["Broken Link","Exploit"]},{"url":"http:\/\/www.securityfocus.com\/bid\/17643","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory","VDB Entry"]},{"url":"http:\/\/www.vupen.com\/english\/advisories\/2006\/1450","source":"cve@mitre.org","tags":["Permissions Required"]},{"url":"https:\/\/exchange.xforce.ibmcloud.com\/vulnerabilities\/25958","source":"cve@mitre.org","tags":["Third Party Advisory","VDB Entry"]},{"url":"https:\/\/exchange.xforce.ibmcloud.com\/vulnerabilities\/25959","source":"cve@mitre.org","tags":["Third Party Advisory","VDB Entry"]}]}},{"cve":{"id":"CVE-2009-4427","sourceIdentifier":"cve@mitre.org","published":"2009-12-28T19:00:00.687","lastModified":"2020-11-16T19:32:56.067","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Directory traversal vulnerability in cmd.php in phpLDAPadmin 1.1.0.5 allows remote attackers to include and execute arbitrary local files via a .. (dot dot) in the cmd parameter."},{"lang":"es","value":"Vulnerabilidad de salto de directorio en cmd.php en phpLDAPadmin v1.1.0.5 permite a atacantes remotos incluir y ejecutar ficheros de su elección mediante los caracteres .. (punto punto) en el parámetro \"cmd\"."}],"metrics":{"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":7.5},"baseSeverity":"HIGH","exploitabilityScore":10.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":true,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-22"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:phpldapadmin_project:phpldapadmin:1.1.0.5:*:*:*:*:*:*:*","matchCriteriaId":"02F4D952-EACF-43E8-A9B1-8F94F6E118CF"}]}]}],"references":[{"url":"http:\/\/secunia.com\/advisories\/37848","source":"cve@mitre.org","tags":["Third Party Advisory"]},{"url":"http:\/\/www.exploit-db.com\/exploits\/10410","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory","VDB Entry"]},{"url":"http:\/\/www.mandriva.com\/security\/advisories?name=MDVSA-2010:023","source":"cve@mitre.org","tags":["Third Party Advisory"]},{"url":"http:\/\/www.osvdb.org\/61139","source":"cve@mitre.org","tags":["Broken Link","Exploit"]},{"url":"http:\/\/www.securityfocus.com\/bid\/37327","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory","VDB Entry"]}]}},{"cve":{"id":"CVE-2011-4074","sourceIdentifier":"secalert@redhat.com","published":"2011-11-02T17:55:01.277","lastModified":"2023-02-13T00:20:14.660","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"Cross-site scripting (XSS) vulnerability in cmd.php in phpLDAPadmin 1.2.x before 1.2.2 allows remote attackers to inject arbitrary web script or HTML via an _debug command."},{"lang":"es","value":"Vulnerabilidad de ejecución de secuencias de comandos en sitios cruzados (XSS) en cmd.php en phpLDAPadmin v1.2.x anterior a v1.2.2, permite a atacantes remotos inyectar secuencias de comandos web o HTML de su elección a través de un comando _debug."}],"metrics":{"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.3},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:phpldapadmin_project:phpldapadmin:1.2.0:*:*:*:*:*:*:*","matchCriteriaId":"20FBCE2F-ACBA-4DA1-AE55-B287E3B8597A"},{"vulnerable":true,"criteria":"cpe:2.3:a:phpldapadmin_project:phpldapadmin:1.2.0.1:*:*:*:*:*:*:*","matchCriteriaId":"629C1EBF-667C-4C35-9E82-5009A4242B1B"},{"vulnerable":true,"criteria":"cpe:2.3:a:phpldapadmin_project:phpldapadmin:1.2.0.2:*:*:*:*:*:*:*","matchCriteriaId":"879C3DF2-7CBE-40D0-84A3-BACCF0E50A50"},{"vulnerable":true,"criteria":"cpe:2.3:a:phpldapadmin_project:phpldapadmin:1.2.0.3:*:*:*:*:*:*:*","matchCriteriaId":"6848A21C-BFEE-4300-AB69-BF343EDB340B"},{"vulnerable":true,"criteria":"cpe:2.3:a:phpldapadmin_project:phpldapadmin:1.2.0.4:*:*:*:*:*:*:*","matchCriteriaId":"7F3F4309-CC01-4F52-9CBE-94BE4B055C67"},{"vulnerable":true,"criteria":"cpe:2.3:a:phpldapadmin_project:phpldapadmin:1.2.0.5:*:*:*:*:*:*:*","matchCriteriaId":"AC0434DC-A552-4512-A5CD-428AF21DC9BB"},{"vulnerable":true,"criteria":"cpe:2.3:a:phpldapadmin_project:phpldapadmin:1.2.1:*:*:*:*:*:*:*","matchCriteriaId":"BD2AE159-BCC4-4FAD-816F-A53392EADF9A"},{"vulnerable":true,"criteria":"cpe:2.3:a:phpldapadmin_project:phpldapadmin:1.2.1.1:*:*:*:*:*:*:*","matchCriteriaId":"C5F171FF-FD24-4C88-BAC0-B178513646AA"}]}]}],"references":[{"url":"http:\/\/openwall.com\/lists\/oss-security\/2011\/10\/24\/9","source":"secalert@redhat.com","tags":["Exploit","Patch"]},{"url":"http:\/\/openwall.com\/lists\/oss-security\/2011\/10\/25\/2","source":"secalert@redhat.com","tags":["Exploit","Patch"]},{"url":"http:\/\/osvdb.org\/76593","source":"secalert@redhat.com"},{"url":"http:\/\/phpldapadmin.git.sourceforge.net\/git\/gitweb.cgi?p=phpldapadmin\/phpldapadmin%3Ba=blobdiff%3Bf=htdocs\/cmd.php%3Bh=0ddf0044355abc94160be73122eb34f3e48ab2d9%3Bhp=34f3848fe4a6d4c00c7c568afa81f59579f5d724%3Bhb=64668e882b8866fae0fa1b25375d1a2f3b4672e2%3Bhpb=caeba72171ade4f588fef1818aa4f6243a68b85e","source":"secalert@redhat.com"},{"url":"http:\/\/phpldapadmin.sourceforge.net\/wiki\/index.php\/Main_Page","source":"secalert@redhat.com"},{"url":"http:\/\/secunia.com\/advisories\/46551","source":"secalert@redhat.com","tags":["Vendor Advisory"]},{"url":"http:\/\/secunia.com\/advisories\/46672","source":"secalert@redhat.com"},{"url":"http:\/\/www.debian.org\/security\/2011\/dsa-2333","source":"secalert@redhat.com"},{"url":"http:\/\/www.securityfocus.com\/bid\/50331","source":"secalert@redhat.com"}]}},{"cve":{"id":"CVE-2011-4075","sourceIdentifier":"secalert@redhat.com","published":"2011-11-02T17:55:01.387","lastModified":"2023-02-13T00:20:23.557","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"The masort function in lib\/functions.php in phpLDAPadmin 1.2.x before 1.2.2 allows remote attackers to execute arbitrary PHP code via the orderby parameter (aka sortby variable) in a query_engine action to cmd.php, as exploited in the wild in October 2011."},{"lang":"es","value":"La función masort en lib\/functions.php en phpLDAPadmin v1.2.x antes de v1.2.2 permite a atacantes remotos ejecutar código PHP de su elección a través del parámetro orderby (también conocido como la variable SortBy) en una acción query_engine a cmd.php, tal y como fue \"explotado\" en Octubre de 2011."}],"metrics":{"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":7.5},"baseSeverity":"HIGH","exploitabilityScore":10.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-94"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:phpldapadmin_project:phpldapadmin:1.2.0:*:*:*:*:*:*:*","matchCriteriaId":"20FBCE2F-ACBA-4DA1-AE55-B287E3B8597A"},{"vulnerable":true,"criteria":"cpe:2.3:a:phpldapadmin_project:phpldapadmin:1.2.0.1:*:*:*:*:*:*:*","matchCriteriaId":"629C1EBF-667C-4C35-9E82-5009A4242B1B"},{"vulnerable":true,"criteria":"cpe:2.3:a:phpldapadmin_project:phpldapadmin:1.2.0.2:*:*:*:*:*:*:*","matchCriteriaId":"879C3DF2-7CBE-40D0-84A3-BACCF0E50A50"},{"vulnerable":true,"criteria":"cpe:2.3:a:phpldapadmin_project:phpldapadmin:1.2.0.3:*:*:*:*:*:*:*","matchCriteriaId":"6848A21C-BFEE-4300-AB69-BF343EDB340B"},{"vulnerable":true,"criteria":"cpe:2.3:a:phpldapadmin_project:phpldapadmin:1.2.0.4:*:*:*:*:*:*:*","matchCriteriaId":"7F3F4309-CC01-4F52-9CBE-94BE4B055C67"},{"vulnerable":true,"criteria":"cpe:2.3:a:phpldapadmin_project:phpldapadmin:1.2.0.5:*:*:*:*:*:*:*","matchCriteriaId":"AC0434DC-A552-4512-A5CD-428AF21DC9BB"},{"vulnerable":true,"criteria":"cpe:2.3:a:phpldapadmin_project:phpldapadmin:1.2.1:*:*:*:*:*:*:*","matchCriteriaId":"BD2AE159-BCC4-4FAD-816F-A53392EADF9A"},{"vulnerable":true,"criteria":"cpe:2.3:a:phpldapadmin_project:phpldapadmin:1.2.1.1:*:*:*:*:*:*:*","matchCriteriaId":"C5F171FF-FD24-4C88-BAC0-B178513646AA"}]}]}],"references":[{"url":"http:\/\/dev.metasploit.com\/redmine\/issues\/5820","source":"secalert@redhat.com","tags":["Exploit"]},{"url":"http:\/\/openwall.com\/lists\/oss-security\/2011\/10\/24\/9","source":"secalert@redhat.com","tags":["Exploit","Patch"]},{"url":"http:\/\/openwall.com\/lists\/oss-security\/2011\/10\/25\/2","source":"secalert@redhat.com","tags":["Exploit","Patch"]},{"url":"http:\/\/osvdb.org\/76594","source":"secalert@redhat.com"},{"url":"http:\/\/phpldapadmin.git.sourceforge.net\/git\/gitweb.cgi?p=phpldapadmin\/phpldapadmin%3Ba=blobdiff%3Bf=lib\/functions.php%3Bh=eb160dc9f7d74e563131e21d4c85d7849a0c6638%3Bhp=19fde9974d4e5eb3bfac04bb223ccbefdb98f9a0%3Bhb=76e6dad13ef77c5448b8dfed1a61e4acc7241165%3Bhpb=5d4245f93ae6f065e7535f268e3cd87a23b07744","source":"secalert@redhat.com"},{"url":"http:\/\/phpldapadmin.sourceforge.net\/wiki\/index.php\/Main_Page","source":"secalert@redhat.com"},{"url":"http:\/\/secunia.com\/advisories\/46551","source":"secalert@redhat.com","tags":["Vendor Advisory"]},{"url":"http:\/\/secunia.com\/advisories\/46672","source":"secalert@redhat.com"},{"url":"http:\/\/sourceforge.net\/tracker\/index.php?func=detail&aid=3417184&group_id=61828&atid=498546","source":"secalert@redhat.com"},{"url":"http:\/\/www.debian.org\/security\/2011\/dsa-2333","source":"secalert@redhat.com"},{"url":"http:\/\/www.exploit-db.com\/exploits\/18021\/","source":"secalert@redhat.com","tags":["Exploit"]},{"url":"http:\/\/www.securityfocus.com\/bid\/50331","source":"secalert@redhat.com"}]}},{"cve":{"id":"CVE-2012-0834","sourceIdentifier":"secalert@redhat.com","published":"2012-02-11T02:55:01.033","lastModified":"2023-02-13T03:26:25.887","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"Cross-site scripting (XSS) vulnerability in lib\/QueryRender.php in phpLDAPadmin 1.2.2 and earlier allows remote attackers to inject arbitrary web script or HTML via the base parameter in a query_engine action to cmd.php."},{"lang":"es","value":"Vulnerabilidad de ejecución de secuencias de comandos en sitios cruzados (XSS) en lib\/QueryRender.php en phpLDAPadmin v1.2.2\r\npermite a atacantes remotos inyectar secuencias de comandos web o HTML a través del parámetro base en una acción query_engin sobre cmd.php"}],"metrics":{"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.3},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:phpldapadmin_project:phpldapadmin:*:*:*:*:*:*:*:*","versionEndIncluding":"1.2.2","matchCriteriaId":"69A20A34-D62D-48C0-891D-638E1D5EA38B"}]}]}],"references":[{"url":"http:\/\/openwall.com\/lists\/oss-security\/2012\/02\/02\/9","source":"secalert@redhat.com","tags":["Mailing List","Third Party Advisory"]},{"url":"http:\/\/openwall.com\/lists\/oss-security\/2012\/02\/03\/3","source":"secalert@redhat.com","tags":["Mailing List","Third Party Advisory"]},{"url":"http:\/\/phpldapadmin.git.sourceforge.net\/git\/gitweb.cgi?p=phpldapadmin\/phpldapadmin%3Ba=commit%3Bh=7dc8d57d6952fe681cb9e8818df7f103220457bd","source":"secalert@redhat.com"},{"url":"http:\/\/secunia.com\/advisories\/47852","source":"secalert@redhat.com","tags":["Third Party Advisory"]},{"url":"http:\/\/www.mandriva.com\/security\/advisories?name=MDVSA-2012:020","source":"secalert@redhat.com","tags":["Third Party Advisory"]},{"url":"https:\/\/sourceforge.net\/tracker\/index.php?func=detail&aid=3477910&group_id=61828&atid=498546","source":"secalert@redhat.com","tags":["Exploit","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2017-11107","sourceIdentifier":"cve@mitre.org","published":"2017-07-08T12:29:00.177","lastModified":"2020-11-16T20:20:46.537","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"phpLDAPadmin through 1.2.3 has XSS in htdocs\/entry_chooser.php via the form, element, rdn, or container parameter."},{"lang":"es","value":"phpLDAPadmin hasta versión 1.2.3 presenta una vulnerabilidad de tipo cross-site scripting XSS en el archivo htdocs\/entry_chooser.php por medio de los parámetros form, element, rdn o container."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":6.1,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.8,"impactScore":2.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:N\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":4.3},"baseSeverity":"MEDIUM","exploitabilityScore":8.6,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:phpldapadmin_project:phpldapadmin:*:*:*:*:*:*:*:*","versionEndIncluding":"1.2.3","matchCriteriaId":"B754CCF0-CBD1-45E5-93BC-AEA72E5B78C9"}]}]},{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:o:debian:debian_linux:8.0:*:*:*:*:*:*:*","matchCriteriaId":"C11E6FB0-C8C0-4527-9AA0-CB9B316F8F43"}]}]}],"references":[{"url":"https:\/\/bugs.launchpad.net\/ubuntu\/+source\/phpldapadmin\/+bug\/1701731","source":"cve@mitre.org","tags":["Issue Tracking","Third Party Advisory"]},{"url":"https:\/\/github.com\/leenooks\/phpLDAPadmin\/issues\/50","source":"cve@mitre.org","tags":["Exploit","Issue Tracking","Patch","Third Party Advisory"]},{"url":"https:\/\/lists.debian.org\/debian-lts-announce\/2018\/10\/msg00023.html","source":"cve@mitre.org","tags":["Mailing List","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2018-12689","sourceIdentifier":"cve@mitre.org","published":"2018-06-22T20:29:00.227","lastModified":"2020-11-16T20:25:55.937","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"phpLDAPadmin 1.2.2 allows LDAP injection via a crafted server_id parameter in a cmd.php?cmd=login_form request, or a crafted username and password in the login panel."},{"lang":"es","value":"phpLDAPadmin 1.2.2 permite la inyección LDAP mediante un parámetro server_id en una petición cmd.php?cmd=login_form o un nombre de usuario y contraseña manipulados en el panel de inicio de sesión."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":9.8,"baseSeverity":"CRITICAL"},"exploitabilityScore":3.9,"impactScore":5.9}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":7.5},"baseSeverity":"HIGH","exploitabilityScore":10.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"NVD-CWE-Other"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:phpldapadmin_project:phpldapadmin:1.2.2:*:*:*:*:*:*:*","matchCriteriaId":"37596FC0-0413-4CE7-ADE6-AC0F5F2D63AF"}]}]}],"references":[{"url":"https:\/\/www.exploit-db.com\/exploits\/44926\/","source":"cve@mitre.org","tags":["Exploit","Third Party Advisory","VDB Entry"]}]}},{"cve":{"id":"CVE-2011-4082","sourceIdentifier":"secalert@redhat.com","published":"2019-11-26T05:15:11.880","lastModified":"2020-08-18T15:05:57.813","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"A local file inclusion flaw was found in the way the phpLDAPadmin before 0.9.8 processed certain values of the \"Accept-Language\" HTTP header. A remote attacker could use this flaw to cause a denial of service via specially-crafted request."},{"lang":"es","value":"Se encontró un fallo de inclusión de archivo local en la manera en que phpLDAPadmin versiones anteriores a 0.9.8 procesó determinados valores del encabezado HTTP \"Accept-Language\". Un atacante remoto podría usar este fallo para causar una denegación de servicio por medio de una petición especialmente diseñada."}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:N\/I:N\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"NONE","integrityImpact":"NONE","availabilityImpact":"HIGH","baseScore":7.5,"baseSeverity":"HIGH"},"exploitabilityScore":3.9,"impactScore":3.6}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:N\/I:N\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"NONE","integrityImpact":"NONE","availabilityImpact":"PARTIAL","baseScore":5.0},"baseSeverity":"MEDIUM","exploitabilityScore":10.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-400"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:phpldapadmin_project:phpldapadmin:*:*:*:*:*:*:*:*","versionEndExcluding":"0.9.8","matchCriteriaId":"83FD530D-724C-434C-A53E-595B82CBC5BB"}]}]},{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:o:debian:debian_linux:8.0:*:*:*:*:*:*:*","matchCriteriaId":"C11E6FB0-C8C0-4527-9AA0-CB9B316F8F43"},{"vulnerable":true,"criteria":"cpe:2.3:o:debian:debian_linux:9.0:*:*:*:*:*:*:*","matchCriteriaId":"DEECE5FC-CACF-4496-A3E7-164736409252"},{"vulnerable":true,"criteria":"cpe:2.3:o:debian:debian_linux:10.0:*:*:*:*:*:*:*","matchCriteriaId":"07B237A9-69A3-4A9C-9DA0-4E06BD37AE73"}]}]}],"references":[{"url":"https:\/\/access.redhat.com\/security\/cve\/cve-2011-4082","source":"secalert@redhat.com","tags":["Third Party Advisory"]},{"url":"https:\/\/bugzilla.redhat.com\/show_bug.cgi?id=CVE-2011-4082","source":"secalert@redhat.com","tags":["Issue Tracking","Third Party Advisory"]},{"url":"https:\/\/security-tracker.debian.org\/tracker\/CVE-2011-4082","source":"secalert@redhat.com","tags":["Broken Link"]}]}},{"cve":{"id":"CVE-2020-35132","sourceIdentifier":"cve@mitre.org","published":"2020-12-11T05:15:12.950","lastModified":"2023-11-07T03:21:52.500","vulnStatus":"Modified","descriptions":[{"lang":"en","value":"An XSS issue has been discovered in phpLDAPadmin before 1.2.6.2 that allows users to store malicious values that may be executed by other users at a later time via get_request in lib\/function.php."},{"lang":"es","value":"Se detectó un problema de tipo XSS en phpLDAPadmin versiones anteriores a  1.2.6.2, que permite a usuarios almacenar valores maliciosos que pueden ser ejecutados por otros usuarios en un momento posterior por medio de la función get_request en la biblioteca lib\/function.php"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.3,"impactScore":2.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:S\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"SINGLE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":3.5},"baseSeverity":"LOW","exploitabilityScore":6.8,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:phpldapadmin_project:phpldapadmin:*:*:*:*:*:*:*:*","versionEndExcluding":"1.2.6.2","matchCriteriaId":"CF8E90AC-508B-464A-8DBD-15B5653267FB"}]}]},{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:o:fedoraproject:fedora:32:*:*:*:*:*:*:*","matchCriteriaId":"36D96259-24BD-44E2-96D9-78CE1D41F956"},{"vulnerable":true,"criteria":"cpe:2.3:o:fedoraproject:fedora:33:*:*:*:*:*:*:*","matchCriteriaId":"E460AA51-FCDA-46B9-AE97-E6676AA5E194"}]}]}],"references":[{"url":"https:\/\/bugs.launchpad.net\/ubuntu\/+source\/phpldapadmin\/+bug\/1906474","source":"cve@mitre.org","tags":["Issue Tracking","Third Party Advisory"]},{"url":"https:\/\/github.com\/leenooks\/phpLDAPadmin\/commit\/c87571f6b7be15d5cd8b26381b6eb31ad03d28e2","source":"cve@mitre.org","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/leenooks\/phpLDAPadmin\/compare\/1.2.5...1.2.6.2","source":"cve@mitre.org","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/leenooks\/phpLDAPadmin\/issues\/130","source":"cve@mitre.org","tags":["Exploit","Issue Tracking","Third Party Advisory"]},{"url":"https:\/\/lists.fedoraproject.org\/archives\/list\/package-announce%40lists.fedoraproject.org\/message\/6XA42XDSUPCOXL5ZCP5RGD3FD4JQQWNX\/","source":"cve@mitre.org"},{"url":"https:\/\/lists.fedoraproject.org\/archives\/list\/package-announce%40lists.fedoraproject.org\/message\/W6PZH3EY2T66N2MGOA7DWCAIVYIJH4BC\/","source":"cve@mitre.org"}]}}]}
+{
+    "resultsPerPage": 12,
+    "startIndex": 0,
+    "totalResults": 12,
+    "format": "NVD_CVE",
+    "version": "2.0",
+    "timestamp": "2024-04-30T10:50:24.107",
+    "vulnerabilities": [
+        {
+            "cve": {
+                "id": "CVE-2005-2654",
+                "sourceIdentifier": "security@debian.org",
+                "published": "2005-08-30T17:03:00.000",
+                "lastModified": "2020-11-16T19:31:13.720",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "phpldapadmin before 0.9.6c allows remote attackers to gain anonymous access to the LDAP server, even when disable_anon_bind is set, via an HTTP request to login.php with the anonymous_bind parameter set."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 7.5
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": true,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "NVD-CWE-noinfo"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:phpldapadmin_project:phpldapadmin:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "0.9.6c",
+                                        "matchCriteriaId": "BA4FF6B9-F198-4CA9-90AD-41F364DBE14E"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=322423",
+                        "source": "security@debian.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "http://www.debian.org/security/2005/dsa-790",
+                        "source": "security@debian.org",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "http://www.gentoo.org/security/en/glsa/glsa-200509-04.xml",
+                        "source": "security@debian.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2005-2792",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2005-09-02T23:03:00.000",
+                "lastModified": "2020-11-16T19:31:26.567",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Directory traversal vulnerability in welcome.php in phpLDAPadmin 0.9.6 and 0.9.7 allows remote attackers to read arbitrary files via a .. (dot dot) in the custom_welcome_page parameter."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-22"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:phpldapadmin_project:phpldapadmin:0.9.6:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "88760DAB-D59C-4633-8D8B-920834D3745C"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:phpldapadmin_project:phpldapadmin:0.9.7:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "21D801F8-03E6-4D44-B885-3088656F00DB"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://marc.info/?l=bugtraq&m=112542447219235&w=2",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Mailing List",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "http://secunia.com/advisories/16617/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "http://www.rgod.altervista.org/phpldap.html",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Broken Link"
+                        ]
+                    },
+                    {
+                        "url": "http://www.securityfocus.com/bid/14695",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory",
+                            "VDB Entry"
+                        ]
+                    },
+                    {
+                        "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/22103",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory",
+                            "VDB Entry"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2005-2793",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2005-09-02T23:03:00.000",
+                "lastModified": "2020-11-16T19:31:45.940",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "PHP remote file inclusion vulnerability in welcome.php in phpLDAPadmin 0.9.6 and 0.9.7 allows remote attackers to execute arbitrary PHP code via the custom_welcome_page parameter."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 7.5
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": true,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-77"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:phpldapadmin_project:phpldapadmin:0.9.6:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "88760DAB-D59C-4633-8D8B-920834D3745C"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:phpldapadmin_project:phpldapadmin:0.9.7:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "21D801F8-03E6-4D44-B885-3088656F00DB"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://marc.info/?l=bugtraq&m=112542447219235&w=2",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Mailing List",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "http://secunia.com/advisories/16617/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "http://www.rgod.altervista.org/phpldap.html",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Broken Link"
+                        ]
+                    },
+                    {
+                        "url": "http://www.securityfocus.com/bid/14695",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory",
+                            "VDB Entry"
+                        ]
+                    },
+                    {
+                        "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/22103",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory",
+                            "VDB Entry"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2006-2016",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2006-04-25T12:50:00.000",
+                "lastModified": "2020-11-16T19:32:00.283",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Multiple cross-site scripting (XSS) vulnerabilities in phpLDAPadmin 0.9.8 and earlier allow remote attackers to inject arbitrary web script or HTML via the (1) dn parameter in (a) compare_form.php, (b) copy_form.php, (c) rename_form.php, (d) template_engine.php, and (e) delete_form.php; (2) scope parameter in (f) search.php; and (3) Container DN, (4) Machine Name, and (5) UID Number fields in (g) template_engine.php."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:H/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "HIGH",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 2.6
+                            },
+                            "baseSeverity": "LOW",
+                            "exploitabilityScore": 4.9,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:phpldapadmin_project:phpldapadmin:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "0.9.8",
+                                        "matchCriteriaId": "6538805C-3311-4077-8D90-DAAB07F7CEB8"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:debian:debian_linux:3.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "2CAE037F-111C-4A76-8FFE-716B74D65EF3"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:debian:debian_linux:3.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "A2E0C1F8-31F5-4F61-9DF7-E49B43D3C873"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://pridels0.blogspot.com/2006/04/phpldapadmin-multiple-vuln.html",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "http://secunia.com/advisories/19747",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "http://secunia.com/advisories/20124",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "http://www.debian.org/security/2006/dsa-1057",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "http://www.osvdb.org/24788",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Broken Link",
+                            "Exploit"
+                        ]
+                    },
+                    {
+                        "url": "http://www.osvdb.org/24789",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Broken Link",
+                            "Exploit"
+                        ]
+                    },
+                    {
+                        "url": "http://www.osvdb.org/24790",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Broken Link",
+                            "Exploit"
+                        ]
+                    },
+                    {
+                        "url": "http://www.osvdb.org/24792",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Broken Link",
+                            "Exploit"
+                        ]
+                    },
+                    {
+                        "url": "http://www.osvdb.org/24793",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Broken Link",
+                            "Exploit"
+                        ]
+                    },
+                    {
+                        "url": "http://www.osvdb.org/24794",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Broken Link",
+                            "Exploit"
+                        ]
+                    },
+                    {
+                        "url": "http://www.securityfocus.com/bid/17643",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory",
+                            "VDB Entry"
+                        ]
+                    },
+                    {
+                        "url": "http://www.vupen.com/english/advisories/2006/1450",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Permissions Required"
+                        ]
+                    },
+                    {
+                        "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/25958",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory",
+                            "VDB Entry"
+                        ]
+                    },
+                    {
+                        "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/25959",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory",
+                            "VDB Entry"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2009-4427",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2009-12-28T19:00:00.687",
+                "lastModified": "2020-11-16T19:32:56.067",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Directory traversal vulnerability in cmd.php in phpLDAPadmin 1.1.0.5 allows remote attackers to include and execute arbitrary local files via a .. (dot dot) in the cmd parameter."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Vulnerabilidad de salto de directorio en cmd.php en phpLDAPadmin v1.1.0.5 permite a atacantes remotos incluir y ejecutar ficheros de su elecci\u00f3n mediante los caracteres .. (punto punto) en el par\u00e1metro \"cmd\"."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 7.5
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": true,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-22"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:phpldapadmin_project:phpldapadmin:1.1.0.5:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "02F4D952-EACF-43E8-A9B1-8F94F6E118CF"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://secunia.com/advisories/37848",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "http://www.exploit-db.com/exploits/10410",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory",
+                            "VDB Entry"
+                        ]
+                    },
+                    {
+                        "url": "http://www.mandriva.com/security/advisories?name=MDVSA-2010:023",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "http://www.osvdb.org/61139",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Broken Link",
+                            "Exploit"
+                        ]
+                    },
+                    {
+                        "url": "http://www.securityfocus.com/bid/37327",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory",
+                            "VDB Entry"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2011-4074",
+                "sourceIdentifier": "secalert@redhat.com",
+                "published": "2011-11-02T17:55:01.277",
+                "lastModified": "2023-02-13T00:20:14.660",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Cross-site scripting (XSS) vulnerability in cmd.php in phpLDAPadmin 1.2.x before 1.2.2 allows remote attackers to inject arbitrary web script or HTML via an _debug command."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Vulnerabilidad de ejecuci\u00f3n de secuencias de comandos en sitios cruzados (XSS) en cmd.php en phpLDAPadmin v1.2.x anterior a v1.2.2, permite a atacantes remotos inyectar secuencias de comandos web o HTML de su elecci\u00f3n a trav\u00e9s de un comando _debug."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:phpldapadmin_project:phpldapadmin:1.2.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "20FBCE2F-ACBA-4DA1-AE55-B287E3B8597A"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:phpldapadmin_project:phpldapadmin:1.2.0.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "629C1EBF-667C-4C35-9E82-5009A4242B1B"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:phpldapadmin_project:phpldapadmin:1.2.0.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "879C3DF2-7CBE-40D0-84A3-BACCF0E50A50"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:phpldapadmin_project:phpldapadmin:1.2.0.3:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "6848A21C-BFEE-4300-AB69-BF343EDB340B"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:phpldapadmin_project:phpldapadmin:1.2.0.4:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "7F3F4309-CC01-4F52-9CBE-94BE4B055C67"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:phpldapadmin_project:phpldapadmin:1.2.0.5:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "AC0434DC-A552-4512-A5CD-428AF21DC9BB"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:phpldapadmin_project:phpldapadmin:1.2.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "BD2AE159-BCC4-4FAD-816F-A53392EADF9A"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:phpldapadmin_project:phpldapadmin:1.2.1.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "C5F171FF-FD24-4C88-BAC0-B178513646AA"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://openwall.com/lists/oss-security/2011/10/24/9",
+                        "source": "secalert@redhat.com",
+                        "tags": [
+                            "Exploit",
+                            "Patch"
+                        ]
+                    },
+                    {
+                        "url": "http://openwall.com/lists/oss-security/2011/10/25/2",
+                        "source": "secalert@redhat.com",
+                        "tags": [
+                            "Exploit",
+                            "Patch"
+                        ]
+                    },
+                    {
+                        "url": "http://osvdb.org/76593",
+                        "source": "secalert@redhat.com"
+                    },
+                    {
+                        "url": "http://phpldapadmin.git.sourceforge.net/git/gitweb.cgi?p=phpldapadmin/phpldapadmin%3Ba=blobdiff%3Bf=htdocs/cmd.php%3Bh=0ddf0044355abc94160be73122eb34f3e48ab2d9%3Bhp=34f3848fe4a6d4c00c7c568afa81f59579f5d724%3Bhb=64668e882b8866fae0fa1b25375d1a2f3b4672e2%3Bhpb=caeba72171ade4f588fef1818aa4f6243a68b85e",
+                        "source": "secalert@redhat.com"
+                    },
+                    {
+                        "url": "http://phpldapadmin.sourceforge.net/wiki/index.php/Main_Page",
+                        "source": "secalert@redhat.com"
+                    },
+                    {
+                        "url": "http://secunia.com/advisories/46551",
+                        "source": "secalert@redhat.com",
+                        "tags": [
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "http://secunia.com/advisories/46672",
+                        "source": "secalert@redhat.com"
+                    },
+                    {
+                        "url": "http://www.debian.org/security/2011/dsa-2333",
+                        "source": "secalert@redhat.com"
+                    },
+                    {
+                        "url": "http://www.securityfocus.com/bid/50331",
+                        "source": "secalert@redhat.com"
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2011-4075",
+                "sourceIdentifier": "secalert@redhat.com",
+                "published": "2011-11-02T17:55:01.387",
+                "lastModified": "2023-02-13T00:20:23.557",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "The masort function in lib/functions.php in phpLDAPadmin 1.2.x before 1.2.2 allows remote attackers to execute arbitrary PHP code via the orderby parameter (aka sortby variable) in a query_engine action to cmd.php, as exploited in the wild in October 2011."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "La funci\u00f3n masort en lib/functions.php en phpLDAPadmin v1.2.x antes de v1.2.2 permite a atacantes remotos ejecutar c\u00f3digo PHP de su elecci\u00f3n a trav\u00e9s del par\u00e1metro orderby (tambi\u00e9n conocido como la variable SortBy) en una acci\u00f3n query_engine a cmd.php, tal y como fue \"explotado\" en Octubre de 2011."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 7.5
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-94"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:phpldapadmin_project:phpldapadmin:1.2.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "20FBCE2F-ACBA-4DA1-AE55-B287E3B8597A"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:phpldapadmin_project:phpldapadmin:1.2.0.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "629C1EBF-667C-4C35-9E82-5009A4242B1B"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:phpldapadmin_project:phpldapadmin:1.2.0.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "879C3DF2-7CBE-40D0-84A3-BACCF0E50A50"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:phpldapadmin_project:phpldapadmin:1.2.0.3:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "6848A21C-BFEE-4300-AB69-BF343EDB340B"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:phpldapadmin_project:phpldapadmin:1.2.0.4:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "7F3F4309-CC01-4F52-9CBE-94BE4B055C67"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:phpldapadmin_project:phpldapadmin:1.2.0.5:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "AC0434DC-A552-4512-A5CD-428AF21DC9BB"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:phpldapadmin_project:phpldapadmin:1.2.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "BD2AE159-BCC4-4FAD-816F-A53392EADF9A"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:phpldapadmin_project:phpldapadmin:1.2.1.1:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "C5F171FF-FD24-4C88-BAC0-B178513646AA"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://dev.metasploit.com/redmine/issues/5820",
+                        "source": "secalert@redhat.com",
+                        "tags": [
+                            "Exploit"
+                        ]
+                    },
+                    {
+                        "url": "http://openwall.com/lists/oss-security/2011/10/24/9",
+                        "source": "secalert@redhat.com",
+                        "tags": [
+                            "Exploit",
+                            "Patch"
+                        ]
+                    },
+                    {
+                        "url": "http://openwall.com/lists/oss-security/2011/10/25/2",
+                        "source": "secalert@redhat.com",
+                        "tags": [
+                            "Exploit",
+                            "Patch"
+                        ]
+                    },
+                    {
+                        "url": "http://osvdb.org/76594",
+                        "source": "secalert@redhat.com"
+                    },
+                    {
+                        "url": "http://phpldapadmin.git.sourceforge.net/git/gitweb.cgi?p=phpldapadmin/phpldapadmin%3Ba=blobdiff%3Bf=lib/functions.php%3Bh=eb160dc9f7d74e563131e21d4c85d7849a0c6638%3Bhp=19fde9974d4e5eb3bfac04bb223ccbefdb98f9a0%3Bhb=76e6dad13ef77c5448b8dfed1a61e4acc7241165%3Bhpb=5d4245f93ae6f065e7535f268e3cd87a23b07744",
+                        "source": "secalert@redhat.com"
+                    },
+                    {
+                        "url": "http://phpldapadmin.sourceforge.net/wiki/index.php/Main_Page",
+                        "source": "secalert@redhat.com"
+                    },
+                    {
+                        "url": "http://secunia.com/advisories/46551",
+                        "source": "secalert@redhat.com",
+                        "tags": [
+                            "Vendor Advisory"
+                        ]
+                    },
+                    {
+                        "url": "http://secunia.com/advisories/46672",
+                        "source": "secalert@redhat.com"
+                    },
+                    {
+                        "url": "http://sourceforge.net/tracker/index.php?func=detail&aid=3417184&group_id=61828&atid=498546",
+                        "source": "secalert@redhat.com"
+                    },
+                    {
+                        "url": "http://www.debian.org/security/2011/dsa-2333",
+                        "source": "secalert@redhat.com"
+                    },
+                    {
+                        "url": "http://www.exploit-db.com/exploits/18021/",
+                        "source": "secalert@redhat.com",
+                        "tags": [
+                            "Exploit"
+                        ]
+                    },
+                    {
+                        "url": "http://www.securityfocus.com/bid/50331",
+                        "source": "secalert@redhat.com"
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2012-0834",
+                "sourceIdentifier": "secalert@redhat.com",
+                "published": "2012-02-11T02:55:01.033",
+                "lastModified": "2023-02-13T03:26:25.887",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Cross-site scripting (XSS) vulnerability in lib/QueryRender.php in phpLDAPadmin 1.2.2 and earlier allows remote attackers to inject arbitrary web script or HTML via the base parameter in a query_engine action to cmd.php."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Vulnerabilidad de ejecuci\u00f3n de secuencias de comandos en sitios cruzados (XSS) en lib/QueryRender.php en phpLDAPadmin v1.2.2\r\npermite a atacantes remotos inyectar secuencias de comandos web o HTML a trav\u00e9s del par\u00e1metro base en una acci\u00f3n query_engin sobre cmd.php"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:phpldapadmin_project:phpldapadmin:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "1.2.2",
+                                        "matchCriteriaId": "69A20A34-D62D-48C0-891D-638E1D5EA38B"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://openwall.com/lists/oss-security/2012/02/02/9",
+                        "source": "secalert@redhat.com",
+                        "tags": [
+                            "Mailing List",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "http://openwall.com/lists/oss-security/2012/02/03/3",
+                        "source": "secalert@redhat.com",
+                        "tags": [
+                            "Mailing List",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "http://phpldapadmin.git.sourceforge.net/git/gitweb.cgi?p=phpldapadmin/phpldapadmin%3Ba=commit%3Bh=7dc8d57d6952fe681cb9e8818df7f103220457bd",
+                        "source": "secalert@redhat.com"
+                    },
+                    {
+                        "url": "http://secunia.com/advisories/47852",
+                        "source": "secalert@redhat.com",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "http://www.mandriva.com/security/advisories?name=MDVSA-2012:020",
+                        "source": "secalert@redhat.com",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://sourceforge.net/tracker/index.php?func=detail&aid=3477910&group_id=61828&atid=498546",
+                        "source": "secalert@redhat.com",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2017-11107",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2017-07-08T12:29:00.177",
+                "lastModified": "2020-11-16T20:20:46.537",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "phpLDAPadmin through 1.2.3 has XSS in htdocs/entry_chooser.php via the form, element, rdn, or container parameter."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "phpLDAPadmin hasta versi\u00f3n 1.2.3 presenta una vulnerabilidad de tipo cross-site scripting XSS en el archivo htdocs/entry_chooser.php por medio de los par\u00e1metros form, element, rdn o container."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 6.1,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 4.3
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.6,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:phpldapadmin_project:phpldapadmin:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "1.2.3",
+                                        "matchCriteriaId": "B754CCF0-CBD1-45E5-93BC-AEA72E5B78C9"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:debian:debian_linux:8.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "C11E6FB0-C8C0-4527-9AA0-CB9B316F8F43"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://bugs.launchpad.net/ubuntu/+source/phpldapadmin/+bug/1701731",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Issue Tracking",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/leenooks/phpLDAPadmin/issues/50",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Issue Tracking",
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://lists.debian.org/debian-lts-announce/2018/10/msg00023.html",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Mailing List",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2018-12689",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2018-06-22T20:29:00.227",
+                "lastModified": "2020-11-16T20:25:55.937",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "phpLDAPadmin 1.2.2 allows LDAP injection via a crafted server_id parameter in a cmd.php?cmd=login_form request, or a crafted username and password in the login panel."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "phpLDAPadmin 1.2.2 permite la inyecci\u00f3n LDAP mediante un par\u00e1metro server_id en una petici\u00f3n cmd.php?cmd=login_form o un nombre de usuario y contrase\u00f1a manipulados en el panel de inicio de sesi\u00f3n."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 9.8,
+                                "baseSeverity": "CRITICAL"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 7.5
+                            },
+                            "baseSeverity": "HIGH",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "NVD-CWE-Other"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:phpldapadmin_project:phpldapadmin:1.2.2:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "37596FC0-0413-4CE7-ADE6-AC0F5F2D63AF"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://www.exploit-db.com/exploits/44926/",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Third Party Advisory",
+                            "VDB Entry"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2011-4082",
+                "sourceIdentifier": "secalert@redhat.com",
+                "published": "2019-11-26T05:15:11.880",
+                "lastModified": "2020-08-18T15:05:57.813",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "A local file inclusion flaw was found in the way the phpLDAPadmin before 0.9.8 processed certain values of the \"Accept-Language\" HTTP header. A remote attacker could use this flaw to cause a denial of service via specially-crafted request."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Se encontr\u00f3 un fallo de inclusi\u00f3n de archivo local en la manera en que phpLDAPadmin versiones anteriores a 0.9.8 proces\u00f3 determinados valores del encabezado HTTP \"Accept-Language\". Un atacante remoto podr\u00eda usar este fallo para causar una denegaci\u00f3n de servicio por medio de una petici\u00f3n especialmente dise\u00f1ada."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 7.5,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 3.6
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 5.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-400"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:phpldapadmin_project:phpldapadmin:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "0.9.8",
+                                        "matchCriteriaId": "83FD530D-724C-434C-A53E-595B82CBC5BB"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:debian:debian_linux:8.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "C11E6FB0-C8C0-4527-9AA0-CB9B316F8F43"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:debian:debian_linux:9.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "DEECE5FC-CACF-4496-A3E7-164736409252"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:debian:debian_linux:10.0:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "07B237A9-69A3-4A9C-9DA0-4E06BD37AE73"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://access.redhat.com/security/cve/cve-2011-4082",
+                        "source": "secalert@redhat.com",
+                        "tags": [
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2011-4082",
+                        "source": "secalert@redhat.com",
+                        "tags": [
+                            "Issue Tracking",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://security-tracker.debian.org/tracker/CVE-2011-4082",
+                        "source": "secalert@redhat.com",
+                        "tags": [
+                            "Broken Link"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2020-35132",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2020-12-11T05:15:12.950",
+                "lastModified": "2023-11-07T03:21:52.500",
+                "vulnStatus": "Modified",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "An XSS issue has been discovered in phpLDAPadmin before 1.2.6.2 that allows users to store malicious values that may be executed by other users at a later time via get_request in lib/function.php."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Se detect\u00f3 un problema de tipo XSS en phpLDAPadmin versiones anteriores a  1.2.6.2, que permite a usuarios almacenar valores maliciosos que pueden ser ejecutados por otros usuarios en un momento posterior por medio de la funci\u00f3n get_request en la biblioteca lib/function.php"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 3.5
+                            },
+                            "baseSeverity": "LOW",
+                            "exploitabilityScore": 6.8,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:phpldapadmin_project:phpldapadmin:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "1.2.6.2",
+                                        "matchCriteriaId": "CF8E90AC-508B-464A-8DBD-15B5653267FB"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:fedoraproject:fedora:32:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "36D96259-24BD-44E2-96D9-78CE1D41F956"
+                                    },
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:o:fedoraproject:fedora:33:*:*:*:*:*:*:*",
+                                        "matchCriteriaId": "E460AA51-FCDA-46B9-AE97-E6676AA5E194"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://bugs.launchpad.net/ubuntu/+source/phpldapadmin/+bug/1906474",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Issue Tracking",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/leenooks/phpLDAPadmin/commit/c87571f6b7be15d5cd8b26381b6eb31ad03d28e2",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/leenooks/phpLDAPadmin/compare/1.2.5...1.2.6.2",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/leenooks/phpLDAPadmin/issues/130",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Exploit",
+                            "Issue Tracking",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/6XA42XDSUPCOXL5ZCP5RGD3FD4JQQWNX/",
+                        "source": "cve@mitre.org"
+                    },
+                    {
+                        "url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/W6PZH3EY2T66N2MGOA7DWCAIVYIJH4BC/",
+                        "source": "cve@mitre.org"
+                    }
+                ]
+            }
+        }
+    ]
+}

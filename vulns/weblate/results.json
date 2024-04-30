@@ -1,1 +1,462 @@
-{"resultsPerPage":3,"startIndex":0,"totalResults":3,"format":"NVD_CVE","version":"2.0","timestamp":"2024-04-30T10:54:31.993","vulnerabilities":[{"cve":{"id":"CVE-2017-5537","sourceIdentifier":"cve@mitre.org","published":"2017-03-15T15:59:00.750","lastModified":"2017-03-21T18:56:38.913","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"The password reset form in Weblate before 2.10.1 provides different error messages depending on whether the email address is associated with an account, which allows remote attackers to enumerate user accounts via a series of requests."},{"lang":"es","value":"El formulario de restablecimiento de contraseña en Weblate en versiones anteriores a 2.10.1 proporciona diferentes mensajes de error dependiendo de si la dirección de correo electrónico está asociada con una cuenta, lo que permite a atacantes remotos enumerar cuentas de usuario a través de una serie de solicitudes."}],"metrics":{"cvssMetricV30":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.0","vectorString":"CVSS:3.0\/AV:N\/AC:L\/PR:N\/UI:N\/S:U\/C:L\/I:N\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"NONE","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"LOW","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":5.3,"baseSeverity":"MEDIUM"},"exploitabilityScore":3.9,"impactScore":1.4}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:N\/C:P\/I:N\/A:N","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"NONE","confidentialityImpact":"PARTIAL","integrityImpact":"NONE","availabilityImpact":"NONE","baseScore":5.0},"baseSeverity":"MEDIUM","exploitabilityScore":10.0,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-200"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:weblate:weblate:*:*:*:*:*:*:*:*","versionEndIncluding":"2.10","matchCriteriaId":"1D99D0EC-932C-429F-A026-FEF01C817081"}]}]}],"references":[{"url":"http:\/\/www.openwall.com\/lists\/oss-security\/2017\/01\/18\/11","source":"cve@mitre.org","tags":["Mailing List","Patch"]},{"url":"http:\/\/www.openwall.com\/lists\/oss-security\/2017\/01\/20\/1","source":"cve@mitre.org","tags":["Mailing List","Patch"]},{"url":"http:\/\/www.securityfocus.com\/bid\/95676","source":"cve@mitre.org","tags":["Third Party Advisory","VDB Entry"]},{"url":"https:\/\/github.com\/WeblateOrg\/weblate\/blob\/weblate-2.10.1\/docs\/changes.rst","source":"cve@mitre.org","tags":["Patch","Release Notes"]},{"url":"https:\/\/github.com\/WeblateOrg\/weblate\/commit\/abe0d2a29a1d8e896bfe829c8461bf8b391f1079","source":"cve@mitre.org","tags":["Patch"]},{"url":"https:\/\/github.com\/WeblateOrg\/weblate\/issues\/1317","source":"cve@mitre.org","tags":["Issue Tracking","Patch"]}]}},{"cve":{"id":"CVE-2022-24710","sourceIdentifier":"security-advisories@github.com","published":"2022-02-25T21:15:08.200","lastModified":"2022-03-08T15:13:14.510","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"Weblate is a copyleft software web-based continuous localization system. Versions prior to 4.11 do not properly neutralize user input used in user name and language fields. Due to this improper neutralization it is possible to perform cross-site scripting via these fields. The issues were fixed in the 4.11 release. Users unable to upgrade are advised to add their own neutralize logic."},{"lang":"es","value":"Weblate es un sistema de localización continua basado en la web. Las versiones anteriores a la 4.11, no neutralizan apropiadamente las entradas del usuario usadas en los campos de nombre de usuario e idioma. Debido a esta neutralización inapropiada es posible llevar a cabo un ataque de tipo cross-site scripting por medio de estos campos. Los problemas han sido corregidos en la versión 4.11. Es recomendado a usuarios que no puedan actualizarse añadir su propia lógica de neutralización.\n"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.3,"impactScore":2.7},{"source":"security-advisories@github.com","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:R\/S:C\/C:L\/I:L\/A:N","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"REQUIRED","scope":"CHANGED","confidentialityImpact":"LOW","integrityImpact":"LOW","availabilityImpact":"NONE","baseScore":5.4,"baseSeverity":"MEDIUM"},"exploitabilityScore":2.3,"impactScore":2.7}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:M\/Au:S\/C:N\/I:P\/A:N","accessVector":"NETWORK","accessComplexity":"MEDIUM","authentication":"SINGLE","confidentialityImpact":"NONE","integrityImpact":"PARTIAL","availabilityImpact":"NONE","baseScore":3.5},"baseSeverity":"LOW","exploitabilityScore":6.8,"impactScore":2.9,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":true}]},"weaknesses":[{"source":"security-advisories@github.com","type":"Primary","description":[{"lang":"en","value":"CWE-79"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:weblate:weblate:*:*:*:*:*:*:*:*","versionEndExcluding":"4.11","matchCriteriaId":"45B9E50C-3387-4830-8C98-1758DEE4B5A6"}]}]}],"references":[{"url":"https:\/\/github.com\/WeblateOrg\/weblate\/commit\/22d577b1f1e88665a88b4569380148030e0f8389","source":"security-advisories@github.com","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/WeblateOrg\/weblate\/commit\/9e19a8414337692cc90da2a91c9af5420f2952f1","source":"security-advisories@github.com","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/WeblateOrg\/weblate\/commit\/f6753a1a1c63fade6ad418fbda827c6750ab0bda","source":"security-advisories@github.com","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/WeblateOrg\/weblate\/security\/advisories\/GHSA-6jp6-9rf9-gc66","source":"security-advisories@github.com","tags":["Patch","Third Party Advisory"]}]}},{"cve":{"id":"CVE-2022-23915","sourceIdentifier":"report@snyk.io","published":"2022-03-04T20:15:07.757","lastModified":"2022-03-12T01:58:54.757","vulnStatus":"Analyzed","descriptions":[{"lang":"en","value":"The package weblate from 0 and before 4.11.1 are vulnerable to Remote Code Execution (RCE) via argument injection when using git or mercurial repositories. Authenticated users, can change the behavior of the application in an unintended way, leading to command execution."},{"lang":"es","value":"El paquete weblate desde la versión 0 y anteriores a 4.11.1 son vulnerables a una Ejecución de Código Remota (RCE) por medio de una inyección de argumentos cuando son usados repositorios git o mercurial. Los usuarios autenticados, pueden cambiar el comportamiento de la aplicación de una manera no intencionada, conllevando a una ejecución de comandos"}],"metrics":{"cvssMetricV31":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:L\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"LOW","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":8.8,"baseSeverity":"HIGH"},"exploitabilityScore":2.8,"impactScore":5.9},{"source":"report@snyk.io","type":"Secondary","cvssData":{"version":"3.1","vectorString":"CVSS:3.1\/AV:N\/AC:L\/PR:H\/UI:N\/S:U\/C:H\/I:H\/A:H","attackVector":"NETWORK","attackComplexity":"LOW","privilegesRequired":"HIGH","userInteraction":"NONE","scope":"UNCHANGED","confidentialityImpact":"HIGH","integrityImpact":"HIGH","availabilityImpact":"HIGH","baseScore":7.2,"baseSeverity":"HIGH"},"exploitabilityScore":1.2,"impactScore":5.9}],"cvssMetricV2":[{"source":"nvd@nist.gov","type":"Primary","cvssData":{"version":"2.0","vectorString":"AV:N\/AC:L\/Au:S\/C:P\/I:P\/A:P","accessVector":"NETWORK","accessComplexity":"LOW","authentication":"SINGLE","confidentialityImpact":"PARTIAL","integrityImpact":"PARTIAL","availabilityImpact":"PARTIAL","baseScore":6.5},"baseSeverity":"MEDIUM","exploitabilityScore":8.0,"impactScore":6.4,"acInsufInfo":false,"obtainAllPrivilege":false,"obtainUserPrivilege":false,"obtainOtherPrivilege":false,"userInteractionRequired":false}]},"weaknesses":[{"source":"nvd@nist.gov","type":"Primary","description":[{"lang":"en","value":"CWE-88"}]}],"configurations":[{"nodes":[{"operator":"OR","negate":false,"cpeMatch":[{"vulnerable":true,"criteria":"cpe:2.3:a:weblate:weblate:*:*:*:*:*:*:*:*","versionEndExcluding":"4.11.1","matchCriteriaId":"C5AA9094-8C38-49F3-B1E3-AA59A60363AF"}]}]}],"references":[{"url":"https:\/\/github.com\/WeblateOrg\/weblate\/pull\/7337","source":"report@snyk.io","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/WeblateOrg\/weblate\/pull\/7338","source":"report@snyk.io","tags":["Patch","Third Party Advisory"]},{"url":"https:\/\/github.com\/WeblateOrg\/weblate\/releases\/tag\/weblate-4.11.1","source":"report@snyk.io","tags":["Patch","Release Notes","Third Party Advisory"]},{"url":"https:\/\/snyk.io\/vuln\/SNYK-PYTHON-WEBLATE-2414088","source":"report@snyk.io","tags":["Patch","Third Party Advisory"]}]}}]}
+{
+    "resultsPerPage": 3,
+    "startIndex": 0,
+    "totalResults": 3,
+    "format": "NVD_CVE",
+    "version": "2.0",
+    "timestamp": "2024-04-30T10:54:31.993",
+    "vulnerabilities": [
+        {
+            "cve": {
+                "id": "CVE-2017-5537",
+                "sourceIdentifier": "cve@mitre.org",
+                "published": "2017-03-15T15:59:00.750",
+                "lastModified": "2017-03-21T18:56:38.913",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "The password reset form in Weblate before 2.10.1 provides different error messages depending on whether the email address is associated with an account, which allows remote attackers to enumerate user accounts via a series of requests."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "El formulario de restablecimiento de contrase\u00f1a en Weblate en versiones anteriores a 2.10.1 proporciona diferentes mensajes de error dependiendo de si la direcci\u00f3n de correo electr\u00f3nico est\u00e1 asociada con una cuenta, lo que permite a atacantes remotos enumerar cuentas de usuario a trav\u00e9s de una serie de solicitudes."
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV30": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.0",
+                                "vectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "NONE",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.3,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 3.9,
+                            "impactScore": 1.4
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "NONE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "NONE",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.0
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 10.0,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-200"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:weblate:weblate:*:*:*:*:*:*:*:*",
+                                        "versionEndIncluding": "2.10",
+                                        "matchCriteriaId": "1D99D0EC-932C-429F-A026-FEF01C817081"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "http://www.openwall.com/lists/oss-security/2017/01/18/11",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Mailing List",
+                            "Patch"
+                        ]
+                    },
+                    {
+                        "url": "http://www.openwall.com/lists/oss-security/2017/01/20/1",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Mailing List",
+                            "Patch"
+                        ]
+                    },
+                    {
+                        "url": "http://www.securityfocus.com/bid/95676",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Third Party Advisory",
+                            "VDB Entry"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/WeblateOrg/weblate/blob/weblate-2.10.1/docs/changes.rst",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch",
+                            "Release Notes"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/WeblateOrg/weblate/commit/abe0d2a29a1d8e896bfe829c8461bf8b391f1079",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Patch"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/WeblateOrg/weblate/issues/1317",
+                        "source": "cve@mitre.org",
+                        "tags": [
+                            "Issue Tracking",
+                            "Patch"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-24710",
+                "sourceIdentifier": "security-advisories@github.com",
+                "published": "2022-02-25T21:15:08.200",
+                "lastModified": "2022-03-08T15:13:14.510",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "Weblate is a copyleft software web-based continuous localization system. Versions prior to 4.11 do not properly neutralize user input used in user name and language fields. Due to this improper neutralization it is possible to perform cross-site scripting via these fields. The issues were fixed in the 4.11 release. Users unable to upgrade are advised to add their own neutralize logic."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "Weblate es un sistema de localizaci\u00f3n continua basado en la web. Las versiones anteriores a la 4.11, no neutralizan apropiadamente las entradas del usuario usadas en los campos de nombre de usuario e idioma. Debido a esta neutralizaci\u00f3n inapropiada es posible llevar a cabo un ataque de tipo cross-site scripting por medio de estos campos. Los problemas han sido corregidos en la versi\u00f3n 4.11. Es recomendado a usuarios que no puedan actualizarse a\u00f1adir su propia l\u00f3gica de neutralizaci\u00f3n.\n"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 2.7
+                        },
+                        {
+                            "source": "security-advisories@github.com",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "REQUIRED",
+                                "scope": "CHANGED",
+                                "confidentialityImpact": "LOW",
+                                "integrityImpact": "LOW",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 5.4,
+                                "baseSeverity": "MEDIUM"
+                            },
+                            "exploitabilityScore": 2.3,
+                            "impactScore": 2.7
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "MEDIUM",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "NONE",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "NONE",
+                                "baseScore": 3.5
+                            },
+                            "baseSeverity": "LOW",
+                            "exploitabilityScore": 6.8,
+                            "impactScore": 2.9,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": true
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "security-advisories@github.com",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-79"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:weblate:weblate:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "4.11",
+                                        "matchCriteriaId": "45B9E50C-3387-4830-8C98-1758DEE4B5A6"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/WeblateOrg/weblate/commit/22d577b1f1e88665a88b4569380148030e0f8389",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/WeblateOrg/weblate/commit/9e19a8414337692cc90da2a91c9af5420f2952f1",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/WeblateOrg/weblate/commit/f6753a1a1c63fade6ad418fbda827c6750ab0bda",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/WeblateOrg/weblate/security/advisories/GHSA-6jp6-9rf9-gc66",
+                        "source": "security-advisories@github.com",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "cve": {
+                "id": "CVE-2022-23915",
+                "sourceIdentifier": "report@snyk.io",
+                "published": "2022-03-04T20:15:07.757",
+                "lastModified": "2022-03-12T01:58:54.757",
+                "vulnStatus": "Analyzed",
+                "descriptions": [
+                    {
+                        "lang": "en",
+                        "value": "The package weblate from 0 and before 4.11.1 are vulnerable to Remote Code Execution (RCE) via argument injection when using git or mercurial repositories. Authenticated users, can change the behavior of the application in an unintended way, leading to command execution."
+                    },
+                    {
+                        "lang": "es",
+                        "value": "El paquete weblate desde la versi\u00f3n 0 y anteriores a 4.11.1 son vulnerables a una Ejecuci\u00f3n de C\u00f3digo Remota (RCE) por medio de una inyecci\u00f3n de argumentos cuando son usados repositorios git o mercurial. Los usuarios autenticados, pueden cambiar el comportamiento de la aplicaci\u00f3n de una manera no intencionada, conllevando a una ejecuci\u00f3n de comandos"
+                    }
+                ],
+                "metrics": {
+                    "cvssMetricV31": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "LOW",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 8.8,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 2.8,
+                            "impactScore": 5.9
+                        },
+                        {
+                            "source": "report@snyk.io",
+                            "type": "Secondary",
+                            "cvssData": {
+                                "version": "3.1",
+                                "vectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+                                "attackVector": "NETWORK",
+                                "attackComplexity": "LOW",
+                                "privilegesRequired": "HIGH",
+                                "userInteraction": "NONE",
+                                "scope": "UNCHANGED",
+                                "confidentialityImpact": "HIGH",
+                                "integrityImpact": "HIGH",
+                                "availabilityImpact": "HIGH",
+                                "baseScore": 7.2,
+                                "baseSeverity": "HIGH"
+                            },
+                            "exploitabilityScore": 1.2,
+                            "impactScore": 5.9
+                        }
+                    ],
+                    "cvssMetricV2": [
+                        {
+                            "source": "nvd@nist.gov",
+                            "type": "Primary",
+                            "cvssData": {
+                                "version": "2.0",
+                                "vectorString": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+                                "accessVector": "NETWORK",
+                                "accessComplexity": "LOW",
+                                "authentication": "SINGLE",
+                                "confidentialityImpact": "PARTIAL",
+                                "integrityImpact": "PARTIAL",
+                                "availabilityImpact": "PARTIAL",
+                                "baseScore": 6.5
+                            },
+                            "baseSeverity": "MEDIUM",
+                            "exploitabilityScore": 8.0,
+                            "impactScore": 6.4,
+                            "acInsufInfo": false,
+                            "obtainAllPrivilege": false,
+                            "obtainUserPrivilege": false,
+                            "obtainOtherPrivilege": false,
+                            "userInteractionRequired": false
+                        }
+                    ]
+                },
+                "weaknesses": [
+                    {
+                        "source": "nvd@nist.gov",
+                        "type": "Primary",
+                        "description": [
+                            {
+                                "lang": "en",
+                                "value": "CWE-88"
+                            }
+                        ]
+                    }
+                ],
+                "configurations": [
+                    {
+                        "nodes": [
+                            {
+                                "operator": "OR",
+                                "negate": false,
+                                "cpeMatch": [
+                                    {
+                                        "vulnerable": true,
+                                        "criteria": "cpe:2.3:a:weblate:weblate:*:*:*:*:*:*:*:*",
+                                        "versionEndExcluding": "4.11.1",
+                                        "matchCriteriaId": "C5AA9094-8C38-49F3-B1E3-AA59A60363AF"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "references": [
+                    {
+                        "url": "https://github.com/WeblateOrg/weblate/pull/7337",
+                        "source": "report@snyk.io",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/WeblateOrg/weblate/pull/7338",
+                        "source": "report@snyk.io",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://github.com/WeblateOrg/weblate/releases/tag/weblate-4.11.1",
+                        "source": "report@snyk.io",
+                        "tags": [
+                            "Patch",
+                            "Release Notes",
+                            "Third Party Advisory"
+                        ]
+                    },
+                    {
+                        "url": "https://snyk.io/vuln/SNYK-PYTHON-WEBLATE-2414088",
+                        "source": "report@snyk.io",
+                        "tags": [
+                            "Patch",
+                            "Third Party Advisory"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}
