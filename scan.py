@@ -1,43 +1,66 @@
-# import nvdlib
 import toml
 import json
 import os
+import tomli
+import requests
 
-apps = []
+from time import sleep
 
-# Load the apps.toml file
-with open('apps.toml', 'r') as file:
-    data = toml.load(file)
-    if hasattr(data, "cpe"):    
-        app = {name: data.name,
-                cpe: data.cpe}
-        apps.append(app)
-
-# cpes = ["cpe:/a:apache:apache_http_server:2.4.7", "cpe:/o:linux:linux_kernel:5.10.0"]
-
-nvd_api_key=os.getenv('YUNOHOST_NVD_API_KEY')
-
-for app in apps:
-# Build the search parameters
-# keywordSearch = f"cpe:/a:{app}:{version}"
-
-
+# FIXME: use API workflow (initial results are meant to be cached and API for changes since date meant to be queried independently + results are paginated)
 # https://nvd.nist.gov/developers/api-workflows
 
-    # result = requests.get(headers={'content-type': 'application/json', 'apiKey': key}, url = "https://services.nvd.nist.gov/rest/json/cves/2.0?virtualMatchString={cpe}&versionStart={version_start}&versionStartType=including&versionEnd={version_end}&versionEndType=excluding&apiKey={YUNOHOST_NVD_API_KEY}"
-    result = requests.get(headers={'content-type': 'application/json', 'apiKey': key}, url = "https://services.nvd.nist.gov/rest/json/cves/2.0?virtualMatchString={cpe}&apiKey={YUNOHOST_NVD_API_KEY}")
-    # cves = nvdlib.searchCVE(cpeName=cpe, key=nvd_api_key)
+# Python lib exists but not used here
+# ex: cves = nvdlib.searchCVE(cpeName=cpe, key=nvd_api_key)
+apps = []
+nvd_api_key = os.getenv("YUNOHOST_NVD_API_KEY")
 
-    # Print the CVEs
-    # for cve in cves:
-    print(cves[0])
-    # .cve_id, cve.description)
-    # "app": "jirafeau",
-    # "versions": "< 1.4~ynh1",
-    # "infos": "https://github.com/yunohost-apps/jireafeau_ynh/issues/666",
-    # "level": "warning"
+advisories = []
 
-    if not os.access(app.name):
-        os.mkdir(app.name)
-    with open(app.name+"/security.toml", "w") as file:
-        toml.dumps(cves, file, indent=4)
+
+with open("apps.toml", "rb") as file:
+    apps = tomli.load(file)
+
+    for name in apps.keys():
+        # With version numbers boundaries:
+        # url = "https://services.nvd.nist.gov/rest/json/cves/2.0?virtualMatchString={cpe}&versionStart={version_start}&versionStartType=including&versionEnd={version_end}&versionEndType=excluding"
+        # Btw, CPE looks like: f"cpe:/a:{app}:{version}"
+
+        cpe = apps[name].get("cpe")
+        if cpe:
+            url = f"https://services.nvd.nist.gov/rest/json/cves/2.0?virtualMatchString={cpe}"
+        else:
+            continue
+        try:
+            if nvd_api_key:
+                results = requests.get(
+                    headers={"content-type": "application/json", "apiKey": nvd_api_key},
+                    url=url,
+                )
+                sleep(1)
+            else:
+                results = requests.get(
+                    headers={"content-type": "application/json"}, url=url
+                )
+                sleep(6)
+            print(results.text)
+            # json_results = json.loads(results.text)
+        except:
+            print(f"Failed to retrieve data: {results}")
+
+        os.makedirs("vulns/" + name, exist_ok=True)
+        with open("vulns/" + name + "/results.json", "w") as file:
+            file.write(results.text)
+
+        # TODO: wanted format for security.toml²
+        #     print(result)
+        # advisory = {app: name,
+        #             versions: result.versions,
+        # infos: result.urls,
+        # level: level(result.CVSS)
+        # "app": "jirafeau",
+        # "versions": "< 1.4~ynh1",
+        # "infos": "https://github.com/yunohost-apps/jireafeau_ynh/issues/666",
+        # "level": "warning"
+
+        # with open(app.name + "/security.toml", "wb") as file:
+        # tomli_w.dumps(advisories, file, indent=4)

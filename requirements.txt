@@ -1,4 +1,4 @@
 tomli
 tomli_w
-nvdlib
+# nvdlib
 jsonlib-python3
