@@ -6,7 +6,7 @@ import requests
 
 from time import sleep
 
-# FIXME: use API workflow (initial results are meant to be cached and API for changes since date meant to be queried independently + results are paginated)
+# FIXME: use API workflow (initial results are meant to be cached and API for changes since date meant to be queried independently + results are ideally queried paginated (optional))
 # https://nvd.nist.gov/developers/api-workflows
 
 # Python lib exists but not used here
