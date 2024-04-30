@@ -12,4 +12,5 @@ Contains:
 ## Running `scan.py`
 - `python3 -m venv venv`
 - `source .env` (edit from `.env.example`, API key not really needed, it's just faster)
+- `pip install -r requirements.txt`
 - `python scan.py`
